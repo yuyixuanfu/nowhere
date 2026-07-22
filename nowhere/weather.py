@@ -207,22 +207,28 @@ async def current(lat: float, lon: float, elevation: float | None = None,
                   local_hour: int | None = None) -> dict[str, Any]:
     """Return weather at (lat, lon).  Never None, never raises.
 
-    Fallback chain: climate zone offline (fast) -> Open-Meteo (slow).
-    Applies atmospheric lapse rate correction when elevation is provided.
-    Applies diurnal temperature variation when local_hour is provided.
+    Fallback chain: Open-Meteo (accurate) -> climate zone offline (fast).
+    Open-Meteo already accounts for elevation, so lapse rate correction
+    is only applied to the climate fallback.
     """
-    # 1) Climate zone offline (instant, no network)
-    result = _climate_fallback(lat, lon, elevation=elevation, local_hour=local_hour)
-
-    # 2) Try online for better accuracy (non-blocking, best-effort)
+    # 1) Try Open-Meteo first (accurate, accounts for elevation)
     try:
         online = await _try_openmeteo(lat, lon)
         if online is not None:
-            result = _apply_corrections(online, elevation, local_hour, lat)
+            # Only apply diurnal correction, NOT lapse rate (Open-Meteo already handles elevation)
+            if local_hour is not None:
+                zone = _climate_zone(lat)
+                amplitude = 12.0 if zone in ("equator", "subtropical") else 8.0
+                hour_angle = (local_hour - 5) * (2 * math.pi / 24)
+                diurnal = amplitude * math.sin(hour_angle)
+                online["temp_c"] = round(online["temp_c"] + diurnal, 1)
+                online["feels_c"] = round(online["feels_c"] + diurnal, 1)
+            return online
     except Exception:
         pass
 
-    return result
+    # 2) Climate zone offline fallback (needs lapse rate correction)
+    return _climate_fallback(lat, lon, elevation=elevation, local_hour=local_hour)
 
 
 def _apply_corrections(result: dict, elevation: float | None, local_hour: int | None,

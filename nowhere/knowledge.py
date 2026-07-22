@@ -103,6 +103,11 @@ def _get_zim():
 
 def _strip_html(html: str) -> str:
     """Extract plain text from the first non-empty <p> block of a Wikipedia HTML article."""
+    # Remove <style> and <script> blocks entirely
+    html = re.sub(r"<style[^>]*>.*?</style>", "", html, flags=re.DOTALL | re.IGNORECASE)
+    html = re.sub(r"<script[^>]*>.*?</script>", "", html, flags=re.DOTALL | re.IGNORECASE)
+    # Remove HTML comments
+    html = re.sub(r"<!--.*?-->", "", html, flags=re.DOTALL)
     # Try each <p>...</p> block until we find one with real text
     for m in re.finditer(r"<p[^>]*>(.*?)</p>", html, re.DOTALL):
         text = m.group(1)
