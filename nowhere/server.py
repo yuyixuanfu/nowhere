@@ -372,7 +372,9 @@ def _pick_discovery(rng: random.Random) -> str:
 
     # Filter out scenes that don't match the current biome
     biome = _state.biome or ""
-    surface = (_state.last_env or {}).get("surface", "")
+    # last_env may be nested ({terrain:{surface}}) or top-level ({surface});
+    # use the helper so both shapes work.
+    surface = _last_env_surface()
 
     # Water scenes are inappropriate in deserts and dry areas
     water_keywords = ["瀑布", "溪", "河", "湖", "海", "水帘", "湿地", "溪水"]
