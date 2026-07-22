@@ -150,7 +150,14 @@ def _load_scenes(name: str) -> list[str]:
     if name not in _SCENE_CACHE:
         fp = _SCENE_DIR / f"scene_{name}.txt"
         if fp.exists():
-            lines = [l.strip() for l in fp.read_text(encoding="utf-8").splitlines() if l.strip()]
+            raw = [l.strip() for l in fp.read_text(encoding="utf-8").splitlines()
+                   if l.strip() and not l.strip().startswith("#")]
+            # Strip [location] prefix tags from scene text
+            lines = []
+            for l in raw:
+                if l.startswith("[") and "] " in l:
+                    l = l[l.index("] ") + 2:]
+                lines.append(l)
             _SCENE_CACHE[name] = lines
         else:
             _SCENE_CACHE[name] = []
