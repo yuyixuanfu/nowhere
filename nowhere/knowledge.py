@@ -41,12 +41,26 @@ def _load_local_kb() -> dict[str, dict]:
 
 
 def _format_kb_entry(name: str, entry: dict) -> dict:
-    """Format a local KB entry as a knowledge result."""
-    parts = []
+    """Format a local KB entry as a knowledge result.
+
+    Two shapes live in ``knowledge.json``:
+    * Country entries: ``{一句话, 特色, ...}`` → join those fields.
+    * Card entries:   ``{card: [{topic, content, ...}, ...]}`` → join the
+      ``content`` of each card so the prose is readable.
+    Mixed entries (both shapes) are concatenated.
+    """
+    parts: list[str] = []
     for key in ["一句话", "特色", "语言", "首都", "海拔"]:
-        if key in entry:
-            parts.append(f"{key}：{entry[key]}")
-    extract = "。".join(parts) if parts else ""
+        if key in entry and isinstance(entry[key], str):
+            parts.append(entry[key])
+    cards = entry.get("card")
+    if isinstance(cards, list):
+        for c in cards:
+            if isinstance(c, dict):
+                content = c.get("content")
+                if isinstance(content, str) and content:
+                    parts.append(content)
+    extract = "。".join(p for p in parts if p)
     return {
         "title": name,
         "extract": extract,

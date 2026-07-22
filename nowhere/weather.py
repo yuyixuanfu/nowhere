@@ -207,11 +207,28 @@ async def current(lat: float, lon: float, elevation: float | None = None,
                   local_hour: int | None = None) -> dict[str, Any]:
     """Return weather at (lat, lon).  Never None, never raises.
 
-    Fallback chain: Open-Meteo (accurate) -> climate zone offline (fast).
+    Fallback chain: qweather (CN only) -> Open-Meteo (accurate) -> climate zone offline (fast).
     Open-Meteo already accounts for elevation, so lapse rate correction
     is only applied to the climate fallback.
     """
-    # 1) Try Open-Meteo first (accurate, accounts for elevation)
+    # 0) Try QWeather first (only fires when NOWHERE_QWEATHER_KEY is set).
+    #    It returns None fast when the key is missing, so non-CN callers pay
+    #    only one dict lookup.
+    try:
+        qw = await _try_qweather(lat, lon)
+        if qw is not None:
+            if local_hour is not None:
+                zone = _climate_zone(lat)
+                amplitude = 12.0 if zone in ("equator", "subtropical") else 8.0
+                hour_angle = (local_hour - 5) * (2 * math.pi / 24)
+                diurnal = amplitude * math.sin(hour_angle)
+                qw["temp_c"] = round(qw["temp_c"] + diurnal, 1)
+                qw["feels_c"] = round(qw["feels_c"] + diurnal, 1)
+            return qw
+    except Exception:
+        pass
+
+    # 1) Try Open-Meteo next (accurate, accounts for elevation)
     try:
         online = await _try_openmeteo(lat, lon)
         if online is not None:
