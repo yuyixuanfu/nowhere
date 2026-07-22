@@ -139,6 +139,44 @@ def _km(a: tuple[float, float], b: tuple[float, float]) -> float:
     return 6371.0 * math.sqrt(dlat * dlat + dlon * dlon)
 
 
+def _last_env_surface() -> str:
+    """Read ``surface`` from ``_state.last_env`` regardless of write format.
+
+    Two writers exist:
+    * ``_gather_env_cached`` writes top-level: ``{elevation, surface, ...}``
+    * ``walk_impl`` / ``look_around_impl`` / ``wait_impl`` write nested:
+      ``{terrain: {elevation, surface}, ...}``
+
+    Callers used to read only the nested path; when last_env came from the
+    cache miss they got ``""``.  This helper returns whichever shape was used.
+    """
+    env = _state.last_env or {}
+    nested = env.get("terrain")
+    if isinstance(nested, dict) and "surface" in nested:
+        return nested["surface"]
+    return env.get("surface", "")
+
+
+def _last_env_terrain_dict() -> dict:
+    """Return ``_state.last_env['terrain']`` (or a synthesized equivalent).
+
+    When ``last_env`` is in the top-level shape (``{elevation, surface}``),
+    wrap it as ``{elevation, surface}`` so ``salience`` callers that read
+    ``prev["terrain"]["elevation"]`` keep working.
+    """
+    env = _state.last_env or {}
+    nested = env.get("terrain")
+    if isinstance(nested, dict):
+        return nested
+    # Top-level shape — synthesize a terrain dict.
+    out: dict = {}
+    if "elevation" in env:
+        out["elevation"] = env["elevation"]
+    if "surface" in env:
+        out["surface"] = env["surface"]
+    return out
+
+
 async def _get_radio(lat: float, lon: float) -> dict | None:
     """Sticky radio: reuse the station if we haven't drifted 50km from
     where it was picked. 同一个地方就该是同一个台。"""
@@ -1075,7 +1113,7 @@ async def walk_impl(direction: str = "forward", distance_km: float = 2.0) -> dic
         for c in top3:
             prev = None
             if c["kind"] == "terrain" and _state.last_env:
-                prev = _state.last_env.get("terrain")
+                prev = _last_env_terrain_dict()
             text = describe.render(c["kind"], c["payload"], prev, _rng,
                                    recent_scenes=_state.recent_scenes)
             if text:
@@ -1307,7 +1345,7 @@ async def listen_impl(seconds: int = 10) -> dict:
     env_for_sound = {
         "weather": (_state.last_env or {}).get("weather", {}),
         "sky": (_state.last_env or {}).get("sky", {}),
-        "surface": ((_state.last_env or {}).get("terrain", {})).get("surface", ""),
+        "surface": _last_env_surface(),
         "mode": _state.mode,
     }
     sound_text = soundscape.describe_sound(env_for_sound, _rng)
@@ -1489,7 +1527,7 @@ async def look_around_impl() -> dict:
 
     # ── 7. Souvenir discovery - 15% chance ──────────────────────────
     if _state.souvenir is None and _rng.random() < 0.15:
-        env_surface = (_state.last_env or {}).get("terrain", {}).get("surface", "")
+        env_surface = _last_env_surface()
         souvenir = _pick_souvenir(lat, lon, {"surface": env_surface}, _rng)
         if souvenir:
             _state.souvenir = souvenir
@@ -1713,7 +1751,15 @@ async def walk_to_impl(place: str) -> dict:
     # ── 走路：关键节点叙事 ───────────────────────────────────────────
     steps = 0
     max_steps = max(3, min(10, int(dist / 5) + 1))
-    last_surface = (_state.last_env or {}).get("terrain", {}).get("surface", "")
+    # last_env 在 walk_impl/look_around_impl/wait_impl 里写成嵌套:
+    #   {"weather": ..., "terrain": {"elevation", "surface"}, "sky": ...}
+    # _gather_env_cached 写顶层格式 ({elevation, surface, sky, ...})
+    # 两者都支持 → 优先 terrain.surface,fallback 顶层 surface。
+    last_env = _state.last_env or {}
+    last_surface = (
+        last_env.get("terrain", {}).get("surface")
+        or last_env.get("surface", "")
+    )
     terrain_changes = 0
 
     while steps < max_steps:
@@ -1961,7 +2007,7 @@ def send_postcard_impl(text: str) -> dict:
     s = card["stamp"]
 
     # ── 正面画面 ──────────────────────────────────────────────────────
-    surface = ((_state.last_env or {}).get("terrain", {})).get("surface", "grass")
+    surface = _last_env_surface() or "grass"
     phase = (_state.last_env or {}).get("sky", {}).get("phase", "day")
     elev = s["elevation"]
     weather_text = s.get("weather", "")
