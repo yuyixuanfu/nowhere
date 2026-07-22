@@ -1951,8 +1951,9 @@ def _postmark(lat: float, lon: float) -> dict:
     if weather:
         stamp["weather"] = weather.get("text", "")
         stamp["temp_c"] = weather.get("temp_c")
-    env_terrain = env.get("terrain") or {}
-    stamp["surface"] = env_terrain.get("surface", "grass")
+    # last_env comes in two shapes (see _last_env_terrain_dict); use the helper
+    # so a top-level surface still appears on the postmark.
+    stamp["surface"] = _last_env_surface() or "grass"
     stamp["phase"] = (env.get("sky") or {}).get("phase", "day")
     return stamp
 
