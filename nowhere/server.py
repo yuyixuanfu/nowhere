@@ -494,6 +494,9 @@ def _build_walk_narrative(
             parts.append(disc)
             narrative["discoveries"].append(disc[:20])
             narrative["last_feature"] = disc[:20]
+            # Reset so the next discovery waits another 2+ steps; without this
+            # reset the counter only ever grows and discovery fires once.
+            _state.steps_since_discovery = 0
 
     # ── 5. Time flow ──────────────────────────────────────────────────
     if rng.random() < 0.3:
