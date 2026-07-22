@@ -1093,8 +1093,8 @@ async def walk_impl(direction: str = "forward", distance_km: float = 2.0) -> dic
         if narrative_text:
             sections.append(narrative_text)
 
-        # ── Local-first scene: place-specific > generic biome ───────
-        # Priority: localcolor > location scenes > soundscape > taste > generic biome
+        # ── Local-first scene: 城市特有 > 通用 biome ───────
+        # 城市特有内容必须出现，优先级：localcolor > location > soundscape > taste
         place = _state.place_name or ""
         local_hour = None
         cc = None
@@ -1104,8 +1104,8 @@ async def walk_impl(direction: str = "forward", distance_km: float = 2.0) -> dic
         cc = country.country_code_of(lat, lon)
         _had_local = False
 
-        # 1. Localcolor card (30% chance per step — not every step)
-        if place and len(sections) < 4 and _rng.random() < 0.3:
+        # 1. Localcolor card (always try if place has data)
+        if place and len(sections) < 4:
             local_card = localcolor.draw(place, _state.seen_cards, _rng,
                                          local_hour=local_hour, country_code=cc)
             if local_card:
@@ -1114,22 +1114,22 @@ async def walk_impl(direction: str = "forward", distance_km: float = 2.0) -> dic
                 sections.append(local_card["text"])
                 _had_local = True
 
-        # 2. Location-specific scenes (30% chance, if place has entries)
-        if not _had_local and place and len(sections) < 4 and _rng.random() < 0.3:
+        # 2. Location-specific scenes (always try if place has entries)
+        if not _had_local and place and len(sections) < 4:
             location_scenes = describe._load_location_scenes()
             if place in location_scenes:
                 sections.append(_rng.choice(location_scenes[place]))
                 _had_local = True
 
-        # 3. Soundscape (30% chance)
-        if not _had_local and place and len(sections) < 4 and _rng.random() < 0.3:
+        # 3. Soundscape (always try if place has entries)
+        if not _had_local and place and len(sections) < 4:
             soundscapes = _load_scene_file("scene_soundscape")
             if place in soundscapes:
                 sections.append(_rng.choice(soundscapes[place]))
                 _had_local = True
 
-        # 4. Taste/smell (20% chance)
-        if not _had_local and place and len(sections) < 4 and _rng.random() < 0.2:
+        # 4. Taste/smell (always try if place has entries)
+        if not _had_local and place and len(sections) < 4:
             tastes = _load_scene_file("scene_taste")
             if place in tastes:
                 sections.append(_rng.choice(tastes[place]))
