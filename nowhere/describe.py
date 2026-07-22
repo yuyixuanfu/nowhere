@@ -1524,20 +1524,6 @@ def render_establish(payload: dict, rng: random.Random) -> str:
         if rng.random() < 0.6:
             scene_text = rng.choice(location_scenes[place])
             parts = [header, scene_text]
-            # Try to add a soundscape overlay (40% chance)
-            if rng.random() < 0.4:
-                # Filter to soundscape-only entries for this place
-                soundscape_fp = _SCENE_DIR / "scene_soundscape.txt"
-                if soundscape_fp.exists():
-                    sound_pool = []
-                    for line in soundscape_fp.read_text(encoding="utf-8").splitlines():
-                        line = line.strip()
-                        if line.startswith("[") and "] " in line:
-                            bracket_end = line.index("] ")
-                            if line[1:bracket_end] == place:
-                                sound_pool.append(line[bracket_end + 2:])
-                    if sound_pool:
-                        parts.append(rng.choice(sound_pool))
             # 附近地标
             nearby_places = payload.get("nearby_places", "")
             if nearby_places:
