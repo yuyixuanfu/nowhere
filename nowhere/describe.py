@@ -484,7 +484,7 @@ _TERRAIN_FLAT_ROCK_VARIANTS: list[str] = [
 _TERRAIN_FLAT_URBAN_VARIANTS: list[str] = [
     "硬化路面延伸到远处,平的。海拔 {elevation} 米{delta_clause}。",
     "马路平的,车在跑。海拔 {elevation} 米{delta_clause}。",
-    "人行道的砖缝里长了草。海拔 {elevation} 米{delta_clause}。",
+    "路沿石被磨得发亮。海拔 {elevation} 米{delta_clause}。",
 ]
 
 _TERRAIN_FLAT_WATER_VARIANTS: list[str] = [
