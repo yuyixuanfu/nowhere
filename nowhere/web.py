@@ -192,13 +192,13 @@ async def api_look_around(request: Request) -> JSONResponse:
 
 
 async def api_ask(request: Request) -> JSONResponse:
-    body = await request.json()
+    body = await request.json() if await request.body() else {}
     r = await _server.ask_impl(topic=body.get("topic", ""))
     return _json_or_text(r)
 
 
 async def api_send_postcard(request: Request) -> JSONResponse:
-    body = await request.json()
+    body = await request.json() if await request.body() else {}
     r = _server.send_postcard_impl(text=body.get("text", ""))
     return _json_or_text(r)
 
