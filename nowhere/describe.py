@@ -386,7 +386,7 @@ _SURFACE_TO_SCENE: dict[str, str] = {
     "sand": "deserts", "bare": "deserts", "rock": "mountains",
     "snow": "snow", "ice": "snow",
     "forest": "forests", "grass": "grasslands",
-    "water_ocean": "water", "water_fresh": "water",
+    "water_ocean": "ocean", "water_fresh": "water_features",
     "urban": "urban", "wetland": "wetland",
 }
 
@@ -400,7 +400,7 @@ _TIME_TO_SCENE: dict[str, str] = {
 
 _BIOME_TO_SCENE: dict[str, str] = {
     "volcano": "volcano", "desert": "deserts", "tundra": "tundra",
-    "mountain": "mountains", "island": "water", "coast": "water",
+    "mountain": "mountains", "island": "ocean", "coast": "ocean",
     "rainforest": "forests", "city": "urban",
 }
 
