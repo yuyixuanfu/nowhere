@@ -238,6 +238,21 @@ python tools/import_geonames.py
 
 不下也能跑，1° 兜底网格 + 186 个地名补丁够日常探索。
 
+### 可探索地点清单
+
+仓库里有两份地点清单，方便 AI 和人类了解"这个世界有多大"：
+
+- **`nowhere/EXPLORABLE_PLACES.md`** — 379 个城市的人类可读清单，按国家分组，每个城市有简短描述。适合 AI 在对话中引用，也适合人类浏览。
+- **`nowhere/data/explorable_index.json`** — 638 个地点的程序可读索引，每个地点标注了有哪些内容层（localcolor、knowledge、encounters、seasonal 等共 13 层）。适合程序查询"这个城市有什么内容"。
+
+```bash
+# 看看有多少城市可探索
+wc -l nowhere/EXPLORABLE_PLACES.md
+
+# 查看某个城市的内容层
+python -c "import json; d=json.load(open('nowhere/data/explorable_index.json')); print(d['places'].get('北京', {}))"
+```
+
 ---
 
 ## 环境变量
