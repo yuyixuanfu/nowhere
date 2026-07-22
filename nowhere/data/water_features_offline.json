@@ -1,0 +1,1441 @@
+{
+  "entries": [
+    {
+      "name": "长江",
+      "type": "river",
+      "lat": 29.5,
+      "lon": 106.5,
+      "radius_km": 50
+    },
+    {
+      "name": "黄河",
+      "type": "river",
+      "lat": 34.8,
+      "lon": 110.5,
+      "radius_km": 50
+    },
+    {
+      "name": "珠江",
+      "type": "river",
+      "lat": 23.1,
+      "lon": 113.3,
+      "radius_km": 50
+    },
+    {
+      "name": "松花江",
+      "type": "river",
+      "lat": 45.8,
+      "lon": 126.6,
+      "radius_km": 50
+    },
+    {
+      "name": "淮河",
+      "type": "river",
+      "lat": 32.9,
+      "lon": 117.0,
+      "radius_km": 40
+    },
+    {
+      "name": "海河",
+      "type": "river",
+      "lat": 39.1,
+      "lon": 117.2,
+      "radius_km": 40
+    },
+    {
+      "name": "辽河",
+      "type": "river",
+      "lat": 41.8,
+      "lon": 122.4,
+      "radius_km": 40
+    },
+    {
+      "name": "鄱阳湖",
+      "type": "lake",
+      "lat": 29.1,
+      "lon": 116.3,
+      "radius_km": 30
+    },
+    {
+      "name": "洞庭湖",
+      "type": "lake",
+      "lat": 29.4,
+      "lon": 112.9,
+      "radius_km": 30
+    },
+    {
+      "name": "太湖",
+      "type": "lake",
+      "lat": 31.2,
+      "lon": 120.2,
+      "radius_km": 25
+    },
+    {
+      "name": "巢湖",
+      "type": "lake",
+      "lat": 31.6,
+      "lon": 117.5,
+      "radius_km": 15
+    },
+    {
+      "name": "洪泽湖",
+      "type": "lake",
+      "lat": 33.3,
+      "lon": 118.7,
+      "radius_km": 20
+    },
+    {
+      "name": "青海湖",
+      "type": "lake",
+      "lat": 36.9,
+      "lon": 100.2,
+      "radius_km": 30
+    },
+    {
+      "name": "滇池",
+      "type": "lake",
+      "lat": 24.8,
+      "lon": 102.7,
+      "radius_km": 15
+    },
+    {
+      "name": "西湖",
+      "type": "lake",
+      "lat": 30.2,
+      "lon": 120.1,
+      "radius_km": 5
+    },
+    {
+      "name": "桂林漓江",
+      "type": "river",
+      "lat": 25.3,
+      "lon": 110.3,
+      "radius_km": 30
+    },
+    {
+      "name": "黄果树瀑布",
+      "type": "waterfall",
+      "lat": 25.99,
+      "lon": 105.67,
+      "radius_km": 5
+    },
+    {
+      "name": "壶口瀑布",
+      "type": "waterfall",
+      "lat": 36.15,
+      "lon": 110.44,
+      "radius_km": 5
+    },
+    {
+      "name": "九寨沟",
+      "type": "lake",
+      "lat": 33.26,
+      "lon": 103.92,
+      "radius_km": 10
+    },
+    {
+      "name": "Nile",
+      "type": "river",
+      "lat": 30.0,
+      "lon": 31.2,
+      "radius_km": 50
+    },
+    {
+      "name": "Amazon",
+      "type": "river",
+      "lat": -3.1,
+      "lon": -60.0,
+      "radius_km": 80
+    },
+    {
+      "name": "Mississippi",
+      "type": "river",
+      "lat": 35.0,
+      "lon": -90.0,
+      "radius_km": 50
+    },
+    {
+      "name": "Danube",
+      "type": "river",
+      "lat": 48.2,
+      "lon": 16.4,
+      "radius_km": 50
+    },
+    {
+      "name": "Rhine",
+      "type": "river",
+      "lat": 50.9,
+      "lon": 6.97,
+      "radius_km": 40
+    },
+    {
+      "name": "Thames",
+      "type": "river",
+      "lat": 51.5,
+      "lon": -0.12,
+      "radius_km": 30
+    },
+    {
+      "name": "Ganges",
+      "type": "river",
+      "lat": 25.3,
+      "lon": 83.0,
+      "radius_km": 60
+    },
+    {
+      "name": "Mekong",
+      "type": "river",
+      "lat": 15.0,
+      "lon": 105.0,
+      "radius_km": 50
+    },
+    {
+      "name": "Yangtze",
+      "type": "river",
+      "lat": 30.6,
+      "lon": 114.3,
+      "radius_km": 50
+    },
+    {
+      "name": "Murray",
+      "type": "river",
+      "lat": -34.1,
+      "lon": 142.1,
+      "radius_km": 40
+    },
+    {
+      "name": "Lake Baikal",
+      "type": "lake",
+      "lat": 53.5,
+      "lon": 108.0,
+      "radius_km": 50
+    },
+    {
+      "name": "Lake Victoria",
+      "type": "lake",
+      "lat": -1.0,
+      "lon": 33.0,
+      "radius_km": 40
+    },
+    {
+      "name": "Lake Superior",
+      "type": "lake",
+      "lat": 47.0,
+      "lon": -87.5,
+      "radius_km": 40
+    },
+    {
+      "name": "Lake Geneva",
+      "type": "lake",
+      "lat": 46.45,
+      "lon": 6.55,
+      "radius_km": 15
+    },
+    {
+      "name": "Lake Titicaca",
+      "type": "lake",
+      "lat": -15.8,
+      "lon": -69.3,
+      "radius_km": 30
+    },
+    {
+      "name": "Caspian Sea",
+      "type": "lake",
+      "lat": 41.0,
+      "lon": 51.0,
+      "radius_km": 100
+    },
+    {
+      "name": "Dead Sea",
+      "type": "lake",
+      "lat": 31.5,
+      "lon": 35.5,
+      "radius_km": 15
+    },
+    {
+      "name": "Lake Como",
+      "type": "lake",
+      "lat": 46.0,
+      "lon": 9.25,
+      "radius_km": 10
+    },
+    {
+      "name": "Lake Lucerne",
+      "type": "lake",
+      "lat": 47.0,
+      "lon": 8.4,
+      "radius_km": 10
+    },
+    {
+      "name": "Lake Malawi",
+      "type": "lake",
+      "lat": -12.0,
+      "lon": 34.5,
+      "radius_km": 30
+    },
+    {
+      "name": "Niagara Falls",
+      "type": "waterfall",
+      "lat": 43.08,
+      "lon": -79.07,
+      "radius_km": 8
+    },
+    {
+      "name": "Victoria Falls",
+      "type": "waterfall",
+      "lat": -17.92,
+      "lon": 25.86,
+      "radius_km": 8
+    },
+    {
+      "name": "Iguazu Falls",
+      "type": "waterfall",
+      "lat": -25.69,
+      "lon": -54.44,
+      "radius_km": 8
+    },
+    {
+      "name": "Angel Falls",
+      "type": "waterfall",
+      "lat": 5.97,
+      "lon": -62.54,
+      "radius_km": 5
+    },
+    {
+      "name": "Gullfoss",
+      "type": "waterfall",
+      "lat": 64.33,
+      "lon": -20.12,
+      "radius_km": 5
+    },
+    {
+      "name": "Congo River",
+      "type": "river",
+      "lat": -4.3,
+      "lon": 15.3,
+      "radius_km": 60
+    },
+    {
+      "name": "Niger River",
+      "type": "river",
+      "lat": 5.3,
+      "lon": 6.5,
+      "radius_km": 50
+    },
+    {
+      "name": "Zambezi River",
+      "type": "river",
+      "lat": -15.4,
+      "lon": 28.3,
+      "radius_km": 50
+    },
+    {
+      "name": "Orinoco River",
+      "type": "river",
+      "lat": 8.6,
+      "lon": -62.0,
+      "radius_km": 50
+    },
+    {
+      "name": "Parana River",
+      "type": "river",
+      "lat": -25.5,
+      "lon": -54.6,
+      "radius_km": 50
+    },
+    {
+      "name": "Volga River",
+      "type": "river",
+      "lat": 48.7,
+      "lon": 44.5,
+      "radius_km": 50
+    },
+    {
+      "name": "Tigris River",
+      "type": "river",
+      "lat": 33.3,
+      "lon": 44.4,
+      "radius_km": 40
+    },
+    {
+      "name": "Euphrates River",
+      "type": "river",
+      "lat": 34.7,
+      "lon": 38.0,
+      "radius_km": 40
+    },
+    {
+      "name": "Brahmaputra River",
+      "type": "river",
+      "lat": 25.2,
+      "lon": 89.7,
+      "radius_km": 50
+    },
+    {
+      "name": "Irrawaddy River",
+      "type": "river",
+      "lat": 16.8,
+      "lon": 96.0,
+      "radius_km": 50
+    },
+    {
+      "name": "Han River (Korea)",
+      "type": "river",
+      "lat": 37.5,
+      "lon": 126.9,
+      "radius_km": 40
+    },
+    {
+      "name": "Tone River",
+      "type": "river",
+      "lat": 35.7,
+      "lon": 139.8,
+      "radius_km": 40
+    },
+    {
+      "name": "Rhone River",
+      "type": "river",
+      "lat": 43.7,
+      "lon": 4.8,
+      "radius_km": 40
+    },
+    {
+      "name": "Elbe River",
+      "type": "river",
+      "lat": 53.5,
+      "lon": 10.0,
+      "radius_km": 40
+    },
+    {
+      "name": "Columbia River",
+      "type": "river",
+      "lat": 46.2,
+      "lon": -123.5,
+      "radius_km": 50
+    },
+    {
+      "name": "Yukon River",
+      "type": "river",
+      "lat": 64.7,
+      "lon": -147.5,
+      "radius_km": 50
+    },
+    {
+      "name": "Darling River",
+      "type": "river",
+      "lat": -32.5,
+      "lon": 142.0,
+      "radius_km": 40
+    },
+    {
+      "name": "Lake Tanganyika",
+      "type": "lake",
+      "lat": -6.3,
+      "lon": 29.5,
+      "radius_km": 40
+    },
+    {
+      "name": "Lake Chad",
+      "type": "lake",
+      "lat": 13.0,
+      "lon": 14.0,
+      "radius_km": 30
+    },
+    {
+      "name": "Lake Turkana",
+      "type": "lake",
+      "lat": 3.5,
+      "lon": 36.0,
+      "radius_km": 30
+    },
+    {
+      "name": "Lake Atitlan",
+      "type": "lake",
+      "lat": 14.7,
+      "lon": -91.2,
+      "radius_km": 15
+    },
+    {
+      "name": "Lake Nicaragua",
+      "type": "lake",
+      "lat": 11.6,
+      "lon": -85.3,
+      "radius_km": 30
+    },
+    {
+      "name": "Lake Winnipeg",
+      "type": "lake",
+      "lat": 52.0,
+      "lon": -97.0,
+      "radius_km": 40
+    },
+    {
+      "name": "Lake Ladoga",
+      "type": "lake",
+      "lat": 61.0,
+      "lon": 31.0,
+      "radius_km": 40
+    },
+    {
+      "name": "Lake Onega",
+      "type": "lake",
+      "lat": 61.5,
+      "lon": 35.5,
+      "radius_km": 35
+    },
+    {
+      "name": "Lake Constance",
+      "type": "lake",
+      "lat": 47.6,
+      "lon": 9.4,
+      "radius_km": 15
+    },
+    {
+      "name": "Lake Garda",
+      "type": "lake",
+      "lat": 45.6,
+      "lon": 10.7,
+      "radius_km": 15
+    },
+    {
+      "name": "Lake Bled",
+      "type": "lake",
+      "lat": 46.37,
+      "lon": 14.1,
+      "radius_km": 5
+    },
+    {
+      "name": "Lake Ohrid",
+      "type": "lake",
+      "lat": 41.0,
+      "lon": 20.7,
+      "radius_km": 15
+    },
+    {
+      "name": "Lake Van",
+      "type": "lake",
+      "lat": 38.6,
+      "lon": 42.9,
+      "radius_km": 30
+    },
+    {
+      "name": "Lake Urmia",
+      "type": "lake",
+      "lat": 37.7,
+      "lon": 45.3,
+      "radius_km": 30
+    },
+    {
+      "name": "Lake Balkhash",
+      "type": "lake",
+      "lat": 46.5,
+      "lon": 74.5,
+      "radius_km": 40
+    },
+    {
+      "name": "Lake Issyk-Kul",
+      "type": "lake",
+      "lat": 42.4,
+      "lon": 77.3,
+      "radius_km": 35
+    },
+    {
+      "name": "Lake Khovsgol",
+      "type": "lake",
+      "lat": 51.0,
+      "lon": 100.5,
+      "radius_km": 25
+    },
+    {
+      "name": "Kaieteur Falls",
+      "type": "waterfall",
+      "lat": 5.18,
+      "lon": -59.48,
+      "radius_km": 5
+    },
+    {
+      "name": "Tugela Falls",
+      "type": "waterfall",
+      "lat": -28.75,
+      "lon": 28.93,
+      "radius_km": 5
+    },
+    {
+      "name": "Jog Falls",
+      "type": "waterfall",
+      "lat": 14.23,
+      "lon": 74.81,
+      "radius_km": 5
+    },
+    {
+      "name": "Ban Gioc Falls",
+      "type": "waterfall",
+      "lat": 22.86,
+      "lon": 106.72,
+      "radius_km": 5
+    },
+    {
+      "name": "Plitvice Waterfalls",
+      "type": "waterfall",
+      "lat": 44.9,
+      "lon": 15.62,
+      "radius_km": 8
+    },
+    {
+      "name": "Seljalandsfoss",
+      "type": "waterfall",
+      "lat": 63.62,
+      "lon": -19.99,
+      "radius_km": 3
+    },
+    {
+      "name": "Skogafoss",
+      "type": "waterfall",
+      "lat": 63.53,
+      "lon": -19.51,
+      "radius_km": 3
+    },
+    {
+      "name": "Yosemite Falls",
+      "type": "waterfall",
+      "lat": 37.75,
+      "lon": -119.6,
+      "radius_km": 5
+    },
+    {
+      "name": "Multnomah Falls",
+      "type": "waterfall",
+      "lat": 45.58,
+      "lon": -122.12,
+      "radius_km": 5
+    },
+    {
+      "name": "Havasu Falls",
+      "type": "waterfall",
+      "lat": 36.26,
+      "lon": -112.7,
+      "radius_km": 3
+    },
+    {
+      "name": "竹溪",
+      "type": "stream",
+      "lat": 32.3,
+      "lon": 109.7,
+      "radius_km": 8
+    },
+    {
+      "name": "Mountain stream - Alps",
+      "type": "stream",
+      "lat": 46.5,
+      "lon": 11.3,
+      "radius_km": 8
+    },
+    {
+      "name": "Forest creek - Amazon tributary",
+      "type": "stream",
+      "lat": -3.5,
+      "lon": -62.0,
+      "radius_km": 10
+    },
+    {
+      "name": "Desert wadi - Arabia",
+      "type": "stream",
+      "lat": 23.5,
+      "lon": 44.0,
+      "radius_km": 15
+    },
+    {
+      "name": "Glacial meltwater stream - Iceland",
+      "type": "stream",
+      "lat": 64.0,
+      "lon": -17.0,
+      "radius_km": 8
+    },
+    {
+      "name": "Mountain brook - Rockies",
+      "type": "stream",
+      "lat": 40.0,
+      "lon": -105.5,
+      "radius_km": 8
+    },
+    {
+      "name": "Steppe river - Mongolia",
+      "type": "stream",
+      "lat": 47.5,
+      "lon": 102.0,
+      "radius_km": 10
+    },
+    {
+      "name": "三峡水库",
+      "type": "reservoir",
+      "lat": 30.8,
+      "lon": 111.0,
+      "radius_km": 30
+    },
+    {
+      "name": "Lake Mead",
+      "type": "reservoir",
+      "lat": 36.1,
+      "lon": -114.7,
+      "radius_km": 25
+    },
+    {
+      "name": "Lake Nasser",
+      "type": "reservoir",
+      "lat": 22.5,
+      "lon": 31.5,
+      "radius_km": 30
+    },
+    {
+      "name": "Kariba Dam",
+      "type": "reservoir",
+      "lat": -16.5,
+      "lon": 28.8,
+      "radius_km": 25
+    },
+    {
+      "name": "Itaipu Reservoir",
+      "type": "reservoir",
+      "lat": -25.4,
+      "lon": -54.6,
+      "radius_km": 20
+    },
+    {
+      "name": "Creek - Appalachian trail",
+      "type": "stream",
+      "lat": 35.6,
+      "lon": -83.5,
+      "radius_km": 8
+    },
+    {
+      "name": "Highland burn - Scotland",
+      "type": "stream",
+      "lat": 57.0,
+      "lon": -5.0,
+      "radius_km": 8
+    },
+    {
+      "name": "Jungle stream - Borneo",
+      "type": "stream",
+      "lat": 1.5,
+      "lon": 110.0,
+      "radius_km": 10
+    },
+    {
+      "name": "Magdalena River",
+      "type": "river",
+      "lat": 9.3,
+      "lon": -74.8,
+      "radius_km": 40
+    },
+    {
+      "name": "Ob River",
+      "type": "river",
+      "lat": 61.0,
+      "lon": 69.0,
+      "radius_km": 50
+    },
+    {
+      "name": "汉江",
+      "type": "river",
+      "lat": 37.5,
+      "lon": 127.0,
+      "radius_km": 30
+    },
+    {
+      "name": "洛东江",
+      "type": "river",
+      "lat": 35.8,
+      "lon": 128.6,
+      "radius_km": 25
+    },
+    {
+      "name": "雪岳山溪谷",
+      "type": "stream",
+      "lat": 38.1,
+      "lon": 128.4,
+      "radius_km": 10
+    },
+    {
+      "name": "信浓川",
+      "type": "river",
+      "lat": 37.9,
+      "lon": 139.0,
+      "radius_km": 30
+    },
+    {
+      "name": "利根川",
+      "type": "river",
+      "lat": 35.7,
+      "lon": 139.8,
+      "radius_km": 30
+    },
+    {
+      "name": "琵琶湖",
+      "type": "lake",
+      "lat": 35.3,
+      "lon": 136.0,
+      "radius_km": 20
+    },
+    {
+      "name": "中禅寺湖",
+      "type": "lake",
+      "lat": 36.7,
+      "lon": 139.6,
+      "radius_km": 8
+    },
+    {
+      "name": "恒河",
+      "type": "river",
+      "lat": 25.3,
+      "lon": 83.0,
+      "radius_km": 60
+    },
+    {
+      "name": "印度河",
+      "type": "river",
+      "lat": 28.6,
+      "lon": 68.5,
+      "radius_km": 50
+    },
+    {
+      "name": "布拉马普特拉河",
+      "type": "river",
+      "lat": 26.0,
+      "lon": 90.0,
+      "radius_km": 50
+    },
+    {
+      "name": "戈达瓦里河",
+      "type": "river",
+      "lat": 16.5,
+      "lon": 81.0,
+      "radius_km": 40
+    },
+    {
+      "name": "焦格瀑布",
+      "type": "waterfall",
+      "lat": 14.2,
+      "lon": 74.8,
+      "radius_km": 5
+    },
+    {
+      "name": "尼尔吉里山溪",
+      "type": "stream",
+      "lat": 11.4,
+      "lon": 76.7,
+      "radius_km": 10
+    },
+    {
+      "name": "达令河",
+      "type": "river",
+      "lat": -34.1,
+      "lon": 142.1,
+      "radius_km": 40
+    },
+    {
+      "name": "墨累河",
+      "type": "river",
+      "lat": -35.0,
+      "lon": 139.0,
+      "radius_km": 40
+    },
+    {
+      "name": "瓦卡蒂普湖",
+      "type": "lake",
+      "lat": -45.0,
+      "lon": 168.7,
+      "radius_km": 15
+    },
+    {
+      "name": "湄南河",
+      "type": "river",
+      "lat": 13.7,
+      "lon": 100.5,
+      "radius_km": 30
+    },
+    {
+      "name": "伊洛瓦底江",
+      "type": "river",
+      "lat": 16.8,
+      "lon": 96.0,
+      "radius_km": 50
+    },
+    {
+      "name": "洞里萨湖",
+      "type": "lake",
+      "lat": 12.9,
+      "lon": 103.8,
+      "radius_km": 20
+    },
+    {
+      "name": "塞纳河",
+      "type": "river",
+      "lat": 48.85,
+      "lon": 2.35,
+      "radius_km": 40
+    },
+    {
+      "name": "Seine",
+      "type": "river",
+      "lat": 48.85,
+      "lon": 2.35,
+      "radius_km": 40
+    },
+    {
+      "name": "多瑙河",
+      "type": "river",
+      "lat": 48.2,
+      "lon": 16.4,
+      "radius_km": 80
+    },
+    {
+      "name": "莱茵河",
+      "type": "river",
+      "lat": 50.9,
+      "lon": 6.97,
+      "radius_km": 60
+    },
+    {
+      "name": "泰晤士河",
+      "type": "river",
+      "lat": 51.5,
+      "lon": -0.12,
+      "radius_km": 30
+    },
+    {
+      "name": "伏尔加河",
+      "type": "river",
+      "lat": 48.7,
+      "lon": 44.5,
+      "radius_km": 80
+    },
+    {
+      "name": "Volga",
+      "type": "river",
+      "lat": 48.7,
+      "lon": 44.5,
+      "radius_km": 80
+    },
+    {
+      "name": "长江",
+      "type": "river",
+      "lat": 28.8,
+      "lon": 104.6,
+      "radius_km": 30,
+      "note": "宜宾段"
+    },
+    {
+      "name": "长江",
+      "type": "river",
+      "lat": 29.5,
+      "lon": 106.5,
+      "radius_km": 30,
+      "note": "重庆段"
+    },
+    {
+      "name": "长江",
+      "type": "river",
+      "lat": 30.7,
+      "lon": 111.3,
+      "radius_km": 30,
+      "note": "宜昌段"
+    },
+    {
+      "name": "长江",
+      "type": "river",
+      "lat": 30.5,
+      "lon": 114.3,
+      "radius_km": 30,
+      "note": "武汉段"
+    },
+    {
+      "name": "长江",
+      "type": "river",
+      "lat": 29.7,
+      "lon": 116.0,
+      "radius_km": 30,
+      "note": "九江段"
+    },
+    {
+      "name": "长江",
+      "type": "river",
+      "lat": 32.1,
+      "lon": 118.8,
+      "radius_km": 30,
+      "note": "南京段"
+    },
+    {
+      "name": "长江",
+      "type": "river",
+      "lat": 31.2,
+      "lon": 121.5,
+      "radius_km": 30,
+      "note": "上海段"
+    },
+    {
+      "name": "黄河",
+      "type": "river",
+      "lat": 36.06,
+      "lon": 103.83,
+      "radius_km": 30,
+      "note": "兰州段"
+    },
+    {
+      "name": "黄河",
+      "type": "river",
+      "lat": 38.5,
+      "lon": 106.3,
+      "radius_km": 30,
+      "note": "银川段"
+    },
+    {
+      "name": "黄河",
+      "type": "river",
+      "lat": 40.6,
+      "lon": 110.0,
+      "radius_km": 30,
+      "note": "包头段"
+    },
+    {
+      "name": "黄河",
+      "type": "river",
+      "lat": 34.6,
+      "lon": 112.4,
+      "radius_km": 30,
+      "note": "洛阳段"
+    },
+    {
+      "name": "黄河",
+      "type": "river",
+      "lat": 34.76,
+      "lon": 113.65,
+      "radius_km": 30,
+      "note": "郑州段"
+    },
+    {
+      "name": "黄河",
+      "type": "river",
+      "lat": 36.7,
+      "lon": 117.0,
+      "radius_km": 30,
+      "note": "济南段"
+    },
+    {
+      "name": "黄河",
+      "type": "river",
+      "lat": 37.5,
+      "lon": 118.5,
+      "radius_km": 30,
+      "note": "东营段"
+    },
+    {
+      "name": "珠江",
+      "type": "river",
+      "lat": 22.8,
+      "lon": 108.3,
+      "radius_km": 30,
+      "note": "南宁段"
+    },
+    {
+      "name": "珠江",
+      "type": "river",
+      "lat": 23.5,
+      "lon": 111.3,
+      "radius_km": 30,
+      "note": "梧州段"
+    },
+    {
+      "name": "珠江",
+      "type": "river",
+      "lat": 23.05,
+      "lon": 112.47,
+      "radius_km": 30,
+      "note": "肇庆段"
+    },
+    {
+      "name": "珠江",
+      "type": "river",
+      "lat": 23.1,
+      "lon": 113.3,
+      "radius_km": 30,
+      "note": "广州段"
+    },
+    {
+      "name": "珠江",
+      "type": "river",
+      "lat": 22.3,
+      "lon": 113.6,
+      "radius_km": 30,
+      "note": "珠海段"
+    },
+    {
+      "name": "松花江",
+      "type": "river",
+      "lat": 45.8,
+      "lon": 126.6,
+      "radius_km": 30,
+      "note": "哈尔滨段"
+    },
+    {
+      "name": "松花江",
+      "type": "river",
+      "lat": 46.8,
+      "lon": 130.4,
+      "radius_km": 30,
+      "note": "佳木斯段"
+    },
+    {
+      "name": "淮河",
+      "type": "river",
+      "lat": 32.1,
+      "lon": 114.1,
+      "radius_km": 30,
+      "note": "信阳段"
+    },
+    {
+      "name": "淮河",
+      "type": "river",
+      "lat": 32.9,
+      "lon": 117.4,
+      "radius_km": 30,
+      "note": "蚌埠段"
+    },
+    {
+      "name": "淮河",
+      "type": "river",
+      "lat": 33.6,
+      "lon": 119.0,
+      "radius_km": 30,
+      "note": "淮安段"
+    },
+    {
+      "name": "海河",
+      "type": "river",
+      "lat": 39.1,
+      "lon": 117.2,
+      "radius_km": 30,
+      "note": "天津段"
+    },
+    {
+      "name": "海河",
+      "type": "river",
+      "lat": 39.9,
+      "lon": 116.4,
+      "radius_km": 30,
+      "note": "北京段"
+    },
+    {
+      "name": "辽河",
+      "type": "river",
+      "lat": 41.8,
+      "lon": 123.4,
+      "radius_km": 30,
+      "note": "沈阳段"
+    },
+    {
+      "name": "辽河",
+      "type": "river",
+      "lat": 41.1,
+      "lon": 122.1,
+      "radius_km": 30,
+      "note": "盘锦段"
+    },
+    {
+      "name": "漓江",
+      "type": "river",
+      "lat": 25.3,
+      "lon": 110.3,
+      "radius_km": 30,
+      "note": "桂林段"
+    },
+    {
+      "name": "漓江",
+      "type": "river",
+      "lat": 24.8,
+      "lon": 110.5,
+      "radius_km": 30,
+      "note": "阳朔段"
+    },
+    {
+      "name": "Nile",
+      "type": "river",
+      "lat": 30.0,
+      "lon": 31.2,
+      "radius_km": 30,
+      "note": "Cairo"
+    },
+    {
+      "name": "Nile",
+      "type": "river",
+      "lat": 24.1,
+      "lon": 32.9,
+      "radius_km": 30,
+      "note": "Aswan"
+    },
+    {
+      "name": "Nile",
+      "type": "river",
+      "lat": 15.6,
+      "lon": 32.5,
+      "radius_km": 30,
+      "note": "Khartoum"
+    },
+    {
+      "name": "Amazon",
+      "type": "river",
+      "lat": -3.1,
+      "lon": -60.0,
+      "radius_km": 50,
+      "note": "Manaus"
+    },
+    {
+      "name": "Amazon",
+      "type": "river",
+      "lat": -1.5,
+      "lon": -48.5,
+      "radius_km": 50,
+      "note": "Belem"
+    },
+    {
+      "name": "Mississippi",
+      "type": "river",
+      "lat": 44.98,
+      "lon": -93.27,
+      "radius_km": 30,
+      "note": "Minneapolis"
+    },
+    {
+      "name": "Mississippi",
+      "type": "river",
+      "lat": 38.63,
+      "lon": -90.24,
+      "radius_km": 30,
+      "note": "St. Louis"
+    },
+    {
+      "name": "Mississippi",
+      "type": "river",
+      "lat": 35.15,
+      "lon": -90.05,
+      "radius_km": 30,
+      "note": "Memphis"
+    },
+    {
+      "name": "Mississippi",
+      "type": "river",
+      "lat": 29.95,
+      "lon": -90.07,
+      "radius_km": 30,
+      "note": "New Orleans"
+    },
+    {
+      "name": "Danube",
+      "type": "river",
+      "lat": 48.2,
+      "lon": 16.4,
+      "radius_km": 30,
+      "note": "Vienna"
+    },
+    {
+      "name": "Danube",
+      "type": "river",
+      "lat": 47.5,
+      "lon": 19.1,
+      "radius_km": 30,
+      "note": "Budapest"
+    },
+    {
+      "name": "Danube",
+      "type": "river",
+      "lat": 44.8,
+      "lon": 20.5,
+      "radius_km": 30,
+      "note": "Belgrade"
+    },
+    {
+      "name": "Danube",
+      "type": "river",
+      "lat": 44.4,
+      "lon": 26.1,
+      "radius_km": 30,
+      "note": "Bucharest"
+    },
+    {
+      "name": "Rhine",
+      "type": "river",
+      "lat": 47.56,
+      "lon": 7.59,
+      "radius_km": 30,
+      "note": "Basel"
+    },
+    {
+      "name": "Rhine",
+      "type": "river",
+      "lat": 48.58,
+      "lon": 7.75,
+      "radius_km": 30,
+      "note": "Strasbourg"
+    },
+    {
+      "name": "Rhine",
+      "type": "river",
+      "lat": 50.94,
+      "lon": 6.97,
+      "radius_km": 30,
+      "note": "Cologne"
+    },
+    {
+      "name": "Rhine",
+      "type": "river",
+      "lat": 51.92,
+      "lon": 4.48,
+      "radius_km": 30,
+      "note": "Rotterdam"
+    },
+    {
+      "name": "Thames",
+      "type": "river",
+      "lat": 51.5,
+      "lon": -0.12,
+      "radius_km": 20,
+      "note": "London"
+    },
+    {
+      "name": "Thames",
+      "type": "river",
+      "lat": 51.75,
+      "lon": -1.26,
+      "radius_km": 20,
+      "note": "Oxford"
+    },
+    {
+      "name": "Ganges",
+      "type": "river",
+      "lat": 25.3,
+      "lon": 83.0,
+      "radius_km": 30,
+      "note": "Varanasi"
+    },
+    {
+      "name": "Ganges",
+      "type": "river",
+      "lat": 22.6,
+      "lon": 88.4,
+      "radius_km": 30,
+      "note": "Kolkata"
+    },
+    {
+      "name": "Mekong",
+      "type": "river",
+      "lat": 17.97,
+      "lon": 102.6,
+      "radius_km": 30,
+      "note": "Vientiane"
+    },
+    {
+      "name": "Mekong",
+      "type": "river",
+      "lat": 11.56,
+      "lon": 104.92,
+      "radius_km": 30,
+      "note": "Phnom Penh"
+    },
+    {
+      "name": "Mekong",
+      "type": "river",
+      "lat": 10.8,
+      "lon": 106.7,
+      "radius_km": 30,
+      "note": "Ho Chi Minh"
+    },
+    {
+      "name": "Volga",
+      "type": "river",
+      "lat": 55.75,
+      "lon": 37.62,
+      "radius_km": 30,
+      "note": "Moscow"
+    },
+    {
+      "name": "Volga",
+      "type": "river",
+      "lat": 55.8,
+      "lon": 49.1,
+      "radius_km": 30,
+      "note": "Kazan"
+    },
+    {
+      "name": "Volga",
+      "type": "river",
+      "lat": 48.7,
+      "lon": 44.5,
+      "radius_km": 30,
+      "note": "Volgograd"
+    },
+    {
+      "name": "Murray",
+      "type": "river",
+      "lat": -37.8,
+      "lon": 145.0,
+      "radius_km": 30,
+      "note": "Melbourne"
+    },
+    {
+      "name": "Murray",
+      "type": "river",
+      "lat": -33.9,
+      "lon": 151.2,
+      "radius_km": 30,
+      "note": "Sydney"
+    },
+    {
+      "name": "鄱阳湖",
+      "type": "lake",
+      "lat": 29.7,
+      "lon": 116.2,
+      "radius_km": 25,
+      "note": "湖口"
+    },
+    {
+      "name": "鄱阳湖",
+      "type": "lake",
+      "lat": 28.7,
+      "lon": 115.9,
+      "radius_km": 25,
+      "note": "南昌"
+    },
+    {
+      "name": "洞庭湖",
+      "type": "lake",
+      "lat": 29.4,
+      "lon": 113.1,
+      "radius_km": 25,
+      "note": "岳阳"
+    },
+    {
+      "name": "洞庭湖",
+      "type": "lake",
+      "lat": 29.0,
+      "lon": 111.7,
+      "radius_km": 25,
+      "note": "常德"
+    },
+    {
+      "name": "太湖",
+      "type": "lake",
+      "lat": 31.5,
+      "lon": 120.3,
+      "radius_km": 20,
+      "note": "无锡"
+    },
+    {
+      "name": "太湖",
+      "type": "lake",
+      "lat": 31.3,
+      "lon": 120.6,
+      "radius_km": 20,
+      "note": "苏州"
+    }
+  ]
+}

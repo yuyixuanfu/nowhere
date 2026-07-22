@@ -1,0 +1,15 @@
+{
+  "name": "Nowhere Paper",
+  "description": "乌有乡纸感——米纸底,墨线,旅行手账",
+  "bg": "#F5F0E6",
+  "text": "#3A3226",
+  "gradient_color": "#F5F0E6",
+  "water": "#D8CDB4",
+  "parks": "#E3D9BE",
+  "road_motorway": "#4A4032",
+  "road_primary": "#6B5B43",
+  "road_secondary": "#8A7A5E",
+  "road_tertiary": "#A5947A",
+  "road_residential": "#C0B296",
+  "road_default": "#A5947A"
+}

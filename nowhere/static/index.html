@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>乌有乡 · 旁观者</title>
+<style>
+  :root{
+    --paper:#f5f0e6; --sea:#eee3cb; --ink:#4a3b2c; --cinnabar:#b5442c;
+    --line:#d8cbb0; --card:#f9f4eacc;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%;overflow:hidden;background:var(--paper);
+    font-family:"Songti SC","STSong","SimSun","Noto Serif CJK SC",serif;color:var(--ink)}
+  #skycap{position:fixed;top:0;left:0;right:0;height:4px;z-index:5;transition:background 2s}
+  #brand{position:fixed;top:16px;left:26px;z-index:5;pointer-events:none;
+    background:#f1e8d4;border:1.5px solid var(--ink);outline:0.5px solid var(--ink);outline-offset:2px;
+    padding:10px 22px 8px;box-shadow:2px 3px 0 #0002}
+  #brand .t{font-family:"Kaiti","STKaiti","KaiTi_GB2312",serif;font-size:22px;letter-spacing:10px}
+  #brand .s{font-size:10px;letter-spacing:3px;opacity:.65;margin-top:3px;text-align:center}
+  #mapwrap{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
+  #map{width:min(96vw,178vh);height:auto;max-height:92vh}
+  #tip{position:fixed;z-index:20;display:none;pointer-events:none;
+    background:#fffdf7;border:1px solid var(--ink);border-radius:2px;
+    padding:6px 10px;font-size:12px;line-height:1.7;box-shadow:2px 3px 0 #0002;max-width:260px}
+  #tip .zh{font-family:"Kaiti","STKaiti",serif;font-size:14px}
+  #tip .dim{opacity:.65;font-size:11px}
+  #legend{position:fixed;right:18px;bottom:16px;z-index:5;background:var(--card);
+    border:1px solid var(--line);border-radius:3px;padding:8px 12px;font-size:11px;
+    line-height:1.9;opacity:.9}
+  #legend b{display:inline-block;width:14px;text-align:center;margin-right:4px}
+  #now{position:fixed;left:24px;bottom:24px;max-width:420px;z-index:6;
+    background:var(--card);backdrop-filter:blur(2px);
+    border:1px solid var(--line);border-radius:3px;padding:16px 18px;
+    box-shadow:2px 3px 0 #0001;transition:background 2s}
+  #now .meta{font-size:13px;letter-spacing:1px;opacity:.75;margin-bottom:8px}
+  #now .text{font-size:15px;line-height:1.9;max-height:38vh;overflow:auto}
+  #now .stats{margin-top:10px;font-size:12px;opacity:.7}
+  #wallbtn{position:fixed;right:0;top:45%;z-index:6;writing-mode:vertical-rl;
+    background:var(--card);border:1px solid var(--line);border-right:none;
+    padding:14px 8px;cursor:pointer;font-size:14px;letter-spacing:4px;border-radius:3px 0 0 3px}
+  #wall{position:fixed;top:0;right:0;bottom:0;width:min(560px,92vw);z-index:8;
+    background:var(--paper);border-left:1px solid var(--line);
+    transform:translateX(100%);transition:transform .35s;overflow:auto;padding:22px}
+  #wall.open{transform:none}
+  #wall .wallhead{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+  #wall .backbtn{cursor:pointer;border:1px solid var(--line);background:#fffdf7;
+    padding:6px 12px;font:inherit;font-size:13px;border-radius:2px}
+  #wall .backbtn:hover{background:#f3ead6}
+  #wall h2{font-size:16px;letter-spacing:3px;font-weight:normal}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .mini{cursor:pointer;border:1px solid var(--line);background:#fffdf7;padding:6px;
+    transform:rotate(var(--tilt));box-shadow:1px 2px 0 #0001}
+  .mini svg,.mini img{width:100%;height:auto;display:block}
+  .mini .cap{font-size:12px;padding:6px 2px 2px;opacity:.8}
+  #flip{position:fixed;inset:0;z-index:9;display:none;align-items:center;justify-content:center;
+    background:#3a322655}
+  #flip.open{display:flex}
+  .card{width:min(680px,90vw);background:#fffdf7;border:1px solid var(--line);
+    padding:18px;box-shadow:3px 6px 0 #0002;max-height:92vh;overflow:auto}
+  .card svg,.card img{width:100%;height:auto;display:block}
+  .back .words{font-size:16px;line-height:2;margin:14px 0;white-space:pre-wrap}
+  .stamp{display:inline-block;border:2px solid var(--cinnabar);border-radius:50%;
+    color:var(--cinnabar);font-size:12px;padding:10px 14px;transform:rotate(-8deg);
+    text-align:center;line-height:1.6}
+  .replies{margin-top:12px;font-size:13px;border-top:1px dashed var(--line);padding-top:8px}
+  .replies .r{margin:4px 0}
+  .replybox{display:flex;gap:8px;margin-top:10px}
+  .replybox input{flex:1;background:#fffdf7;border:1px solid var(--line);padding:8px;
+    font:inherit;font-size:14px}
+  .replybox button{background:var(--cinnabar);color:#fffdf7;border:none;padding:8px 16px;
+    font:inherit;cursor:pointer}
+  .flipbar{display:flex;justify-content:space-between;margin-top:12px;font-size:13px}
+  .flipbar span{cursor:pointer;text-decoration:underline;opacity:.8}
+</style>
+</head>
+<body>
+<div id="skycap"></div>
+<div id="brand"><div class="t">乌有乡</div><div class="s">旁观者 · 他在路上的痕迹</div></div>
+<div id="mapwrap"><svg id="map" viewBox="-14 -10 1028 520" preserveAspectRatio="xMidYMid meet"></svg></div>
+<div id="tip"></div>
+<div id="legend">
+  <div><b style="color:#b5442c">●</b>落点(数字=第几次)</div>
+  <div><b style="color:#c89b3c">★</b>标记</div>
+  <div><b style="color:#7a6a4f">🐾</b>动物目击</div>
+  <div><b style="color:#b5442c">✉</b>明信片</div>
+</div>
+<div id="now">
+  <div class="meta" id="nowmeta">还没开门</div>
+  <div class="text" id="nowtext">他在路上的时候,这里会写着他在哪。</div>
+  <div class="stats" id="nowstats"></div>
+</div>
+<div id="wallbtn">明信片墙</div>
+<div id="wall">
+  <div class="wallhead"><button class="backbtn" id="wallback">← 返回地图</button><h2>明信片墙 · 寄回家的</h2></div>
+  <div class="grid" id="wallgrid"></div>
+</div>
+<div id="flip"><div class="card" id="flipcard"></div></div>
+<script src="static/world110m.js"></script>
+<script>
+if(typeof WORLD_COUNTRIES==="undefined")window.WORLD_COUNTRIES=[];
+if(typeof WORLD_ROADS==="undefined")window.WORLD_ROADS=[];
+if(typeof WORLD_RIVERS==="undefined")window.WORLD_RIVERS=[];
+if(typeof WORLD_LAKES==="undefined")window.WORLD_LAKES=[];
+if(typeof WORLD_TERRAIN==="undefined")window.WORLD_TERRAIN=[];
+if(typeof WORLD_CITIES==="undefined")window.WORLD_CITIES=[];
+</script>
+<script>
+const $=id=>document.getElementById(id);
+const W=1000,H=500;
+const proj=(lat,lon)=>[(lon+180)/360*W,(90-lat)/180*H];
+const NS="http://www.w3.org/2000/svg";
+const INK="#4a3b2c";
+const KAITI='"Kaiti","STKaiti","KaiTi_GB2312",serif';
+const mulberry=a=>()=>{a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);
+  t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296};
+const hash=s=>{let h=0;for(const ch of s)h=(h*31+ch.codePointAt(0))|0;return h};
+
+/* ── 悬浮信息卡 ──────────────────────────────── */
+const tip=$("tip");
+function bindTip(el,htmlFn){
+  el.addEventListener("mouseenter",()=>{tip.innerHTML=htmlFn();tip.style.display="block";});
+  el.addEventListener("mousemove",e=>{
+    const pad=14,r=tip.getBoundingClientRect();
+    let x=e.clientX+pad,y=e.clientY+pad;
+    if(x+r.width>innerWidth-8)x=e.clientX-r.width-pad;
+    if(y+r.height>innerHeight-8)y=e.clientY-r.height-pad;
+    tip.style.left=x+"px";tip.style.top=y+"px";});
+  el.addEventListener("mouseleave",()=>tip.style.display="none");
+}
+
+/* ── 天色:他的钟点 → 色带/天光 ─────────────────── */
+function skyColors(h){
+  if(h>=5&&h<8)  return ["#f3ddc9","#fdf6ec"];
+  if(h>=8&&h<11) return ["#f0d9a8","#fdf3df"];
+  if(h>=11&&h<16)return ["#ecd28f","#fdf1d8"];
+  if(h>=16&&h<20)return ["#d9a6b8","#f7e4e0"];
+  return ["#3a4666","#e9e4da"];
+}
+function phaseOf(h){return (h>=5&&h<8)?"dawn":(h>=8&&h<17)?"day":(h>=17&&h<20)?"dusk":"night";}
+
+/* ── 小工具 ─────────────────────────────────── */
+function mk(tag,attrs,parent){const e=document.createElementNS(NS,tag);
+  for(const k in attrs)e.setAttribute(k,attrs[k]);(parent||$("map")).appendChild(e);return e;}
+function seg(g,d,stroke,w,extra){const p=mk("path",Object.assign({d,fill:"none",
+  stroke:stroke||INK,"stroke-width":w||0.5,"stroke-linecap":"round"},extra||{}),g);return p;}
+
+/* ── 手绘地貌符号 ────────────────────────────── */
+function symMtn(g,x,y,s,snow){
+  seg(g,`M${x-5*s},${y+3*s} L${x},${y-4*s} L${x+5*s},${y+3*s}`,INK,0.7);
+  seg(g,`M${x+1.5*s},${y+3*s} L${x+3.5*s},${y-1*s} L${x+6*s},${y+3*s}`,INK,0.5);
+  seg(g,`M${x+0.8*s},${y-1.6*s} L${x+2.2*s},${y+0.4*s}`,INK,0.35);
+  seg(g,`M${x+1.6*s},${y-0.2*s} L${x+3*s},${y+1.6*s}`,INK,0.35);
+  if(snow)seg(g,`M${x-1.6*s},${y-1.2*s} L${x},${y-4*s} L${x+1.6*s},${y-1.2*s} L${x+0.6*s},${y-0.6*s} L${x-0.6*s},${y-0.6*s} Z`,INK,0.4,{fill:"#fffdf7"});
+}
+function symTree(g,x,y,s){
+  seg(g,`M${x},${y+3*s} L${x},${y-0.5*s}`,INK,0.6);
+  seg(g,`M${x-2.2*s},${y+0.4*s} L${x},${y-4*s} L${x+2.2*s},${y+0.4*s} Z`,INK,0.5,{fill:"#5a6b4a","fill-opacity":.35});
+}
+function symDune(g,x,y,s){
+  seg(g,`M${x-4*s},${y} Q${x},${y-2.4*s} ${x+4*s},${y}`,INK,0.5);
+  seg(g,`M${x-2.6*s},${y+1.6*s} Q${x},${y-0.2*s} ${x+2.6*s},${y+1.6*s}`,INK,0.35);
+}
+function symWave(g,x,y,s){
+  seg(g,`M${x-4*s},${y} Q${x-2*s},${y-2*s} ${x},${y} T${x+4*s},${y}`,INK,0.5);
+}
+function symHouse(g,x,y,s){
+  seg(g,`M${x-2.4*s},${y+2.4*s} L${x-2.4*s},${y-0.6*s} L${x+2.4*s},${y-0.6*s} L${x+2.4*s},${y+2.4*s}`,INK,0.5);
+  seg(g,`M${x-3*s},${y-0.6*s} L${x},${y-3.4*s} L${x+3*s},${y-0.6*s}`,INK,0.6);
+}
+function symGrass(g,x,y,s){
+  seg(g,`M${x-1.6*s},${y+1.6*s} Q${x-1.8*s},${y-1*s} ${x-2.4*s},${y-2*s}`,INK,0.45);
+  seg(g,`M${x},${y+1.6*s} Q${x},${y-1.4*s} ${x},${y-2.6*s}`,INK,0.45);
+  seg(g,`M${x+1.6*s},${y+1.6*s} Q${x+1.8*s},${y-1*s} ${x+2.4*s},${y-2*s}`,INK,0.45);
+}
+const SURF_SYM={rock:"mtn",forest:"tree",sand:"dune",snow:"snow",ice:"snow",
+  water_ocean:"wave",water_fresh:"wave",urban:"house",wetland:"grass",grass:"grass",bare:"dune"};
+function drawSym(g,kind,x,y,s){
+  if(kind==="mtn")symMtn(g,x,y,s,false);
+  else if(kind==="snow")symMtn(g,x,y,s,true);
+  else if(kind==="tree")symTree(g,x,y,s);
+  else if(kind==="dune")symDune(g,x,y,s);
+  else if(kind==="wave")symWave(g,x,y,s);
+  else if(kind==="house")symHouse(g,x,y,s);
+  else symGrass(g,x,y,s);
+}
+/* 落点周围长出地貌——他走过的地方,地图有了细节 */
+function scatterTerrain(g,x,y,surface,seed){
+  const kind=SURF_SYM[surface]||"grass";
+  const rnd=mulberry(seed);
+  for(let i=0;i<7;i++){
+    const a=rnd()*Math.PI*2,r=9+rnd()*11;
+    drawSym(g,kind,x+Math.cos(a)*r,y+Math.sin(a)*r*0.65+4,0.75+rnd()*0.45);
+  }
+}
+
+/* ── 罗盘玫瑰(右下海面) ──────────────────────── */
+function drawCompass(x,y){
+  const g=mk("g",{opacity:.8});
+  mk("circle",{cx:x,cy:y,r:24,fill:"none",stroke:INK,"stroke-width":0.6},g);
+  mk("circle",{cx:x,cy:y,r:19,fill:"none",stroke:INK,"stroke-width":0.35},g);
+  for(let i=0;i<16;i++){const a=i*Math.PI/8,r1=19,r2=i%4===0?24:21.5;
+    seg(g,`M${x+r1*Math.cos(a)},${y+r1*Math.sin(a)} L${x+r2*Math.cos(a)},${y+r2*Math.sin(a)}`,INK,0.4,g);}
+  seg(g,`M${x},${y-17} L${x+3.4},${y} L${x},${y+17} L${x-3.4},${y} Z`,INK,0.5,{fill:INK},g);
+  seg(g,`M${x-17},${y} L${x},${y+3.4} L${x+17},${y} L${x},${y-3.4} Z`,INK,0.5,{fill:"none"},g);
+  seg(g,`M${x-12},${y-12} L${x},${y+2.4} L${x+12},${y+12} L${x},${y-2.4} Z`,"",0,{fill:INK,opacity:.55},g);
+  seg(g,`M${x+12},${y-12} L${x},${y+2.4} L${x-12},${y+12} L${x},${y-2.4} Z`,"",0,{fill:"none",stroke:INK,"stroke-width":.4},g);
+  const t=mk("text",{x:x,y:y-28,"font-size":7.5,fill:INK,"text-anchor":"middle","font-family":KAITI},g);
+  t.textContent="北";
+}
+
+/* ── 地图 ─────────────────────────────────────── */
+/* ── 地图:羊皮纸/手绘墨/中世纪 ───────────────── */
+function drawLand(){
+  const svg=$("map");
+  // 羊皮纸底: 中心亮边缘暗 + 纸纹
+  const defs=mk("defs",{});
+  defs.innerHTML=`
+    <radialGradient id="parch" cx="50%" cy="42%" r="75%">
+      <stop offset="0%" stop-color="#ecdcB4"/>
+      <stop offset="60%" stop-color="#e2cd9e"/>
+      <stop offset="100%" stop-color="#c9ac7c"/>
+    </radialGradient>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.35 0 0 0 0 0.27 0 0 0 0 0.16 0 0 0 0.05 0"/>
+      <feComposite operator="over" in2="SourceGraphic"/></filter>
+    <filter id="wobble"><feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2.2"/></filter>`;
+  mk("rect",{x:-14,y:-10,width:1028,height:520,fill:"url(#parch)"});
+  mk("rect",{x:-14,y:-10,width:1028,height:520,fill:"none",filter:"url(#grain)"});
+  // 国家(虚线边界,无填充,地形透出来)
+  const gl=mk("g",{id:"lg-land",filter:"url(#wobble)"});
+  const glabel=mk("g",{id:"lg-clabel","pointer-events":"none"});
+  WORLD_COUNTRIES.forEach((c)=>{
+    const d=c.r.map(ring=>ring.map((pt,j)=>(j?"L":"M")+proj(pt[1],pt[0]).map(v=>v.toFixed(1)).join(",")).join("")+"Z").join("");
+    let minx=1e9,maxx=-1e9,miny=1e9,maxy=-1e9;
+    for(const ring of c.r)for(const[lo,la]of ring){
+      const[px,py]=proj(la,lo);
+      if(px<minx)minx=px;if(px>maxx)maxx=px;if(py<miny)miny=py;if(py>maxy)maxy=py;}
+    const bw=maxx-minx,bh=maxy-miny;
+    const big=bw>30||bw*bh>900;
+    // 小国不画边界(中世纪没有那么多界),但留着悬浮
+    const p=mk("path",{d,fill:"#d9bd8a","fill-opacity":0,stroke:INK,
+      "stroke-width":big?0.5:0,"stroke-linejoin":"round","fill-rule":"evenodd",opacity:big?.75:1},gl);
+    p.addEventListener("mouseenter",()=>p.setAttribute("fill-opacity","0.4"));
+    p.addEventListener("mouseleave",()=>p.setAttribute("fill-opacity","0"));
+    bindTip(p,()=>`<div class="zh">${c.z}</div><div class="dim">${c.n}</div>`);
+    if(bw>34||bw*bh>1300){
+      const[tx,ty]=proj(c.c[1],c.c[0]);
+      const fs=Math.max(7,Math.min(12,bw/9));
+      const t=mk("text",{x:tx,y:ty,"font-size":fs,fill:INK,"text-anchor":"middle",
+        opacity:.8,"letter-spacing":2,"font-family":KAITI,
+        "paint-order":"stroke",stroke:"#e6d4a6","stroke-width":2.2},glabel);
+      t.textContent=c.z;
+    }
+  });
+  // 湖泊
+  const glk=mk("g",{id:"lg-lakes"});
+  for(const ring of WORLD_LAKES){
+    mk("path",{d:ring.map((pt,i)=>(i?"L":"M")+proj(pt[1],pt[0]).map(v=>v.toFixed(1)).join(",")).join("")+"Z",
+      fill:"#d3bd90",stroke:INK,"stroke-width":0.3,opacity:.8},glk);
+  }
+  // 河流(墨线)
+  const grv=mk("g",{id:"lg-rivers",opacity:.65});
+  let rvPath="";
+  for(const line of WORLD_RIVERS)
+    rvPath+=line.map((pt,i)=>(i?"L":"M")+proj(pt[1],pt[0]).map(v=>v.toFixed(1)).join(",")).join("");
+  seg(grv,rvPath,INK,0.35);
+  // 手绘地貌符号: 山/雪/树/沙——全世界都长出来
+  const gt=mk("g",{id:"lg-relief",opacity:.85});
+  for(const[lo,la,k,sc]of WORLD_TERRAIN){
+    const[x,y]=proj(la,lo);
+    const s=sc||1;
+    if(k==="m")symMtn(gt,x,y,1.1*s,false);
+    else if(k==="s")symMtn(gt,x,y,1.1*s,true);
+    else if(k==="t"){symTree(gt,x,y,0.85*s);symTree(gt,x+2.6,y+1.2,0.6*s);}
+    else symDune(gt,x,y,0.85*s);
+  }
+  // 路网 = 虚线小径(中世纪没有公路,只有路)
+  const rd=mk("g",{id:"lg-roads",opacity:.25});
+  let rdPath="";
+  for(const line of WORLD_ROADS)
+    rdPath+=line.map((pt,i)=>(i?"L":"M")+proj(pt[1],pt[0]).map(v=>v.toFixed(1)).join(",")).join("");
+  seg(rd,rdPath,INK,0.35,{"stroke-dasharray":"1.6,1.8"});
+  // 大城市: 小房子+名
+  const gcity=mk("g",{id:"lg-city"});
+  for(const c of WORLD_CITIES){
+    if(!c.big)continue;
+    const[x,y]=proj(c.c[1],c.c[0]);
+    symHouse(gcity,x,y,0.75);
+    const t=mk("text",{x:x+3.4,y:y+2,"font-size":6.5,fill:INK,
+      opacity:.9,"font-family":KAITI,"paint-order":"stroke",stroke:"#e6d4a6","stroke-width":1.8},gcity);
+    t.textContent=c.z;
+  }
+  drawCompass(918,428);
+  // 图框:双线
+  mk("rect",{x:-14,y:-10,width:1028,height:520,fill:"none",stroke:INK,"stroke-width":1.6});
+  mk("rect",{x:-9,y:-5,width:1018,height:510,fill:"none",stroke:INK,"stroke-width":0.5});
+  // 数据图层
+  for(const id of["lg-terrain","lg-path","lg-sight","lg-card","lg-mark","lg-pin"])
+    mk("g",{id});
+}
+
+function dot(g,x,y,r,fill,stroke){const c=document.createElementNS(NS,"circle");
+  c.setAttribute("cx",x);c.setAttribute("cy",y);c.setAttribute("r",r);
+  c.setAttribute("fill",fill);if(stroke)c.setAttribute("stroke",stroke);
+  g.appendChild(c);return c;}
+
+/* ── 数据图层(每轮重画) ─────────────────────── */
+function renderMap(hist,marks,sights,cards){
+  for(const id of["lg-terrain","lg-path","lg-sight","lg-card","lg-mark","lg-pin"])
+    $(id).replaceChildren();
+  // 落点地貌(先画,垫在图钉下)
+  for(const l of hist.landings||[]){const[x,y]=proj(l.lat,l.lon);
+    scatterTerrain($("lg-terrain"),x,y,l.surface,hash(l.place));}
+  // path
+  const pts=(hist.path||[]).map(s=>proj(s.lat,s.lon));
+  if(pts.length>1){const pl=mk("polyline",{
+    points:pts.map(p=>p.map(v=>v.toFixed(1)).join(",")).join(" "),
+    fill:"none",stroke:INK,"stroke-width":0.8,opacity:.55,"stroke-dasharray":"2.5,2"},$("lg-path"));}
+  // 动物爪印
+  for(const s of sights){const[x,y]=proj(s.lat,s.lon);
+    const g=$("lg-sight");
+    const c1=dot(g,x,y,1.2,"#7a6a4f");dot(g,x-1.6,y-1.6,.7,"#7a6a4f");dot(g,x+1.6,y-1.6,.7,"#7a6a4f");
+    const dist=s.distance_m?(s.distance_m>=1000?(s.distance_m/1000).toFixed(1)+"km":s.distance_m+"m"):"?";
+    bindTip(c1,()=>`<div class="zh">🐾 ${s.common_name||s.name}</div><div class="dim">${dist} · ${s.seen_at||""}</div>`);}
+  // 明信片信封
+  for(const cd of cards){const st=cd.stamp||{};if(st.lat==null)continue;
+    const[x,y]=proj(st.lat,st.lon);const r=mk("rect",{x:x-2.2,y:y-1.5,width:4.4,height:3,
+      fill:"#fffdf7",stroke:"#b5442c","stroke-width":0.5},$("lg-card"));
+    r.style.cursor="pointer";
+    bindTip(r,()=>`<div class="zh">✉ 明信片 · ${st.place}</div><div class="dim">${(st.local_time||"").slice(0,16)} · 点开看</div>`);
+    r.onclick=()=>openCard(cd.id);}
+  // marks 星
+  for(const m of marks){const[x,y]=proj(m.lat,m.lon);
+    const s=mk("path",{d:"M0,-3 L0.9,-0.9 3,-0.9 1.4,0.5 1.9,3 0,1.5 -1.9,3 -1.4,0.5 -3,-0.9 -0.9,-0.9 Z",
+      transform:`translate(${x},${y}) scale(0.9)`,fill:"#c89b3c",stroke:INK,"stroke-width":0.3},$("lg-mark"));
+    bindTip(s,()=>`<div class="zh">★ ${m.name}</div>${m.note?`<div class="dim">${m.note}</div>`:""}`);}
+  // 落点图钉+卷轴地名标
+  for(const l of hist.landings||[]){const[x,y]=proj(l.lat,l.lon);
+    const c=dot($("lg-pin"),x,y,2.2,"#b5442c","#fffdf7");
+    bindTip(c,()=>`<div class="zh">${l.place}</div><div class="dim">第 ${l.count} 次来 · ${(l.last||"").slice(0,10)}</div>`);
+    // 卷轴标签
+    const label=l.place+(l.count>1?" "+l.count:"");
+    const wpx=label.length*6.8+8;
+    const lx=x+6>W-wpx-8?x-6-wpx:x+6, ly=y-14;
+    const g2=$("lg-pin");
+    mk("rect",{x:lx,y:ly,width:wpx,height:11,rx:2,fill:"#fffdf7",stroke:INK,"stroke-width":0.4,opacity:.92},g2);
+    const t=mk("text",{x:lx+wpx/2,y:ly+8,"font-size":6.8,fill:INK,"text-anchor":"middle","font-family":KAITI},g2);
+    t.textContent=label;
+  }
+}
+
+/* ── 当下卡片 ─────────────────────────────────── */
+function renderNow(st){
+  const meta=$("nowmeta"),text=$("nowtext"),stats=$("nowstats");
+  if(!st.pos){meta.textContent="还没开门";text.textContent="他在路上的时候,这里会写着他在哪。";
+    stats.textContent="";return;}
+  let h=null;
+  if(st.local_time)h=parseInt(st.local_time.slice(11,13),10);
+  const when=st.local_time?st.local_time.slice(0,16).replace("T"," "):"";
+  const env=st.env||{};
+  meta.textContent=(when?when+" · ":"")+(st.mode||"walk")+
+    (env.temp_c!=null?" · "+env.temp_c+"°":"")+(env.elevation!=null?" · "+env.elevation+"m":"");
+  text.textContent=st.last_text||"……";
+  const bits=[];
+  if(st.radio&&st.radio.name)bits.push("📻 "+st.radio.name);
+  stats.textContent=bits.join(" · ");
+  if(h!=null){const[cap,card]=skyColors(h);
+    $("skycap").style.background=cap;$("now").style.background=card+"dd";}
+}
+
+/* ── 明信片正面:真图优先,SVG 兜底 ─────────────── */
+function frontHTML(stamp,id,frontImg){
+  if(frontImg)return `<img src="${frontImg}" alt="">`;
+  return frontSVG(stamp,id);
+}
+function frontSVG(stamp,id){
+  const rnd=mulberry(id*7919+13);
+  const h=stamp.local_time?parseInt(stamp.local_time.slice(11,13),10):12;
+  const ph=stamp.phase||phaseOf(h);
+  const skies={dawn:["#f3ddc9","#e8b48f"],day:["#cfe3ee","#f5e9c9"],
+    dusk:["#e8b48f","#7d6b9e"],night:["#26304d","#10182e"]};
+  const[top,bot]=skies[ph]||skies.day;
+  const surf=stamp.surface||"grass",elev=stamp.elevation||0;
+  const wx=stamp.weather||"";
+  let g="";
+  g+=`<defs><linearGradient id="sky${id}" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="${top}"/><stop offset="1" stop-color="${bot}"/></linearGradient></defs>`;
+  g+=`<rect width="300" height="190" fill="url(#sky${id})"/>`;
+  const cx=60+rnd()*180,cy=30+rnd()*40;
+  if(ph==="night")g+=`<circle cx="${cx}" cy="${cy}" r="10" fill="#e8e4d8"/>`;
+  else g+=`<circle cx="${cx}" cy="${cy}" r="12" fill="${ph==="dusk"?"#d96f4e":"#f2d98a"}" opacity=".9"/>`;
+  const ink="#3a3226";
+  if(surf==="forest"){
+    for(let i=0;i<9;i++){const x=i*36+rnd()*10,th=30+rnd()*25;
+      g+=`<path d="M${x},150 l10,-${th} l10,${th} Z" fill="${ink}" opacity="${.55+rnd()*.3}"/>`;}
+    g+=`<rect y="150" width="300" height="40" fill="#5a6b4a"/>`;
+  }else if(surf==="urban"){
+    for(let i=0;i<7;i++){const x=i*44+rnd()*8,bh=30+rnd()*50,bw=24+rnd()*14;
+      g+=`<rect x="${x}" y="${150-bh}" width="${bw}" height="${bh}" fill="${ink}" opacity=".6"/>`;}
+    g+=`<path d="M150,150 l8,-45 l8,45 Z" fill="${ink}" opacity=".7"/>`;
+    g+=`<rect y="150" width="300" height="40" fill="#8a8073"/>`;
+  }else if(surf==="sand"){
+    g+=`<path d="M0,150 Q75,${118+rnd()*10} 150,142 T300,138 V190 H0 Z" fill="#d9b97e"/>`;
+    g+=`<path d="M0,162 Q100,146 200,158 T300,154 V190 H0 Z" fill="#c9a86a"/>`;
+  }else if(surf==="snow"||surf==="ice"){
+    g+=`<path d="M0,140 L60,${108+rnd()*12} 120,132 190,${100+rnd()*14} 300,126 V190 H0 Z" fill="#f2f0ea"/>`;
+  }else if(surf==="water_ocean"||surf==="water_fresh"){
+    g+=`<rect y="120" width="300" height="70" fill="${ph==="night"?"#1d2a44":"#7fa3b8"}"/>`;
+    g+=`<line x1="0" y1="120" x2="300" y2="120" stroke="${ink}" stroke-width="0.6" opacity=".5"/>`;
+    for(let i=0;i<4;i++){const y=132+i*12;
+      g+=`<path d="M${20+rnd()*40},${y} q30,4 60,0 t60,0" stroke="#f5f0e6" fill="none" stroke-width="0.8" opacity=".5"/>`;}
+  }else if(surf==="rock"||elev>1500){
+    g+=`<path d="M0,150 L50,${90+rnd()*20} 90,130 140,${80+rnd()*20} 200,120 250,${95+rnd()*15} 300,132 V190 H0 Z" fill="${ink}" opacity=".65"/>`;
+  }else{
+    g+=`<path d="M0,150 Q150,${130+rnd()*10} 300,146 V190 H0 Z" fill="#7a8a5a"/>`;
+    g+=`<path d="M230,148 l0,-22 M230,126 q-10,-8 -16,2 M230,126 q10,-10 17,1" stroke="${ink}" stroke-width="1.6" fill="none" opacity=".6"/>`;
+  }
+  if(/雨/.test(wx))for(let i=0;i<14;i++){const x=rnd()*300,y=rnd()*150;
+    g+=`<line x1="${x}" y1="${y}" x2="${x-3}" y2="${y+9}" stroke="#e8e4da" stroke-width="0.8" opacity=".7"/>`;}
+  if(/雪/.test(wx))for(let i=0;i<20;i++)
+    g+=`<circle cx="${rnd()*300}" cy="${rnd()*160}" r="1" fill="#fff" opacity=".8"/>`;
+  if(/阴|云|雾/.test(wx))g+=`<rect width="300" height="190" fill="#9aa0a8" opacity=".18"/>`;
+  g+=`<rect x="4" y="4" width="292" height="182" fill="none" stroke="#f5f0e6" stroke-width="3"/>`;
+  return `<svg viewBox="0 0 300 190" xmlns="${NS}">${g}</svg>`;
+}
+
+/* ── 明信片墙 ─────────────────────────────────── */
+let CARDS=[];
+function renderWall(cards){
+  CARDS=cards;
+  $("wallgrid").innerHTML=cards.map((c,i)=>
+    `<div class="mini" style="--tilt:${(i%3-1)*1.2}deg" onclick="openCard(${c.id})">
+      ${frontHTML(c.stamp||{},c.id,c.front_img)}
+      <div class="cap">${(c.stamp||{}).place||""} · ${((c.stamp||{}).local_time||"").slice(0,10)}</div>
+    </div>`).join("")||"<p>还没有明信片。他寄了,这里就有。</p>";
+}
+function openCard(id){
+  const c=CARDS.find(x=>x.id===id);if(!c)return;
+  const st=c.stamp||{};
+  const replies=(c.replies||[]).map(r=>`<div class="r">↩ ${r.content||r}</div>`).join("");
+  $("flipcard").innerHTML=`
+    ${frontHTML(st,c.id,c.front_img)}
+    <div class="back">
+      <div class="words">${c.text||""}</div>
+      <div class="stamp">${st.place||""}<br>${Math.abs(st.lat||0).toFixed(1)}°${st.lat>=0?"N":"S"} ${Math.abs(st.lon||0).toFixed(1)}°${st.lon>=0?"E":"W"}<br>${st.local_time||""}</div>
+      <div class="replies">${replies}
+        <div class="replybox">
+          <input id="replyin" placeholder="回他一句……">
+          <button onclick="sendReply(${c.id})">寄回</button>
+        </div>
+      </div>
+      <div class="flipbar"><span onclick="closeFlip()">合上</span><span onclick="tearCard(${c.id})" style="color:#b5442c">撕掉</span><span>${st.elevation!=null?"海拔 "+st.elevation+"m":""} ${st.weather||""}</span></div>
+    </div>`;
+  $("flip").classList.add("open");
+}
+function closeFlip(){$("flip").classList.remove("open");}
+async function sendReply(id){
+  const v=$("replyin").value.trim();if(!v)return;
+  const r=await fetch(`/postcard/${id}/reply`,{method:"POST",
+    headers:{"Content-Type":"application/json"},body:JSON.stringify({content:v})});
+  if(r.ok){$("replyin").value="";load();}
+}
+async function tearCard(id){
+  const c=CARDS.find(x=>x.id===id);
+  const where=(c&&c.stamp&&c.stamp.place)||"这张";
+  if(!confirm(`撕掉「${where}」这张明信片?`))return;
+  const r=await fetch(`/postcard/${id}`,{method:"DELETE"});
+  if(r.ok){closeFlip();load();}
+}
+
+/* ── 轮询 ─────────────────────────────────────── */
+async function load(){
+  try{
+    const[st,hist,marks,sights,cards]=await Promise.all([
+      fetch("/state").then(r=>r.json()),
+      fetch("/history").then(r=>r.json()),
+      fetch("/marks").then(r=>r.json()),
+      fetch("/sightings").then(r=>r.json()),
+      fetch("/postcards").then(r=>r.json()),
+    ]);
+    renderNow(st);
+    renderMap(hist,marks,sights,cards);
+    renderWall(cards);
+  }catch(e){/* 他不在线也不炸,下轮再来 */}
+}
+function setWall(open){
+  $("wall").classList.toggle("open",open);
+  $("wallbtn").style.display=open?"none":"block";
+}
+$("wallbtn").onclick=()=>setWall(true);
+$("wallback").onclick=()=>setWall(false);
+$("flip").onclick=e=>{if(e.target.id==="flip")closeFlip();};
+drawLand();
+load();
+setInterval(load,4000);
+</script>
+</body>
+</html>

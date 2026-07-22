@@ -1,0 +1,2922 @@
+{
+ "富士山": [
+  {
+   "zh": "鸡爪槭",
+   "la": "Acer palmatum"
+  },
+  {
+   "zh": "虎杖",
+   "la": "Reynoutria japonica"
+  },
+  {
+   "zh": "紫斑风铃草",
+   "la": "Campanula punctata"
+  },
+  {
+   "zh": "日本柳杉",
+   "la": "Cryptomeria japonica"
+  },
+  {
+   "zh": "马醉木",
+   "la": "Pieris japonica"
+  },
+  {
+   "zh": "青木",
+   "la": "Aucuba japonica"
+  },
+  {
+   "zh": "伏石蕨",
+   "la": "Lemmaphyllum microphyllum"
+  },
+  {
+   "zh": "扁柏",
+   "la": "Chamaecyparis obtusa"
+  },
+  {
+   "zh": "日本落叶松",
+   "la": "Larix kaempferi"
+  },
+  {
+   "zh": "紫花堇菜",
+   "la": "Viola grypoceras"
+  },
+  {
+   "zh": "蕺菜",
+   "la": "Houttuynia cordata"
+  },
+  {
+   "zh": "蝴蝶花",
+   "la": "Iris japonica"
+  }
+ ],
+ "长白山": [
+  {
+   "zh": "毛蕊老鹳草",
+   "la": "Geranium platyanthum"
+  },
+  {
+   "zh": "欧洲花楸",
+   "la": "Sorbus aucuparia"
+  },
+  {
+   "zh": "岳桦",
+   "la": "Betula ermanii"
+  },
+  {
+   "zh": "山尖子",
+   "la": "Parasenecio hastatus"
+  },
+  {
+   "zh": "牛皮杜鹃",
+   "la": "Rhododendron aureum"
+  },
+  {
+   "zh": "柳属",
+   "la": "Salix"
+  },
+  {
+   "zh": "鱼鳞云杉",
+   "la": "Picea jezoensis"
+  },
+  {
+   "zh": "尖萼耧斗菜",
+   "la": "Aquilegia oxysepala"
+  },
+  {
+   "zh": "假升麻",
+   "la": "Aruncus dioicus"
+  },
+  {
+   "zh": "北疆风铃草",
+   "la": "Campanula glomerata"
+  },
+  {
+   "zh": "水金凤",
+   "la": "Impatiens noli-tangere"
+  },
+  {
+   "zh": "花楷枫",
+   "la": "Acer ukurunduense"
+  }
+ ],
+ "维苏威火山": [
+  {
+   "zh": "红缬草",
+   "la": "Centranthus ruber"
+  },
+  {
+   "zh": "冬青栎",
+   "la": "Quercus ilex"
+  },
+  {
+   "zh": "",
+   "la": "Antirrhinum siculum"
+  },
+  {
+   "zh": "鹰爪豆",
+   "la": "Spartium junceum"
+  },
+  {
+   "zh": "夹竹桃",
+   "la": "Nerium oleander"
+  },
+  {
+   "zh": "臭椿",
+   "la": "Ailanthus altissima"
+  },
+  {
+   "zh": "香雪球",
+   "la": "Lobularia maritima"
+  },
+  {
+   "zh": "铁线蕨",
+   "la": "Adiantum capillus-veneris"
+  },
+  {
+   "zh": "虞美人",
+   "la": "Papaver rhoeas"
+  },
+  {
+   "zh": "黄花酢浆草",
+   "la": "Oxalis pes-caprae"
+  },
+  {
+   "zh": "犹地亚墙草",
+   "la": "Parietaria judaica"
+  },
+  {
+   "zh": "梨果仙人掌",
+   "la": "Opuntia ficus-indica"
+  }
+ ],
+ "乞力马扎罗": [
+  {
+   "zh": "乞峰千里木",
+   "la": "Dendrosenecio kilimanjari"
+  },
+  {
+   "zh": "",
+   "la": "Lobelia deckenii"
+  },
+  {
+   "zh": "奇力馬札羅鳳仙",
+   "la": "Impatiens kilimanjari"
+  },
+  {
+   "zh": "",
+   "la": "Protea afra"
+  },
+  {
+   "zh": "",
+   "la": "Afrocarduus keniensis"
+  },
+  {
+   "zh": "",
+   "la": "Impatiens pseudoviola"
+  },
+  {
+   "zh": "",
+   "la": "Kniphofia thomsonii"
+  },
+  {
+   "zh": "",
+   "la": "Gladiolus watsonioides"
+  },
+  {
+   "zh": "猴面包树",
+   "la": "Adansonia digitata"
+  },
+  {
+   "zh": "柏状黄蓉菊",
+   "la": "Euryops dacrydioides"
+  },
+  {
+   "zh": "",
+   "la": "Helichrysum newii"
+  },
+  {
+   "zh": "",
+   "la": "Helichrysum citrispinum"
+  }
+ ],
+ "埃特纳火山": [
+  {
+   "zh": "",
+   "la": "Astragalus siculus"
+  },
+  {
+   "zh": "",
+   "la": "Genista etnensis"
+  },
+  {
+   "zh": "红缬草",
+   "la": "Centranthus ruber"
+  },
+  {
+   "zh": "",
+   "la": "Anthemis aetnensis"
+  },
+  {
+   "zh": "细裂叶阿魏",
+   "la": "Ferula communis"
+  },
+  {
+   "zh": "黄花酢浆草",
+   "la": "Oxalis pes-caprae"
+  },
+  {
+   "zh": "",
+   "la": "Saponaria sicula"
+  },
+  {
+   "zh": "紫乳刺蓟",
+   "la": "Galactites tomentosus"
+  },
+  {
+   "zh": "梨果仙人掌",
+   "la": "Opuntia ficus-indica"
+  },
+  {
+   "zh": "蓝紫倒距兰",
+   "la": "Anacamptis morio"
+  },
+  {
+   "zh": "长盾酸模",
+   "la": "Rumex scutatus"
+  },
+  {
+   "zh": "",
+   "la": "Senecio aethnensis"
+  }
+ ],
+ "莫纳罗亚": [
+  {
+   "zh": "多型铁心木",
+   "la": "Metrosideros polymorpha"
+  },
+  {
+   "zh": "",
+   "la": "Leptecophylla tameiameiae"
+  },
+  {
+   "zh": "细脉越橘",
+   "la": "Vaccinium reticulatum"
+  },
+  {
+   "zh": "竹叶兰",
+   "la": "Arundina graminifolia"
+  },
+  {
+   "zh": "红丝姜花",
+   "la": "Hedychium gardnerianum"
+  },
+  {
+   "zh": "铁芒萁",
+   "la": "Dicranopteris linearis"
+  },
+  {
+   "zh": "夏威夷金毛狗蕨",
+   "la": "Cibotium glaucum"
+  },
+  {
+   "zh": "头花蓼",
+   "la": "Persicaria capitata"
+  },
+  {
+   "zh": "",
+   "la": "Acacia koa"
+  },
+  {
+   "zh": "车桑子",
+   "la": "Dodonaea viscosa"
+  },
+  {
+   "zh": "大巴戟",
+   "la": "Morinda citrifolia"
+  },
+  {
+   "zh": "夏威夷苦參",
+   "la": "Sophora chrysophylla"
+  }
+ ],
+ "皮纳图博": [
+  {
+   "zh": "羽芒菊",
+   "la": "Tridax procumbens"
+  },
+  {
+   "zh": "番木瓜",
+   "la": "Carica papaya"
+  },
+  {
+   "zh": "红龙船花",
+   "la": "Ixora coccinea"
+  },
+  {
+   "zh": "百合竹",
+   "la": "Dracaena reflexa"
+  },
+  {
+   "zh": "叶子花",
+   "la": "Bougainvillea spectabilis"
+  },
+  {
+   "zh": "马缨丹",
+   "la": "Lantana camara"
+  },
+  {
+   "zh": "黄叶倒吊笔",
+   "la": "Wrightia antidysenterica"
+  },
+  {
+   "zh": "芒果",
+   "la": "Mangifera indica"
+  },
+  {
+   "zh": "飞机草",
+   "la": "Chromolaena odorata"
+  },
+  {
+   "zh": "朱槿",
+   "la": "Hibiscus × rosa-sinensis"
+  },
+  {
+   "zh": "五彩苏",
+   "la": "Coleus scutellarioides"
+  },
+  {
+   "zh": "含羞草",
+   "la": "Mimosa pudica"
+  }
+ ],
+ "艾雅法拉": [
+  {
+   "zh": "努特卡羽扇豆",
+   "la": "Lupinus nootkatensis"
+  },
+  {
+   "zh": "海滨蝇子草",
+   "la": "Silene uniflora"
+  },
+  {
+   "zh": "海石竹",
+   "la": "Armeria maritima"
+  },
+  {
+   "zh": "欧白芷",
+   "la": "Angelica archangelica"
+  },
+  {
+   "zh": "早花百里香",
+   "la": "Thymus praecox"
+  },
+  {
+   "zh": "红景天",
+   "la": "Rhodiola rosea"
+  },
+  {
+   "zh": "无茎蝇子草",
+   "la": "Silene acaulis"
+  },
+  {
+   "zh": "驴蹄草",
+   "la": "Caltha palustris"
+  },
+  {
+   "zh": "林地老鹳草",
+   "la": "Geranium sylvaticum"
+  },
+  {
+   "zh": "冰漆姑",
+   "la": "Honckenya peploides"
+  },
+  {
+   "zh": "密毛柳",
+   "la": "Salix lanata"
+  },
+  {
+   "zh": "冷蕨",
+   "la": "Cystopteris fragilis"
+  }
+ ],
+ "大堡礁": [
+  {
+   "zh": "帚状绿毛藻",
+   "la": "Chlorodesmis fastigiata"
+  },
+  {
+   "zh": "番茄",
+   "la": "Solanum lycopersicum"
+  },
+  {
+   "zh": "大麻",
+   "la": "Cannabis sativa"
+  },
+  {
+   "zh": "仙掌藻属",
+   "la": "Halimeda"
+  },
+  {
+   "zh": "柏叶蕨藻",
+   "la": "Caulerpa cupressoides"
+  },
+  {
+   "zh": "滑线藻目",
+   "la": "Nemastomatales"
+  },
+  {
+   "zh": "钱币蕨藻",
+   "la": "Caulerpa nummularia"
+  }
+ ],
+ "好望角": [
+  {
+   "zh": "串珠骨子菊",
+   "la": "Osteospermum moniliferum"
+  },
+  {
+   "zh": "兜叶天竺葵",
+   "la": "Pelargonium cucullatum"
+  },
+  {
+   "zh": "帝王花",
+   "la": "Protea cynaroides"
+  },
+  {
+   "zh": "黄冠木百合",
+   "la": "Leucadendron xanthoconus"
+  },
+  {
+   "zh": "灰针垫花",
+   "la": "Leucospermum conocarpodendron"
+  },
+  {
+   "zh": "矮帝王花",
+   "la": "Protea repens"
+  },
+  {
+   "zh": "冷杉欧石南",
+   "la": "Erica abietina"
+  },
+  {
+   "zh": "头状天竺葵",
+   "la": "Pelargonium capitatum"
+  },
+  {
+   "zh": "垂花欧石南",
+   "la": "Erica plukenetii"
+  },
+  {
+   "zh": "木百合",
+   "la": "Leucadendron salignum"
+  },
+  {
+   "zh": "食用日中花",
+   "la": "Carpobrotus edulis"
+  },
+  {
+   "zh": "月桂叶木百合",
+   "la": "Leucadendron laureolum"
+  }
+ ],
+ "鳕鱼角": [
+  {
+   "zh": "刚松",
+   "la": "Pinus rigida"
+  },
+  {
+   "zh": "玫瑰",
+   "la": "Rosa rugosa"
+  },
+  {
+   "zh": "宾州杨梅",
+   "la": "Morella pensylvanica"
+  },
+  {
+   "zh": "刺松藻",
+   "la": "Codium fragile"
+  },
+  {
+   "zh": "熊果",
+   "la": "Arctostaphylos uva-ursi"
+  },
+  {
+   "zh": "北美圆柏",
+   "la": "Juniperus virginiana"
+  },
+  {
+   "zh": "斑叶喜冬草",
+   "la": "Chimaphila maculata"
+  },
+  {
+   "zh": "毒漆藤",
+   "la": "Toxicodendron radicans"
+  },
+  {
+   "zh": "桤叶山柳",
+   "la": "Clethra alnifolia"
+  },
+  {
+   "zh": "常绿一枝黄花",
+   "la": "Solidago sempervirens"
+  },
+  {
+   "zh": "南蛇藤",
+   "la": "Celastrus orbiculatus"
+  },
+  {
+   "zh": "野黑樱",
+   "la": "Prunus serotina"
+  }
+ ],
+ "诺曼底": [
+  {
+   "zh": "倒距兰",
+   "la": "Anacamptis pyramidalis"
+  },
+  {
+   "zh": "欧洲对开蕨",
+   "la": "Asplenium scolopendrium"
+  },
+  {
+   "zh": "强壮红门兰",
+   "la": "Orchis mascula"
+  },
+  {
+   "zh": "荆豆",
+   "la": "Ulex europaeus"
+  },
+  {
+   "zh": "红缬草",
+   "la": "Centranthus ruber"
+  },
+  {
+   "zh": "洋繁縷",
+   "la": "Rabelera holostea"
+  },
+  {
+   "zh": "蔓柳穿鱼",
+   "la": "Cymbalaria muralis"
+  },
+  {
+   "zh": "雏菊",
+   "la": "Bellis perennis"
+  },
+  {
+   "zh": "海大㦸",
+   "la": "Euphorbia paralias"
+  },
+  {
+   "zh": "西洋接骨木",
+   "la": "Sambucus nigra"
+  },
+  {
+   "zh": "汉荭鱼腥草",
+   "la": "Geranium robertianum"
+  },
+  {
+   "zh": "夏栎",
+   "la": "Quercus robur"
+  }
+ ],
+ "阿马尔菲": [
+  {
+   "zh": "红缬草",
+   "la": "Centranthus ruber"
+  },
+  {
+   "zh": "冬青栎",
+   "la": "Quercus ilex"
+  },
+  {
+   "zh": "",
+   "la": "Antirrhinum siculum"
+  },
+  {
+   "zh": "鹰爪豆",
+   "la": "Spartium junceum"
+  },
+  {
+   "zh": "香雪球",
+   "la": "Lobularia maritima"
+  },
+  {
+   "zh": "夹竹桃",
+   "la": "Nerium oleander"
+  },
+  {
+   "zh": "臭椿",
+   "la": "Ailanthus altissima"
+  },
+  {
+   "zh": "铁线蕨",
+   "la": "Adiantum capillus-veneris"
+  },
+  {
+   "zh": "虞美人",
+   "la": "Papaver rhoeas"
+  },
+  {
+   "zh": "意大利松",
+   "la": "Pinus pinea"
+  },
+  {
+   "zh": "常春藤叶仙客来",
+   "la": "Cyclamen hederifolium"
+  },
+  {
+   "zh": "犹地亚墙草",
+   "la": "Parietaria judaica"
+  }
+ ],
+ "大苏尔": [
+  {
+   "zh": "加州栎",
+   "la": "Quercus agrifolia"
+  },
+  {
+   "zh": "小球花酒神菊",
+   "la": "Baccharis pilularis"
+  },
+  {
+   "zh": "",
+   "la": "Castilleja latifolia"
+  },
+  {
+   "zh": "太平洋毒漆",
+   "la": "Toxicodendron diversilobum"
+  },
+  {
+   "zh": "",
+   "la": "Diplacus aurantiacus"
+  },
+  {
+   "zh": "花菱草(加州罂粟)",
+   "la": "Eschscholzia californica"
+  },
+  {
+   "zh": "大果柏",
+   "la": "Hesperocyparis macrocarpa"
+  },
+  {
+   "zh": "红花飞蓬",
+   "la": "Erigeron glaucus"
+  },
+  {
+   "zh": "",
+   "la": "Eriogonum parvifolium"
+  },
+  {
+   "zh": "木本羽扇豆",
+   "la": "Lupinus arboreus"
+  },
+  {
+   "zh": "",
+   "la": "Eriophyllum staechadifolium"
+  },
+  {
+   "zh": "",
+   "la": "Stachys bullata"
+  }
+ ],
+ "下龙湾": [
+  {
+   "zh": "剑叶龙血树",
+   "la": "Dracaena cochinchinensis"
+  },
+  {
+   "zh": "",
+   "la": "Primulina drakei"
+  },
+  {
+   "zh": "波西亚秋海棠",
+   "la": "Begonia boisiana"
+  },
+  {
+   "zh": "白花鬼针草",
+   "la": "Bidens alba"
+  },
+  {
+   "zh": "疣柄魔芋",
+   "la": "Amorphophallus paeoniifolius"
+  },
+  {
+   "zh": "下龙苏铁",
+   "la": "Cycas tropophylla"
+  },
+  {
+   "zh": "飞机草",
+   "la": "Chromolaena odorata"
+  },
+  {
+   "zh": "热亚海芋",
+   "la": "Alocasia macrorrhizos"
+  },
+  {
+   "zh": "柬埔寨龙血树",
+   "la": "Dracaena cambodiana"
+  },
+  {
+   "zh": "马占相思",
+   "la": "Acacia mangium"
+  },
+  {
+   "zh": "马缨丹",
+   "la": "Lantana camara"
+  },
+  {
+   "zh": "假苹婆",
+   "la": "Sterculia lanceolata"
+  }
+ ],
+ "里约热内卢": [
+  {
+   "zh": "炮弹树",
+   "la": "Couroupita guianensis"
+  },
+  {
+   "zh": "巴西苏木",
+   "la": "Paubrasilia echinata"
+  },
+  {
+   "zh": "菠萝蜜",
+   "la": "Artocarpus heterophyllus"
+  },
+  {
+   "zh": "",
+   "la": "Cecropia glaziovii"
+  },
+  {
+   "zh": "红苞铁兰",
+   "la": "Tillandsia stricta"
+  },
+  {
+   "zh": "裸茎光萼荷",
+   "la": "Aechmea nudicaulis"
+  },
+  {
+   "zh": "巴西胡椒木",
+   "la": "Schinus terebinthifolia"
+  },
+  {
+   "zh": "竹节秋海棠",
+   "la": "Begonia maculata"
+  },
+  {
+   "zh": "毕当茄",
+   "la": "Eugenia uniflora"
+  },
+  {
+   "zh": "美丽异木棉",
+   "la": "Ceiba speciosa"
+  },
+  {
+   "zh": "紫花山姜",
+   "la": "Alpinia purpurata"
+  },
+  {
+   "zh": "绿萝",
+   "la": "Epipremnum aureum"
+  }
+ ],
+ "亚马逊雨林": [
+  {
+   "zh": "王莲",
+   "la": "Victoria amazonica"
+  },
+  {
+   "zh": "叶子花",
+   "la": "Bougainvillea spectabilis"
+  },
+  {
+   "zh": "大薸",
+   "la": "Pistia stratiotes"
+  },
+  {
+   "zh": "龙头竹",
+   "la": "Bambusa vulgaris"
+  },
+  {
+   "zh": "",
+   "la": "Pentaclethra macroloba"
+  },
+  {
+   "zh": "瓷玫瑰（火炬姜）",
+   "la": "Etlingera elatior"
+  },
+  {
+   "zh": "青葙属",
+   "la": "Celosia"
+  },
+  {
+   "zh": "",
+   "la": "Macrolobium acaciifolium"
+  },
+  {
+   "zh": "花叶万年青属",
+   "la": "Dieffenbachia"
+  },
+  {
+   "zh": "",
+   "la": "Luffa operculata"
+  },
+  {
+   "zh": "海岛棉",
+   "la": "Gossypium barbadense"
+  },
+  {
+   "zh": "",
+   "la": "Pontederia rotundifolia"
+  }
+ ],
+ "刚果雨林": [
+  {
+   "zh": "假臭草",
+   "la": "Praxelis clematidea"
+  },
+  {
+   "zh": "糖椰",
+   "la": "Borassus aethiopum"
+  },
+  {
+   "zh": "禾本科",
+   "la": "Poaceae"
+  },
+  {
+   "zh": "蝎尾天芥菜",
+   "la": "Heliotropium angiospermum"
+  },
+  {
+   "zh": "石刁柏",
+   "la": "Asparagus officinalis"
+  },
+  {
+   "zh": "虎皮兰",
+   "la": "Sansevieria trifasciata"
+  },
+  {
+   "zh": "大波斯菊",
+   "la": "Cosmos bipinnatus"
+  },
+  {
+   "zh": "朱蕉",
+   "la": "Cordyline fruticosa"
+  },
+  {
+   "zh": "刺蓟麻",
+   "la": "Clappertonia ficifolia"
+  },
+  {
+   "zh": "银花苋",
+   "la": "Gomphrena celosioides"
+  }
+ ],
+ "婆罗洲": [
+  {
+   "zh": "苹果猪笼草",
+   "la": "Nepenthes ampullaria"
+  },
+  {
+   "zh": "莱佛士猪笼草",
+   "la": "Nepenthes rafflesiana"
+  },
+  {
+   "zh": "小猪笼草",
+   "la": "Nepenthes gracilis"
+  },
+  {
+   "zh": "白环猪笼草",
+   "la": "Nepenthes albomarginata"
+  },
+  {
+   "zh": "黄花第伦桃",
+   "la": "Dillenia suffruticosa"
+  },
+  {
+   "zh": "猪笼草",
+   "la": "Nepenthes mirabilis"
+  },
+  {
+   "zh": "休氏魔芋",
+   "la": "Amorphophallus hewittii"
+  },
+  {
+   "zh": "银丝茶",
+   "la": "Ploiarium elegans"
+  },
+  {
+   "zh": "尼邦刺椰子",
+   "la": "Oncosperma tigillarium"
+  },
+  {
+   "zh": "小花十万错",
+   "la": "Asystasia intrusa"
+  },
+  {
+   "zh": "蚁寨",
+   "la": "Hydnophytum formicarum"
+  },
+  {
+   "zh": "水玉簪",
+   "la": "Burmannia disticha"
+  }
+ ],
+ "巴布亚": [
+  {
+   "zh": "培地茅",
+   "la": "Chrysopogon zizanioides"
+  },
+  {
+   "zh": "新几内亚凤仙花",
+   "la": "Impatiens hawkeri"
+  },
+  {
+   "zh": "紫苞舌兰",
+   "la": "Spathoglottis plicata"
+  },
+  {
+   "zh": "球兰属",
+   "la": "Hoya"
+  },
+  {
+   "zh": "树胡椒",
+   "la": "Piper aduncum"
+  },
+  {
+   "zh": "竹叶兰",
+   "la": "Arundina graminifolia"
+  },
+  {
+   "zh": "野芋",
+   "la": "Colocasia esculenta"
+  },
+  {
+   "zh": "秋海棠属",
+   "la": "Begonia"
+  },
+  {
+   "zh": "分支木贼",
+   "la": "Equisetum ramosissimum"
+  },
+  {
+   "zh": "吊球草",
+   "la": "Hyptis capitata"
+  },
+  {
+   "zh": "毛草龙",
+   "la": "Ludwigia octovalvis"
+  },
+  {
+   "zh": "五彩苏",
+   "la": "Coleus scutellarioides"
+  }
+ ],
+ "丹翠雨林": [
+  {
+   "zh": "澳洲轴榈",
+   "la": "Licuala ramsayi"
+  },
+  {
+   "zh": "碧瓦崖角藤",
+   "la": "Rhaphidophora hayi"
+  },
+  {
+   "zh": "",
+   "la": "Pittosporum rubiginosum"
+  },
+  {
+   "zh": "黄槿",
+   "la": "Hibiscus tiliaceus"
+  },
+  {
+   "zh": "霍普鳞木铁",
+   "la": "Lepidozamia hopei"
+  },
+  {
+   "zh": "波溫蘇鐵",
+   "la": "Bowenia spectabilis"
+  },
+  {
+   "zh": "翼柄五桠果",
+   "la": "Dillenia alata"
+  },
+  {
+   "zh": "多花海檬果（鶴鴕李）",
+   "la": "Cerbera floribunda"
+  },
+  {
+   "zh": "蛇菰",
+   "la": "Balanophora fungosa"
+  },
+  {
+   "zh": "",
+   "la": "Atractocarpus hirtus"
+  },
+  {
+   "zh": "硬叶槲蕨",
+   "la": "Drynaria rigidula"
+  },
+  {
+   "zh": "",
+   "la": "Benstonea monticola"
+  }
+ ],
+ "亚苏尼": [
+  {
+   "zh": "绣球宝冠木",
+   "la": "Brownea grandiceps"
+  },
+  {
+   "zh": "大叶宝冠木",
+   "la": "Brownea macrophylla"
+  },
+  {
+   "zh": "",
+   "la": "Montrichardia linifera"
+  },
+  {
+   "zh": "",
+   "la": "Macrolobium acaciifolium"
+  },
+  {
+   "zh": "",
+   "la": "Palicourea subspicata"
+  },
+  {
+   "zh": "",
+   "la": "Bactris riparia"
+  },
+  {
+   "zh": "",
+   "la": "Palicourea tomentosa"
+  },
+  {
+   "zh": "",
+   "la": "Aphelandra aurantiaca"
+  },
+  {
+   "zh": "花叶芋",
+   "la": "Caladium bicolor"
+  },
+  {
+   "zh": "",
+   "la": "Mayna odorata"
+  },
+  {
+   "zh": "水葫芦",
+   "la": "Pontederia crassipes"
+  },
+  {
+   "zh": "吉贝",
+   "la": "Ceiba pentandra"
+  }
+ ],
+ "蒙特维多": [
+  {
+   "zh": "嘴唇花",
+   "la": "Palicourea elata"
+  },
+  {
+   "zh": "紫花山姜",
+   "la": "Alpinia purpurata"
+  },
+  {
+   "zh": "",
+   "la": "Heliconia tortuosa"
+  },
+  {
+   "zh": "紫背竹芋",
+   "la": "Calathea crotalifera"
+  },
+  {
+   "zh": "红花树兰",
+   "la": "Epidendrum radicans"
+  },
+  {
+   "zh": "蜂巢姜",
+   "la": "Zingiber spectabile"
+  },
+  {
+   "zh": "瓷玫瑰（火炬姜）",
+   "la": "Etlingera elatior"
+  },
+  {
+   "zh": "穗花艳斑岩桐",
+   "la": "Kohleria spicata"
+  },
+  {
+   "zh": "",
+   "la": "Hoffmannia congesta"
+  },
+  {
+   "zh": "",
+   "la": "Monoclea gottschei"
+  },
+  {
+   "zh": "",
+   "la": "Werauhia kupperiana"
+  },
+  {
+   "zh": "大叶紫露草",
+   "la": "Tradescantia zanonia"
+  }
+ ],
+ "辛哈拉加": [
+  {
+   "zh": "滴液猪笼草",
+   "la": "Nepenthes distillatoria"
+  },
+  {
+   "zh": "竹叶兰",
+   "la": "Arundina graminifolia"
+  },
+  {
+   "zh": "基尖叶野牡丹",
+   "la": "Melastoma malabathricum"
+  },
+  {
+   "zh": "闭鞘姜",
+   "la": "Hellenia speciosa"
+  },
+  {
+   "zh": "毛绢木",
+   "la": "Miconia crenata"
+  },
+  {
+   "zh": "",
+   "la": "Schumacheria castaneifolia"
+  },
+  {
+   "zh": "蛇麻马蓝",
+   "la": "Strobilanthes lupulina"
+  },
+  {
+   "zh": "黄花第伦桃",
+   "la": "Dillenia suffruticosa"
+  },
+  {
+   "zh": "含羞草",
+   "la": "Mimosa pudica"
+  },
+  {
+   "zh": "董棕",
+   "la": "Caryota urens"
+  },
+  {
+   "zh": "铁芒萁",
+   "la": "Dicranopteris linearis"
+  },
+  {
+   "zh": "马缨丹",
+   "la": "Lantana camara"
+  }
+ ],
+ "撒哈拉沙漠": [
+  {
+   "zh": "被子植物",
+   "la": "Angiospermae"
+  }
+ ],
+ "戈壁滩": [
+  {
+   "zh": "蒙古韭",
+   "la": "Allium mongolicum"
+  },
+  {
+   "zh": "短叶假木贼",
+   "la": "Anabasis brevifolia"
+  },
+  {
+   "zh": "兔尾黄芪",
+   "la": "Astragalus laguroides"
+  },
+  {
+   "zh": "地锦草",
+   "la": "Euphorbia humifusa"
+  },
+  {
+   "zh": "矮大黄",
+   "la": "Rheum nanum"
+  },
+  {
+   "zh": "珍珠猪毛菜",
+   "la": "Salsola passerina"
+  },
+  {
+   "zh": "蒙古扁桃",
+   "la": "Prunus mongolica"
+  },
+  {
+   "zh": "砂蓝刺头",
+   "la": "Echinops gmelinii"
+  },
+  {
+   "zh": "火媒草",
+   "la": "Olgaea leucophylla"
+  },
+  {
+   "zh": "黄花软紫草",
+   "la": "Arnebia guttata"
+  },
+  {
+   "zh": "石生霸王",
+   "la": "Zygophyllum rosowii"
+  },
+  {
+   "zh": "小果白刺",
+   "la": "Nitraria sibirica"
+  }
+ ],
+ "阿塔卡马": [
+  {
+   "zh": "",
+   "la": "Malesherbia deserticola"
+  },
+  {
+   "zh": "",
+   "la": "Lycium humile"
+  },
+  {
+   "zh": "",
+   "la": "Oxalis eremobia"
+  },
+  {
+   "zh": "石薇花属",
+   "la": "Cistanthe"
+  },
+  {
+   "zh": "乳白王冠花",
+   "la": "Malesherbia lactea"
+  },
+  {
+   "zh": "细叶水麥冬",
+   "la": "Triglochin concinna"
+  },
+  {
+   "zh": "",
+   "la": "Cinnagrostis rigescens"
+  },
+  {
+   "zh": "",
+   "la": "Philippiamra salsoloides"
+  },
+  {
+   "zh": "",
+   "la": "Ruppia filifolia"
+  },
+  {
+   "zh": "",
+   "la": "Senecio filaginoides"
+  },
+  {
+   "zh": "",
+   "la": "Chaetanthera lanata"
+  },
+  {
+   "zh": "",
+   "la": "Dinemandra ericoides"
+  }
+ ],
+ "纳米布沙漠": [
+  {
+   "zh": "麟刺金合欢",
+   "la": "Vachellia erioloba"
+  },
+  {
+   "zh": "刺枝瓜",
+   "la": "Acanthosicyos horridus"
+  },
+  {
+   "zh": "大叶日中花",
+   "la": "Mesembryanthemum guerichianum"
+  },
+  {
+   "zh": "无叶珍珠柴",
+   "la": "Caroxylon aphyllum"
+  },
+  {
+   "zh": "",
+   "la": "Hermannia minimifolia"
+  },
+  {
+   "zh": "",
+   "la": "Radyera urens"
+  },
+  {
+   "zh": "",
+   "la": "Sesamum abbreviatum"
+  },
+  {
+   "zh": "歧尾菊",
+   "la": "Pechuel-loeschea leubnitziae"
+  },
+  {
+   "zh": "",
+   "la": "Aizoon papulosum"
+  },
+  {
+   "zh": "",
+   "la": "Cladoraphis spinosa"
+  },
+  {
+   "zh": "黄白蓟罂粟",
+   "la": "Argemone ochroleuca"
+  },
+  {
+   "zh": "",
+   "la": "Orthanthera albida"
+  }
+ ],
+ "莫哈韦沙漠": [
+  {
+   "zh": "约书亚树",
+   "la": "Yucca brevifolia"
+  },
+  {
+   "zh": "三齿拉雷亚灌木",
+   "la": "Larrea tridentata"
+  },
+  {
+   "zh": "",
+   "la": "Malacothrix glabrata"
+  },
+  {
+   "zh": "",
+   "la": "Erythranthe rhodopetra"
+  },
+  {
+   "zh": "黃花獨行菜",
+   "la": "Lepidium flavum"
+  },
+  {
+   "zh": "棒芥晖草",
+   "la": "Chylismia claviformis"
+  },
+  {
+   "zh": "艾菊叶钟穗花",
+   "la": "Phacelia tanacetifolia"
+  },
+  {
+   "zh": "银刺松",
+   "la": "Cylindropuntia echinocarpa"
+  },
+  {
+   "zh": "",
+   "la": "Eschscholzia minutiflora"
+  },
+  {
+   "zh": "",
+   "la": "Eremothera boothii"
+  },
+  {
+   "zh": "",
+   "la": "Oenothera primiveris"
+  },
+  {
+   "zh": "",
+   "la": "Xylorhiza tortifolia"
+  }
+ ],
+ "阿拉伯沙漠": [
+  {
+   "zh": "蓝色鼠尾草",
+   "la": "Salvia azurea"
+  },
+  {
+   "zh": "夜香树",
+   "la": "Cestrum nocturnum"
+  },
+  {
+   "zh": "",
+   "la": "Anvillea garcinii"
+  }
+ ],
+ "塔尔沙漠": [
+  {
+   "zh": "白花牛角瓜",
+   "la": "Calotropis procera"
+  },
+  {
+   "zh": "爪哇白花苋",
+   "la": "Aerva javanica"
+  },
+  {
+   "zh": "",
+   "la": "Capparis decidua"
+  },
+  {
+   "zh": "印度驼蹄瓣",
+   "la": "Zygophyllum indicum"
+  },
+  {
+   "zh": "落叶大戟",
+   "la": "Euphorbia caducifolia"
+  },
+  {
+   "zh": "",
+   "la": "Leptadenia pyrotechnica"
+  },
+  {
+   "zh": "黄果茄",
+   "la": "Solanum virginianum"
+  },
+  {
+   "zh": "",
+   "la": "Salvadora oleoides"
+  },
+  {
+   "zh": "药西瓜",
+   "la": "Citrullus colocynthis"
+  },
+  {
+   "zh": "銅錢刺棗",
+   "la": "Ziziphus nummularia"
+  },
+  {
+   "zh": "沙漠柚木",
+   "la": "Tecomella undulata"
+  },
+  {
+   "zh": "管花肉苁蓉",
+   "la": "Cistanche tubulosa"
+  }
+ ],
+ "辛普森沙漠": [
+  {
+   "zh": "",
+   "la": "Acacia peuce"
+  },
+  {
+   "zh": "缨柳梅属",
+   "la": "Kunzea"
+  },
+  {
+   "zh": "",
+   "la": "Acacia ligulata"
+  },
+  {
+   "zh": "",
+   "la": "Solanum quadriloculatum"
+  },
+  {
+   "zh": "",
+   "la": "Senna pleurocarpa"
+  }
+ ],
+ "西伯利亚冻原": [
+  {
+   "zh": "越橘",
+   "la": "Vaccinium vitis-idaea"
+  },
+  {
+   "zh": "肾叶白头翁",
+   "la": "Pulsatilla patens"
+  },
+  {
+   "zh": "偃松",
+   "la": "Pinus pumila"
+  },
+  {
+   "zh": "落叶松",
+   "la": "Larix gmelinii"
+  },
+  {
+   "zh": "",
+   "la": "Potentilla stipularis"
+  },
+  {
+   "zh": "北蔓樺",
+   "la": "Betula divaricata"
+  },
+  {
+   "zh": "草甸拳参",
+   "la": "Bistorta plumosa"
+  },
+  {
+   "zh": "",
+   "la": "Linum komarovii"
+  },
+  {
+   "zh": "",
+   "la": "Castilleja rubra"
+  },
+  {
+   "zh": "火焰草",
+   "la": "Castilleja pallida"
+  },
+  {
+   "zh": "绿桤木",
+   "la": "Alnus alnobetula"
+  }
+ ],
+ "格陵兰": [
+  {
+   "zh": "野芋",
+   "la": "Colocasia esculenta"
+  },
+  {
+   "zh": "蒲葵属",
+   "la": "Livistona"
+  }
+ ],
+ "斯瓦尔巴群岛": [
+  {
+   "zh": "",
+   "la": "Saxifraga cespitosa"
+  },
+  {
+   "zh": "羊胡子草",
+   "la": "Eriophorum scheuchzeri"
+  },
+  {
+   "zh": "挪威虎耳草",
+   "la": "Saxifraga oppositifolia"
+  },
+  {
+   "zh": "山蓼",
+   "la": "Oxyria digyna"
+  },
+  {
+   "zh": "仙女木",
+   "la": "Dryas octopetala"
+  },
+  {
+   "zh": "极地柳",
+   "la": "Salix polaris"
+  },
+  {
+   "zh": "",
+   "la": "Oreomecon dahliana"
+  },
+  {
+   "zh": "珠芽蓼",
+   "la": "Bistorta vivipara"
+  },
+  {
+   "zh": "山羊臭虎耳草",
+   "la": "Saxifraga hirculus"
+  },
+  {
+   "zh": "无茎蝇子草",
+   "la": "Silene acaulis"
+  },
+  {
+   "zh": "四棱岩须",
+   "la": "Cassiope tetragona"
+  },
+  {
+   "zh": "零余虎耳草",
+   "la": "Saxifraga cernua"
+  }
+ ],
+ "阿拉斯加北坡": [
+  {
+   "zh": "顶针莓",
+   "la": "Rubus parviflorus"
+  },
+  {
+   "zh": "红栎组",
+   "la": "Lobatae"
+  }
+ ],
+ "拉普兰": [
+  {
+   "zh": "欧亚草茱萸",
+   "la": "Cornus suecica"
+  },
+  {
+   "zh": "云莓",
+   "la": "Rubus chamaemorus"
+  },
+  {
+   "zh": "松毛翠",
+   "la": "Phyllodoce caerulea"
+  },
+  {
+   "zh": "岩高兰",
+   "la": "Empetrum nigrum"
+  },
+  {
+   "zh": "沼桦",
+   "la": "Betula nana"
+  },
+  {
+   "zh": "青姬木",
+   "la": "Andromeda polifolia"
+  },
+  {
+   "zh": "毛果一枝黄花",
+   "la": "Solidago virgaurea"
+  },
+  {
+   "zh": "林地老鹳草",
+   "la": "Geranium sylvaticum"
+  },
+  {
+   "zh": "高山天栌",
+   "la": "Arctous alpina"
+  },
+  {
+   "zh": "蝶须",
+   "la": "Antennaria dioica"
+  },
+  {
+   "zh": "北极花",
+   "la": "Linnaea borealis"
+  },
+  {
+   "zh": "欧洲金莲花",
+   "la": "Trollius europaeus"
+  }
+ ],
+ "加拿大北极": [
+  {
+   "zh": "北极柳",
+   "la": "Salix arctica"
+  },
+  {
+   "zh": "杜鹃花科",
+   "la": "Ericaceae"
+  }
+ ],
+ "堪察加冻原": [
+  {
+   "zh": "刺虎耳草",
+   "la": "Saxifraga bronchialis"
+  },
+  {
+   "zh": "野罂粟",
+   "la": "Oreomecon nudicaulis"
+  },
+  {
+   "zh": "柳兰",
+   "la": "Chamaenerion angustifolium"
+  },
+  {
+   "zh": "甜杨",
+   "la": "Populus suaveolens"
+  },
+  {
+   "zh": "",
+   "la": "Smelowskia parryoides"
+  },
+  {
+   "zh": "簇茎石竹",
+   "la": "Dianthus repens"
+  },
+  {
+   "zh": "岩桔梗",
+   "la": "Campanula lasiocarpa"
+  },
+  {
+   "zh": "落叶松",
+   "la": "Larix gmelinii"
+  },
+  {
+   "zh": "偃松",
+   "la": "Pinus pumila"
+  },
+  {
+   "zh": "倒卵叶岩梅",
+   "la": "Diapensia obovata"
+  },
+  {
+   "zh": "",
+   "la": "Artemisia glomerata"
+  },
+  {
+   "zh": "北极丽漆姑",
+   "la": "Cherleria arctica"
+  }
+ ],
+ "巴塔哥尼亚草原": [
+  {
+   "zh": "垫状短枝菊",
+   "la": "Brachyclados caespitosus"
+  },
+  {
+   "zh": "",
+   "la": "Mulguraea tridens"
+  },
+  {
+   "zh": "",
+   "la": "Leucheria purpurea"
+  },
+  {
+   "zh": "",
+   "la": "Azorella monantha"
+  },
+  {
+   "zh": "",
+   "la": "Jaborosa magellanica"
+  },
+  {
+   "zh": "卧露菊",
+   "la": "Burkartia lanigera"
+  },
+  {
+   "zh": "远志族",
+   "la": "Polygaleae"
+  }
+ ],
+ "东京": [
+  {
+   "zh": "蕺菜",
+   "la": "Houttuynia cordata"
+  },
+  {
+   "zh": "春飞蓬",
+   "la": "Erigeron philadelphicus"
+  },
+  {
+   "zh": "粉花月见草",
+   "la": "Oenothera rosea"
+  },
+  {
+   "zh": "白车轴草",
+   "la": "Trifolium repens"
+  },
+  {
+   "zh": "酢浆草",
+   "la": "Oxalis corniculata"
+  },
+  {
+   "zh": "乌蔹莓",
+   "la": "Causonis japonica"
+  },
+  {
+   "zh": "红车轴草",
+   "la": "Trifolium pratense"
+  },
+  {
+   "zh": "阿拉伯婆婆纳",
+   "la": "Veronica persica"
+  },
+  {
+   "zh": "鸭跖草",
+   "la": "Commelina communis"
+  },
+  {
+   "zh": "长荚罂粟",
+   "la": "Papaver dubium"
+  },
+  {
+   "zh": "北美一枝黄花",
+   "la": "Solidago altissima"
+  },
+  {
+   "zh": "宝盖草",
+   "la": "Lamium amplexicaule"
+  }
+ ],
+ "喀什": [
+  {
+   "zh": "无花果",
+   "la": "Ficus carica"
+  },
+  {
+   "zh": "乳苣",
+   "la": "Lactuca tatarica"
+  },
+  {
+   "zh": "田旋花",
+   "la": "Convolvulus arvensis"
+  },
+  {
+   "zh": "侧柏",
+   "la": "Platycladus orientalis"
+  },
+  {
+   "zh": "",
+   "la": "Cynanchum pamirense"
+  },
+  {
+   "zh": "夹竹桃",
+   "la": "Nerium oleander"
+  },
+  {
+   "zh": "银白杨",
+   "la": "Populus alba"
+  },
+  {
+   "zh": "圆叶牵牛",
+   "la": "Ipomoea purpurea"
+  },
+  {
+   "zh": "槐",
+   "la": "Styphnolobium japonicum"
+  },
+  {
+   "zh": "苹果属",
+   "la": "Malus"
+  },
+  {
+   "zh": "白柳",
+   "la": "Salix alba"
+  },
+  {
+   "zh": "沙枣",
+   "la": "Elaeagnus angustifolia"
+  }
+ ],
+ "内罗毕": [
+  {
+   "zh": "翼叶山牵牛",
+   "la": "Thunbergia alata"
+  },
+  {
+   "zh": "马缨丹",
+   "la": "Lantana camara"
+  },
+  {
+   "zh": "银胶菊",
+   "la": "Parthenium hysterophorus"
+  },
+  {
+   "zh": "黄皮金合欢",
+   "la": "Vachellia xanthophloea"
+  },
+  {
+   "zh": "五爪金龙",
+   "la": "Ipomoea cairica"
+  },
+  {
+   "zh": "野烟树",
+   "la": "Solanum mauritianum"
+  },
+  {
+   "zh": "镰莢金合欢",
+   "la": "Vachellia drepanolobium"
+  },
+  {
+   "zh": "假虎刺",
+   "la": "Carissa spinarum"
+  },
+  {
+   "zh": "荆芥叶狮耳花",
+   "la": "Leonotis nepetifolia"
+  },
+  {
+   "zh": "",
+   "la": "Vachellia kirkii"
+  },
+  {
+   "zh": "",
+   "la": "Hibiscus flavifolius"
+  },
+  {
+   "zh": "印度田菁",
+   "la": "Sesbania sesban"
+  }
+ ],
+ "瓦尔帕莱索": [
+  {
+   "zh": "智利椰子",
+   "la": "Jubaea chilensis"
+  },
+  {
+   "zh": "",
+   "la": "Puya chilensis"
+  },
+  {
+   "zh": "",
+   "la": "Schinus latifolia"
+  },
+  {
+   "zh": "",
+   "la": "Cryptocarya alba"
+  },
+  {
+   "zh": "",
+   "la": "Alstroemeria ligtu"
+  },
+  {
+   "zh": "",
+   "la": "Lithraea caustica"
+  },
+  {
+   "zh": "三色旱金莲",
+   "la": "Tropaeolum tricolor"
+  },
+  {
+   "zh": "",
+   "la": "Alstroemeria pulchra"
+  },
+  {
+   "zh": "绿芨兰",
+   "la": "Chloraea bletioides"
+  },
+  {
+   "zh": "解醉茶",
+   "la": "Peumus boldus"
+  },
+  {
+   "zh": "錦龍柱",
+   "la": "Trichocereus chiloensis"
+  },
+  {
+   "zh": "翠须兰",
+   "la": "Bipinnula fimbriata"
+  }
+ ],
+ "伊斯坦布尔": [
+  {
+   "zh": "大苞野芝麻",
+   "la": "Lamium purpureum"
+  },
+  {
+   "zh": "阿拉伯婆婆纳",
+   "la": "Veronica persica"
+  },
+  {
+   "zh": "岩蔷薇",
+   "la": "Cistus creticus"
+  },
+  {
+   "zh": "鼠尾草叶岩蔷薇",
+   "la": "Cistus salviifolius"
+  },
+  {
+   "zh": "毒蓝蓟",
+   "la": "Echium plantagineum"
+  },
+  {
+   "zh": "欧锦葵",
+   "la": "Malva sylvestris"
+  },
+  {
+   "zh": "夹竹桃",
+   "la": "Nerium oleander"
+  },
+  {
+   "zh": "洋常春藤",
+   "la": "Hedera helix"
+  },
+  {
+   "zh": "琉璃繁缕",
+   "la": "Lysimachia arvensis"
+  },
+  {
+   "zh": "无花果",
+   "la": "Ficus carica"
+  },
+  {
+   "zh": "泽漆",
+   "la": "Euphorbia helioscopia"
+  },
+  {
+   "zh": "苦苣菜",
+   "la": "Sonchus oleraceus"
+  }
+ ],
+ "雷克雅未克": [
+  {
+   "zh": "努特卡羽扇豆",
+   "la": "Lupinus nootkatensis"
+  },
+  {
+   "zh": "早花百里香",
+   "la": "Thymus praecox"
+  },
+  {
+   "zh": "海石竹",
+   "la": "Armeria maritima"
+  },
+  {
+   "zh": "林地老鹳草",
+   "la": "Geranium sylvaticum"
+  },
+  {
+   "zh": "岩高兰",
+   "la": "Empetrum nigrum"
+  },
+  {
+   "zh": "欧白芷",
+   "la": "Angelica archangelica"
+  },
+  {
+   "zh": "柔毛桦",
+   "la": "Betula pubescens"
+  },
+  {
+   "zh": "海滨蝇子草",
+   "la": "Silene uniflora"
+  },
+  {
+   "zh": "密毛柳",
+   "la": "Salix lanata"
+  },
+  {
+   "zh": "",
+   "la": "Alchemilla alpina"
+  },
+  {
+   "zh": "仙女木",
+   "la": "Dryas octopetala"
+  },
+  {
+   "zh": "帚石南",
+   "la": "Calluna vulgaris"
+  }
+ ],
+ "马拉喀什": [
+  {
+   "zh": "海枣",
+   "la": "Phoenix dactylifera"
+  },
+  {
+   "zh": "油橄榄",
+   "la": "Olea europaea"
+  },
+  {
+   "zh": "扁轴木",
+   "la": "Parkinsonia aculeata"
+  },
+  {
+   "zh": "紫芸藤",
+   "la": "Podranea ricasoliana"
+  },
+  {
+   "zh": "蓝花丹",
+   "la": "Plumbago auriculata"
+  },
+  {
+   "zh": "欧洲矮棕",
+   "la": "Chamaerops humilis"
+  },
+  {
+   "zh": "夹竹桃",
+   "la": "Nerium oleander"
+  },
+  {
+   "zh": "光叶烟草",
+   "la": "Nicotiana glauca"
+  },
+  {
+   "zh": "北非雪松",
+   "la": "Cedrus atlantica"
+  },
+  {
+   "zh": "石榴",
+   "la": "Punica granatum"
+  },
+  {
+   "zh": "阿拉伯枣",
+   "la": "Ziziphus lotus"
+  },
+  {
+   "zh": "酸橙",
+   "la": "Citrus × aurantium"
+  }
+ ],
+ "乌兰巴托": [
+  {
+   "zh": "新疆落叶松",
+   "la": "Larix sibirica"
+  },
+  {
+   "zh": "刺蔷薇",
+   "la": "Rosa acicularis"
+  },
+  {
+   "zh": "药用蒲公英",
+   "la": "Taraxacum officinale"
+  },
+  {
+   "zh": "欧洲赤松",
+   "la": "Pinus sylvestris"
+  },
+  {
+   "zh": "新疆云杉",
+   "la": "Picea obovata"
+  },
+  {
+   "zh": "榆树",
+   "la": "Ulmus pumila"
+  },
+  {
+   "zh": "平车前",
+   "la": "Plantago depressa"
+  },
+  {
+   "zh": "稠李",
+   "la": "Prunus padus"
+  },
+  {
+   "zh": "块根糙苏",
+   "la": "Phlomoides tuberosa"
+  },
+  {
+   "zh": "狼毒",
+   "la": "Stellera chamaejasme"
+  },
+  {
+   "zh": "斜茎黄芪",
+   "la": "Astragalus laxmannii"
+  },
+  {
+   "zh": "地榆",
+   "la": "Sanguisorba officinalis"
+  }
+ ],
+ "冰岛": [
+  {
+   "zh": "海石竹",
+   "la": "Armeria maritima"
+  },
+  {
+   "zh": "无茎蝇子草",
+   "la": "Silene acaulis"
+  },
+  {
+   "zh": "早花百里香",
+   "la": "Thymus praecox"
+  },
+  {
+   "zh": "努特卡羽扇豆",
+   "la": "Lupinus nootkatensis"
+  },
+  {
+   "zh": "仙女木",
+   "la": "Dryas octopetala"
+  },
+  {
+   "zh": "海滨蝇子草",
+   "la": "Silene uniflora"
+  },
+  {
+   "zh": "高山绒铃草",
+   "la": "Bartsia alpina"
+  },
+  {
+   "zh": "林地老鹳草",
+   "la": "Geranium sylvaticum"
+  },
+  {
+   "zh": "岩高兰",
+   "la": "Empetrum nigrum"
+  },
+  {
+   "zh": "北极柳",
+   "la": "Salix arctica"
+  },
+  {
+   "zh": "东方羊胡子草",
+   "la": "Eriophorum angustifolium"
+  },
+  {
+   "zh": "",
+   "la": "Saxifraga cespitosa"
+  }
+ ],
+ "法罗群岛": [
+  {
+   "zh": "柔毛羽衣草",
+   "la": "Alchemilla mollis"
+  },
+  {
+   "zh": "斑点掌裂兰",
+   "la": "Dactylorhiza maculata"
+  },
+  {
+   "zh": "驴蹄草",
+   "la": "Caltha palustris"
+  },
+  {
+   "zh": "魔噬花",
+   "la": "Succisa pratensis"
+  },
+  {
+   "zh": "海石竹",
+   "la": "Armeria maritima"
+  },
+  {
+   "zh": "早花百里香",
+   "la": "Thymus praecox"
+  },
+  {
+   "zh": "布谷蝇子草",
+   "la": "Silene flos-cuculi"
+  },
+  {
+   "zh": "夏枯草",
+   "la": "Prunella vulgaris"
+  },
+  {
+   "zh": "洋委陵菜",
+   "la": "Potentilla erecta"
+  },
+  {
+   "zh": "",
+   "la": "Narthecium ossifragum"
+  },
+  {
+   "zh": "斑点猴面花",
+   "la": "Erythranthe guttata"
+  },
+  {
+   "zh": "帚石南",
+   "la": "Calluna vulgaris"
+  }
+ ],
+ "复活节岛": [
+  {
+   "zh": "马利筋",
+   "la": "Asclepias curassavica"
+  },
+  {
+   "zh": "",
+   "la": "Asplenium obtusatum"
+  },
+  {
+   "zh": "黑刺桐",
+   "la": "Erythrina lysistemon"
+  },
+  {
+   "zh": "番石榴",
+   "la": "Psidium guajava"
+  },
+  {
+   "zh": "掌叶猪屎豆",
+   "la": "Crotalaria grahamiana"
+  },
+  {
+   "zh": "椰子",
+   "la": "Cocos nucifera"
+  },
+  {
+   "zh": "朱槿",
+   "la": "Hibiscus × rosa-sinensis"
+  },
+  {
+   "zh": "翼蓟",
+   "la": "Cirsium vulgare"
+  },
+  {
+   "zh": "蓖麻",
+   "la": "Ricinus communis"
+  },
+  {
+   "zh": "多枝扁莎",
+   "la": "Cyperus polystachyos"
+  },
+  {
+   "zh": "银叶野牡丹",
+   "la": "Pleroma heteromallum"
+  },
+  {
+   "zh": "厚藤",
+   "la": "Ipomoea pes-caprae"
+  }
+ ],
+ "马达加斯加": [
+  {
+   "zh": "钉头果",
+   "la": "Gomphocarpus fruticosus"
+  },
+  {
+   "zh": "大叶柱根茶",
+   "la": "Uapaca bojeri"
+  },
+  {
+   "zh": "红苞茅",
+   "la": "Hyparrhenia rufa"
+  },
+  {
+   "zh": "脱皮檀",
+   "la": "Aphloia theiformis"
+  },
+  {
+   "zh": "红毛草",
+   "la": "Melinis repens"
+  },
+  {
+   "zh": "",
+   "la": "Maesa lanceolata"
+  },
+  {
+   "zh": "马岛醉鱼草",
+   "la": "Buddleja madagascariensis"
+  },
+  {
+   "zh": "虎刺梅",
+   "la": "Euphorbia milii"
+  },
+  {
+   "zh": "亚皮尔西番莲",
+   "la": "Passiflora subpeltata"
+  },
+  {
+   "zh": "",
+   "la": "Aloe macroclada"
+  },
+  {
+   "zh": "",
+   "la": "Aristida rufescens"
+  },
+  {
+   "zh": "鬼针草",
+   "la": "Bidens pilosa"
+  }
+ ],
+ "斐济": [
+  {
+   "zh": "火焰木",
+   "la": "Spathodea campanulata"
+  },
+  {
+   "zh": "太平洋苞舌兰",
+   "la": "Spathoglottis pacifica"
+  },
+  {
+   "zh": "含羞草",
+   "la": "Mimosa pudica"
+  },
+  {
+   "zh": "凤凰木",
+   "la": "Delonix regia"
+  },
+  {
+   "zh": "水茄",
+   "la": "Solanum torvum"
+  },
+  {
+   "zh": "竹叶兰",
+   "la": "Arundina graminifolia"
+  },
+  {
+   "zh": "蔓性野牡丹",
+   "la": "Heterotis rotundifolia"
+  },
+  {
+   "zh": "椰子",
+   "la": "Cocos nucifera"
+  },
+  {
+   "zh": "蝴蝶石斛组",
+   "la": "Phalaenanthe"
+  },
+  {
+   "zh": "观音座莲",
+   "la": "Angiopteris evecta"
+  },
+  {
+   "zh": "紫花山姜",
+   "la": "Alpinia purpurata"
+  },
+  {
+   "zh": "榼藤",
+   "la": "Entada phaseoloides"
+  }
+ ],
+ "加拉帕戈斯": [
+  {
+   "zh": "",
+   "la": "Jasminocereus thouarsii"
+  },
+  {
+   "zh": "加島刺梨仙人掌",
+   "la": "Opuntia galapageia"
+  },
+  {
+   "zh": "",
+   "la": "Brachycereus nesioticus"
+  },
+  {
+   "zh": "美洲红树",
+   "la": "Rhizophora mangle"
+  },
+  {
+   "zh": "",
+   "la": "Scalesia affinis"
+  },
+  {
+   "zh": "龙珠果",
+   "la": "Passiflora vesicaria"
+  },
+  {
+   "zh": "",
+   "la": "Darwiniothamnus tenuifolius"
+  },
+  {
+   "zh": "番石榴",
+   "la": "Psidium guajava"
+  },
+  {
+   "zh": "拉关木",
+   "la": "Laguncularia racemosa"
+  },
+  {
+   "zh": "达尔文氏棉",
+   "la": "Gossypium darwinii"
+  },
+  {
+   "zh": "美国梧桐",
+   "la": "Conocarpus erectus"
+  },
+  {
+   "zh": "白花丹",
+   "la": "Plumbago zeylanica"
+  }
+ ],
+ "亚速尔群岛": [
+  {
+   "zh": "",
+   "la": "Erica azorica"
+  },
+  {
+   "zh": "红丝姜花",
+   "la": "Hedychium gardnerianum"
+  },
+  {
+   "zh": "亚速尔越橘",
+   "la": "Vaccinium cylindraceum"
+  },
+  {
+   "zh": "岛海桐",
+   "la": "Pittosporum undulatum"
+  },
+  {
+   "zh": "头花蓼",
+   "la": "Persicaria capitata"
+  },
+  {
+   "zh": "日本柳杉",
+   "la": "Cryptomeria japonica"
+  },
+  {
+   "zh": "短叶桧",
+   "la": "Juniperus brevifolia"
+  },
+  {
+   "zh": "马德拉冬青",
+   "la": "Ilex perado"
+  },
+  {
+   "zh": "亚速月桂",
+   "la": "Laurus azorica"
+  },
+  {
+   "zh": "马缨丹",
+   "la": "Lantana camara"
+  },
+  {
+   "zh": "毛地黄",
+   "la": "Digitalis purpurea"
+  },
+  {
+   "zh": "垂穗石松",
+   "la": "Palhinhaea cernua"
+  }
+ ],
+ "设得兰群岛": [
+  {
+   "zh": "海石竹",
+   "la": "Armeria maritima"
+  },
+  {
+   "zh": "",
+   "la": "Scilla verna"
+  },
+  {
+   "zh": "异株蝇子草",
+   "la": "Silene dioica"
+  },
+  {
+   "zh": "洋委陵菜",
+   "la": "Potentilla erecta"
+  },
+  {
+   "zh": "斑点掌裂兰",
+   "la": "Dactylorhiza maculata"
+  },
+  {
+   "zh": "草甸碎米荠",
+   "la": "Cardamine pratensis"
+  },
+  {
+   "zh": "百脉根",
+   "la": "Lotus corniculatus"
+  },
+  {
+   "zh": "蕨麻",
+   "la": "Argentina anserina"
+  },
+  {
+   "zh": "",
+   "la": "Dactylorhiza purpurella"
+  },
+  {
+   "zh": "魔噬花",
+   "la": "Succisa pratensis"
+  },
+  {
+   "zh": "驴蹄草",
+   "la": "Caltha palustris"
+  },
+  {
+   "zh": "早花百里香",
+   "la": "Thymus praecox"
+  }
+ ],
+ "珠峰大本营": [
+  {
+   "zh": "球花报春",
+   "la": "Primula denticulata"
+  },
+  {
+   "zh": "平龙胆",
+   "la": "Gentiana depressa"
+  },
+  {
+   "zh": "树形杜鹃",
+   "la": "Rhododendron arboreum"
+  },
+  {
+   "zh": "尼泊尔香青",
+   "la": "Anaphalis nepalensis"
+  },
+  {
+   "zh": "华丽龙胆",
+   "la": "Gentiana ornata"
+  },
+  {
+   "zh": "库门鸢尾",
+   "la": "Iris kemaonensis"
+  },
+  {
+   "zh": "多刺绿绒蒿",
+   "la": "Meconopsis horridula"
+  },
+  {
+   "zh": "喜马拉雅冷杉",
+   "la": "Abies spectabilis"
+  },
+  {
+   "zh": "山岭麻黄",
+   "la": "Ephedra gerardiana"
+  },
+  {
+   "zh": "刚毛杜鹃",
+   "la": "Rhododendron setosum"
+  },
+  {
+   "zh": "小叶栒子",
+   "la": "Cotoneaster microphyllus"
+  },
+  {
+   "zh": "鳞腺杜鹃",
+   "la": "Rhododendron lepidotum"
+  }
+ ],
+ "阿尔卑斯霞慕尼": [
+  {
+   "zh": "蓝紫倒距兰",
+   "la": "Anacamptis morio"
+  },
+  {
+   "zh": "柳兰",
+   "la": "Chamaenerion angustifolium"
+  },
+  {
+   "zh": "强壮红门兰",
+   "la": "Orchis mascula"
+  },
+  {
+   "zh": "欧洲云杉",
+   "la": "Picea abies"
+  },
+  {
+   "zh": "春龙胆",
+   "la": "Gentiana verna"
+  },
+  {
+   "zh": "阴阳掌裂兰",
+   "la": "Dactylorhiza sambucina"
+  },
+  {
+   "zh": "紫龙胆",
+   "la": "Gentiana purpurea"
+  },
+  {
+   "zh": "欧洲杜鹃",
+   "la": "Rhododendron ferrugineum"
+  },
+  {
+   "zh": "高山白头翁",
+   "la": "Pulsatilla alpina"
+  },
+  {
+   "zh": "髯毛风铃草",
+   "la": "Campanula barbata"
+  },
+  {
+   "zh": "",
+   "la": "Neotinea ustulata"
+  },
+  {
+   "zh": "林地老鹳草",
+   "la": "Geranium sylvaticum"
+  }
+ ],
+ "K2大本营": [
+  {
+   "zh": "宽叶柳兰",
+   "la": "Chamaenerion latifolium"
+  },
+  {
+   "zh": "西北沼委陵菜",
+   "la": "Farinopsis salesoviana"
+  },
+  {
+   "zh": "麻黄属",
+   "la": "Ephedra"
+  },
+  {
+   "zh": "藏边蔷薇",
+   "la": "Rosa webbiana"
+  },
+  {
+   "zh": "山蓼",
+   "la": "Oxyria digyna"
+  },
+  {
+   "zh": "沙棘",
+   "la": "Hippophae rhamnoides"
+  },
+  {
+   "zh": "线叶百里香",
+   "la": "Thymus linearis"
+  },
+  {
+   "zh": "飞蓬属",
+   "la": "Erigeron"
+  },
+  {
+   "zh": "拂子茅属",
+   "la": "Calamagrostis"
+  },
+  {
+   "zh": "蒿属",
+   "la": "Artemisia"
+  },
+  {
+   "zh": "紫堇属",
+   "la": "Corydalis"
+  },
+  {
+   "zh": "点地梅属",
+   "la": "Androsace"
+  }
+ ],
+ "德纳利": [
+  {
+   "zh": "柳兰",
+   "la": "Chamaenerion angustifolium"
+  },
+  {
+   "zh": "宽叶柳兰",
+   "la": "Chamaenerion latifolium"
+  },
+  {
+   "zh": "金露梅",
+   "la": "Dasiphora fruticosa"
+  },
+  {
+   "zh": "北方滨紫草",
+   "la": "Mertensia paniculata"
+  },
+  {
+   "zh": "草茱萸",
+   "la": "Cornus canadensis"
+  },
+  {
+   "zh": "梅花草",
+   "la": "Parnassia palustris"
+  },
+  {
+   "zh": "飛燕乌头",
+   "la": "Aconitum delphiniifolium"
+  },
+  {
+   "zh": "无茎蝇子草",
+   "la": "Silene acaulis"
+  },
+  {
+   "zh": "越橘",
+   "la": "Vaccinium vitis-idaea"
+  },
+  {
+   "zh": "笃斯越桔",
+   "la": "Vaccinium uliginosum"
+  },
+  {
+   "zh": "北極鲁冰花",
+   "la": "Lupinus arcticus"
+  },
+  {
+   "zh": "北极柳",
+   "la": "Salix arctica"
+  }
+ ],
+ "阿空加瓜": [
+  {
+   "zh": "花圈旱金莲",
+   "la": "Tropaeolum polyphyllum"
+  },
+  {
+   "zh": "",
+   "la": "Alstroemeria spathulata"
+  },
+  {
+   "zh": "",
+   "la": "Schizanthus hookeri"
+  },
+  {
+   "zh": "",
+   "la": "Phacelia secunda"
+  },
+  {
+   "zh": "",
+   "la": "Mutisia subulata"
+  },
+  {
+   "zh": "岩高兰小檗",
+   "la": "Berberis empetrifolia"
+  },
+  {
+   "zh": "田旋花",
+   "la": "Convolvulus arvensis"
+  },
+  {
+   "zh": "",
+   "la": "Chuquiraga oppositifolia"
+  },
+  {
+   "zh": "",
+   "la": "Caiophora coronata"
+  },
+  {
+   "zh": "极光球",
+   "la": "Eriosyce aurata"
+  },
+  {
+   "zh": "深黄沟酸浆",
+   "la": "Erythranthe lutea"
+  },
+  {
+   "zh": "",
+   "la": "Alstroemeria pallida"
+  }
+ ],
+ "勃朗峰": [
+  {
+   "zh": "蓝紫倒距兰",
+   "la": "Anacamptis morio"
+  },
+  {
+   "zh": "柳兰",
+   "la": "Chamaenerion angustifolium"
+  },
+  {
+   "zh": "强壮红门兰",
+   "la": "Orchis mascula"
+  },
+  {
+   "zh": "高山白头翁",
+   "la": "Pulsatilla alpina"
+  },
+  {
+   "zh": "欧洲杜鹃",
+   "la": "Rhododendron ferrugineum"
+  },
+  {
+   "zh": "阴阳掌裂兰",
+   "la": "Dactylorhiza sambucina"
+  },
+  {
+   "zh": "紫龙胆",
+   "la": "Gentiana purpurea"
+  },
+  {
+   "zh": "髯毛风铃草",
+   "la": "Campanula barbata"
+  },
+  {
+   "zh": "无茎蝇子草",
+   "la": "Silene acaulis"
+  },
+  {
+   "zh": "",
+   "la": "Neotinea ustulata"
+  },
+  {
+   "zh": "卷绢",
+   "la": "Sempervivum arachnoideum"
+  },
+  {
+   "zh": "山地长生草",
+   "la": "Sempervivum montanum"
+  }
+ ],
+ "乞力马扎罗山顶": [
+  {
+   "zh": "乞峰千里木",
+   "la": "Dendrosenecio kilimanjari"
+  },
+  {
+   "zh": "",
+   "la": "Lobelia deckenii"
+  },
+  {
+   "zh": "奇力馬札羅鳳仙",
+   "la": "Impatiens kilimanjari"
+  },
+  {
+   "zh": "",
+   "la": "Protea afra"
+  },
+  {
+   "zh": "",
+   "la": "Afrocarduus keniensis"
+  },
+  {
+   "zh": "",
+   "la": "Impatiens pseudoviola"
+  },
+  {
+   "zh": "",
+   "la": "Kniphofia thomsonii"
+  },
+  {
+   "zh": "",
+   "la": "Gladiolus watsonioides"
+  },
+  {
+   "zh": "猴面包树",
+   "la": "Adansonia digitata"
+  },
+  {
+   "zh": "柏状黄蓉菊",
+   "la": "Euryops dacrydioides"
+  },
+  {
+   "zh": "",
+   "la": "Helichrysum newii"
+  },
+  {
+   "zh": "",
+   "la": "Helichrysum citrispinum"
+  }
+ ],
+ "安纳普尔纳": [
+  {
+   "zh": "树形杜鹃",
+   "la": "Rhododendron arboreum"
+  },
+  {
+   "zh": "球花报春",
+   "la": "Primula denticulata"
+  },
+  {
+   "zh": "猪笼南星",
+   "la": "Arisaema nepenthoides"
+  },
+  {
+   "zh": "藏东瑞香",
+   "la": "Daphne bholua"
+  },
+  {
+   "zh": "乔松",
+   "la": "Pinus wallichiana"
+  },
+  {
+   "zh": "狼毒",
+   "la": "Stellera chamaejasme"
+  },
+  {
+   "zh": "绢毛蔷薇",
+   "la": "Rosa sericea"
+  },
+  {
+   "zh": "贝母兰",
+   "la": "Coelogyne cristata"
+  },
+  {
+   "zh": "头花蓼",
+   "la": "Persicaria capitata"
+  },
+  {
+   "zh": "石海椒",
+   "la": "Reinwardtia indica"
+  },
+  {
+   "zh": "尼泊尔十大功劳",
+   "la": "Berberis napaulensis"
+  },
+  {
+   "zh": "椭圆悬钩子",
+   "la": "Rubus ellipticus"
+  }
+ ]
+}

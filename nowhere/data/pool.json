@@ -1,0 +1,2074 @@
+[
+  {
+    "lat": 35.3606,
+    "lon": 138.7274,
+    "biome": "mountain",
+    "name_hint": "富士山",
+    "elev_m": 3776,
+    "surface": "rock"
+  },
+  {
+    "lat": 42.0039,
+    "lon": 128.0556,
+    "biome": "mountain",
+    "name_hint": "长白山",
+    "elev_m": 2600,
+    "surface": "rock"
+  },
+  {
+    "lat": 40.8214,
+    "lon": 14.4264,
+    "biome": "volcano",
+    "name_hint": "维苏威火山",
+    "elev_m": 1281,
+    "surface": "rock"
+  },
+  {
+    "lat": -3.0674,
+    "lon": 37.3556,
+    "biome": "mountain",
+    "name_hint": "乞力马扎罗",
+    "elev_m": 5895,
+    "surface": "ice"
+  },
+  {
+    "lat": 37.751,
+    "lon": 14.9994,
+    "biome": "volcano",
+    "name_hint": "埃特纳火山",
+    "elev_m": 3329,
+    "surface": "rock"
+  },
+  {
+    "lat": 19.4721,
+    "lon": -155.5922,
+    "biome": "volcano",
+    "name_hint": "莫纳罗亚",
+    "elev_m": 4169,
+    "surface": "rock"
+  },
+  {
+    "lat": 15.131,
+    "lon": 120.351,
+    "biome": "volcano",
+    "name_hint": "皮纳图博",
+    "elev_m": 1486,
+    "surface": "rock"
+  },
+  {
+    "lat": 63.633,
+    "lon": -19.6097,
+    "biome": "volcano",
+    "name_hint": "艾雅法拉",
+    "elev_m": 1666,
+    "surface": "ice"
+  },
+  {
+    "lat": -18.2871,
+    "lon": 147.6992,
+    "biome": "coast",
+    "name_hint": "大堡礁",
+    "elev_m": 0,
+    "surface": "water_ocean"
+  },
+  {
+    "lat": -34.3568,
+    "lon": 18.474,
+    "biome": "coast",
+    "name_hint": "好望角",
+    "elev_m": 50,
+    "surface": "rock"
+  },
+  {
+    "lat": 41.6688,
+    "lon": -70.2962,
+    "biome": "coast",
+    "name_hint": "鳕鱼角",
+    "elev_m": 10,
+    "surface": "sand"
+  },
+  {
+    "lat": 49.3694,
+    "lon": -0.8731,
+    "biome": "coast",
+    "name_hint": "诺曼底",
+    "elev_m": 30,
+    "surface": "sand"
+  },
+  {
+    "lat": 40.6333,
+    "lon": 14.6025,
+    "biome": "coast",
+    "name_hint": "阿马尔菲",
+    "elev_m": 80,
+    "surface": "rock"
+  },
+  {
+    "lat": 36.2704,
+    "lon": -121.8081,
+    "biome": "coast",
+    "name_hint": "大苏尔",
+    "elev_m": 200,
+    "surface": "rock"
+  },
+  {
+    "lat": 20.9101,
+    "lon": 107.1829,
+    "biome": "coast",
+    "name_hint": "下龙湾",
+    "elev_m": 20,
+    "surface": "rock"
+  },
+  {
+    "lat": -22.9068,
+    "lon": -43.1729,
+    "biome": "coast",
+    "name_hint": "里约热内卢",
+    "elev_m": 5,
+    "surface": "sand"
+  },
+  {
+    "lat": -3.4653,
+    "lon": -62.2159,
+    "biome": "rainforest",
+    "name_hint": "亚马逊雨林",
+    "elev_m": 60,
+    "surface": "forest"
+  },
+  {
+    "lat": -0.2299,
+    "lon": 15.8278,
+    "biome": "rainforest",
+    "name_hint": "刚果雨林",
+    "elev_m": 400,
+    "surface": "forest"
+  },
+  {
+    "lat": 1.5533,
+    "lon": 110.3592,
+    "biome": "rainforest",
+    "name_hint": "婆罗洲",
+    "elev_m": 100,
+    "surface": "forest"
+  },
+  {
+    "lat": -5.5,
+    "lon": 141.0,
+    "biome": "rainforest",
+    "name_hint": "巴布亚",
+    "elev_m": 500,
+    "surface": "forest"
+  },
+  {
+    "lat": -16.0736,
+    "lon": 145.4194,
+    "biome": "rainforest",
+    "name_hint": "丹翠雨林",
+    "elev_m": 200,
+    "surface": "forest"
+  },
+  {
+    "lat": -0.6833,
+    "lon": -75.25,
+    "biome": "rainforest",
+    "name_hint": "亚苏尼",
+    "elev_m": 250,
+    "surface": "forest"
+  },
+  {
+    "lat": 10.3089,
+    "lon": -84.7984,
+    "biome": "rainforest",
+    "name_hint": "蒙特维多",
+    "elev_m": 1400,
+    "surface": "forest"
+  },
+  {
+    "lat": 6.4167,
+    "lon": 80.5,
+    "biome": "rainforest",
+    "name_hint": "辛哈拉加",
+    "elev_m": 500,
+    "surface": "forest"
+  },
+  {
+    "lat": 23.4162,
+    "lon": 25.6628,
+    "biome": "desert",
+    "name_hint": "撒哈拉沙漠",
+    "elev_m": 400,
+    "surface": "sand"
+  },
+  {
+    "lat": 42.5854,
+    "lon": 105.364,
+    "biome": "desert",
+    "name_hint": "戈壁滩",
+    "elev_m": 1100,
+    "surface": "bare"
+  },
+  {
+    "lat": -24.5,
+    "lon": -69.25,
+    "biome": "desert",
+    "name_hint": "阿塔卡马",
+    "elev_m": 2000,
+    "surface": "bare"
+  },
+  {
+    "lat": -24.7667,
+    "lon": 15.2833,
+    "biome": "desert",
+    "name_hint": "纳米布沙漠",
+    "elev_m": 600,
+    "surface": "sand"
+  },
+  {
+    "lat": 35.3733,
+    "lon": -117.4281,
+    "biome": "desert",
+    "name_hint": "莫哈韦沙漠",
+    "elev_m": 600,
+    "surface": "sand"
+  },
+  {
+    "lat": 22.95,
+    "lon": 46.6333,
+    "biome": "desert",
+    "name_hint": "阿拉伯沙漠",
+    "elev_m": 300,
+    "surface": "sand"
+  },
+  {
+    "lat": 27.0,
+    "lon": 71.0,
+    "biome": "desert",
+    "name_hint": "塔尔沙漠",
+    "elev_m": 150,
+    "surface": "sand"
+  },
+  {
+    "lat": -25.0,
+    "lon": 135.0,
+    "biome": "desert",
+    "name_hint": "辛普森沙漠",
+    "elev_m": 100,
+    "surface": "sand"
+  },
+  {
+    "lat": 67.45,
+    "lon": 135.0,
+    "biome": "tundra",
+    "name_hint": "西伯利亚冻原",
+    "elev_m": 100,
+    "surface": "grass"
+  },
+  {
+    "lat": 72.0,
+    "lon": -40.0,
+    "biome": "tundra",
+    "name_hint": "格陵兰",
+    "elev_m": 2000,
+    "surface": "ice"
+  },
+  {
+    "lat": 78.2232,
+    "lon": 15.6267,
+    "biome": "tundra",
+    "name_hint": "斯瓦尔巴群岛",
+    "elev_m": 400,
+    "surface": "snow"
+  },
+  {
+    "lat": 69.0,
+    "lon": -153.0,
+    "biome": "tundra",
+    "name_hint": "阿拉斯加北坡",
+    "elev_m": 50,
+    "surface": "grass"
+  },
+  {
+    "lat": 68.0,
+    "lon": 24.0,
+    "biome": "tundra",
+    "name_hint": "拉普兰",
+    "elev_m": 300,
+    "surface": "grass"
+  },
+  {
+    "lat": 70.0,
+    "lon": -90.0,
+    "biome": "tundra",
+    "name_hint": "加拿大北极",
+    "elev_m": 100,
+    "surface": "grass"
+  },
+  {
+    "lat": 56.0,
+    "lon": 160.0,
+    "biome": "tundra",
+    "name_hint": "堪察加冻原",
+    "elev_m": 300,
+    "surface": "grass"
+  },
+  {
+    "lat": -50.0,
+    "lon": -70.0,
+    "biome": "tundra",
+    "name_hint": "巴塔哥尼亚草原",
+    "elev_m": 200,
+    "surface": "grass"
+  },
+  {
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "biome": "city",
+    "name_hint": "东京",
+    "elev_m": 20,
+    "surface": "urban"
+  },
+  {
+    "lat": 39.47,
+    "lon": 75.98,
+    "biome": "desert",
+    "name_hint": "喀什",
+    "elev_m": 1290,
+    "surface": "urban"
+  },
+  {
+    "lat": -1.2921,
+    "lon": 36.8219,
+    "biome": "city",
+    "name_hint": "内罗毕",
+    "elev_m": 1660,
+    "surface": "urban"
+  },
+  {
+    "lat": -33.0472,
+    "lon": -71.6127,
+    "biome": "city",
+    "name_hint": "瓦尔帕莱索",
+    "elev_m": 40,
+    "surface": "urban"
+  },
+  {
+    "lat": 41.0082,
+    "lon": 28.9784,
+    "biome": "city",
+    "name_hint": "伊斯坦布尔",
+    "elev_m": 40,
+    "surface": "urban"
+  },
+  {
+    "lat": 64.1466,
+    "lon": -21.9426,
+    "biome": "city",
+    "name_hint": "雷克雅未克",
+    "elev_m": 15,
+    "surface": "urban"
+  },
+  {
+    "lat": 31.6295,
+    "lon": -7.9811,
+    "biome": "city",
+    "name_hint": "马拉喀什",
+    "elev_m": 470,
+    "surface": "urban"
+  },
+  {
+    "lat": 47.8864,
+    "lon": 106.9057,
+    "biome": "city",
+    "name_hint": "乌兰巴托",
+    "elev_m": 1300,
+    "surface": "urban"
+  },
+  {
+    "lat": 64.9631,
+    "lon": -19.0208,
+    "biome": "island",
+    "name_hint": "冰岛",
+    "elev_m": 300,
+    "surface": "rock"
+  },
+  {
+    "lat": 62.0107,
+    "lon": -6.7805,
+    "biome": "island",
+    "name_hint": "法罗群岛",
+    "elev_m": 300,
+    "surface": "grass"
+  },
+  {
+    "lat": -27.1127,
+    "lon": -109.3497,
+    "biome": "island",
+    "name_hint": "复活节岛",
+    "elev_m": 100,
+    "surface": "grass"
+  },
+  {
+    "lat": -18.7669,
+    "lon": 46.8691,
+    "biome": "island",
+    "name_hint": "马达加斯加",
+    "elev_m": 800,
+    "surface": "grass"
+  },
+  {
+    "lat": -17.7134,
+    "lon": 178.065,
+    "biome": "island",
+    "name_hint": "斐济",
+    "elev_m": 100,
+    "surface": "forest"
+  },
+  {
+    "lat": -0.9538,
+    "lon": -90.9656,
+    "biome": "island",
+    "name_hint": "加拉帕戈斯",
+    "elev_m": 200,
+    "surface": "rock"
+  },
+  {
+    "lat": 38.7223,
+    "lon": -27.2206,
+    "biome": "island",
+    "name_hint": "亚速尔群岛",
+    "elev_m": 300,
+    "surface": "grass"
+  },
+  {
+    "lat": 60.154,
+    "lon": -1.1486,
+    "biome": "island",
+    "name_hint": "设得兰群岛",
+    "elev_m": 100,
+    "surface": "grass"
+  },
+  {
+    "lat": 28.0025,
+    "lon": 86.8528,
+    "biome": "mountain",
+    "name_hint": "珠峰大本营",
+    "elev_m": 5364,
+    "surface": "rock"
+  },
+  {
+    "lat": 45.9237,
+    "lon": 6.8694,
+    "biome": "mountain",
+    "name_hint": "阿尔卑斯霞慕尼",
+    "elev_m": 1035,
+    "surface": "grass"
+  },
+  {
+    "lat": 35.88,
+    "lon": 76.513,
+    "biome": "mountain",
+    "name_hint": "K2大本营",
+    "elev_m": 4900,
+    "surface": "rock"
+  },
+  {
+    "lat": 63.0692,
+    "lon": -151.007,
+    "biome": "mountain",
+    "name_hint": "德纳利",
+    "elev_m": 6190,
+    "surface": "snow"
+  },
+  {
+    "lat": -32.6533,
+    "lon": -70.0108,
+    "biome": "mountain",
+    "name_hint": "阿空加瓜",
+    "elev_m": 6961,
+    "surface": "rock"
+  },
+  {
+    "lat": 45.8326,
+    "lon": 6.8652,
+    "biome": "mountain",
+    "name_hint": "勃朗峰",
+    "elev_m": 4808,
+    "surface": "ice"
+  },
+  {
+    "lat": -3.0674,
+    "lon": 37.3556,
+    "biome": "mountain",
+    "name_hint": "乞力马扎罗山顶",
+    "elev_m": 5895,
+    "surface": "ice"
+  },
+  {
+    "lat": 28.596,
+    "lon": 83.931,
+    "biome": "mountain",
+    "name_hint": "安纳普尔纳",
+    "elev_m": 8091,
+    "surface": "snow"
+  },
+  {
+    "name_hint": "赤壁",
+    "lat": 29.7167,
+    "lon": 113.8833,
+    "biome": "coast"
+  },
+  {
+    "name_hint": "汶川",
+    "lat": 31.4734,
+    "lon": 103.5847,
+    "biome": "mountain"
+  },
+  {
+    "name_hint": "新疆",
+    "lat": 43.79,
+    "lon": 87.6,
+    "biome": "desert"
+  },
+  {
+    "name_hint": "周庄",
+    "lat": 31.12,
+    "lon": 120.85,
+    "biome": "city"
+  },
+  {
+    "name_hint": "飞驒古川",
+    "lat": 36.24,
+    "lon": 137.19,
+    "biome": "mountain"
+  },
+  {
+    "name_hint": "开罗",
+    "lat": 30.0444,
+    "lon": 31.2357,
+    "biome": "city"
+  },
+  {
+    "name_hint": "阿那亚孤独图书馆",
+    "lat": 39.78,
+    "lon": 119.48,
+    "biome": "coast"
+  },
+  {
+    "name_hint": "唐山",
+    "lat": 39.6309,
+    "lon": 118.1802,
+    "biome": "city"
+  },
+  {
+    "name_hint": "维也纳",
+    "lat": 48.2082,
+    "lon": 16.3738,
+    "biome": "city"
+  },
+  {
+    "name_hint": "甘肃戈壁公路",
+    "lat": 40.1,
+    "lon": 94.67,
+    "biome": "desert"
+  },
+  {
+    "name_hint": "广东开平",
+    "lat": 22.38,
+    "lon": 112.69,
+    "biome": "city"
+  },
+  {
+    "name_hint": "黄州",
+    "lat": 30.4541,
+    "lon": 114.8723,
+    "biome": "city"
+  },
+  {
+    "name_hint": "利马",
+    "lat": -12.0464,
+    "lon": -77.0428,
+    "biome": "city"
+  },
+  {
+    "name_hint": "新西兰",
+    "lat": -40.9006,
+    "lon": 174.886,
+    "biome": "city"
+  },
+  {
+    "name_hint": "阿皮亚",
+    "lat": -13.8333,
+    "lon": -171.75,
+    "biome": "city"
+  },
+  {
+    "name_hint": "塔林",
+    "lat": 59.437,
+    "lon": 24.7536,
+    "biome": "city"
+  },
+  {
+    "name_hint": "温泉关",
+    "lat": 38.8,
+    "lon": 22.5667,
+    "biome": "city"
+  },
+  {
+    "name_hint": "布里斯班",
+    "lat": -27.4698,
+    "lon": 153.0251,
+    "biome": "city"
+  },
+  {
+    "name_hint": "大理",
+    "lat": 25.59,
+    "lon": 100.23,
+    "biome": "mountain"
+  },
+  {
+    "name_hint": "台北",
+    "lat": 25.033,
+    "lon": 121.5654,
+    "biome": "city"
+  },
+  {
+    "name_hint": "绍兴",
+    "lat": 30.0255,
+    "lon": 120.5738,
+    "biome": "city"
+  },
+  {
+    "name_hint": "东安格利亚",
+    "lat": 52.5,
+    "lon": 1.0,
+    "biome": "city"
+  },
+  {
+    "name_hint": "陕西",
+    "lat": 34.2658,
+    "lon": 108.9541,
+    "biome": "city"
+  },
+  {
+    "name_hint": "圣地亚哥",
+    "lat": -33.4489,
+    "lon": -70.6693,
+    "biome": "city"
+  },
+  {
+    "name_hint": "敦刻尔克",
+    "lat": 51.0343,
+    "lon": 2.3768,
+    "biome": "city"
+  },
+  {
+    "name_hint": "伦敦",
+    "lat": 51.5074,
+    "lon": -0.1278,
+    "biome": "city"
+  },
+  {
+    "name_hint": "基韦斯特",
+    "lat": 24.56,
+    "lon": -81.78,
+    "biome": "city"
+  },
+  {
+    "name_hint": "沈阳",
+    "lat": 41.8057,
+    "lon": 123.4315,
+    "biome": "city"
+  },
+  {
+    "name_hint": "曲阜",
+    "lat": 35.5968,
+    "lon": 116.9851,
+    "biome": "city"
+  },
+  {
+    "name_hint": "重庆武隆",
+    "lat": 29.33,
+    "lon": 107.76,
+    "biome": "city"
+  },
+  {
+    "name_hint": "西西里",
+    "lat": 37.5994,
+    "lon": 14.0154,
+    "biome": "city"
+  },
+  {
+    "name_hint": "郑州",
+    "lat": 34.7466,
+    "lon": 113.6253,
+    "biome": "city"
+  },
+  {
+    "name_hint": "暹粒",
+    "lat": 13.3633,
+    "lon": 103.856,
+    "biome": "city"
+  },
+  {
+    "name_hint": "雅典",
+    "lat": 37.9838,
+    "lon": 23.7275,
+    "biome": "city"
+  },
+  {
+    "name_hint": "萨拉热窝",
+    "lat": 43.8563,
+    "lon": 18.4131,
+    "biome": "city"
+  },
+  {
+    "name_hint": "布鲁塞尔",
+    "lat": 50.8503,
+    "lon": 4.3517,
+    "biome": "city"
+  },
+  {
+    "name_hint": "马尼拉",
+    "lat": 14.5995,
+    "lon": 120.9842,
+    "biome": "city"
+  },
+  {
+    "name_hint": "庞贝",
+    "lat": 40.7462,
+    "lon": 14.4989,
+    "biome": "city"
+  },
+  {
+    "name_hint": "哈瓦那",
+    "lat": 23.1136,
+    "lon": -82.3666,
+    "biome": "city"
+  },
+  {
+    "name_hint": "开普敦",
+    "lat": -33.9249,
+    "lon": 18.4241,
+    "biome": "city"
+  },
+  {
+    "name_hint": "中山",
+    "lat": 22.52,
+    "lon": 113.39,
+    "biome": "city"
+  },
+  {
+    "name_hint": "鸟取",
+    "lat": 35.5039,
+    "lon": 134.2378,
+    "biome": "city"
+  },
+  {
+    "name_hint": "布拉内斯",
+    "lat": 41.6749,
+    "lon": 2.7914,
+    "biome": "city"
+  },
+  {
+    "name_hint": "休斯敦",
+    "lat": 29.7604,
+    "lon": -95.3698,
+    "biome": "city"
+  },
+  {
+    "name_hint": "喀土穆",
+    "lat": 15.5007,
+    "lon": 32.5599,
+    "biome": "city"
+  },
+  {
+    "name_hint": "都灵",
+    "lat": 45.0703,
+    "lon": 7.6869,
+    "biome": "city"
+  },
+  {
+    "name_hint": "伦敦海格特",
+    "lat": 51.57,
+    "lon": -0.14,
+    "biome": "city"
+  },
+  {
+    "name_hint": "滑铁卢",
+    "lat": 50.7147,
+    "lon": 4.4094,
+    "biome": "city"
+  },
+  {
+    "name_hint": "津巴布韦",
+    "lat": -19.0154,
+    "lon": 29.1549,
+    "biome": "city"
+  },
+  {
+    "name_hint": "内蒙古",
+    "lat": 40.82,
+    "lon": 111.65,
+    "biome": "city"
+  },
+  {
+    "name_hint": "京都",
+    "lat": 35.0116,
+    "lon": 135.7681,
+    "biome": "city"
+  },
+  {
+    "name_hint": "密苏里",
+    "lat": 38.58,
+    "lon": -92.17,
+    "biome": "city"
+  },
+  {
+    "name_hint": "索姆河",
+    "lat": 49.9333,
+    "lon": 2.55,
+    "biome": "coast"
+  },
+  {
+    "name_hint": "剑桥",
+    "lat": 52.2053,
+    "lon": 0.1218,
+    "biome": "city"
+  },
+  {
+    "name_hint": "特立尼达",
+    "lat": 10.6918,
+    "lon": -61.2225,
+    "biome": "city"
+  },
+  {
+    "name_hint": "尾道",
+    "lat": 34.4081,
+    "lon": 133.2064,
+    "biome": "city"
+  },
+  {
+    "name_hint": "赫尔辛基",
+    "lat": 60.1699,
+    "lon": 24.9384,
+    "biome": "city"
+  },
+  {
+    "name_hint": "台南",
+    "lat": 22.9999,
+    "lon": 120.2269,
+    "biome": "city"
+  },
+  {
+    "name_hint": "佛罗伦萨",
+    "lat": 43.77,
+    "lon": 11.25,
+    "biome": "city"
+  },
+  {
+    "name_hint": "韩城",
+    "lat": 35.48,
+    "lon": 110.44,
+    "biome": "city"
+  },
+  {
+    "name_hint": "贝鲁特",
+    "lat": 33.8938,
+    "lon": 35.5018,
+    "biome": "city"
+  },
+  {
+    "name_hint": "帕特森",
+    "lat": 40.9168,
+    "lon": -74.1718,
+    "biome": "city"
+  },
+  {
+    "name_hint": "莱斯博斯",
+    "lat": 39.2,
+    "lon": 26.3333,
+    "biome": "city"
+  },
+  {
+    "name_hint": "道后温泉",
+    "lat": 33.85,
+    "lon": 132.78,
+    "biome": "city"
+  },
+  {
+    "name_hint": "广岛",
+    "lat": 34.3853,
+    "lon": 132.4553,
+    "biome": "city"
+  },
+  {
+    "name_hint": "哈尔滨",
+    "lat": 45.8038,
+    "lon": 126.535,
+    "biome": "city"
+  },
+  {
+    "name_hint": "约克郡",
+    "lat": 53.958,
+    "lon": -1.0803,
+    "biome": "city"
+  },
+  {
+    "name_hint": "上海",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "biome": "city"
+  },
+  {
+    "name_hint": "金边",
+    "lat": 11.5564,
+    "lon": 104.9282,
+    "biome": "city"
+  },
+  {
+    "name_hint": "马来西亚",
+    "lat": 4.2105,
+    "lon": 101.9758,
+    "biome": "city"
+  },
+  {
+    "name_hint": "格尔利茨",
+    "lat": 51.1528,
+    "lon": 14.9872,
+    "biome": "city"
+  },
+  {
+    "name_hint": "马丘比丘",
+    "lat": -13.1631,
+    "lon": -72.545,
+    "biome": "city"
+  },
+  {
+    "name_hint": "巴比伦",
+    "lat": 32.5363,
+    "lon": 44.4209,
+    "biome": "city"
+  },
+  {
+    "name_hint": "重庆交通茶馆",
+    "lat": 29.5,
+    "lon": 106.51,
+    "biome": "city"
+  },
+  {
+    "name_hint": "格尔尼卡",
+    "lat": 43.3167,
+    "lon": -2.6833,
+    "biome": "city"
+  },
+  {
+    "name_hint": "镰仓",
+    "lat": 35.32,
+    "lon": 139.55,
+    "biome": "city"
+  },
+  {
+    "name_hint": "伯尔尼",
+    "lat": 46.95,
+    "lon": 7.45,
+    "biome": "city"
+  },
+  {
+    "name_hint": "淡路岛",
+    "lat": 34.3833,
+    "lon": 134.8333,
+    "biome": "island"
+  },
+  {
+    "name_hint": "河内",
+    "lat": 21.0278,
+    "lon": 105.8342,
+    "biome": "city"
+  },
+  {
+    "name_hint": "萨尔茨堡",
+    "lat": 47.8095,
+    "lon": 13.055,
+    "biome": "city"
+  },
+  {
+    "name_hint": "肯尼亚",
+    "lat": -0.0236,
+    "lon": 37.9062,
+    "biome": "city"
+  },
+  {
+    "name_hint": "遵义",
+    "lat": 27.7254,
+    "lon": 106.9272,
+    "biome": "city"
+  },
+  {
+    "name_hint": "魏玛",
+    "lat": 50.98,
+    "lon": 11.33,
+    "biome": "city"
+  },
+  {
+    "name_hint": "北京大学",
+    "lat": 39.99,
+    "lon": 116.31,
+    "biome": "city"
+  },
+  {
+    "name_hint": "威海卫",
+    "lat": 37.5131,
+    "lon": 122.1204,
+    "biome": "city"
+  },
+  {
+    "name_hint": "都柏林",
+    "lat": 53.3498,
+    "lon": -6.2603,
+    "biome": "city"
+  },
+  {
+    "name_hint": "华沙",
+    "lat": 52.2297,
+    "lon": 21.0122,
+    "biome": "city"
+  },
+  {
+    "name_hint": "波斯波利斯",
+    "lat": 29.9342,
+    "lon": 52.8915,
+    "biome": "city"
+  },
+  {
+    "name_hint": "莫桑比克",
+    "lat": -18.6657,
+    "lon": 35.5296,
+    "biome": "city"
+  },
+  {
+    "name_hint": "布拉柴维尔",
+    "lat": -4.2634,
+    "lon": 15.2429,
+    "biome": "city"
+  },
+  {
+    "name_hint": "那不勒斯",
+    "lat": 40.8518,
+    "lon": 14.2681,
+    "biome": "city"
+  },
+  {
+    "name_hint": "台湾九份",
+    "lat": 25.11,
+    "lon": 121.84,
+    "biome": "city"
+  },
+  {
+    "name_hint": "雅加达",
+    "lat": -6.2088,
+    "lon": 106.8456,
+    "biome": "city"
+  },
+  {
+    "name_hint": "莫斯科",
+    "lat": 55.7558,
+    "lon": 37.6173,
+    "biome": "city"
+  },
+  {
+    "name_hint": "东京新宿",
+    "lat": 35.69,
+    "lon": 139.7,
+    "biome": "city"
+  },
+  {
+    "name_hint": "波尔特沃",
+    "lat": 42.4263,
+    "lon": 3.1625,
+    "biome": "city"
+  },
+  {
+    "name_hint": "开封",
+    "lat": 34.7972,
+    "lon": 114.3076,
+    "biome": "city"
+  },
+  {
+    "name_hint": "锡尔斯玛丽亚",
+    "lat": 46.4333,
+    "lon": 9.7667,
+    "biome": "city"
+  },
+  {
+    "name_hint": "九寨沟",
+    "lat": 33.26,
+    "lon": 103.92,
+    "biome": "mountain"
+  },
+  {
+    "name_hint": "布拉格",
+    "lat": 50.0755,
+    "lon": 14.4378,
+    "biome": "city"
+  },
+  {
+    "name_hint": "威尼斯",
+    "lat": 45.4408,
+    "lon": 12.3155,
+    "biome": "city"
+  },
+  {
+    "name_hint": "卡廷",
+    "lat": 54.75,
+    "lon": 32.0,
+    "biome": "forest"
+  },
+  {
+    "name_hint": "安徽宏村",
+    "lat": 30.0,
+    "lon": 117.98,
+    "biome": "city"
+  },
+  {
+    "name_hint": "横店",
+    "lat": 29.16,
+    "lon": 120.31,
+    "biome": "city"
+  },
+  {
+    "name_hint": "高密",
+    "lat": 36.3763,
+    "lon": 119.7536,
+    "biome": "city"
+  },
+  {
+    "name_hint": "马拉松",
+    "lat": 38.15,
+    "lon": 23.95,
+    "biome": "city"
+  },
+  {
+    "name_hint": "圣卢西亚",
+    "lat": 13.9094,
+    "lon": -60.9789,
+    "biome": "city"
+  },
+  {
+    "name_hint": "首尔",
+    "lat": 37.5665,
+    "lon": 126.978,
+    "biome": "city"
+  },
+  {
+    "name_hint": "太子港",
+    "lat": 18.5944,
+    "lon": -72.3074,
+    "biome": "city"
+  },
+  {
+    "name_hint": "哥本哈根",
+    "lat": 55.6761,
+    "lon": 12.5683,
+    "biome": "city"
+  },
+  {
+    "name_hint": "泉州",
+    "lat": 24.8741,
+    "lon": 118.6757,
+    "biome": "city"
+  },
+  {
+    "name_hint": "荆州",
+    "lat": 30.3261,
+    "lon": 112.2391,
+    "biome": "city"
+  },
+  {
+    "name_hint": "桑给巴尔",
+    "lat": -6.1659,
+    "lon": 39.2026,
+    "biome": "city"
+  },
+  {
+    "name_hint": "斯特拉特福",
+    "lat": 52.19,
+    "lon": -1.71,
+    "biome": "city"
+  },
+  {
+    "name_hint": "洛杉矶",
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "biome": "city"
+  },
+  {
+    "name_hint": "惠灵顿",
+    "lat": -41.2865,
+    "lon": 174.7762,
+    "biome": "city"
+  },
+  {
+    "name_hint": "重庆",
+    "lat": 29.4316,
+    "lon": 106.9123,
+    "biome": "city"
+  },
+  {
+    "name_hint": "九份",
+    "lat": 25.1097,
+    "lon": 121.8445,
+    "biome": "city"
+  },
+  {
+    "name_hint": "奥马哈海滩",
+    "lat": 49.3667,
+    "lon": -0.8833,
+    "biome": "city"
+  },
+  {
+    "name_hint": "密西西比",
+    "lat": 32.3547,
+    "lon": -89.3985,
+    "biome": "city"
+  },
+  {
+    "name_hint": "康科德",
+    "lat": 42.4604,
+    "lon": -71.3489,
+    "biome": "city"
+  },
+  {
+    "name_hint": "日内瓦",
+    "lat": 46.2,
+    "lon": 6.14,
+    "biome": "city"
+  },
+  {
+    "name_hint": "斯图加特",
+    "lat": 48.78,
+    "lon": 9.18,
+    "biome": "city"
+  },
+  {
+    "name_hint": "白鹿原",
+    "lat": 34.1736,
+    "lon": 109.0898,
+    "biome": "city"
+  },
+  {
+    "name_hint": "阿尤恩",
+    "lat": 27.1536,
+    "lon": -13.2033,
+    "biome": "city"
+  },
+  {
+    "name_hint": "普罗旺斯",
+    "lat": 43.95,
+    "lon": 6.07,
+    "biome": "city"
+  },
+  {
+    "name_hint": "波恩",
+    "lat": 50.73,
+    "lon": 7.1,
+    "biome": "city"
+  },
+  {
+    "name_hint": "北大西洋",
+    "lat": 41.0,
+    "lon": -30.0,
+    "biome": "city"
+  },
+  {
+    "name_hint": "比什凯克",
+    "lat": 42.8746,
+    "lon": 74.5698,
+    "biome": "city"
+  },
+  {
+    "name_hint": "阿拉斯加",
+    "lat": 64.2008,
+    "lon": -149.4937,
+    "biome": "city"
+  },
+  {
+    "name_hint": "雾社",
+    "lat": 23.9673,
+    "lon": 121.1333,
+    "biome": "city"
+  },
+  {
+    "name_hint": "厦门",
+    "lat": 24.4798,
+    "lon": 118.0894,
+    "biome": "city"
+  },
+  {
+    "name_hint": "砂拉越",
+    "lat": 1.5533,
+    "lon": 110.3592,
+    "biome": "city"
+  },
+  {
+    "name_hint": "吴哥窟",
+    "lat": 13.41,
+    "lon": 103.87,
+    "biome": "city"
+  },
+  {
+    "name_hint": "清迈",
+    "lat": 18.7883,
+    "lon": 98.9853,
+    "biome": "city"
+  },
+  {
+    "name_hint": "西安",
+    "lat": 34.3416,
+    "lon": 108.9398,
+    "biome": "city"
+  },
+  {
+    "name_hint": "山海关",
+    "lat": 39.9533,
+    "lon": 119.7569,
+    "biome": "city"
+  },
+  {
+    "name_hint": "德国格尔利茨",
+    "lat": 51.15,
+    "lon": 14.97,
+    "biome": "city"
+  },
+  {
+    "name_hint": "布宜诺斯艾利斯",
+    "lat": -34.6037,
+    "lon": -58.3816,
+    "biome": "city"
+  },
+  {
+    "name_hint": "法罗岛",
+    "lat": 62.0,
+    "lon": -6.8,
+    "biome": "island"
+  },
+  {
+    "name_hint": "费城",
+    "lat": 39.9526,
+    "lon": -75.1652,
+    "biome": "city"
+  },
+  {
+    "name_hint": "北京",
+    "lat": 39.9042,
+    "lon": 116.4074,
+    "biome": "city"
+  },
+  {
+    "name_hint": "迦太基",
+    "lat": 36.8528,
+    "lon": 10.3233,
+    "biome": "city"
+  },
+  {
+    "name_hint": "虎门",
+    "lat": 22.8193,
+    "lon": 113.666,
+    "biome": "city"
+  },
+  {
+    "name_hint": "巴黎",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "biome": "city"
+  },
+  {
+    "name_hint": "武汉",
+    "lat": 30.5928,
+    "lon": 114.3055,
+    "biome": "city"
+  },
+  {
+    "name_hint": "列宁格勒",
+    "lat": 59.93,
+    "lon": 30.32,
+    "biome": "city"
+  },
+  {
+    "name_hint": "加里宁格勒",
+    "lat": 54.7104,
+    "lon": 20.4522,
+    "biome": "city"
+  },
+  {
+    "name_hint": "太仓",
+    "lat": 31.45,
+    "lon": 121.11,
+    "biome": "city"
+  },
+  {
+    "name_hint": "孟买",
+    "lat": 19.076,
+    "lon": 72.8777,
+    "biome": "city"
+  },
+  {
+    "name_hint": "尼日利亚",
+    "lat": 9.082,
+    "lon": 8.6753,
+    "biome": "city"
+  },
+  {
+    "name_hint": "阿姆斯特丹",
+    "lat": 52.3676,
+    "lon": 4.9041,
+    "biome": "city"
+  },
+  {
+    "name_hint": "圣彼得堡",
+    "lat": 59.9343,
+    "lon": 30.3351,
+    "biome": "city"
+  },
+  {
+    "name_hint": "新德里",
+    "lat": 28.6139,
+    "lon": 77.209,
+    "biome": "city"
+  },
+  {
+    "name_hint": "海盐",
+    "lat": 30.5259,
+    "lon": 120.9461,
+    "biome": "city"
+  },
+  {
+    "name_hint": "珍珠港",
+    "lat": 21.3445,
+    "lon": -157.9747,
+    "biome": "city"
+  },
+  {
+    "name_hint": "马嵬坡",
+    "lat": 34.2614,
+    "lon": 108.4953,
+    "biome": "city"
+  },
+  {
+    "name_hint": "特里尔",
+    "lat": 49.75,
+    "lon": 6.64,
+    "biome": "city"
+  },
+  {
+    "name_hint": "延安",
+    "lat": 36.59,
+    "lon": 109.49,
+    "biome": "city"
+  },
+  {
+    "name_hint": "凡尔登",
+    "lat": 49.16,
+    "lon": 5.3876,
+    "biome": "city"
+  },
+  {
+    "name_hint": "锡拉库萨",
+    "lat": 37.0755,
+    "lon": 15.2866,
+    "biome": "city"
+  },
+  {
+    "name_hint": "爱丁堡",
+    "lat": 55.95,
+    "lon": -3.19,
+    "biome": "city"
+  },
+  {
+    "name_hint": "成都",
+    "lat": 30.5728,
+    "lon": 104.0668,
+    "biome": "city"
+  },
+  {
+    "name_hint": "万隆",
+    "lat": -6.92,
+    "lon": 107.61,
+    "biome": "city"
+  },
+  {
+    "name_hint": "长岛",
+    "lat": 40.7891,
+    "lon": -73.135,
+    "biome": "city"
+  },
+  {
+    "name_hint": "苏格兰",
+    "lat": 56.4907,
+    "lon": -4.2026,
+    "biome": "city"
+  },
+  {
+    "name_hint": "南京",
+    "lat": 32.0603,
+    "lon": 118.7969,
+    "biome": "city"
+  },
+  {
+    "name_hint": "罗马",
+    "lat": 41.9028,
+    "lon": 12.4964,
+    "biome": "city"
+  },
+  {
+    "name_hint": "长沙",
+    "lat": 28.23,
+    "lon": 112.94,
+    "biome": "city"
+  },
+  {
+    "name_hint": "五台山",
+    "lat": 38.9628,
+    "lon": 113.5789,
+    "biome": "mountain"
+  },
+  {
+    "name_hint": "意大利托斯卡纳",
+    "lat": 43.35,
+    "lon": 11.33,
+    "biome": "city"
+  },
+  {
+    "name_hint": "克拉科夫",
+    "lat": 50.0647,
+    "lon": 19.945,
+    "biome": "city"
+  },
+  {
+    "name_hint": "俄亥俄",
+    "lat": 40.4173,
+    "lon": -82.9071,
+    "biome": "city"
+  },
+  {
+    "name_hint": "松山",
+    "lat": 31.4619,
+    "lon": 104.6761,
+    "biome": "city"
+  },
+  {
+    "name_hint": "滕王阁",
+    "lat": 28.682,
+    "lon": 115.8939,
+    "biome": "city"
+  },
+  {
+    "name_hint": "墨西哥城",
+    "lat": 19.4326,
+    "lon": -99.1332,
+    "biome": "city"
+  },
+  {
+    "name_hint": "纽约",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "biome": "city"
+  },
+  {
+    "name_hint": "小樽",
+    "lat": 43.19,
+    "lon": 140.99,
+    "biome": "city"
+  },
+  {
+    "name_hint": "洛阳",
+    "lat": 34.6836,
+    "lon": 112.4541,
+    "biome": "city"
+  },
+  {
+    "name_hint": "新潟",
+    "lat": 37.9026,
+    "lon": 139.0232,
+    "biome": "city"
+  },
+  {
+    "name_hint": "井冈山",
+    "lat": 26.58,
+    "lon": 114.17,
+    "biome": "mountain"
+  },
+  {
+    "name_hint": "大同",
+    "lat": 40.0768,
+    "lon": 113.3001,
+    "biome": "city"
+  },
+  {
+    "name_hint": "岳阳楼",
+    "lat": 29.3838,
+    "lon": 113.098,
+    "biome": "city"
+  },
+  {
+    "name_hint": "安卡拉",
+    "lat": 39.9334,
+    "lon": 32.8597,
+    "biome": "city"
+  },
+  {
+    "name_hint": "米兰",
+    "lat": 45.46,
+    "lon": 9.19,
+    "biome": "city"
+  },
+  {
+    "name_hint": "加尔各答",
+    "lat": 22.57,
+    "lon": 88.36,
+    "biome": "city"
+  },
+  {
+    "name_hint": "阿默斯特",
+    "lat": 42.3732,
+    "lon": -72.5199,
+    "biome": "city"
+  },
+  {
+    "name_hint": "哈拉雷",
+    "lat": -17.8252,
+    "lon": 31.0335,
+    "biome": "city"
+  },
+  {
+    "name_hint": "白帝城",
+    "lat": 31.0433,
+    "lon": 109.5672,
+    "biome": "city"
+  },
+  {
+    "name_hint": "长崎",
+    "lat": 32.7503,
+    "lon": 129.8779,
+    "biome": "city"
+  },
+  {
+    "name_hint": "瑞士提契诺",
+    "lat": 46.0,
+    "lon": 8.8,
+    "biome": "city"
+  },
+  {
+    "name_hint": "韶山",
+    "lat": 27.94,
+    "lon": 112.49,
+    "biome": "mountain"
+  },
+  {
+    "name_hint": "伊沃托",
+    "lat": 49.8667,
+    "lon": 0.7667,
+    "biome": "city"
+  },
+  {
+    "name_hint": "切尔诺贝利",
+    "lat": 51.38,
+    "lon": 30.1,
+    "biome": "city"
+  },
+  {
+    "name_hint": "英格兰北部",
+    "lat": 54.0,
+    "lon": -2.0,
+    "biome": "city"
+  },
+  {
+    "name_hint": "约翰内斯堡",
+    "lat": -26.2041,
+    "lon": 28.0473,
+    "biome": "city"
+  },
+  {
+    "name_hint": "山西",
+    "lat": 37.87,
+    "lon": 112.55,
+    "biome": "city"
+  },
+  {
+    "name_hint": "德罗霍贝奇",
+    "lat": 49.3486,
+    "lon": 23.5075,
+    "biome": "city"
+  },
+  {
+    "name_hint": "喀布尔",
+    "lat": 34.5553,
+    "lon": 69.2075,
+    "biome": "city"
+  },
+  {
+    "name_hint": "卡塔赫纳",
+    "lat": 10.391,
+    "lon": -75.5144,
+    "biome": "city"
+  },
+  {
+    "name_hint": "巴塞罗那",
+    "lat": 41.39,
+    "lon": 2.17,
+    "biome": "city"
+  },
+  {
+    "name_hint": "汾阳",
+    "lat": 37.2653,
+    "lon": 111.7753,
+    "biome": "city"
+  },
+  {
+    "name_hint": "垦丁",
+    "lat": 21.9483,
+    "lon": 120.7867,
+    "biome": "city"
+  },
+  {
+    "name_hint": "肖尔登",
+    "lat": 61.5,
+    "lon": 7.0,
+    "biome": "city"
+  },
+  {
+    "name_hint": "阿尔及尔",
+    "lat": 36.7538,
+    "lon": 3.0588,
+    "biome": "city"
+  },
+  {
+    "name_hint": "凤凰",
+    "lat": 27.9486,
+    "lon": 109.5986,
+    "biome": "city"
+  },
+  {
+    "name_hint": "杭州",
+    "lat": 30.2741,
+    "lon": 120.1551,
+    "biome": "city"
+  },
+  {
+    "name_hint": "基加利",
+    "lat": -1.9403,
+    "lon": 29.8739,
+    "biome": "city"
+  },
+  {
+    "name_hint": "茶峒",
+    "lat": 28.4856,
+    "lon": 109.3247,
+    "biome": "city"
+  },
+  {
+    "name_hint": "苏塞克斯",
+    "lat": 50.8365,
+    "lon": -0.1278,
+    "biome": "city"
+  },
+  {
+    "name_hint": "安第斯山脉",
+    "lat": -33.4489,
+    "lon": -70.6693,
+    "biome": "mountain"
+  },
+  {
+    "name_hint": "突尼斯撒哈拉",
+    "lat": 33.89,
+    "lon": 9.54,
+    "biome": "city"
+  },
+  {
+    "name_hint": "撒哈拉",
+    "lat": 23.0,
+    "lon": 12.0,
+    "biome": "desert"
+  },
+  {
+    "name_hint": "香港",
+    "lat": 22.3193,
+    "lon": 114.1694,
+    "biome": "city"
+  },
+  {
+    "name_hint": "达喀尔",
+    "lat": 14.7167,
+    "lon": -17.4677,
+    "biome": "city"
+  },
+  {
+    "name_hint": "旧金山",
+    "lat": 37.77,
+    "lon": -122.42,
+    "biome": "city"
+  },
+  {
+    "name_hint": "阿拉卡塔卡",
+    "lat": 10.5933,
+    "lon": -74.185,
+    "biome": "city"
+  },
+  {
+    "name_hint": "南京先锋书店",
+    "lat": 32.06,
+    "lon": 118.79,
+    "biome": "city"
+  },
+  {
+    "name_hint": "特洛伊",
+    "lat": 39.9574,
+    "lon": 26.2389,
+    "biome": "city"
+  },
+  {
+    "name_hint": "呼兰",
+    "lat": 45.9842,
+    "lon": 126.6031,
+    "biome": "city"
+  },
+  {
+    "name_hint": "普林斯顿",
+    "lat": 40.34,
+    "lon": -74.66,
+    "biome": "city"
+  },
+  {
+    "name_hint": "西西里岛",
+    "lat": 37.6,
+    "lon": 14.02,
+    "biome": "island"
+  },
+  {
+    "name_hint": "特奥蒂瓦坎",
+    "lat": 19.6925,
+    "lon": -98.8438,
+    "biome": "city"
+  },
+  {
+    "name_hint": "柏林",
+    "lat": 52.52,
+    "lon": 13.405,
+    "biome": "city"
+  },
+  {
+    "name_hint": "耶路撒冷",
+    "lat": 31.7683,
+    "lon": 35.2137,
+    "biome": "city"
+  },
+  {
+    "name_hint": "屋久岛",
+    "lat": 30.3557,
+    "lon": 130.505,
+    "biome": "island"
+  },
+  {
+    "name_hint": "司汤达故乡",
+    "lat": 45.05,
+    "lon": 5.73,
+    "biome": "city"
+  },
+  {
+    "name_hint": "里斯本",
+    "lat": 38.7223,
+    "lon": -9.1393,
+    "biome": "city"
+  },
+  {
+    "name_hint": "卑尔根",
+    "lat": 60.3913,
+    "lon": 5.3221,
+    "biome": "city"
+  },
+  {
+    "name_hint": "墨尔本",
+    "lat": -37.8136,
+    "lon": 144.9631,
+    "biome": "city"
+  },
+  {
+    "name_hint": "呼和浩特",
+    "lat": 40.8421,
+    "lon": 111.75,
+    "biome": "city"
+  },
+  {
+    "name_hint": "卢克索",
+    "lat": 25.6872,
+    "lon": 32.6396,
+    "biome": "city"
+  },
+  {
+    "name_hint": "商丘",
+    "lat": 34.414,
+    "lon": 115.656,
+    "biome": "city"
+  },
+  {
+    "name_hint": "三亚",
+    "lat": 18.2528,
+    "lon": 109.512,
+    "biome": "city"
+  },
+  {
+    "name_hint": "伊斯法罕",
+    "lat": 32.6546,
+    "lon": 51.668,
+    "biome": "city"
+  },
+  {
+    "name_hint": "圣保罗",
+    "lat": -23.5505,
+    "lon": -46.6333,
+    "biome": "city"
+  },
+  {
+    "name_hint": "邯郸",
+    "lat": 36.625,
+    "lon": 114.539,
+    "biome": "city"
+  },
+  {
+    "name_hint": "张家界",
+    "lat": 29.117,
+    "lon": 110.4793,
+    "biome": "city"
+  },
+  {
+    "name_hint": "拉萨",
+    "lat": 29.652,
+    "lon": 91.1721,
+    "biome": "city"
+  },
+  {
+    "name_hint": "加德满都",
+    "lat": 27.7172,
+    "lon": 85.324,
+    "biome": "city"
+  },
+  {
+    "name_hint": "巴尔的摩",
+    "lat": 39.2904,
+    "lon": -76.6122,
+    "biome": "city"
+  },
+  {
+    "name_hint": "悉尼",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "biome": "city"
+  },
+  {
+    "name_hint": "大峡谷",
+    "lat": 36.1069,
+    "lon": -112.1129,
+    "biome": "city"
+  },
+  {
+    "name_hint": "杜塞尔多夫",
+    "lat": 51.2277,
+    "lon": 6.7735,
+    "biome": "city"
+  },
+  {
+    "name_hint": "丽江",
+    "lat": 26.8721,
+    "lon": 100.2299,
+    "biome": "city"
+  },
+  {
+    "name_hint": "安塔利亚",
+    "lat": 36.8969,
+    "lon": 30.7133,
+    "biome": "city"
+  },
+  {
+    "name_hint": "大阪",
+    "lat": 34.6937,
+    "lon": 135.5023,
+    "biome": "city"
+  },
+  {
+    "name_hint": "布达佩斯",
+    "lat": 47.4979,
+    "lon": 19.0402,
+    "biome": "city"
+  },
+  {
+    "name_hint": "库斯科",
+    "lat": -13.5319,
+    "lon": -71.9675,
+    "biome": "city"
+  },
+  {
+    "name_hint": "坎昆",
+    "lat": 21.1619,
+    "lon": -86.8515,
+    "biome": "city"
+  },
+  {
+    "name_hint": "卡帕多西亚",
+    "lat": 38.6431,
+    "lon": 34.8289,
+    "biome": "city"
+  },
+  {
+    "name_hint": "广州",
+    "lat": 23.1291,
+    "lon": 113.2644,
+    "biome": "city"
+  },
+  {
+    "name_hint": "天津",
+    "lat": 39.3434,
+    "lon": 117.3616,
+    "biome": "city"
+  },
+  {
+    "name_hint": "蓝毗尼",
+    "lat": 27.4833,
+    "lon": 83.2767,
+    "biome": "city"
+  },
+  {
+    "name_hint": "滕州",
+    "lat": 35.113,
+    "lon": 117.165,
+    "biome": "city"
+  },
+  {
+    "name_hint": "巴厘岛",
+    "lat": -8.3405,
+    "lon": 115.092,
+    "biome": "city"
+  },
+  {
+    "name_hint": "布拉迪斯拉发",
+    "lat": 48.1486,
+    "lon": 17.1077,
+    "biome": "city"
+  },
+  {
+    "name_hint": "奥斯陆",
+    "lat": 59.9139,
+    "lon": 10.7522,
+    "biome": "city"
+  },
+  {
+    "name_hint": "巴格达",
+    "lat": 33.3152,
+    "lon": 44.3661,
+    "biome": "city"
+  },
+  {
+    "name_hint": "慕尼黑",
+    "lat": 48.1351,
+    "lon": 11.582,
+    "biome": "city"
+  }
+]

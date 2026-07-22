@@ -1,0 +1,1989 @@
+{
+  "dawn": [
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "phase": [
+          "night"
+        ],
+        "polar_day": false
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "phase": [
+          "day"
+        ]
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "season": [
+          "winter"
+        ],
+        "temp_max": 5
+      }
+    },
+    {
+      "requires": {
+        "phase": [
+          "day"
+        ]
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "phase": [
+          "day"
+        ]
+      }
+    },
+    {
+      "requires": {
+        "phase": [
+          "day"
+        ]
+      }
+    },
+    {
+      "requires": {
+        "phase": [
+          "day"
+        ]
+      }
+    },
+    {
+      "requires": {
+        "phase": [
+          "day"
+        ],
+        "lat_max": 35
+      }
+    },
+    {
+      "requires": {
+        "lat_min": 60
+      }
+    },
+    {
+      "requires": {
+        "phase": [
+          "day"
+        ]
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "phase": [
+          "night"
+        ],
+        "polar_day": false
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "phase": [
+          "night"
+        ],
+        "polar_day": false
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    }
+  ],
+  "deserts": [
+    {
+      "requires": {
+        "season": [
+          "summer"
+        ],
+        "lat_max": 35,
+        "temp_min": 25
+      }
+    },
+    {
+      "requires": {
+        "lat_max": 35
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "lat_max": 35
+      }
+    },
+    {
+      "requires": {
+        "phase": [
+          "night"
+        ],
+        "polar_day": false,
+        "feature": "river"
+      }
+    },
+    {
+      "requires": {
+        "temp_min": 25
+      }
+    },
+    {
+      "requires": {
+        "season": [
+          "winter"
+        ],
+        "temp_min": 25
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "lat_max": 35
+      }
+    },
+    {
+      "requires": {}
+    }
+  ],
+  "fog": [
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "feature": "river"
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "feature": "river"
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "feature": "river"
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    }
+  ],
+  "forests": [
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "phase": [
+          "night"
+        ]
+      }
+    },
+    {
+      "requires": {}
+    }
+  ],
+  "grasslands": [
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "season": [
+          "summer"
+        ],
+        "temp_min": 25
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "phase": [
+          "night"
+        ]
+      }
+    },
+    {
+      "requires": {
+        "phase": [
+          "day"
+        ]
+      }
+    }
+  ],
+  "life": [
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "season": [
+          "summer"
+        ]
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "lat_max": 35
+      }
+    },
+    {
+      "requires": {
+        "season": [
+          "winter"
+        ],
+        "temp_max": 5
+      }
+    }
+  ],
+  "mountains": [
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "temp_min": 25
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "feature": "river"
+      }
+    },
+    {
+      "requires": {
+        "season": [
+          "winter"
+        ]
+      }
+    },
+    {
+      "requires": {
+        "season": [
+          "winter"
+        ]
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "feature": "river"
+      }
+    },
+    {
+      "requires": {
+        "feature": "river"
+      }
+    },
+    {
+      "requires": {
+        "season": [
+          "winter"
+        ]
+      }
+    }
+  ],
+  "night": [
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "phase": [
+          "night"
+        ],
+        "polar_day": false
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "phase": [
+          "night"
+        ],
+        "polar_day": false,
+        "feature": "river"
+      }
+    },
+    {
+      "requires": {
+        "phase": [
+          "night"
+        ],
+        "polar_day": false,
+        "feature": "river"
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "feature": "river"
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "phase": [
+          "night"
+        ]
+      }
+    },
+    {
+      "requires": {
+        "phase": [
+          "night"
+        ]
+      }
+    },
+    {
+      "requires": {
+        "phase": [
+          "night"
+        ]
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "phase": [
+          "night"
+        ]
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "lat_min": 60
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "phase": [
+          "night"
+        ],
+        "polar_day": false
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "phase": [
+          "night"
+        ],
+        "polar_day": false
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "phase": [
+          "night"
+        ],
+        "polar_day": false,
+        "feature": "river",
+        "lat_max": 35
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "phase": [
+          "night"
+        ],
+        "polar_day": false
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "lat_min": 60
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "phase": [
+          "night"
+        ],
+        "polar_day": false
+      }
+    },
+    {
+      "requires": {}
+    }
+  ],
+  "rain": [
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    }
+  ],
+  "snow": [
+    {
+      "requires": {
+        "season": [
+          "winter"
+        ],
+        "temp_max": 5
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "season": [
+          "winter"
+        ],
+        "temp_max": 5
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "season": [
+          "winter"
+        ],
+        "temp_max": 5
+      }
+    },
+    {
+      "requires": {
+        "season": [
+          "winter"
+        ],
+        "temp_max": 5
+      }
+    },
+    {
+      "requires": {
+        "season": [
+          "winter"
+        ],
+        "temp_max": 5
+      }
+    },
+    {
+      "requires": {
+        "season": [
+          "winter"
+        ],
+        "temp_max": 5
+      }
+    },
+    {
+      "requires": {
+        "season": [
+          "winter"
+        ],
+        "temp_max": 5
+      }
+    },
+    {
+      "requires": {
+        "season": [
+          "winter"
+        ],
+        "feature": "waterfall",
+        "temp_max": 5
+      }
+    }
+  ],
+  "storm": [
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "season": [
+          "summer"
+        ],
+        "temp_min": 25
+      }
+    },
+    {
+      "requires": {
+        "season": [
+          "summer"
+        ]
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "season": [
+          "summer"
+        ],
+        "temp_min": 25
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "lat_max": 35
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    }
+  ],
+  "touch": [
+    {
+      "requires": {
+        "season": [
+          "summer"
+        ],
+        "temp_min": 25
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "temp_min": 25
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "season": [
+          "winter"
+        ]
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "feature": "river"
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "season": [
+          "summer"
+        ],
+        "temp_min": 25
+      }
+    },
+    {
+      "requires": {}
+    }
+  ],
+  "tundra": [
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "season": [
+          "winter"
+        ],
+        "temp_max": 5
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "season": [
+          "winter"
+        ],
+        "lat_min": 60
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "season": [
+          "winter"
+        ],
+        "lat_min": 60
+      }
+    },
+    {
+      "requires": {
+        "polar_day": true
+      }
+    },
+    {
+      "requires": {
+        "season": [
+          "winter"
+        ],
+        "temp_max": 5
+      }
+    },
+    {
+      "requires": {
+        "season": [
+          "winter"
+        ]
+      }
+    }
+  ],
+  "urban": [
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "season": [
+          "summer"
+        ],
+        "temp_min": 25
+      }
+    }
+  ],
+  "volcano": [
+    {
+      "requires": {
+        "season": [
+          "summer"
+        ],
+        "temp_min": 25
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "temp_min": 25
+      }
+    },
+    {
+      "requires": {
+        "season": [
+          "summer"
+        ],
+        "temp_min": 25
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "temp_min": 25
+      }
+    },
+    {
+      "requires": {}
+    }
+  ],
+  "water": [
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "wind_max": 10
+      }
+    },
+    {
+      "requires": {
+        "phase": [
+          "civil"
+        ]
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "wind_max": 10
+      }
+    },
+    {
+      "requires": {}
+    }
+  ],
+  "water_features": [
+    {
+      "requires": {
+        "feature": "river"
+      }
+    },
+    {
+      "requires": {
+        "feature": "river"
+      }
+    },
+    {
+      "requires": {
+        "feature": "river"
+      }
+    },
+    {
+      "requires": {
+        "feature": "waterfall"
+      }
+    },
+    {
+      "requires": {
+        "feature": "river"
+      }
+    },
+    {
+      "requires": {
+        "season": [
+          "winter"
+        ],
+        "feature": "river",
+        "temp_max": 5
+      }
+    },
+    {
+      "requires": {
+        "feature": "river"
+      }
+    },
+    {
+      "requires": {
+        "feature": "river"
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "feature": "river"
+      }
+    },
+    {
+      "requires": {
+        "feature": "river"
+      }
+    },
+    {
+      "requires": {
+        "feature": "river"
+      }
+    },
+    {
+      "requires": {
+        "feature": "river"
+      }
+    },
+    {
+      "requires": {
+        "feature": "river",
+        "temp_min": 25
+      }
+    },
+    {
+      "requires": {
+        "feature": "river"
+      }
+    }
+  ],
+  "wetland": [
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {
+        "season": [
+          "summer"
+        ]
+      }
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    },
+    {
+      "requires": {}
+    }
+  ]
+}

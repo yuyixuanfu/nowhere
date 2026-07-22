@@ -1,0 +1,7110 @@
+{
+  "places": {
+    "K2大本营": {
+      "lat": 35.88,
+      "lon": 76.513,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "africa": {
+      "layers": {
+        "encounters": 148
+      }
+    },
+    "americas": {
+      "layers": {
+        "encounters": 155
+      }
+    },
+    "art": {
+      "layers": {
+        "encounters": 120
+      }
+    },
+    "asia": {
+      "layers": {
+        "encounters": 123
+      }
+    },
+    "europe": {
+      "layers": {
+        "encounters": 79
+      }
+    },
+    "natural": {
+      "layers": {
+        "encounters": 36
+      }
+    },
+    "polar": {
+      "layers": {
+        "encounters": 107
+      }
+    },
+    "万象": {
+      "lat": 17.9757,
+      "lon": 102.6331,
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ],
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "water": "湄公河"
+      }
+    },
+    "万隆": {
+      "lat": -6.92,
+      "lon": 107.61,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        }
+      }
+    },
+    "三亚": {
+      "lat": 18.2528,
+      "lon": 109.512,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        }
+      }
+    },
+    "上海": {
+      "lat": 31.2304,
+      "lon": 121.4737,
+      "layers": {
+        "scene": [
+          "china_enhanced",
+          "soundscape",
+          "taste"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 4,
+          "works": 2
+        },
+        "knowledge": true,
+        "historical": 1,
+        "water": "长江",
+        "art": 4
+      }
+    },
+    "下龙湾": {
+      "lat": 20.91,
+      "lon": 107.18,
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ],
+        "localcolor": true,
+        "knowledge": true,
+        "flora": true
+      }
+    },
+    "不丹": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "东京": {
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 7,
+          "works": 5
+        },
+        "knowledge": true,
+        "films": 4,
+        "art": 5,
+        "flora": true,
+        "souvenirs": true
+      }
+    },
+    "东京新宿": {
+      "lat": 35.69,
+      "lon": 139.7,
+      "layers": {
+        "humanities": {
+          "works": 1
+        },
+        "films": 1
+      }
+    },
+    "东安格利亚": {
+      "lat": 52.5,
+      "lon": 1.0,
+      "layers": {
+        "humanities": {
+          "events": 1,
+          "people": 1
+        }
+      }
+    },
+    "东营": {
+      "layers": {
+        "water": "黄河"
+      }
+    },
+    "中山": {
+      "lat": 22.52,
+      "lon": 113.39,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        },
+        "historical": 1
+      }
+    },
+    "丹翠雨林": {
+      "lat": -16.0736,
+      "lon": 145.4194,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "丽江": {
+      "lat": 26.8721,
+      "lon": 100.2299,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        }
+      }
+    },
+    "乌兰巴托": {
+      "lat": 47.8864,
+      "lon": 106.9057,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "flora": true,
+        "souvenirs": true
+      }
+    },
+    "乌尤尼盐湖": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "乌布": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "乌斯怀亚": {
+      "layers": {
+        "localcolor": true,
+        "knowledge": true
+      }
+    },
+    "乌鲁木齐": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "九份": {
+      "lat": 25.1097,
+      "lon": 121.8445,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 2
+        }
+      }
+    },
+    "九寨沟": {
+      "lat": 33.26,
+      "lon": 103.92,
+      "layers": {
+        "scene": [
+          "china_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        },
+        "films": 1,
+        "souvenirs": true
+      }
+    },
+    "九江": {
+      "layers": {
+        "water": "长江"
+      }
+    },
+    "乞力马扎罗": {
+      "lat": -3.0674,
+      "lon": 37.3556,
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "flora": true,
+        "souvenirs": true
+      }
+    },
+    "乞力马扎罗山": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "乞力马扎罗山顶": {
+      "lat": -3.0674,
+      "lon": 37.3556,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "五台山": {
+      "lat": 38.9628,
+      "lon": 113.5789,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        }
+      }
+    },
+    "五大湖": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "井冈山": {
+      "lat": 26.58,
+      "lon": 114.17,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        }
+      }
+    },
+    "亚历山大": {
+      "lat": 31.2001,
+      "lon": 29.9187,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2
+        },
+        "knowledge": true
+      }
+    },
+    "亚松森": {
+      "lat": -25.2637,
+      "lon": -57.5759,
+      "layers": {
+        "scene": [
+          "soundscape"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "亚特兰大": {
+      "lat": 33.749,
+      "lon": -84.388,
+      "layers": {
+        "scene": [
+          "soundscape"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "亚的斯亚贝巴": {
+      "lat": 9.025,
+      "lon": 38.7469,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "亚苏尼": {
+      "lat": -0.6833,
+      "lon": -75.25,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "亚速尔群岛": {
+      "lat": 38.7223,
+      "lon": -27.2206,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "亚马逊河": {
+      "lat": -3.15,
+      "lon": -59.99,
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "亚马逊洪泛平原": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "亚马逊雨林": {
+      "lat": -3.47,
+      "lon": -62.22,
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "京都": {
+      "lat": 35.0116,
+      "lon": 135.7681,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 3,
+          "works": 3
+        },
+        "knowledge": true,
+        "films": 2,
+        "art": 4,
+        "souvenirs": true
+      }
+    },
+    "仙台": {
+      "lat": 38.2682,
+      "lon": 140.8694,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "仰光": {
+      "lat": 16.8661,
+      "lon": 96.1951,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "films": 1,
+        "souvenirs": true
+      }
+    },
+    "伊斯兰堡": {
+      "lat": 33.6844,
+      "lon": 73.0479,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "伊斯坦布尔": {
+      "lat": 41.0082,
+      "lon": 28.9784,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2
+        },
+        "knowledge": true,
+        "films": 1,
+        "historical": 1,
+        "art": 4,
+        "flora": true,
+        "souvenirs": true
+      }
+    },
+    "伊斯法罕": {
+      "lat": 32.6546,
+      "lon": 51.668,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "伊沃托": {
+      "lat": 49.8667,
+      "lon": 0.7667,
+      "layers": {
+        "humanities": {
+          "events": 1,
+          "people": 1
+        }
+      }
+    },
+    "伊犁草原": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "伏尔加格勒": {
+      "layers": {
+        "water": "伏尔加河"
+      }
+    },
+    "休斯敦": {
+      "lat": 29.7604,
+      "lon": -95.3698,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        }
+      }
+    },
+    "休斯顿": {
+      "layers": {
+        "historical": 1
+      }
+    },
+    "伦敦": {
+      "lat": 51.5074,
+      "lon": -0.1278,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 2,
+          "works": 4
+        },
+        "knowledge": true,
+        "films": 1,
+        "water": "泰晤士河",
+        "art": 5
+      }
+    },
+    "伦敦海格特": {
+      "lat": 51.57,
+      "lon": -0.14,
+      "layers": {
+        "humanities": {
+          "events": 1,
+          "people": 1
+        }
+      }
+    },
+    "伯尔尼": {
+      "lat": 46.95,
+      "lon": 7.45,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        },
+        "historical": 1
+      }
+    },
+    "佛罗伦萨": {
+      "lat": 43.77,
+      "lon": 11.25,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 3,
+          "people": 1
+        },
+        "knowledge": true,
+        "historical": 2,
+        "art": 4
+      }
+    },
+    "佛罗里达红树林": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "佩里莫雷诺冰川": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "佳木斯": {
+      "layers": {
+        "water": "松花江"
+      }
+    },
+    "俄亥俄": {
+      "lat": 40.4173,
+      "lon": -82.9071,
+      "layers": {
+        "humanities": {
+          "events": 2,
+          "people": 1
+        }
+      }
+    },
+    "保加利亚": {
+      "layers": {
+        "localcolor": true,
+        "knowledge": true,
+        "food": true
+      }
+    },
+    "信阳": {
+      "layers": {
+        "water": "淮河"
+      }
+    },
+    "元阳梯田": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "克拉科夫": {
+      "lat": 50.0647,
+      "lon": 19.945,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "克罗地亚": {
+      "layers": {
+        "localcolor": true,
+        "knowledge": true,
+        "food": true
+      }
+    },
+    "克罗地亚海岸": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "兰州": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ],
+        "water": "黄河"
+      }
+    },
+    "内比都": {
+      "lat": 19.7633,
+      "lon": 96.0785,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "内罗毕": {
+      "lat": -1.2921,
+      "lon": 36.8219,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2
+        },
+        "knowledge": true,
+        "films": 1,
+        "flora": true,
+        "souvenirs": true
+      }
+    },
+    "内蒙古": {
+      "lat": 40.82,
+      "lon": 111.65,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        },
+        "films": 1
+      }
+    },
+    "冰岛": {
+      "lat": 64.9631,
+      "lon": -19.0208,
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "flora": true,
+        "food": true,
+        "souvenirs": true
+      }
+    },
+    "冰岛间歇泉": {
+      "layers": {
+        "localcolor": true
+      }
+    },
+    "冲绳": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "凡尔登": {
+      "lat": 49.16,
+      "lon": 5.3876,
+      "layers": {
+        "humanities": {
+          "events": 1
+        }
+      }
+    },
+    "凤凰": {
+      "lat": 27.9486,
+      "lon": 109.5986,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 2
+        },
+        "historical": 1
+      }
+    },
+    "凤凰古城": {
+      "layers": {
+        "localcolor": true
+      }
+    },
+    "切尔诺贝利": {
+      "lat": 51.38,
+      "lon": 30.1,
+      "layers": {
+        "humanities": {
+          "events": 1
+        }
+      }
+    },
+    "列宁格勒": {
+      "lat": 59.93,
+      "lon": 30.32,
+      "layers": {
+        "humanities": {
+          "events": 1,
+          "people": 1
+        }
+      }
+    },
+    "刚果雨林": {
+      "lat": -0.2299,
+      "lon": 15.8278,
+      "layers": {
+        "seasonal": true,
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "利物浦": {
+      "lat": 53.4084,
+      "lon": -2.9916,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2
+        },
+        "knowledge": true
+      }
+    },
+    "利雅得": {
+      "lat": 24.7136,
+      "lon": 46.6753,
+      "layers": {
+        "scene": [
+          "soundscape"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "利马": {
+      "lat": -12.0464,
+      "lon": -77.0428,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        },
+        "knowledge": true,
+        "films": 1,
+        "souvenirs": true
+      }
+    },
+    "剑桥": {
+      "lat": 52.2053,
+      "lon": 0.1218,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 2
+        },
+        "knowledge": true,
+        "historical": 1
+      }
+    },
+    "加尔各答": {
+      "lat": 22.57,
+      "lon": 88.36,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 2
+        },
+        "knowledge": true,
+        "films": 1,
+        "historical": 1,
+        "water": "恒河",
+        "souvenirs": true
+      }
+    },
+    "加德满都": {
+      "lat": 27.7172,
+      "lon": 85.324,
+      "layers": {
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "加拉加斯": {
+      "lat": 10.4806,
+      "lon": -66.9036,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "加拉帕戈斯": {
+      "lat": -0.95,
+      "lon": -90.97,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        },
+        "historical": 1,
+        "flora": true
+      }
+    },
+    "加拿大北极": {
+      "lat": 70.0,
+      "lon": -90.0,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "加拿大落基山": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "加里宁格勒": {
+      "lat": 54.7104,
+      "lon": 20.4522,
+      "layers": {
+        "humanities": {
+          "events": 2,
+          "people": 1
+        }
+      }
+    },
+    "努尔苏丹": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "勃朗峰": {
+      "lat": 45.83,
+      "lon": 6.87,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "包头": {
+      "layers": {
+        "water": "黄河"
+      }
+    },
+    "匈牙利": {
+      "layers": {
+        "localcolor": true,
+        "knowledge": true,
+        "food": true
+      }
+    },
+    "北京": {
+      "lat": 39.9042,
+      "lon": 116.4074,
+      "layers": {
+        "scene": [
+          "china_enhanced",
+          "soundscape",
+          "taste"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 15,
+          "works": 7
+        },
+        "knowledge": true,
+        "films": 2,
+        "historical": 6,
+        "water": "海河",
+        "art": 5
+      }
+    },
+    "北京大学": {
+      "lat": 39.99,
+      "lon": 116.31,
+      "layers": {
+        "humanities": {
+          "events": 2,
+          "people": 1
+        }
+      }
+    },
+    "北大西洋": {
+      "lat": 41.0,
+      "lon": -30.0,
+      "layers": {
+        "humanities": {
+          "events": 1
+        }
+      }
+    },
+    "北极圈": {
+      "lat": 66.56,
+      "lon": 0.0,
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "北极苔原": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "北海": {
+      "lat": 56.5,
+      "lon": 3.5,
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "北海道": {
+      "layers": {
+        "seasonal": true,
+        "localcolor": true,
+        "souvenirs": true
+      }
+    },
+    "北海道山毛榉": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "北美大平原": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "北美红杉": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "华沙": {
+      "lat": 52.2297,
+      "lon": 21.0122,
+      "layers": {
+        "scene": [
+          "soundscape"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2,
+          "works": 2
+        },
+        "knowledge": true,
+        "films": 1,
+        "historical": 2
+      }
+    },
+    "华盛顿": {
+      "layers": {
+        "art": 5
+      }
+    },
+    "卑尔根": {
+      "lat": 60.3913,
+      "lon": 5.3221,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "南京": {
+      "lat": 32.0603,
+      "lon": 118.7969,
+      "layers": {
+        "scene": [
+          "china_enhanced"
+        ],
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2,
+          "works": 1
+        },
+        "historical": 3,
+        "water": "长江",
+        "art": 4
+      }
+    },
+    "南京先锋书店": {
+      "lat": 32.06,
+      "lon": 118.79,
+      "layers": {
+        "localcolor": true
+      }
+    },
+    "南宁": {
+      "layers": {
+        "water": "珠江"
+      }
+    },
+    "南昌": {
+      "layers": {
+        "water": "鄱阳湖"
+      }
+    },
+    "南极冰盖": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "南极磷虾": {
+      "layers": {
+        "localcolor": true
+      }
+    },
+    "南美潘帕斯草原": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "卡塔赫纳": {
+      "lat": 10.391,
+      "lon": -75.5144,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        }
+      }
+    },
+    "卡帕多西亚": {
+      "lat": 38.6431,
+      "lon": 34.8289,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "卡廷": {
+      "lat": 54.75,
+      "lon": 32.0,
+      "layers": {
+        "humanities": {
+          "events": 1
+        }
+      }
+    },
+    "卡拉奇": {
+      "lat": 24.8607,
+      "lon": 67.0011,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "卡萨布兰卡": {
+      "layers": {
+        "films": 1
+      }
+    },
+    "卢克索": {
+      "lat": 25.6872,
+      "lon": 32.6396,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2
+        },
+        "knowledge": true
+      }
+    },
+    "卢布尔雅那": {
+      "lat": 46.0569,
+      "lon": 14.5058,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "卢森堡": {
+      "lat": 49.6116,
+      "lon": 6.1319,
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ],
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "food": true
+      }
+    },
+    "卢森堡市": {
+      "lat": 49.6116,
+      "lon": 6.1319,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "卢萨卡": {
+      "lat": -15.3875,
+      "lon": 28.3228,
+      "layers": {
+        "scene": [
+          "soundscape"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "厦门": {
+      "lat": 24.4798,
+      "lon": 118.0894,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "台北": {
+      "lat": 25.033,
+      "lon": 121.5654,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 10,
+          "works": 4
+        },
+        "art": 4
+      }
+    },
+    "台南": {
+      "lat": 22.9999,
+      "lon": 120.2269,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        }
+      }
+    },
+    "台湾九份": {
+      "lat": 25.11,
+      "lon": 121.84,
+      "layers": {
+        "humanities": {
+          "works": 1
+        },
+        "films": 1
+      }
+    },
+    "司汤达故乡": {
+      "lat": 45.05,
+      "lon": 5.73,
+      "layers": {
+        "humanities": {
+          "works": 1
+        }
+      }
+    },
+    "吉隆坡": {
+      "lat": 3.139,
+      "lon": 101.6869,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "名古屋": {
+      "lat": 35.1815,
+      "lon": 136.9066,
+      "layers": {
+        "scene": [
+          "soundscape"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "吴哥": {
+      "lat": 13.4125,
+      "lon": 103.867,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "吴哥窟": {
+      "lat": 13.41,
+      "lon": 103.87,
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ],
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        },
+        "films": 1,
+        "souvenirs": true
+      }
+    },
+    "周庄": {
+      "lat": 31.12,
+      "lon": 120.85,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        },
+        "films": 1
+      }
+    },
+    "呼兰": {
+      "lat": 45.9842,
+      "lon": 126.6031,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        }
+      }
+    },
+    "呼和浩特": {
+      "lat": 40.8421,
+      "lon": 111.75,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        }
+      }
+    },
+    "哈博罗内": {
+      "lat": -24.6282,
+      "lon": 25.9231,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "哈尔滨": {
+      "lat": 45.8038,
+      "lon": 126.535,
+      "layers": {
+        "scene": [
+          "china_enhanced",
+          "soundscape",
+          "taste"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2
+        },
+        "knowledge": true,
+        "water": "松花江",
+        "souvenirs": true
+      }
+    },
+    "哈拉雷": {
+      "lat": -17.8252,
+      "lon": 31.0335,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 2
+        }
+      }
+    },
+    "哈瓦那": {
+      "lat": 23.1136,
+      "lon": -82.3666,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 2
+        },
+        "knowledge": true,
+        "films": 1,
+        "historical": 1,
+        "souvenirs": true
+      }
+    },
+    "哥本哈根": {
+      "lat": 55.6761,
+      "lon": 12.5683,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "唐山": {
+      "lat": 39.6309,
+      "lon": 118.1802,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1
+        }
+      }
+    },
+    "商丘": {
+      "lat": 34.414,
+      "lon": 115.656,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1,
+          "works": 0
+        }
+      }
+    },
+    "喀什": {
+      "lat": 39.4704,
+      "lon": 75.9899,
+      "layers": {
+        "scene": [
+          "china_enhanced",
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "flora": true,
+        "souvenirs": true
+      }
+    },
+    "喀土穆": {
+      "lat": 15.5007,
+      "lon": 32.5599,
+      "layers": {
+        "scene": [
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        },
+        "knowledge": true,
+        "water": "尼罗河",
+        "souvenirs": true
+      }
+    },
+    "喀山": {
+      "layers": {
+        "water": "伏尔加河"
+      }
+    },
+    "喀布尔": {
+      "lat": 34.5553,
+      "lon": 69.2075,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        }
+      }
+    },
+    "喀纳斯": {
+      "layers": {
+        "localcolor": true
+      }
+    },
+    "喀纳斯湖": {
+      "layers": {
+        "scene": [
+          "china_enhanced"
+        ]
+      }
+    },
+    "喜马拉雅": {
+      "lat": 28.0,
+      "lon": 84.0,
+      "layers": {
+        "knowledge": true
+      }
+    },
+    "喜马拉雅/青藏高原": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "喜马拉雅山": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "因特拉肯": {
+      "lat": 46.6863,
+      "lon": 7.8632,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "土耳其松林": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "圣保罗": {
+      "lat": -23.5505,
+      "lon": -46.6333,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "art": 4
+      }
+    },
+    "圣卢西亚": {
+      "lat": 13.9094,
+      "lon": -60.9789,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        }
+      }
+    },
+    "圣地亚哥": {
+      "lat": -33.4489,
+      "lon": -70.6693,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "圣彼得堡": {
+      "lat": 59.9343,
+      "lon": 30.3351,
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ],
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2,
+          "works": 1
+        },
+        "films": 1,
+        "historical": 2,
+        "art": 4,
+        "souvenirs": true
+      }
+    },
+    "圣托里尼": {
+      "lat": 36.39,
+      "lon": 25.46,
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ],
+        "localcolor": true,
+        "knowledge": true
+      }
+    },
+    "圣路易斯": {
+      "layers": {
+        "water": "密西西比河"
+      }
+    },
+    "圭亚那雨林": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "地中海灌木": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "坎昆": {
+      "lat": 21.1619,
+      "lon": -86.8515,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "垦丁": {
+      "lat": 21.9483,
+      "lon": 120.7867,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        }
+      }
+    },
+    "埃尔比勒": {
+      "lat": 36.1912,
+      "lon": 44.0119,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "埃特纳火山": {
+      "lat": 37.751,
+      "lon": 14.9994,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "城市": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "基加利": {
+      "lat": -1.9403,
+      "lon": 29.8739,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        }
+      }
+    },
+    "基多": {
+      "lat": -0.1807,
+      "lon": -78.4678,
+      "layers": {
+        "scene": [
+          "soundscape"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "基拉韦厄火山": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "基督城": {
+      "lat": -43.5321,
+      "lon": 172.6362,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2,
+          "works": 1
+        },
+        "knowledge": true
+      }
+    },
+    "基韦斯特": {
+      "lat": 24.56,
+      "lon": -81.78,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        },
+        "historical": 1
+      }
+    },
+    "堪培拉": {
+      "lat": -35.2809,
+      "lon": 149.13,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "堪察加冻原": {
+      "lat": 56.0,
+      "lon": 160.0,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "塔什干": {
+      "lat": 41.2995,
+      "lon": 69.2401,
+      "layers": {
+        "scene": [
+          "soundscape"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "塔尔沙漠": {
+      "lat": 27.0,
+      "lon": 71.0,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "塔斯马尼亚": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "塔林": {
+      "lat": 59.437,
+      "lon": 24.7536,
+      "layers": {
+        "scene": [
+          "soundscape"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        },
+        "knowledge": true
+      }
+    },
+    "塔那那利佛": {
+      "lat": -18.8792,
+      "lon": 47.5079,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "塞维利亚": {
+      "lat": 37.3891,
+      "lon": -5.9845,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2,
+          "works": 2
+        },
+        "knowledge": true
+      }
+    },
+    "塞舌尔": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "food": true
+      }
+    },
+    "墨尔本": {
+      "lat": -37.8136,
+      "lon": 144.9631,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2
+        },
+        "knowledge": true,
+        "films": 1,
+        "water": "墨累河",
+        "art": 4,
+        "souvenirs": true
+      }
+    },
+    "墨西哥城": {
+      "lat": 19.4326,
+      "lon": -99.1332,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 1
+        },
+        "knowledge": true,
+        "films": 1,
+        "art": 4
+      }
+    },
+    "墨西哥湾流": {
+      "layers": {
+        "localcolor": true
+      }
+    },
+    "壶口瀑布": {
+      "lat": 36.15,
+      "lon": 110.44,
+      "layers": {
+        "scene": [
+          "china_enhanced"
+        ],
+        "localcolor": true
+      }
+    },
+    "复活节岛": {
+      "lat": -27.11,
+      "lon": -109.35,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "多伦多": {
+      "lat": 43.6532,
+      "lon": -79.3832,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2,
+          "works": 2
+        },
+        "knowledge": true
+      }
+    },
+    "多哈": {
+      "lat": 25.2854,
+      "lon": 51.531,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "多洛米蒂": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "多瑙河": {
+      "lat": 48.2,
+      "lon": 16.4,
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "大同": {
+      "lat": 40.0768,
+      "lon": 113.3001,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        }
+      }
+    },
+    "大堡礁": {
+      "lat": -18.2871,
+      "lon": 147.6992,
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "flora": true,
+        "souvenirs": true
+      }
+    },
+    "大峡谷": {
+      "lat": 36.1069,
+      "lon": -112.1129,
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ],
+        "localcolor": true,
+        "humanities": {
+          "events": 3,
+          "people": 1
+        }
+      }
+    },
+    "大理": {
+      "lat": 25.59,
+      "lon": 100.23,
+      "layers": {
+        "scene": [
+          "china_enhanced",
+          "soundscape",
+          "taste"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2,
+          "works": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "大苏尔": {
+      "lat": 36.2704,
+      "lon": -121.8081,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "大连": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "大阪": {
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2
+        },
+        "knowledge": true
+      }
+    },
+    "大马士革": {
+      "lat": 33.5138,
+      "lon": 36.2765,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "天津": {
+      "lat": 39.3434,
+      "lon": 117.3616,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2
+        },
+        "knowledge": true,
+        "water": "海河",
+        "souvenirs": true
+      }
+    },
+    "太仓": {
+      "lat": 31.45,
+      "lon": 121.11,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        },
+        "historical": 1
+      }
+    },
+    "太子港": {
+      "lat": 18.5944,
+      "lon": -72.3074,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        }
+      }
+    },
+    "奇琴伊察": {
+      "lat": 20.684,
+      "lon": -88.568,
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "奈良": {
+      "lat": 34.6851,
+      "lon": 135.8048,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2,
+          "works": 1
+        },
+        "knowledge": true
+      }
+    },
+    "奥克兰": {
+      "lat": -36.8485,
+      "lon": 174.7633,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "films": 1,
+        "souvenirs": true
+      }
+    },
+    "奥卡万戈三角洲": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "奥斯陆": {
+      "lat": 59.9139,
+      "lon": 10.7522,
+      "layers": {
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 3
+        },
+        "knowledge": true,
+        "films": 1,
+        "historical": 2
+      }
+    },
+    "奥马哈海滩": {
+      "lat": 49.3667,
+      "lon": -0.8833,
+      "layers": {
+        "humanities": {
+          "events": 1
+        }
+      }
+    },
+    "好望角": {
+      "lat": -34.36,
+      "lon": 18.47,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "威尼斯": {
+      "lat": 45.4408,
+      "lon": 12.3155,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2
+        },
+        "knowledge": true,
+        "historical": 2,
+        "souvenirs": true
+      }
+    },
+    "威海卫": {
+      "lat": 37.5131,
+      "lon": 122.1204,
+      "layers": {
+        "humanities": {
+          "events": 1
+        }
+      }
+    },
+    "婆罗洲": {
+      "lat": 1.5533,
+      "lon": 110.3592,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "婆罗洲龙脑香林": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "婆罗浮屠": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "孟买": {
+      "lat": 19.076,
+      "lon": 72.8777,
+      "layers": {
+        "scene": [
+          "soundscape"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1,
+          "works": 1
+        },
+        "knowledge": true,
+        "films": 1,
+        "souvenirs": true
+      }
+    },
+    "孟菲斯": {
+      "layers": {
+        "water": "密西西比河"
+      }
+    },
+    "安卡拉": {
+      "lat": 39.9334,
+      "lon": 32.8597,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1
+        }
+      }
+    },
+    "安塔利亚": {
+      "lat": 36.8969,
+      "lon": 30.7133,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "安徽宏村": {
+      "lat": 30.0,
+      "lon": 117.98,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        },
+        "films": 1
+      }
+    },
+    "安曼": {
+      "lat": 31.9454,
+      "lon": 35.9284,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "安第斯": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "安第斯山脉": {
+      "lat": -33.4489,
+      "lon": -70.6693,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        }
+      }
+    },
+    "安纳普尔纳": {
+      "lat": 28.596,
+      "lon": 83.931,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "宜宾": {
+      "layers": {
+        "water": "长江"
+      }
+    },
+    "宜昌": {
+      "layers": {
+        "water": "长江"
+      }
+    },
+    "宿务": {
+      "lat": 10.3157,
+      "lon": 123.8854,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2,
+          "works": 1
+        },
+        "knowledge": true
+      }
+    },
+    "密苏里": {
+      "lat": 38.58,
+      "lon": -92.17,
+      "layers": {
+        "humanities": {
+          "events": 1,
+          "people": 1
+        },
+        "historical": 1
+      }
+    },
+    "密西西比": {
+      "lat": 32.3547,
+      "lon": -89.3985,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1,
+          "works": 1
+        }
+      }
+    },
+    "富士山": {
+      "lat": 35.3606,
+      "lon": 138.7274,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2
+        },
+        "flora": true
+      }
+    },
+    "富士山/乞力马扎罗": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "小樽": {
+      "lat": 43.19,
+      "lon": 140.99,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        },
+        "knowledge": true,
+        "films": 1
+      }
+    },
+    "尼斯": {
+      "lat": 43.7102,
+      "lon": 7.262,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 3,
+          "works": 1
+        },
+        "knowledge": true
+      }
+    },
+    "尼日利亚": {
+      "lat": 9.082,
+      "lon": 8.6753,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 3
+        },
+        "knowledge": true,
+        "food": true
+      }
+    },
+    "尾道": {
+      "lat": 34.4081,
+      "lon": 133.2064,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        }
+      }
+    },
+    "屋久岛": {
+      "lat": 30.3557,
+      "lon": 130.505,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        }
+      }
+    },
+    "山海关": {
+      "lat": 39.9533,
+      "lon": 119.7569,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1
+        }
+      }
+    },
+    "山西": {
+      "lat": 37.87,
+      "lon": 112.55,
+      "layers": {
+        "humanities": {
+          "events": 2,
+          "people": 2,
+          "works": 1
+        },
+        "films": 1,
+        "historical": 2
+      }
+    },
+    "岳阳": {
+      "layers": {
+        "water": "洞庭湖"
+      }
+    },
+    "岳阳楼": {
+      "lat": 29.3838,
+      "lon": 113.098,
+      "layers": {
+        "humanities": {
+          "events": 2,
+          "people": 1
+        }
+      }
+    },
+    "巧克力山": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "巴厘岛": {
+      "lat": -8.3405,
+      "lon": 115.092,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "巴塔哥尼亚": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ],
+        "seasonal": true
+      }
+    },
+    "巴塔哥尼亚冰原": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "巴塔哥尼亚桦树林": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "巴塔哥尼亚草原": {
+      "lat": -50.0,
+      "lon": -70.0,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "巴塞尔": {
+      "layers": {
+        "water": "莱茵河"
+      }
+    },
+    "巴塞罗那": {
+      "lat": 41.39,
+      "lon": 2.17,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 3,
+          "people": 1
+        },
+        "knowledge": true,
+        "historical": 2
+      }
+    },
+    "巴尔的摩": {
+      "lat": 39.2904,
+      "lon": -76.6122,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1,
+          "works": 0
+        }
+      }
+    },
+    "巴布亚": {
+      "lat": -5.5,
+      "lon": 141.0,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "巴库": {
+      "lat": 40.4093,
+      "lon": 49.8671,
+      "layers": {
+        "scene": [
+          "soundscape"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "巴拿马城": {
+      "lat": 8.9824,
+      "lon": -79.5199,
+      "layers": {
+        "scene": [
+          "taste"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "巴格达": {
+      "lat": 33.3152,
+      "lon": 44.3661,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "works": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "巴比伦": {
+      "lat": 32.5363,
+      "lon": 44.4209,
+      "layers": {
+        "humanities": {
+          "events": 1
+        }
+      }
+    },
+    "巴黎": {
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 4,
+          "people": 14,
+          "works": 6
+        },
+        "knowledge": true,
+        "films": 2,
+        "historical": 4,
+        "art": 6,
+        "souvenirs": true
+      }
+    },
+    "布加勒斯特": {
+      "lat": 44.4268,
+      "lon": 26.1025,
+      "layers": {
+        "scene": [
+          "soundscape"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "water": "多瑙河"
+      }
+    },
+    "布宜诺斯艾利斯": {
+      "lat": -34.6037,
+      "lon": -58.3816,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 3,
+          "works": 1
+        },
+        "knowledge": true,
+        "films": 2,
+        "art": 4,
+        "souvenirs": true
+      }
+    },
+    "布拉内斯": {
+      "lat": 41.6749,
+      "lon": 2.7914,
+      "layers": {
+        "humanities": {
+          "events": 1,
+          "people": 1
+        }
+      }
+    },
+    "布拉柴维尔": {
+      "lat": -4.2634,
+      "lon": 15.2429,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        }
+      }
+    },
+    "布拉格": {
+      "lat": 50.0755,
+      "lon": 14.4378,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 4,
+          "works": 1
+        },
+        "knowledge": true,
+        "films": 2,
+        "historical": 2,
+        "souvenirs": true
+      }
+    },
+    "布拉迪斯拉发": {
+      "lat": 48.1486,
+      "lon": 17.1077,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        }
+      }
+    },
+    "布达佩斯": {
+      "lat": 47.4979,
+      "lon": 19.0402,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2
+        },
+        "knowledge": true,
+        "films": 1,
+        "historical": 1,
+        "water": "多瑙河",
+        "souvenirs": true
+      }
+    },
+    "布里斯班": {
+      "lat": -27.4698,
+      "lon": 153.0251,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        }
+      }
+    },
+    "布鲁塞尔": {
+      "lat": 50.8503,
+      "lon": 4.3517,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1,
+          "works": 1
+        },
+        "knowledge": true
+      }
+    },
+    "帕多瓦": {
+      "layers": {
+        "historical": 1
+      }
+    },
+    "帕特森": {
+      "lat": 40.9168,
+      "lon": -74.1718,
+      "layers": {
+        "humanities": {
+          "works": 1
+        }
+      }
+    },
+    "帕皮提": {
+      "lat": -17.5516,
+      "lon": -149.5585,
+      "layers": {
+        "scene": [
+          "soundscape"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "帕罗虎穴寺": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "常德": {
+      "layers": {
+        "water": "洞庭湖"
+      }
+    },
+    "平壤": {
+      "lat": 39.0392,
+      "lon": 125.7625,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2,
+          "works": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "广东开平": {
+      "lat": 22.38,
+      "lon": 112.69,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        },
+        "films": 1
+      }
+    },
+    "广岛": {
+      "lat": 34.3853,
+      "lon": 132.4553,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1
+        },
+        "knowledge": true,
+        "historical": 1
+      }
+    },
+    "广州": {
+      "lat": 23.1291,
+      "lon": 113.2644,
+      "layers": {
+        "scene": [
+          "china_enhanced"
+        ],
+        "localcolor": true,
+        "humanities": {
+          "events": 3,
+          "people": 2
+        },
+        "water": "珠江"
+      }
+    },
+    "库斯科": {
+      "lat": -13.5319,
+      "lon": -71.9675,
+      "layers": {
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "historical": 1
+      }
+    },
+    "庞贝": {
+      "lat": 40.7462,
+      "lon": 14.4989,
+      "layers": {
+        "humanities": {
+          "events": 1
+        }
+      }
+    },
+    "康提": {
+      "lat": 7.2906,
+      "lon": 80.6337,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2,
+          "works": 1
+        },
+        "knowledge": true
+      }
+    },
+    "康科德": {
+      "lat": 42.4604,
+      "lon": -71.3489,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        }
+      }
+    },
+    "延安": {
+      "lat": 36.59,
+      "lon": 109.49,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        }
+      }
+    },
+    "开封": {
+      "lat": 34.7972,
+      "lon": 114.3076,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        }
+      }
+    },
+    "开普敦": {
+      "lat": -33.9249,
+      "lon": 18.4241,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "films": 1,
+        "souvenirs": true
+      }
+    },
+    "开罗": {
+      "lat": 30.0444,
+      "lon": 31.2357,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2
+        },
+        "knowledge": true,
+        "films": 1,
+        "water": "尼罗河",
+        "art": 4,
+        "souvenirs": true
+      }
+    },
+    "张家界": {
+      "lat": 29.117,
+      "lon": 110.4793,
+      "layers": {
+        "scene": [
+          "china_enhanced",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "souvenirs": true
+      }
+    },
+    "张掖丹霞": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "德国格尔利茨": {
+      "lat": 51.15,
+      "lon": 14.97,
+      "layers": {
+        "humanities": {
+          "works": 1
+        },
+        "films": 1
+      }
+    },
+    "德纳利": {
+      "lat": 63.0692,
+      "lon": -151.007,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "德罗霍贝奇": {
+      "lat": 49.3486,
+      "lon": 23.5075,
+      "layers": {
+        "humanities": {
+          "events": 1,
+          "people": 1
+        }
+      }
+    },
+    "德里": {
+      "lat": 28.6139,
+      "lon": 77.209,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2
+        },
+        "knowledge": true,
+        "films": 1,
+        "art": 4
+      }
+    },
+    "德黑兰": {
+      "lat": 35.6892,
+      "lon": 51.389,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "悉尼": {
+      "lat": -33.8688,
+      "lon": 151.2093,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 3,
+          "people": 1
+        },
+        "knowledge": true,
+        "films": 1,
+        "water": "墨累河",
+        "art": 4
+      }
+    },
+    "惠灵顿": {
+      "lat": -41.2865,
+      "lon": 174.7762,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "意大利托斯卡纳": {
+      "lat": 43.35,
+      "lon": 11.33,
+      "layers": {
+        "humanities": {
+          "works": 1
+        },
+        "films": 1
+      }
+    },
+    "慕尼黑": {
+      "lat": 48.1351,
+      "lon": 11.582,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 3,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "戈壁沙漠": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "戈壁滩": {
+      "lat": 42.5854,
+      "lon": 105.364,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "成都": {
+      "lat": 30.5728,
+      "lon": 104.0668,
+      "layers": {
+        "scene": [
+          "china_enhanced",
+          "soundscape",
+          "taste"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 3
+        },
+        "knowledge": true,
+        "historical": 3
+      }
+    },
+    "扬州": {
+      "layers": {
+        "localcolor": true
+      }
+    },
+    "拉各斯": {
+      "lat": 6.5244,
+      "lon": 3.3792,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "films": 1,
+        "souvenirs": true
+      }
+    },
+    "拉合尔": {
+      "lat": 31.5204,
+      "lon": 74.3587,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "拉斯维加斯": {
+      "lat": 36.1699,
+      "lon": -115.1398,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "拉普兰": {
+      "lat": 68.0,
+      "lon": 24.0,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "拉萨": {
+      "lat": 29.652,
+      "lon": 91.1721,
+      "layers": {
+        "scene": [
+          "china_enhanced",
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "挪威峡湾": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true
+      }
+    },
+    "摩洛哥": {
+      "layers": {
+        "knowledge": true,
+        "food": true,
+        "souvenirs": true
+      }
+    },
+    "摩纳哥": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "撒哈拉": {
+      "lat": 23.0,
+      "lon": 12.0,
+      "layers": {
+        "seasonal": true,
+        "humanities": {
+          "works": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "撒哈拉沙漠": {
+      "lat": 23.42,
+      "lon": 12.61,
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "撒马尔罕": {
+      "lat": 39.6542,
+      "lon": 66.9597,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "historical": 1,
+        "souvenirs": true
+      }
+    },
+    "敦刻尔克": {
+      "lat": 51.0343,
+      "lon": 2.3768,
+      "layers": {
+        "humanities": {
+          "events": 1,
+          "works": 1
+        }
+      }
+    },
+    "敦煌": {
+      "lat": 40.14,
+      "lon": 94.66,
+      "layers": {
+        "scene": [
+          "china_enhanced",
+          "soundscape",
+          "taste"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "斋浦尔": {
+      "layers": {
+        "localcolor": true,
+        "knowledge": true
+      }
+    },
+    "斐济": {
+      "lat": -17.7134,
+      "lon": 178.065,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "flora": true
+      }
+    },
+    "斯图加特": {
+      "lat": 48.78,
+      "lon": 9.18,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2
+        }
+      }
+    },
+    "斯德哥尔摩": {
+      "lat": 59.3293,
+      "lon": 18.0686,
+      "layers": {
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "films": 2,
+        "historical": 1
+      }
+    },
+    "斯特拉斯堡": {
+      "layers": {
+        "water": "莱茵河"
+      }
+    },
+    "斯特拉特福": {
+      "lat": 52.19,
+      "lon": -1.71,
+      "layers": {
+        "humanities": {
+          "events": 1,
+          "people": 1
+        },
+        "historical": 1
+      }
+    },
+    "斯瓦尔巴群岛": {
+      "lat": 78.2232,
+      "lon": 15.6267,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "新加坡": {
+      "lat": 1.3521,
+      "lon": 103.8198,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "food": true
+      }
+    },
+    "新奥尔良": {
+      "lat": 29.9511,
+      "lon": -90.0715,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "water": "密西西比河"
+      }
+    },
+    "新德里": {
+      "lat": 28.6139,
+      "lon": 77.209,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        }
+      }
+    },
+    "新潟": {
+      "lat": 37.9026,
+      "lon": 139.0232,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        }
+      }
+    },
+    "新疆": {
+      "lat": 43.79,
+      "lon": 87.6,
+      "layers": {
+        "humanities": {
+          "works": 1
+        },
+        "films": 1
+      }
+    },
+    "新西兰": {
+      "lat": -40.9006,
+      "lon": 174.886,
+      "layers": {
+        "humanities": {
+          "works": 2
+        },
+        "knowledge": true,
+        "films": 1,
+        "souvenirs": true
+      }
+    },
+    "新西兰南岛": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ],
+        "knowledge": true
+      }
+    },
+    "新西兰峡湾": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "无锡": {
+      "layers": {
+        "water": "太湖"
+      }
+    },
+    "日内瓦": {
+      "lat": 46.2,
+      "lon": 6.14,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        },
+        "knowledge": true,
+        "historical": 1
+      }
+    },
+    "日出·黄山": {
+      "layers": {
+        "scene": [
+          "soundscape"
+        ]
+      }
+    },
+    "日落·伊斯坦布尔": {
+      "layers": {
+        "scene": [
+          "soundscape"
+        ]
+      }
+    },
+    "日落·里约": {
+      "layers": {
+        "scene": [
+          "soundscape"
+        ]
+      }
+    },
+    "旧金山": {
+      "lat": 37.77,
+      "lon": -122.42,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2,
+          "works": 1
+        },
+        "knowledge": true,
+        "films": 1
+      }
+    },
+    "昆明": {
+      "layers": {
+        "localcolor": true
+      }
+    },
+    "明尼阿波利斯": {
+      "layers": {
+        "water": "密西西比河"
+      }
+    },
+    "普吉岛": {
+      "lat": 7.8804,
+      "lon": 98.3923,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "普林斯顿": {
+      "lat": 40.34,
+      "lon": -74.66,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "historical": 1
+      }
+    },
+    "普罗旺斯": {
+      "lat": 43.95,
+      "lon": 6.07,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        },
+        "films": 1
+      }
+    },
+    "暴风雨·上海": {
+      "layers": {
+        "scene": [
+          "soundscape"
+        ]
+      }
+    },
+    "暴风雨·内罗毕": {
+      "layers": {
+        "scene": [
+          "soundscape"
+        ]
+      }
+    },
+    "暴风雨·重庆": {
+      "layers": {
+        "scene": [
+          "soundscape"
+        ]
+      }
+    },
+    "暹粒": {
+      "lat": 13.3633,
+      "lon": 103.856,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        }
+      }
+    },
+    "曲阜": {
+      "lat": 35.5968,
+      "lon": 116.9851,
+      "layers": {
+        "humanities": {
+          "events": 1,
+          "people": 3
+        },
+        "historical": 1
+      }
+    },
+    "曼彻斯特": {
+      "layers": {
+        "historical": 1
+      }
+    },
+    "曼谷": {
+      "lat": 13.7563,
+      "lon": 100.5018,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "films": 1
+      }
+    },
+    "朝圣之路": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "杜塞尔多夫": {
+      "lat": 51.2277,
+      "lon": 6.7735,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1,
+          "works": 0
+        }
+      }
+    },
+    "杜布罗夫尼克": {
+      "lat": 42.6507,
+      "lon": 18.0944,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "杜拜": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "杭州": {
+      "lat": 30.2741,
+      "lon": 120.1551,
+      "layers": {
+        "scene": [
+          "china_enhanced"
+        ],
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1,
+          "works": 1
+        },
+        "historical": 2
+      }
+    },
+    "松山": {
+      "lat": 31.4619,
+      "lon": 104.6761,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1
+        }
+      }
+    },
+    "极光": {
+      "layers": {
+        "localcolor": true
+      }
+    },
+    "极光·雷克雅未克": {
+      "layers": {
+        "scene": [
+          "soundscape"
+        ]
+      }
+    },
+    "极地海岸": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "柏林": {
+      "lat": 52.52,
+      "lon": 13.405,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 3,
+          "people": 1,
+          "works": 1
+        },
+        "knowledge": true,
+        "historical": 1,
+        "art": 4,
+        "souvenirs": true
+      }
+    },
+    "格尔利茨": {
+      "lat": 51.1528,
+      "lon": 14.9872,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        }
+      }
+    },
+    "格尔尼卡": {
+      "lat": 43.3167,
+      "lon": -2.6833,
+      "layers": {
+        "humanities": {
+          "events": 1
+        }
+      }
+    },
+    "格拉纳达": {
+      "lat": 37.1773,
+      "lon": -3.5986,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 2
+        },
+        "knowledge": true,
+        "historical": 1
+      }
+    },
+    "格陵兰": {
+      "lat": 72.0,
+      "lon": -40.0,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "格陵兰冰盖": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "桂林": {
+      "lat": 25.27,
+      "lon": 110.29,
+      "layers": {
+        "water": "漓江",
+        "souvenirs": true
+      }
+    },
+    "桂林漓江": {
+      "lat": 25.3,
+      "lon": 110.3,
+      "layers": {
+        "scene": [
+          "china_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true
+      }
+    },
+    "桑给巴尔": {
+      "lat": -6.1659,
+      "lon": 39.2026,
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ],
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        }
+      }
+    },
+    "梧州": {
+      "layers": {
+        "water": "珠江"
+      }
+    },
+    "梵蒂冈": {
+      "lat": 41.9029,
+      "lon": 12.4534,
+      "layers": {
+        "art": 4
+      }
+    },
+    "槟城": {
+      "lat": 5.4164,
+      "lon": 100.3327,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 2
+        },
+        "knowledge": true
+      }
+    },
+    "横店": {
+      "lat": 29.16,
+      "lon": 120.31,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        },
+        "films": 1
+      }
+    },
+    "武汉": {
+      "lat": 30.5928,
+      "lon": 114.3055,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2
+        },
+        "knowledge": true,
+        "water": "长江"
+      }
+    },
+    "死海": {
+      "lat": 31.5,
+      "lon": 35.5,
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ],
+        "localcolor": true
+      }
+    },
+    "比什凯克": {
+      "lat": 42.8746,
+      "lon": 74.5698,
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ],
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "比利牛斯山": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "毛里求斯": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ],
+        "food": true
+      }
+    },
+    "汉堡": {
+      "lat": 53.5511,
+      "lon": 9.9937,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2
+        },
+        "knowledge": true
+      }
+    },
+    "汤加": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "汶川": {
+      "lat": 31.4734,
+      "lon": 103.5847,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1
+        }
+      }
+    },
+    "汾阳": {
+      "lat": 37.2653,
+      "lon": 111.7753,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        }
+      }
+    },
+    "沈阳": {
+      "lat": 41.8057,
+      "lon": 123.4315,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 3
+        },
+        "water": "辽河"
+      }
+    },
+    "河内": {
+      "lat": 21.0278,
+      "lon": 105.8342,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "films": 1,
+        "souvenirs": true
+      }
+    },
+    "河口/三角洲": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "泉州": {
+      "lat": 24.8741,
+      "lon": 118.6757,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1
+        }
+      }
+    },
+    "法国普罗旺斯": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "法罗岛": {
+      "lat": 62.0,
+      "lon": -6.8,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        }
+      }
+    },
+    "法罗群岛": {
+      "lat": 62.0107,
+      "lon": -6.7805,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "泗水": {
+      "layers": {
+        "scene": [
+          "soundscape"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "knowledge": true
+      }
+    },
+    "波哥大": {
+      "lat": 4.711,
+      "lon": -74.0721,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "films": 1,
+        "souvenirs": true
+      }
+    },
+    "波尔图": {
+      "lat": 41.1579,
+      "lon": -8.6291,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 2
+        },
+        "knowledge": true
+      }
+    },
+    "波尔多": {
+      "lat": 44.8378,
+      "lon": -0.5792,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 2
+        },
+        "knowledge": true
+      }
+    },
+    "波尔特沃": {
+      "lat": 42.4263,
+      "lon": 3.1625,
+      "layers": {
+        "humanities": {
+          "people": 1
+        }
+      }
+    },
+    "波恩": {
+      "lat": 50.73,
+      "lon": 7.1,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "historical": 1
+      }
+    },
+    "波斯波利斯": {
+      "lat": 29.9342,
+      "lon": 52.8915,
+      "layers": {
+        "humanities": {
+          "events": 1
+        }
+      }
+    },
+    "泰山": {
+      "lat": 36.25,
+      "lon": 117.1,
+      "layers": {
+        "scene": [
+          "china_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true
+      }
+    },
+    "洛子峰": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "洛杉矶": {
+      "lat": 34.0522,
+      "lon": -118.2437,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste"
+        ],
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "art": 4
+      }
+    },
+    "洛阳": {
+      "lat": 34.6836,
+      "lon": 112.4541,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 2
+        },
+        "historical": 2,
+        "water": "黄河"
+      }
+    },
+    "津巴布韦": {
+      "lat": -19.0154,
+      "lon": 29.1549,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "food": true
+      }
+    },
+    "济南": {
+      "layers": {
+        "water": "黄河"
+      }
+    },
+    "济州岛": {
+      "lat": 33.4996,
+      "lon": 126.5312,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "海口": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "海德堡": {
+      "lat": 49.4093,
+      "lon": 8.6947,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2
+        },
+        "knowledge": true
+      }
+    },
+    "海盐": {
+      "lat": 30.5259,
+      "lon": 120.9461,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        }
+      }
+    },
+    "淡路岛": {
+      "lat": 34.3833,
+      "lon": 134.8333,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        }
+      }
+    },
+    "淮安": {
+      "layers": {
+        "water": "淮河"
+      }
+    },
+    "深圳": {
+      "layers": {
+        "scene": [
+          "china_enhanced"
+        ],
+        "localcolor": true
+      }
+    },
+    "深海热泉": {
+      "layers": {
+        "localcolor": true
+      }
+    },
+    "清迈": {
+      "lat": 18.7883,
+      "lon": 98.9853,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "温哥华": {
+      "lat": 49.2827,
+      "lon": -123.1207,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "温带海岸": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "温带落叶林": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "温得和克": {
+      "lat": -22.5609,
+      "lon": 17.0658,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "温泉关": {
+      "lat": 38.8,
+      "lon": 22.5667,
+      "layers": {
+        "humanities": {
+          "events": 1
+        }
+      }
+    },
+    "湖口": {
+      "layers": {
+        "water": "鄱阳湖"
+      }
+    },
+    "滑铁卢": {
+      "lat": 50.7147,
+      "lon": 4.4094,
+      "layers": {
+        "humanities": {
+          "events": 1
+        }
+      }
+    },
+    "滕州": {
+      "lat": 35.113,
+      "lon": 117.165,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1,
+          "works": 0
+        }
+      }
+    },
+    "滕王阁": {
+      "lat": 28.682,
+      "lon": 115.8939,
+      "layers": {
+        "humanities": {
+          "events": 2,
+          "people": 1
+        }
+      }
+    },
+    "漓江": {
+      "lat": 24.8,
+      "lon": 110.5,
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "澳大利亚": {
+      "lat": -25.0,
+      "lon": 135.0,
+      "layers": {
+        "knowledge": true,
+        "food": true
+      }
+    },
+    "澳大利亚内陆": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "热带海岸": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "热带雨林": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "爱丁堡": {
+      "lat": 55.95,
+      "lon": -3.19,
+      "layers": {
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2,
+          "works": 1
+        },
+        "knowledge": true,
+        "films": 1,
+        "historical": 2
+      }
+    },
+    "牛津": {
+      "lat": 51.752,
+      "lon": -1.2577,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2
+        },
+        "knowledge": true,
+        "water": "泰晤士河"
+      }
+    },
+    "特奥蒂瓦坎": {
+      "lat": 19.6925,
+      "lon": -98.8438,
+      "layers": {
+        "humanities": {
+          "events": 1
+        }
+      }
+    },
+    "特拉维夫": {
+      "lat": 32.0853,
+      "lon": 34.7818,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "特洛伊": {
+      "lat": 39.9574,
+      "lon": 26.2389,
+      "layers": {
+        "humanities": {
+          "events": 1
+        }
+      }
+    },
+    "特立尼达": {
+      "lat": 10.6918,
+      "lon": -61.2225,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        }
+      }
+    },
+    "特里尔": {
+      "lat": 49.75,
+      "lon": 6.64,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        }
+      }
+    },
+    "玛瑙斯": {
+      "layers": {
+        "water": "亚马逊河"
+      }
+    },
+    "珀斯": {
+      "lat": -31.9505,
+      "lon": 115.8605,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "珊瑚礁": {
+      "layers": {
+        "localcolor": true
+      }
+    },
+    "珍珠港": {
+      "lat": 21.3445,
+      "lon": -157.9747,
+      "layers": {
+        "humanities": {
+          "events": 1
+        }
+      }
+    },
+    "珠峰大本营": {
+      "lat": 28.0025,
+      "lon": 86.8528,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "珠海": {
+      "layers": {
+        "water": "珠江"
+      }
+    },
+    "班加罗尔": {
+      "lat": 12.9716,
+      "lon": 77.5946,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "琅勃拉邦": {
+      "lat": 19.8856,
+      "lon": 102.1347,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "瑞士提契诺": {
+      "lat": 46.0,
+      "lon": 8.8,
+      "layers": {
+        "humanities": {
+          "people": 1
+        }
+      }
+    },
+    "瓦尔帕莱索": {
+      "lat": -33.0472,
+      "lon": -71.6127,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2
+        },
+        "knowledge": true,
+        "historical": 1,
+        "flora": true
+      }
+    },
+    "瓦拉纳西": {
+      "layers": {
+        "seasonal": true,
+        "localcolor": true,
+        "knowledge": true,
+        "water": "恒河"
+      }
+    },
+    "甘肃戈壁公路": {
+      "lat": 40.1,
+      "lon": 94.67,
+      "layers": {
+        "localcolor": true
+      }
+    },
+    "留尼汪": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "白帝城": {
+      "lat": 31.0433,
+      "lon": 109.5672,
+      "layers": {
+        "humanities": {
+          "events": 2,
+          "people": 1
+        }
+      }
+    },
+    "白鹿原": {
+      "lat": 34.1736,
+      "lon": 109.0898,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        }
+      }
+    },
+    "皇后镇": {
+      "lat": -45.0312,
+      "lon": 168.6626,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "皮纳图博": {
+      "lat": 15.131,
+      "lon": 120.351,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "盘锦": {
+      "layers": {
+        "water": "辽河"
+      }
+    },
+    "砂拉越": {
+      "lat": 1.5533,
+      "lon": 110.3592,
+      "layers": {
+        "humanities": {
+          "events": 2,
+          "people": 2
+        }
+      }
+    },
+    "神户": {
+      "lat": 34.6901,
+      "lon": 135.1956,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "福冈": {
+      "lat": 33.5904,
+      "lon": 130.4017,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "科伦坡": {
+      "lat": 6.9271,
+      "lon": 79.8612,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "科摩罗": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "科隆": {
+      "lat": 50.9375,
+      "lon": 6.9603,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "water": "莱茵河"
+      }
+    },
+    "秘鲁": {
+      "layers": {
+        "knowledge": true,
+        "food": true,
+        "souvenirs": true
+      }
+    },
+    "稻城亚丁": {
+      "layers": {
+        "scene": [
+          "china_enhanced"
+        ]
+      }
+    },
+    "突尼斯": {
+      "layers": {
+        "knowledge": true,
+        "films": 1,
+        "food": true
+      }
+    },
+    "突尼斯城": {
+      "lat": 36.8065,
+      "lon": 10.1815,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "突尼斯撒哈拉": {
+      "lat": 33.89,
+      "lon": 9.54,
+      "layers": {
+        "humanities": {
+          "works": 1
+        },
+        "films": 1
+      }
+    },
+    "米兰": {
+      "lat": 45.46,
+      "lon": 9.19,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "historical": 1
+      }
+    },
+    "索姆河": {
+      "lat": 49.9333,
+      "lon": 2.55,
+      "layers": {
+        "humanities": {
+          "events": 1
+        }
+      }
+    },
+    "索菲亚": {
+      "lat": 42.6977,
+      "lon": 23.3219,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "索非亚": {
+      "lat": 42.6977,
+      "lon": 23.3219,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "红树林": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "约克郡": {
+      "lat": 53.958,
+      "lon": -1.0803,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        }
+      }
+    },
+    "约翰内斯堡": {
+      "lat": -26.2041,
+      "lon": 28.0473,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "纳木错": {
+      "lat": 30.75,
+      "lon": 90.6,
+      "layers": {
+        "scene": [
+          "china_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true
+      }
+    },
+    "纳米布沙漠": {
+      "lat": -24.7667,
+      "lon": 15.2833,
+      "layers": {
+        "seasonal": true,
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "纽约": {
+      "lat": 40.7128,
+      "lon": -74.006,
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 3,
+          "people": 2,
+          "works": 3
+        },
+        "knowledge": true,
+        "films": 1,
+        "art": 6,
+        "souvenirs": true
+      }
+    },
+    "绍兴": {
+      "lat": 30.0255,
+      "lon": 120.5738,
+      "layers": {
+        "humanities": {
+          "events": 2,
+          "people": 2
+        },
+        "historical": 1
+      }
+    },
+    "维也纳": {
+      "lat": 48.2082,
+      "lon": 16.3738,
+      "layers": {
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 6,
+          "works": 2
+        },
+        "knowledge": true,
+        "films": 2,
+        "historical": 4,
+        "water": "多瑙河",
+        "art": 4,
+        "souvenirs": true
+      }
+    },
+    "维多利亚瀑布": {
+      "lat": -17.92,
+      "lon": 25.86,
+      "layers": {
+        "localcolor": true
+      }
+    },
+    "维尔纽斯": {
+      "lat": 54.6872,
+      "lon": 25.2797,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "维苏威火山": {
+      "lat": 40.8214,
+      "lon": 14.4264,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "罗安达": {
+      "lat": -8.839,
+      "lon": 13.2894,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "罗马": {
+      "lat": 41.9028,
+      "lon": 12.4964,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 3,
+          "people": 1,
+          "works": 3
+        },
+        "knowledge": true,
+        "films": 3,
+        "historical": 1,
+        "souvenirs": true
+      }
+    },
+    "耶路撒冷": {
+      "lat": 31.7683,
+      "lon": 35.2137,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "肇庆": {
+      "layers": {
+        "water": "珠江"
+      }
+    },
+    "肖尔登": {
+      "lat": 61.5,
+      "lon": 7.0,
+      "layers": {
+        "humanities": {
+          "events": 2,
+          "people": 1
+        }
+      }
+    },
+    "肯尼亚": {
+      "lat": -0.0236,
+      "lon": 37.9062,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "food": true,
+        "souvenirs": true
+      }
+    },
+    "肯尼亚山": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "胡志明市": {
+      "lat": 10.8231,
+      "lon": 106.6297,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "water": "湄公河"
+      }
+    },
+    "舍夫沙万": {
+      "lat": 35.1714,
+      "lon": -5.2699,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "艾雅法拉": {
+      "lat": 63.633,
+      "lon": -19.6097,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "芝加哥": {
+      "lat": 41.8781,
+      "lon": -87.6298,
+      "layers": {
+        "scene": [
+          "soundscape"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "art": 4
+      }
+    },
+    "苏塞克斯": {
+      "lat": 50.8365,
+      "lon": -0.1278,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        }
+      }
+    },
+    "苏州": {
+      "layers": {
+        "scene": [
+          "china_enhanced",
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "knowledge": true,
+        "water": "太湖",
+        "souvenirs": true
+      }
+    },
+    "苏格兰": {
+      "lat": 56.4907,
+      "lon": -4.2026,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        }
+      }
+    },
+    "苏格兰松林": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "苏瓦": {
+      "lat": -18.1416,
+      "lon": 178.4419,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "苏黎世": {
+      "lat": 47.3769,
+      "lon": 8.5417,
+      "layers": {
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "films": 2,
+        "historical": 1
+      }
+    },
+    "英格兰北部": {
+      "lat": 54.0,
+      "lon": -2.0,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "people": 1
+        }
+      }
+    },
+    "茶峒": {
+      "lat": 28.4856,
+      "lon": 109.3247,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        }
+      }
+    },
+    "荆州": {
+      "lat": 30.3261,
+      "lon": 112.2391,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        }
+      }
+    },
+    "莫哈韦沙漠": {
+      "lat": 35.3733,
+      "lon": -117.4281,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "莫尔兹比港": {
+      "lat": -9.4438,
+      "lon": 147.1803,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "莫尔斯比港": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ],
+        "souvenirs": true
+      }
+    },
+    "莫斯科": {
+      "lat": 55.7558,
+      "lon": 37.6173,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1,
+          "works": 1
+        },
+        "knowledge": true,
+        "water": "伏尔加河",
+        "souvenirs": true
+      }
+    },
+    "莫桑比克": {
+      "lat": -18.6657,
+      "lon": 35.5296,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "food": true
+      }
+    },
+    "莫纳罗亚": {
+      "lat": 19.4721,
+      "lon": -155.5922,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "莱斯博斯": {
+      "lat": 39.2,
+      "lon": 26.3333,
+      "layers": {
+        "humanities": {
+          "events": 2,
+          "people": 1
+        }
+      }
+    },
+    "菲斯": {
+      "layers": {
+        "localcolor": true,
+        "knowledge": true
+      }
+    },
+    "萨尔茨堡": {
+      "lat": 47.8095,
+      "lon": 13.055,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2,
+          "works": 2
+        },
+        "films": 1,
+        "historical": 1
+      }
+    },
+    "萨拉热窝": {
+      "lat": 43.8563,
+      "lon": 18.4131,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "萨摩亚": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "萨格勒布": {
+      "lat": 45.815,
+      "lon": 15.9819,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "萨那": {
+      "lat": 15.3694,
+      "lon": 44.191,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        }
+      }
+    },
+    "蒙古草原": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "蒙巴萨": {
+      "lat": -4.0435,
+      "lon": 39.6682,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "蒙得维的亚": {
+      "lat": -34.9011,
+      "lon": -56.1645,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "蒙特利尔": {
+      "lat": 45.5017,
+      "lon": -73.5673,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "蒙特维多": {
+      "lat": 10.3089,
+      "lon": -84.7984,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "蒲甘": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "蓝毗尼": {
+      "lat": 27.4833,
+      "lon": 83.2767,
+      "layers": {
+        "humanities": {
+          "events": 2,
+          "people": 1,
+          "works": 0
+        }
+      }
+    },
+    "虎门": {
+      "lat": 22.8193,
+      "lon": 113.666,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1
+        }
+      }
+    },
+    "蚌埠": {
+      "layers": {
+        "water": "淮河"
+      }
+    },
+    "西伯利亚冻原": {
+      "lat": 67.45,
+      "lon": 135.0,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "西伯利亚落叶松林": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "西伯利亚针叶林": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "西安": {
+      "lat": 34.3416,
+      "lon": 108.9398,
+      "layers": {
+        "scene": [
+          "china_enhanced",
+          "soundscape",
+          "taste"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 5,
+          "people": 3
+        },
+        "knowledge": true,
+        "historical": 3,
+        "art": 4
+      }
+    },
+    "西西里": {
+      "lat": 37.5994,
+      "lon": 14.0154,
+      "layers": {
+        "humanities": {
+          "works": 1
+        }
+      }
+    },
+    "西西里岛": {
+      "lat": 37.6,
+      "lon": 14.02,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        },
+        "films": 1
+      }
+    },
+    "西贡": {
+      "layers": {
+        "films": 1
+      }
+    },
+    "西雅图": {
+      "lat": 47.6062,
+      "lon": -122.3321,
+      "layers": {
+        "scene": [
+          "soundscape"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "设得兰群岛": {
+      "lat": 60.154,
+      "lon": -1.1486,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "设拉子": {
+      "lat": 29.5918,
+      "lon": 52.5836,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2
+        },
+        "knowledge": true
+      }
+    },
+    "诺曼底": {
+      "lat": 49.3694,
+      "lon": -0.8731,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "贝伦": {
+      "layers": {
+        "water": "亚马逊河"
+      }
+    },
+    "贝加尔湖": {
+      "lat": 53.5,
+      "lon": 108.0,
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "贝尔格莱德": {
+      "lat": 44.7866,
+      "lon": 20.4489,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "water": "多瑙河",
+        "souvenirs": true
+      }
+    },
+    "贝鲁特": {
+      "lat": 33.8938,
+      "lon": 35.5018,
+      "layers": {
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        }
+      }
+    },
+    "费城": {
+      "lat": 39.9526,
+      "lon": -75.1652,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1
+        }
+      }
+    },
+    "赤壁": {
+      "lat": 29.7167,
+      "lon": 113.8833,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1
+        }
+      }
+    },
+    "赫尔辛基": {
+      "lat": 60.1699,
+      "lon": 24.9384,
+      "layers": {
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2,
+          "works": 1
+        },
+        "knowledge": true,
+        "films": 2,
+        "historical": 1,
+        "souvenirs": true
+      }
+    },
+    "辛哈拉加": {
+      "lat": 6.4167,
+      "lon": 80.5,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "辛普森沙漠": {
+      "lat": -25.0,
+      "lon": 135.0,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "达卡": {
+      "lat": 23.8103,
+      "lon": 90.4125,
+      "layers": {
+        "scene": [
+          "soundscape"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "达喀尔": {
+      "lat": 14.7167,
+      "lon": -17.4677,
+      "layers": {
+        "scene": [
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2
+        },
+        "knowledge": true
+      }
+    },
+    "达尔文": {
+      "lat": -12.4634,
+      "lon": 130.8456,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "达特里雨林": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "达累斯萨拉姆": {
+      "lat": -6.7924,
+      "lon": 39.2083,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "迈阿密": {
+      "lat": 25.7617,
+      "lon": -80.1918,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "迦太基": {
+      "lat": 36.8528,
+      "lon": 10.3233,
+      "layers": {
+        "humanities": {
+          "events": 1
+        }
+      }
+    },
+    "迪拜": {
+      "lat": 25.2048,
+      "lon": 55.2708,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "道后温泉": {
+      "lat": 33.85,
+      "lon": 132.78,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        },
+        "films": 1
+      }
+    },
+    "遵义": {
+      "lat": 27.7254,
+      "lon": 106.9272,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1
+        }
+      }
+    },
+    "那不勒斯": {
+      "lat": 40.8518,
+      "lon": 14.2681,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "works": 1
+        },
+        "knowledge": true
+      }
+    },
+    "那霸": {
+      "lat": 26.3344,
+      "lon": 127.8015,
+      "layers": {
+        "scene": [
+          "soundscape"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "邯郸": {
+      "lat": 36.625,
+      "lon": 114.539,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1,
+          "works": 0
+        }
+      }
+    },
+    "郑州": {
+      "lat": 34.7466,
+      "lon": 113.6253,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1
+        },
+        "water": "黄河"
+      }
+    },
+    "都柏林": {
+      "lat": 53.3498,
+      "lon": -6.2603,
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2,
+          "works": 1
+        },
+        "films": 1,
+        "historical": 3
+      }
+    },
+    "都灵": {
+      "lat": 45.0703,
+      "lon": 7.6869,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1,
+          "works": 1
+        }
+      }
+    },
+    "里加": {
+      "lat": 56.9496,
+      "lon": 24.1052,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "里斯本": {
+      "lat": 38.7223,
+      "lon": -9.1393,
+      "layers": {
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        },
+        "knowledge": true,
+        "films": 1,
+        "historical": 2
+      }
+    },
+    "里昂": {
+      "lat": 45.764,
+      "lon": 4.8357,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "里约": {
+      "lat": -22.9068,
+      "lon": -43.1729,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "films": 1,
+        "souvenirs": true
+      }
+    },
+    "里约热内卢": {
+      "lat": -22.9068,
+      "lon": -43.1729,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "flora": true
+      }
+    },
+    "重庆": {
+      "lat": 29.4316,
+      "lon": 106.9123,
+      "layers": {
+        "scene": [
+          "china_enhanced",
+          "soundscape",
+          "taste"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "works": 1
+        },
+        "knowledge": true,
+        "films": 1,
+        "water": "长江"
+      }
+    },
+    "重庆交通茶馆": {
+      "lat": 29.5,
+      "lon": 106.51,
+      "layers": {
+        "localcolor": true
+      }
+    },
+    "重庆武隆": {
+      "lat": 29.33,
+      "lon": 107.76,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        },
+        "films": 1
+      }
+    },
+    "金沙萨": {
+      "lat": -4.4419,
+      "lon": 15.2663,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "金边": {
+      "lat": 11.5564,
+      "lon": 104.9282,
+      "layers": {
+        "scene": [
+          "soundscape"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        },
+        "knowledge": true,
+        "water": "湄公河",
+        "souvenirs": true
+      }
+    },
+    "釜山": {
+      "lat": 35.1796,
+      "lon": 129.0756,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "针叶林": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "银川": {
+      "layers": {
+        "water": "黄河"
+      }
+    },
+    "锡尔斯玛丽亚": {
+      "lat": 46.4333,
+      "lon": 9.7667,
+      "layers": {
+        "humanities": {
+          "events": 1,
+          "people": 1
+        }
+      }
+    },
+    "锡拉库萨": {
+      "lat": 37.0755,
+      "lon": 15.2866,
+      "layers": {
+        "humanities": {
+          "works": 1
+        }
+      }
+    },
+    "镰仓": {
+      "lat": 35.32,
+      "lon": 139.55,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        },
+        "films": 1
+      }
+    },
+    "长岛": {
+      "lat": 40.7891,
+      "lon": -73.135,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        }
+      }
+    },
+    "长崎": {
+      "lat": 32.7503,
+      "lon": 129.8779,
+      "layers": {
+        "humanities": {
+          "events": 1
+        },
+        "knowledge": true,
+        "historical": 1
+      }
+    },
+    "长江三峡": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "长沙": {
+      "lat": 28.23,
+      "lon": 112.94,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        }
+      }
+    },
+    "长白山": {
+      "lat": 42.0039,
+      "lon": 128.0556,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "长白山天池": {
+      "lat": 42.0,
+      "lon": 128.05,
+      "layers": {
+        "scene": [
+          "china_enhanced"
+        ]
+      }
+    },
+    "阳朔": {
+      "layers": {
+        "water": "漓江"
+      }
+    },
+    "阿克拉": {
+      "lat": 5.6037,
+      "lon": -0.187,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "阿塔卡马": {
+      "lat": -24.0,
+      "lon": -69.0,
+      "layers": {
+        "localcolor": true,
+        "knowledge": true,
+        "flora": true
+      }
+    },
+    "阿塔卡马沙漠": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "阿姆斯特丹": {
+      "lat": 52.3676,
+      "lon": 4.9041,
+      "layers": {
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "films": 1,
+        "historical": 2,
+        "art": 4,
+        "souvenirs": true
+      }
+    },
+    "阿尔卑斯": {
+      "lat": 46.5,
+      "lon": 8.0,
+      "layers": {
+        "knowledge": true
+      }
+    },
+    "阿尔卑斯/落基山": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "阿尔卑斯山": {
+      "lat": 45.92,
+      "lon": 6.87,
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "阿尔卑斯霞慕尼": {
+      "lat": 45.9237,
+      "lon": 6.8694,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "阿尔及尔": {
+      "lat": 36.7538,
+      "lon": 3.0588,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        }
+      }
+    },
+    "阿尤恩": {
+      "lat": 27.1536,
+      "lon": -13.2033,
+      "layers": {
+        "humanities": {
+          "events": 1,
+          "people": 1
+        }
+      }
+    },
+    "阿布扎比": {
+      "lat": 24.4539,
+      "lon": 54.3773,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "阿布贾": {
+      "lat": 9.0765,
+      "lon": 7.3986,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "阿德莱德": {
+      "lat": -34.9285,
+      "lon": 138.6007,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "阿拉伯沙漠": {
+      "lat": 22.95,
+      "lon": 46.6333,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "阿拉卡塔卡": {
+      "lat": 10.5933,
+      "lon": -74.185,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        }
+      }
+    },
+    "阿拉斯加": {
+      "lat": 64.2008,
+      "lon": -149.4937,
+      "layers": {
+        "humanities": {
+          "works": 2
+        },
+        "films": 1
+      }
+    },
+    "阿拉斯加北坡": {
+      "lat": 69.0,
+      "lon": -153.0,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "阿拉斯加海岸": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "阿拉木图": {
+      "lat": 43.222,
+      "lon": 76.8512,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "阿斯塔纳": {
+      "lat": 51.1694,
+      "lon": 71.4491,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "阿斯旺": {
+      "layers": {
+        "water": "尼罗河"
+      }
+    },
+    "阿比让": {
+      "lat": 5.36,
+      "lon": -4.0083,
+      "layers": {
+        "scene": [
+          "soundscape"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "阿特拉斯山脉": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "阿皮亚": {
+      "lat": -13.8333,
+      "lon": -171.75,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "阿空加瓜": {
+      "lat": -32.6533,
+      "lon": -70.0108,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "阿那亚孤独图书馆": {
+      "lat": 39.78,
+      "lon": 119.48,
+      "layers": {
+        "localcolor": true
+      }
+    },
+    "阿马尔菲": {
+      "lat": 40.6333,
+      "lon": 14.6025,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "阿默斯特": {
+      "lat": 42.3732,
+      "lon": -72.5199,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        }
+      }
+    },
+    "陕西": {
+      "lat": 34.2658,
+      "lon": 108.9541,
+      "layers": {
+        "humanities": {
+          "works": 3
+        },
+        "films": 1
+      }
+    },
+    "雅典": {
+      "lat": 37.9838,
+      "lon": 23.7275,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 4
+        },
+        "knowledge": true,
+        "historical": 3,
+        "art": 4,
+        "souvenirs": true
+      }
+    },
+    "雅加达": {
+      "lat": -6.2088,
+      "lon": 106.8456,
+      "layers": {
+        "scene": [
+          "soundscape"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1,
+          "works": 1
+        },
+        "knowledge": true,
+        "films": 1
+      }
+    },
+    "雷克雅未克": {
+      "lat": 64.1466,
+      "lon": -21.9426,
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "works": 1
+        },
+        "knowledge": true,
+        "flora": true
+      }
+    },
+    "雾社": {
+      "lat": 23.9673,
+      "lon": 121.1333,
+      "layers": {
+        "humanities": {
+          "works": 1
+        }
+      }
+    },
+    "青岛": {
+      "layers": {
+        "scene": [
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "青海湖": {
+      "lat": 36.9,
+      "lon": 100.2,
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "非洲热带草原": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "韩城": {
+      "lat": 35.48,
+      "lon": 110.44,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        },
+        "historical": 1
+      }
+    },
+    "韶山": {
+      "lat": 27.94,
+      "lon": 112.49,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        }
+      }
+    },
+    "飞驒古川": {
+      "lat": 36.24,
+      "lon": 137.19,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        },
+        "films": 1
+      }
+    },
+    "首尔": {
+      "lat": 37.5665,
+      "lon": 126.978,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2,
+          "works": 1
+        },
+        "knowledge": true,
+        "films": 4,
+        "art": 4
+      }
+    },
+    "香港": {
+      "lat": 22.3193,
+      "lon": 114.1694,
+      "layers": {
+        "humanities": {
+          "events": 2,
+          "people": 2,
+          "works": 3
+        },
+        "knowledge": true,
+        "films": 4
+      }
+    },
+    "马丘比丘": {
+      "lat": -13.1631,
+      "lon": -72.545,
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ],
+        "localcolor": true,
+        "humanities": {
+          "events": 1
+        },
+        "knowledge": true
+      }
+    },
+    "马尔代夫": {
+      "lat": 3.2,
+      "lon": 73.0,
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ],
+        "seasonal": true
+      }
+    },
+    "马尼拉": {
+      "lat": 14.5995,
+      "lon": 120.9842,
+      "layers": {
+        "scene": [
+          "soundscape"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 2,
+          "works": 1
+        },
+        "knowledge": true,
+        "films": 1
+      }
+    },
+    "马嵬坡": {
+      "lat": 34.2614,
+      "lon": 108.4953,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1
+        }
+      }
+    },
+    "马德里": {
+      "lat": 40.4168,
+      "lon": -3.7038,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "historical": 1,
+        "art": 4,
+        "souvenirs": true
+      }
+    },
+    "马拉喀什": {
+      "lat": 31.6295,
+      "lon": -7.9811,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "flora": true,
+        "souvenirs": true
+      }
+    },
+    "马拉松": {
+      "lat": 38.15,
+      "lon": 23.95,
+      "layers": {
+        "humanities": {
+          "events": 1
+        }
+      }
+    },
+    "马斯喀特": {
+      "lat": 23.588,
+      "lon": 58.3829,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "taste",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "马普托": {
+      "lat": -25.9692,
+      "lon": 32.5732,
+      "layers": {
+        "scene": [
+          "soundscape",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "souvenirs": true
+      }
+    },
+    "马来西亚": {
+      "lat": 4.2105,
+      "lon": 101.9758,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 3
+        },
+        "knowledge": true,
+        "food": true
+      }
+    },
+    "马瑙斯": {
+      "lat": -3.119,
+      "lon": -60.0217,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "马赛": {
+      "lat": 43.2965,
+      "lon": 5.3698,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "马达加斯加": {
+      "lat": -18.7669,
+      "lon": 46.8691,
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ],
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true,
+        "flora": true,
+        "food": true,
+        "souvenirs": true
+      }
+    },
+    "高密": {
+      "lat": 36.3763,
+      "lon": 119.7536,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        }
+      }
+    },
+    "高山苔原": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "魏玛": {
+      "lat": 50.98,
+      "lon": 11.33,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "historical": 1
+      }
+    },
+    "鳕鱼角": {
+      "lat": 41.6688,
+      "lon": -70.2962,
+      "layers": {
+        "localcolor": true,
+        "flora": true
+      }
+    },
+    "鸟取": {
+      "lat": 35.5039,
+      "lon": 134.2378,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "works": 1
+        }
+      }
+    },
+    "鹿特丹": {
+      "layers": {
+        "water": "莱茵河"
+      }
+    },
+    "麦加": {
+      "lat": 21.4225,
+      "lon": 39.8262,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "麦德林": {
+      "lat": 6.2442,
+      "lon": -75.5812,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 2,
+          "people": 1
+        },
+        "knowledge": true
+      }
+    },
+    "麦纳麦": {
+      "layers": {
+        "souvenirs": true
+      }
+    },
+    "黄山": {
+      "lat": 30.13,
+      "lon": 118.17,
+      "layers": {
+        "scene": [
+          "china_enhanced",
+          "world_enhanced"
+        ],
+        "seasonal": true,
+        "localcolor": true
+      }
+    },
+    "黄州": {
+      "lat": 30.4541,
+      "lon": 114.8723,
+      "layers": {
+        "localcolor": true,
+        "humanities": {
+          "events": 1,
+          "people": 1
+        }
+      }
+    },
+    "黄河": {
+      "lat": 37.5,
+      "lon": 118.5,
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "黄石": {
+      "layers": {
+        "seasonal": true
+      }
+    },
+    "黄石国家公园": {
+      "layers": {
+        "scene": [
+          "world_enhanced"
+        ]
+      }
+    },
+    "黑潮": {
+      "layers": {
+        "localcolor": true,
+        "knowledge": true
+      }
+    }
+  },
+  "stats": {
+    "total_places": 638,
+    "with_coordinates": 469,
+    "by_layer": {
+      "encounters": 7,
+      "scene": 203,
+      "seasonal": 211,
+      "localcolor": 415,
+      "humanities": 391,
+      "knowledge": 242,
+      "films": 74,
+      "historical": 59,
+      "water": 65,
+      "art": 30,
+      "flora": 64,
+      "food": 18,
+      "souvenirs": 111
+    }
+  }
+}
