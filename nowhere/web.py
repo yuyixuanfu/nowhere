@@ -119,7 +119,7 @@ async def state(_request: Request) -> JSONResponse:
 
 async def post_message(request: Request) -> JSONResponse:
     """Enqueue a human message into state.messages."""
-    body = await request.json()
+    body = await request.json() if await request.body() else {}
     content = body.get("content", "")
     if not content:
         return JSONResponse({"ok": False, "error": "empty content"}, status_code=400)
@@ -142,7 +142,7 @@ async def reply_postcard(request: Request) -> JSONResponse:
     from nowhere.server import reply_postcard_impl
 
     card_id = int(request.path_params["card_id"])
-    body = await request.json()
+    body = await request.json() if await request.body() else {}
     content = (body.get("content") or "").strip()
     if not content:
         return JSONResponse({"ok": False, "error": "empty content"}, status_code=400)
@@ -209,7 +209,7 @@ async def api_where_am_i(request: Request) -> JSONResponse:
 
 
 async def api_mark(request: Request) -> JSONResponse:
-    body = await request.json()
+    body = await request.json() if await request.body() else {}
     r = _server.mark_impl(
         name=body.get("name", ""),
         note=body.get("note", ""),
@@ -218,7 +218,7 @@ async def api_mark(request: Request) -> JSONResponse:
 
 
 async def api_walk_to(request: Request) -> JSONResponse:
-    body = await request.json()
+    body = await request.json() if await request.body() else {}
     r = await _server.walk_to_impl(place=body.get("place", ""))
     return _json_or_text(r)
 
