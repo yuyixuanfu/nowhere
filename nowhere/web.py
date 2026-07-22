@@ -123,6 +123,10 @@ async def post_message(request: Request) -> JSONResponse:
     content = body.get("content", "")
     if not content:
         return JSONResponse({"ok": False, "error": "empty content"}, status_code=400)
+    # Mirror send_postcard_impl's 1000-char cap so a malicious client can't
+    # fill deque + on-disk JSON with a huge payload.
+    if len(content) > 1000:
+        return JSONResponse({"ok": False, "error": "too_long"}, status_code=400)
     _state().messages.append({"content": content, "encountered": False})
     return JSONResponse({"ok": True, "queued": len(_state().messages)})
 
