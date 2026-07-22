@@ -2120,6 +2120,15 @@ if __name__ == "__main__":
     parser.add_argument("--web", type=int, default=None, help="Web observer port")
     args = parser.parse_args()
 
+    # Preload ZIM in background (non-blocking)
+    def _preload_zim():
+        try:
+            from nowhere.knowledge import _get_zim
+            _get_zim()
+        except Exception:
+            pass
+    threading.Thread(target=_preload_zim, daemon=True).start()
+
     if args.web is not None:
         import uvicorn
         from nowhere.web import app as web_app
