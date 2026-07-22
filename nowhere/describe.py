@@ -445,6 +445,12 @@ _WEATHER_SNOW_VARIANTS: list[str] = [
     "雪。{temp_c} 度,世界只剩白,和落雪的声音。",
 ]
 
+_WEATHER_STORM_VARIANTS: list[str] = [
+    "雷在响。{temp_c} 度,风 {wind_ms} 米每秒,空气里有铁味。",
+    "雷暴。{temp_c} 度,闪电把天撕开一道。风 {wind_ms} 米每秒。",
+    "打雷。{temp_c} 度,雨砸下来,云压低了。风 {wind_ms} 米每秒。",
+]
+
 _WEATHER_DELTA_VARIANTS: list[str] = [
     "{text}。{delta_desc}。现在 {temp_c} 度,风 {wind_ms} 米每秒。",
     "{delta_desc}。{text},{temp_c} 度,风 {wind_ms} 米每秒。",
@@ -966,6 +972,11 @@ def _render_weather(payload: dict, prev: dict | None, rng: random.Random) -> str
         return tmpl.format(temp_c=temp_c, wind_ms=wind_ms, surface_hint="地")
     if precip == "snow":
         tmpl = _pick(_WEATHER_SNOW_VARIANTS, rng)
+        return tmpl.format(temp_c=temp_c, wind_ms=wind_ms)
+    if precip == "storm":
+        # WMO codes 95/96/99 — lightning, possible hail. Without its own branch
+        # this fell through to the plain "晴" template and lost the storm.
+        tmpl = _pick(_WEATHER_STORM_VARIANTS, rng)
         return tmpl.format(temp_c=temp_c, wind_ms=wind_ms)
 
     tmpl = _pick(_WEATHER_ABS_VARIANTS, rng)
