@@ -84,11 +84,21 @@ async def state(_request: Request) -> JSONResponse:
         r = s.last_env["radio"]
         radio_info = {"name": r.get("name", ""), "stream_url": r.get("stream_url", "")}
 
-    # env from last_env
+    # env from last_env — both nested ({terrain:{...}}) and top-level
+    # ({elevation, surface, ...}) shapes appear in the codebase.
     env_info: dict | None = None
     if s.last_env:
         weather = s.last_env.get("weather", {})
-        terrain = s.last_env.get("terrain", {})
+        nested_terrain = s.last_env.get("terrain")
+        if isinstance(nested_terrain, dict):
+            terrain = nested_terrain
+        else:
+            # top-level shape — synthesize terrain dict
+            terrain = {
+                k: s.last_env.get(k)
+                for k in ("elevation", "surface")
+                if k in s.last_env
+            }
         env_info = {
             "elevation": terrain.get("elevation"),
             "temp_c": weather.get("temp_c"),
