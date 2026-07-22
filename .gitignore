@@ -27,6 +27,7 @@ nowhere/static/postcards/
 # 构建缓存(大,源数据)
 tools/.cache/
 nowhere/tmp_home/
+tmp_home/
 tools/maptoposter/cache/
 nowhere/quality_*.md
 nowhere/final_report.md
