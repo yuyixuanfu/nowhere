@@ -2102,5 +2102,13 @@
     "name_hint": "安第斯",
     "elev_m": 4231,
     "surface": "rock"
+  },
+  {
+    "lat": 27.72,
+    "lon": 85.32,
+    "biome": "city",
+    "name_hint": "Kathmandu",
+    "elev_m": 1400,
+    "surface": "urban"
   }
 ]
