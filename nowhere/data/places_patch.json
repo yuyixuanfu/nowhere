@@ -1048,5 +1048,15 @@
     "type": "湖",
     "elev": -28,
     "surface": "water_fresh"
+  },
+  "火地岛": {
+    "lat": -54.0,
+    "lon": -68.0,
+    "type": "群岛"
+  },
+  "Tierra del Fuego": {
+    "lat": -54.0,
+    "lon": -68.0,
+    "type": "群岛"
   }
 }
