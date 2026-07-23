@@ -2094,5 +2094,13 @@
     "name_hint": "里海",
     "elev_m": -28,
     "surface": "water_fresh"
+  },
+  {
+    "lat": -33.4,
+    "lon": -70.7,
+    "biome": "mountain",
+    "name_hint": "安第斯",
+    "elev_m": 4231,
+    "surface": "rock"
   }
 ]
