@@ -448,5 +448,41 @@
     "country": "TR",
     "lat": 41.01,
     "lon": 28.98
+  },
+  {
+    "name": "TRT Radio 1",
+    "genre": "news/talk",
+    "stream_url": "https://radioyayin.trt.net.tr/radyo1/radyo1_128.mp3",
+    "homepage": "https://www.trt.net.tr",
+    "country": "TR",
+    "lat": 39.93,
+    "lon": 32.85
+  },
+  {
+    "name": "TRT FM",
+    "genre": "pop/talk",
+    "stream_url": "https://radioyayin.trt.net.tr/trtfm/trtfm_128.mp3",
+    "homepage": "https://www.trt.net.tr",
+    "country": "TR",
+    "lat": 39.93,
+    "lon": 32.85
+  },
+  {
+    "name": "Power FM",
+    "genre": "pop/rock",
+    "stream_url": "https://listen.powerapp.com.tr/powerfm/mpeg/128/home",
+    "homepage": "https://www.powerfm.com.tr",
+    "country": "TR",
+    "lat": 41.01,
+    "lon": 28.98
+  },
+  {
+    "name": "Metro FM",
+    "genre": "pop/dance",
+    "stream_url": "https://listen.radyometro.com.tr/metrofm/mpeg/128/home",
+    "homepage": "https://www.metrofm.com.tr",
+    "country": "TR",
+    "lat": 41.01,
+    "lon": 28.98
   }
 ]

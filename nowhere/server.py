@@ -183,7 +183,8 @@ async def _get_radio(lat: float, lon: float) -> dict | None:
     if _state.radio_station is not None and _state.radio_pos is not None:
         if _km((lat, lon), _state.radio_pos) < 50.0:
             return _state.radio_station
-    station = await radio.nearest(lat, lon, None)
+    cc = country.country_code_of(lat, lon)
+    station = await radio.nearest(lat, lon, cc)
     if station is not None:
         _state.radio_station = station
         _state.radio_pos = (lat, lon)
