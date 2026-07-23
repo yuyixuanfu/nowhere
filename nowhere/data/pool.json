@@ -2070,5 +2070,29 @@
     "lat": 48.1351,
     "lon": 11.582,
     "biome": "city"
+  },
+  {
+    "lat": -33.96,
+    "lon": 18.41,
+    "biome": "mountain",
+    "name_hint": "桌山",
+    "elev_m": 1085,
+    "surface": "rock"
+  },
+  {
+    "lat": 31.5,
+    "lon": 35.5,
+    "biome": "desert",
+    "name_hint": "死海",
+    "elev_m": -430,
+    "surface": "water_fresh"
+  },
+  {
+    "lat": 41.0,
+    "lon": 51.0,
+    "biome": "coast",
+    "name_hint": "里海",
+    "elev_m": -28,
+    "surface": "water_fresh"
   }
 ]

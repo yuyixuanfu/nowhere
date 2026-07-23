@@ -102,7 +102,9 @@
   "吴哥窟": {
     "lat": 13.412,
     "lon": 103.867,
-    "type": "古迹"
+    "type": "古迹",
+    "elev": 60,
+    "surface": "forest"
   },
   "清水寺": {
     "lat": 34.995,
@@ -172,7 +174,9 @@
   "死海": {
     "lat": 31.5,
     "lon": 35.5,
-    "type": "湖"
+    "type": "湖",
+    "elev": -430,
+    "surface": "water_fresh"
   },
   "尼罗河": {
     "lat": 30.0,
@@ -205,14 +209,18 @@
     "type": "角"
   },
   "勃朗峰": {
-    "lat": 45.83,
-    "lon": 6.87,
-    "type": "峰"
+    "lat": 45.833,
+    "lon": 6.865,
+    "type": "山",
+    "elev": 4808,
+    "surface": "rock"
   },
   "马特洪峰": {
-    "lat": 45.98,
-    "lon": 7.66,
-    "type": "峰"
+    "lat": 45.976,
+    "lon": 7.659,
+    "type": "山",
+    "elev": 4478,
+    "surface": "rock"
   },
   "少女峰": {
     "lat": 46.54,
@@ -220,9 +228,11 @@
     "type": "峰"
   },
   "富士山": {
-    "lat": 35.3606,
-    "lon": 138.7274,
-    "type": "山"
+    "lat": 35.361,
+    "lon": 138.728,
+    "type": "山",
+    "elev": 3776,
+    "surface": "rock"
   },
   "阿尔卑斯山": {
     "lat": 45.92,
@@ -830,9 +840,11 @@
     "type": "古迹"
   },
   "桌山": {
-    "lat": -33.9625,
-    "lon": 18.4038,
-    "type": "山"
+    "lat": -33.96,
+    "lon": 18.41,
+    "type": "山",
+    "elev": 1085,
+    "surface": "rock"
   },
   "罗本岛": {
     "lat": -33.8076,
@@ -938,5 +950,103 @@
     "lat": 78.2,
     "lon": 15.6,
     "type": "群岛"
+  },
+  "威尼斯": {
+    "lat": 45.44,
+    "lon": 12.32,
+    "type": "城市",
+    "elev": 0,
+    "surface": "urban"
+  },
+  "Venice": {
+    "lat": 45.44,
+    "lon": 12.32,
+    "type": "城市",
+    "elev": 0,
+    "surface": "urban"
+  },
+  "Angkor Wat": {
+    "lat": 13.412,
+    "lon": 103.867,
+    "type": "古迹",
+    "elev": 60,
+    "surface": "forest"
+  },
+  "Table Mountain": {
+    "lat": -33.96,
+    "lon": 18.41,
+    "type": "山",
+    "elev": 1085,
+    "surface": "rock"
+  },
+  "珠穆朗玛峰": {
+    "lat": 27.988,
+    "lon": 86.925,
+    "type": "山",
+    "elev": 8848,
+    "surface": "rock"
+  },
+  "Mount Everest": {
+    "lat": 27.988,
+    "lon": 86.925,
+    "type": "山",
+    "elev": 8848,
+    "surface": "rock"
+  },
+  "Mount Fuji": {
+    "lat": 35.361,
+    "lon": 138.728,
+    "type": "山",
+    "elev": 3776,
+    "surface": "rock"
+  },
+  "Matterhorn": {
+    "lat": 45.976,
+    "lon": 7.659,
+    "type": "山",
+    "elev": 4478,
+    "surface": "rock"
+  },
+  "乞力马扎罗": {
+    "lat": -3.067,
+    "lon": 37.359,
+    "type": "山",
+    "elev": 5895,
+    "surface": "rock"
+  },
+  "Kilimanjaro": {
+    "lat": -3.067,
+    "lon": 37.359,
+    "type": "山",
+    "elev": 5895,
+    "surface": "rock"
+  },
+  "Mont Blanc": {
+    "lat": 45.833,
+    "lon": 6.865,
+    "type": "山",
+    "elev": 4808,
+    "surface": "rock"
+  },
+  "Dead Sea": {
+    "lat": 31.5,
+    "lon": 35.5,
+    "type": "湖",
+    "elev": -430,
+    "surface": "water_fresh"
+  },
+  "里海": {
+    "lat": 41.0,
+    "lon": 51.0,
+    "type": "湖",
+    "elev": -28,
+    "surface": "water_fresh"
+  },
+  "Caspian Sea": {
+    "lat": 41.0,
+    "lon": 51.0,
+    "type": "湖",
+    "elev": -28,
+    "surface": "water_fresh"
   }
 }

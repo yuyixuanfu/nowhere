@@ -226,10 +226,16 @@ async def about(lat: float, lon: float, topic: str) -> dict | None:
             if result is not None:
                 return result
 
-    # Strategy 7: Try ZIM index search for titles containing the query
+    # Strategy 7: Try ZIM index search for titles containing the query.
+    # zim.suggest/search are sync C calls and have no built-in timeout;
+    # if the ZIM index is malformed a query can block indefinitely.
+    # Wrap them in to_thread + wait_for so a hung lookup falls through.
     if len(title) >= 2:
         try:
-            matches = zim.suggest(title)
+            matches = await asyncio.wait_for(
+                asyncio.to_thread(zim.suggest, title),
+                timeout=5.0,
+            )
             if matches:
                 # suggest returns a list of title strings
                 for match_title in matches[:5]:
@@ -237,13 +243,16 @@ async def about(lat: float, lon: float, topic: str) -> dict | None:
                         result = _try_zim_lookup(zim, match_title)
                         if result is not None:
                             return result
-        except Exception as exc:
+        except (asyncio.TimeoutError, Exception) as exc:
             logger.debug("ZIM suggest failed for %r: %s", title, exc)
 
     # Strategy 8: Try fulltext search if available
     if len(title) >= 2:
         try:
-            search_results = zim.search(title, 5)
+            search_results = await asyncio.wait_for(
+                asyncio.to_thread(zim.search, title, 5),
+                timeout=5.0,
+            )
             if search_results:
                 for entry in search_results:
                     entry_title = entry if isinstance(entry, str) else getattr(entry, "title", None) or getattr(entry, "url", "")
@@ -251,7 +260,7 @@ async def about(lat: float, lon: float, topic: str) -> dict | None:
                         result = _try_zim_lookup(zim, entry_title)
                         if result is not None:
                             return result
-        except Exception as exc:
+        except (asyncio.TimeoutError, Exception) as exc:
             logger.debug("ZIM search failed for %r: %s", title, exc)
 
     return None
