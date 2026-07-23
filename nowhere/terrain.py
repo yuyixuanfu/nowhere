@@ -236,13 +236,12 @@ def urban_nearby(lat: float, lon: float, km: float = 15.0) -> bool:
 def _pool_entry(lat: float, lon: float) -> dict | None:
     """Nearest pool entry within _POOL_RADIUS_DEG, else None.
 
-    mountain/volcano 不覆盖: 大地貌 tiny 网格本身够看,烘焙值是点值,
-    盖了反而把珠峰顶拉平成大本营。城市/沙漠/海岸这些低起伏地方
-    网格最假,才是烘焙值的用武之地。"""
+    优先用烘焙值——地标坐标的精确海拔。
+    """
     best: dict | None = None
     best_d = _POOL_RADIUS_DEG
     for e in _load_pool():
-        if "elev_m" not in e or e.get("biome") in ("mountain", "volcano"):
+        if "elev_m" not in e:
             continue
         d = abs(e["lat"] - lat) + abs((e["lon"] - lon) * math.cos(math.radians(lat)))
         if d < best_d:
