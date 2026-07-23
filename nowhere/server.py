@@ -857,6 +857,15 @@ async def _open_door_locked(to: str | None = None, resume: bool = False) -> dict
     sections: list[str] = [establish]
     if visit_no > 1:
         sections[0] = f"又来了——第 {visit_no} 次来{place_name}。" + establish
+
+    # ── 本地特色：localcolor 优先 ─────────────────────────────────
+    local_card = localcolor.draw(place_name, _state.seen_cards, _rng,
+                                 local_hour=local_hour, country_code=cc)
+    if local_card:
+        _state.seen_cards.add(local_card["key"])
+        placememory.save_seen_cards(place_name, _state.seen_cards)
+        sections.append(local_card["text"])
+
     for c in top3:
         if c["kind"] in ("weather", "sky", "arrive"):
             continue

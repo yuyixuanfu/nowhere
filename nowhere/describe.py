@@ -1569,15 +1569,13 @@ def render_establish(payload: dict, rng: random.Random) -> str:
     # ── Try location-specific scenes first (china/world enhanced, soundscape, taste) ──
     location_scenes = _load_location_scenes()
     if place in location_scenes:
-        # Use location scene with 60% probability; otherwise fall through to generic
-        if rng.random() < 0.6:
-            scene_text = rng.choice(location_scenes[place])
-            parts = [header, scene_text]
-            # 附近地标
-            nearby_places = payload.get("nearby_places", "")
-            if nearby_places:
-                parts.append(nearby_places)
-            return "".join(parts)
+        scene_text = rng.choice(location_scenes[place])
+        parts = [header, scene_text]
+        # 附近地标
+        nearby_places = payload.get("nearby_places", "")
+        if nearby_places:
+            parts.append(nearby_places)
+        return "".join(parts)
 
     if precip in _WEATHER_TO_SCENE:
         scene_name = _WEATHER_TO_SCENE[precip]
