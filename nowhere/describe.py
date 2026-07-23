@@ -376,16 +376,45 @@ def _location_offset(rng: random.Random, lat: float, lon: float) -> None:
 
 
 def _pick_scene(pool: list[str], name: str, rng: random.Random, ctx: dict) -> str:
-    """Pick a scene from pool, filtering by metadata constraints."""
+    """Pick a scene from pool, filtering by metadata constraints and biome/altitude."""
+    # Biome/altitude filtering
+    biome = ctx.get("biome", "")
+    lat = ctx.get("lat", 0)
+    elev = ctx.get("elevation", 0)
+    abs_lat = abs(lat)
+
+    filtered = pool
+
+    # Desert: no water-related scenes
+    if biome == "desert":
+        desert_bad = ["洒水车", "喷水", "浇花", "水珠", "水溅", "湖面", "鸭子", "泳池", "水帘"]
+        filtered = [s for s in filtered if not any(k in s for k in desert_bad)]
+
+    # High altitude (>3000m): no urban/lowland scenes
+    if elev > 3000:
+        high_bad = ["公园", "湖面", "鸭子", "水泥地", "人行道", "路灯", "便利店", "地铁", "小区", "洒水车"]
+        filtered = [s for s in filtered if not any(k in s for k in high_bad)]
+
+    # Non-tropical: no tropical scenes
+    if abs_lat >= 30:
+        tropical_bad = ["椰子", "棕榈", "芭蕉", "热带", "芒果", "榴莲"]
+        filtered = [s for s in filtered if not any(k in s for k in tropical_bad)]
+
+    # Non-polar: no snow/ice scenes (only for non-tundra biomes)
+    if abs_lat < 50 and biome not in ("tundra",):
+        cold_bad = ["雪崩", "冰川", "冻土", "极光", "冰裂缝"]
+        filtered = [s for s in filtered if not any(k in s for k in cold_bad)]
+
+    if not filtered:
+        filtered = pool  # Fallback to unfiltered if all filtered out
+
     meta = _load_meta().get(name, [])
-    if meta and len(meta) == len(pool):
-        valid = [t for t, m in zip(pool, meta) if _matches(m.get("requires", {}), ctx)]
+    if meta and len(meta) == len(filtered):
+        valid = [t for t, m in zip(filtered, meta) if _matches(m.get("requires", {}), ctx)]
         if valid:
             return rng.choice(valid)
-        # All filtered out — return empty instead of bypassing constraints
         return ""
-    # No metadata → pick from full pool (backward compatible)
-    return rng.choice(pool)
+    return rng.choice(filtered)
 
 
 # Map surface/biome to scene file name
@@ -1527,6 +1556,8 @@ def render_establish(payload: dict, rng: random.Random) -> str:
         "lat": lat,
         "temp": weather.get("temp_c"),
         "polar_day": is_polar_day,
+        "biome": biome,
+        "elevation": elevation,
         "features": set(),  # no waterfall/river data at establish time
     }
 

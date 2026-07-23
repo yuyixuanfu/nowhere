@@ -366,16 +366,15 @@ def _terrain_transition_text(
 
 
 def _pick_discovery(rng: random.Random) -> str:
-    """Pick a random discovery scene line, filtered by biome."""
+    """Pick a random discovery scene line, filtered by biome and altitude."""
     pool = _load_discovery_scenes()
     if not pool:
         return ""
 
     # Filter out scenes that don't match the current biome
     biome = _state.biome or ""
-    # last_env may be nested ({terrain:{surface}}) or top-level ({surface});
-    # use the helper so both shapes work.
     surface = _last_env_surface()
+    elev = (_state.last_env or {}).get("elevation", 0)
 
     # Water scenes are inappropriate in deserts and dry areas
     water_keywords = ["瀑布", "溪", "河", "湖", "海", "水帘", "湿地", "溪水"]
@@ -388,11 +387,13 @@ def _pick_discovery(rng: random.Random) -> str:
         pool = [s for s in pool if not any(k in s for k in ice_keywords)]
 
     # Sea scenes are inappropriate in landlocked areas
-    if "海" in "".join(pool) and biome not in ("coast",):
-        # Check if we're far from the sea (simplified: >100km from coast)
-        # For now, just filter out explicit sea scenes for non-coast biomes
-        if biome not in ("coast", "island"):
-            pool = [s for s in pool if "海边" not in s and "灯塔" not in s]
+    if biome not in ("coast", "island"):
+        pool = [s for s in pool if "海边" not in s and "灯塔" not in s]
+
+    # High altitude (>3000m): filter out urban/lowland scenes
+    if elev > 3000:
+        high_altitude_bad = ["公园", "湖面", "鸭子", "水泥地", "人行道", "路灯", "便利店", "地铁", "小区"]
+        pool = [s for s in pool if not any(k in s for k in high_altitude_bad)]
 
     if not pool:
         return ""
