@@ -421,5 +421,32 @@
     "country": "IT",
     "lat": 45.46,
     "lon": 9.19
+  },
+  {
+    "name": "TRT Radio 1",
+    "genre": "news/talk",
+    "stream_url": "https://trt-radio-1.medya.trt.com.tr/live",
+    "homepage": "https://www.trt.net.tr",
+    "country": "TR",
+    "lat": 39.93,
+    "lon": 32.85
+  },
+  {
+    "name": "TRT FM",
+    "genre": "pop/talk",
+    "stream_url": "https://trt-fm.medya.trt.com.tr/live",
+    "homepage": "https://www.trt.net.tr",
+    "country": "TR",
+    "lat": 41.01,
+    "lon": 28.98
+  },
+  {
+    "name": "Power Turkey",
+    "genre": "pop/dance",
+    "stream_url": "https://powerturk-live.perrystream.com/stream",
+    "homepage": "https://www.powerturk.com",
+    "country": "TR",
+    "lat": 41.01,
+    "lon": 28.98
   }
 ]
