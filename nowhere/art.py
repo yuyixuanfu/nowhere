@@ -8,6 +8,7 @@ in Lagos sees West African sculpture; a user in Paris sees French painting.
 
 from __future__ import annotations
 
+import asyncio
 import gzip
 import json as _json
 import pathlib
@@ -218,12 +219,17 @@ def _local_art_match(lat: float, lon: float, mood: str, rng: random.Random) -> d
     # Get geo culture keyword
     culture = _geo_culture(lat, lon)
 
-    # Try culture-specific first
+    # Try culture-specific first (fuzzy match)
     candidates = []
     if culture:
         culture_lower = culture.lower()
-        indices = db.get("by_culture", {}).get(culture_lower, [])
-        candidates = [artworks[i] for i in indices if i < len(artworks)]
+        by_culture = db.get("by_culture", {})
+        matching_indices = []
+        for ck, idxs in by_culture.items():
+            # 双向模糊匹配：目标关键词包含在 culture key 里，或反过来
+            if culture_lower in ck or ck in culture_lower:
+                matching_indices.extend(idxs)
+        candidates = [artworks[i] for i in matching_indices if i < len(artworks)]
 
     # If no culture match, use all
     if not candidates:
@@ -268,12 +274,17 @@ async def match(lat: float, lon: float, mood: str, rng: random.Random | None = N
     # ── 1. Try local database first ─────────────────────────────────
     result = _local_art_match(lat, lon, mood, rng)
     if result:
-        # Try ZIM enrichment
+        # Try ZIM enrichment (with timeout to avoid blocking)
         title = result.get("title", "")
         if title:
-            zim_text = _zim_extract(title)
-            if zim_text:
-                result["zim_extract"] = zim_text
+            try:
+                zim_text = await asyncio.wait_for(
+                    asyncio.to_thread(_zim_extract, title), timeout=5.0
+                )
+                if zim_text:
+                    result["zim_extract"] = zim_text
+            except (asyncio.TimeoutError, Exception):
+                pass
         return result
 
     # ── 2. Fall back to Met API ─────────────────────────────────────

@@ -8,6 +8,7 @@
 import asyncio
 import sys
 import random
+import threading
 from datetime import datetime, timezone
 
 # Windows GBK 终端兼容
@@ -17,6 +18,14 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
 if sys.stdin.encoding and sys.stdin.encoding.lower() != "utf-8":
     sys.stdin = io.TextIOWrapper(sys.stdin.buffer, encoding="utf-8", errors="replace")
+
+# 抑制 zimply gevent monkey-patch 的退出噪音
+_orig_excepthook = threading.excepthook
+def _silent_thread_excepthook(args):
+    if isinstance(args.exc_value, KeyError):
+        return
+    _orig_excepthook(args)
+threading.excepthook = _silent_thread_excepthook
 
 
 def _parse_walk(arg: str) -> tuple[str, float]:
@@ -166,6 +175,18 @@ async def main():
                 r = server.where_am_i_impl()
                 _print_result(r)
 
+            elif cmd == "souvenir":
+                r = server.souvenir()
+                _print_result(r)
+
+            elif cmd == "give":
+                r = server.give_souvenir()
+                _print_result(r)
+
+            elif cmd == "continue":
+                r = await server.continue_journey()
+                _print_result(r)
+
             elif cmd == "providers":
                 from nowhere.providers import provider_status
                 status = provider_status()
@@ -177,7 +198,7 @@ async def main():
 
             else:
                 print(f"  未知命令: {cmd}")
-                print("  可用: open/walk/listen/look/ask/mark/marks/where/providers/quit")
+                print("  可用: open/walk/listen/look/ask/mark/marks/where/souvenir/give/continue/providers/quit")
 
         except Exception as e:
             print(f"  ❌ 错误: {e}")

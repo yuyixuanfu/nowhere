@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import asyncio
 import json
 import logging
 import pathlib
@@ -177,7 +178,11 @@ async def about(lat: float, lon: float, topic: str) -> dict | None:
             return None
         title = place_name
 
-    zim = _get_zim()
+    # ZIM 加载可能很慢（3.3GB），用线程+超时保护
+    try:
+        zim = await asyncio.wait_for(asyncio.to_thread(_get_zim), timeout=8.0)
+    except (asyncio.TimeoutError, Exception):
+        return None
     if zim is None:
         return None
 
