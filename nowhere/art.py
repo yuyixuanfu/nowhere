@@ -166,6 +166,30 @@ _GEO_CULTURE: list[tuple[float, float, float, float, str]] = [
     (-50, -5, 110, 180, "Oceanic"),
 ]
 
+# 地理关键词 → Met 数据库实际 culture key 映射
+_GEO_TO_MET_CULTURE: dict[str, list[str]] = {
+    "Central Asian": ["central asian", "mongolian", "tibetan"],
+    "Islamic": ["islamic", "iran", "persian", "sasanian", "ottoman", "turkish"],
+    "Japanese": ["japan", "japanese"],
+    "Korean": ["korea", "korean"],
+    "Chinese": ["china", "chinese", "north china", "northeast china"],
+    "Indian": ["india", "indian", "nepal", "sri lankan", "mughal"],
+    "Southeast Asian": ["thailand", "cambodia", "indonesia", "java", "javanese", "bornean", "sumatra", "philippine", "myanmar", "burmese"],
+    "Egyptian": ["egypt", "egyptian"],
+    "African": ["african", "akan", "dogon", "edo", "kongo", "yoruba", "tabwa", "teke", "ghanaian", "nigerian", "seneca", "tlingit"],
+    "European": ["european", "british", "french", "german", "italian", "spanish", "dutch", "netherlandish", "austrian", "swiss", "hungarian", "catalan"],
+    "Spanish": ["spanish", "catalan"],
+    "Italian": ["italian", "milan", "brescia", "savoy"],
+    "French": ["french", "paris"],
+    "German": ["german", "augsburg", "nuremberg", "dresden", "landshut", "strasburg", "saxony"],
+    "British": ["british", "london"],
+    "Scandinavian": ["scandinavian", "norwegian", "swedish", "danish", "finnish"],
+    "American": ["american", "colonial american", "alaska", "tlingit", "inuit", "yupik"],
+    "Latin American": ["mexican", "peruvian", "colombian", "ecuador", "costa rica", "nicaragua", "aztec", "maya", "inca", "moche", "nasca", "chimú", "paracas"],
+    "Pre-Columbian": ["maya", "aztec", "mexica", "olmec", "inca", "moche", "nasca", "chimú", "paracas", "toltec", "mezcala"],
+    "Oceanic": ["maori", "kanak", "lapita", "polynesian", "melanesian", "micronesian", "papua", "bornean", "balinese"],
+}
+
 
 def _geo_culture(lat: float, lon: float) -> str | None:
     """Return a Met search keyword for the region, or None."""
@@ -219,16 +243,18 @@ def _local_art_match(lat: float, lon: float, mood: str, rng: random.Random) -> d
     # Get geo culture keyword
     culture = _geo_culture(lat, lon)
 
-    # Try culture-specific first (fuzzy match)
+    # Try culture-specific first (use mapping to Met database keys)
     candidates = []
     if culture:
-        culture_lower = culture.lower()
         by_culture = db.get("by_culture", {})
+        # 使用映射表找到对应的 Met culture keys
+        met_keys = _GEO_TO_MET_CULTURE.get(culture, [])
         matching_indices = []
-        for ck, idxs in by_culture.items():
-            # 双向模糊匹配：目标关键词包含在 culture key 里，或反过来
-            if culture_lower in ck or ck in culture_lower:
-                matching_indices.extend(idxs)
+        for mk in met_keys:
+            mk_lower = mk.lower()
+            for ck, idxs in by_culture.items():
+                if mk_lower in ck or ck in mk_lower:
+                    matching_indices.extend(idxs)
         candidates = [artworks[i] for i in matching_indices if i < len(artworks)]
 
     # If no culture match, use all
