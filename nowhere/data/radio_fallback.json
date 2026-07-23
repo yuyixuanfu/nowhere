@@ -484,5 +484,50 @@
     "country": "TR",
     "lat": 41.01,
     "lon": 28.98
+  },
+  {
+    "name": "ERT Proto",
+    "genre": "news/talk",
+    "stream_url": "https://radiostreaming.ert.gr/ert-proto",
+    "homepage": "https://www.ert.gr",
+    "country": "GR",
+    "lat": 37.98,
+    "lon": 23.73
+  },
+  {
+    "name": "ERT Deftero",
+    "genre": "culture/talk",
+    "stream_url": "https://radiostreaming.ert.gr/ert-deftero",
+    "homepage": "https://www.ert.gr",
+    "country": "GR",
+    "lat": 37.98,
+    "lon": 23.73
+  },
+  {
+    "name": "ERA Sport",
+    "genre": "sports",
+    "stream_url": "https://radiostreaming.ert.gr/era-sport",
+    "homepage": "https://www.ert.gr",
+    "country": "GR",
+    "lat": 37.98,
+    "lon": 23.73
+  },
+  {
+    "name": "Ukrainian Radio 1",
+    "genre": "news/talk",
+    "stream_url": "https://radio.nrcu.gov.ua:8443/stream1",
+    "homepage": "https://www.nrcu.gov.ua",
+    "country": "UA",
+    "lat": 50.45,
+    "lon": 30.52
+  },
+  {
+    "name": "Radio Promin",
+    "genre": "pop/music",
+    "stream_url": "https://radio.nrcu.gov.ua:8443/stream3",
+    "homepage": "https://www.nrcu.gov.ua",
+    "country": "UA",
+    "lat": 50.45,
+    "lon": 30.52
   }
 ]
