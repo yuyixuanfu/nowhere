@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: nowhere-mcp
+Version: 0.1.0
+Requires-Python: >=3.11
+License-File: LICENSE
+Requires-Dist: fastmcp>=2
+Requires-Dist: httpx
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: skyfield
+Requires-Dist: timezonefinder
+Requires-Dist: uvicorn
+Requires-Dist: opencc-python-reimplemented
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-asyncio; extra == "dev"
+Requires-Dist: respx; extra == "dev"
+Dynamic: license-file

@@ -1,4101 +1,4120 @@
 {
- "HU": [
-  {
-   "zh": "蘭戈斯",
-   "en": "lángos",
-   "desc": "面团炸至金黄蓬松，涂上酸奶油和蒜泥，外壳酥脆内心绵软"
-  },
-  {
-   "zh": "",
-   "en": "paprikash",
-   "desc": "鸡肉在红椒粉奶油酱中炖至酥烂，酱汁浓郁红亮，拌面团子绝佳"
-  },
-  {
-   "zh": "",
-   "en": "túrógombóc",
-   "desc": "奶酪搓成丸子裹面包糠煎至金黄，切开绵软带甜，配酸奶油"
-  },
-  {
-   "zh": "匈牙利湯",
-   "en": "gulyásleves",
-   "desc": "牛肉土豆在红椒粉汤中炖至酥烂，汤色红亮，辣中带甜"
-  },
-  {
-   "zh": "",
-   "en": "Rakott krumpli",
-   "desc": "土豆片和香肠层层叠放浇蛋液烤至金黄，切开拉丝绵密"
-  },
-  {
-   "zh": "",
-   "en": "franciasaláta",
-   "desc": "蔬菜丁拌蛋黄酱，绵密清爽，节庆冷盘的常客"
-  },
-  {
-   "zh": "",
-   "en": "csülök pékné módra",
-   "desc": "猪肘在烤箱中慢烤至皮脆肉嫩，油脂渗入土豆，外焦里糯"
-  }
- ],
- "CA": [
-  {
-   "zh": "夏威夷披萨",
-   "en": "Hawaiian pizza",
-   "desc": "菠萝和火腿铺在芝士上烤，酸甜与咸香的争议组合"
-  },
-  {
-   "zh": "卑诗卷",
-   "en": "B.C. roll",
-   "desc": "烤三文鱼和黄瓜裹在寿司里，温热的鱼肉遇上清脆"
-  },
-  {
-   "zh": "",
-   "en": "Garlic fingers",
-   "desc": "蒜蓉芝士拉丝的扁平面包，蘸蒜味黄油酱"
-  },
-  {
-   "zh": "",
-   "en": "Jiggs dinner",
-   "desc": "咸牛肉配卷心菜、土豆和胡萝卜，纽芬兰的家常大餐"
-  },
-  {
-   "zh": "",
-   "en": "sushi pizza",
-   "desc": "寿司米压成饼底炸脆，铺上生鱼片和酱料"
-  },
-  {
-   "zh": "",
-   "en": "Japadog",
-   "desc": "热狗上撒海苔和芥末，日式调味的街头小食"
-  },
-  {
-   "zh": "",
-   "en": "cod au gratin",
-   "desc": "鳕鱼肉拌上奶酪酱焗至表面金黄起泡"
-  }
- ],
- "FI": [
-  {
-   "zh": "鱼包",
-   "en": "kalakukko",
-   "desc": "黑麦面团裹住猪肉和鱼烤至外壳焦硬，切开是层层肉香鱼鲜"
-  },
-  {
-   "zh": "",
-   "en": "Porkkanalaatikko",
-   "desc": "胡萝卜泥和米粒烤成金黄焗饭，甜糯中带着肉桂的温暖"
-  },
-  {
-   "zh": "芬兰鲑鱼汤",
-   "en": "Lohikeitto",
-   "desc": "三文鱼块在奶油汤中炖至嫩滑，莳萝的清香飘在汤面"
-  },
-  {
-   "zh": "炒驯鹿肉",
-   "en": "sautéed reindeer",
-   "desc": "驯鹿肉切薄片煎至微焦，配土豆泥和越橘酱，野味与酸甜碰撞"
-  },
-  {
-   "zh": "",
-   "en": "cabbage casserole",
-   "desc": "卷心菜和米饭层层叠放烤至软烂，肉汁渗入每一层"
-  },
-  {
-   "zh": "",
-   "en": "Hotsi",
-   "desc": "肉末和土豆在烤盘中炖至酥烂，芬兰夏末的家常味道"
-  },
-  {
-   "zh": "",
-   "en": "Clot soup",
-   "desc": "血块凝固切块煮入浓汤，黑红如玛瑙，口感绵密带铁锈味"
-  },
-  {
-   "zh": "",
-   "en": "Läskisoosi",
-   "desc": "猪肉片在奶油蘑菇酱中炖至软嫩，浇在土豆上，浓郁饱腹"
-  },
-  {
-   "zh": "",
-   "en": "Puruvesi vendace",
-   "desc": "普鲁湖白鲑鱼体型小巧，肉质细嫩鲜甜，煎或烟熏皆宜"
-  },
-  {
-   "zh": "",
-   "en": "Pizza Poro",
-   "desc": "烟熏驯鹿肉铺在披萨上，配鸡油菌和红洋葱，北欧风味的碰撞"
-  },
-  {
-   "zh": "",
-   "en": "ärter med fläsk",
-   "desc": "豌豆泥炖猪肉块，绵软咸香，朴素的北欧农家菜"
-  },
-  {
-   "zh": "",
-   "en": "Vorschmack",
-   "desc": "碎肉和鲱鱼泥烤成浓味派，入口咸鲜带一丝发酵的冲击"
-  }
- ],
- "GH": [
-  {
-   "zh": "富富",
-   "en": "fufu",
-   "desc": "木薯或山药捣成软糯面团，蘸汤入口，嚼劲中带着淀粉的朴素甜味"
-  },
-  {
-   "zh": "",
-   "en": "omo tuo",
-   "desc": "米饭捏成圆球，绵软入味，浸入汤汁后一口一个满足"
-  },
-  {
-   "zh": "",
-   "en": "Tuo Zaafi",
-   "desc": "玉米面揉成黏稠团子，配秋葵汤食用，朴素而饱腹"
-  },
-  {
-   "zh": "",
-   "en": "wasawasa",
-   "desc": "薯蓣粉蒸成灰褐色糕体，淋上棕榈油汤，质朴的大地气息"
-  },
-  {
-   "zh": "",
-   "en": "Groundnut soup",
-   "desc": "花生磨成浓酱煮汤，油脂在汤面泛着金光，香醇浓厚"
-  },
-  {
-   "zh": "",
-   "en": "Plasas",
-   "desc": "菠菜叶炖煮至软烂混入棕榈油，绿色蔬菜的朴素鲜味"
-  }
- ],
- "KE": [
-  {
-   "zh": "乌咖喱",
-   "en": "ugali",
-   "desc": "玉米面搅成坚实面团，掰一块蘸肉汤，嚼出谷物的朴素满足"
-  },
-  {
-   "zh": "",
-   "en": "Githeri",
-   "desc": "玉米粒和豆子同煮，朴素的一锅出，撒上辣椒碎提味"
-  },
-  {
-   "zh": "",
-   "en": "Nyama choma",
-   "desc": "山羊肉在炭火上烤至微焦，撕开时肉汁流淌，蘸着辣椒盐吃"
-  }
- ],
- "IS": [
-  {
-   "zh": "冰島發酵鯊魚肉",
-   "en": "Hákarl",
-   "desc": "national dish of Iceland consisting of fermented shark"
-  }
- ],
- "UA": [
-  {
-   "zh": "錫爾尼基",
-   "en": "Syrniki",
-   "desc": "奶酪搓成小饼煎至两面金黄，外脆内软，配酸奶油和果酱"
-  },
-  {
-   "zh": "",
-   "en": "Cheer",
-   "desc": "碎肉和米饭裹在卷心菜叶中炖煮，肉汁浸入米粒，朴素饱腹"
-  },
-  {
-   "zh": "",
-   "en": "shpundra",
-   "desc": "猪排在甜菜根酱中慢炖至酥烂，酱汁紫红酸甜"
-  },
-  {
-   "zh": "",
-   "en": "Shulyky",
-   "desc": "面团擀薄切块烤至酥脆，蘸蜂蜜或酸奶油，节庆时的甜蜜"
-  },
-  {
-   "zh": "",
-   "en": "Grechanyky",
-   "desc": "荞麦和碎肉捏成饼煎至微焦，外酥内软，谷物的朴素香气"
-  },
-  {
-   "zh": "",
-   "en": "Mandrykas",
-   "desc": "面团发酵后烤至蓬松，涂上蜂蜜，节庆面包的甜蜜"
-  },
-  {
-   "zh": "",
-   "en": "Tsybulnyki",
-   "desc": "洋葱裹面糊煎成薄饼，外焦内软，洋葱的甜香渗入面皮"
-  },
-  {
-   "zh": "",
-   "en": "Darnitsa bread",
-   "desc": "黑麦和小麦混合烤成深色面包，切片扎实，嚼出麦子的酸香"
-  },
-  {
-   "zh": "",
-   "en": "kulesha",
-   "desc": "玉米面糊搅成浓稠粥状，配猪油或酸奶油，穷人的朴素主食"
-  },
-  {
-   "zh": "",
-   "en": "krupky",
-   "desc": "大麦粒在汤中煮至软糯，节庆时端上桌的仪式感"
-  },
-  {
-   "zh": "",
-   "en": "zlyvana kasha",
-   "desc": "牛奶煮小米粥至浓稠，表面浮着一层奶皮，清晨的温暖"
-  },
-  {
-   "zh": "",
-   "en": "varena",
-   "desc": "蜂蜜和香料煮成热饮，温热辛香，冬至时的节庆饮品"
-  }
- ],
- "NO": [
-  {
-   "zh": "炒驯鹿肉",
-   "en": "sautéed reindeer",
-   "desc": "驯鹿肉切薄片煎至微焦，野味浓郁，脂香中带一丝松木清香"
-  },
-  {
-   "zh": "",
-   "en": "Lauvsteik",
-   "desc": "猪肉片在奶油酱汁中慢炖至软嫩，浇在土豆泥上，浓郁暖胃"
-  },
-  {
-   "zh": "",
-   "en": "ärter med fläsk",
-   "desc": "豌豆泥炖猪肉块，绵软咸香，加油站和路边小馆的常见饱腹菜"
-  }
- ],
- "EE": [
-  {
-   "zh": "",
-   "en": "kiluvõileib",
-   "desc": "Estonian open-faced sprat sandwich"
-  },
-  {
-   "zh": "",
-   "en": "Mulgikapsad",
-   "desc": "cabbage-based dish in Estonian cuisine"
-  }
- ],
- "IE": [
-  {
-   "zh": "",
-   "en": "3-in-1",
-   "desc": "炒饭、薯条和咖喱酱三合一，快餐店里油腻满足的深夜食粮"
-  }
- ],
- "LU": [
-  {
-   "zh": "",
-   "en": "Kuddelfleck",
-   "desc": "traditional Luxembourgish dish made of boiled tripe"
-  }
- ],
- "DK": [
-  {
-   "zh": "",
-   "en": "ärter med fläsk",
-   "desc": "豌豆泥炖猪肉块，绵软咸香，搭配芥末和脆面包片"
-  }
- ],
- "JP": [
-  {
-   "zh": "溫泉蛋",
-   "en": "Onsen tamago",
-   "desc": "蛋白凝固如豆腐，蛋黄半熟流动，入口温热绵密"
-  },
-  {
-   "zh": "",
-   "en": "Chinmi",
-   "desc": "发酵海产的咸鲜冲击味蕾，余味悠长"
-  },
-  {
-   "zh": "什锦面",
-   "en": "champon",
-   "desc": "猪骨汤底浓郁，面条弹牙，海鲜与蔬菜交织"
-  },
-  {
-   "zh": "御节料理",
-   "en": "osechi",
-   "desc": "漆盒层层打开，甜煮黑豆、�的鱼糕、醋拌牛蒡，各有寓意"
-  },
-  {
-   "zh": "章鱼烧",
-   "en": "takoyaki",
-   "desc": "外壳微焦酥脆，内里软糯流动，咬开是章鱼的弹韧"
-  },
-  {
-   "zh": "茶碗蒸",
-   "en": "chawanmushi",
-   "desc": "蛋液如丝绸般滑嫩，勺子探入触到虾仁和鸡肉"
-  },
-  {
-   "zh": "冲绳面条",
-   "en": "Okinawa soba",
-   "desc": "粗面条软韧有嚼劲，猪骨汤头清澈却醇厚"
-  },
-  {
-   "zh": "吉列猪排",
-   "en": "tonkatsu",
-   "desc": "面包糠炸至金黄，咬下去咔嚓作响，肉汁涌出"
-  },
-  {
-   "zh": "鳗鱼饭",
-   "en": "unadon",
-   "desc": "鳗鱼表面焦甜，肉质软糯，酱汁渗入米饭"
-  },
-  {
-   "zh": "日式燒肉",
-   "en": "yakiniku",
-   "desc": "牛肉片在烤网上滋滋冒油，蘸酱入口即化"
-  },
-  {
-   "zh": "雜炊",
-   "en": "Zosui",
-   "desc": "米饭吸饱高汤，每一口都是温暖的鲜味"
-  },
-  {
-   "zh": "肉松",
-   "en": "rousong",
-   "desc": "蓬松如棉花，入口即化，肉香在舌尖散开"
-  },
-  {
-   "zh": "角色便當",
-   "en": "Kyaraben",
-   "desc": "便当盒里是卡通世界，小饭团变成猫咪的脸"
-  },
-  {
-   "zh": "",
-   "en": "Negimaki",
-   "desc": "牛肉薄片裹住葱段，酱汁甜咸交织"
-  },
-  {
-   "zh": "土瓶蒸",
-   "en": "dobin mushi",
-   "desc": "掀开壶盖，柚子清香扑面，汤汁澄澈鲜美"
-  },
-  {
-   "zh": "爐端燒",
-   "en": "robatayaki",
-   "desc": "炭火慢烤的焦香，食材原味在烟熏中释放"
-  },
-  {
-   "zh": "",
-   "en": "suimono",
-   "desc": "清汤见底，一缕柚子香，入口纯净"
-  },
-  {
-   "zh": "吉列雞",
-   "en": "torikatsu",
-   "desc": "鸡肉裹粉炸透，外酥内嫩，蘸酱提味"
-  },
-  {
-   "zh": "章魚香腸",
-   "en": "Octopus-shaped sausages",
-   "desc": "小香肠切出章鱼腿，煎后卷曲可爱"
-  },
-  {
-   "zh": "柿葉壽司",
-   "en": "kaki no ha zushi",
-   "desc": "柿叶包裹的寿司，米粒紧实，鱼肉鲜嫩带叶香"
-  }
- ],
- "IL": [
-  {
-   "zh": "",
-   "en": "Shkedei marak",
-   "desc": "金黄小方块酥脆，泡进汤里吸满汁水"
-  },
-  {
-   "zh": "",
-   "en": "Bamba",
-   "desc": "花生酱味的膨化棒，入口即化，轻盈蓬松"
-  },
-  {
-   "zh": "",
-   "en": "bourekas",
-   "desc": "酥皮层层起酥，咬开是奶酪或菠菜的咸香"
-  },
-  {
-   "zh": "",
-   "en": "Fatoot samneh",
-   "desc": "皮塔饼撕碎煎至焦脆，混入蛋液，酥香四溢"
-  },
-  {
-   "zh": "",
-   "en": "Fritas de prasa",
-   "desc": "韭菜裹面糊炸至金黄，外脆内软"
-  }
- ],
- "AZ": [
-  {
-   "zh": "",
-   "en": "Lula kebab",
-   "desc": "肉糜串在铁签上烤至微焦，油脂滴落炭火嘶嘶作响"
-  },
-  {
-   "zh": "",
-   "en": "Ovdukh",
-   "desc": "酸奶汤清凉爽口，黄瓜和莳萝的香气在舌尖打转"
-  },
-  {
-   "zh": "",
-   "en": "Əzmə",
-   "desc": "手撕面包蘸浓稠酱汁，粗犷的满足感"
-  }
- ],
- "HR": [
-  {
-   "zh": "",
-   "en": "Zagorski štrukli",
-   "desc": "面皮裹住奶酪馅卷起烤至金黄，切开奶酪拉丝，外酥内软"
-  },
-  {
-   "zh": "",
-   "en": "Soparnik",
-   "desc": "薄面饼裹入瑞士甜菜烤至焦脆，达尔马提亚的素食派"
-  },
-  {
-   "zh": "",
-   "en": "Zlijevka",
-   "desc": "玉米面和奶酪烤成金黄糕点，甜中带咸，节庆时的甜蜜"
-  }
- ],
- "PY": [
-  {
-   "zh": "",
-   "en": "piracaldo",
-   "desc": "鱼汤熬至乳白，木薯和玉米在汤中沉浮，鲜味质朴如河流"
-  },
-  {
-   "zh": "",
-   "en": "Jopara",
-   "desc": "黑豆和玉米糊混煮成浓稠一锅，暖胃管饱，牧民的日常主食"
-  },
-  {
-   "zh": "",
-   "en": "batiburrillo",
-   "desc": "牛杂在浓汤中炖煮，内脏的野味被香料驯服，浓烈回甘"
-  }
- ],
- "HT": [
-  {
-   "zh": "珠穆湯",
-   "en": "soup joumou",
-   "desc": "Haitian soup"
-  },
-  {
-   "zh": "",
-   "en": "Kasav",
-   "desc": "Haitian meal"
-  },
-  {
-   "zh": "",
-   "en": "griot",
-   "desc": "dish in Haitian cuisine"
-  }
- ],
- "MK": [
-  {
-   "zh": "",
-   "en": "Turli Tava",
-   "desc": ""
-  },
-  {
-   "zh": "",
-   "en": "Tarana",
-   "desc": "typical Macedonian dish"
-  }
- ],
- "KH": [
-  {
-   "zh": "",
-   "en": "bok l'hong",
-   "desc": "青木瓜丝脆爽，鱼露和青柠的酸辣在口中炸开"
-  },
-  {
-   "zh": "",
-   "en": "Happy pizza",
-   "desc": "薄脆饼底铺满配料，芝士拉丝"
-  }
- ],
- "CY": [
-  {
-   "zh": "萨尔玛",
-   "en": "sarma",
-   "desc": "cabbage, vine leaf, or other leaf roll"
-  }
- ],
- "JM": [
-  {
-   "zh": "",
-   "en": "Run down",
-   "desc": "Typical Caribbean dish made with coconut milk and seafood"
-  },
-  {
-   "zh": "",
-   "en": "jerk chicken",
-   "desc": "dish"
-  }
- ],
- "GY": [
-  {
-   "zh": "",
-   "en": "Pholourie",
-   "desc": "Fried, spiced dough balls"
-  }
- ],
- "GR": [
-  {
-   "zh": "",
-   "en": "lokma",
-   "desc": "小面球炸至金黄淋上糖浆，外壳酥脆内心绵软，甜蜜炸物"
-  },
-  {
-   "zh": "希臘香煎起司",
-   "en": "Saganaki",
-   "desc": "厚切奶酪在平底锅中煎至两面焦黄，挤上柠檬汁，外脆内拉丝"
-  },
-  {
-   "zh": "",
-   "en": "skordalia",
-   "desc": "土豆泥搅入蒜泥和橄榄油，浓稠如膏，蒜香冲鼻"
-  },
-  {
-   "zh": "",
-   "en": "Sofrito (stew)",
-   "desc": "牛肉在白葡萄酒蒜酱中慢炖至酥烂，酱汁浓稠醇厚"
-  },
-  {
-   "zh": "萨尔玛",
-   "en": "sarma",
-   "desc": "葡萄叶裹住米饭和碎肉蒸熟，酸香清新，叶香渗入馅料"
-  },
-  {
-   "zh": "",
-   "en": "Spanakorizo",
-   "desc": "菠菜和米粒在柠檬橄榄油中炖煮，翠绿酸香，清淡健康"
-  },
-  {
-   "zh": "",
-   "en": "tirokafteri",
-   "desc": "羊奶酪搅入辣椒和橄榄油成糊状，辣得过瘾，奶香裹住辣味"
-  },
-  {
-   "zh": "",
-   "en": "Strapatsada",
-   "desc": "番茄炒软后打入鸡蛋翻炒成嫩块，酸甜鲜香，简单快手"
-  },
-  {
-   "zh": "",
-   "en": "psari plaki",
-   "desc": "整鱼铺上番茄洋葱在烤箱中慢烤，鱼肉嫩滑，番茄汁浸润"
-  },
-  {
-   "zh": "",
-   "en": "dolmadakiа",
-   "desc": "葡萄叶裹住柠檬米饭蒸至叶片半透明，蘸酸奶油，酸香清新"
-  }
- ],
- "PL": [
-  {
-   "zh": "比哥斯",
-   "en": "bigos",
-   "desc": "酸菜和多种肉类在锅中炖煮数日，酸香浓厚，越炖越醇"
-  },
-  {
-   "zh": "茹爾湯",
-   "en": "sour rye soup",
-   "desc": "黑麦发酵汤底酸得清爽，配煮蛋和香肠，复活节的传统早餐"
-  },
-  {
-   "zh": "",
-   "en": "Häckerle",
-   "desc": "碎肉拌入面包丁和鸡蛋烤成肉饼，外焦内软，朴素的家常菜"
-  },
-  {
-   "zh": "",
-   "en": "lazanki",
-   "desc": "宽面条和酸菜碎肉翻炒，面片滑韧裹着酸菜的清爽"
-  },
-  {
-   "zh": "波蘭炸豬排",
-   "en": "kotlet schabowy",
-   "desc": "猪排裹面包糠炸至金黄酥脆，切开肉汁流淌，配土豆泥"
-  },
-  {
-   "zh": "",
-   "en": "Rumpuć",
-   "desc": "各种蔬菜切丁在清汤中煮至软烂，颜色缤纷，清淡暖胃"
-  },
-  {
-   "zh": "",
-   "en": "Prażonki",
-   "desc": "土豆和培根在烤盘中层层叠放烤至焦黄，油脂渗入土豆"
-  },
-  {
-   "zh": "",
-   "en": "Prażucha",
-   "desc": "大麦粉搅成浓稠糊状，配酸奶或培油，穷人的朴素食物"
-  },
-  {
-   "zh": "克拉科夫貝果",
-   "en": "Obwarzanek krakowski",
-   "desc": "编成辫子状的面包圈煮后烤至金黄，外壳微脆内里柔软"
-  },
-  {
-   "zh": "",
-   "en": "Peas with salo",
-   "desc": "豌豆炖至绵软，配腌猪油块，咸香和豆香交融"
-  }
- ],
- "MY": [
-  {
-   "zh": "",
-   "en": "Pelara",
-   "desc": "Food in Malaysia"
-  },
-  {
-   "zh": "",
-   "en": "Slemang",
-   "desc": "Dish in the Malaysian kitchen"
-  },
-  {
-   "zh": "",
-   "en": "Laksam",
-   "desc": "Meal in Malaysia"
-  },
-  {
-   "zh": "",
-   "en": "lompap daging",
-   "desc": "dish from Negeri Sembilan, Malaysia"
-  },
-  {
-   "zh": "",
-   "en": "ubi gaung buluh",
-   "desc": "bamboo dish from Malaysia"
-  },
-  {
-   "zh": "",
-   "en": "Chicken chop",
-   "desc": "Malaysian-styled fried chicken dish"
-  }
- ],
- "JO": [
-  {
-   "zh": "",
-   "en": "galayet bandora",
-   "desc": "番茄在锅中熬至浓稠，蘸着大饼吃，酸甜暖胃"
-  }
- ],
- "MM": [
-  {
-   "zh": "",
-   "en": "Buttered rice",
-   "desc": "黄油渗入每一粒米饭，扁豆绵软，入口油润"
-  },
-  {
-   "zh": "",
-   "en": "No htamin",
-   "desc": "椰浆浸润的糯米，节庆时端上桌的甜蜜"
-  },
-  {
-   "zh": "",
-   "en": "Burmese fried rice",
-   "desc": "大火翻炒的锅气，米饭粒粒分明"
-  },
-  {
-   "zh": "",
-   "en": "Cassia flower bud salad",
-   "desc": "花蕾脆嫩，拌入辣椒和花生，口感层次丰富"
-  },
-  {
-   "zh": "",
-   "en": "Hsi htamin",
-   "desc": "油饭粒粒透亮，咸香适口"
-  },
-  {
-   "zh": "",
-   "en": "Shwe htamin",
-   "desc": "金黄糯米甜而不腻，椰香在齿间萦绕"
-  }
- ],
- "LT": [
-  {
-   "zh": "",
-   "en": "Kepta duona",
-   "desc": "Lithuanian, latvian garlic bread chips"
-  }
- ],
- "MV": [
-  {
-   "zh": "",
-   "en": "Maskurolhi",
-   "desc": "金黄糯米甜而不腻，椰丝和香蕉叶的香气交融"
-  }
- ],
- "RU": [
-  {
-   "zh": "炒驯鹿肉",
-   "en": "sautéed reindeer",
-   "desc": "驯鹿肉切薄片煎至微焦，野味浓郁带一丝松木香"
-  },
-  {
-   "zh": "俄国沙拉",
-   "en": "Olivier salad",
-   "desc": "土豆丁胡萝卜丁拌蛋黄酱，绵密中咬到酸黄瓜"
-  },
-  {
-   "zh": "刮魚",
-   "en": "stroganina",
-   "desc": "冻鱼切成薄片，入口冰凉，鱼肉在舌尖慢慢化开"
-  },
-  {
-   "zh": "",
-   "en": "franciasaláta",
-   "desc": "蔬菜丁拌蛋黄酱，绵密清爽"
-  },
-  {
-   "zh": "",
-   "en": "Darnitsa bread",
-   "desc": "黑麦面包切片扎实，嚼出麦子的朴素酸香"
-  },
-  {
-   "zh": "",
-   "en": "rasstegai",
-   "desc": "开口馅饼露出肉馅，面皮酥软，汁水饱满"
-  },
-  {
-   "zh": "",
-   "en": "yurma",
-   "desc": "鱼汤在冻土上熬煮，热气在寒冷中升腾"
-  },
-  {
-   "zh": "",
-   "en": "muvi",
-   "desc": "鱼皮晾干嚼韧，原住民的原始鲜味"
-  },
-  {
-   "zh": "",
-   "en": "sulze",
-   "desc": "肉冻在盘中颤动，入口即化，胶质黏唇"
-  },
-  {
-   "zh": "",
-   "en": "Indigirka salad",
-   "desc": "冻鱼丁拌洋葱，冰碴在齿间碎裂"
-  },
-  {
-   "zh": "克缺",
-   "en": "Köje",
-   "desc": "小米粥浓稠暖胃，牧民的冬日早餐"
-  },
-  {
-   "zh": "",
-   "en": "skoblyanka",
-   "desc": "牛肉片和土豆蘑菇在铁锅中翻炒，焦香四溢"
-  },
-  {
-   "zh": "",
-   "en": "buuz",
-   "desc": "面皮厚实兜住羊肉馅，蒸熟后汁水饱满"
-  }
- ],
- "VN": [
-  {
-   "zh": "包饼",
-   "en": "bánh bao",
-   "desc": "面皮蓬松柔软，咬开是猪肉和鸡蛋的鲜香"
-  },
-  {
-   "zh": "餅蒸",
-   "en": "bánh chưng",
-   "desc": "方形粽叶包裹绿豆和猪肉，糯米紧实黏糯"
-  },
-  {
-   "zh": "越南湯圓",
-   "en": "chè trôi nước",
-   "desc": "糯米团在姜糖水中浮沉，咬开是黑芝麻流心"
-  },
-  {
-   "zh": "",
-   "en": "chả cá Lã Vọng",
-   "desc": "鱼块在铁板上滋滋作响，茴香和黄姜的香气升腾"
-  },
-  {
-   "zh": "米粿",
-   "en": "bánh bèo",
-   "desc": "小碟米皮薄如蝉翼，浇上虾米和炸葱油"
-  },
-  {
-   "zh": "",
-   "en": "bánh cáy",
-   "desc": "米糕切成薄片，甜脆中带着椰香"
-  },
-  {
-   "zh": "",
-   "en": "bánh rế",
-   "desc": "红薯丝编织成网，炸至酥脆，甜香扑鼻"
-  },
-  {
-   "zh": "餅截",
-   "en": "bánh tét",
-   "desc": "圆柱形粽子切开，绿豆泥和猪肉层层分明"
-  },
-  {
-   "zh": "cốm",
-   "en": "cốm",
-   "desc": "新收稻谷碾成扁米，青草清香在口中化开"
-  },
-  {
-   "zh": "脍卷",
-   "en": "gỏi cuốn",
-   "desc": "米纸卷透出虾和生菜的颜色，蘸酱酸甜开胃"
-  },
-  {
-   "zh": "",
-   "en": "Nem Lai Vung",
-   "desc": "猪肉春卷炸至金黄，外皮酥脆肉馅多汁"
-  },
-  {
-   "zh": "",
-   "en": "bánh trôi",
-   "desc": "小汤圆浮在姜汤里，糯米皮软糯，红糖馅甜润"
-  },
-  {
-   "zh": "",
-   "en": "bánh chay",
-   "desc": "素汤圆配红豆沙，清淡甘甜"
-  },
-  {
-   "zh": "烤肉米粉",
-   "en": "Bun cha",
-   "desc": "烤肉丸浸在鱼露汤里，米粉蘸汁吸味"
-  },
-  {
-   "zh": "",
-   "en": "Hủ tiếu",
-   "desc": "细米粉滑入骨汤，配上虾和猪肉片"
-  },
-  {
-   "zh": "綠豆糕",
-   "en": "bánh đậu xanh",
-   "desc": "绿豆糕入口即化成粉，甜度克制"
-  },
-  {
-   "zh": "",
-   "en": "chả trứng",
-   "desc": "蛋肉糕蒸得厚实，切片后能看到肉粒和木耳"
-  },
-  {
-   "zh": "",
-   "en": "Nộm hoa chuối",
-   "desc": "香蕉花丝拌鸡肉，酸辣脆爽"
-  }
- ],
- "TH": [
-  {
-   "zh": "紅咖哩",
-   "en": "red curry",
-   "desc": "椰浆裹着辣油，红咖喱在舌面铺开温热的辣"
-  },
-  {
-   "zh": "",
-   "en": "mi krop",
-   "desc": "细面炸至蓬松酥脆，浇上酸甜酱汁，咔嚓一声"
-  },
-  {
-   "zh": "猪脚饭",
-   "en": "khao kha mu",
-   "desc": "猪蹄炖到皮肉分离，胶质黏唇，浇在白饭上"
-  },
-  {
-   "zh": "",
-   "en": "Roti sai mai",
-   "desc": "薄饼裹入彩色棉花糖，甜丝丝在齿间融化"
-  },
-  {
-   "zh": "",
-   "en": "Khanom thuai",
-   "desc": "小杯椰奶布丁，滑嫩如凝脂，底部是焦糖"
-  },
-  {
-   "zh": "",
-   "en": "pu phat phong kari",
-   "desc": "蟹肉裹着咖喱粉翻炒，咸鲜带一丝微辣"
-  },
-  {
-   "zh": "打抛猪肉饭",
-   "en": "phat kaphrao",
-   "desc": "打抛叶的辛香渗入猪肉碎，配煎蛋戳破蛋黄"
-  },
-  {
-   "zh": "",
-   "en": "Wing Bean Salad",
-   "desc": "翼豆脆如生豆角，拌入椰奶和虾米，酸辣清爽"
-  },
-  {
-   "zh": "",
-   "en": "Khao mu daeng",
-   "desc": "叉烧肉片铺在饭上，甜酱汁渗入米粒"
-  },
-  {
-   "zh": "",
-   "en": "Kuai tiao pak mo",
-   "desc": "薄皮馄饨浮在清汤里，猪肉馅鲜嫩"
-  },
-  {
-   "zh": "",
-   "en": "Tom som",
-   "desc": "酸汤开胃，罗望子的酸和虾的鲜在汤里平衡"
-  },
-  {
-   "zh": "",
-   "en": "Khao man gai",
-   "desc": "鸡油饭粒粒油亮，鸡肉嫩滑，蘸酱微辣提鲜"
-  }
- ],
- "LK": [
-  {
-   "zh": "阿榜糕",
-   "en": "appam",
-   "desc": "边缘薄脆如蕾丝，中心软厚，椰香奶味"
-  },
-  {
-   "zh": "",
-   "en": "Bibikkan",
-   "desc": "椰子蛋糕湿润扎实，棕糖的焦香在口中化开"
-  },
-  {
-   "zh": "",
-   "en": "Mallung",
-   "desc": "碎叶拌椰丝和辣椒，入口清新带嚼劲"
-  },
-  {
-   "zh": "",
-   "en": "Lamprais",
-   "desc": "蕉叶包裹米饭和咖喱，蒸出的香气层层渗透"
-  }
- ],
- "CF": [
-  {
-   "zh": "",
-   "en": "Maboké",
-   "desc": "dish in Central African Republic"
-  }
- ],
- "UY": [
-  {
-   "zh": "",
-   "en": "picada",
-   "desc": "切块肉肠芝士铺满木板，随手拈来，咸香下酒"
-  },
-  {
-   "zh": "",
-   "en": "Matambre with milk",
-   "desc": "薄肉片在牛奶中慢炖至软嫩，奶香渗入肉纹，温润绵长"
-  }
- ],
- "DE": [
-  {
-   "zh": "烤烙饼",
-   "en": "tarte flambée",
-   "desc": "土豆丝煎成金黄圆饼，边缘焦脆内心绵软"
-  },
-  {
-   "zh": "",
-   "en": "Bauernfrühstück",
-   "desc": "土豆和鸡蛋在平底锅中翻炒，简单朴实的满足"
-  },
-  {
-   "zh": "汉堡",
-   "en": "hamburger",
-   "desc": "食品"
-  },
-  {
-   "zh": "",
-   "en": "Häckerle",
-   "desc": "猪肉和谷物灌成粗肠，切片煎至表面微焦"
-  },
-  {
-   "zh": "",
-   "en": "Saumagen",
-   "desc": "猪肉和土豆填入猪肚中煮透，切片后油脂分明"
-  },
-  {
-   "zh": "法蘭克福腸",
-   "en": "Frankfurter Würstchen",
-   "desc": "细细的肠衣一咬即破，肉汁在口中迸溅"
-  },
-  {
-   "zh": "",
-   "en": "Bayrisch Kraut",
-   "desc": "卷心菜用白葡萄酒慢炖，酸甜中带着酒香"
-  },
-  {
-   "zh": "肝丸湯",
-   "en": "Leberknödel",
-   "desc": "肝泥做成丸子沉入清汤，咬开是绵密的肝香"
-  },
-  {
-   "zh": "結婚湯 (德國)",
-   "en": "Hochzeitssuppe",
-   "desc": "金色清汤中浮着小肉丸和细面条，婚宴的第一道"
-  },
-  {
-   "zh": "",
-   "en": "Spundekäs",
-   "desc": "奶油芝士打成泥，小茴香籽点缀其中，抹面包吃"
-  },
-  {
-   "zh": "",
-   "en": "buckwheat dumplings",
-   "desc": "荞麦面团切成小块，嚼起来带着粗粮的朴素香气"
-  },
-  {
-   "zh": "Möpkenbrot",
-   "en": "Möpkenbrot",
-   "desc": "粗粒谷物和猪肉灌入肠衣，切片后颗粒感十足"
-  },
-  {
-   "zh": "",
-   "en": "crab soup",
-   "desc": "蟹肉和奶油熬成浓汤，斋期的鲜味慰藉"
-  },
-  {
-   "zh": "",
-   "en": "Mettigel",
-   "desc": "生猪肉泥做成刺猬形状，面包丁插满全身"
-  },
-  {
-   "zh": "",
-   "en": "Pfefferpotthast",
-   "desc": "牛肉和洋葱在红酒中炖至酥烂，胡椒的暖意渗透"
-  },
-  {
-   "zh": "鹽煮馬鈴薯",
-   "en": "salt potatoes",
-   "desc": "小土豆煮熟表面结出薄薄盐霜，掰开粉糯"
-  },
-  {
-   "zh": "",
-   "en": "serviettenknödel",
-   "desc": "面包面团用布卷起蒸熟，切片后孔隙均匀吸汁"
-  },
-  {
-   "zh": "生豬肉沫",
-   "en": "Mett",
-   "desc": "生猪肉泥抹在黑麦面包上，生洋葱碎辛辣提味"
-  },
-  {
-   "zh": "",
-   "en": "Russisch ei",
-   "desc": "煮鸡蛋对半切开，蛋黄酱填入，撒上辣椒粉"
-  },
-  {
-   "zh": "",
-   "en": "Würzfleisch",
-   "desc": "肉块在浓稠酱汁中炖至酥烂，香料层次分明"
-  }
- ],
- "TG": [
-  {
-   "zh": "",
-   "en": "Ablo",
-   "desc": "traditional white cake in West Africa"
-  },
-  {
-   "zh": "",
-   "en": "Djenkoume",
-   "desc": "Togolese tomato cornmeal fritters"
-  },
-  {
-   "zh": "",
-   "en": "Eba",
-   "desc": "West African staple food"
-  },
-  {
-   "zh": "",
-   "en": "akassa",
-   "desc": "type of dough made from cooked, ground and soaked corn, eaten in Benin, Nigeria, Burkina Faso, Togo and Côte d'Ivoire"
-  },
-  {
-   "zh": "",
-   "en": "Asaro",
-   "desc": "traditional Yoruba dish made with yams and spices"
-  }
- ],
- "NC": [
-  {
-   "zh": "",
-   "en": "Bougna",
-   "desc": "traditional feast dish in New Caledonia"
-  }
- ],
- "XK": [
-  {
-   "zh": "",
-   "en": "Tomato casserole from Gjakova",
-   "desc": "Baked dish consisting mainly of tomatoes, onions and beef"
-  },
-  {
-   "zh": "",
-   "en": "Onion casserole from Gjakova",
-   "desc": "Baked dish consisting mainly of roasted onions, and meat"
-  }
- ],
- "BF": [
-  {
-   "zh": "",
-   "en": "akassa",
-   "desc": "type of dough made from cooked, ground and soaked corn, eaten in Benin, Nigeria, Burkina Faso, Togo and Côte d'Ivoire"
-  },
-  {
-   "zh": "",
-   "en": "Gonré",
-   "desc": "local Burkinabè food"
-  },
-  {
-   "zh": "",
-   "en": "Gonré",
-   "desc": "burkinabè food"
-  }
- ],
- "ZW": [
-  {
-   "zh": "",
-   "en": "umxhanxa",
-   "desc": "Zimbabwean dish"
-  }
- ],
- "BY": [
-  {
-   "zh": "",
-   "en": "Grechanyky",
-   "desc": "Ukrainian dish"
-  },
-  {
-   "zh": "",
-   "en": "sugared cranberries",
-   "desc": ""
-  },
-  {
-   "zh": "",
-   "en": "tsybryki",
-   "desc": "Belarusian fried potato dumplings"
-  }
- ],
- "ES": [
-  {
-   "zh": "",
-   "en": "cocido",
-   "desc": "鹰嘴豆和各种肉在汤中炖透，汤和菜分两道吃"
-  },
-  {
-   "zh": "",
-   "en": "gachas",
-   "desc": "面粉糊搅至浓稠，淋上橄榄油和蒜片"
-  },
-  {
-   "zh": "",
-   "en": "Migas",
-   "desc": "隔夜面包掰碎和蒜片辣椒一起煎至焦香"
-  },
-  {
-   "zh": "法瓦達",
-   "en": "Fabada asturiana",
-   "desc": "白芸豆和猪肉在砂锅中炖至酥烂，汤汁浓厚"
-  },
-  {
-   "zh": "",
-   "en": "Caldo galego",
-   "desc": "加利西亚菜汤，土豆和芸豆在猪油中煮透"
-  },
-  {
-   "zh": "",
-   "en": "calçotada",
-   "desc": "烤葱蘸杏仁酱，拨开焦黑外皮露出甜软内心"
-  },
-  {
-   "zh": "",
-   "en": "Lacón Gallego",
-   "desc": "加利西亚猪肩肉盐渍风干，切片后油脂在舌面化开"
-  },
-  {
-   "zh": "",
-   "en": "Moros y Cristianos",
-   "desc": "黑豆和白米盛在同一个盘里，经典搭配"
-  },
-  {
-   "zh": "",
-   "en": "fideuà",
-   "desc": "细面条代替米饭在海鲜高汤中煮透，锅底焦脆"
-  },
-  {
-   "zh": "",
-   "en": "Judías de El Barco de Ávila",
-   "desc": "阿维拉白芸豆个大饱满，炖至绵软却不散"
-  },
-  {
-   "zh": "",
-   "en": "Conejo en salmorejo",
-   "desc": "兔肉在蒜和罗勒腌汁中入味，炭烤至皮焦肉嫩"
-  },
-  {
-   "zh": "",
-   "en": "Esqueixada",
-   "desc": "鳕鱼丝用手撕碎拌入番茄洋葱，橄榄油的清香托底"
-  },
-  {
-   "zh": "",
-   "en": "Arroz con costra",
-   "desc": "米饭铺满海鲜在烤箱中焗出焦脆锅巴"
-  },
-  {
-   "zh": "",
-   "en": "Espineta amb caragolins",
-   "desc": "猪肉和蜗牛在陶锅中慢炖，加泰罗尼亚的家常"
-  },
-  {
-   "zh": "",
-   "en": "Gurullos",
-   "desc": "面疙瘩和蔬菜在汤中煮至软烂，牧羊人的暖食"
-  },
-  {
-   "zh": "",
-   "en": "Pulte",
-   "desc": "古老谷物煮成粗粥，牧羊人的朴素暖食"
-  },
-  {
-   "zh": "",
-   "en": "Sopas",
-   "desc": "面包片浸在肉汤中至软烂，中世纪流传至今"
-  },
-  {
-   "zh": "",
-   "en": "Arròs al forn",
-   "desc": "米饭铺满海鲜在烤箱中焗至表面焦黄"
-  },
-  {
-   "zh": "",
-   "en": "Hormigo",
-   "desc": "巴斯克地区的玉米糊配鳕鱼，粗犷扎实"
-  },
-  {
-   "zh": "",
-   "en": "Caragolada",
-   "desc": "蜗牛带壳在蒜香和辣椒水中煮透，加泰罗尼亚的夏夜"
-  }
- ],
- "SK": [
-  {
-   "zh": "",
-   "en": "lokša",
-   "desc": "土豆泥揉入面团擀薄煎成软饼，配鹅油或果酱，朴素百搭"
-  },
-  {
-   "zh": "斯特拉帕奇基",
-   "en": "strapačky",
-   "desc": "面疙瘩和酸菜或奶酪翻炒，疙瘩弹牙裹着酸香"
-  }
- ],
- "RO": [
-  {
-   "zh": "米提提",
-   "en": "Mititei",
-   "desc": "无衣香肠搓成条在炭火上烤至微焦，外脆内嫩，蒜香四溢"
-  },
-  {
-   "zh": "",
-   "en": "Ganca",
-   "desc": "玉米面糊搅成浓稠粥状，配酸奶或奶酪，罗马尼亚乡间的朴素主食"
-  },
-  {
-   "zh": "",
-   "en": "sarmale",
-   "desc": "卷心菜叶裹住碎肉和米饭在酸菜汤中炖煮，酸香入味"
-  },
-  {
-   "zh": "",
-   "en": "Chifteluțe marinate",
-   "desc": "肉丸裹番茄酱在烤箱中焖至入味，酱汁酸甜，肉丸弹嫩"
-  },
-  {
-   "zh": "",
-   "en": "Varză à la Cluj",
-   "desc": "碎肉和卷心菜层层叠放烤至焦香，匈罗混血的家常大菜"
-  }
- ],
- "DZ": [
-  {
-   "zh": "",
-   "en": "Chrik",
-   "desc": ""
-  },
-  {
-   "zh": "",
-   "en": "Cocas",
-   "desc": ""
-  },
-  {
-   "zh": "烏斯班腸",
-   "en": "Usban",
-   "desc": "North African dish of sausage stuffed with rice, herbs, lamb, chopped liver and heart"
-  },
-  {
-   "zh": "",
-   "en": "frita",
-   "desc": ""
-  },
-  {
-   "zh": "",
-   "en": "Mtewem",
-   "desc": "Algerian meal"
-  },
-  {
-   "zh": "",
-   "en": "Sohlob",
-   "desc": "dessert"
-  },
-  {
-   "zh": "",
-   "en": "lalak",
-   "desc": ""
-  },
-  {
-   "zh": "",
-   "en": "Rfiss",
-   "desc": ""
-  },
-  {
-   "zh": "",
-   "en": "Acewwaḍ",
-   "desc": ""
-  },
-  {
-   "zh": "",
-   "en": "Adghess",
-   "desc": ""
-  },
-  {
-   "zh": "",
-   "en": "Aftir oukessoul",
-   "desc": ""
-  },
-  {
-   "zh": "",
-   "en": "Tajine Lham-Lahlou",
-   "desc": "Algerian food"
-  },
-  {
-   "zh": "",
-   "en": "Adjidjat",
-   "desc": ""
-  },
-  {
-   "zh": "",
-   "en": "Pizza carrée",
-   "desc": "type of pizza of Algeria"
-  }
- ],
- "GE": [
-  {
-   "zh": "",
-   "en": "Achma",
-   "desc": "千层面皮浸在奶酪里，每一层都拉丝绵密"
-  },
-  {
-   "zh": "",
-   "en": "Muzhuzhi",
-   "desc": "猪肉冻在口中化开，凉凉的胶质带着蒜香"
-  },
-  {
-   "zh": "Chkmeruli",
-   "en": "Shkmeruli",
-   "desc": "整鸡浸在蒜蓉牛奶酱里，蒜香浓郁却不刺鼻"
-  },
-  {
-   "zh": "",
-   "en": "chashushuli",
-   "desc": "牛肉和番茄炖至酥烂，汤汁酸甜浓厚"
-  }
- ],
- "MT": [
-  {
-   "zh": "",
-   "en": "Fenek",
-   "desc": "Dining in Malta"
-  },
-  {
-   "zh": "",
-   "en": "Fenkata",
-   "desc": "Maltese dish"
-  },
-  {
-   "zh": "",
-   "en": "Stuffat tal-fenek",
-   "desc": "Rabbit stew, cuisine of Malta"
-  },
-  {
-   "zh": "",
-   "en": "Ħobż biż-żejt",
-   "desc": "Maltese appetizer"
-  }
- ],
- "BZ": [
-  {
-   "zh": "奇莫利",
-   "en": "chimole",
-   "desc": "soup"
-  }
- ],
- "BA": [
-  {
-   "zh": "",
-   "en": "kvrguša",
-   "desc": "鸡蛋面糊铺在烤盘中烤至蓬松金黄，配酸奶油，朴素温暖"
-  }
- ],
- "CU": [
-  {
-   "zh": "",
-   "en": "Rice with chicken a la chorrera",
-   "desc": "鸡肉和米饭在番茄酱汁中焖煮，米粒吸饱鸡汁的鲜"
-  },
-  {
-   "zh": "",
-   "en": "Yam with cod",
-   "desc": "山药和鳕鱼同炖至绵软，海的咸鲜渗入根茎的朴实"
-  },
-  {
-   "zh": "",
-   "en": "Mollete melenero",
-   "desc": "面包夹入肉酱和芝士，街头小摊递来的热乎满足"
-  }
- ],
- "SR": [
-  {
-   "zh": "",
-   "en": "Pholourie",
-   "desc": "Fried, spiced dough balls"
-  },
-  {
-   "zh": "",
-   "en": "Pom",
-   "desc": "oven dish"
-  }
- ],
- "US": [
-  {
-   "zh": "汉堡",
-   "en": "hamburger",
-   "desc": "牛肉饼煎至焦香多汁，夹在松软的圆面包里，配酸黄瓜和洋葱"
-  },
-  {
-   "zh": "梳士巴利漢堡扒",
-   "en": "Salisbury steak",
-   "desc": "汉堡肉饼裹上浓郁的蘑菇酱汁，肉质紧实多汁"
-  },
-  {
-   "zh": "紅豆飯",
-   "en": "Red beans and rice",
-   "desc": "红豆炖至绵软，配白米饭，路易斯安那克里奥尔风味的灵魂"
-  },
-  {
-   "zh": "薄烤饼",
-   "en": "pancake",
-   "desc": "薄煎饼蓬松柔软，淋上枫糖浆，黄油在热气中融化"
-  },
-  {
-   "zh": "鹽煮馬鈴薯",
-   "en": "salt potatoes",
-   "desc": "小土豆煮在浓盐水里，表皮结出薄盐壳，黄油渗入绵软的内里"
-  },
-  {
-   "zh": "",
-   "en": "Negimaki",
-   "desc": "牛肉薄片裹住葱段，酱汁甜咸交织"
-  },
-  {
-   "zh": "",
-   "en": "muffuletta",
-   "desc": "圆面包切开塞满意大利腌肉和橄榄沙拉，层层叠叠的咸香"
-  },
-  {
-   "zh": "培根蛋麵",
-   "en": "carbonara",
-   "desc": "蛋黄和培根裹住每一根面条，奶香浓郁却不腻"
-  },
-  {
-   "zh": "俱乐部三明治",
-   "en": "club sandwich",
-   "desc": "三层吐司夹着培根、生菜和番茄，切开时整齐地露出横截面"
-  },
-  {
-   "zh": "路德汉堡",
-   "en": "Luther Burger",
-   "desc": "甜甜圈代替面包夹汉堡，甜咸碰撞的罪恶感"
-  },
-  {
-   "zh": "玉米狗",
-   "en": "corn dog",
-   "desc": "玉米面糊裹住热狗炸至金黄，咬下去外酥内弹"
-  },
-  {
-   "zh": "蟹肉餅",
-   "en": "crab cake",
-   "desc": "蟹肉捏成饼煎至两面金黄，蟹肉的鲜甜在口中散开"
-  },
-  {
-   "zh": "加州卷",
-   "en": "California roll",
-   "desc": "米饭在外层，黄瓜、蟹肉和牛油果在内，蘸酱油一口一个"
-  },
-  {
-   "zh": "夏威夷米饭汉堡",
-   "en": "Loco moco",
-   "desc": "白饭上放汉堡肉饼，浇上肉汁，顶一个煎蛋，夏威夷的碳水炸弹"
-  },
-  {
-   "zh": "红色天鹅绒蛋糕",
-   "en": "red velvet cake",
-   "desc": "红色天鹅绒蛋糕体湿润绵密，奶油芝士霜甜中带酸"
-  },
-  {
-   "zh": "烤棉花糖",
-   "en": "s'more",
-   "desc": "烤棉花糖夹在饼干和巧克力之间，拉丝的甜蜜"
-  },
-  {
-   "zh": "奶油白醬寬版麵",
-   "en": "Fettuccine Alfredo",
-   "desc": "宽面条裹上浓郁的帕马森黄油酱，滑顺绵密"
-  },
-  {
-   "zh": "",
-   "en": "bean pie",
-   "desc": "白豆泥做成的甜派，口感绵密如南瓜派"
-  },
-  {
-   "zh": "",
-   "en": "celery Victor",
-   "desc": "西芹腌至入味，配凤尾鱼和番茄，清爽开胃"
-  },
-  {
-   "zh": "",
-   "en": "City chicken",
-   "desc": "猪肉块串成棒状烤熟，外焦里嫩"
-  }
- ],
- "IQ": [
-  {
-   "zh": "",
-   "en": "lokma",
-   "desc": "小面球炸透淋糖浆，外壳酥脆内心绵软"
-  },
-  {
-   "zh": "",
-   "en": "Piyaz",
-   "desc": "白芸豆拌洋葱番茄，橄榄油和柠檬汁的酸香托底"
-  },
-  {
-   "zh": "",
-   "en": "Arook",
-   "desc": "面饼裹肉馅烤至外壳焦脆，掰开肉汁流出"
-  }
- ],
- "PE": [
-  {
-   "zh": "万卡约土豆",
-   "en": "Papa a la Hancaina",
-   "desc": "金黄土豆浇上辣椒奶黄酱，绵密中带一丝辛辣，酱汁浓郁挂壁"
-  },
-  {
-   "zh": "秘鲁炒牛柳",
-   "en": "Lomo saltado",
-   "desc": "牛柳在大火中翻炒，酱油和醋的酸甜渗入，薯条和米饭同盘争艳"
-  },
-  {
-   "zh": "",
-   "en": "sangrecita",
-   "desc": "鸡血在锅中凝结，混入香料和柠檬汁，口感绵密带铁锈般的野性"
-  },
-  {
-   "zh": "",
-   "en": "Empanadilla",
-   "desc": "酥皮半圆炸至金黄，咬开是肉末和橄榄的咸香"
-  },
-  {
-   "zh": "",
-   "en": "Olluquito",
-   "desc": "块根炖至软糯，羊肉丝和辣椒在浓稠汤汁中交融"
-  },
-  {
-   "zh": "",
-   "en": "Peruvian pollada",
-   "desc": "整鸡腌透后烤至皮焦肉嫩，邻里聚会时的热闹滋味"
-  },
-  {
-   "zh": "",
-   "en": "Malarrabia",
-   "desc": "香蕉煮至绵软捣碎，混入奶酪，甜咸交织的朴素甜品"
-  }
- ],
- "CO": [
-  {
-   "zh": "阿瑞巴",
-   "en": "arepa",
-   "desc": "玉米饼烤至两面焦黄，外脆内软，可夹芝士或肉馅"
-  }
- ],
- "KP": [
-  {
-   "zh": "",
-   "en": "injo-gogi-bap",
-   "desc": "豆皮裹住米饭，咬开是朴素的豆香"
-  },
-  {
-   "zh": "",
-   "en": "bossam-kimchi",
-   "desc": "整棵白菜包入馅料发酵，酸脆多汁"
-  },
-  {
-   "zh": "平壤温饭",
-   "en": "Pyŏngyang onban",
-   "desc": "鸡汤浇在白饭上，鸡肉丝和鸡蛋铺满，清淡暖身"
-  }
- ],
- "PW": [
-  {
-   "zh": "",
-   "en": "Fruit Bat Soup",
-   "desc": "dish of Palau"
-  }
- ],
- "TD": [
-  {
-   "zh": "",
-   "en": "Esh",
-   "desc": "Chadian dish"
-  }
- ],
- "SY": [
-  {
-   "zh": "",
-   "en": "lokma",
-   "desc": "小面团炸至金黄，淋上糖浆，外壳酥脆内心绵软"
-  },
-  {
-   "zh": "",
-   "en": "bülbülyuvası",
-   "desc": "细丝面编成鸟巢状，烤至焦脆，内藏坚果"
-  },
-  {
-   "zh": "",
-   "en": "Bāṭarsh",
-   "desc": "茄子炖至软烂，番茄和蒜的香气融为一体"
-  },
-  {
-   "zh": "",
-   "en": "Halawet el Jibn",
-   "desc": "奶酪面皮裹住奶油，撒上开心果碎，甜润柔滑"
-  },
-  {
-   "zh": "",
-   "en": "kibbeh mashwiyya",
-   "desc": "碎麦裹肉馅烤至外壳微焦，内里多汁"
-  },
-  {
-   "zh": "",
-   "en": "Mahmoosa",
-   "desc": "茄子泥搅打成糊，酸甜绵密"
-  },
-  {
-   "zh": "",
-   "en": "As-sabʿa dūal",
-   "desc": "七种蔬菜炖煮一锅，各有各的软糯"
-  },
-  {
-   "zh": "",
-   "en": "Hummus bil-lahm",
-   "desc": "鹰嘴豆泥上铺着炒羊肉碎，一勺舀到底"
-  }
- ],
- "TW": [
-  {
-   "zh": "大肠包小肠",
-   "en": "Small sausage in large sausage",
-   "desc": "糯米肠切开夹入台式香肠，炭烤后外皮微焦"
-  },
-  {
-   "zh": "碗粿",
-   "en": "Savory rice pudding",
-   "desc": "碗粿蒸得扎实，切块淋酱膏，米香混着肉燥"
-  },
-  {
-   "zh": "台式蛋餅",
-   "en": "Danbing",
-   "desc": "蛋液摊在薄饼上，卷起切段，葱香四溢"
-  },
-  {
-   "zh": "得麼面",
-   "en": "Tmmyan",
-   "desc": "酸辣汤头浓郁，面条吸满汤汁"
-  },
-  {
-   "zh": "桶仔雞",
-   "en": "Barrel chicken",
-   "desc": "整只鸡在铁桶中慢烤，皮脆肉嫩，撕开冒热气"
-  },
-  {
-   "zh": "喜烙",
-   "en": "silaw",
-   "desc": "小米酒发酵的酸味渗入鱼肉，原住民的野性滋味"
-  },
-  {
-   "zh": "吉拿富",
-   "en": "cinavu",
-   "desc": "小米和猪肉裹在假酸叶里蒸熟，叶香入肉"
-  },
-  {
-   "zh": "鳳梨蝦球",
-   "en": "Pineapple shrimp balls",
-   "desc": "虾球裹上酥粉炸透，配菠萝的酸甜"
-  },
-  {
-   "zh": "台式牛排",
-   "en": "Taiwanese Steak",
-   "desc": "铁板上牛排滋滋响，浇上黑椒酱，配荷包蛋"
-  },
-  {
-   "zh": "兜麵",
-   "en": "tāu-mī",
-   "desc": "豆签煮成糊状，入口滑顺，带着淡淡的豆香"
-  }
- ],
- "LB": [
-  {
-   "zh": "",
-   "en": "Balila",
-   "desc": "鹰嘴豆炖至绵软，浇上橄榄油和柠檬汁"
-  }
- ],
- "NI": [
-  {
-   "zh": "",
-   "en": "Cushta",
-   "desc": "Nicaraguan cuisine dish"
-  },
-  {
-   "zh": "",
-   "en": "Vaho",
-   "desc": "维基媒体消歧义页"
-  },
-  {
-   "zh": "",
-   "en": "repocheta",
-   "desc": "Nicaraguan typical food"
-  }
- ],
- "KR": [
-  {
-   "zh": "猪肉汤饭",
-   "en": "dwaeji-gukbap",
-   "desc": "猪骨汤熬至乳白，肉片薄嫩，米饭吸满汤汁"
-  },
-  {
-   "zh": "",
-   "en": "Doganitang",
-   "desc": "牛膝骨汤胶质浓厚，骨髓在齿间滑腻"
-  },
-  {
-   "zh": "溜三丝",
-   "en": "yusanseul",
-   "desc": "三丝在高汤中交融，粉丝吸饱鲜味"
-  },
-  {
-   "zh": "",
-   "en": "Gaetteok",
-   "desc": "米糕弹牙有韧劲，嚼出米粒的清甜"
-  },
-  {
-   "zh": "",
-   "en": "cheese tteokbokki",
-   "desc": "辣酱裹着年糕，芝士拉丝缠绕，甜辣交织"
-  }
- ],
- "NP": [
-  {
-   "zh": "",
-   "en": "Pukala",
-   "desc": "水牛杂碎煮熟再炸至表面起泡，外脆内韧"
-  }
- ],
- "TJ": [
-  {
-   "zh": "",
-   "en": "upka",
-   "desc": "面团擀薄裹馅蒸熟，蘸酸奶吃，朴素管饱"
-  }
- ],
- "TZ": [
-  {
-   "zh": "",
-   "en": "Nyama choma",
-   "desc": "炭火烤山羊肉，表皮焦脆内里多汁，配乌咖喱一起入口"
-  }
- ],
- "PH": [
-  {
-   "zh": "",
-   "en": "Empanadilla",
-   "desc": "酥皮半圆炸至金黄，咬开是肉末和蔬菜的咸香"
-  },
-  {
-   "zh": "",
-   "en": "Paelya",
-   "desc": "藏红花染黄的米饭铺满海鲜，锅底有焦脆的锅巴"
-  },
-  {
-   "zh": "",
-   "en": "Kalamay",
-   "desc": "糯米糕黏得拉丝，椰糖的甜味浓郁持久"
-  },
-  {
-   "zh": "",
-   "en": "Pares",
-   "desc": "红烧牛肉炖至酥烂，汤汁浓稠，拌饭一绝"
-  },
-  {
-   "zh": "",
-   "en": "Igado",
-   "desc": "猪肝和猪肉切丝翻炒，酱汁咸鲜入味"
-  },
-  {
-   "zh": "",
-   "en": "Java Rice",
-   "desc": "姜黄染金的米饭粒粒分明，微辣开胃"
-  },
-  {
-   "zh": "",
-   "en": "Humba",
-   "desc": "五花肉慢炖至软糯，酱油和醋的酸甜渗入每一层"
-  },
-  {
-   "zh": "",
-   "en": "Salukara",
-   "desc": "椰浆米饼煎至两面焦黄，外脆内软"
-  },
-  {
-   "zh": "",
-   "en": "Moche",
-   "desc": "糯米团裹着花生碎，甜香在齿间碾碎"
-  },
-  {
-   "zh": "",
-   "en": "Mache",
-   "desc": "糯米包肉馅蒸熟，叶香渗入米粒"
-  },
-  {
-   "zh": "",
-   "en": "Masi",
-   "desc": "糯米球裹花生碎，弹牙中藏着甜馅"
-  },
-  {
-   "zh": "",
-   "en": "Goto",
-   "desc": "米粥煮至浓稠，牛肚软韧有嚼头"
-  },
-  {
-   "zh": "",
-   "en": "Panyalam",
-   "desc": "米浆炸成小饼，边缘焦脆中心软甜"
-  },
-  {
-   "zh": "",
-   "en": "Sayongsong",
-   "desc": "糯米裹棕榈糖蒸在叶子里，甜味从叶缝渗出"
-  },
-  {
-   "zh": "",
-   "en": "Silog",
-   "desc": "煎蛋配蒜香米饭，戳破蛋黄流进饭粒"
-  },
-  {
-   "zh": "",
-   "en": "Sinigapuna",
-   "desc": "椰浆煮米饭，浓稠香甜"
-  },
-  {
-   "zh": "",
-   "en": "Binakle",
-   "desc": "米糕蒸得蓬松，撕开有淡淡的椰香"
-  },
-  {
-   "zh": "",
-   "en": "Kiampong",
-   "desc": "糯米砂锅焖至黏糯，花生和香菇点缀其间"
-  },
-  {
-   "zh": "",
-   "en": "Adobong pugita",
-   "desc": "章鱼在醋和酱油中炖至弹韧，酸咸交融"
-  },
-  {
-   "zh": "",
-   "en": "Poqui poqui",
-   "desc": "茄子捣碎拌入鸡蛋，绵软中带着烟熏味"
-  }
- ],
- "BJ": [
-  {
-   "zh": "",
-   "en": "Ablo",
-   "desc": "traditional white cake in West Africa"
-  },
-  {
-   "zh": "",
-   "en": "Eba",
-   "desc": "West African staple food"
-  },
-  {
-   "zh": "",
-   "en": "akassa",
-   "desc": "type of dough made from cooked, ground and soaked corn, eaten in Benin, Nigeria, Burkina Faso, Togo and Côte d'Ivoire"
-  },
-  {
-   "zh": "",
-   "en": "Amiwô",
-   "desc": "Beninese porridge"
-  },
-  {
-   "zh": "",
-   "en": "Èba",
-   "desc": "Beninese cuisine classic made with cassava flour"
-  },
-  {
-   "zh": "",
-   "en": "monyo",
-   "desc": "Beninese sauce"
-  },
-  {
-   "zh": "",
-   "en": "Wèli",
-   "desc": "Beninese dish of fried potatoes"
-  },
-  {
-   "zh": "",
-   "en": "Wôkoli",
-   "desc": "Beninese culinary preparation made from wɔ̌"
-  }
- ],
- "CI": [
-  {
-   "zh": "",
-   "en": "Ablo",
-   "desc": "traditional white cake in West Africa"
-  },
-  {
-   "zh": "",
-   "en": "akassa",
-   "desc": "type of dough made from cooked, ground and soaked corn, eaten in Benin, Nigeria, Burkina Faso, Togo and Côte d'Ivoire"
-  },
-  {
-   "zh": "",
-   "en": "bawin sauce",
-   "desc": "traditional dish from western Côte d'Ivoire"
-  }
- ],
- "LY": [
-  {
-   "zh": "烏斯班腸",
-   "en": "Usban",
-   "desc": "North African dish of sausage stuffed with rice, herbs, lamb, chopped liver and heart"
-  },
-  {
-   "zh": "",
-   "en": "bazeen",
-   "desc": "unleavened bread in Libyan cuisine"
-  },
-  {
-   "zh": "",
-   "en": "Mafrum",
-   "desc": "Libyan-Jewish and Tunisian-Jewish meat dish"
-  },
-  {
-   "zh": "",
-   "en": "Mebakbeka",
-   "desc": ""
-  }
- ],
- "LR": [
-  {
-   "zh": "",
-   "en": "Plasas",
-   "desc": "traditional dish prepared in Ghana"
-  }
- ],
- "CM": [
-  {
-   "zh": "",
-   "en": "Ndolé",
-   "desc": "苦叶炖煮去苦味，混入花生酱和虾肉，苦尽甘来"
-  },
-  {
-   "zh": "",
-   "en": "Koki",
-   "desc": "黑眼豆泥蒸成深色糕体，棕榈油渗入每一层"
-  },
-  {
-   "zh": "",
-   "en": "poulet DG",
-   "desc": "整鸡配芭蕉和蔬菜在棕榈油中炖煮，宴客的大菜"
-  },
-  {
-   "zh": "",
-   "en": "Ça va se savoir",
-   "desc": "辣酱拌蔬菜和鱼肉，名字意为你会知道的，辣到记住"
-  },
-  {
-   "zh": "",
-   "en": "Taro with yellow sauce",
-   "desc": "芋头蒸熟配黄姜酱，绵软的芋头裹着辛香"
-  },
-  {
-   "zh": "",
-   "en": "Ikok",
-   "desc": "牛肉在棕榈油和洋葱中慢炖，汤汁浓稠入味"
-  },
-  {
-   "zh": "",
-   "en": "Ekpang Nkwukwo",
-   "desc": "薯蓣丝裹着棕榈油和鱼肉蒸煮，黏糯鲜美"
-  },
-  {
-   "zh": "",
-   "en": "Sanga (Meal)",
-   "desc": "新鲜玉米粒和蔬菜同煮，玉米的清甜在汤中释放"
-  }
- ],
- "BT": [
-  {
-   "zh": "",
-   "en": "Ema datshi",
-   "desc": "辣椒泡在融化的奶酪里，辣得舌头发麻，奶香裹住"
-  },
-  {
-   "zh": "",
-   "en": "kewa datshi",
-   "desc": "土豆和奶酪炖成一锅，绵软浓稠"
-  }
- ],
- "CD": [
-  {
-   "zh": "",
-   "en": "Babute",
-   "desc": "肉末拌香料做成饼状煎至微焦，内里多汁弹牙"
-  }
- ],
- "AF": [
-  {
-   "zh": "阿富汗沙拉",
-   "en": "Afghan salad",
-   "desc": "番茄黄瓜切丁拌入薄荷，清爽解腻"
-  }
- ],
- "BD": [
-  {
-   "zh": "",
-   "en": "Roust",
-   "desc": "整鱼裹香料慢烤，皮焦肉嫩，辛香渗入鱼骨"
-  },
-  {
-   "zh": "",
-   "en": "Soft Khichuri",
-   "desc": "米和扁豆煮成糊状，斋月里的温柔食物"
-  },
-  {
-   "zh": "",
-   "en": "Pithali",
-   "desc": "鱼肉泥捏成丸子煮汤，鲜味溶入汤底"
-  },
-  {
-   "zh": "",
-   "en": "Shagorana",
-   "desc": "婚礼上端出的甜米糕，椰香和坚果碎铺满表面"
-  }
- ],
- "ZM": [
-  {
-   "zh": "",
-   "en": "Ifisashi",
-   "desc": "Zambian food"
-  }
- ],
- "BI": [
-  {
-   "zh": "",
-   "en": "Boko Boko Harees",
-   "desc": "Boko Boko Harees is a traditional dish originating from the African country of Burundi"
-  }
- ],
- "NG": [
-  {
-   "zh": "",
-   "en": "akassa",
-   "desc": "玉米发酵后揉成光滑面团，蘸浓汤食用，微酸的谷物味"
-  },
-  {
-   "zh": "",
-   "en": "Eba",
-   "desc": "木薯粉用热水冲搅成黏团，掰一块蘸汤，朴素管饱"
-  },
-  {
-   "zh": "",
-   "en": "Asaro",
-   "desc": "山药块在番茄辣椒酱中炖煮，绵软入味，酸辣渗入每一寸"
-  },
-  {
-   "zh": "",
-   "en": "Groundnut soup",
-   "desc": "花生磨成浓酱煮汤，油脂浮在表面泛着金光，香醇浓厚"
-  },
-  {
-   "zh": "",
-   "en": "Ekpang Nkwukwo",
-   "desc": "薯蓣丝裹着棕榈油和鱼肉蒸煮，黏糯中透着海味"
-  },
-  {
-   "zh": "給力希",
-   "en": "kilishi",
-   "desc": "薄如纸的牛肉干撒满花生粉和香料，嚼劲十足越嚼越香"
-  },
-  {
-   "zh": "",
-   "en": "Amala",
-   "desc": "薯蓣粉冲成深褐色面团，质地细腻，蘸秋葵汤食用"
-  },
-  {
-   "zh": "",
-   "en": "draw soup",
-   "desc": "秋葵煮出黏滑汤汁，拉丝的口感裹住每一口食物"
-  },
-  {
-   "zh": "",
-   "en": "Isi ewu",
-   "desc": "山羊头炖至骨肉分离，汤汁浓厚带野味，配棕榈油蘸食"
-  },
-  {
-   "zh": "",
-   "en": "Kuli-kuli",
-   "desc": "花生碎压成饼状炸至金黄，酥脆中满口坚果香"
-  },
-  {
-   "zh": "",
-   "en": "ogi",
-   "desc": "谷物发酵成酸甜糊状，冰凉滑入口中，开胃消暑"
-  },
-  {
-   "zh": "苏亚",
-   "en": "suya",
-   "desc": "薄肉片串在竹签上烤至微焦，花生粉和辣椒的辛香裹满表面"
-  },
-  {
-   "zh": "",
-   "en": "Ekuru",
-   "desc": "去皮白豆蒸成白色糕体，配辣椒酱食用，豆香清淡绵密"
-  },
-  {
-   "zh": "",
-   "en": "palm nut soup",
-   "desc": "棕榈果熬出橙红浓汤，油脂在汤面漂浮，浓稠鲜美"
-  },
-  {
-   "zh": "",
-   "en": "Ukodo",
-   "desc": "山药和芭蕉同煮成浓汤，淀粉化入汤中变得稠厚暖胃"
-  },
-  {
-   "zh": "烏溪",
-   "en": "Usi",
-   "desc": "木薯煮熟捣成团，蘸棕榈油汤，朴素的碳水满足"
-  },
-  {
-   "zh": "",
-   "en": "Pate acha",
-   "desc": "小米粒配辣椒和洋葱翻炒，干燥的口感带着谷物焦香"
-  },
-  {
-   "zh": "",
-   "en": "Tuwo masara (corn meal)",
-   "desc": "玉米面揉成白色面团，掰块蘸汤食用，北方豪萨人的日常主食"
-  },
-  {
-   "zh": "",
-   "en": "miyar kuka",
-   "desc": "猴面包树叶粉煮成绿色浓汤，微酸的草本味沁入汤底"
-  },
-  {
-   "zh": "",
-   "en": "Efo riro",
-   "desc": "菠菜和番茄在棕榈油中炖煮，绿叶蔬菜裹着油脂的浓郁"
-  }
- ],
- "NE": [
-  {
-   "zh": "給力希",
-   "en": "kilishi",
-   "desc": "Hausa dish of spiced dried beef, mutton or goat meat"
-  },
-  {
-   "zh": "",
-   "en": "dambu",
-   "desc": "food from Niger"
-  }
- ],
- "MG": [
-  {
-   "zh": "",
-   "en": "Romazava",
-   "desc": "牛肉和绿叶蔬菜在姜和番茄中炖煮，汤汁清鲜"
-  },
-  {
-   "zh": "科巴",
-   "en": "Koba",
-   "desc": "花生碎裹在糯米粉里蒸在蕉叶中，甜香从叶缝渗出"
-  },
-  {
-   "zh": "",
-   "en": "sahoaba",
-   "desc": "米粉和椰奶揉成团蒸熟，配糖和香蕉，热带的朴素甜味"
-  },
-  {
-   "zh": "",
-   "en": "Ramanonaka",
-   "desc": "米粉糕煎至两面焦黄，街边小摊的碳水诱惑"
-  },
-  {
-   "zh": "",
-   "en": "Koba (sweet)",
-   "desc": "花生糯米糕裹在蕉叶里，咬开是粗颗粒的花生香甜"
-  }
- ],
- "MU": [
-  {
-   "zh": "鲁加伊",
-   "en": "rougail",
-   "desc": "dish of Reunionese origin"
-  },
-  {
-   "zh": "",
-   "en": "catless",
-   "desc": ""
-  }
- ],
- "MZ": [
-  {
-   "zh": "",
-   "en": "matapa",
-   "desc": "木薯叶捣碎配椰奶和花生煮成绿色浓酱，配米饭食用"
-  }
- ],
- "SL": [
-  {
-   "zh": "",
-   "en": "Plasas",
-   "desc": "traditional dish prepared in Ghana"
-  }
- ],
- "DD": [
-  {
-   "zh": "",
-   "en": "grilletta",
-   "desc": "hamburger variant and 'Griletta' snack bars in East Germany"
-  }
- ],
- "UG": [
-  {
-   "zh": "马托克",
-   "en": "Matoke",
-   "desc": "高地芭蕉蒸熟捣成泥，绵密微甜，配花生酱食用"
-  },
-  {
-   "zh": "",
-   "en": "Kikomando",
-   "desc": "烤饼撕碎拌入炖豆，朴素管饱的街头美食"
-  },
-  {
-   "zh": "",
-   "en": "Luwombo",
-   "desc": "鸡肉或牛肉裹在蕉叶中蒸煮，叶香渗入肉汁"
-  }
- ],
- "SC": [
-  {
-   "zh": "",
-   "en": "Ladob",
-   "desc": "Seychelles dish"
-  },
-  {
-   "zh": "",
-   "en": "Shark chutney",
-   "desc": "Seychelles dish"
-  }
- ],
- "GI": [
-  {
-   "zh": "",
-   "en": "rosto",
-   "desc": "Gibraltarian dish"
-  }
- ],
- "SE": [
-  {
-   "zh": "炒驯鹿肉",
-   "en": "sautéed reindeer",
-   "desc": "驯鹿肉切薄片煎至微焦，野味浓郁，脂香中带一丝松木清香"
-  },
-  {
-   "zh": "",
-   "en": "blåbärssoppa",
-   "desc": "越橘熬成紫红色甜汤，酸甜温热，北欧冬日的暖身饮品"
-  },
-  {
-   "zh": "瑞典起司蛋糕",
-   "en": "ostkaka",
-   "desc": "杏仁蛋糕体裹着凝乳酪烤至微焦，切开绵密湿润，配果酱甜而不腻"
-  },
-  {
-   "zh": "",
-   "en": "pitepalt",
-   "desc": "生土豆泥裹肉馅搓成圆球煮熟，外皮灰白绵软，咬开是咸香肉汁"
-  },
-  {
-   "zh": "",
-   "en": "pölsa",
-   "desc": "碎肉和大麦炖成浓稠糊状，朴素的农家味道，配甜菜根酸甜解腻"
-  },
-  {
-   "zh": "",
-   "en": "Grytbit",
-   "desc": "大块肉在铸铁锅中慢炖至酥烂，汤汁浓稠，冬天的硬菜"
-  },
-  {
-   "zh": "",
-   "en": "Rörost",
-   "desc": "奶酪切块裹蛋液煎至金黄，外壳微脆内里拉丝，浓郁奶香"
-  },
-  {
-   "zh": "",
-   "en": "saffron pancake",
-   "desc": "藏红花赋予金黄色泽和独特芳香，米粒嵌在蛋饼中，甜中带香"
-  },
-  {
-   "zh": "",
-   "en": "Tjälknöl",
-   "desc": "大块肉在烤箱中低温慢烤数小时，切开粉嫩多汁，肉香四溢"
-  },
-  {
-   "zh": "",
-   "en": "Äggakaka",
-   "desc": "鸡蛋面糊摊成厚饼，铺上煎猪肉片，蛋香和肉脂交融"
-  },
-  {
-   "zh": "",
-   "en": "äggost",
-   "desc": "牛奶和鸡蛋凝结成嫩豆腐状，节庆时切块配果酱，清甜滑嫩"
-  },
-  {
-   "zh": "",
-   "en": "ärter med fläsk",
-   "desc": "豌豆和猪肉块炖至酥烂，豌豆绵软如泥，猪肉入口即化"
-  },
-  {
-   "zh": "",
-   "en": "Västerbottensostpaj",
-   "desc": "韦斯特博滕奶酪烤成酥脆挞皮馅饼，切开奶酪拉丝，咸香浓郁"
-  },
-  {
-   "zh": "",
-   "en": "liver stew",
-   "desc": "鸡肝在奶油酱中慢炖至绵软，入口即化，酱汁浓郁醇厚"
-  }
- ],
- "BE": [
-  {
-   "zh": "",
-   "en": "rijstevlaai",
-   "desc": "米粒煮进蛋奶馅中烤成派，绵密中带着米香"
-  },
-  {
-   "zh": "",
-   "en": "stoemp",
-   "desc": "土豆泥压入胡萝卜或韭葱，绵软中嚼到蔬菜颗粒"
-  },
-  {
-   "zh": "",
-   "en": "Potjevleesch",
-   "desc": "弗兰德的白肉冻切成块，冷食时胶质在齿间弹动"
-  },
-  {
-   "zh": "贻贝薯条",
-   "en": "moules-frites",
-   "desc": "青口在白葡萄酒中蒸开，蒜香和芹菜飘出"
-  },
-  {
-   "zh": "",
-   "en": "Brussels waffle",
-   "desc": "华夫饼格子深而大，外壳酥脆内心蓬松"
-  },
-  {
-   "zh": "",
-   "en": "Flemish-style asparagus",
-   "desc": "白芦笋蒸透配蛋黄酱，入口即化的温柔"
-  },
-  {
-   "zh": "Mitraillette",
-   "en": "mitraillette",
-   "desc": "长面包夹入炸肉饼和薯条，浇上酱汁的街头能量"
-  },
-  {
-   "zh": "",
-   "en": "dagobert",
-   "desc": "长面包夹火腿蔬菜和酱汁，比利时的经典三明治"
-  },
-  {
-   "zh": "",
-   "en": "caricole",
-   "desc": "蜗牛在蒜香黄油中焗透，用小叉挑出弹嫩的肉"
-  },
-  {
-   "zh": "",
-   "en": "Mussels marinière",
-   "desc": "青口在白葡萄酒和洋葱中蒸熟，蒜香和芹菜飘出"
-  },
-  {
-   "zh": "",
-   "en": "bird's nest",
-   "desc": "炸肉丸外酥内软，蘸蛋黄酱吃"
-  },
-  {
-   "zh": "",
-   "en": "stoemp with sausage",
-   "desc": "土豆泥配香肠，布鲁塞尔的家常味道"
-  },
-  {
-   "zh": "",
-   "en": "filet américain",
-   "desc": "生牛肉剁碎调味抹在面包上，蛋黄和酸黄瓜点缀"
-  },
-  {
-   "zh": "",
-   "en": "cherry soup of Sint-Truiden",
-   "desc": "樱桃在甜汤中煮透，冷食时酸甜沁凉"
-  },
-  {
-   "zh": "",
-   "en": "Belgian waffle",
-   "desc": "华夫饼面糊加酵母发酵，烤后格子深陷盛满糖粉"
-  },
-  {
-   "zh": "",
-   "en": "choesels",
-   "desc": "布鲁塞尔的内脏炖菜，浓烈的民间味道"
-  },
-  {
-   "zh": "",
-   "en": "martino",
-   "desc": "长面包夹入生牛肉饼和酱汁，生食的三明治"
-  },
-  {
-   "zh": "",
-   "en": "Meulemeester eggs",
-   "desc": "灰虾仁焗在蛋杯里，啤酒腌过的鲜味渗入蛋黄"
-  },
-  {
-   "zh": "",
-   "en": "Julienke",
-   "desc": "长面包夹肉饼和酱汁，快餐柜台的经典"
-  },
-  {
-   "zh": "",
-   "en": "Zenne pot",
-   "desc": "血肠蜗牛和酸菜在啤酒中炖煮，布鲁塞尔的老派味道"
-  }
- ],
- "IT": [
-  {
-   "zh": "培根蛋麵",
-   "en": "carbonara",
-   "desc": "蛋液和芝士裹住面条，黑胡椒碎在舌尖跳跃"
-  },
-  {
-   "zh": "奶油白醬寬版麵",
-   "en": "Fettuccine Alfredo",
-   "desc": "宽面条在芝士黄油酱中翻滚，拉出奶白色的丝"
-  },
-  {
-   "zh": "瑪格麗塔披薩",
-   "en": "Pizza Margherita",
-   "desc": "面饼边缘鼓起焦斑，番茄酱和芝士融为一体"
-  },
-  {
-   "zh": "",
-   "en": "Lampredotto",
-   "desc": "牛肚在番茄酱中炖至软烂，夹进面包一口咬下"
-  },
-  {
-   "zh": "獵人燴雞",
-   "en": "cacciatore",
-   "desc": "鸡肉和番茄在陶锅中慢炖，汤汁浸透每一块肉"
-  },
-  {
-   "zh": "鑲椒",
-   "en": "stuffed peppers",
-   "desc": "甜椒掏空塞入肉馅和米饭，烤至椒皮微皱"
-  },
-  {
-   "zh": "",
-   "en": "bocconotto",
-   "desc": "小酥皮塔里填满奶酪或果酱，一口一个"
-  },
-  {
-   "zh": "酸辣番茄烟肉酱",
-   "en": "amatriciana sauce",
-   "desc": "猪脸肉和番茄酱拌意面，羊奶芝士的咸香收尾"
-  },
-  {
-   "zh": "白酒燴牛仔膝",
-   "en": "ossobuco",
-   "desc": "小牛膝骨在白葡萄酒中炖至肉骨分离，骨髓滑腻"
-  },
-  {
-   "zh": "",
-   "en": "sarde in saor",
-   "desc": "沙丁鱼用醋和洋葱腌渍，酸甜中带着海的咸鲜"
-  },
-  {
-   "zh": "油煎面包块",
-   "en": "crostini",
-   "desc": "烤面包片上铺肝酱或番茄，酥脆和绵密交替"
-  },
-  {
-   "zh": "香蒜白酒蜆意粉",
-   "en": "spaghetti alle vongole",
-   "desc": "蛤蜊在白葡萄酒中开口，蒜香和辣椒渗入面条"
-  },
-  {
-   "zh": "",
-   "en": "tirtlan",
-   "desc": "面粉搓成小粒炸透，撒上糖粉，外酥内软"
-  },
-  {
-   "zh": "",
-   "en": "Tonno del Chianti",
-   "desc": "猪里脊用香料慢炖入味，切片后肉质紧实"
-  },
-  {
-   "zh": "",
-   "en": "gnocchi alla romana",
-   "desc": "粗面粉做成半月形烤至金黄，绵密中带着粗粮香"
-  },
-  {
-   "zh": "",
-   "en": "ribollita",
-   "desc": "白菜和面包在橄榄油中慢炖，托斯卡纳的朴素日常"
-  },
-  {
-   "zh": "",
-   "en": "Tramezzino",
-   "desc": "三角面包夹火腿和蔬菜，软面包裹住咸香"
-  },
-  {
-   "zh": "",
-   "en": "Pasta con le sarde",
-   "desc": "西西里的意面配沙丁鱼和松子，甜醋葡萄干点缀"
-  },
-  {
-   "zh": "尼斯洋葱塔",
-   "en": "Pissaladière",
-   "desc": "洋葱铺满面饼慢烤至焦甜，鳀鱼和橄榄点缀其中"
-  },
-  {
-   "zh": "",
-   "en": "Panisse",
-   "desc": "鹰嘴豆粉做成糕炸至外脆内软，撒上黑胡椒"
-  }
- ],
- "AT": [
-  {
-   "zh": "肝丸湯",
-   "en": "Leberknödel",
-   "desc": "肝泥做成丸子沉入清汤，咬开绵密带一丝肝苦"
-  },
-  {
-   "zh": "",
-   "en": "serviettenknödel",
-   "desc": "面包面团用布卷起蒸熟，切片后松软多孔"
-  },
-  {
-   "zh": "",
-   "en": "Kaspressknödel",
-   "desc": "奶酪和面包做成丸子在清汤中浮沉"
-  },
-  {
-   "zh": "",
-   "en": "Riebel",
-   "desc": "玉米粉煮成浓稠糊，配酸奶或果酱暖胃"
-  },
-  {
-   "zh": "",
-   "en": "Eiernockerl",
-   "desc": "鸡蛋和小面疙瘩在黄油中翻炒，金黄蓬松"
-  },
-  {
-   "zh": "",
-   "en": "lumberjacks’ dumplings",
-   "desc": "伐木工的面疙瘩裹着咸肉丁，嚼劲十足扎实管饱"
-  },
-  {
-   "zh": "",
-   "en": "Melchermuas",
-   "desc": "牛奶和面粉在铸铁锅中搅成厚饼，阿尔卑斯山区的热量炸弹"
-  },
-  {
-   "zh": "",
-   "en": "St. Martin's goose",
-   "desc": "圣马丁节烤整只鹅，皮脆肉嫩油脂渗出"
-  }
- ],
- "TR": [
-  {
-   "zh": "",
-   "en": "lokma",
-   "desc": "小面球炸至金黄淋糖浆，外壳咔嚓一声碎裂"
-  },
-  {
-   "zh": "",
-   "en": "Piyaz",
-   "desc": "白芸豆拌洋葱和番茄，橄榄油的清香托底"
-  },
-  {
-   "zh": "",
-   "en": "bülbülyuvası",
-   "desc": "细丝面编成鸟巢，烤至酥脆，内藏核桃碎"
-  },
-  {
-   "zh": "土耳其冰淇淋",
-   "en": "dondurma",
-   "desc": "冰淇淋韧得可以拉长，刀叉切开才断"
-  },
-  {
-   "zh": "爱兰",
-   "en": "ayran",
-   "desc": "咸酸奶冰凉入喉，泡沫细腻，解腻消暑"
-  },
-  {
-   "zh": "",
-   "en": "pişmaniye",
-   "desc": "糖丝缠成一团，入口即化成甜蜜的絮状"
-  },
-  {
-   "zh": "",
-   "en": "sujuk",
-   "desc": "风干辣肠切片，油脂在舌面化开，辛辣回甘"
-  },
-  {
-   "zh": "",
-   "en": "güllaç",
-   "desc": "薄如纸的面皮泡在甜牛奶里，撒上开心果碎"
-  },
-  {
-   "zh": "雞胸肉布丁",
-   "en": "tavukgöğsü",
-   "desc": "鸡肉撕成丝融入牛奶布丁，滑嫩中带着肉香"
-  },
-  {
-   "zh": "",
-   "en": "menemen",
-   "desc": "番茄和青椒在蛋液中翻炒，嫩滑多汁"
-  },
-  {
-   "zh": "",
-   "en": "pastırma",
-   "desc": "风干牛肉切薄片，蒜香和辛香料在口中爆发"
-  },
-  {
-   "zh": "",
-   "en": "vine leaf roll",
-   "desc": "葡萄叶裹住米饭和松子，酸香清新"
-  },
-  {
-   "zh": "",
-   "en": "bitter almond cookie",
-   "desc": "酥饼入口即碎，苦杏仁的香气在鼻腔回旋"
-  },
-  {
-   "zh": "茄子鑲肉",
-   "en": "karnıyarık",
-   "desc": "茄子剖开塞入肉馅烤软，茄肉吸满肉汁"
-  },
-  {
-   "zh": "",
-   "en": "çılbır",
-   "desc": "水波蛋卧在酸奶上，戳破蛋黄流进白色漩涡"
-  },
-  {
-   "zh": "Ekmek kadayıfı",
-   "en": "Ekmek kadayıfı",
-   "desc": "面包片吸满糖浆，奶油铺在上面，甜腻绵软"
-  },
-  {
-   "zh": "",
-   "en": "nokul",
-   "desc": "肉桂卷切开，面皮裹着坚果和糖霜"
-  },
-  {
-   "zh": "",
-   "en": "Cağ kebabı",
-   "desc": "羊肉串在横叉上旋转烤制，切下时油脂滴落"
-  },
-  {
-   "zh": "",
-   "en": "Tatar böreği",
-   "desc": "面皮裹肉馅炸至金黄，酥脆多汁"
-  },
-  {
-   "zh": "",
-   "en": "kağıt kebabı",
-   "desc": "羊肉和蔬菜在纸包中焖烤，撕开时蒸汽涌出"
-  }
- ],
- "CH": [
-  {
-   "zh": "",
-   "en": "Mont d'Or chaud",
-   "desc": "热芝士在木盒中融化冒泡，面包蘸进去裹满拉丝"
-  },
-  {
-   "zh": "",
-   "en": "käsefladen",
-   "desc": "芝士铺在面饼上烤至金黄，切开时奶香涌出"
-  },
-  {
-   "zh": "",
-   "en": "Malakoff",
-   "desc": "芝士裹面糊炸至外壳酥脆，咬开是滚烫的流心"
-  },
-  {
-   "zh": "",
-   "en": "Birchermuesli",
-   "desc": "燕麦酸奶拌入苹果丝和坚果碎，清晨的第一口"
-  },
-  {
-   "zh": "",
-   "en": "Risotto alla ticinese",
-   "desc": "提契诺的意式烩饭，藏红花染出金黄"
-  },
-  {
-   "zh": "木斯里",
-   "en": "muesli",
-   "desc": "燕麦片泡在牛奶里，干果和蜂蜜拌入其中"
-  }
- ],
- "EG": [
-  {
-   "zh": "",
-   "en": "lokma",
-   "desc": "小面球炸透淋糖浆，外壳酥脆内心绵软"
-  },
-  {
-   "zh": "炸豆丸子",
-   "en": "falafel",
-   "desc": "蚕豆泥炸至外壳酥脆，内里翠绿绵密"
-  },
-  {
-   "zh": "苦沙利",
-   "en": "koshari",
-   "desc": "米饭、扁豆、意面层层堆叠，浇上番茄酱和炸洋葱"
-  },
-  {
-   "zh": "富爾",
-   "en": "ful medames",
-   "desc": "蚕豆炖至绵软，淋上柠檬汁和橄榄油，清晨的开胃"
-  },
-  {
-   "zh": "",
-   "en": "basbousa",
-   "desc": "粗面粉蛋糕浸透糖浆，湿润绵密，椰香弥漫"
-  },
-  {
-   "zh": "",
-   "en": "Hawawshi",
-   "desc": "皮塔饼里塞满香料肉馅，烤至外壳焦脆"
-  }
- ],
- "MX": [
-  {
-   "zh": "墨西哥卷饼",
-   "en": "burrito",
-   "desc": "面饼裹住肉、豆泥和米饭，卷成粗棒，咬开馅料涌出"
-  },
-  {
-   "zh": "芸豆沙",
-   "en": "refried beans",
-   "desc": "黑豆煮烂碾成泥，油脂浸润，绵密咸香"
-  },
-  {
-   "zh": "香辣肉酱",
-   "en": "chili",
-   "desc": "辣椒和牛肉炖至浓稠，辣味在舌尖蔓延"
-  },
-  {
-   "zh": "墨西哥芝士馅饼",
-   "en": "quesadilla",
-   "desc": "面饼夹芝士烤至拉丝，对折咬开是熔岩般的奶香"
-  },
-  {
-   "zh": "安吉拉捲",
-   "en": "enchilada",
-   "desc": "玉米饼裹馅料浇上辣椒酱，酱汁渗入每一层"
-  },
-  {
-   "zh": "",
-   "en": "taquito",
-   "desc": "玉米饼卷肉馅炸至酥脆，蘸牛油果酱一口咬下"
-  },
-  {
-   "zh": "墨西哥式煎蛋早餐",
-   "en": "huevos rancheros",
-   "desc": "煎蛋铺在玉米饼上，浇上番茄辣酱，蛋黄流下来"
-  },
-  {
-   "zh": "墨西哥熱可可",
-   "en": "Champurrado",
-   "desc": "巧克力和玉米粉煮成浓稠热饮，丝滑温暖"
-  },
-  {
-   "zh": "托斯塔達",
-   "en": "tostada",
-   "desc": "玉米饼炸至硬脆，铺满豆泥、肉和生菜"
-  },
-  {
-   "zh": "",
-   "en": "Enfrijoladas",
-   "desc": "玉米饼浸在黑豆酱里，软糯入味"
-  },
-  {
-   "zh": "",
-   "en": "Flauta",
-   "desc": "面饼卷肉馅炸成长笛状，外脆内嫩"
-  },
-  {
-   "zh": "",
-   "en": "Mexican pizza",
-   "desc": "脆玉米饼底铺上肉、豆泥和芝士焗烤"
-  },
-  {
-   "zh": "",
-   "en": "Rajas con crema",
-   "desc": "辣椒条拌奶油酱，辣中带甜"
-  },
-  {
-   "zh": "",
-   "en": "Ungui",
-   "desc": "玉米面包裹肉馅蒸熟，叶香渗入"
-  },
-  {
-   "zh": "玉米黑粉菌",
-   "en": "huitlacoche",
-   "desc": "玉米黑菌炒至浓稠，带着泥土的鲜味和蘑菇般的口感"
-  },
-  {
-   "zh": "",
-   "en": "Discada",
-   "desc": "铁盘上牛肉和香肠翻炒，油脂滋滋作响"
-  },
-  {
-   "zh": "",
-   "en": "Mexican rice",
-   "desc": "番茄汁炒过的米饭，粒粒橙红，微酸开胃"
-  },
-  {
-   "zh": "",
-   "en": "Carne polaca",
-   "desc": "牛肉卷裹着蔬菜和香料慢炖"
-  },
-  {
-   "zh": "",
-   "en": "Obispo",
-   "desc": "猪肉香肠灌入肠衣，切片后油脂在口中化开"
-  },
-  {
-   "zh": "",
-   "en": "Tacos de lengua",
-   "desc": "牛舌炖至软烂切碎，玉米饼裹住，洋葱和香菜点缀"
-  }
- ],
- "PT": [
-  {
-   "zh": "",
-   "en": "espetada",
-   "desc": "牛肉串在月桂枝上炭烤，肉汁滴落炭火嘶嘶作响"
-  },
-  {
-   "zh": "",
-   "en": "Açorda",
-   "desc": "面包撕碎泡入蒜味橄榄油汤，鸡蛋卧在中间"
-  },
-  {
-   "zh": "",
-   "en": "Migas alentejanas",
-   "desc": "阿连特茹的面包碎和猪肉在平底锅中煎至焦脆"
-  },
-  {
-   "zh": "",
-   "en": "Iscas",
-   "desc": "猪肝切片裹粉炸至外焦内嫩，柠檬汁提鲜"
-  },
-  {
-   "zh": "",
-   "en": "Grilled Lapas",
-   "desc": "马德拉岛的帽贝在炭火上烤至微焦，蒜油蘸着吃"
-  },
-  {
-   "zh": "",
-   "en": "Xerém",
-   "desc": "玉米面煮成浓粥，配贝类或猪肉，粗粝管饱"
-  },
-  {
-   "zh": "",
-   "en": "Molotof",
-   "desc": "蛋白霜烤成焦糖外壳，内心绵软如云朵"
-  },
-  {
-   "zh": "",
-   "en": "Queijada de Sintra",
-   "desc": "辛特拉的奶酪塔，酥皮托着奶酪蛋奶馅"
-  }
- ],
- "FR": [
-  {
-   "zh": "",
-   "en": "stoemp",
-   "desc": "土豆泥混入蔬菜碎，绵密中带着朴素的甜"
-  },
-  {
-   "zh": "烤烙饼",
-   "en": "tarte flambée",
-   "desc": "薄面饼铺酸奶油和洋葱丝，烤至边缘焦脆"
-  },
-  {
-   "zh": "",
-   "en": "Mont d'Or chaud",
-   "desc": "热芝士在木盒中融化，面包蘸进去拉出长丝"
-  },
-  {
-   "zh": "",
-   "en": "crab soup",
-   "desc": "蟹壳熬出浓汤，奶油的醇厚裹住蟹肉的鲜"
-  },
-  {
-   "zh": "尼斯洋葱塔",
-   "en": "Pissaladière",
-   "desc": "洋葱铺满面饼慢烤至焦甜，鳀鱼的咸鲜托底"
-  },
-  {
-   "zh": "",
-   "en": "Mussels marinière",
-   "desc": "青口在白葡萄酒中蒸开，蒜香和欧芹飘出"
-  },
-  {
-   "zh": "鲁加伊",
-   "en": "rougail",
-   "desc": "番茄洋葱熬成浓酱，辣椒的热力渗入每一口"
-  },
-  {
-   "zh": "牛肉絲意粉",
-   "en": "ragù",
-   "desc": "牛肉和番茄炖至肉丝散开，酱汁浓稠挂面"
-  },
-  {
-   "zh": "尼斯沙拉",
-   "en": "Niçard salad",
-   "desc": "番茄鸡蛋金枪鱼铺满盘，橄榄油清香串联"
-  },
-  {
-   "zh": "开胃小点",
-   "en": "amuse-bouche",
-   "desc": "一小口在舌尖打开味蕾，来不及回味已消失"
-  },
-  {
-   "zh": "马赛鱼汤",
-   "en": "bouillabaisse",
-   "desc": "鱼骨熬出橙红浓汤，蒜蓉面包蘸着吃"
-  },
-  {
-   "zh": "",
-   "en": "galantine",
-   "desc": "禽肉裹住馅料压制定型，切片后纹理细腻"
-  },
-  {
-   "zh": "",
-   "en": "Chartreuse",
-   "desc": "蔬菜和肉紧实地码在叶中，脱模后形状饱满"
-  },
-  {
-   "zh": "",
-   "en": "Crottin de Berry à l’Huile d’Olive",
-   "desc": "山羊奶酪淋上橄榄油，酸香在口中化开"
-  },
-  {
-   "zh": "",
-   "en": "Quatre mendiants",
-   "desc": "坚果和果干分成四堆，地中海的朴素甜食"
-  },
-  {
-   "zh": "法式清湯",
-   "en": "Consommé",
-   "desc": "清汤澄澈见底，鲜味却浓缩得厚重"
-  },
-  {
-   "zh": "",
-   "en": "Pâté de campagne",
-   "desc": "猪肉粗粒手剁压实，肝香和脂肪在口中化开"
-  },
-  {
-   "zh": "",
-   "en": "pan-bagnat",
-   "desc": "圆面包挖空塞满蔬菜和金枪鱼，橄榄油浸透面包"
-  },
-  {
-   "zh": "",
-   "en": "brissaouda",
-   "desc": "烤面包刷上蒜泥和橄榄油，茴香酒的香气升腾"
-  },
-  {
-   "zh": "",
-   "en": "Cotriade",
-   "desc": "布列塔尼渔港的鱼汤，土豆和海鲜一锅炖透"
-  }
- ],
- "ET": [
-  {
-   "zh": "",
-   "en": "quanta firfir",
-   "desc": "牛肉干撕碎拌入英吉拉饼和辣酱，酸辣咸香在口中翻涌"
-  }
- ],
- "CN": [
-  {
-   "zh": "肉松",
-   "en": "rousong",
-   "desc": "肉松蓬松如絮，入口即化，甜咸肉香弥漫"
-  },
-  {
-   "zh": "𰻝𰻝面",
-   "en": "biangbiang noodles",
-   "desc": "宽面摔在案板上啪啪作响，嚼劲十足，油泼辣子浇上去嘶嘶冒烟"
-  },
-  {
-   "zh": "胡椒餅",
-   "en": "hujiao bing",
-   "desc": "烤至外壳焦脆，掰开是黑胡椒猪肉馅，汁水烫嘴"
-  },
-  {
-   "zh": "烧仙草",
-   "en": "grass jelly",
-   "desc": "烧仙草黑亮滑嫩，入口即化，配蜂蜜清凉解暑"
-  },
-  {
-   "zh": "水煮",
-   "en": "shuizhu",
-   "desc": "红油翻滚，肉片嫩滑如绸，花椒麻得嘴唇发颤"
-  },
-  {
-   "zh": "鸳鸯炒饭",
-   "en": "yin yang fried rice",
-   "desc": "一半番茄酱一半白汁，两种颜色两种味道"
-  },
-  {
-   "zh": "炒饭",
-   "en": "fried rice",
-   "desc": "大火颠勺，米粒在锅中跳跃，粒粒裹着蛋香"
-  },
-  {
-   "zh": "咕噜肉",
-   "en": "gu lou juk",
-   "desc": "猪肉裹粉炸至金黄，浇上糖醋酱，酸甜在口中炸开"
-  },
-  {
-   "zh": "中式拉面",
-   "en": "lamian",
-   "desc": "面条在师傅手中反复拉伸，入口滑韧有弹性"
-  },
-  {
-   "zh": "罗汉斋",
-   "en": "Buddha's delight",
-   "desc": "十八种素菜在砂锅中炖煮，各有各的鲜美"
-  },
-  {
-   "zh": "",
-   "en": "Bai ye",
-   "desc": "豆腐皮层层叠叠，嚼出豆子的朴素香气"
-  },
-  {
-   "zh": "青团",
-   "en": "Qingtuan",
-   "desc": "艾草汁揉入糯米，翠绿的团子咬开是豆沙馅"
-  },
-  {
-   "zh": "馕坑烤肉",
-   "en": "Tandyr kebab",
-   "desc": "馕坑里炭火烤肉，外焦内嫩，孜然香气裹着肉"
-  },
-  {
-   "zh": "蟹肉粟米羹",
-   "en": "corn crab soup",
-   "desc": "粟米羹浓稠如丝，蟹肉的鲜甜溶在每一勺里"
-  },
-  {
-   "zh": "八宝菜",
-   "en": "Palbochae",
-   "desc": "八种食材切丝翻炒，色彩缤纷，口感各异"
-  },
-  {
-   "zh": "免治",
-   "en": "Minchee",
-   "desc": "碎肉和土豆丁翻炒，酱油焦香渗入每一粒"
-  },
-  {
-   "zh": "敲鱼",
-   "en": "",
-   "desc": "鱼肉反复捶打成薄片，入汤后透明如蝉翼"
-  },
-  {
-   "zh": "滑炒",
-   "en": "",
-   "desc": "食材在宽油中滑过，勾芡后光泽透亮"
-  },
-  {
-   "zh": "炒牛奶",
-   "en": "stir-fried milk",
-   "desc": "牛奶凝固成块翻炒不散，入口即化，奶香四溢"
-  },
-  {
-   "zh": "糖蔥",
-   "en": "",
-   "desc": "拉丝的麦芽糖裹上芝麻，咬下去嘎嘣脆"
-  }
- ],
- "GB": [
-  {
-   "zh": "加冕雞",
-   "en": "coronation chicken",
-   "desc": "curry酱裹住鸡肉，果干的甜在奶油中化开"
-  },
-  {
-   "zh": "",
-   "en": "cheese on toast",
-   "desc": "烤面包上铺芝士，烤至冒泡微焦"
-  },
-  {
-   "zh": "",
-   "en": "Yorkshire Christmas pie",
-   "desc": "酥皮包裹多种禽肉，切开层层分明"
-  }
- ],
- "LV": [
-  {
-   "zh": "",
-   "en": "Kepta duona",
-   "desc": "Lithuanian, latvian garlic bread chips"
-  }
- ],
- "CZ": [
-  {
-   "zh": "",
-   "en": "serviettenknödel",
-   "desc": "面包丁裹蛋液蒸成大圆面包，切片后吸满肉汁，绵软饱腹"
-  },
-  {
-   "zh": "捷克熱狗",
-   "en": "Czech-style hot dog",
-   "desc": "面包不切断，塞入香肠和芥末酱，简陋却满足的街头食粮"
-  },
-  {
-   "zh": "",
-   "en": "Vepřo knedlo zelo",
-   "desc": "烤猪肉铺在面包团子上配酸菜，肉汁浸入团子，捷克国菜"
-  },
-  {
-   "zh": "",
-   "en": "Topfenknödel",
-   "desc": "奶酪搓成丸子煮熟，撒上糖粉和黄油面包糠，软嫩甜香"
-  },
-  {
-   "zh": "",
-   "en": "schnitzel Pavlišov",
-   "desc": "猪排裹面包糠炸至金黄，配土豆泥和柠檬汁，酥脆多汁"
-  },
-  {
-   "zh": "",
-   "en": "Category:Likérová špička (Czech Republic)",
-   "desc": "巧克力外壳裹着利口酒奶油馅，小方块入口即化，酒香微醺"
-  }
- ],
- "SI": [
-  {
-   "zh": "",
-   "en": "Zlijevka",
-   "desc": "traditional Croatian dessert"
-  },
-  {
-   "zh": "",
-   "en": "Bakalca",
-   "desc": "Dish of mutton and vegetables"
-  },
-  {
-   "zh": "",
-   "en": "Bloke kavla",
-   "desc": "dish from southwestern Slovenia"
-  }
- ],
- "BG": [
-  {
-   "zh": "",
-   "en": "torpedo dessert",
-   "desc": "酥皮卷成鱼雷状烤至金黄，咬开黄油香气扑鼻，层层起酥"
-  },
-  {
-   "zh": "",
-   "en": "Snow White salad",
-   "desc": "酸奶拌黄瓜丝和核桃碎，洁白如雪，酸香清爽解暑"
-  },
-  {
-   "zh": "",
-   "en": "mish-mash",
-   "desc": "青椒番茄和鸡蛋在锅中翻炒至软烂，颜色缤纷，酸甜开胃"
-  }
- ],
- "KZ": [
-  {
-   "zh": "克缺",
-   "en": "Köje",
-   "desc": "小米煮成浓稠粥，游牧民族的温暖早餐"
-  },
-  {
-   "zh": "",
-   "en": "Bokpe",
-   "desc": "面团裹肉蒸熟，蘸着酸奶吃，朴素管饱"
-  },
-  {
-   "zh": "冲克缺",
-   "en": "Nauryz kozhe",
-   "desc": "七种谷物煮成节庆粥，每种谷物都有不同的嚼感"
-  },
-  {
-   "zh": "",
-   "en": "Älme",
-   "desc": "苹果和面粉做成的甜饼，外脆内软"
-  }
- ],
- "BR": [
-  {
-   "zh": "法羅法",
-   "en": "farofa",
-   "desc": "木薯粉在黄油中炒至金黄松脆，混入培根粒和洋葱，干香扑鼻"
-  },
-  {
-   "zh": "",
-   "en": "Efó",
-   "desc": "巴伊亚风味的绿叶菜慢炖，椰奶和棕榈油的浓郁在舌尖交融"
-  },
-  {
-   "zh": "",
-   "en": "Virado",
-   "desc": "黑豆和木薯粉翻炒成糊，配煎香蕉和猪肉，质朴的碳水满足感"
-  },
-  {
-   "zh": "",
-   "en": "cassava chips",
-   "desc": "木薯薄片炸至透金，咔嚓一声脆响，咸香朴素"
-  },
-  {
-   "zh": "",
-   "en": "Mingau de tapioca",
-   "desc": "木薯粉煮成半透明糊状，椰奶渗入每一口，温热绵滑"
-  },
-  {
-   "zh": "",
-   "en": "Camarão no Bafo",
-   "desc": "大虾在椰奶蒸汽中焖熟，鲜甜裹着热带海洋的气息"
-  }
- ],
- "AL": [
-  {
-   "zh": "",
-   "en": "albanian stew",
-   "desc": ""
-  },
-  {
-   "zh": "",
-   "en": "Kripanec",
-   "desc": "Albanian pastry food"
-  }
- ],
- "ID": [
-  {
-   "zh": "",
-   "en": "Soto Jepara",
-   "desc": "鸡汤清亮，椰浆的浓郁藏在清爽之下"
-  },
-  {
-   "zh": "",
-   "en": "Soto Kudus",
-   "desc": "清汤配手撕鸡肉，黄姜的暖色渗入汤底"
-  },
-  {
-   "zh": "",
-   "en": "Soto Betawi",
-   "desc": "牛杂在椰浆汤中炖煮，汤头浓厚乳白"
-  },
-  {
-   "zh": "",
-   "en": "Candlenut soup",
-   "desc": "黄姜椰浆鸡汤，石栗的坚果香托住整碗"
-  },
-  {
-   "zh": "",
-   "en": "Seasoning soup",
-   "desc": "牛杂汤无椰浆，香料的层次在清汤中展开"
-  },
-  {
-   "zh": "",
-   "en": "pangkong squid",
-   "desc": "鱿鱼干烤至卷曲，嚼劲十足，咸鲜耐嚼"
-  },
-  {
-   "zh": "",
-   "en": "suwar-suwir",
-   "desc": "木薯发酵做成的软糖，甜酸交织"
-  },
-  {
-   "zh": "",
-   "en": "Kue talam",
-   "desc": "椰浆米糕分两层，上白下绿，滑嫩如布丁"
-  },
-  {
-   "zh": "",
-   "en": "tengkleng",
-   "desc": "羊骨炖至肉可撕落，汤头浓郁带辣"
-  },
-  {
-   "zh": "",
-   "en": "timlo",
-   "desc": "清汤里浮着鸡蛋和肉丸，鸡汤鲜味层层递进"
-  },
-  {
-   "zh": "",
-   "en": "Squid Tongseng",
-   "desc": "鱿鱼在甜辣椰浆酱中翻炒，弹韧入味"
-  },
-  {
-   "zh": "",
-   "en": "Coro Ginger Drink",
-   "desc": "姜汁热饮辣得胃暖，红糖的甜中和辛呛"
-  },
-  {
-   "zh": "",
-   "en": "Sweet Peanut sticky rice",
-   "desc": "糯米粉裹花生碎炸至金黄，外脆内糯"
-  },
-  {
-   "zh": "",
-   "en": "Soto Padang",
-   "desc": "牛杂汤配黄姜饭，辣酱提味"
-  },
-  {
-   "zh": "",
-   "en": "tahu campur",
-   "desc": "豆腐切块拌入粉丝和牛肉汤，多种口感一碗收"
-  },
-  {
-   "zh": "",
-   "en": "Cookbook:Awug",
-   "desc": "米糕蒸在竹模里，椰香和棕糖的甜味渗入"
-  },
-  {
-   "zh": "",
-   "en": "Bugis",
-   "desc": "椰浆糯米糕裹在香蕉叶里，黏糯香甜"
-  },
-  {
-   "zh": "",
-   "en": "Cethot",
-   "desc": "木薯粉搅成糊，椰糖的甜和椰浆的香融为一体"
-  },
-  {
-   "zh": "",
-   "en": "gemblong",
-   "desc": "糯米条裹上焦糖椰丝，外壳脆甜内心软糯"
-  },
-  {
-   "zh": "",
-   "en": "Legendar",
-   "desc": "炸米饭碾碎做成酱，咸香酥脆"
-  }
- ],
- "ME": [
-  {
-   "zh": "",
-   "en": "Creamy porridge",
-   "desc": "Montenegrin traditional dish"
-  }
- ],
- "AM": [
-  {
-   "zh": "",
-   "en": "Lula kebab",
-   "desc": "肉糜串烤至外焦内嫩，油脂渗出滴在炭上嘶嘶响"
-  },
-  {
-   "zh": "",
-   "en": "gatnabour",
-   "desc": "米粥浓稠温热，配酸奶一起吃"
-  },
-  {
-   "zh": "",
-   "en": "Karsi khorovats",
-   "desc": "整块羊腿在明火上慢烤，切开时肉汁流淌"
-  },
-  {
-   "zh": "",
-   "en": "Mshosh",
-   "desc": "扁豆炖至绵软，核桃碎增加颗粒感"
-  },
-  {
-   "zh": "",
-   "en": "Kyalla",
-   "desc": "牛头肉烤至胶质融化，皮肉相连处黏唇"
-  },
-  {
-   "zh": "",
-   "en": "kololak",
-   "desc": "肉丸裹面粉煎至金黄，内里多汁弹牙"
-  },
-  {
-   "zh": "南瓜焗飯",
-   "en": "Ghapama",
-   "desc": "南瓜掏空填入蜜饯米饭，蒸至瓜肉绵软"
-  },
-  {
-   "zh": "",
-   "en": "Panrkhash",
-   "desc": "奶酪融化在面包上，拉丝绵长"
-  },
-  {
-   "zh": "",
-   "en": "Amich",
-   "desc": "肉馅裹在面皮里烤至焦香"
-  },
-  {
-   "zh": "",
-   "en": "tava",
-   "desc": "陶盘中蔬菜和肉炖至酥烂，汤汁浓稠"
-  }
- ],
- "ZA": [
-  {
-   "zh": "咖喱肉末",
-   "en": "bobotie",
-   "desc": "肉末拌咖喱和干果焗烤，表面蛋奶凝固如金黄绒毯"
-  },
-  {
-   "zh": "恰卡拉卡",
-   "en": "chakalaka",
-   "desc": "辣蔬菜酱拌着豆子和番茄，辛辣开胃配烤肉绝搭"
-  },
-  {
-   "zh": "",
-   "en": "boeber",
-   "desc": "椰奶煮细面条加肉桂和杏仁，甜丝丝的冬夜暖心甜品"
-  },
-  {
-   "zh": "",
-   "en": "braai bread",
-   "desc": "面团在炭火余烬上烤至外壳焦黑，掰开内里松软带烟熏香"
-  }
- ],
- "RS": [
-  {
-   "zh": "",
-   "en": "Leskovački roštilj",
-   "desc": "肉糜捏成饼在炭火上烤至微焦，外脆内嫩，莱斯科瓦茨的骄傲"
-  },
-  {
-   "zh": "",
-   "en": "Mućkalica",
-   "desc": "碎肉和青椒番茄在陶锅中炖至浓稠，酸辣交融，配面包蘸汁"
-  },
-  {
-   "zh": "",
-   "en": "komplet lepinja",
-   "desc": "面饼撕开塞入奶油和肉汁，油腻饱满，塞尔维亚的硬核早餐"
-  },
-  {
-   "zh": "",
-   "en": "leskovačka kavurma",
-   "desc": "猪肉在油脂中慢炖至酥烂，配洋葱和辣椒，粗犷豪迈"
-  },
-  {
-   "zh": "",
-   "en": "Obaruša",
-   "desc": "面皮裹肉馅在砂锅中烤至外壳焦脆，掰开肉汁流出"
-  }
- ],
- "SG": [
-  {
-   "zh": "羅地藏",
-   "en": "Roti john",
-   "desc": "法包切开夹入蛋肉碎煎至焦脆，酱汁甜辣"
-  }
- ],
- "CL": [
-  {
-   "zh": "",
-   "en": "Mariscal",
-   "desc": "生海鲜拌入柠檬汁和洋葱丁，酸鲜醒神，海洋的原味在口中绽放"
-  }
- ],
- "AR": [
-  {
-   "zh": "",
-   "en": "picada",
-   "desc": "切块肉肠芝士铺满木板，随手拈来，咸香下酒"
-  },
-  {
-   "zh": "",
-   "en": "Revuelto Gramajo",
-   "desc": "薯条和火腿丝裹在嫩滑蛋液中，油润焦香"
-  },
-  {
-   "zh": "",
-   "en": "Fugazza",
-   "desc": "厚实面饼铺满焦化洋葱，甜软多汁，没有番茄酱的纯粹"
-  },
-  {
-   "zh": "",
-   "en": "niño envuelto",
-   "desc": "卷心菜叶裹住肉馅米饭，炖至叶片软烂，汁水渗入每一层"
-  },
-  {
-   "zh": "",
-   "en": "matambre arrollado",
-   "desc": "薄肉片卷入蔬菜和鸡蛋，切开是彩虹般的截面，冷食弹韧"
-  },
-  {
-   "zh": "",
-   "en": "Argentinian pizza",
-   "desc": "厚底面团蓬松如枕头，芝士铺得满满当当，拉丝绵长"
-  }
- ],
- "IN": [
-  {
-   "zh": "阿榜糕",
-   "en": "appam",
-   "desc": "边缘薄脆如蕾丝，中心厚软，椰香奶味渗入"
-  },
-  {
-   "zh": "",
-   "en": "Pholourie",
-   "desc": "咖喱粉调味的面球炸至金黄，蘸酸辣酱"
-  },
-  {
-   "zh": "",
-   "en": "dhokla",
-   "desc": "蒸糕蓬松带气孔，酸甜微辣，入口即化"
-  },
-  {
-   "zh": "印度乳酪",
-   "en": "lassi",
-   "desc": "酸奶搅打至顺滑，冰凉入喉，芒果的甜香弥漫"
-  },
-  {
-   "zh": "",
-   "en": "Avial",
-   "desc": "十几种蔬菜裹着椰酱，每种都保持各自的脆度"
-  },
-  {
-   "zh": "",
-   "en": "chana masala",
-   "desc": "鹰嘴豆裹着浓稠酱汁，酸辣在舌尖打转"
-  },
-  {
-   "zh": "",
-   "en": "Curd rice",
-   "desc": "酸奶拌入米饭，清凉酸爽，配腌芒果提味"
-  },
-  {
-   "zh": "",
-   "en": "Murukku",
-   "desc": "米浆挤成螺旋炸透，咔嚓咬碎，满口酥香"
-  },
-  {
-   "zh": "",
-   "en": "Dhansak",
-   "desc": "扁豆和羊肉炖成浓酱，酸甜咸辣四味合一"
-  },
-  {
-   "zh": "",
-   "en": "Undhiyu",
-   "desc": "各种蔬菜和豆子在陶罐中慢炖，酥烂入味"
-  },
-  {
-   "zh": "",
-   "en": "Pav bhaji",
-   "desc": "蔬菜泥捣碎炒浓，夹进黄油面包，一口咬到底"
-  },
-  {
-   "zh": "",
-   "en": "Dahi baigana",
-   "desc": "茄子段泡在酸奶酱里，凉滑酸香"
-  },
-  {
-   "zh": "",
-   "en": "Doodhpak",
-   "desc": "牛奶熬至浓稠，米粒软糯，杏仁碎点缀"
-  },
-  {
-   "zh": "",
-   "en": "Gavvalu",
-   "desc": "贝壳形小面点炸至酥脆，嚼起来嘎嘣作响"
-  },
-  {
-   "zh": "",
-   "en": "Kichadi",
-   "desc": "米和扁豆煮成软糊，姜和黑胡椒暖胃"
-  },
-  {
-   "zh": "馬嘉滋",
-   "en": "Magaj",
-   "desc": "内脏切碎炖煮，辛香料渗入每一寸组织"
-  },
-  {
-   "zh": "",
-   "en": "Mattar paneer",
-   "desc": "奶酪块和青豆在番茄酱中炖煮，奶香与酸甜交融"
-  },
-  {
-   "zh": "",
-   "en": "Pootharekulu",
-   "desc": "米纸薄如蝉翼，裹着糖粉和酥油，入口即碎"
-  },
-  {
-   "zh": "",
-   "en": "Tunde ke kabab",
-   "desc": "水牛肉泥捏成饼煎至微焦，入口即化无渣"
-  },
-  {
-   "zh": "",
-   "en": "zarda",
-   "desc": "藏红花染黄的甜饭，杏仁和葡萄干嵌在米粒间"
-  }
- ],
- "IR": [
-  {
-   "zh": "爱兰",
-   "en": "ayran",
-   "desc": "咸酸奶冰凉爽口，泡沫细腻，解腻消暑"
-  },
-  {
-   "zh": "",
-   "en": "Piyaz",
-   "desc": "白芸豆拌洋葱番茄，柠檬汁的酸托出豆香"
-  },
-  {
-   "zh": "",
-   "en": "Borani",
-   "desc": "酸奶拌茄子泥，凉滑绵密，蒜香隐约"
-  },
-  {
-   "zh": "叻沙",
-   "en": "laksa",
-   "desc": "椰浆咖喱汤底浓稠，米粉滑入汤中吸满辣味"
-  },
-  {
-   "zh": "奶油羊肉咖哩",
-   "en": "Rogan josh",
-   "desc": "羊肉块在红酱中炖至酥烂，藏红花的香气弥漫"
-  },
-  {
-   "zh": "",
-   "en": "zeytoon parvardeh",
-   "desc": "橄榄裹上石榴糖浆和核桃碎，酸甜咸交织"
-  },
-  {
-   "zh": "",
-   "en": "Tah Chin",
-   "desc": "藏红花米饭底部焦脆如锅巴，鸡肉藏在米层间"
-  },
-  {
-   "zh": "",
-   "en": "Port sausage",
-   "desc": "香肠切片煎至表面起泡，肉汁在齿间迸出"
-  },
-  {
-   "zh": "Muhallebi",
-   "en": "mehallabiyya",
-   "desc": "牛奶布丁滑嫩如凝脂，玫瑰水的香气淡淡萦绕"
-  },
-  {
-   "zh": "",
-   "en": "anar bij",
-   "desc": "石榴籽在炖菜中爆开，酸甜渗入肉汁"
-  },
-  {
-   "zh": "",
-   "en": "Kashk e badamjan",
-   "desc": "茄子泥搅入发酵乳清，酸咸绵厚"
-  },
-  {
-   "zh": "番紅花米布丁",
-   "en": "sholezard",
-   "desc": "藏红花米布丁金黄透亮，杏仁碎和肉桂粉点缀"
-  },
-  {
-   "zh": "",
-   "en": "KafBikh",
-   "desc": "酥油和糖揉成的甜点，入口即化"
-  },
-  {
-   "zh": "",
-   "en": "Shirin polo",
-   "desc": "甜米饭拌入橘皮丝和杏仁碎，藏红花的金黄透入每粒米"
-  }
- ],
- "VE": [
-  {
-   "zh": "阿瑞巴",
-   "en": "arepa",
-   "desc": "玉米饼剖开夹入黑豆和肉丝，外皮酥脆内心松软"
-  },
-  {
-   "zh": "芭蕉粽",
-   "en": "hallaca",
-   "desc": "芭蕉叶裹住玉米面和肉馅慢蒸，揭开是层层香气，节日的仪式感"
-  },
-  {
-   "zh": "",
-   "en": "Naiboa",
-   "desc": "玉米面裹入猪肉和橄榄，蕉叶蒸出的古朴醇厚"
-  }
- ],
- "TT": [
-  {
-   "zh": "",
-   "en": "Pholourie",
-   "desc": "Fried, spiced dough balls"
-  },
-  {
-   "zh": "",
-   "en": "Pelau",
-   "desc": "rice dish of the West Indies"
-  }
- ],
- "MN": [
-  {
-   "zh": "",
-   "en": "buuz",
-   "desc": "面皮厚实兜住肉馅，蒸熟后汁水饱满，咬开烫嘴"
-  },
-  {
-   "zh": "",
-   "en": "dough-sealed soup",
-   "desc": "面团封住锅口焖煮，揭盖时肉香扑面"
-  }
- ],
- "AU": [
-  {
-   "zh": "",
-   "en": "Halal snack pack",
-   "desc": "Australian halal dish"
-  }
- ],
- "KG": [
-  {
-   "zh": "冲克缺",
-   "en": "Nauryz kozhe",
-   "desc": "七种谷物煮成浓粥，节庆时每人一碗"
-  },
-  {
-   "zh": "克缺",
-   "en": "Köje",
-   "desc": "小米粥浓稠暖胃，牧民帐篷里的清晨"
-  },
-  {
-   "zh": "",
-   "en": "oromo",
-   "desc": "面皮裹肉和蔬菜层层卷起蒸熟，切开如花朵绽放"
-  }
- ],
- "TN": [
-  {
-   "zh": "",
-   "en": "Mafrum",
-   "desc": "土豆夹肉馅裹面糊炸至金黄，外酥内嫩"
-  },
-  {
-   "zh": "",
-   "en": "Pkaila",
-   "desc": "菠菜和蚕豆炖煮配干肉，发酵的酸味与蔬菜的清鲜碰撞"
-  },
-  {
-   "zh": "",
-   "en": "kefteji",
-   "desc": "炸蔬菜饼配辣椒和鸡蛋，街边的金黄酥脆"
-  },
-  {
-   "zh": "",
-   "en": "Msoki",
-   "desc": "菠菜和肉丸在清汤中煮熟，汤汁翠绿鲜美"
-  },
-  {
-   "zh": "",
-   "en": "Tunisian tarte",
-   "desc": "面皮铺满沙丁鱼和橄榄烤至金黄，地中海的咸鲜"
-  },
-  {
-   "zh": "",
-   "en": "tajine el bey",
-   "desc": "蛋肉糕层层蒸制，切面如大理石纹理"
-  },
-  {
-   "zh": "",
-   "en": "tagine malsouka",
-   "desc": "薄面皮裹肉馅烤至酥脆，咬开是热腾腾的肉汁"
-  },
-  {
-   "zh": "",
-   "en": "radhkha",
-   "desc": "肉末和蔬菜在番茄酱中炖煮，浓稠入味"
-  },
-  {
-   "zh": "",
-   "en": "Brik danouni",
-   "desc": "薄面皮包入金枪鱼和欧芹炸至半透明，外脆内鲜"
-  }
- ],
- "GP": [
-  {
-   "zh": "",
-   "en": "Pelau",
-   "desc": "rice dish of the West Indies"
-  }
- ],
- "MA": [
-  {
-   "zh": "",
-   "en": "Tajine Lham-Lahlou",
-   "desc": "羊肉配杏干和蜂蜜在塔吉锅中慢炖，甜咸交融"
-  },
-  {
-   "zh": "",
-   "en": "Ahriche",
-   "desc": "羊肠裹住肉馅和香料煮熟，粗犷的草原风味"
-  },
-  {
-   "zh": "",
-   "en": "Ouarka",
-   "desc": "薄如蝉翼的面皮层层叠叠，裹入杏仁和糖粉"
-  },
-  {
-   "zh": "Taktouka",
-   "en": "Taktouka",
-   "desc": "烤番茄和青椒捣成酱，烟熏酸甜配面包蘸食"
-  },
-  {
-   "zh": "",
-   "en": "Stuffed Artichoke",
-   "desc": "洋蓟心塞入肉馅和香料，蒸至叶片软化，清鲜回甘"
-  },
-  {
-   "zh": "",
-   "en": "Babbouche",
-   "desc": "蜗牛在香料汤中煮熟，用牙签挑出，汤汁鲜辣暖身"
-  },
-  {
-   "zh": "",
-   "en": "tfaya",
-   "desc": "焦糖洋葱配杏仁铺在蒸粗麦面上，甜咸交织"
-  },
-  {
-   "zh": "",
-   "en": "douida",
-   "desc": "细面条配鸡肉和杏仁，柠檬汁的酸托出整道菜的清爽"
-  },
-  {
-   "zh": "",
-   "en": "Mderbel",
-   "desc": "扁豆和小麦同煮成浓粥，朴素的冬日暖食"
-  }
- ],
- "BO": [
-  {
-   "zh": "",
-   "en": "salteña",
-   "desc": "酥皮兜住肉汁馅料，咬一口汤汁涌出，甜辣交织"
-  },
-  {
-   "zh": "",
-   "en": "Cuñapé",
-   "desc": "木薯芝士球烤至外壳微焦，内里拉丝绵软，嚼出满口奶香"
-  },
-  {
-   "zh": "",
-   "en": "ranga",
-   "desc": "牛肚炖至软烂入味，辣椒和番茄的酸辣浓稠裹住每一寸"
-  },
-  {
-   "zh": "",
-   "en": "Fritanga",
-   "desc": "杂碎在锅中翻炒至焦香，油脂裹着香料的浓烈气息"
-  },
-  {
-   "zh": "",
-   "en": "Macho Camacho",
-   "desc": "辣椒酱浇在肉和玉米上，辣得额头冒汗却停不下嘴"
-  },
-  {
-   "zh": "",
-   "en": "Pichón de Cliza",
-   "desc": "鸽肉炖至酥烂，汤汁浓郁醇厚，安第斯山间的家常味"
-  }
- ],
- "CV": [
-  {
-   "zh": "卡丘帕",
-   "en": "Cachupa",
-   "desc": "traditional dish from Cape Verde, considered the national dish"
-  }
- ],
- "CR": [
-  {
-   "zh": "",
-   "en": "Casado",
-   "desc": "白饭配黑豆、炸香蕉和烤肉，一盘婚姻般均衡的日常"
-  }
- ],
- "PK": [
-  {
-   "zh": "",
-   "en": "Sindhi biryani",
-   "desc": "米饭层层叠叠藏入羊肉，藏红花染出金黄，锅底有焦脆锅巴"
-  },
-  {
-   "zh": "",
-   "en": "Sohbat",
-   "desc": "面饼撕碎泡进肉汤，吸满汤汁后软烂入味"
-  }
- ],
- "DM": [
-  {
-   "zh": "",
-   "en": "Pelau",
-   "desc": "rice dish of the West Indies"
-  }
- ],
- "AO": [
-  {
-   "zh": "",
-   "en": "Kissuto rombo",
-   "desc": "山羊肉在番茄和洋葱中炖煮至酥烂，汤汁浓厚"
-  },
-  {
-   "zh": "",
-   "en": "Calulu and Funge",
-   "desc": "鱼肉配木薯叶在棕榈油中炖煮，配木薯粉团蘸汤"
-  }
- ],
- "SN": [
-  {
-   "zh": "",
-   "en": "Dibi",
-   "desc": "烤羊肉块堆在盘中，外焦内嫩，配洋葱和芥末酱食用"
-  },
-  {
-   "zh": "",
-   "en": "Domoda",
-   "desc": "花生酱炖成浓稠肉汤，甜咸交融，拌米饭一绝"
-  },
-  {
-   "zh": "",
-   "en": "Thiébou Kéthiakh",
-   "desc": "鱼肉配蔬菜在番茄汤中炖煮，米饭吸满鱼鲜汤汁"
-  },
-  {
-   "zh": "",
-   "en": "Mbaxalou saloum",
-   "desc": "花生酱和秋葵炖成浓汤，黏滑的口感裹着坚果香"
-  },
-  {
-   "zh": "",
-   "en": "Soup Kandia",
-   "desc": "秋葵浓汤配鱼肉和蔬菜，黏丝拉长不断"
-  },
-  {
-   "zh": "",
-   "en": "Thiebou Yapp",
-   "desc": "米饭配羊肉和蔬菜，番茄汤底渗入每一粒米"
-  },
-  {
-   "zh": "",
-   "en": "Vermicelle Poulet",
-   "desc": "细面条配鸡肉和蔬菜，酱汁渗入每一根面丝"
-  },
-  {
-   "zh": "",
-   "en": "Acara",
-   "desc": "黑眼豆捏成饼炸至金黄，外酥内软带着豆香"
-  },
-  {
-   "zh": "",
-   "en": "Madd",
-   "desc": "鱼肉泥揉成丸子煮汤，鲜味溶入清汤底"
-  },
-  {
-   "zh": "",
-   "en": "Lakh",
-   "desc": "小米粗粒蒸熟拌入酸奶和糖，粒粒分明带着发酵的酸甜"
-  },
-  {
-   "zh": "",
-   "en": "Sombi",
-   "desc": "椰奶米饭布丁，甜糯温润，节庆时的甜蜜款待"
-  },
-  {
-   "zh": "",
-   "en": "Bouye Juice",
-   "desc": "猴面包树果实榨汁，酸甜冰凉的消暑饮品"
-  }
- ],
- "SD": [
-  {
-   "zh": "",
-   "en": "Umm Rgaigah",
-   "desc": "面糊摊成薄饼煎至两面金黄，配奶油和蜂蜜食用"
-  }
- ],
- "PR": [
-  {
-   "zh": "",
-   "en": "Arroz con dulce",
-   "desc": "Puerto Rican dessert"
-  }
- ]
+  "HU": [
+    {
+      "zh": "蘭戈斯",
+      "en": "lángos",
+      "desc": "面团炸至金黄蓬松，涂上酸奶油和蒜泥，外壳酥脆内心绵软"
+    },
+    {
+      "zh": "",
+      "en": "paprikash",
+      "desc": "鸡肉在红椒粉奶油酱中炖至酥烂，酱汁浓郁红亮，拌面团子绝佳"
+    },
+    {
+      "zh": "",
+      "en": "túrógombóc",
+      "desc": "奶酪搓成丸子裹面包糠煎至金黄，切开绵软带甜，配酸奶油"
+    },
+    {
+      "zh": "匈牙利湯",
+      "en": "gulyásleves",
+      "desc": "牛肉土豆在红椒粉汤中炖至酥烂，汤色红亮，辣中带甜"
+    },
+    {
+      "zh": "",
+      "en": "Rakott krumpli",
+      "desc": "土豆片和香肠层层叠放浇蛋液烤至金黄，切开拉丝绵密"
+    },
+    {
+      "zh": "",
+      "en": "franciasaláta",
+      "desc": "蔬菜丁拌蛋黄酱，绵密清爽，节庆冷盘的常客"
+    },
+    {
+      "zh": "",
+      "en": "csülök pékné módra",
+      "desc": "猪肘在烤箱中慢烤至皮脆肉嫩，油脂渗入土豆，外焦里糯"
+    }
+  ],
+  "CA": [
+    {
+      "zh": "夏威夷披萨",
+      "en": "Hawaiian pizza",
+      "desc": "菠萝和火腿铺在芝士上烤，酸甜与咸香的争议组合"
+    },
+    {
+      "zh": "卑诗卷",
+      "en": "B.C. roll",
+      "desc": "烤三文鱼和黄瓜裹在寿司里，温热的鱼肉遇上清脆"
+    },
+    {
+      "zh": "",
+      "en": "Garlic fingers",
+      "desc": "蒜蓉芝士拉丝的扁平面包，蘸蒜味黄油酱"
+    },
+    {
+      "zh": "",
+      "en": "Jiggs dinner",
+      "desc": "咸牛肉配卷心菜、土豆和胡萝卜，纽芬兰的家常大餐"
+    },
+    {
+      "zh": "",
+      "en": "sushi pizza",
+      "desc": "寿司米压成饼底炸脆，铺上生鱼片和酱料"
+    },
+    {
+      "zh": "",
+      "en": "Japadog",
+      "desc": "热狗上撒海苔和芥末，日式调味的街头小食"
+    },
+    {
+      "zh": "",
+      "en": "cod au gratin",
+      "desc": "鳕鱼肉拌上奶酪酱焗至表面金黄起泡"
+    }
+  ],
+  "FI": [
+    {
+      "zh": "鱼包",
+      "en": "kalakukko",
+      "desc": "黑麦面团裹住猪肉和鱼烤至外壳焦硬，切开是层层肉香鱼鲜"
+    },
+    {
+      "zh": "",
+      "en": "Porkkanalaatikko",
+      "desc": "胡萝卜泥和米粒烤成金黄焗饭，甜糯中带着肉桂的温暖"
+    },
+    {
+      "zh": "芬兰鲑鱼汤",
+      "en": "Lohikeitto",
+      "desc": "三文鱼块在奶油汤中炖至嫩滑，莳萝的清香飘在汤面"
+    },
+    {
+      "zh": "炒驯鹿肉",
+      "en": "sautéed reindeer",
+      "desc": "驯鹿肉切薄片煎至微焦，配土豆泥和越橘酱，野味与酸甜碰撞"
+    },
+    {
+      "zh": "",
+      "en": "cabbage casserole",
+      "desc": "卷心菜和米饭层层叠放烤至软烂，肉汁渗入每一层"
+    },
+    {
+      "zh": "",
+      "en": "Hotsi",
+      "desc": "肉末和土豆在烤盘中炖至酥烂，芬兰夏末的家常味道"
+    },
+    {
+      "zh": "",
+      "en": "Clot soup",
+      "desc": "血块凝固切块煮入浓汤，黑红如玛瑙，口感绵密带铁锈味"
+    },
+    {
+      "zh": "",
+      "en": "Läskisoosi",
+      "desc": "猪肉片在奶油蘑菇酱中炖至软嫩，浇在土豆上，浓郁饱腹"
+    },
+    {
+      "zh": "",
+      "en": "Puruvesi vendace",
+      "desc": "普鲁湖白鲑鱼体型小巧，肉质细嫩鲜甜，煎或烟熏皆宜"
+    },
+    {
+      "zh": "",
+      "en": "Pizza Poro",
+      "desc": "烟熏驯鹿肉铺在披萨上，配鸡油菌和红洋葱，北欧风味的碰撞"
+    },
+    {
+      "zh": "",
+      "en": "ärter med fläsk",
+      "desc": "豌豆泥炖猪肉块，绵软咸香，朴素的北欧农家菜"
+    },
+    {
+      "zh": "",
+      "en": "Vorschmack",
+      "desc": "碎肉和鲱鱼泥烤成浓味派，入口咸鲜带一丝发酵的冲击"
+    }
+  ],
+  "GH": [
+    {
+      "zh": "富富",
+      "en": "fufu",
+      "desc": "木薯或山药捣成软糯面团，蘸汤入口，嚼劲中带着淀粉的朴素甜味"
+    },
+    {
+      "zh": "",
+      "en": "omo tuo",
+      "desc": "米饭捏成圆球，绵软入味，浸入汤汁后一口一个满足"
+    },
+    {
+      "zh": "",
+      "en": "Tuo Zaafi",
+      "desc": "玉米面揉成黏稠团子，配秋葵汤食用，朴素而饱腹"
+    },
+    {
+      "zh": "",
+      "en": "wasawasa",
+      "desc": "薯蓣粉蒸成灰褐色糕体，淋上棕榈油汤，质朴的大地气息"
+    },
+    {
+      "zh": "",
+      "en": "Groundnut soup",
+      "desc": "花生磨成浓酱煮汤，油脂在汤面泛着金光，香醇浓厚"
+    },
+    {
+      "zh": "",
+      "en": "Plasas",
+      "desc": "菠菜叶炖煮至软烂混入棕榈油，绿色蔬菜的朴素鲜味"
+    }
+  ],
+  "KE": [
+    {
+      "zh": "乌咖喱",
+      "en": "ugali",
+      "desc": "玉米面搅成坚实面团，掰一块蘸肉汤，嚼出谷物的朴素满足"
+    },
+    {
+      "zh": "",
+      "en": "Githeri",
+      "desc": "玉米粒和豆子同煮，朴素的一锅出，撒上辣椒碎提味"
+    },
+    {
+      "zh": "",
+      "en": "Nyama choma",
+      "desc": "山羊肉在炭火上烤至微焦，撕开时肉汁流淌，蘸着辣椒盐吃"
+    }
+  ],
+  "IS": [
+    {
+      "zh": "冰島發酵鯊魚肉",
+      "en": "Hákarl",
+      "desc": "national dish of Iceland consisting of fermented shark"
+    }
+  ],
+  "UA": [
+    {
+      "zh": "錫爾尼基",
+      "en": "Syrniki",
+      "desc": "奶酪搓成小饼煎至两面金黄，外脆内软，配酸奶油和果酱"
+    },
+    {
+      "zh": "",
+      "en": "Cheer",
+      "desc": "碎肉和米饭裹在卷心菜叶中炖煮，肉汁浸入米粒，朴素饱腹"
+    },
+    {
+      "zh": "",
+      "en": "shpundra",
+      "desc": "猪排在甜菜根酱中慢炖至酥烂，酱汁紫红酸甜"
+    },
+    {
+      "zh": "",
+      "en": "Shulyky",
+      "desc": "面团擀薄切块烤至酥脆，蘸蜂蜜或酸奶油，节庆时的甜蜜"
+    },
+    {
+      "zh": "",
+      "en": "Grechanyky",
+      "desc": "荞麦和碎肉捏成饼煎至微焦，外酥内软，谷物的朴素香气"
+    },
+    {
+      "zh": "",
+      "en": "Mandrykas",
+      "desc": "面团发酵后烤至蓬松，涂上蜂蜜，节庆面包的甜蜜"
+    },
+    {
+      "zh": "",
+      "en": "Tsybulnyki",
+      "desc": "洋葱裹面糊煎成薄饼，外焦内软，洋葱的甜香渗入面皮"
+    },
+    {
+      "zh": "",
+      "en": "Darnitsa bread",
+      "desc": "黑麦和小麦混合烤成深色面包，切片扎实，嚼出麦子的酸香"
+    },
+    {
+      "zh": "",
+      "en": "kulesha",
+      "desc": "玉米面糊搅成浓稠粥状，配猪油或酸奶油，穷人的朴素主食"
+    },
+    {
+      "zh": "",
+      "en": "krupky",
+      "desc": "大麦粒在汤中煮至软糯，节庆时端上桌的仪式感"
+    },
+    {
+      "zh": "",
+      "en": "zlyvana kasha",
+      "desc": "牛奶煮小米粥至浓稠，表面浮着一层奶皮，清晨的温暖"
+    },
+    {
+      "zh": "",
+      "en": "varena",
+      "desc": "蜂蜜和香料煮成热饮，温热辛香，冬至时的节庆饮品"
+    }
+  ],
+  "NO": [
+    {
+      "zh": "炒驯鹿肉",
+      "en": "sautéed reindeer",
+      "desc": "驯鹿肉切薄片煎至微焦，野味浓郁，脂香中带一丝松木清香"
+    },
+    {
+      "zh": "",
+      "en": "Lauvsteik",
+      "desc": "猪肉片在奶油酱汁中慢炖至软嫩，浇在土豆泥上，浓郁暖胃"
+    },
+    {
+      "zh": "",
+      "en": "ärter med fläsk",
+      "desc": "豌豆泥炖猪肉块，绵软咸香，加油站和路边小馆的常见饱腹菜"
+    }
+  ],
+  "EE": [
+    {
+      "zh": "",
+      "en": "kiluvõileib",
+      "desc": "Estonian open-faced sprat sandwich"
+    },
+    {
+      "zh": "",
+      "en": "Mulgikapsad",
+      "desc": "cabbage-based dish in Estonian cuisine"
+    }
+  ],
+  "IE": [
+    {
+      "zh": "",
+      "en": "3-in-1",
+      "desc": "炒饭、薯条和咖喱酱三合一，快餐店里油腻满足的深夜食粮"
+    }
+  ],
+  "LU": [
+    {
+      "zh": "",
+      "en": "Kuddelfleck",
+      "desc": "traditional Luxembourgish dish made of boiled tripe"
+    }
+  ],
+  "DK": [
+    {
+      "zh": "",
+      "en": "ärter med fläsk",
+      "desc": "豌豆泥炖猪肉块，绵软咸香，搭配芥末和脆面包片"
+    }
+  ],
+  "JP": [
+    {
+      "zh": "溫泉蛋",
+      "en": "Onsen tamago",
+      "desc": "蛋白凝固如豆腐，蛋黄半熟流动，入口温热绵密"
+    },
+    {
+      "zh": "",
+      "en": "Chinmi",
+      "desc": "发酵海产的咸鲜冲击味蕾，余味悠长"
+    },
+    {
+      "zh": "什锦面",
+      "en": "champon",
+      "desc": "猪骨汤底浓郁，面条弹牙，海鲜与蔬菜交织"
+    },
+    {
+      "zh": "御节料理",
+      "en": "osechi",
+      "desc": "漆盒层层打开，甜煮黑豆、�的鱼糕、醋拌牛蒡，各有寓意"
+    },
+    {
+      "zh": "章鱼烧",
+      "en": "takoyaki",
+      "desc": "外壳微焦酥脆，内里软糯流动，咬开是章鱼的弹韧"
+    },
+    {
+      "zh": "茶碗蒸",
+      "en": "chawanmushi",
+      "desc": "蛋液如丝绸般滑嫩，勺子探入触到虾仁和鸡肉"
+    },
+    {
+      "zh": "冲绳面条",
+      "en": "Okinawa soba",
+      "desc": "粗面条软韧有嚼劲，猪骨汤头清澈却醇厚"
+    },
+    {
+      "zh": "吉列猪排",
+      "en": "tonkatsu",
+      "desc": "面包糠炸至金黄，咬下去咔嚓作响，肉汁涌出"
+    },
+    {
+      "zh": "鳗鱼饭",
+      "en": "unadon",
+      "desc": "鳗鱼表面焦甜，肉质软糯，酱汁渗入米饭"
+    },
+    {
+      "zh": "日式燒肉",
+      "en": "yakiniku",
+      "desc": "牛肉片在烤网上滋滋冒油，蘸酱入口即化"
+    },
+    {
+      "zh": "雜炊",
+      "en": "Zosui",
+      "desc": "米饭吸饱高汤，每一口都是温暖的鲜味"
+    },
+    {
+      "zh": "肉松",
+      "en": "rousong",
+      "desc": "蓬松如棉花，入口即化，肉香在舌尖散开"
+    },
+    {
+      "zh": "角色便當",
+      "en": "Kyaraben",
+      "desc": "便当盒里是卡通世界，小饭团变成猫咪的脸"
+    },
+    {
+      "zh": "",
+      "en": "Negimaki",
+      "desc": "牛肉薄片裹住葱段，酱汁甜咸交织"
+    },
+    {
+      "zh": "土瓶蒸",
+      "en": "dobin mushi",
+      "desc": "掀开壶盖，柚子清香扑面，汤汁澄澈鲜美"
+    },
+    {
+      "zh": "爐端燒",
+      "en": "robatayaki",
+      "desc": "炭火慢烤的焦香，食材原味在烟熏中释放"
+    },
+    {
+      "zh": "",
+      "en": "suimono",
+      "desc": "清汤见底，一缕柚子香，入口纯净"
+    },
+    {
+      "zh": "吉列雞",
+      "en": "torikatsu",
+      "desc": "鸡肉裹粉炸透，外酥内嫩，蘸酱提味"
+    },
+    {
+      "zh": "章魚香腸",
+      "en": "Octopus-shaped sausages",
+      "desc": "小香肠切出章鱼腿，煎后卷曲可爱"
+    },
+    {
+      "zh": "柿葉壽司",
+      "en": "kaki no ha zushi",
+      "desc": "柿叶包裹的寿司，米粒紧实，鱼肉鲜嫩带叶香"
+    }
+  ],
+  "IL": [
+    {
+      "zh": "",
+      "en": "Shkedei marak",
+      "desc": "金黄小方块酥脆，泡进汤里吸满汁水"
+    },
+    {
+      "zh": "",
+      "en": "Bamba",
+      "desc": "花生酱味的膨化棒，入口即化，轻盈蓬松"
+    },
+    {
+      "zh": "",
+      "en": "bourekas",
+      "desc": "酥皮层层起酥，咬开是奶酪或菠菜的咸香"
+    },
+    {
+      "zh": "",
+      "en": "Fatoot samneh",
+      "desc": "皮塔饼撕碎煎至焦脆，混入蛋液，酥香四溢"
+    },
+    {
+      "zh": "",
+      "en": "Fritas de prasa",
+      "desc": "韭菜裹面糊炸至金黄，外脆内软"
+    }
+  ],
+  "AZ": [
+    {
+      "zh": "",
+      "en": "Lula kebab",
+      "desc": "肉糜串在铁签上烤至微焦，油脂滴落炭火嘶嘶作响"
+    },
+    {
+      "zh": "",
+      "en": "Ovdukh",
+      "desc": "酸奶汤清凉爽口，黄瓜和莳萝的香气在舌尖打转"
+    },
+    {
+      "zh": "",
+      "en": "Əzmə",
+      "desc": "手撕面包蘸浓稠酱汁，粗犷的满足感"
+    }
+  ],
+  "HR": [
+    {
+      "zh": "",
+      "en": "Zagorski štrukli",
+      "desc": "面皮裹住奶酪馅卷起烤至金黄，切开奶酪拉丝，外酥内软"
+    },
+    {
+      "zh": "",
+      "en": "Soparnik",
+      "desc": "薄面饼裹入瑞士甜菜烤至焦脆，达尔马提亚的素食派"
+    },
+    {
+      "zh": "",
+      "en": "Zlijevka",
+      "desc": "玉米面和奶酪烤成金黄糕点，甜中带咸，节庆时的甜蜜"
+    }
+  ],
+  "PY": [
+    {
+      "zh": "",
+      "en": "piracaldo",
+      "desc": "鱼汤熬至乳白，木薯和玉米在汤中沉浮，鲜味质朴如河流"
+    },
+    {
+      "zh": "",
+      "en": "Jopara",
+      "desc": "黑豆和玉米糊混煮成浓稠一锅，暖胃管饱，牧民的日常主食"
+    },
+    {
+      "zh": "",
+      "en": "batiburrillo",
+      "desc": "牛杂在浓汤中炖煮，内脏的野味被香料驯服，浓烈回甘"
+    }
+  ],
+  "HT": [
+    {
+      "zh": "珠穆湯",
+      "en": "soup joumou",
+      "desc": "Haitian soup"
+    },
+    {
+      "zh": "",
+      "en": "Kasav",
+      "desc": "Haitian meal"
+    },
+    {
+      "zh": "",
+      "en": "griot",
+      "desc": "dish in Haitian cuisine"
+    }
+  ],
+  "MK": [
+    {
+      "zh": "",
+      "en": "Turli Tava",
+      "desc": ""
+    },
+    {
+      "zh": "",
+      "en": "Tarana",
+      "desc": "typical Macedonian dish"
+    }
+  ],
+  "KH": [
+    {
+      "zh": "",
+      "en": "bok l'hong",
+      "desc": "青木瓜丝脆爽，鱼露和青柠的酸辣在口中炸开"
+    },
+    {
+      "zh": "",
+      "en": "Happy pizza",
+      "desc": "薄脆饼底铺满配料，芝士拉丝"
+    }
+  ],
+  "CY": [
+    {
+      "zh": "萨尔玛",
+      "en": "sarma",
+      "desc": "cabbage, vine leaf, or other leaf roll"
+    }
+  ],
+  "JM": [
+    {
+      "zh": "",
+      "en": "Run down",
+      "desc": "Typical Caribbean dish made with coconut milk and seafood"
+    },
+    {
+      "zh": "",
+      "en": "jerk chicken",
+      "desc": "dish"
+    }
+  ],
+  "GY": [
+    {
+      "zh": "",
+      "en": "Pholourie",
+      "desc": "Fried, spiced dough balls"
+    }
+  ],
+  "GR": [
+    {
+      "zh": "",
+      "en": "lokma",
+      "desc": "小面球炸至金黄淋上糖浆，外壳酥脆内心绵软，甜蜜炸物"
+    },
+    {
+      "zh": "希臘香煎起司",
+      "en": "Saganaki",
+      "desc": "厚切奶酪在平底锅中煎至两面焦黄，挤上柠檬汁，外脆内拉丝"
+    },
+    {
+      "zh": "",
+      "en": "skordalia",
+      "desc": "土豆泥搅入蒜泥和橄榄油，浓稠如膏，蒜香冲鼻"
+    },
+    {
+      "zh": "",
+      "en": "Sofrito (stew)",
+      "desc": "牛肉在白葡萄酒蒜酱中慢炖至酥烂，酱汁浓稠醇厚"
+    },
+    {
+      "zh": "萨尔玛",
+      "en": "sarma",
+      "desc": "葡萄叶裹住米饭和碎肉蒸熟，酸香清新，叶香渗入馅料"
+    },
+    {
+      "zh": "",
+      "en": "Spanakorizo",
+      "desc": "菠菜和米粒在柠檬橄榄油中炖煮，翠绿酸香，清淡健康"
+    },
+    {
+      "zh": "",
+      "en": "tirokafteri",
+      "desc": "羊奶酪搅入辣椒和橄榄油成糊状，辣得过瘾，奶香裹住辣味"
+    },
+    {
+      "zh": "",
+      "en": "Strapatsada",
+      "desc": "番茄炒软后打入鸡蛋翻炒成嫩块，酸甜鲜香，简单快手"
+    },
+    {
+      "zh": "",
+      "en": "psari plaki",
+      "desc": "整鱼铺上番茄洋葱在烤箱中慢烤，鱼肉嫩滑，番茄汁浸润"
+    },
+    {
+      "zh": "",
+      "en": "dolmadakiа",
+      "desc": "葡萄叶裹住柠檬米饭蒸至叶片半透明，蘸酸奶油，酸香清新"
+    }
+  ],
+  "PL": [
+    {
+      "zh": "比哥斯",
+      "en": "bigos",
+      "desc": "酸菜和多种肉类在锅中炖煮数日，酸香浓厚，越炖越醇"
+    },
+    {
+      "zh": "茹爾湯",
+      "en": "sour rye soup",
+      "desc": "黑麦发酵汤底酸得清爽，配煮蛋和香肠，复活节的传统早餐"
+    },
+    {
+      "zh": "",
+      "en": "Häckerle",
+      "desc": "碎肉拌入面包丁和鸡蛋烤成肉饼，外焦内软，朴素的家常菜"
+    },
+    {
+      "zh": "",
+      "en": "lazanki",
+      "desc": "宽面条和酸菜碎肉翻炒，面片滑韧裹着酸菜的清爽"
+    },
+    {
+      "zh": "波蘭炸豬排",
+      "en": "kotlet schabowy",
+      "desc": "猪排裹面包糠炸至金黄酥脆，切开肉汁流淌，配土豆泥"
+    },
+    {
+      "zh": "",
+      "en": "Rumpuć",
+      "desc": "各种蔬菜切丁在清汤中煮至软烂，颜色缤纷，清淡暖胃"
+    },
+    {
+      "zh": "",
+      "en": "Prażonki",
+      "desc": "土豆和培根在烤盘中层层叠放烤至焦黄，油脂渗入土豆"
+    },
+    {
+      "zh": "",
+      "en": "Prażucha",
+      "desc": "大麦粉搅成浓稠糊状，配酸奶或培油，穷人的朴素食物"
+    },
+    {
+      "zh": "克拉科夫貝果",
+      "en": "Obwarzanek krakowski",
+      "desc": "编成辫子状的面包圈煮后烤至金黄，外壳微脆内里柔软"
+    },
+    {
+      "zh": "",
+      "en": "Peas with salo",
+      "desc": "豌豆炖至绵软，配腌猪油块，咸香和豆香交融"
+    }
+  ],
+  "MY": [
+    {
+      "zh": "",
+      "en": "Pelara",
+      "desc": "Food in Malaysia"
+    },
+    {
+      "zh": "",
+      "en": "Slemang",
+      "desc": "Dish in the Malaysian kitchen"
+    },
+    {
+      "zh": "",
+      "en": "Laksam",
+      "desc": "Meal in Malaysia"
+    },
+    {
+      "zh": "",
+      "en": "lompap daging",
+      "desc": "dish from Negeri Sembilan, Malaysia"
+    },
+    {
+      "zh": "",
+      "en": "ubi gaung buluh",
+      "desc": "bamboo dish from Malaysia"
+    },
+    {
+      "zh": "",
+      "en": "Chicken chop",
+      "desc": "Malaysian-styled fried chicken dish"
+    }
+  ],
+  "JO": [
+    {
+      "zh": "",
+      "en": "galayet bandora",
+      "desc": "番茄在锅中熬至浓稠，蘸着大饼吃，酸甜暖胃"
+    }
+  ],
+  "MM": [
+    {
+      "zh": "",
+      "en": "Buttered rice",
+      "desc": "黄油渗入每一粒米饭，扁豆绵软，入口油润"
+    },
+    {
+      "zh": "",
+      "en": "No htamin",
+      "desc": "椰浆浸润的糯米，节庆时端上桌的甜蜜"
+    },
+    {
+      "zh": "",
+      "en": "Burmese fried rice",
+      "desc": "大火翻炒的锅气，米饭粒粒分明"
+    },
+    {
+      "zh": "",
+      "en": "Cassia flower bud salad",
+      "desc": "花蕾脆嫩，拌入辣椒和花生，口感层次丰富"
+    },
+    {
+      "zh": "",
+      "en": "Hsi htamin",
+      "desc": "油饭粒粒透亮，咸香适口"
+    },
+    {
+      "zh": "",
+      "en": "Shwe htamin",
+      "desc": "金黄糯米甜而不腻，椰香在齿间萦绕"
+    }
+  ],
+  "LT": [
+    {
+      "zh": "",
+      "en": "Kepta duona",
+      "desc": "Lithuanian, latvian garlic bread chips"
+    }
+  ],
+  "MV": [
+    {
+      "zh": "",
+      "en": "Maskurolhi",
+      "desc": "金黄糯米甜而不腻，椰丝和香蕉叶的香气交融"
+    }
+  ],
+  "RU": [
+    {
+      "zh": "炒驯鹿肉",
+      "en": "sautéed reindeer",
+      "desc": "驯鹿肉切薄片煎至微焦，野味浓郁带一丝松木香"
+    },
+    {
+      "zh": "俄国沙拉",
+      "en": "Olivier salad",
+      "desc": "土豆丁胡萝卜丁拌蛋黄酱，绵密中咬到酸黄瓜"
+    },
+    {
+      "zh": "刮魚",
+      "en": "stroganina",
+      "desc": "冻鱼切成薄片，入口冰凉，鱼肉在舌尖慢慢化开"
+    },
+    {
+      "zh": "",
+      "en": "franciasaláta",
+      "desc": "蔬菜丁拌蛋黄酱，绵密清爽"
+    },
+    {
+      "zh": "",
+      "en": "Darnitsa bread",
+      "desc": "黑麦面包切片扎实，嚼出麦子的朴素酸香"
+    },
+    {
+      "zh": "",
+      "en": "rasstegai",
+      "desc": "开口馅饼露出肉馅，面皮酥软，汁水饱满"
+    },
+    {
+      "zh": "",
+      "en": "yurma",
+      "desc": "鱼汤在冻土上熬煮，热气在寒冷中升腾"
+    },
+    {
+      "zh": "",
+      "en": "muvi",
+      "desc": "鱼皮晾干嚼韧，原住民的原始鲜味"
+    },
+    {
+      "zh": "",
+      "en": "sulze",
+      "desc": "肉冻在盘中颤动，入口即化，胶质黏唇"
+    },
+    {
+      "zh": "",
+      "en": "Indigirka salad",
+      "desc": "冻鱼丁拌洋葱，冰碴在齿间碎裂"
+    },
+    {
+      "zh": "克缺",
+      "en": "Köje",
+      "desc": "小米粥浓稠暖胃，牧民的冬日早餐"
+    },
+    {
+      "zh": "",
+      "en": "skoblyanka",
+      "desc": "牛肉片和土豆蘑菇在铁锅中翻炒，焦香四溢"
+    },
+    {
+      "zh": "",
+      "en": "buuz",
+      "desc": "面皮厚实兜住羊肉馅，蒸熟后汁水饱满"
+    }
+  ],
+  "VN": [
+    {
+      "zh": "包饼",
+      "en": "bánh bao",
+      "desc": "面皮蓬松柔软，咬开是猪肉和鸡蛋的鲜香"
+    },
+    {
+      "zh": "餅蒸",
+      "en": "bánh chưng",
+      "desc": "方形粽叶包裹绿豆和猪肉，糯米紧实黏糯"
+    },
+    {
+      "zh": "越南湯圓",
+      "en": "chè trôi nước",
+      "desc": "糯米团在姜糖水中浮沉，咬开是黑芝麻流心"
+    },
+    {
+      "zh": "",
+      "en": "chả cá Lã Vọng",
+      "desc": "鱼块在铁板上滋滋作响，茴香和黄姜的香气升腾"
+    },
+    {
+      "zh": "米粿",
+      "en": "bánh bèo",
+      "desc": "小碟米皮薄如蝉翼，浇上虾米和炸葱油"
+    },
+    {
+      "zh": "",
+      "en": "bánh cáy",
+      "desc": "米糕切成薄片，甜脆中带着椰香"
+    },
+    {
+      "zh": "",
+      "en": "bánh rế",
+      "desc": "红薯丝编织成网，炸至酥脆，甜香扑鼻"
+    },
+    {
+      "zh": "餅截",
+      "en": "bánh tét",
+      "desc": "圆柱形粽子切开，绿豆泥和猪肉层层分明"
+    },
+    {
+      "zh": "cốm",
+      "en": "cốm",
+      "desc": "新收稻谷碾成扁米，青草清香在口中化开"
+    },
+    {
+      "zh": "脍卷",
+      "en": "gỏi cuốn",
+      "desc": "米纸卷透出虾和生菜的颜色，蘸酱酸甜开胃"
+    },
+    {
+      "zh": "",
+      "en": "Nem Lai Vung",
+      "desc": "猪肉春卷炸至金黄，外皮酥脆肉馅多汁"
+    },
+    {
+      "zh": "",
+      "en": "bánh trôi",
+      "desc": "小汤圆浮在姜汤里，糯米皮软糯，红糖馅甜润"
+    },
+    {
+      "zh": "",
+      "en": "bánh chay",
+      "desc": "素汤圆配红豆沙，清淡甘甜"
+    },
+    {
+      "zh": "烤肉米粉",
+      "en": "Bun cha",
+      "desc": "烤肉丸浸在鱼露汤里，米粉蘸汁吸味"
+    },
+    {
+      "zh": "",
+      "en": "Hủ tiếu",
+      "desc": "细米粉滑入骨汤，配上虾和猪肉片"
+    },
+    {
+      "zh": "綠豆糕",
+      "en": "bánh đậu xanh",
+      "desc": "绿豆糕入口即化成粉，甜度克制"
+    },
+    {
+      "zh": "",
+      "en": "chả trứng",
+      "desc": "蛋肉糕蒸得厚实，切片后能看到肉粒和木耳"
+    },
+    {
+      "zh": "",
+      "en": "Nộm hoa chuối",
+      "desc": "香蕉花丝拌鸡肉，酸辣脆爽"
+    }
+  ],
+  "TH": [
+    {
+      "zh": "紅咖哩",
+      "en": "red curry",
+      "desc": "椰浆裹着辣油，红咖喱在舌面铺开温热的辣"
+    },
+    {
+      "zh": "",
+      "en": "mi krop",
+      "desc": "细面炸至蓬松酥脆，浇上酸甜酱汁，咔嚓一声"
+    },
+    {
+      "zh": "猪脚饭",
+      "en": "khao kha mu",
+      "desc": "猪蹄炖到皮肉分离，胶质黏唇，浇在白饭上"
+    },
+    {
+      "zh": "",
+      "en": "Roti sai mai",
+      "desc": "薄饼裹入彩色棉花糖，甜丝丝在齿间融化"
+    },
+    {
+      "zh": "",
+      "en": "Khanom thuai",
+      "desc": "小杯椰奶布丁，滑嫩如凝脂，底部是焦糖"
+    },
+    {
+      "zh": "",
+      "en": "pu phat phong kari",
+      "desc": "蟹肉裹着咖喱粉翻炒，咸鲜带一丝微辣"
+    },
+    {
+      "zh": "打抛猪肉饭",
+      "en": "phat kaphrao",
+      "desc": "打抛叶的辛香渗入猪肉碎，配煎蛋戳破蛋黄"
+    },
+    {
+      "zh": "",
+      "en": "Wing Bean Salad",
+      "desc": "翼豆脆如生豆角，拌入椰奶和虾米，酸辣清爽"
+    },
+    {
+      "zh": "",
+      "en": "Khao mu daeng",
+      "desc": "叉烧肉片铺在饭上，甜酱汁渗入米粒"
+    },
+    {
+      "zh": "",
+      "en": "Kuai tiao pak mo",
+      "desc": "薄皮馄饨浮在清汤里，猪肉馅鲜嫩"
+    },
+    {
+      "zh": "",
+      "en": "Tom som",
+      "desc": "酸汤开胃，罗望子的酸和虾的鲜在汤里平衡"
+    },
+    {
+      "zh": "",
+      "en": "Khao man gai",
+      "desc": "鸡油饭粒粒油亮，鸡肉嫩滑，蘸酱微辣提鲜"
+    }
+  ],
+  "LK": [
+    {
+      "zh": "阿榜糕",
+      "en": "appam",
+      "desc": "边缘薄脆如蕾丝，中心软厚，椰香奶味"
+    },
+    {
+      "zh": "",
+      "en": "Bibikkan",
+      "desc": "椰子蛋糕湿润扎实，棕糖的焦香在口中化开"
+    },
+    {
+      "zh": "",
+      "en": "Mallung",
+      "desc": "碎叶拌椰丝和辣椒，入口清新带嚼劲"
+    },
+    {
+      "zh": "",
+      "en": "Lamprais",
+      "desc": "蕉叶包裹米饭和咖喱，蒸出的香气层层渗透"
+    }
+  ],
+  "CF": [
+    {
+      "zh": "",
+      "en": "Maboké",
+      "desc": "dish in Central African Republic"
+    }
+  ],
+  "UY": [
+    {
+      "zh": "",
+      "en": "picada",
+      "desc": "切块肉肠芝士铺满木板，随手拈来，咸香下酒"
+    },
+    {
+      "zh": "",
+      "en": "Matambre with milk",
+      "desc": "薄肉片在牛奶中慢炖至软嫩，奶香渗入肉纹，温润绵长"
+    }
+  ],
+  "DE": [
+    {
+      "zh": "烤烙饼",
+      "en": "tarte flambée",
+      "desc": "土豆丝煎成金黄圆饼，边缘焦脆内心绵软"
+    },
+    {
+      "zh": "",
+      "en": "Bauernfrühstück",
+      "desc": "土豆和鸡蛋在平底锅中翻炒，简单朴实的满足"
+    },
+    {
+      "zh": "汉堡",
+      "en": "hamburger",
+      "desc": "食品"
+    },
+    {
+      "zh": "",
+      "en": "Häckerle",
+      "desc": "猪肉和谷物灌成粗肠，切片煎至表面微焦"
+    },
+    {
+      "zh": "",
+      "en": "Saumagen",
+      "desc": "猪肉和土豆填入猪肚中煮透，切片后油脂分明"
+    },
+    {
+      "zh": "法蘭克福腸",
+      "en": "Frankfurter Würstchen",
+      "desc": "细细的肠衣一咬即破，肉汁在口中迸溅"
+    },
+    {
+      "zh": "",
+      "en": "Bayrisch Kraut",
+      "desc": "卷心菜用白葡萄酒慢炖，酸甜中带着酒香"
+    },
+    {
+      "zh": "肝丸湯",
+      "en": "Leberknödel",
+      "desc": "肝泥做成丸子沉入清汤，咬开是绵密的肝香"
+    },
+    {
+      "zh": "結婚湯 (德國)",
+      "en": "Hochzeitssuppe",
+      "desc": "金色清汤中浮着小肉丸和细面条，婚宴的第一道"
+    },
+    {
+      "zh": "",
+      "en": "Spundekäs",
+      "desc": "奶油芝士打成泥，小茴香籽点缀其中，抹面包吃"
+    },
+    {
+      "zh": "",
+      "en": "buckwheat dumplings",
+      "desc": "荞麦面团切成小块，嚼起来带着粗粮的朴素香气"
+    },
+    {
+      "zh": "Möpkenbrot",
+      "en": "Möpkenbrot",
+      "desc": "粗粒谷物和猪肉灌入肠衣，切片后颗粒感十足"
+    },
+    {
+      "zh": "",
+      "en": "crab soup",
+      "desc": "蟹肉和奶油熬成浓汤，斋期的鲜味慰藉"
+    },
+    {
+      "zh": "",
+      "en": "Mettigel",
+      "desc": "生猪肉泥做成刺猬形状，面包丁插满全身"
+    },
+    {
+      "zh": "",
+      "en": "Pfefferpotthast",
+      "desc": "牛肉和洋葱在红酒中炖至酥烂，胡椒的暖意渗透"
+    },
+    {
+      "zh": "鹽煮馬鈴薯",
+      "en": "salt potatoes",
+      "desc": "小土豆煮熟表面结出薄薄盐霜，掰开粉糯"
+    },
+    {
+      "zh": "",
+      "en": "serviettenknödel",
+      "desc": "面包面团用布卷起蒸熟，切片后孔隙均匀吸汁"
+    },
+    {
+      "zh": "生豬肉沫",
+      "en": "Mett",
+      "desc": "生猪肉泥抹在黑麦面包上，生洋葱碎辛辣提味"
+    },
+    {
+      "zh": "",
+      "en": "Russisch ei",
+      "desc": "煮鸡蛋对半切开，蛋黄酱填入，撒上辣椒粉"
+    },
+    {
+      "zh": "",
+      "en": "Würzfleisch",
+      "desc": "肉块在浓稠酱汁中炖至酥烂，香料层次分明"
+    }
+  ],
+  "TG": [
+    {
+      "zh": "",
+      "en": "Ablo",
+      "desc": "traditional white cake in West Africa"
+    },
+    {
+      "zh": "",
+      "en": "Djenkoume",
+      "desc": "Togolese tomato cornmeal fritters"
+    },
+    {
+      "zh": "",
+      "en": "Eba",
+      "desc": "West African staple food"
+    },
+    {
+      "zh": "",
+      "en": "akassa",
+      "desc": "type of dough made from cooked, ground and soaked corn, eaten in Benin, Nigeria, Burkina Faso, Togo and Côte d'Ivoire"
+    },
+    {
+      "zh": "",
+      "en": "Asaro",
+      "desc": "traditional Yoruba dish made with yams and spices"
+    }
+  ],
+  "NC": [
+    {
+      "zh": "",
+      "en": "Bougna",
+      "desc": "traditional feast dish in New Caledonia"
+    }
+  ],
+  "XK": [
+    {
+      "zh": "",
+      "en": "Tomato casserole from Gjakova",
+      "desc": "Baked dish consisting mainly of tomatoes, onions and beef"
+    },
+    {
+      "zh": "",
+      "en": "Onion casserole from Gjakova",
+      "desc": "Baked dish consisting mainly of roasted onions, and meat"
+    }
+  ],
+  "BF": [
+    {
+      "zh": "",
+      "en": "akassa",
+      "desc": "type of dough made from cooked, ground and soaked corn, eaten in Benin, Nigeria, Burkina Faso, Togo and Côte d'Ivoire"
+    },
+    {
+      "zh": "",
+      "en": "Gonré",
+      "desc": "local Burkinabè food"
+    },
+    {
+      "zh": "",
+      "en": "Gonré",
+      "desc": "burkinabè food"
+    }
+  ],
+  "ZW": [
+    {
+      "zh": "",
+      "en": "umxhanxa",
+      "desc": "Zimbabwean dish"
+    }
+  ],
+  "BY": [
+    {
+      "zh": "",
+      "en": "Grechanyky",
+      "desc": "Ukrainian dish"
+    },
+    {
+      "zh": "",
+      "en": "sugared cranberries",
+      "desc": ""
+    },
+    {
+      "zh": "",
+      "en": "tsybryki",
+      "desc": "Belarusian fried potato dumplings"
+    }
+  ],
+  "ES": [
+    {
+      "zh": "",
+      "en": "cocido",
+      "desc": "鹰嘴豆和各种肉在汤中炖透，汤和菜分两道吃"
+    },
+    {
+      "zh": "",
+      "en": "gachas",
+      "desc": "面粉糊搅至浓稠，淋上橄榄油和蒜片"
+    },
+    {
+      "zh": "",
+      "en": "Migas",
+      "desc": "隔夜面包掰碎和蒜片辣椒一起煎至焦香"
+    },
+    {
+      "zh": "法瓦達",
+      "en": "Fabada asturiana",
+      "desc": "白芸豆和猪肉在砂锅中炖至酥烂，汤汁浓厚"
+    },
+    {
+      "zh": "",
+      "en": "Caldo galego",
+      "desc": "加利西亚菜汤，土豆和芸豆在猪油中煮透"
+    },
+    {
+      "zh": "",
+      "en": "calçotada",
+      "desc": "烤葱蘸杏仁酱，拨开焦黑外皮露出甜软内心"
+    },
+    {
+      "zh": "",
+      "en": "Lacón Gallego",
+      "desc": "加利西亚猪肩肉盐渍风干，切片后油脂在舌面化开"
+    },
+    {
+      "zh": "",
+      "en": "Moros y Cristianos",
+      "desc": "黑豆和白米盛在同一个盘里，经典搭配"
+    },
+    {
+      "zh": "",
+      "en": "fideuà",
+      "desc": "细面条代替米饭在海鲜高汤中煮透，锅底焦脆"
+    },
+    {
+      "zh": "",
+      "en": "Judías de El Barco de Ávila",
+      "desc": "阿维拉白芸豆个大饱满，炖至绵软却不散"
+    },
+    {
+      "zh": "",
+      "en": "Conejo en salmorejo",
+      "desc": "兔肉在蒜和罗勒腌汁中入味，炭烤至皮焦肉嫩"
+    },
+    {
+      "zh": "",
+      "en": "Esqueixada",
+      "desc": "鳕鱼丝用手撕碎拌入番茄洋葱，橄榄油的清香托底"
+    },
+    {
+      "zh": "",
+      "en": "Arroz con costra",
+      "desc": "米饭铺满海鲜在烤箱中焗出焦脆锅巴"
+    },
+    {
+      "zh": "",
+      "en": "Espineta amb caragolins",
+      "desc": "猪肉和蜗牛在陶锅中慢炖，加泰罗尼亚的家常"
+    },
+    {
+      "zh": "",
+      "en": "Gurullos",
+      "desc": "面疙瘩和蔬菜在汤中煮至软烂，牧羊人的暖食"
+    },
+    {
+      "zh": "",
+      "en": "Pulte",
+      "desc": "古老谷物煮成粗粥，牧羊人的朴素暖食"
+    },
+    {
+      "zh": "",
+      "en": "Sopas",
+      "desc": "面包片浸在肉汤中至软烂，中世纪流传至今"
+    },
+    {
+      "zh": "",
+      "en": "Arròs al forn",
+      "desc": "米饭铺满海鲜在烤箱中焗至表面焦黄"
+    },
+    {
+      "zh": "",
+      "en": "Hormigo",
+      "desc": "巴斯克地区的玉米糊配鳕鱼，粗犷扎实"
+    },
+    {
+      "zh": "",
+      "en": "Caragolada",
+      "desc": "蜗牛带壳在蒜香和辣椒水中煮透，加泰罗尼亚的夏夜"
+    }
+  ],
+  "SK": [
+    {
+      "zh": "",
+      "en": "lokša",
+      "desc": "土豆泥揉入面团擀薄煎成软饼，配鹅油或果酱，朴素百搭"
+    },
+    {
+      "zh": "斯特拉帕奇基",
+      "en": "strapačky",
+      "desc": "面疙瘩和酸菜或奶酪翻炒，疙瘩弹牙裹着酸香"
+    }
+  ],
+  "RO": [
+    {
+      "zh": "米提提",
+      "en": "Mititei",
+      "desc": "无衣香肠搓成条在炭火上烤至微焦，外脆内嫩，蒜香四溢"
+    },
+    {
+      "zh": "",
+      "en": "Ganca",
+      "desc": "玉米面糊搅成浓稠粥状，配酸奶或奶酪，罗马尼亚乡间的朴素主食"
+    },
+    {
+      "zh": "",
+      "en": "sarmale",
+      "desc": "卷心菜叶裹住碎肉和米饭在酸菜汤中炖煮，酸香入味"
+    },
+    {
+      "zh": "",
+      "en": "Chifteluțe marinate",
+      "desc": "肉丸裹番茄酱在烤箱中焖至入味，酱汁酸甜，肉丸弹嫩"
+    },
+    {
+      "zh": "",
+      "en": "Varză à la Cluj",
+      "desc": "碎肉和卷心菜层层叠放烤至焦香，匈罗混血的家常大菜"
+    }
+  ],
+  "DZ": [
+    {
+      "zh": "",
+      "en": "Chrik",
+      "desc": ""
+    },
+    {
+      "zh": "",
+      "en": "Cocas",
+      "desc": ""
+    },
+    {
+      "zh": "烏斯班腸",
+      "en": "Usban",
+      "desc": "North African dish of sausage stuffed with rice, herbs, lamb, chopped liver and heart"
+    },
+    {
+      "zh": "",
+      "en": "frita",
+      "desc": ""
+    },
+    {
+      "zh": "",
+      "en": "Mtewem",
+      "desc": "Algerian meal"
+    },
+    {
+      "zh": "",
+      "en": "Sohlob",
+      "desc": "dessert"
+    },
+    {
+      "zh": "",
+      "en": "lalak",
+      "desc": ""
+    },
+    {
+      "zh": "",
+      "en": "Rfiss",
+      "desc": ""
+    },
+    {
+      "zh": "",
+      "en": "Acewwaḍ",
+      "desc": ""
+    },
+    {
+      "zh": "",
+      "en": "Adghess",
+      "desc": ""
+    },
+    {
+      "zh": "",
+      "en": "Aftir oukessoul",
+      "desc": ""
+    },
+    {
+      "zh": "",
+      "en": "Tajine Lham-Lahlou",
+      "desc": "Algerian food"
+    },
+    {
+      "zh": "",
+      "en": "Adjidjat",
+      "desc": ""
+    },
+    {
+      "zh": "",
+      "en": "Pizza carrée",
+      "desc": "type of pizza of Algeria"
+    }
+  ],
+  "GE": [
+    {
+      "zh": "",
+      "en": "Achma",
+      "desc": "千层面皮浸在奶酪里，每一层都拉丝绵密"
+    },
+    {
+      "zh": "",
+      "en": "Muzhuzhi",
+      "desc": "猪肉冻在口中化开，凉凉的胶质带着蒜香"
+    },
+    {
+      "zh": "Chkmeruli",
+      "en": "Shkmeruli",
+      "desc": "整鸡浸在蒜蓉牛奶酱里，蒜香浓郁却不刺鼻"
+    },
+    {
+      "zh": "",
+      "en": "chashushuli",
+      "desc": "牛肉和番茄炖至酥烂，汤汁酸甜浓厚"
+    }
+  ],
+  "MT": [
+    {
+      "zh": "",
+      "en": "Fenek",
+      "desc": "Dining in Malta"
+    },
+    {
+      "zh": "",
+      "en": "Fenkata",
+      "desc": "Maltese dish"
+    },
+    {
+      "zh": "",
+      "en": "Stuffat tal-fenek",
+      "desc": "Rabbit stew, cuisine of Malta"
+    },
+    {
+      "zh": "",
+      "en": "Ħobż biż-żejt",
+      "desc": "Maltese appetizer"
+    }
+  ],
+  "BZ": [
+    {
+      "zh": "奇莫利",
+      "en": "chimole",
+      "desc": "soup"
+    }
+  ],
+  "BA": [
+    {
+      "zh": "",
+      "en": "kvrguša",
+      "desc": "鸡蛋面糊铺在烤盘中烤至蓬松金黄，配酸奶油，朴素温暖"
+    }
+  ],
+  "CU": [
+    {
+      "zh": "",
+      "en": "Rice with chicken a la chorrera",
+      "desc": "鸡肉和米饭在番茄酱汁中焖煮，米粒吸饱鸡汁的鲜"
+    },
+    {
+      "zh": "",
+      "en": "Yam with cod",
+      "desc": "山药和鳕鱼同炖至绵软，海的咸鲜渗入根茎的朴实"
+    },
+    {
+      "zh": "",
+      "en": "Mollete melenero",
+      "desc": "面包夹入肉酱和芝士，街头小摊递来的热乎满足"
+    }
+  ],
+  "SR": [
+    {
+      "zh": "",
+      "en": "Pholourie",
+      "desc": "Fried, spiced dough balls"
+    },
+    {
+      "zh": "",
+      "en": "Pom",
+      "desc": "oven dish"
+    }
+  ],
+  "US": [
+    {
+      "zh": "汉堡",
+      "en": "hamburger",
+      "desc": "牛肉饼煎至焦香多汁，夹在松软的圆面包里，配酸黄瓜和洋葱"
+    },
+    {
+      "zh": "梳士巴利漢堡扒",
+      "en": "Salisbury steak",
+      "desc": "汉堡肉饼裹上浓郁的蘑菇酱汁，肉质紧实多汁"
+    },
+    {
+      "zh": "紅豆飯",
+      "en": "Red beans and rice",
+      "desc": "红豆炖至绵软，配白米饭，路易斯安那克里奥尔风味的灵魂"
+    },
+    {
+      "zh": "薄烤饼",
+      "en": "pancake",
+      "desc": "薄煎饼蓬松柔软，淋上枫糖浆，黄油在热气中融化"
+    },
+    {
+      "zh": "鹽煮馬鈴薯",
+      "en": "salt potatoes",
+      "desc": "小土豆煮在浓盐水里，表皮结出薄盐壳，黄油渗入绵软的内里"
+    },
+    {
+      "zh": "",
+      "en": "Negimaki",
+      "desc": "牛肉薄片裹住葱段，酱汁甜咸交织"
+    },
+    {
+      "zh": "",
+      "en": "muffuletta",
+      "desc": "圆面包切开塞满意大利腌肉和橄榄沙拉，层层叠叠的咸香"
+    },
+    {
+      "zh": "培根蛋麵",
+      "en": "carbonara",
+      "desc": "蛋黄和培根裹住每一根面条，奶香浓郁却不腻"
+    },
+    {
+      "zh": "俱乐部三明治",
+      "en": "club sandwich",
+      "desc": "三层吐司夹着培根、生菜和番茄，切开时整齐地露出横截面"
+    },
+    {
+      "zh": "路德汉堡",
+      "en": "Luther Burger",
+      "desc": "甜甜圈代替面包夹汉堡，甜咸碰撞的罪恶感"
+    },
+    {
+      "zh": "玉米狗",
+      "en": "corn dog",
+      "desc": "玉米面糊裹住热狗炸至金黄，咬下去外酥内弹"
+    },
+    {
+      "zh": "蟹肉餅",
+      "en": "crab cake",
+      "desc": "蟹肉捏成饼煎至两面金黄，蟹肉的鲜甜在口中散开"
+    },
+    {
+      "zh": "加州卷",
+      "en": "California roll",
+      "desc": "米饭在外层，黄瓜、蟹肉和牛油果在内，蘸酱油一口一个"
+    },
+    {
+      "zh": "夏威夷米饭汉堡",
+      "en": "Loco moco",
+      "desc": "白饭上放汉堡肉饼，浇上肉汁，顶一个煎蛋，夏威夷的碳水炸弹"
+    },
+    {
+      "zh": "红色天鹅绒蛋糕",
+      "en": "red velvet cake",
+      "desc": "红色天鹅绒蛋糕体湿润绵密，奶油芝士霜甜中带酸"
+    },
+    {
+      "zh": "烤棉花糖",
+      "en": "s'more",
+      "desc": "烤棉花糖夹在饼干和巧克力之间，拉丝的甜蜜"
+    },
+    {
+      "zh": "奶油白醬寬版麵",
+      "en": "Fettuccine Alfredo",
+      "desc": "宽面条裹上浓郁的帕马森黄油酱，滑顺绵密"
+    },
+    {
+      "zh": "",
+      "en": "bean pie",
+      "desc": "白豆泥做成的甜派，口感绵密如南瓜派"
+    },
+    {
+      "zh": "",
+      "en": "celery Victor",
+      "desc": "西芹腌至入味，配凤尾鱼和番茄，清爽开胃"
+    },
+    {
+      "zh": "",
+      "en": "City chicken",
+      "desc": "猪肉块串成棒状烤熟，外焦里嫩"
+    }
+  ],
+  "IQ": [
+    {
+      "zh": "",
+      "en": "lokma",
+      "desc": "小面球炸透淋糖浆，外壳酥脆内心绵软"
+    },
+    {
+      "zh": "",
+      "en": "Piyaz",
+      "desc": "白芸豆拌洋葱番茄，橄榄油和柠檬汁的酸香托底"
+    },
+    {
+      "zh": "",
+      "en": "Arook",
+      "desc": "面饼裹肉馅烤至外壳焦脆，掰开肉汁流出"
+    }
+  ],
+  "PE": [
+    {
+      "zh": "万卡约土豆",
+      "en": "Papa a la Hancaina",
+      "desc": "金黄土豆浇上辣椒奶黄酱，绵密中带一丝辛辣，酱汁浓郁挂壁"
+    },
+    {
+      "zh": "秘鲁炒牛柳",
+      "en": "Lomo saltado",
+      "desc": "牛柳在大火中翻炒，酱油和醋的酸甜渗入，薯条和米饭同盘争艳"
+    },
+    {
+      "zh": "",
+      "en": "sangrecita",
+      "desc": "鸡血在锅中凝结，混入香料和柠檬汁，口感绵密带铁锈般的野性"
+    },
+    {
+      "zh": "",
+      "en": "Empanadilla",
+      "desc": "酥皮半圆炸至金黄，咬开是肉末和橄榄的咸香"
+    },
+    {
+      "zh": "",
+      "en": "Olluquito",
+      "desc": "块根炖至软糯，羊肉丝和辣椒在浓稠汤汁中交融"
+    },
+    {
+      "zh": "",
+      "en": "Peruvian pollada",
+      "desc": "整鸡腌透后烤至皮焦肉嫩，邻里聚会时的热闹滋味"
+    },
+    {
+      "zh": "",
+      "en": "Malarrabia",
+      "desc": "香蕉煮至绵软捣碎，混入奶酪，甜咸交织的朴素甜品"
+    }
+  ],
+  "CO": [
+    {
+      "zh": "阿瑞巴",
+      "en": "arepa",
+      "desc": "玉米饼烤至两面焦黄，外脆内软，可夹芝士或肉馅"
+    }
+  ],
+  "KP": [
+    {
+      "zh": "",
+      "en": "injo-gogi-bap",
+      "desc": "豆皮裹住米饭，咬开是朴素的豆香"
+    },
+    {
+      "zh": "",
+      "en": "bossam-kimchi",
+      "desc": "整棵白菜包入馅料发酵，酸脆多汁"
+    },
+    {
+      "zh": "平壤温饭",
+      "en": "Pyŏngyang onban",
+      "desc": "鸡汤浇在白饭上，鸡肉丝和鸡蛋铺满，清淡暖身"
+    }
+  ],
+  "PW": [
+    {
+      "zh": "",
+      "en": "Fruit Bat Soup",
+      "desc": "dish of Palau"
+    }
+  ],
+  "TD": [
+    {
+      "zh": "",
+      "en": "Esh",
+      "desc": "Chadian dish"
+    }
+  ],
+  "SY": [
+    {
+      "zh": "",
+      "en": "lokma",
+      "desc": "小面团炸至金黄，淋上糖浆，外壳酥脆内心绵软"
+    },
+    {
+      "zh": "",
+      "en": "bülbülyuvası",
+      "desc": "细丝面编成鸟巢状，烤至焦脆，内藏坚果"
+    },
+    {
+      "zh": "",
+      "en": "Bāṭarsh",
+      "desc": "茄子炖至软烂，番茄和蒜的香气融为一体"
+    },
+    {
+      "zh": "",
+      "en": "Halawet el Jibn",
+      "desc": "奶酪面皮裹住奶油，撒上开心果碎，甜润柔滑"
+    },
+    {
+      "zh": "",
+      "en": "kibbeh mashwiyya",
+      "desc": "碎麦裹肉馅烤至外壳微焦，内里多汁"
+    },
+    {
+      "zh": "",
+      "en": "Mahmoosa",
+      "desc": "茄子泥搅打成糊，酸甜绵密"
+    },
+    {
+      "zh": "",
+      "en": "As-sabʿa dūal",
+      "desc": "七种蔬菜炖煮一锅，各有各的软糯"
+    },
+    {
+      "zh": "",
+      "en": "Hummus bil-lahm",
+      "desc": "鹰嘴豆泥上铺着炒羊肉碎，一勺舀到底"
+    }
+  ],
+  "TW": [
+    {
+      "zh": "大肠包小肠",
+      "en": "Small sausage in large sausage",
+      "desc": "糯米肠切开夹入台式香肠，炭烤后外皮微焦"
+    },
+    {
+      "zh": "碗粿",
+      "en": "Savory rice pudding",
+      "desc": "碗粿蒸得扎实，切块淋酱膏，米香混着肉燥"
+    },
+    {
+      "zh": "台式蛋餅",
+      "en": "Danbing",
+      "desc": "蛋液摊在薄饼上，卷起切段，葱香四溢"
+    },
+    {
+      "zh": "得麼面",
+      "en": "Tmmyan",
+      "desc": "酸辣汤头浓郁，面条吸满汤汁"
+    },
+    {
+      "zh": "桶仔雞",
+      "en": "Barrel chicken",
+      "desc": "整只鸡在铁桶中慢烤，皮脆肉嫩，撕开冒热气"
+    },
+    {
+      "zh": "喜烙",
+      "en": "silaw",
+      "desc": "小米酒发酵的酸味渗入鱼肉，原住民的野性滋味"
+    },
+    {
+      "zh": "吉拿富",
+      "en": "cinavu",
+      "desc": "小米和猪肉裹在假酸叶里蒸熟，叶香入肉"
+    },
+    {
+      "zh": "鳳梨蝦球",
+      "en": "Pineapple shrimp balls",
+      "desc": "虾球裹上酥粉炸透，配菠萝的酸甜"
+    },
+    {
+      "zh": "台式牛排",
+      "en": "Taiwanese Steak",
+      "desc": "铁板上牛排滋滋响，浇上黑椒酱，配荷包蛋"
+    },
+    {
+      "zh": "兜麵",
+      "en": "tāu-mī",
+      "desc": "豆签煮成糊状，入口滑顺，带着淡淡的豆香"
+    }
+  ],
+  "LB": [
+    {
+      "zh": "",
+      "en": "Balila",
+      "desc": "鹰嘴豆炖至绵软，浇上橄榄油和柠檬汁"
+    }
+  ],
+  "NI": [
+    {
+      "zh": "",
+      "en": "Cushta",
+      "desc": "Nicaraguan cuisine dish"
+    },
+    {
+      "zh": "",
+      "en": "Vaho",
+      "desc": "维基媒体消歧义页"
+    },
+    {
+      "zh": "",
+      "en": "repocheta",
+      "desc": "Nicaraguan typical food"
+    }
+  ],
+  "KR": [
+    {
+      "zh": "猪肉汤饭",
+      "en": "dwaeji-gukbap",
+      "desc": "猪骨汤熬至乳白，肉片薄嫩，米饭吸满汤汁"
+    },
+    {
+      "zh": "",
+      "en": "Doganitang",
+      "desc": "牛膝骨汤胶质浓厚，骨髓在齿间滑腻"
+    },
+    {
+      "zh": "溜三丝",
+      "en": "yusanseul",
+      "desc": "三丝在高汤中交融，粉丝吸饱鲜味"
+    },
+    {
+      "zh": "",
+      "en": "Gaetteok",
+      "desc": "米糕弹牙有韧劲，嚼出米粒的清甜"
+    },
+    {
+      "zh": "",
+      "en": "cheese tteokbokki",
+      "desc": "辣酱裹着年糕，芝士拉丝缠绕，甜辣交织"
+    }
+  ],
+  "NP": [
+    {
+      "zh": "",
+      "en": "Pukala",
+      "desc": "水牛杂碎煮熟再炸至表面起泡，外脆内韧"
+    }
+  ],
+  "TJ": [
+    {
+      "zh": "",
+      "en": "upka",
+      "desc": "面团擀薄裹馅蒸熟，蘸酸奶吃，朴素管饱"
+    }
+  ],
+  "TZ": [
+    {
+      "zh": "",
+      "en": "Nyama choma",
+      "desc": "炭火烤山羊肉，表皮焦脆内里多汁，配乌咖喱一起入口"
+    }
+  ],
+  "PH": [
+    {
+      "zh": "",
+      "en": "Empanadilla",
+      "desc": "酥皮半圆炸至金黄，咬开是肉末和蔬菜的咸香"
+    },
+    {
+      "zh": "",
+      "en": "Paelya",
+      "desc": "藏红花染黄的米饭铺满海鲜，锅底有焦脆的锅巴"
+    },
+    {
+      "zh": "",
+      "en": "Kalamay",
+      "desc": "糯米糕黏得拉丝，椰糖的甜味浓郁持久"
+    },
+    {
+      "zh": "",
+      "en": "Pares",
+      "desc": "红烧牛肉炖至酥烂，汤汁浓稠，拌饭一绝"
+    },
+    {
+      "zh": "",
+      "en": "Igado",
+      "desc": "猪肝和猪肉切丝翻炒，酱汁咸鲜入味"
+    },
+    {
+      "zh": "",
+      "en": "Java Rice",
+      "desc": "姜黄染金的米饭粒粒分明，微辣开胃"
+    },
+    {
+      "zh": "",
+      "en": "Humba",
+      "desc": "五花肉慢炖至软糯，酱油和醋的酸甜渗入每一层"
+    },
+    {
+      "zh": "",
+      "en": "Salukara",
+      "desc": "椰浆米饼煎至两面焦黄，外脆内软"
+    },
+    {
+      "zh": "",
+      "en": "Moche",
+      "desc": "糯米团裹着花生碎，甜香在齿间碾碎"
+    },
+    {
+      "zh": "",
+      "en": "Mache",
+      "desc": "糯米包肉馅蒸熟，叶香渗入米粒"
+    },
+    {
+      "zh": "",
+      "en": "Masi",
+      "desc": "糯米球裹花生碎，弹牙中藏着甜馅"
+    },
+    {
+      "zh": "",
+      "en": "Goto",
+      "desc": "米粥煮至浓稠，牛肚软韧有嚼头"
+    },
+    {
+      "zh": "",
+      "en": "Panyalam",
+      "desc": "米浆炸成小饼，边缘焦脆中心软甜"
+    },
+    {
+      "zh": "",
+      "en": "Sayongsong",
+      "desc": "糯米裹棕榈糖蒸在叶子里，甜味从叶缝渗出"
+    },
+    {
+      "zh": "",
+      "en": "Silog",
+      "desc": "煎蛋配蒜香米饭，戳破蛋黄流进饭粒"
+    },
+    {
+      "zh": "",
+      "en": "Sinigapuna",
+      "desc": "椰浆煮米饭，浓稠香甜"
+    },
+    {
+      "zh": "",
+      "en": "Binakle",
+      "desc": "米糕蒸得蓬松，撕开有淡淡的椰香"
+    },
+    {
+      "zh": "",
+      "en": "Kiampong",
+      "desc": "糯米砂锅焖至黏糯，花生和香菇点缀其间"
+    },
+    {
+      "zh": "",
+      "en": "Adobong pugita",
+      "desc": "章鱼在醋和酱油中炖至弹韧，酸咸交融"
+    },
+    {
+      "zh": "",
+      "en": "Poqui poqui",
+      "desc": "茄子捣碎拌入鸡蛋，绵软中带着烟熏味"
+    }
+  ],
+  "BJ": [
+    {
+      "zh": "",
+      "en": "Ablo",
+      "desc": "traditional white cake in West Africa"
+    },
+    {
+      "zh": "",
+      "en": "Eba",
+      "desc": "West African staple food"
+    },
+    {
+      "zh": "",
+      "en": "akassa",
+      "desc": "type of dough made from cooked, ground and soaked corn, eaten in Benin, Nigeria, Burkina Faso, Togo and Côte d'Ivoire"
+    },
+    {
+      "zh": "",
+      "en": "Amiwô",
+      "desc": "Beninese porridge"
+    },
+    {
+      "zh": "",
+      "en": "Èba",
+      "desc": "Beninese cuisine classic made with cassava flour"
+    },
+    {
+      "zh": "",
+      "en": "monyo",
+      "desc": "Beninese sauce"
+    },
+    {
+      "zh": "",
+      "en": "Wèli",
+      "desc": "Beninese dish of fried potatoes"
+    },
+    {
+      "zh": "",
+      "en": "Wôkoli",
+      "desc": "Beninese culinary preparation made from wɔ̌"
+    }
+  ],
+  "CI": [
+    {
+      "zh": "",
+      "en": "Ablo",
+      "desc": "traditional white cake in West Africa"
+    },
+    {
+      "zh": "",
+      "en": "akassa",
+      "desc": "type of dough made from cooked, ground and soaked corn, eaten in Benin, Nigeria, Burkina Faso, Togo and Côte d'Ivoire"
+    },
+    {
+      "zh": "",
+      "en": "bawin sauce",
+      "desc": "traditional dish from western Côte d'Ivoire"
+    }
+  ],
+  "LY": [
+    {
+      "zh": "烏斯班腸",
+      "en": "Usban",
+      "desc": "North African dish of sausage stuffed with rice, herbs, lamb, chopped liver and heart"
+    },
+    {
+      "zh": "",
+      "en": "bazeen",
+      "desc": "unleavened bread in Libyan cuisine"
+    },
+    {
+      "zh": "",
+      "en": "Mafrum",
+      "desc": "Libyan-Jewish and Tunisian-Jewish meat dish"
+    },
+    {
+      "zh": "",
+      "en": "Mebakbeka",
+      "desc": ""
+    }
+  ],
+  "LR": [
+    {
+      "zh": "",
+      "en": "Plasas",
+      "desc": "traditional dish prepared in Ghana"
+    }
+  ],
+  "CM": [
+    {
+      "zh": "",
+      "en": "Ndolé",
+      "desc": "苦叶炖煮去苦味，混入花生酱和虾肉，苦尽甘来"
+    },
+    {
+      "zh": "",
+      "en": "Koki",
+      "desc": "黑眼豆泥蒸成深色糕体，棕榈油渗入每一层"
+    },
+    {
+      "zh": "",
+      "en": "poulet DG",
+      "desc": "整鸡配芭蕉和蔬菜在棕榈油中炖煮，宴客的大菜"
+    },
+    {
+      "zh": "",
+      "en": "Ça va se savoir",
+      "desc": "辣酱拌蔬菜和鱼肉，名字意为你会知道的，辣到记住"
+    },
+    {
+      "zh": "",
+      "en": "Taro with yellow sauce",
+      "desc": "芋头蒸熟配黄姜酱，绵软的芋头裹着辛香"
+    },
+    {
+      "zh": "",
+      "en": "Ikok",
+      "desc": "牛肉在棕榈油和洋葱中慢炖，汤汁浓稠入味"
+    },
+    {
+      "zh": "",
+      "en": "Ekpang Nkwukwo",
+      "desc": "薯蓣丝裹着棕榈油和鱼肉蒸煮，黏糯鲜美"
+    },
+    {
+      "zh": "",
+      "en": "Sanga (Meal)",
+      "desc": "新鲜玉米粒和蔬菜同煮，玉米的清甜在汤中释放"
+    }
+  ],
+  "BT": [
+    {
+      "zh": "",
+      "en": "Ema datshi",
+      "desc": "辣椒泡在融化的奶酪里，辣得舌头发麻，奶香裹住"
+    },
+    {
+      "zh": "",
+      "en": "kewa datshi",
+      "desc": "土豆和奶酪炖成一锅，绵软浓稠"
+    }
+  ],
+  "CD": [
+    {
+      "zh": "",
+      "en": "Babute",
+      "desc": "肉末拌香料做成饼状煎至微焦，内里多汁弹牙"
+    }
+  ],
+  "AF": [
+    {
+      "zh": "阿富汗沙拉",
+      "en": "Afghan salad",
+      "desc": "番茄黄瓜切丁拌入薄荷，清爽解腻"
+    }
+  ],
+  "BD": [
+    {
+      "zh": "",
+      "en": "Roust",
+      "desc": "整鱼裹香料慢烤，皮焦肉嫩，辛香渗入鱼骨"
+    },
+    {
+      "zh": "",
+      "en": "Soft Khichuri",
+      "desc": "米和扁豆煮成糊状，斋月里的温柔食物"
+    },
+    {
+      "zh": "",
+      "en": "Pithali",
+      "desc": "鱼肉泥捏成丸子煮汤，鲜味溶入汤底"
+    },
+    {
+      "zh": "",
+      "en": "Shagorana",
+      "desc": "婚礼上端出的甜米糕，椰香和坚果碎铺满表面"
+    }
+  ],
+  "ZM": [
+    {
+      "zh": "",
+      "en": "Ifisashi",
+      "desc": "Zambian food"
+    }
+  ],
+  "BI": [
+    {
+      "zh": "",
+      "en": "Boko Boko Harees",
+      "desc": "Boko Boko Harees is a traditional dish originating from the African country of Burundi"
+    }
+  ],
+  "NG": [
+    {
+      "zh": "",
+      "en": "akassa",
+      "desc": "玉米发酵后揉成光滑面团，蘸浓汤食用，微酸的谷物味"
+    },
+    {
+      "zh": "",
+      "en": "Eba",
+      "desc": "木薯粉用热水冲搅成黏团，掰一块蘸汤，朴素管饱"
+    },
+    {
+      "zh": "",
+      "en": "Asaro",
+      "desc": "山药块在番茄辣椒酱中炖煮，绵软入味，酸辣渗入每一寸"
+    },
+    {
+      "zh": "",
+      "en": "Groundnut soup",
+      "desc": "花生磨成浓酱煮汤，油脂浮在表面泛着金光，香醇浓厚"
+    },
+    {
+      "zh": "",
+      "en": "Ekpang Nkwukwo",
+      "desc": "薯蓣丝裹着棕榈油和鱼肉蒸煮，黏糯中透着海味"
+    },
+    {
+      "zh": "給力希",
+      "en": "kilishi",
+      "desc": "薄如纸的牛肉干撒满花生粉和香料，嚼劲十足越嚼越香"
+    },
+    {
+      "zh": "",
+      "en": "Amala",
+      "desc": "薯蓣粉冲成深褐色面团，质地细腻，蘸秋葵汤食用"
+    },
+    {
+      "zh": "",
+      "en": "draw soup",
+      "desc": "秋葵煮出黏滑汤汁，拉丝的口感裹住每一口食物"
+    },
+    {
+      "zh": "",
+      "en": "Isi ewu",
+      "desc": "山羊头炖至骨肉分离，汤汁浓厚带野味，配棕榈油蘸食"
+    },
+    {
+      "zh": "",
+      "en": "Kuli-kuli",
+      "desc": "花生碎压成饼状炸至金黄，酥脆中满口坚果香"
+    },
+    {
+      "zh": "",
+      "en": "ogi",
+      "desc": "谷物发酵成酸甜糊状，冰凉滑入口中，开胃消暑"
+    },
+    {
+      "zh": "苏亚",
+      "en": "suya",
+      "desc": "薄肉片串在竹签上烤至微焦，花生粉和辣椒的辛香裹满表面"
+    },
+    {
+      "zh": "",
+      "en": "Ekuru",
+      "desc": "去皮白豆蒸成白色糕体，配辣椒酱食用，豆香清淡绵密"
+    },
+    {
+      "zh": "",
+      "en": "palm nut soup",
+      "desc": "棕榈果熬出橙红浓汤，油脂在汤面漂浮，浓稠鲜美"
+    },
+    {
+      "zh": "",
+      "en": "Ukodo",
+      "desc": "山药和芭蕉同煮成浓汤，淀粉化入汤中变得稠厚暖胃"
+    },
+    {
+      "zh": "烏溪",
+      "en": "Usi",
+      "desc": "木薯煮熟捣成团，蘸棕榈油汤，朴素的碳水满足"
+    },
+    {
+      "zh": "",
+      "en": "Pate acha",
+      "desc": "小米粒配辣椒和洋葱翻炒，干燥的口感带着谷物焦香"
+    },
+    {
+      "zh": "",
+      "en": "Tuwo masara (corn meal)",
+      "desc": "玉米面揉成白色面团，掰块蘸汤食用，北方豪萨人的日常主食"
+    },
+    {
+      "zh": "",
+      "en": "miyar kuka",
+      "desc": "猴面包树叶粉煮成绿色浓汤，微酸的草本味沁入汤底"
+    },
+    {
+      "zh": "",
+      "en": "Efo riro",
+      "desc": "菠菜和番茄在棕榈油中炖煮，绿叶蔬菜裹着油脂的浓郁"
+    }
+  ],
+  "NE": [
+    {
+      "zh": "給力希",
+      "en": "kilishi",
+      "desc": "Hausa dish of spiced dried beef, mutton or goat meat"
+    },
+    {
+      "zh": "",
+      "en": "dambu",
+      "desc": "food from Niger"
+    }
+  ],
+  "MG": [
+    {
+      "zh": "",
+      "en": "Romazava",
+      "desc": "牛肉和绿叶蔬菜在姜和番茄中炖煮，汤汁清鲜"
+    },
+    {
+      "zh": "科巴",
+      "en": "Koba",
+      "desc": "花生碎裹在糯米粉里蒸在蕉叶中，甜香从叶缝渗出"
+    },
+    {
+      "zh": "",
+      "en": "sahoaba",
+      "desc": "米粉和椰奶揉成团蒸熟，配糖和香蕉，热带的朴素甜味"
+    },
+    {
+      "zh": "",
+      "en": "Ramanonaka",
+      "desc": "米粉糕煎至两面焦黄，街边小摊的碳水诱惑"
+    },
+    {
+      "zh": "",
+      "en": "Koba (sweet)",
+      "desc": "花生糯米糕裹在蕉叶里，咬开是粗颗粒的花生香甜"
+    }
+  ],
+  "MU": [
+    {
+      "zh": "鲁加伊",
+      "en": "rougail",
+      "desc": "dish of Reunionese origin"
+    },
+    {
+      "zh": "",
+      "en": "catless",
+      "desc": ""
+    }
+  ],
+  "MZ": [
+    {
+      "zh": "",
+      "en": "matapa",
+      "desc": "木薯叶捣碎配椰奶和花生煮成绿色浓酱，配米饭食用"
+    }
+  ],
+  "SL": [
+    {
+      "zh": "",
+      "en": "Plasas",
+      "desc": "traditional dish prepared in Ghana"
+    }
+  ],
+  "DD": [
+    {
+      "zh": "",
+      "en": "grilletta",
+      "desc": "hamburger variant and 'Griletta' snack bars in East Germany"
+    }
+  ],
+  "UG": [
+    {
+      "zh": "马托克",
+      "en": "Matoke",
+      "desc": "高地芭蕉蒸熟捣成泥，绵密微甜，配花生酱食用"
+    },
+    {
+      "zh": "",
+      "en": "Kikomando",
+      "desc": "烤饼撕碎拌入炖豆，朴素管饱的街头美食"
+    },
+    {
+      "zh": "",
+      "en": "Luwombo",
+      "desc": "鸡肉或牛肉裹在蕉叶中蒸煮，叶香渗入肉汁"
+    }
+  ],
+  "SC": [
+    {
+      "zh": "",
+      "en": "Ladob",
+      "desc": "Seychelles dish"
+    },
+    {
+      "zh": "",
+      "en": "Shark chutney",
+      "desc": "Seychelles dish"
+    }
+  ],
+  "GI": [
+    {
+      "zh": "",
+      "en": "rosto",
+      "desc": "Gibraltarian dish"
+    }
+  ],
+  "SE": [
+    {
+      "zh": "炒驯鹿肉",
+      "en": "sautéed reindeer",
+      "desc": "驯鹿肉切薄片煎至微焦，野味浓郁，脂香中带一丝松木清香"
+    },
+    {
+      "zh": "",
+      "en": "blåbärssoppa",
+      "desc": "越橘熬成紫红色甜汤，酸甜温热，北欧冬日的暖身饮品"
+    },
+    {
+      "zh": "瑞典起司蛋糕",
+      "en": "ostkaka",
+      "desc": "杏仁蛋糕体裹着凝乳酪烤至微焦，切开绵密湿润，配果酱甜而不腻"
+    },
+    {
+      "zh": "",
+      "en": "pitepalt",
+      "desc": "生土豆泥裹肉馅搓成圆球煮熟，外皮灰白绵软，咬开是咸香肉汁"
+    },
+    {
+      "zh": "",
+      "en": "pölsa",
+      "desc": "碎肉和大麦炖成浓稠糊状，朴素的农家味道，配甜菜根酸甜解腻"
+    },
+    {
+      "zh": "",
+      "en": "Grytbit",
+      "desc": "大块肉在铸铁锅中慢炖至酥烂，汤汁浓稠，冬天的硬菜"
+    },
+    {
+      "zh": "",
+      "en": "Rörost",
+      "desc": "奶酪切块裹蛋液煎至金黄，外壳微脆内里拉丝，浓郁奶香"
+    },
+    {
+      "zh": "",
+      "en": "saffron pancake",
+      "desc": "藏红花赋予金黄色泽和独特芳香，米粒嵌在蛋饼中，甜中带香"
+    },
+    {
+      "zh": "",
+      "en": "Tjälknöl",
+      "desc": "大块肉在烤箱中低温慢烤数小时，切开粉嫩多汁，肉香四溢"
+    },
+    {
+      "zh": "",
+      "en": "Äggakaka",
+      "desc": "鸡蛋面糊摊成厚饼，铺上煎猪肉片，蛋香和肉脂交融"
+    },
+    {
+      "zh": "",
+      "en": "äggost",
+      "desc": "牛奶和鸡蛋凝结成嫩豆腐状，节庆时切块配果酱，清甜滑嫩"
+    },
+    {
+      "zh": "",
+      "en": "ärter med fläsk",
+      "desc": "豌豆和猪肉块炖至酥烂，豌豆绵软如泥，猪肉入口即化"
+    },
+    {
+      "zh": "",
+      "en": "Västerbottensostpaj",
+      "desc": "韦斯特博滕奶酪烤成酥脆挞皮馅饼，切开奶酪拉丝，咸香浓郁"
+    },
+    {
+      "zh": "",
+      "en": "liver stew",
+      "desc": "鸡肝在奶油酱中慢炖至绵软，入口即化，酱汁浓郁醇厚"
+    }
+  ],
+  "BE": [
+    {
+      "zh": "",
+      "en": "rijstevlaai",
+      "desc": "米粒煮进蛋奶馅中烤成派，绵密中带着米香"
+    },
+    {
+      "zh": "",
+      "en": "stoemp",
+      "desc": "土豆泥压入胡萝卜或韭葱，绵软中嚼到蔬菜颗粒"
+    },
+    {
+      "zh": "",
+      "en": "Potjevleesch",
+      "desc": "弗兰德的白肉冻切成块，冷食时胶质在齿间弹动"
+    },
+    {
+      "zh": "贻贝薯条",
+      "en": "moules-frites",
+      "desc": "青口在白葡萄酒中蒸开，蒜香和芹菜飘出"
+    },
+    {
+      "zh": "",
+      "en": "Brussels waffle",
+      "desc": "华夫饼格子深而大，外壳酥脆内心蓬松"
+    },
+    {
+      "zh": "",
+      "en": "Flemish-style asparagus",
+      "desc": "白芦笋蒸透配蛋黄酱，入口即化的温柔"
+    },
+    {
+      "zh": "Mitraillette",
+      "en": "mitraillette",
+      "desc": "长面包夹入炸肉饼和薯条，浇上酱汁的街头能量"
+    },
+    {
+      "zh": "",
+      "en": "dagobert",
+      "desc": "长面包夹火腿蔬菜和酱汁，比利时的经典三明治"
+    },
+    {
+      "zh": "",
+      "en": "caricole",
+      "desc": "蜗牛在蒜香黄油中焗透，用小叉挑出弹嫩的肉"
+    },
+    {
+      "zh": "",
+      "en": "Mussels marinière",
+      "desc": "青口在白葡萄酒和洋葱中蒸熟，蒜香和芹菜飘出"
+    },
+    {
+      "zh": "",
+      "en": "bird's nest",
+      "desc": "炸肉丸外酥内软，蘸蛋黄酱吃"
+    },
+    {
+      "zh": "",
+      "en": "stoemp with sausage",
+      "desc": "土豆泥配香肠，布鲁塞尔的家常味道"
+    },
+    {
+      "zh": "",
+      "en": "filet américain",
+      "desc": "生牛肉剁碎调味抹在面包上，蛋黄和酸黄瓜点缀"
+    },
+    {
+      "zh": "",
+      "en": "cherry soup of Sint-Truiden",
+      "desc": "樱桃在甜汤中煮透，冷食时酸甜沁凉"
+    },
+    {
+      "zh": "",
+      "en": "Belgian waffle",
+      "desc": "华夫饼面糊加酵母发酵，烤后格子深陷盛满糖粉"
+    },
+    {
+      "zh": "",
+      "en": "choesels",
+      "desc": "布鲁塞尔的内脏炖菜，浓烈的民间味道"
+    },
+    {
+      "zh": "",
+      "en": "martino",
+      "desc": "长面包夹入生牛肉饼和酱汁，生食的三明治"
+    },
+    {
+      "zh": "",
+      "en": "Meulemeester eggs",
+      "desc": "灰虾仁焗在蛋杯里，啤酒腌过的鲜味渗入蛋黄"
+    },
+    {
+      "zh": "",
+      "en": "Julienke",
+      "desc": "长面包夹肉饼和酱汁，快餐柜台的经典"
+    },
+    {
+      "zh": "",
+      "en": "Zenne pot",
+      "desc": "血肠蜗牛和酸菜在啤酒中炖煮，布鲁塞尔的老派味道"
+    }
+  ],
+  "IT": [
+    {
+      "zh": "培根蛋麵",
+      "en": "carbonara",
+      "desc": "蛋液和芝士裹住面条，黑胡椒碎在舌尖跳跃"
+    },
+    {
+      "zh": "奶油白醬寬版麵",
+      "en": "Fettuccine Alfredo",
+      "desc": "宽面条在芝士黄油酱中翻滚，拉出奶白色的丝"
+    },
+    {
+      "zh": "瑪格麗塔披薩",
+      "en": "Pizza Margherita",
+      "desc": "面饼边缘鼓起焦斑，番茄酱和芝士融为一体"
+    },
+    {
+      "zh": "",
+      "en": "Lampredotto",
+      "desc": "牛肚在番茄酱中炖至软烂，夹进面包一口咬下"
+    },
+    {
+      "zh": "獵人燴雞",
+      "en": "cacciatore",
+      "desc": "鸡肉和番茄在陶锅中慢炖，汤汁浸透每一块肉"
+    },
+    {
+      "zh": "鑲椒",
+      "en": "stuffed peppers",
+      "desc": "甜椒掏空塞入肉馅和米饭，烤至椒皮微皱"
+    },
+    {
+      "zh": "",
+      "en": "bocconotto",
+      "desc": "小酥皮塔里填满奶酪或果酱，一口一个"
+    },
+    {
+      "zh": "酸辣番茄烟肉酱",
+      "en": "amatriciana sauce",
+      "desc": "猪脸肉和番茄酱拌意面，羊奶芝士的咸香收尾"
+    },
+    {
+      "zh": "白酒燴牛仔膝",
+      "en": "ossobuco",
+      "desc": "小牛膝骨在白葡萄酒中炖至肉骨分离，骨髓滑腻"
+    },
+    {
+      "zh": "",
+      "en": "sarde in saor",
+      "desc": "沙丁鱼用醋和洋葱腌渍，酸甜中带着海的咸鲜"
+    },
+    {
+      "zh": "油煎面包块",
+      "en": "crostini",
+      "desc": "烤面包片上铺肝酱或番茄，酥脆和绵密交替"
+    },
+    {
+      "zh": "香蒜白酒蜆意粉",
+      "en": "spaghetti alle vongole",
+      "desc": "蛤蜊在白葡萄酒中开口，蒜香和辣椒渗入面条"
+    },
+    {
+      "zh": "",
+      "en": "tirtlan",
+      "desc": "面粉搓成小粒炸透，撒上糖粉，外酥内软"
+    },
+    {
+      "zh": "",
+      "en": "Tonno del Chianti",
+      "desc": "猪里脊用香料慢炖入味，切片后肉质紧实"
+    },
+    {
+      "zh": "",
+      "en": "gnocchi alla romana",
+      "desc": "粗面粉做成半月形烤至金黄，绵密中带着粗粮香"
+    },
+    {
+      "zh": "",
+      "en": "ribollita",
+      "desc": "白菜和面包在橄榄油中慢炖，托斯卡纳的朴素日常"
+    },
+    {
+      "zh": "",
+      "en": "Tramezzino",
+      "desc": "三角面包夹火腿和蔬菜，软面包裹住咸香"
+    },
+    {
+      "zh": "",
+      "en": "Pasta con le sarde",
+      "desc": "西西里的意面配沙丁鱼和松子，甜醋葡萄干点缀"
+    },
+    {
+      "zh": "尼斯洋葱塔",
+      "en": "Pissaladière",
+      "desc": "洋葱铺满面饼慢烤至焦甜，鳀鱼和橄榄点缀其中"
+    },
+    {
+      "zh": "",
+      "en": "Panisse",
+      "desc": "鹰嘴豆粉做成糕炸至外脆内软，撒上黑胡椒"
+    }
+  ],
+  "AT": [
+    {
+      "zh": "肝丸湯",
+      "en": "Leberknödel",
+      "desc": "肝泥做成丸子沉入清汤，咬开绵密带一丝肝苦"
+    },
+    {
+      "zh": "",
+      "en": "serviettenknödel",
+      "desc": "面包面团用布卷起蒸熟，切片后松软多孔"
+    },
+    {
+      "zh": "",
+      "en": "Kaspressknödel",
+      "desc": "奶酪和面包做成丸子在清汤中浮沉"
+    },
+    {
+      "zh": "",
+      "en": "Riebel",
+      "desc": "玉米粉煮成浓稠糊，配酸奶或果酱暖胃"
+    },
+    {
+      "zh": "",
+      "en": "Eiernockerl",
+      "desc": "鸡蛋和小面疙瘩在黄油中翻炒，金黄蓬松"
+    },
+    {
+      "zh": "",
+      "en": "lumberjacks’ dumplings",
+      "desc": "伐木工的面疙瘩裹着咸肉丁，嚼劲十足扎实管饱"
+    },
+    {
+      "zh": "",
+      "en": "Melchermuas",
+      "desc": "牛奶和面粉在铸铁锅中搅成厚饼，阿尔卑斯山区的热量炸弹"
+    },
+    {
+      "zh": "",
+      "en": "St. Martin's goose",
+      "desc": "圣马丁节烤整只鹅，皮脆肉嫩油脂渗出"
+    }
+  ],
+  "TR": [
+    {
+      "zh": "",
+      "en": "lokma",
+      "desc": "小面球炸至金黄淋糖浆，外壳咔嚓一声碎裂"
+    },
+    {
+      "zh": "",
+      "en": "Piyaz",
+      "desc": "白芸豆拌洋葱和番茄，橄榄油的清香托底"
+    },
+    {
+      "zh": "",
+      "en": "bülbülyuvası",
+      "desc": "细丝面编成鸟巢，烤至酥脆，内藏核桃碎"
+    },
+    {
+      "zh": "土耳其冰淇淋",
+      "en": "dondurma",
+      "desc": "冰淇淋韧得可以拉长，刀叉切开才断"
+    },
+    {
+      "zh": "爱兰",
+      "en": "ayran",
+      "desc": "咸酸奶冰凉入喉，泡沫细腻，解腻消暑"
+    },
+    {
+      "zh": "",
+      "en": "pişmaniye",
+      "desc": "糖丝缠成一团，入口即化成甜蜜的絮状"
+    },
+    {
+      "zh": "",
+      "en": "sujuk",
+      "desc": "风干辣肠切片，油脂在舌面化开，辛辣回甘"
+    },
+    {
+      "zh": "",
+      "en": "güllaç",
+      "desc": "薄如纸的面皮泡在甜牛奶里，撒上开心果碎"
+    },
+    {
+      "zh": "雞胸肉布丁",
+      "en": "tavukgöğsü",
+      "desc": "鸡肉撕成丝融入牛奶布丁，滑嫩中带着肉香"
+    },
+    {
+      "zh": "",
+      "en": "menemen",
+      "desc": "番茄和青椒在蛋液中翻炒，嫩滑多汁"
+    },
+    {
+      "zh": "",
+      "en": "pastırma",
+      "desc": "风干牛肉切薄片，蒜香和辛香料在口中爆发"
+    },
+    {
+      "zh": "",
+      "en": "vine leaf roll",
+      "desc": "葡萄叶裹住米饭和松子，酸香清新"
+    },
+    {
+      "zh": "",
+      "en": "bitter almond cookie",
+      "desc": "酥饼入口即碎，苦杏仁的香气在鼻腔回旋"
+    },
+    {
+      "zh": "茄子鑲肉",
+      "en": "karnıyarık",
+      "desc": "茄子剖开塞入肉馅烤软，茄肉吸满肉汁"
+    },
+    {
+      "zh": "",
+      "en": "çılbır",
+      "desc": "水波蛋卧在酸奶上，戳破蛋黄流进白色漩涡"
+    },
+    {
+      "zh": "Ekmek kadayıfı",
+      "en": "Ekmek kadayıfı",
+      "desc": "面包片吸满糖浆，奶油铺在上面，甜腻绵软"
+    },
+    {
+      "zh": "",
+      "en": "nokul",
+      "desc": "肉桂卷切开，面皮裹着坚果和糖霜"
+    },
+    {
+      "zh": "",
+      "en": "Cağ kebabı",
+      "desc": "羊肉串在横叉上旋转烤制，切下时油脂滴落"
+    },
+    {
+      "zh": "",
+      "en": "Tatar böreği",
+      "desc": "面皮裹肉馅炸至金黄，酥脆多汁"
+    },
+    {
+      "zh": "",
+      "en": "kağıt kebabı",
+      "desc": "羊肉和蔬菜在纸包中焖烤，撕开时蒸汽涌出"
+    }
+  ],
+  "CH": [
+    {
+      "zh": "",
+      "en": "Mont d'Or chaud",
+      "desc": "热芝士在木盒中融化冒泡，面包蘸进去裹满拉丝"
+    },
+    {
+      "zh": "",
+      "en": "käsefladen",
+      "desc": "芝士铺在面饼上烤至金黄，切开时奶香涌出"
+    },
+    {
+      "zh": "",
+      "en": "Malakoff",
+      "desc": "芝士裹面糊炸至外壳酥脆，咬开是滚烫的流心"
+    },
+    {
+      "zh": "",
+      "en": "Birchermuesli",
+      "desc": "燕麦酸奶拌入苹果丝和坚果碎，清晨的第一口"
+    },
+    {
+      "zh": "",
+      "en": "Risotto alla ticinese",
+      "desc": "提契诺的意式烩饭，藏红花染出金黄"
+    },
+    {
+      "zh": "木斯里",
+      "en": "muesli",
+      "desc": "燕麦片泡在牛奶里，干果和蜂蜜拌入其中"
+    }
+  ],
+  "EG": [
+    {
+      "zh": "",
+      "en": "lokma",
+      "desc": "小面球炸透淋糖浆，外壳酥脆内心绵软"
+    },
+    {
+      "zh": "炸豆丸子",
+      "en": "falafel",
+      "desc": "蚕豆泥炸至外壳酥脆，内里翠绿绵密"
+    },
+    {
+      "zh": "苦沙利",
+      "en": "koshari",
+      "desc": "米饭、扁豆、意面层层堆叠，浇上番茄酱和炸洋葱"
+    },
+    {
+      "zh": "富爾",
+      "en": "ful medames",
+      "desc": "蚕豆炖至绵软，淋上柠檬汁和橄榄油，清晨的开胃"
+    },
+    {
+      "zh": "",
+      "en": "basbousa",
+      "desc": "粗面粉蛋糕浸透糖浆，湿润绵密，椰香弥漫"
+    },
+    {
+      "zh": "",
+      "en": "Hawawshi",
+      "desc": "皮塔饼里塞满香料肉馅，烤至外壳焦脆"
+    }
+  ],
+  "MX": [
+    {
+      "zh": "墨西哥卷饼",
+      "en": "burrito",
+      "desc": "面饼裹住肉、豆泥和米饭，卷成粗棒，咬开馅料涌出"
+    },
+    {
+      "zh": "芸豆沙",
+      "en": "refried beans",
+      "desc": "黑豆煮烂碾成泥，油脂浸润，绵密咸香"
+    },
+    {
+      "zh": "香辣肉酱",
+      "en": "chili",
+      "desc": "辣椒和牛肉炖至浓稠，辣味在舌尖蔓延"
+    },
+    {
+      "zh": "墨西哥芝士馅饼",
+      "en": "quesadilla",
+      "desc": "面饼夹芝士烤至拉丝，对折咬开是熔岩般的奶香"
+    },
+    {
+      "zh": "安吉拉捲",
+      "en": "enchilada",
+      "desc": "玉米饼裹馅料浇上辣椒酱，酱汁渗入每一层"
+    },
+    {
+      "zh": "",
+      "en": "taquito",
+      "desc": "玉米饼卷肉馅炸至酥脆，蘸牛油果酱一口咬下"
+    },
+    {
+      "zh": "墨西哥式煎蛋早餐",
+      "en": "huevos rancheros",
+      "desc": "煎蛋铺在玉米饼上，浇上番茄辣酱，蛋黄流下来"
+    },
+    {
+      "zh": "墨西哥熱可可",
+      "en": "Champurrado",
+      "desc": "巧克力和玉米粉煮成浓稠热饮，丝滑温暖"
+    },
+    {
+      "zh": "托斯塔達",
+      "en": "tostada",
+      "desc": "玉米饼炸至硬脆，铺满豆泥、肉和生菜"
+    },
+    {
+      "zh": "",
+      "en": "Enfrijoladas",
+      "desc": "玉米饼浸在黑豆酱里，软糯入味"
+    },
+    {
+      "zh": "",
+      "en": "Flauta",
+      "desc": "面饼卷肉馅炸成长笛状，外脆内嫩"
+    },
+    {
+      "zh": "",
+      "en": "Mexican pizza",
+      "desc": "脆玉米饼底铺上肉、豆泥和芝士焗烤"
+    },
+    {
+      "zh": "",
+      "en": "Rajas con crema",
+      "desc": "辣椒条拌奶油酱，辣中带甜"
+    },
+    {
+      "zh": "",
+      "en": "Ungui",
+      "desc": "玉米面包裹肉馅蒸熟，叶香渗入"
+    },
+    {
+      "zh": "玉米黑粉菌",
+      "en": "huitlacoche",
+      "desc": "玉米黑菌炒至浓稠，带着泥土的鲜味和蘑菇般的口感"
+    },
+    {
+      "zh": "",
+      "en": "Discada",
+      "desc": "铁盘上牛肉和香肠翻炒，油脂滋滋作响"
+    },
+    {
+      "zh": "",
+      "en": "Mexican rice",
+      "desc": "番茄汁炒过的米饭，粒粒橙红，微酸开胃"
+    },
+    {
+      "zh": "",
+      "en": "Carne polaca",
+      "desc": "牛肉卷裹着蔬菜和香料慢炖"
+    },
+    {
+      "zh": "",
+      "en": "Obispo",
+      "desc": "猪肉香肠灌入肠衣，切片后油脂在口中化开"
+    },
+    {
+      "zh": "",
+      "en": "Tacos de lengua",
+      "desc": "牛舌炖至软烂切碎，玉米饼裹住，洋葱和香菜点缀"
+    }
+  ],
+  "PT": [
+    {
+      "zh": "",
+      "en": "espetada",
+      "desc": "牛肉串在月桂枝上炭烤，肉汁滴落炭火嘶嘶作响"
+    },
+    {
+      "zh": "",
+      "en": "Açorda",
+      "desc": "面包撕碎泡入蒜味橄榄油汤，鸡蛋卧在中间"
+    },
+    {
+      "zh": "",
+      "en": "Migas alentejanas",
+      "desc": "阿连特茹的面包碎和猪肉在平底锅中煎至焦脆"
+    },
+    {
+      "zh": "",
+      "en": "Iscas",
+      "desc": "猪肝切片裹粉炸至外焦内嫩，柠檬汁提鲜"
+    },
+    {
+      "zh": "",
+      "en": "Grilled Lapas",
+      "desc": "马德拉岛的帽贝在炭火上烤至微焦，蒜油蘸着吃"
+    },
+    {
+      "zh": "",
+      "en": "Xerém",
+      "desc": "玉米面煮成浓粥，配贝类或猪肉，粗粝管饱"
+    },
+    {
+      "zh": "",
+      "en": "Molotof",
+      "desc": "蛋白霜烤成焦糖外壳，内心绵软如云朵"
+    },
+    {
+      "zh": "",
+      "en": "Queijada de Sintra",
+      "desc": "辛特拉的奶酪塔，酥皮托着奶酪蛋奶馅"
+    }
+  ],
+  "FR": [
+    {
+      "zh": "",
+      "en": "stoemp",
+      "desc": "土豆泥混入蔬菜碎，绵密中带着朴素的甜"
+    },
+    {
+      "zh": "烤烙饼",
+      "en": "tarte flambée",
+      "desc": "薄面饼铺酸奶油和洋葱丝，烤至边缘焦脆"
+    },
+    {
+      "zh": "",
+      "en": "Mont d'Or chaud",
+      "desc": "热芝士在木盒中融化，面包蘸进去拉出长丝"
+    },
+    {
+      "zh": "",
+      "en": "crab soup",
+      "desc": "蟹壳熬出浓汤，奶油的醇厚裹住蟹肉的鲜"
+    },
+    {
+      "zh": "尼斯洋葱塔",
+      "en": "Pissaladière",
+      "desc": "洋葱铺满面饼慢烤至焦甜，鳀鱼的咸鲜托底"
+    },
+    {
+      "zh": "",
+      "en": "Mussels marinière",
+      "desc": "青口在白葡萄酒中蒸开，蒜香和欧芹飘出"
+    },
+    {
+      "zh": "鲁加伊",
+      "en": "rougail",
+      "desc": "番茄洋葱熬成浓酱，辣椒的热力渗入每一口"
+    },
+    {
+      "zh": "牛肉絲意粉",
+      "en": "ragù",
+      "desc": "牛肉和番茄炖至肉丝散开，酱汁浓稠挂面"
+    },
+    {
+      "zh": "尼斯沙拉",
+      "en": "Niçard salad",
+      "desc": "番茄鸡蛋金枪鱼铺满盘，橄榄油清香串联"
+    },
+    {
+      "zh": "开胃小点",
+      "en": "amuse-bouche",
+      "desc": "一小口在舌尖打开味蕾，来不及回味已消失"
+    },
+    {
+      "zh": "马赛鱼汤",
+      "en": "bouillabaisse",
+      "desc": "鱼骨熬出橙红浓汤，蒜蓉面包蘸着吃"
+    },
+    {
+      "zh": "",
+      "en": "galantine",
+      "desc": "禽肉裹住馅料压制定型，切片后纹理细腻"
+    },
+    {
+      "zh": "",
+      "en": "Chartreuse",
+      "desc": "蔬菜和肉紧实地码在叶中，脱模后形状饱满"
+    },
+    {
+      "zh": "",
+      "en": "Crottin de Berry à l’Huile d’Olive",
+      "desc": "山羊奶酪淋上橄榄油，酸香在口中化开"
+    },
+    {
+      "zh": "",
+      "en": "Quatre mendiants",
+      "desc": "坚果和果干分成四堆，地中海的朴素甜食"
+    },
+    {
+      "zh": "法式清湯",
+      "en": "Consommé",
+      "desc": "清汤澄澈见底，鲜味却浓缩得厚重"
+    },
+    {
+      "zh": "",
+      "en": "Pâté de campagne",
+      "desc": "猪肉粗粒手剁压实，肝香和脂肪在口中化开"
+    },
+    {
+      "zh": "",
+      "en": "pan-bagnat",
+      "desc": "圆面包挖空塞满蔬菜和金枪鱼，橄榄油浸透面包"
+    },
+    {
+      "zh": "",
+      "en": "brissaouda",
+      "desc": "烤面包刷上蒜泥和橄榄油，茴香酒的香气升腾"
+    },
+    {
+      "zh": "",
+      "en": "Cotriade",
+      "desc": "布列塔尼渔港的鱼汤，土豆和海鲜一锅炖透"
+    }
+  ],
+  "ET": [
+    {
+      "zh": "",
+      "en": "quanta firfir",
+      "desc": "牛肉干撕碎拌入英吉拉饼和辣酱，酸辣咸香在口中翻涌"
+    }
+  ],
+  "CN": [
+    {
+      "zh": "肉松",
+      "en": "rousong",
+      "desc": "肉松蓬松如絮，入口即化，甜咸肉香弥漫",
+      "region": "华南"
+    },
+    {
+      "zh": "𰻝𰻝面",
+      "en": "biangbiang noodles",
+      "desc": "宽面摔在案板上啪啪作响，嚼劲十足，油泼辣子浇上去嘶嘶冒烟",
+      "region": "西北"
+    },
+    {
+      "zh": "胡椒餅",
+      "en": "hujiao bing",
+      "desc": "烤至外壳焦脆，掰开是黑胡椒猪肉馅，汁水烫嘴",
+      "region": "华南"
+    },
+    {
+      "zh": "烧仙草",
+      "en": "grass jelly",
+      "desc": "烧仙草黑亮滑嫩，入口即化，配蜂蜜清凉解暑",
+      "region": "华南"
+    },
+    {
+      "zh": "水煮",
+      "en": "shuizhu",
+      "desc": "红油翻滚，肉片嫩滑如绸，花椒麻得嘴唇发颤",
+      "region": "西南"
+    },
+    {
+      "zh": "鸳鸯炒饭",
+      "en": "yin yang fried rice",
+      "desc": "一半番茄酱一半白汁，两种颜色两种味道",
+      "region": "华南"
+    },
+    {
+      "zh": "炒饭",
+      "en": "fried rice",
+      "desc": "大火颠勺，米粒在锅中跳跃，粒粒裹着蛋香",
+      "region": "华南"
+    },
+    {
+      "zh": "咕噜肉",
+      "en": "gu lou juk",
+      "desc": "猪肉裹粉炸至金黄，浇上糖醋酱，酸甜在口中炸开",
+      "region": "华南"
+    },
+    {
+      "zh": "中式拉面",
+      "en": "lamian",
+      "desc": "面条在师傅手中反复拉伸，入口滑韧有弹性",
+      "region": "华北"
+    },
+    {
+      "zh": "罗汉斋",
+      "en": "Buddha's delight",
+      "desc": "十八种素菜在砂锅中炖煮，各有各的鲜美",
+      "region": "华南"
+    },
+    {
+      "zh": "",
+      "en": "Bai ye",
+      "desc": "豆腐皮层层叠叠，嚼出豆子的朴素香气"
+    },
+    {
+      "zh": "青团",
+      "en": "Qingtuan",
+      "desc": "艾草汁揉入糯米，翠绿的团子咬开是豆沙馅",
+      "region": "华东"
+    },
+    {
+      "zh": "馕坑烤肉",
+      "en": "Tandyr kebab",
+      "desc": "馕坑里炭火烤肉，外焦内嫩，孜然香气裹着肉",
+      "region": "西北"
+    },
+    {
+      "zh": "蟹肉粟米羹",
+      "en": "corn crab soup",
+      "desc": "粟米羹浓稠如丝，蟹肉的鲜甜溶在每一勺里",
+      "region": "华南"
+    },
+    {
+      "zh": "八宝菜",
+      "en": "Palbochae",
+      "desc": "八种食材切丝翻炒，色彩缤纷，口感各异",
+      "region": "华东"
+    },
+    {
+      "zh": "免治",
+      "en": "Minchee",
+      "desc": "碎肉和土豆丁翻炒，酱油焦香渗入每一粒",
+      "region": "华南"
+    },
+    {
+      "zh": "敲鱼",
+      "en": "",
+      "desc": "鱼肉反复捶打成薄片，入汤后透明如蝉翼",
+      "region": "华东"
+    },
+    {
+      "zh": "滑炒",
+      "en": "",
+      "desc": "食材在宽油中滑过，勾芡后光泽透亮",
+      "region": "华东"
+    },
+    {
+      "zh": "炒牛奶",
+      "en": "stir-fried milk",
+      "desc": "牛奶凝固成块翻炒不散，入口即化，奶香四溢",
+      "region": "华南"
+    },
+    {
+      "zh": "糖蔥",
+      "en": "",
+      "desc": "拉丝的麦芽糖裹上芝麻，咬下去嘎嘣脆",
+      "region": "华南"
+    }
+  ],
+  "GB": [
+    {
+      "zh": "加冕雞",
+      "en": "coronation chicken",
+      "desc": "curry酱裹住鸡肉，果干的甜在奶油中化开"
+    },
+    {
+      "zh": "",
+      "en": "cheese on toast",
+      "desc": "烤面包上铺芝士，烤至冒泡微焦"
+    },
+    {
+      "zh": "",
+      "en": "Yorkshire Christmas pie",
+      "desc": "酥皮包裹多种禽肉，切开层层分明"
+    }
+  ],
+  "LV": [
+    {
+      "zh": "",
+      "en": "Kepta duona",
+      "desc": "Lithuanian, latvian garlic bread chips"
+    }
+  ],
+  "CZ": [
+    {
+      "zh": "",
+      "en": "serviettenknödel",
+      "desc": "面包丁裹蛋液蒸成大圆面包，切片后吸满肉汁，绵软饱腹"
+    },
+    {
+      "zh": "捷克熱狗",
+      "en": "Czech-style hot dog",
+      "desc": "面包不切断，塞入香肠和芥末酱，简陋却满足的街头食粮"
+    },
+    {
+      "zh": "",
+      "en": "Vepřo knedlo zelo",
+      "desc": "烤猪肉铺在面包团子上配酸菜，肉汁浸入团子，捷克国菜"
+    },
+    {
+      "zh": "",
+      "en": "Topfenknödel",
+      "desc": "奶酪搓成丸子煮熟，撒上糖粉和黄油面包糠，软嫩甜香"
+    },
+    {
+      "zh": "",
+      "en": "schnitzel Pavlišov",
+      "desc": "猪排裹面包糠炸至金黄，配土豆泥和柠檬汁，酥脆多汁"
+    },
+    {
+      "zh": "",
+      "en": "Category:Likérová špička (Czech Republic)",
+      "desc": "巧克力外壳裹着利口酒奶油馅，小方块入口即化，酒香微醺"
+    }
+  ],
+  "SI": [
+    {
+      "zh": "",
+      "en": "Zlijevka",
+      "desc": "traditional Croatian dessert"
+    },
+    {
+      "zh": "",
+      "en": "Bakalca",
+      "desc": "Dish of mutton and vegetables"
+    },
+    {
+      "zh": "",
+      "en": "Bloke kavla",
+      "desc": "dish from southwestern Slovenia"
+    }
+  ],
+  "BG": [
+    {
+      "zh": "",
+      "en": "torpedo dessert",
+      "desc": "酥皮卷成鱼雷状烤至金黄，咬开黄油香气扑鼻，层层起酥"
+    },
+    {
+      "zh": "",
+      "en": "Snow White salad",
+      "desc": "酸奶拌黄瓜丝和核桃碎，洁白如雪，酸香清爽解暑"
+    },
+    {
+      "zh": "",
+      "en": "mish-mash",
+      "desc": "青椒番茄和鸡蛋在锅中翻炒至软烂，颜色缤纷，酸甜开胃"
+    }
+  ],
+  "KZ": [
+    {
+      "zh": "克缺",
+      "en": "Köje",
+      "desc": "小米煮成浓稠粥，游牧民族的温暖早餐"
+    },
+    {
+      "zh": "",
+      "en": "Bokpe",
+      "desc": "面团裹肉蒸熟，蘸着酸奶吃，朴素管饱"
+    },
+    {
+      "zh": "冲克缺",
+      "en": "Nauryz kozhe",
+      "desc": "七种谷物煮成节庆粥，每种谷物都有不同的嚼感"
+    },
+    {
+      "zh": "",
+      "en": "Älme",
+      "desc": "苹果和面粉做成的甜饼，外脆内软"
+    }
+  ],
+  "BR": [
+    {
+      "zh": "法羅法",
+      "en": "farofa",
+      "desc": "木薯粉在黄油中炒至金黄松脆，混入培根粒和洋葱，干香扑鼻"
+    },
+    {
+      "zh": "",
+      "en": "Efó",
+      "desc": "巴伊亚风味的绿叶菜慢炖，椰奶和棕榈油的浓郁在舌尖交融"
+    },
+    {
+      "zh": "",
+      "en": "Virado",
+      "desc": "黑豆和木薯粉翻炒成糊，配煎香蕉和猪肉，质朴的碳水满足感"
+    },
+    {
+      "zh": "",
+      "en": "cassava chips",
+      "desc": "木薯薄片炸至透金，咔嚓一声脆响，咸香朴素"
+    },
+    {
+      "zh": "",
+      "en": "Mingau de tapioca",
+      "desc": "木薯粉煮成半透明糊状，椰奶渗入每一口，温热绵滑"
+    },
+    {
+      "zh": "",
+      "en": "Camarão no Bafo",
+      "desc": "大虾在椰奶蒸汽中焖熟，鲜甜裹着热带海洋的气息"
+    }
+  ],
+  "AL": [
+    {
+      "zh": "",
+      "en": "albanian stew",
+      "desc": ""
+    },
+    {
+      "zh": "",
+      "en": "Kripanec",
+      "desc": "Albanian pastry food"
+    }
+  ],
+  "ID": [
+    {
+      "zh": "",
+      "en": "Soto Jepara",
+      "desc": "鸡汤清亮，椰浆的浓郁藏在清爽之下"
+    },
+    {
+      "zh": "",
+      "en": "Soto Kudus",
+      "desc": "清汤配手撕鸡肉，黄姜的暖色渗入汤底"
+    },
+    {
+      "zh": "",
+      "en": "Soto Betawi",
+      "desc": "牛杂在椰浆汤中炖煮，汤头浓厚乳白"
+    },
+    {
+      "zh": "",
+      "en": "Candlenut soup",
+      "desc": "黄姜椰浆鸡汤，石栗的坚果香托住整碗"
+    },
+    {
+      "zh": "",
+      "en": "Seasoning soup",
+      "desc": "牛杂汤无椰浆，香料的层次在清汤中展开"
+    },
+    {
+      "zh": "",
+      "en": "pangkong squid",
+      "desc": "鱿鱼干烤至卷曲，嚼劲十足，咸鲜耐嚼"
+    },
+    {
+      "zh": "",
+      "en": "suwar-suwir",
+      "desc": "木薯发酵做成的软糖，甜酸交织"
+    },
+    {
+      "zh": "",
+      "en": "Kue talam",
+      "desc": "椰浆米糕分两层，上白下绿，滑嫩如布丁"
+    },
+    {
+      "zh": "",
+      "en": "tengkleng",
+      "desc": "羊骨炖至肉可撕落，汤头浓郁带辣"
+    },
+    {
+      "zh": "",
+      "en": "timlo",
+      "desc": "清汤里浮着鸡蛋和肉丸，鸡汤鲜味层层递进"
+    },
+    {
+      "zh": "",
+      "en": "Squid Tongseng",
+      "desc": "鱿鱼在甜辣椰浆酱中翻炒，弹韧入味"
+    },
+    {
+      "zh": "",
+      "en": "Coro Ginger Drink",
+      "desc": "姜汁热饮辣得胃暖，红糖的甜中和辛呛"
+    },
+    {
+      "zh": "",
+      "en": "Sweet Peanut sticky rice",
+      "desc": "糯米粉裹花生碎炸至金黄，外脆内糯"
+    },
+    {
+      "zh": "",
+      "en": "Soto Padang",
+      "desc": "牛杂汤配黄姜饭，辣酱提味"
+    },
+    {
+      "zh": "",
+      "en": "tahu campur",
+      "desc": "豆腐切块拌入粉丝和牛肉汤，多种口感一碗收"
+    },
+    {
+      "zh": "",
+      "en": "Cookbook:Awug",
+      "desc": "米糕蒸在竹模里，椰香和棕糖的甜味渗入"
+    },
+    {
+      "zh": "",
+      "en": "Bugis",
+      "desc": "椰浆糯米糕裹在香蕉叶里，黏糯香甜"
+    },
+    {
+      "zh": "",
+      "en": "Cethot",
+      "desc": "木薯粉搅成糊，椰糖的甜和椰浆的香融为一体"
+    },
+    {
+      "zh": "",
+      "en": "gemblong",
+      "desc": "糯米条裹上焦糖椰丝，外壳脆甜内心软糯"
+    },
+    {
+      "zh": "",
+      "en": "Legendar",
+      "desc": "炸米饭碾碎做成酱，咸香酥脆"
+    }
+  ],
+  "ME": [
+    {
+      "zh": "",
+      "en": "Creamy porridge",
+      "desc": "Montenegrin traditional dish"
+    }
+  ],
+  "AM": [
+    {
+      "zh": "",
+      "en": "Lula kebab",
+      "desc": "肉糜串烤至外焦内嫩，油脂渗出滴在炭上嘶嘶响"
+    },
+    {
+      "zh": "",
+      "en": "gatnabour",
+      "desc": "米粥浓稠温热，配酸奶一起吃"
+    },
+    {
+      "zh": "",
+      "en": "Karsi khorovats",
+      "desc": "整块羊腿在明火上慢烤，切开时肉汁流淌"
+    },
+    {
+      "zh": "",
+      "en": "Mshosh",
+      "desc": "扁豆炖至绵软，核桃碎增加颗粒感"
+    },
+    {
+      "zh": "",
+      "en": "Kyalla",
+      "desc": "牛头肉烤至胶质融化，皮肉相连处黏唇"
+    },
+    {
+      "zh": "",
+      "en": "kololak",
+      "desc": "肉丸裹面粉煎至金黄，内里多汁弹牙"
+    },
+    {
+      "zh": "南瓜焗飯",
+      "en": "Ghapama",
+      "desc": "南瓜掏空填入蜜饯米饭，蒸至瓜肉绵软"
+    },
+    {
+      "zh": "",
+      "en": "Panrkhash",
+      "desc": "奶酪融化在面包上，拉丝绵长"
+    },
+    {
+      "zh": "",
+      "en": "Amich",
+      "desc": "肉馅裹在面皮里烤至焦香"
+    },
+    {
+      "zh": "",
+      "en": "tava",
+      "desc": "陶盘中蔬菜和肉炖至酥烂，汤汁浓稠"
+    }
+  ],
+  "ZA": [
+    {
+      "zh": "咖喱肉末",
+      "en": "bobotie",
+      "desc": "肉末拌咖喱和干果焗烤，表面蛋奶凝固如金黄绒毯"
+    },
+    {
+      "zh": "恰卡拉卡",
+      "en": "chakalaka",
+      "desc": "辣蔬菜酱拌着豆子和番茄，辛辣开胃配烤肉绝搭"
+    },
+    {
+      "zh": "",
+      "en": "boeber",
+      "desc": "椰奶煮细面条加肉桂和杏仁，甜丝丝的冬夜暖心甜品"
+    },
+    {
+      "zh": "",
+      "en": "braai bread",
+      "desc": "面团在炭火余烬上烤至外壳焦黑，掰开内里松软带烟熏香"
+    }
+  ],
+  "RS": [
+    {
+      "zh": "",
+      "en": "Leskovački roštilj",
+      "desc": "肉糜捏成饼在炭火上烤至微焦，外脆内嫩，莱斯科瓦茨的骄傲"
+    },
+    {
+      "zh": "",
+      "en": "Mućkalica",
+      "desc": "碎肉和青椒番茄在陶锅中炖至浓稠，酸辣交融，配面包蘸汁"
+    },
+    {
+      "zh": "",
+      "en": "komplet lepinja",
+      "desc": "面饼撕开塞入奶油和肉汁，油腻饱满，塞尔维亚的硬核早餐"
+    },
+    {
+      "zh": "",
+      "en": "leskovačka kavurma",
+      "desc": "猪肉在油脂中慢炖至酥烂，配洋葱和辣椒，粗犷豪迈"
+    },
+    {
+      "zh": "",
+      "en": "Obaruša",
+      "desc": "面皮裹肉馅在砂锅中烤至外壳焦脆，掰开肉汁流出"
+    }
+  ],
+  "SG": [
+    {
+      "zh": "羅地藏",
+      "en": "Roti john",
+      "desc": "法包切开夹入蛋肉碎煎至焦脆，酱汁甜辣"
+    }
+  ],
+  "CL": [
+    {
+      "zh": "",
+      "en": "Mariscal",
+      "desc": "生海鲜拌入柠檬汁和洋葱丁，酸鲜醒神，海洋的原味在口中绽放"
+    }
+  ],
+  "AR": [
+    {
+      "zh": "",
+      "en": "picada",
+      "desc": "切块肉肠芝士铺满木板，随手拈来，咸香下酒"
+    },
+    {
+      "zh": "",
+      "en": "Revuelto Gramajo",
+      "desc": "薯条和火腿丝裹在嫩滑蛋液中，油润焦香"
+    },
+    {
+      "zh": "",
+      "en": "Fugazza",
+      "desc": "厚实面饼铺满焦化洋葱，甜软多汁，没有番茄酱的纯粹"
+    },
+    {
+      "zh": "",
+      "en": "niño envuelto",
+      "desc": "卷心菜叶裹住肉馅米饭，炖至叶片软烂，汁水渗入每一层"
+    },
+    {
+      "zh": "",
+      "en": "matambre arrollado",
+      "desc": "薄肉片卷入蔬菜和鸡蛋，切开是彩虹般的截面，冷食弹韧"
+    },
+    {
+      "zh": "",
+      "en": "Argentinian pizza",
+      "desc": "厚底面团蓬松如枕头，芝士铺得满满当当，拉丝绵长"
+    }
+  ],
+  "IN": [
+    {
+      "zh": "阿榜糕",
+      "en": "appam",
+      "desc": "边缘薄脆如蕾丝，中心厚软，椰香奶味渗入"
+    },
+    {
+      "zh": "",
+      "en": "Pholourie",
+      "desc": "咖喱粉调味的面球炸至金黄，蘸酸辣酱"
+    },
+    {
+      "zh": "",
+      "en": "dhokla",
+      "desc": "蒸糕蓬松带气孔，酸甜微辣，入口即化"
+    },
+    {
+      "zh": "印度乳酪",
+      "en": "lassi",
+      "desc": "酸奶搅打至顺滑，冰凉入喉，芒果的甜香弥漫"
+    },
+    {
+      "zh": "",
+      "en": "Avial",
+      "desc": "十几种蔬菜裹着椰酱，每种都保持各自的脆度"
+    },
+    {
+      "zh": "",
+      "en": "chana masala",
+      "desc": "鹰嘴豆裹着浓稠酱汁，酸辣在舌尖打转"
+    },
+    {
+      "zh": "",
+      "en": "Curd rice",
+      "desc": "酸奶拌入米饭，清凉酸爽，配腌芒果提味"
+    },
+    {
+      "zh": "",
+      "en": "Murukku",
+      "desc": "米浆挤成螺旋炸透，咔嚓咬碎，满口酥香"
+    },
+    {
+      "zh": "",
+      "en": "Dhansak",
+      "desc": "扁豆和羊肉炖成浓酱，酸甜咸辣四味合一"
+    },
+    {
+      "zh": "",
+      "en": "Undhiyu",
+      "desc": "各种蔬菜和豆子在陶罐中慢炖，酥烂入味"
+    },
+    {
+      "zh": "",
+      "en": "Pav bhaji",
+      "desc": "蔬菜泥捣碎炒浓，夹进黄油面包，一口咬到底"
+    },
+    {
+      "zh": "",
+      "en": "Dahi baigana",
+      "desc": "茄子段泡在酸奶酱里，凉滑酸香"
+    },
+    {
+      "zh": "",
+      "en": "Doodhpak",
+      "desc": "牛奶熬至浓稠，米粒软糯，杏仁碎点缀"
+    },
+    {
+      "zh": "",
+      "en": "Gavvalu",
+      "desc": "贝壳形小面点炸至酥脆，嚼起来嘎嘣作响"
+    },
+    {
+      "zh": "",
+      "en": "Kichadi",
+      "desc": "米和扁豆煮成软糊，姜和黑胡椒暖胃"
+    },
+    {
+      "zh": "馬嘉滋",
+      "en": "Magaj",
+      "desc": "内脏切碎炖煮，辛香料渗入每一寸组织"
+    },
+    {
+      "zh": "",
+      "en": "Mattar paneer",
+      "desc": "奶酪块和青豆在番茄酱中炖煮，奶香与酸甜交融"
+    },
+    {
+      "zh": "",
+      "en": "Pootharekulu",
+      "desc": "米纸薄如蝉翼，裹着糖粉和酥油，入口即碎"
+    },
+    {
+      "zh": "",
+      "en": "Tunde ke kabab",
+      "desc": "水牛肉泥捏成饼煎至微焦，入口即化无渣"
+    },
+    {
+      "zh": "",
+      "en": "zarda",
+      "desc": "藏红花染黄的甜饭，杏仁和葡萄干嵌在米粒间"
+    }
+  ],
+  "IR": [
+    {
+      "zh": "爱兰",
+      "en": "ayran",
+      "desc": "咸酸奶冰凉爽口，泡沫细腻，解腻消暑"
+    },
+    {
+      "zh": "",
+      "en": "Piyaz",
+      "desc": "白芸豆拌洋葱番茄，柠檬汁的酸托出豆香"
+    },
+    {
+      "zh": "",
+      "en": "Borani",
+      "desc": "酸奶拌茄子泥，凉滑绵密，蒜香隐约"
+    },
+    {
+      "zh": "叻沙",
+      "en": "laksa",
+      "desc": "椰浆咖喱汤底浓稠，米粉滑入汤中吸满辣味"
+    },
+    {
+      "zh": "奶油羊肉咖哩",
+      "en": "Rogan josh",
+      "desc": "羊肉块在红酱中炖至酥烂，藏红花的香气弥漫"
+    },
+    {
+      "zh": "",
+      "en": "zeytoon parvardeh",
+      "desc": "橄榄裹上石榴糖浆和核桃碎，酸甜咸交织"
+    },
+    {
+      "zh": "",
+      "en": "Tah Chin",
+      "desc": "藏红花米饭底部焦脆如锅巴，鸡肉藏在米层间"
+    },
+    {
+      "zh": "",
+      "en": "Port sausage",
+      "desc": "香肠切片煎至表面起泡，肉汁在齿间迸出"
+    },
+    {
+      "zh": "Muhallebi",
+      "en": "mehallabiyya",
+      "desc": "牛奶布丁滑嫩如凝脂，玫瑰水的香气淡淡萦绕"
+    },
+    {
+      "zh": "",
+      "en": "anar bij",
+      "desc": "石榴籽在炖菜中爆开，酸甜渗入肉汁"
+    },
+    {
+      "zh": "",
+      "en": "Kashk e badamjan",
+      "desc": "茄子泥搅入发酵乳清，酸咸绵厚"
+    },
+    {
+      "zh": "番紅花米布丁",
+      "en": "sholezard",
+      "desc": "藏红花米布丁金黄透亮，杏仁碎和肉桂粉点缀"
+    },
+    {
+      "zh": "",
+      "en": "KafBikh",
+      "desc": "酥油和糖揉成的甜点，入口即化"
+    },
+    {
+      "zh": "",
+      "en": "Shirin polo",
+      "desc": "甜米饭拌入橘皮丝和杏仁碎，藏红花的金黄透入每粒米"
+    }
+  ],
+  "VE": [
+    {
+      "zh": "阿瑞巴",
+      "en": "arepa",
+      "desc": "玉米饼剖开夹入黑豆和肉丝，外皮酥脆内心松软"
+    },
+    {
+      "zh": "芭蕉粽",
+      "en": "hallaca",
+      "desc": "芭蕉叶裹住玉米面和肉馅慢蒸，揭开是层层香气，节日的仪式感"
+    },
+    {
+      "zh": "",
+      "en": "Naiboa",
+      "desc": "玉米面裹入猪肉和橄榄，蕉叶蒸出的古朴醇厚"
+    }
+  ],
+  "TT": [
+    {
+      "zh": "",
+      "en": "Pholourie",
+      "desc": "Fried, spiced dough balls"
+    },
+    {
+      "zh": "",
+      "en": "Pelau",
+      "desc": "rice dish of the West Indies"
+    }
+  ],
+  "MN": [
+    {
+      "zh": "",
+      "en": "buuz",
+      "desc": "面皮厚实兜住肉馅，蒸熟后汁水饱满，咬开烫嘴"
+    },
+    {
+      "zh": "",
+      "en": "dough-sealed soup",
+      "desc": "面团封住锅口焖煮，揭盖时肉香扑面"
+    }
+  ],
+  "AU": [
+    {
+      "zh": "",
+      "en": "Halal snack pack",
+      "desc": "Australian halal dish"
+    }
+  ],
+  "KG": [
+    {
+      "zh": "冲克缺",
+      "en": "Nauryz kozhe",
+      "desc": "七种谷物煮成浓粥，节庆时每人一碗"
+    },
+    {
+      "zh": "克缺",
+      "en": "Köje",
+      "desc": "小米粥浓稠暖胃，牧民帐篷里的清晨"
+    },
+    {
+      "zh": "",
+      "en": "oromo",
+      "desc": "面皮裹肉和蔬菜层层卷起蒸熟，切开如花朵绽放"
+    }
+  ],
+  "TN": [
+    {
+      "zh": "",
+      "en": "Mafrum",
+      "desc": "土豆夹肉馅裹面糊炸至金黄，外酥内嫩"
+    },
+    {
+      "zh": "",
+      "en": "Pkaila",
+      "desc": "菠菜和蚕豆炖煮配干肉，发酵的酸味与蔬菜的清鲜碰撞"
+    },
+    {
+      "zh": "",
+      "en": "kefteji",
+      "desc": "炸蔬菜饼配辣椒和鸡蛋，街边的金黄酥脆"
+    },
+    {
+      "zh": "",
+      "en": "Msoki",
+      "desc": "菠菜和肉丸在清汤中煮熟，汤汁翠绿鲜美"
+    },
+    {
+      "zh": "",
+      "en": "Tunisian tarte",
+      "desc": "面皮铺满沙丁鱼和橄榄烤至金黄，地中海的咸鲜"
+    },
+    {
+      "zh": "",
+      "en": "tajine el bey",
+      "desc": "蛋肉糕层层蒸制，切面如大理石纹理"
+    },
+    {
+      "zh": "",
+      "en": "tagine malsouka",
+      "desc": "薄面皮裹肉馅烤至酥脆，咬开是热腾腾的肉汁"
+    },
+    {
+      "zh": "",
+      "en": "radhkha",
+      "desc": "肉末和蔬菜在番茄酱中炖煮，浓稠入味"
+    },
+    {
+      "zh": "",
+      "en": "Brik danouni",
+      "desc": "薄面皮包入金枪鱼和欧芹炸至半透明，外脆内鲜"
+    }
+  ],
+  "GP": [
+    {
+      "zh": "",
+      "en": "Pelau",
+      "desc": "rice dish of the West Indies"
+    }
+  ],
+  "MA": [
+    {
+      "zh": "",
+      "en": "Tajine Lham-Lahlou",
+      "desc": "羊肉配杏干和蜂蜜在塔吉锅中慢炖，甜咸交融"
+    },
+    {
+      "zh": "",
+      "en": "Ahriche",
+      "desc": "羊肠裹住肉馅和香料煮熟，粗犷的草原风味"
+    },
+    {
+      "zh": "",
+      "en": "Ouarka",
+      "desc": "薄如蝉翼的面皮层层叠叠，裹入杏仁和糖粉"
+    },
+    {
+      "zh": "Taktouka",
+      "en": "Taktouka",
+      "desc": "烤番茄和青椒捣成酱，烟熏酸甜配面包蘸食"
+    },
+    {
+      "zh": "",
+      "en": "Stuffed Artichoke",
+      "desc": "洋蓟心塞入肉馅和香料，蒸至叶片软化，清鲜回甘"
+    },
+    {
+      "zh": "",
+      "en": "Babbouche",
+      "desc": "蜗牛在香料汤中煮熟，用牙签挑出，汤汁鲜辣暖身"
+    },
+    {
+      "zh": "",
+      "en": "tfaya",
+      "desc": "焦糖洋葱配杏仁铺在蒸粗麦面上，甜咸交织"
+    },
+    {
+      "zh": "",
+      "en": "douida",
+      "desc": "细面条配鸡肉和杏仁，柠檬汁的酸托出整道菜的清爽"
+    },
+    {
+      "zh": "",
+      "en": "Mderbel",
+      "desc": "扁豆和小麦同煮成浓粥，朴素的冬日暖食"
+    }
+  ],
+  "BO": [
+    {
+      "zh": "",
+      "en": "salteña",
+      "desc": "酥皮兜住肉汁馅料，咬一口汤汁涌出，甜辣交织"
+    },
+    {
+      "zh": "",
+      "en": "Cuñapé",
+      "desc": "木薯芝士球烤至外壳微焦，内里拉丝绵软，嚼出满口奶香"
+    },
+    {
+      "zh": "",
+      "en": "ranga",
+      "desc": "牛肚炖至软烂入味，辣椒和番茄的酸辣浓稠裹住每一寸"
+    },
+    {
+      "zh": "",
+      "en": "Fritanga",
+      "desc": "杂碎在锅中翻炒至焦香，油脂裹着香料的浓烈气息"
+    },
+    {
+      "zh": "",
+      "en": "Macho Camacho",
+      "desc": "辣椒酱浇在肉和玉米上，辣得额头冒汗却停不下嘴"
+    },
+    {
+      "zh": "",
+      "en": "Pichón de Cliza",
+      "desc": "鸽肉炖至酥烂，汤汁浓郁醇厚，安第斯山间的家常味"
+    }
+  ],
+  "CV": [
+    {
+      "zh": "卡丘帕",
+      "en": "Cachupa",
+      "desc": "traditional dish from Cape Verde, considered the national dish"
+    }
+  ],
+  "CR": [
+    {
+      "zh": "",
+      "en": "Casado",
+      "desc": "白饭配黑豆、炸香蕉和烤肉，一盘婚姻般均衡的日常"
+    }
+  ],
+  "PK": [
+    {
+      "zh": "",
+      "en": "Sindhi biryani",
+      "desc": "米饭层层叠叠藏入羊肉，藏红花染出金黄，锅底有焦脆锅巴"
+    },
+    {
+      "zh": "",
+      "en": "Sohbat",
+      "desc": "面饼撕碎泡进肉汤，吸满汤汁后软烂入味"
+    }
+  ],
+  "DM": [
+    {
+      "zh": "",
+      "en": "Pelau",
+      "desc": "rice dish of the West Indies"
+    }
+  ],
+  "AO": [
+    {
+      "zh": "",
+      "en": "Kissuto rombo",
+      "desc": "山羊肉在番茄和洋葱中炖煮至酥烂，汤汁浓厚"
+    },
+    {
+      "zh": "",
+      "en": "Calulu and Funge",
+      "desc": "鱼肉配木薯叶在棕榈油中炖煮，配木薯粉团蘸汤"
+    }
+  ],
+  "SN": [
+    {
+      "zh": "",
+      "en": "Dibi",
+      "desc": "烤羊肉块堆在盘中，外焦内嫩，配洋葱和芥末酱食用"
+    },
+    {
+      "zh": "",
+      "en": "Domoda",
+      "desc": "花生酱炖成浓稠肉汤，甜咸交融，拌米饭一绝"
+    },
+    {
+      "zh": "",
+      "en": "Thiébou Kéthiakh",
+      "desc": "鱼肉配蔬菜在番茄汤中炖煮，米饭吸满鱼鲜汤汁"
+    },
+    {
+      "zh": "",
+      "en": "Mbaxalou saloum",
+      "desc": "花生酱和秋葵炖成浓汤，黏滑的口感裹着坚果香"
+    },
+    {
+      "zh": "",
+      "en": "Soup Kandia",
+      "desc": "秋葵浓汤配鱼肉和蔬菜，黏丝拉长不断"
+    },
+    {
+      "zh": "",
+      "en": "Thiebou Yapp",
+      "desc": "米饭配羊肉和蔬菜，番茄汤底渗入每一粒米"
+    },
+    {
+      "zh": "",
+      "en": "Vermicelle Poulet",
+      "desc": "细面条配鸡肉和蔬菜，酱汁渗入每一根面丝"
+    },
+    {
+      "zh": "",
+      "en": "Acara",
+      "desc": "黑眼豆捏成饼炸至金黄，外酥内软带着豆香"
+    },
+    {
+      "zh": "",
+      "en": "Madd",
+      "desc": "鱼肉泥揉成丸子煮汤，鲜味溶入清汤底"
+    },
+    {
+      "zh": "",
+      "en": "Lakh",
+      "desc": "小米粗粒蒸熟拌入酸奶和糖，粒粒分明带着发酵的酸甜"
+    },
+    {
+      "zh": "",
+      "en": "Sombi",
+      "desc": "椰奶米饭布丁，甜糯温润，节庆时的甜蜜款待"
+    },
+    {
+      "zh": "",
+      "en": "Bouye Juice",
+      "desc": "猴面包树果实榨汁，酸甜冰凉的消暑饮品"
+    }
+  ],
+  "SD": [
+    {
+      "zh": "",
+      "en": "Umm Rgaigah",
+      "desc": "面糊摊成薄饼煎至两面金黄，配奶油和蜂蜜食用"
+    }
+  ],
+  "PR": [
+    {
+      "zh": "",
+      "en": "Arroz con dulce",
+      "desc": "Puerto Rican dessert"
+    }
+  ]
 }

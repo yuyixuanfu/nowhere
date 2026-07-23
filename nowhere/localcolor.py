@@ -53,18 +53,23 @@ def draw(
     pool: list[tuple[str, str, str, float]] = []
 
     entry = _load().get(place_name)
+    has_local_food = False
     if entry:
         for cat in ("物产", "声音", "痕迹", "植被", "美食"):
             for i, text in enumerate(entry.get(cat, [])):
                 key = f"{place_name}/{cat}/{i}"
                 if key not in seen:
-                    w = 2.0 if cat == "美食" else 1.0
+                    w = 3.0 if cat == "美食" else 1.0
                     pool.append((cat, key, text, w))
+                    if cat == "美食":
+                        has_local_food = True
 
-    for i, item in enumerate(baked.food_items(country_code)):
-        key = f"{place_name}/烘焙美食/{i}"
-        if key not in seen:
-            pool.append(("美食", key, baked.render_food(item, rng), 2.0))
+    # 只有本地没有特色食物时，才用国家级食物兜底
+    if not has_local_food:
+        for i, item in enumerate(baked.food_items(country_code)):
+            key = f"{place_name}/烘焙美食/{i}"
+            if key not in seen:
+                pool.append(("美食", key, baked.render_food(item, rng), 2.0))
 
     for i, item in enumerate(baked.flora_items(place_name)):
         key = f"{place_name}/烘焙植被/{i}"

@@ -94,11 +94,36 @@ def _has_cjk(s: str) -> bool:
     return any("一" <= ch <= "鿿" for ch in s)
 
 
-def food_items(country_code: str | None) -> list[dict]:
+def food_items(country_code: str | None, lat: float = 0, lon: float = 0) -> list[dict]:
     _load()
     if not country_code:
         return []
-    return _food.get(country_code, [])
+    items = _food.get(country_code, [])
+    # 中国食物按地区过滤
+    if country_code == "CN" and lat != 0:
+        region = _get_cn_region(lat, lon)
+        if region:
+            filtered = [i for i in items if i.get("region") == region]
+            if filtered:
+                return filtered
+    return items
+
+
+def _get_cn_region(lat: float, lon: float) -> str:
+    """根据经纬度判断中国地区"""
+    regions = {
+        "东北": (40, 55, 120, 135),
+        "华北": (35, 45, 110, 120),
+        "华东": (25, 35, 115, 125),
+        "华南": (18, 25, 105, 120),
+        "华中": (25, 35, 105, 115),
+        "西北": (35, 50, 75, 110),
+        "西南": (18, 35, 85, 110),
+    }
+    for name, (lat_min, lat_max, lon_min, lon_max) in regions.items():
+        if lat_min <= lat <= lat_max and lon_min <= lon <= lon_max:
+            return name
+    return ""
 
 
 def flora_items(place_name: str | None) -> list[dict]:
