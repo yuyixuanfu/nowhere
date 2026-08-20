@@ -42,7 +42,14 @@ tools/.cache/
 WORK_CARDS.md
 TESTER_BRIEF.md
 RESEARCH_SURVEY.md
+RESEARCH_SURVEY_BROWSER.md
+RESEARCH_TASK_CONTENT_PIPELINE.md
+RESEARCH_CONTENT_PIPELINE.md
 AUDIT_RECHECK.md
+AUDIT_CONSTITUTION.md
+AUDIT_PLAN.md
+AUDIT_RUN_20260820.md
+AUDIT_VERDICT.md
 health_report.md
 qa_*_report.md
 qa_*_report*.md
@@ -51,7 +58,18 @@ docs/WRITING_PROMPT*.md
 docs/THICKEN_PLAN.md
 docs/TASTE_LOOP.md
 docs/taste_samples/
+drafts/
 nowhere/audit_*.md
 nowhere/tests/
 tools/
 nowhere/data/scenes_src/
+
+# 中间产物报告(散在 data/ 里的临时文件,不进 git)
+nowhere/data/REPORT_*.md
+nowhere/data/*_report.md
+nowhere/data/audit_*.md
+nowhere/data/build_index.py
+nowhere/data/CONTENT_GAPS_TODO.md
+nowhere/data/seasonal_new.txt
+nowhere/EXPLORABLE_PLACES.md
+nowhere/TRAVEL_JOURNAL_RULES.md
