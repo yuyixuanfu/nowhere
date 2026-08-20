@@ -23,6 +23,8 @@ import random
 import re
 from typing import Sequence
 
+import places
+
 # ── scene files (literary descriptions per biome/weather) ─────────────
 _SCENE_DIR = pathlib.Path(__file__).resolve().parent / "data"
 _SCENE_CACHE: dict[str, list[str]] = {}
@@ -40,18 +42,26 @@ _BIOME_TAG_RE = re.compile(r"(#[^\s]+)\s*")
 _LOCATION_SCENES: dict[str, list[str]] | None = None
 
 
+_LOCATION_SCENES_SEASONAL: dict[tuple[str, str], list[str]] | None = None
+
+
 def _load_location_scenes() -> dict[str, list[str]]:
     """Load all location-specific scene files.
 
     Handles two formats:
       - [地名] 描述  (soundscape, taste, china_enhanced)
+      - [地名|季] 描述  (season-tagged entries)
       - 地名 描述    (world_enhanced — no brackets)
+
+    Card 82: season-tagged entries are stored in both the main dict
+    (by place name) and a seasonal cache keyed by (place, season).
     """
-    global _LOCATION_SCENES
+    global _LOCATION_SCENES, _LOCATION_SCENES_SEASONAL
     if _LOCATION_SCENES is not None:
         return _LOCATION_SCENES
 
     _LOCATION_SCENES = {}
+    _LOCATION_SCENES_SEASONAL = {}
     for fname in ["scene_china_enhanced.txt", "scene_world_enhanced.txt",
                    "scene_soundscape.txt", "scene_taste.txt"]:
         fp = _SCENE_DIR / fname
@@ -61,11 +71,16 @@ def _load_location_scenes() -> dict[str, list[str]]:
             line = line.strip()
             if not line or line.startswith("#"):
                 continue
-            # Bracket format: [地名] 描述
+            # Bracket format: [地名] 描述 or [地名|季] 描述
             if line.startswith("[") and "] " in line:
                 bracket_end = line.index("] ")
-                place = line[1:bracket_end]
+                bracket_content = line[1:bracket_end]
                 desc = line[bracket_end + 2:]
+                if "|" in bracket_content:
+                    place, season = bracket_content.rsplit("|", 1)
+                    _LOCATION_SCENES_SEASONAL.setdefault((place, season), []).append(desc)
+                else:
+                    place = bracket_content
                 _LOCATION_SCENES.setdefault(place, []).append(desc)
             # No-bracket format: 地名 描述 (world_enhanced)
             elif not line.startswith("["):
@@ -75,6 +90,14 @@ def _load_location_scenes() -> dict[str, list[str]]:
                     desc = line[sp + 1:]
                     _LOCATION_SCENES.setdefault(place, []).append(desc)
     return _LOCATION_SCENES
+
+
+def _get_location_seasonal() -> dict[tuple[str, str], list[str]]:
+    """Get seasonal entries from location scene files."""
+    global _LOCATION_SCENES_SEASONAL
+    if _LOCATION_SCENES_SEASONAL is None:
+        _load_location_scenes()
+    return _LOCATION_SCENES_SEASONAL or {}
 
 
 # ── biome-tagged combinatorial scene elements ────────────────────────
@@ -2565,7 +2588,11 @@ def _append_local_flavor(parts: list[str], place: str, rng: random.Random) -> No
                 line = line.strip()
                 if line.startswith("[") and "] " in line:
                     bracket_end = line.index("] ")
-                    if line[1:bracket_end] == place:
+                    bracket_place = line[1:bracket_end]
+                    # Card 82: handle [地名|季] format
+                    if "|" in bracket_place:
+                        bracket_place = bracket_place.rsplit("|", 1)[0]
+                    if bracket_place == place:
                         sound_pool.append(line[bracket_end + 2:])
             if sound_pool:
                 parts.append(rng.choice(sound_pool))
@@ -2579,7 +2606,11 @@ def _append_local_flavor(parts: list[str], place: str, rng: random.Random) -> No
                 line = line.strip()
                 if line.startswith("[") and "] " in line:
                     bracket_end = line.index("] ")
-                    if line[1:bracket_end] == place:
+                    bracket_place = line[1:bracket_end]
+                    # Card 82: handle [地名|季] format
+                    if "|" in bracket_place:
+                        bracket_place = bracket_place.rsplit("|", 1)[0]
+                    if bracket_place == place:
                         taste_pool.append(line[bracket_end + 2:])
             if taste_pool:
                 parts.append(rng.choice(taste_pool))
@@ -2634,10 +2665,19 @@ def render_establish(payload: dict, rng: random.Random) -> str:
     _location_offset(rng, lat, lon)
 
     # ── Try location-specific scenes first (china/world enhanced, soundscape, taste) ──
+    # Card 82: filter by season tags first, then fall back to word-based filter
     location_scenes = _load_location_scenes()
     if place in location_scenes:
         _loc_pool = location_scenes[place]
-        # Card 69: filter winter scenes from location pool in summer/spring
+        # Card 82: exclude season-tagged entries that don't match current season
+        _loc_seasonal = _get_location_seasonal()
+        _loc_exclude: set[str] = set()
+        for (_sp, _sn), _sdescs in _loc_seasonal.items():
+            if _sp == place and _sn != season:
+                _loc_exclude.update(_sdescs)
+        if _loc_exclude:
+            _loc_pool = [s for s in _loc_pool if s not in _loc_exclude]
+        # Card 69: word-based winter filter as fallback for untagged entries
         if season in ("summer", "spring") and biome not in ("tundra", "glacier", "polar"):
             _winter_loc_words = ["雪", "冰雪", "冰封", "冰面", "冰川", "冻", "冻土",
                                  "寒", "严寒", "霜", "积雪", "雪原"]
@@ -2645,8 +2685,6 @@ def render_establish(payload: dict, rng: random.Random) -> str:
             if _loc_filtered:
                 _loc_pool = _loc_filtered
             else:
-                # All scenes are winter scenes — skip location scenes entirely,
-                # fall through to seasonal or generic rendering below
                 _loc_pool = []
         if _loc_pool:
             scene_text = rng.choice(_loc_pool)
@@ -2807,6 +2845,35 @@ _CURRENT_SEASON: str = ""
 _CURRENT_LAT: float = 0.0
 _RECENT_TOUCH: set[str] = set()
 _RECENT_SCENES: list[str] = []
+_SEG_GEOCODE_CACHE: dict[str, tuple[float, float] | None] = {}
+
+
+# ── segment geocode / distance helpers ──────────────────────────────
+
+def _geocode_segment(seg_name: str) -> tuple[float, float] | None:
+    """Geocode a water-feature segment name, caching results."""
+    if seg_name in _SEG_GEOCODE_CACHE:
+        return _SEG_GEOCODE_CACHE[seg_name]
+    stripped = seg_name.rstrip("段")
+    hit = places.find(stripped)
+    if hit is not None:
+        result = (hit["lat"], hit["lon"])
+    else:
+        result = None
+    _SEG_GEOCODE_CACHE[seg_name] = result
+    return result
+
+
+def _haversine_km(a: tuple[float, float], b: tuple[float, float]) -> float:
+    """Haversine distance in km between two (lat, lon) tuples."""
+    import math
+    R = 6371.0
+    lat1, lon1 = math.radians(a[0]), math.radians(a[1])
+    lat2, lon2 = math.radians(b[0]), math.radians(b[1])
+    dlat = lat2 - lat1
+    dlon = lon2 - lon1
+    h = math.sin(dlat / 2) ** 2 + math.cos(lat1) * math.cos(lat2) * math.sin(dlon / 2) ** 2
+    return R * 2 * math.atan2(math.sqrt(h), math.sqrt(1 - h))
 
 
 # ── handler registry ─────────────────────────────────────────────────
@@ -2875,11 +2942,38 @@ def _render_water_features(payload: dict, prev: dict | None, rng: random.Random)
         if entry and isinstance(entry, dict):
             segments = entry.get("segments", {})
             if segments:
-                seg_name = rng.choice(list(segments.keys()))
-                seg = segments[seg_name]
-                scene_text = seg.get("scene", "")
-                if scene_text:
-                    return scene_text
+                # ── Card 75: nearest-segment selection ─────────────
+                # Get feature coordinates from payload
+                feat_coords = None
+                for f in features:
+                    flt = f.get("lat")
+                    flon = f.get("lon")
+                    if flt is not None and flon is not None:
+                        feat_coords = (flt, flon)
+                        break
+                seg_name = None
+                if feat_coords:
+                    best_seg = None
+                    best_d = float("inf")
+                    for _sn in segments:
+                        gc = _geocode_segment(_sn)
+                        if gc is None:
+                            continue
+                        d = _haversine_km(feat_coords, gc)
+                        if d < best_d:
+                            best_d = d
+                            best_seg = _sn
+                    if best_seg is not None and best_d <= 100.0:
+                        seg_name = best_seg
+                if seg_name is None:
+                    # Fallback: rng.choice or too far → skip named scene
+                    if feat_coords is None:
+                        seg_name = rng.choice(list(segments.keys()))
+                if seg_name is not None:
+                    seg = segments[seg_name]
+                    scene_text = seg.get("scene", "")
+                    if scene_text:
+                        return scene_text
 
     # Card 33: read biome-specific product file directly
     if biome:

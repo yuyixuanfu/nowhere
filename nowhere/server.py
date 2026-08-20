@@ -455,6 +455,9 @@ def _check_phenology(dt: datetime, lat: float, rng: random.Random,
         me = cons.get("max_elev")
         if me and elev and elev > me:
             continue
+        # Card 75: coast_only — skip coastal cards for inland biomes
+        if cons.get("coast_only") and biome not in ("coast", "island", "water"):
+            continue
         raw_candidates.append((e["text"], cons.get("humidity")))
     if not raw_candidates:
         # Fallback: accept any card entry (zone mismatch shouldn't happen)
@@ -477,6 +480,9 @@ def _check_phenology(dt: datetime, lat: float, rng: random.Random,
             # Card 81: max_elev — skip tree/forest cards above treeline (fallback)
             me = cons.get("max_elev")
             if me and elev and elev > me:
+                continue
+            # Card 75: coast_only — skip coastal cards for inland biomes (fallback)
+            if cons.get("coast_only") and biome not in ("coast", "island", "water"):
                 continue
             raw_candidates.append((e["text"], cons.get("humidity")))
 
