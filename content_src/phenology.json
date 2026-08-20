@@ -98,7 +98,8 @@
           },
           {
             "text": "雪地上有动物的脚印,一串一串地延伸到松林里。",
-            "climate_zone": "寒带"
+            "climate_zone": "寒带",
+            "max_elev": 4200
           },
           {
             "text": "夜里气温骤降,你能听到木头在收缩,嘎吱嘎吱地响。",
@@ -132,7 +133,8 @@
           },
           {
             "text": "松树上挂满了雪,枝条低垂着,风一吹就簌簌地落。",
-            "climate_zone": "寒带"
+            "climate_zone": "寒带",
+            "max_elev": 4200
           },
           {
             "text": "暖气管里的水在响,咕噜咕噜,整栋楼都靠它活着。",
@@ -162,7 +164,8 @@
           },
           {
             "text": "松树上的雪在化,雪水沿着树干流下来,树皮变深了一个色号。",
-            "climate_zone": "寒带"
+            "climate_zone": "寒带",
+            "max_elev": 4200
           },
           {
             "text": "冰面上出现了大片的水洼,你踩进去,水没过鞋帮,冰凉的。",
@@ -180,7 +183,8 @@
           },
           {
             "text": "白桦林刚冒芽,远看一层绿雾。",
-            "climate_zone": "寒带"
+            "climate_zone": "寒带",
+            "max_elev": 4200
           },
           {
             "text": "驯鹿在换毛,身上一块一块地秃着,你摸上去,毛扎手。",
@@ -192,7 +196,8 @@
           },
           {
             "text": "阳光照在雪地上,刺眼。你眯起眼,远处的白桦林泛着银光。",
-            "climate_zone": "寒带"
+            "climate_zone": "寒带",
+            "max_elev": 4200
           },
           {
             "text": "你能闻到春天的味道了。苔藓、泥土和融雪混在一起,湿漉漉的。",
@@ -200,11 +205,13 @@
           },
           {
             "text": "松树开始分泌松脂,空气里多了一层黏稠的甜味。",
-            "climate_zone": "寒带"
+            "climate_zone": "寒带",
+            "max_elev": 4200
           },
           {
             "text": "夜里还是冷的。你裹着被子,听窗外的风在松林里穿行。",
-            "climate_zone": "寒带"
+            "climate_zone": "寒带",
+            "max_elev": 4200
           }
         ],
         "5": [
@@ -226,7 +233,8 @@
           },
           {
             "text": "空气里弥漫着松针和融雪的气息,你深吸一口,凉到肺里。",
-            "climate_zone": "寒带"
+            "climate_zone": "寒带",
+            "max_elev": 4200
           },
           {
             "text": "驯鹿在远处的草甸上吃草,鹿角在夕阳下镀了一层金。",
@@ -260,7 +268,8 @@
           },
           {
             "text": "空气里弥漫着松针和融雪的气息,你深吸一口,凉到肺里。",
-            "climate_zone": "寒带"
+            "climate_zone": "寒带",
+            "max_elev": 4200
           },
           {
             "text": "驯鹿在远处的草甸上吃草,鹿角在夕阳下镀了一层金。",
@@ -294,7 +303,8 @@
           },
           {
             "text": "松树的针叶被阳光晒热了,你凑近闻,是暖烘烘的松脂味。",
-            "climate_zone": "寒带"
+            "climate_zone": "寒带",
+            "max_elev": 4200
           },
           {
             "text": "雪峰在远处闪着光,你眯起眼看,山脊线像刀刃一样锋利。",
@@ -320,7 +330,8 @@
           },
           {
             "text": "松树在风里沙沙地响。你靠着树干坐下来,能闻到松脂的香味。",
-            "climate_zone": "寒带"
+            "climate_zone": "寒带",
+            "max_elev": 4200
           },
           {
             "text": "远处有驯鹿踩过灌木丛,你能听到树枝折断的声音。",
@@ -328,7 +339,8 @@
           },
           {
             "text": "你抬头看,松针间的天空是碎的,一块一块蓝色的光斑。",
-            "climate_zone": "寒带"
+            "climate_zone": "寒带",
+            "max_elev": 4200
           },
           {
             "text": "夜里温度降了,你裹紧毯子,能闻到霜要来的味道。",
@@ -346,7 +358,8 @@
         "9": [
           {
             "text": "落叶松黄了,金的一片。",
-            "climate_zone": "寒带"
+            "climate_zone": "寒带",
+            "max_elev": 4200
           },
           {
             "text": "第一场霜,草地白了。",
@@ -358,7 +371,8 @@
           },
           {
             "text": "落叶松的针叶落了满地,踩上去软绵绵的,是金黄色的地毯。",
-            "climate_zone": "寒带"
+            "climate_zone": "寒带",
+            "max_elev": 4200
           },
           {
             "text": "早晨出门,你呼出的气变成白雾。手插在口袋里,还是冷。",
@@ -366,7 +380,8 @@
           },
           {
             "text": "松鼠在树枝间跳来跳去,嘴里塞满了松果,准备过冬。",
-            "climate_zone": "寒带"
+            "climate_zone": "寒带",
+            "max_elev": 4200
           },
           {
             "text": "远处的山变了颜色,从绿到黄再到红,一层一层的。",
@@ -396,7 +411,8 @@
           },
           {
             "text": "松树上挂了一层薄霜,在阳光下闪着细碎的光。",
-            "climate_zone": "寒带"
+            "climate_zone": "寒带",
+            "max_elev": 4200
           },
           {
             "text": "夜里结了冰,早晨起来,草地上一层白,踩上去咔嚓咔嚓地响。",
@@ -426,7 +442,8 @@
           },
           {
             "text": "远处的松树被雪压弯了腰,枝条垂到地上。",
-            "climate_zone": "寒带"
+            "climate_zone": "寒带",
+            "max_elev": 4200
           },
           {
             "text": "雪地上只有一行脚印,是你自己的,通往远处的木屋。",
@@ -472,7 +489,8 @@
           },
           {
             "text": "松树上全是雪,整棵树变成了白色的雕塑。你走近,雪簌簌地落。",
-            "climate_zone": "寒带"
+            "climate_zone": "寒带",
+            "max_elev": 4200
           },
           {
             "text": "你泡了一杯热茶,杯子烫手。窗外什么都看不见,只有雪在下。",
@@ -496,7 +514,8 @@
           },
           {
             "text": "梧桐枯叶还在枝头挂着,风一吹就掉,撞在脸上。",
-            "climate_zone": "温带"
+            "climate_zone": "温带",
+            "max_elev": 4200
           },
           {
             "text": "雾霾天,远处的楼看不见,空气里有股焦味。",
@@ -517,10 +536,6 @@
         ],
         "2": [
           {
-            "text": "迎春花开了,黄的,在灰蒙蒙的墙根下。",
-            "climate_zone": "温带"
-          },
-          {
             "text": "风还是冷的,但太阳暖了一点。",
             "climate_zone": "温带"
           },
@@ -530,18 +545,16 @@
           },
           {
             "text": "柳树冒芽了,黄绿的,远看像一层雾。你凑近了看,芽还卷着。",
-            "climate_zone": "温带"
+            "climate_zone": "温带",
+            "max_elev": 4200
           },
           {
             "text": "梧桐树皮在剥落,露出白的新皮,你路过捡一块。",
-            "climate_zone": "温带"
+            "climate_zone": "温带",
+            "max_elev": 4200
           },
           {
             "text": "风变了方向,不那么刺了。你把围巾松了一圈。",
-            "climate_zone": "温带"
-          },
-          {
-            "text": "迎春花开了。黄的,在灰墙根下,你低头才看见。",
             "climate_zone": "温带"
           },
           {
@@ -551,16 +564,22 @@
         ],
         "3": [
           {
+            "text": "迎春花开了。黄的,在灰墙根下,你低头才看见。",
+            "climate_zone": "温带"
+          },
+          {
             "text": "杨絮开始飘了。漫天白毛,往鼻子里钻。",
             "climate_zone": "温带"
           },
           {
             "text": "柳树冒芽了,绿的,远看像雾。",
-            "climate_zone": "温带"
+            "climate_zone": "温带",
+            "max_elev": 4200
           },
           {
             "text": "梧桐的芽苞裂了,嫩叶卷着往外钻。你摸一下,黏的。",
-            "climate_zone": "温带"
+            "climate_zone": "温带",
+            "max_elev": 4200
           },
           {
             "text": "风里带了潮气,不像冬天那么干了。你鼻子不流血了。",
@@ -576,11 +595,13 @@
           },
           {
             "text": "柳枝垂下来,绿的,风一吹就扫到水面。",
-            "climate_zone": "温带"
+            "climate_zone": "温带",
+            "max_elev": 4200
           },
           {
             "text": "梧桐树下的草地返青了,你踩上去是软的。",
-            "climate_zone": "温带"
+            "climate_zone": "温带",
+            "max_elev": 4200
           }
         ],
         "4": [
@@ -594,11 +615,13 @@
           },
           {
             "text": "梧桐叶子展开了,嫩绿的,透光。你在树下走,影子碎了一地。",
-            "climate_zone": "温带"
+            "climate_zone": "温带",
+            "max_elev": 4200
           },
           {
             "text": "风吹过梧桐叶,哗啦响。你知道夏天快来了。",
-            "climate_zone": "温带"
+            "climate_zone": "温带",
+            "max_elev": 4200
           },
           {
             "text": "燕子在屋檐下筑巢,衔泥飞进飞出,你路过要小心鸟粪。",
@@ -610,7 +633,8 @@
           },
           {
             "text": "梧桐花开了,小喇叭似的,落在地上踩出紫色的汁。",
-            "climate_zone": "温带"
+            "climate_zone": "温带",
+            "max_elev": 4200
           },
           {
             "text": "空气里有花粉,你的眼睛开始痒了。",
@@ -628,7 +652,8 @@
           },
           {
             "text": "梧桐叶子长全了,树荫盖住整条街。你在下面走,凉快。",
-            "climate_zone": "温带"
+            "climate_zone": "温带",
+            "max_elev": 4200
           },
           {
             "text": "槐花开了。你摘一串尝,甜的,有股清味。",
@@ -644,7 +669,8 @@
           },
           {
             "text": "梧桐的花粉落了一车,你擦一下,手黄了。",
-            "climate_zone": "温带"
+            "climate_zone": "温带",
+            "max_elev": 4200
           },
           {
             "text": "天热了,你换了短袖,蝉还没叫。",
@@ -674,7 +700,8 @@
           },
           {
             "text": "梧桐叶子被雨打得油亮,你走过树下,水滴在脖子上。",
-            "climate_zone": "温带"
+            "climate_zone": "温带",
+            "max_elev": 4200
           },
           {
             "text": "空气潮得能拧水,衣服晾了两天还是湿的。你闻到霉味了。",
@@ -690,7 +717,8 @@
           },
           {
             "text": "梧桐树下的青苔绿了,你踩上去滑了一下。",
-            "climate_zone": "温带"
+            "climate_zone": "温带",
+            "max_elev": 4200
           }
         ],
         "7": [
@@ -712,7 +740,8 @@
           },
           {
             "text": "梧桐叶子被晒得卷了边,你知道最热的时候到了。",
-            "climate_zone": "温带"
+            "climate_zone": "温带",
+            "max_elev": 4200
           },
           {
             "text": "你出门买个菜,后背全湿了。回来灌了一壶凉白开。",
@@ -735,7 +764,10 @@
           {
             "text": "葡萄熟了,紫的,甜得腻。",
             "climate_zone": "温带",
-            "lat_band": [35, 52]
+            "lat_band": [
+              35,
+              52
+            ]
           },
           {
             "text": "雷阵雨来得急,你在路上,三秒就湿透了。",
@@ -769,7 +801,8 @@
           },
           {
             "text": "梧桐叶子大片地黄了,你捡一片,叶脉还硬着。",
-            "climate_zone": "温带"
+            "climate_zone": "温带",
+            "max_elev": 4200
           },
           {
             "text": "天高了,云薄了,你抬头望得远。秋天来了。",
@@ -781,11 +814,13 @@
           },
           {
             "text": "梧桐果荚在风里摇,你听见咔嗒咔嗒的声音。",
-            "climate_zone": "温带"
+            "climate_zone": "温带",
+            "max_elev": 4200
           },
           {
             "text": "梧桐叶开始变黄了,你抬头看,绿里透着一点金。",
-            "climate_zone": "温带"
+            "climate_zone": "温带",
+            "max_elev": 4200
           },
           {
             "text": "蝉声弱了,你知道夏天在退。",
@@ -799,7 +834,8 @@
         "10": [
           {
             "text": "银杏叶黄了。满地金扇子。",
-            "climate_zone": "温带"
+            "climate_zone": "温带",
+            "max_elev": 4200
           },
           {
             "text": "柿子红了,挂在枝头像灯笼。",
@@ -807,12 +843,16 @@
           },
           {
             "text": "银杏叶黄了。满地金扇子,你捡一片夹在书里。",
-            "climate_zone": "温带"
+            "climate_zone": "温带",
+            "max_elev": 4200
           },
           {
             "text": "桂花还在飘香。你深吸一口,甜的。",
             "climate_zone": "温带",
-            "lat_band": [23, 32]
+            "lat_band": [
+              23,
+              32
+            ]
           },
           {
             "text": "落叶铺了一地,你踩上去,沙沙响。",
@@ -824,7 +864,8 @@
           },
           {
             "text": "梧桐果荚裂了,毛絮飘出来,你捂着鼻子走过去。",
-            "climate_zone": "温带"
+            "climate_zone": "温带",
+            "max_elev": 4200
           },
           {
             "text": "柿子红了,挂在枝头,鸟在啄。你路过看了一眼。",
@@ -842,7 +883,8 @@
           },
           {
             "text": "落叶铺了一地。你踩上去,沙沙响。梧桐叶比脸大。",
-            "climate_zone": "温带"
+            "climate_zone": "温带",
+            "max_elev": 4200
           },
           {
             "text": "雾霾天又来了,远处的楼看不见,你戴了口罩。",
@@ -858,7 +900,8 @@
           },
           {
             "text": "梧桐叶落光了,枝桠在风里摇,你知道冬天来了。",
-            "climate_zone": "温带"
+            "climate_zone": "温带",
+            "max_elev": 4200
           },
           {
             "text": "风变了方向,冷了。你缩着脖子走路。",
@@ -872,7 +915,8 @@
           },
           {
             "text": "柿子树上还挂着几个干果,鸟在吃。",
-            "climate_zone": "温带"
+            "climate_zone": "温带",
+            "max_elev": 4200
           },
           {
             "text": "暖气片烫手。你把袜子搭在上面烘干,有股焦味。",
@@ -884,7 +928,8 @@
           },
           {
             "text": "梧桐光秃秃的,灰天底下,枝桠像裂纹。你路过低着头。",
-            "climate_zone": "温带"
+            "climate_zone": "温带",
+            "max_elev": 4200
           },
           {
             "text": "空气干了,你的嘴唇在脱皮,手背也裂了。",
@@ -1138,7 +1183,8 @@
           },
           {
             "text": "梧桐叶子被晒得卷了边。你知道最热的时候到了。",
-            "climate_zone": "暖温带"
+            "climate_zone": "暖温带",
+            "max_elev": 4200
           }
         ],
         "8": [
@@ -1164,7 +1210,10 @@
           {
             "text": "桂花还没开,但你路过那棵树,空气里已经有了一丝甜。",
             "climate_zone": "暖温带",
-            "lat_band": [23, 32],
+            "lat_band": [
+              23,
+              32
+            ],
             "humidity": "humid"
           },
           {
@@ -1194,7 +1243,10 @@
           {
             "text": "桂花开了。你路过那棵树,甜香扑鼻,走远了还能闻到。",
             "climate_zone": "暖温带",
-            "lat_band": [23, 32],
+            "lat_band": [
+              23,
+              32
+            ],
             "humidity": "humid"
           },
           {
@@ -1203,7 +1255,8 @@
           },
           {
             "text": "梧桐叶子大片地黄了。你捡一片,叶脉还硬着。",
-            "climate_zone": "暖温带"
+            "climate_zone": "暖温带",
+            "max_elev": 4200
           },
           {
             "text": "天高了,云薄了。你抬头能望到天际线,秋天的天空是干净的。",
@@ -1215,7 +1268,8 @@
           },
           {
             "text": "梧桐叶开始变黄了,你抬头看,绿里透着一点金。",
-            "climate_zone": "暖温带"
+            "climate_zone": "暖温带",
+            "max_elev": 4200
           },
           {
             "text": "蝉声弱了。你知道夏天在退,秋天在路上了。",
@@ -1233,7 +1287,8 @@
           },
           {
             "text": "银杏叶变黄,但还没落。",
-            "climate_zone": "暖温带"
+            "climate_zone": "暖温带",
+            "max_elev": 4200
           },
           {
             "text": "柿子红了,挂在枝头。鸟在啄,你路过看了一眼。",
@@ -1245,7 +1300,8 @@
           },
           {
             "text": "银杏叶黄了,满地金扇子。你捡一片夹在书里。",
-            "climate_zone": "暖温带"
+            "climate_zone": "暖温带",
+            "max_elev": 4200
           },
           {
             "text": "山上的枫叶红了一片。你走进去,脚下是落叶,沙沙响。",
@@ -1258,26 +1314,33 @@
           {
             "text": "桂花还在飘香。你深吸一口,甜的,空气是干净的。",
             "climate_zone": "暖温带",
-            "lat_band": [23, 32],
+            "lat_band": [
+              23,
+              32
+            ],
             "humidity": "humid"
           }
         ],
         "11": [
           {
             "text": "落叶铺了满地。梧桐叶比脸大。",
-            "climate_zone": "暖温带"
+            "climate_zone": "暖温带",
+            "max_elev": 4200
           },
           {
             "text": "水杉变红了,一条一条站在水边。",
-            "climate_zone": "暖温带"
+            "climate_zone": "暖温带",
+            "max_elev": 4200
           },
           {
             "text": "落叶铺了满地。你踩上去,沙沙响。梧桐叶比脸大。",
-            "climate_zone": "暖温带"
+            "climate_zone": "暖温带",
+            "max_elev": 4200
           },
           {
             "text": "水杉站在水边,红的,倒影在水里也是一条一条的。",
-            "climate_zone": "暖温带"
+            "climate_zone": "暖温带",
+            "max_elev": 4200
           },
           {
             "text": "风变了方向,冷了。你把外套拉链拉到顶。",
@@ -1289,7 +1352,8 @@
           },
           {
             "text": "梧桐果荚裂了,毛絮飘出来。你捂着鼻子走过去。",
-            "climate_zone": "暖温带"
+            "climate_zone": "暖温带",
+            "max_elev": 4200
           },
           {
             "text": "傍晚来得早了。你还在路上,天就暗了。路灯亮了。",
@@ -1311,7 +1375,8 @@
           },
           {
             "text": "梧桐叶落光了。枝桠在灰天底下像裂纹,你路过低着头走。",
-            "climate_zone": "暖温带"
+            "climate_zone": "暖温带",
+            "max_elev": 4200
           },
           {
             "text": "橘子甜了。你买了一袋,在手里暖着,冰凉的皮贴着掌心。",
@@ -1346,32 +1411,38 @@
           {
             "text": "椰子掉在沙地上,闷响。你捡起来,壳上还带着温热。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "棕榈叶在干风里摩擦,沙沙声从早到晚不停。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "芭蕉叶卷了边,旱季让它缺水,叶尖发黄。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "芒果树在冒花苞,枝头缀满米粒大的红点。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "清晨的椰林里有鸟在叫,声音尖锐,穿透闷热的空气。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "旱季的月亮特别亮,椰子树影子投在地上,一根一根的。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "利马的雾季,灰色的雾从海面飘过来,你走在街上,头发被水汽打湿。空气是凉的,但没有雨。",
@@ -1380,11 +1451,6 @@
           },
           {
             "text": "阿塔卡马沙漠的花开了,紫色和黄色铺满干涸的河床。你蹲下看,花瓣上有细沙。",
-            "climate_zone": "热带",
-            "humidity": "arid"
-          },
-          {
-            "text": "纳米布沙漠的雾从海岸飘进来,甲虫倒立在沙丘顶上,用背上的沟收集水珠。",
             "climate_zone": "热带",
             "humidity": "arid"
           }
@@ -1403,12 +1469,14 @@
           {
             "text": "芒果花开了。蜜蜂在花穗上密密地爬,嗡嗡声能传到街对面。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "棕榈树干上渗出汁液,蚂蚁排着队往上爬。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "夜里能听见壁虎在墙上叫,嘎嘎的,在找虫吃。",
@@ -1418,12 +1486,14 @@
           {
             "text": "椰子壳堆在路边,有人在劈,刀声脆响。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "芭蕉叶上的露珠到中午才干,空气已经开始闷了。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "天亮前蝉就开始叫了,你被吵醒,翻身继续睡。",
@@ -1438,11 +1508,6 @@
           },
           {
             "text": "阿塔卡马的盐湖在旱季蒸发,白色的盐结晶在阳光下刺眼。你踩上去,盐壳咔嚓碎了。",
-            "climate_zone": "热带",
-            "humidity": "arid"
-          },
-          {
-            "text": "纳米布的沙丘在晨雾里是灰蓝色的,太阳一出来就变回橙色。温差大得你早上要穿外套。",
             "climate_zone": "热带",
             "humidity": "arid"
           }
@@ -1461,12 +1526,14 @@
           {
             "text": "椰林里的蝉声从早到晚不停,你穿过林子,声音把耳朵填满。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "芒果树冒出新叶,嫩绿的,在阳光下透亮。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "空气开始闷了,季风前的潮气贴在皮肤上。",
@@ -1476,12 +1543,14 @@
           {
             "text": "芭蕉叶大到能遮雨,你站在下面,听雨打叶面的声音。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "棕榈果串挂在树上,绿的,还没熟。鸟在啄。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "远处有雷声,闷闷的,在地平线上滚。",
@@ -1496,11 +1565,6 @@
           },
           {
             "text": "阿塔卡马的仙人掌在开花,粉色的花从绿色的茎上冒出来,蜜蜂在嗡嗡地转。",
-            "climate_zone": "热带",
-            "humidity": "arid"
-          },
-          {
-            "text": "纳米布的沙漠甲虫在清晨的雾里倒立,水珠沿着背上的沟流到嘴里。你蹲下看,沙子是凉的。",
             "climate_zone": "热带",
             "humidity": "arid"
           }
@@ -1529,12 +1593,14 @@
           {
             "text": "芭蕉花从叶间伸出来,红的,往下垂着。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "椰子树干上长了青苔,雨季的潮气让它疯长。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "空气里混着湿土和植物根茎的味道,你深吸一口,黏的。",
@@ -1544,7 +1610,8 @@
           {
             "text": "蝉声比上月更密了,从早到晚,整片椰林都在震。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "利马的雾季加深了,灰色的雾盖住整个城市。你走在街上,空气里是海盐和湿沙的味道。",
@@ -1553,11 +1620,6 @@
           },
           {
             "text": "阿塔卡马的夜空没有云,星星多得像撒了一把盐。你躺在地上看银河,空气干得嘴唇裂了。",
-            "climate_zone": "热带",
-            "humidity": "arid"
-          },
-          {
-            "text": "纳米布的沙丘在风里移动,你回头看你刚才的脚印,已经被沙填平了。",
             "climate_zone": "热带",
             "humidity": "arid"
           }
@@ -1576,12 +1638,14 @@
           {
             "text": "雨打芭蕉叶,咚咚的,像敲鼓。你隔着墙都能听见。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "椰子林里的地面湿了,蘑菇冒出来,白的,一天就枯。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "暴雨来的时候你在路上,三秒就湿透,雨水是温的。",
@@ -1596,7 +1660,8 @@
           {
             "text": "季风雨说来就来,棕榈叶被打得啪啪响,空气里全是水雾。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "蝉被雨声盖住了,雨一停它们立刻接上,像接力赛。",
@@ -1610,11 +1675,6 @@
           },
           {
             "text": "阿塔卡马沙漠的夜风冷得刺骨,你裹着毯子看星星,银河从头顶跨过去。",
-            "climate_zone": "热带",
-            "humidity": "arid"
-          },
-          {
-            "text": "纳米布的剑羚在沙丘之间走,白色的毛在阳光下发亮。它不喝水,从食物里获取水分。",
             "climate_zone": "热带",
             "humidity": "arid"
           }
@@ -1638,7 +1698,8 @@
           {
             "text": "雨后椰子林里冒蘑菇,棕榈根部一圈一圈的。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "空气黏在身上,你走几步就出汗,衣服贴着后背。",
@@ -1658,7 +1719,8 @@
           {
             "text": "芭蕉叶被雨水压弯了,水顺着叶脉流到根部。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "利马的雾从海面飘过来,灰色的,绵密的。你走在巴兰科区,空气里是湿气和旧木头的味道。",
@@ -1669,18 +1731,14 @@
             "text": "阿塔卡马的盐湖反射着天空,你分不清哪是地哪是天。空气干得你喉咙发紧。",
             "climate_zone": "热带",
             "humidity": "arid"
-          },
-          {
-            "text": "纳米布的沙丘在日出时是橙色的,阴影面是深紫色。你站在丘顶,风把细沙吹到脸上,刺痛。",
-            "climate_zone": "热带",
-            "humidity": "arid"
           }
         ],
         "7": [
           {
             "text": "菠萝蜜挂在树干上,大的有十斤。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "雨林里的藤蔓疯长,一个月能爬两米。",
@@ -1690,12 +1748,14 @@
           {
             "text": "芭蕉叶下积水没过脚踝,你踩进去,水是温的。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "椰子落了一地,暴雨打下来的,你得小心走路。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "雨林里的蝉声和蛙声混在一起,夜里比白天还吵。",
@@ -1705,7 +1765,8 @@
           {
             "text": "棕榈叶被雨打得垂下来,水顺着叶尖滴,像一排水龙头。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "空气里是湿热的草叶味,你吸一口,肺里都潮了。",
@@ -1715,7 +1776,8 @@
           {
             "text": "藤蔓在雨季疯长,一个月爬了两米,把椰子树缠住了。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "利马的灰雾罩着城市,你穿长袖也不觉得热。海鸥在雾里叫,声音从看不见的地方传来。",
@@ -1724,11 +1786,6 @@
           },
           {
             "text": "阿塔卡马的间歇泉在清晨冒蒸汽,水柱在零下的空气里结成冰晶。你踩在冻硬的地面上,嘎吱响。",
-            "climate_zone": "热带",
-            "humidity": "arid"
-          },
-          {
-            "text": "纳米布的沙丘在午后的热浪里扭曲,远处的石头像在融化。你喝光了最后一口水。",
             "climate_zone": "热带",
             "humidity": "arid"
           }
@@ -1748,18 +1805,21 @@
             "text": "台风来了。椰子树弯到地,海水倒灌进街道,空气里全是咸腥。",
             "climate_zone": "热带",
             "ocean": "西北太平洋",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "台风过后的海滩,棕榈叶散了一地,浪把椰子推上来,堆在沙线上。",
             "climate_zone": "热带",
             "ocean": "西北太平洋",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "芭蕉在疯长,叶子比你人还宽,撕开的口子在风里抖。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "蝉从早叫到晚,声音密得像一堵墙,你说话旁边人听不清。",
@@ -1769,12 +1829,14 @@
           {
             "text": "暴雨前的闷热,空气黏在皮肤上,棕榈叶纹丝不动。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "夜里的雷暴,闪电把椰子林照成白的,雨声盖住一切。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "利马的雾季高峰,整座城市被灰色的雾盖住。你在圣伊西德罗走,路灯在雾里变成一团光晕。",
@@ -1807,7 +1869,8 @@
           {
             "text": "椰子林里地上铺了一层落叶,踩上去沙沙的。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "榴莲熟了,空气里是那个味道,你走过去要屏息。",
@@ -1817,7 +1880,8 @@
           {
             "text": "棕榈树干上渗出汁液,蚂蚁排着队在爬。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "傍晚的雷阵雨还是有,但比上月小了,地面一会儿就干了。",
@@ -1827,7 +1891,8 @@
           {
             "text": "芭蕉结果了,一串挂在茎上,绿的,还要等。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "利马的雾开始散了,天空露出一点蓝。你走在街上,阳光从雾的缝隙里漏下来。",
@@ -1836,11 +1901,6 @@
           },
           {
             "text": "阿塔卡马的花季结束了,干枯的花茎在风里摇。地面又回到灰黄色,裂缝像蛛网一样。",
-            "climate_zone": "热带",
-            "humidity": "arid"
-          },
-          {
-            "text": "纳米布的沙丘在傍晚变成粉红色,你坐在沙脊上看太阳掉进大西洋。空气是干的,凉的。",
             "climate_zone": "热带",
             "humidity": "arid"
           }
@@ -1869,17 +1929,20 @@
           {
             "text": "椰子林里鸟在忙,啄食落果,叽叽喳喳的。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "旱季的风吹过棕榈叶,哗哗响。你光脚踩在沙土上,烫。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "芒果树又在结果了,青的,挂满枝头。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "空气干了,皮肤开始脱皮,你得抹椰子油。",
@@ -1893,11 +1956,6 @@
           },
           {
             "text": "阿塔卡马的火烈鸟站在盐湖边,粉色的倒影在水面上晃。你走近,它们挪了几步,没飞。",
-            "climate_zone": "热带",
-            "humidity": "arid"
-          },
-          {
-            "text": "纳米布的沙丘在夜风里发出低沉的嗡嗡声,你趴在地上听,沙子在振动。",
             "climate_zone": "热带",
             "humidity": "arid"
           }
@@ -1921,7 +1979,8 @@
           {
             "text": "芭蕉叶干了,卷成筒,风一吹就滚到路边。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "空气干燥,你在脱皮,嘴唇裂了。",
@@ -1931,7 +1990,8 @@
           {
             "text": "棕榈叶在旱季的风里哗哗响,阳光从缝隙漏下来。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "兰花挂在老树上,白的紫的,蝴蝶围着转。",
@@ -1941,7 +2001,8 @@
           {
             "text": "旱季的傍晚来得早,椰子林的影子拉得老长。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "利马的天空放晴了,阳光照在殖民时期的建筑上。你在老城广场上走,空气是干的,暖的。",
@@ -1950,11 +2011,6 @@
           },
           {
             "text": "阿塔卡马的沙漠里有人在放风筝,风筝在没有云的天上特别显眼。你仰头看,脖子酸了。",
-            "climate_zone": "热带",
-            "humidity": "arid"
-          },
-          {
-            "text": "纳米布的甲虫在清晨的雾里收集水珠,你蹲在沙丘后面看,空气是凉的,干的。",
             "climate_zone": "热带",
             "humidity": "arid"
           }
@@ -1978,17 +2034,20 @@
           {
             "text": "旱季的夜空,星星多得数不清。你躺在椰子林里看。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "空气里是干草和泥土的味道,棕榈叶在月光下是银的。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "芭蕉叶在夜风里沙沙响,你关了灯还能听见。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "椰子壳堆了一地,有人在烧,烟火味飘过来。",
@@ -1998,7 +2057,8 @@
           {
             "text": "旱季的白天热得你不想动,只有椰子林里有阴凉。",
             "climate_zone": "热带",
-            "humidity": "humid"
+            "humidity": "humid",
+            "max_elev": 4200
           },
           {
             "text": "利马的夏天来了,天空是蓝的,不下雨。你在巴兰科区走,空气里是烤肉的烟味和海盐味。",
@@ -2007,11 +2067,6 @@
           },
           {
             "text": "阿塔卡马的盐湖在正午蒸发,白色的盐花在水面边缘结晶。你舔了一下手指,咸的。",
-            "climate_zone": "热带",
-            "humidity": "arid"
-          },
-          {
-            "text": "纳米布的沙丘在圣诞节前后最热,你赤脚踩上去,烫得跳起来。空气干得你鼻腔发痛。",
             "climate_zone": "热带",
             "humidity": "arid"
           }

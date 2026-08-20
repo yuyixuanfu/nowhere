@@ -451,6 +451,10 @@ def _check_phenology(dt: datetime, lat: float, rng: random.Random,
             cc_chk = country.country_code_of(lat, lon)
             if cc_chk not in _ARID_COUNTRIES:
                 continue
+        # Card 81: max_elev — skip tree/forest cards above treeline
+        me = cons.get("max_elev")
+        if me and elev and elev > me:
+            continue
         raw_candidates.append((e["text"], cons.get("humidity")))
     if not raw_candidates:
         # Fallback: accept any card entry (zone mismatch shouldn't happen)
@@ -470,6 +474,10 @@ def _check_phenology(dt: datetime, lat: float, rng: random.Random,
                     cc_now = country.country_code_of(lat, lon)
                     if cc_now not in ccs:
                         continue
+            # Card 81: max_elev — skip tree/forest cards above treeline (fallback)
+            me = cons.get("max_elev")
+            if me and elev and elev > me:
+                continue
             raw_candidates.append((e["text"], cons.get("humidity")))
 
     # Card 74/79: arid filtering — exclude humid cards for arid locations
@@ -1895,7 +1903,9 @@ async def _gather_env(lat: float, lon: float, dt: datetime) -> dict[str, Any]:
     does not block the others.
     """
     # Elevation fetched first so weather can use lapse rate correction
-    elev_result = await asyncio.to_thread(terrain.elevation, lat, lon)
+    # Card 81: pass place_name so pool matching disambiguates nearby landmarks
+    _pn = _state.place_name or ""
+    elev_result = await asyncio.to_thread(terrain.elevation, lat, lon, _pn)
     elev: float = elev_result if not isinstance(elev_result, Exception) else 0.0
 
     # Get local hour for diurnal temperature variation
@@ -2202,14 +2212,22 @@ def _festival_in_window(fest: dict, sim_date: _date, lat: float,
 def _is_local_festival(fest: dict) -> bool:
     """Check if a festival is truly local (place-specific) vs national with a center.
 
-    Uses scope field: if scope=national, it's national even with a place.
-    Otherwise, has place → local; no place → national.
+    Uses scope field when present; falls back to name-based heuristic.
+    - scope="local" → always local
+    - scope="national" → always national (even with place)
+    - no scope → heuristic: place in name → local
     """
     place = fest.get("place", "")
     if not place:
         return False
     scope = fest.get("scope", "")
-    return scope != "national"
+    if scope == "local":
+        return True
+    if scope == "national":
+        return False
+    # Fallback: heuristic — place in name → local
+    name = fest.get("name", "")
+    return place in name
 
 
 def _check_festival_hit(
@@ -2396,6 +2414,7 @@ def _check_near_festival(
     sim_time: datetime | None,
     rng: random.Random,
     days: int = 3,
+    lon: float = 0.0,
 ) -> str | None:
     """Check if a festival starts within `days` days (not today).
 
@@ -2521,6 +2540,7 @@ def _get_festival_context(
     country_code: str | None,
     lat: float,
     sim_time: datetime | None,
+    lon: float = 0.0,
 ) -> dict | None:
     """Get festival atmosphere context for rendering (look/walk).
 
@@ -2687,6 +2707,12 @@ async def _open_door_locked(to: str | None = None, resume: bool = False, travele
     """Door body, called under _door_lock."""
     global _state, _rng, _recent_salience_kinds
 
+    # ── Card 82: parse " 新" suffix for force-fresh landing ─────────
+    force_fresh = False
+    if to and to.rstrip().endswith(" 新"):
+        to = to.rstrip()[:-2].rstrip()
+        force_fresh = True
+
     # ── Card 17: key+to mutual exclusion ─────────────────────────────
     if key and to:
         return {"text": "门牌和地名只能给一个。", "data": {"error": "key_to_conflict"}}
@@ -2710,8 +2736,8 @@ async def _open_door_locked(to: str | None = None, resume: bool = False, travele
         # Save current journey (with farewell in log)
         journeys.save_current(_state)
 
-        # Check if destination matches an existing journey
-        existing = journeys.switch(to)
+        # Card 82: force_fresh skips auto-resume, always creates new journey
+        existing = None if force_fresh else journeys.switch(to)
         if existing is not None:
             # Generate return text for the existing journey
             meta = journeys.get_journey_meta(to)
@@ -2727,7 +2753,10 @@ async def _open_door_locked(to: str | None = None, resume: bool = False, travele
             response_parts = [farewell_text]
             if return_text:
                 response_parts.append(return_text)
-            response_parts.append(f"回到了{place}的旅程。上次你在{_state.last_text[:50] if _state.last_text else '走路'}。")
+            _r_season = describe._season(_state.now().month, lat) if _state.now() else ""
+            _r_zh = {"spring":"春","summer":"夏","autumn":"秋","winter":"冬","wet":"雨季","dry":"旱季"}.get(_r_season,"")
+            _r_steps = len(_state.path) if _state.path else 0
+            response_parts.append(f"回到了{place}的旅程。上次你在这走了{_r_steps}步,是{_r_zh}天。")
 
             return {
                 "text": "\n".join(response_parts),
@@ -2857,6 +2886,9 @@ async def _open_door_locked(to: str | None = None, resume: bool = False, travele
         _state.messages.extend(old_messages)
         _state.souvenir = old_souvenir
         _mishap_last_step = -999
+    # Card 82: mark force_new_slug for fresh landing with existing name
+    if force_fresh and not restored:
+        _state.force_new_slug = True
     # Card 16: blind mode
     _blind_auto_disabled = False
     if not resume and not restored:
@@ -3080,7 +3112,7 @@ async def _open_door_locked(to: str | None = None, resume: bool = False, travele
             _state.recent_scenes.append(fest_text)
         # ── Card 66: 近节预告 (7天内有节→报一句) ───────────────
         if not fest_text:
-            near_text = _check_near_festival(place_name, cc, lat, _now, _rng)
+            near_text = _check_near_festival(place_name, cc, lat, _now, _rng, lon=lon)
             if near_text and near_text not in set(_state.recent_scenes):
                 sections.append(near_text)
                 _state.recent_scenes.append(near_text)
@@ -3984,7 +4016,7 @@ async def walk_impl(direction: str = "forward", distance_km: float = 2.0) -> dic
     # Card 66: festival atmosphere in walk
     if now:
         _fest_walk = _get_festival_context(
-            _state.place_name or "", country.country_code_of(lat, lon), lat, now,
+            _state.place_name or "", country.country_code_of(lat, lon), lat, now, lon=lon,
         )
         if _fest_walk:
             _fk = _fest_walk.get("keywords", [])
@@ -4428,9 +4460,20 @@ async def look_around_impl() -> dict:
             sections.append(text)
 
     # ── 4. Taste/smell (from scene_taste.txt) - 40% chance ──────────
+    # Card 82: filter seasonal taste entries by current season (same as soundscape)
     tastes = _load_scene_file("scene_taste")
     if place in tastes and _rng.random() < 0.4:
-        text = _pick_fresh(tastes[place], _rng)
+        _t_pool = tastes[place]
+        if now is not None:
+            _t_season = describe._season(now.month, lat)
+            _t_seasonal = _get_seasonal_soundscape("scene_taste")
+            _t_exclude: set[str] = set()
+            for (_tp, _tn), _tdescs in _t_seasonal.items():
+                if _tp == place and _tn != _t_season:
+                    _t_exclude.update(_tdescs)
+            if _t_exclude:
+                _t_pool = [t for t in _t_pool if t not in _t_exclude]
+        text = _pick_fresh(_t_pool, _rng)
         if text:
             sections.append(text)
 
@@ -4599,7 +4642,7 @@ async def wait_impl(hours: float = 1.0) -> dict:
             if _end_sim_date > _start_sim_date:
                 cc = country.country_code_of(lat, lon)
                 _festival_cross_text = _check_festival_hit(
-                    _state.place_name or "", cc, lat, end_now, _rng
+                    _state.place_name or "", cc, lat, end_now, _rng, lon=lon
                 )
         if _festival_cross_text:
             # Use crossing variant if we can extract the festival name
@@ -4649,6 +4692,8 @@ async def wait_impl(hours: float = 1.0) -> dict:
         "你抬头看天。云换了一朵。",
         "你的肩膀松下来了。不知道什么时候松的。",
     ]
+    _wait_avail = list(_wait_scenes)  # 不放回抽样池
+    _reported_phases: set[str] = set()  # 已报相变去重
 
     sections: list[str] = []
     prev_env = _state.last_env
@@ -4674,10 +4719,12 @@ async def wait_impl(hours: float = 1.0) -> dict:
         if not env_cached:
             quiet = False
 
-        # Sky phase change (only once per transition)
+        # Sky phase change (only once per transition, deduplicated)
         prev_phase = (prev_env or {}).get("sky", {}).get("phase", "day")
         curr_phase = env.get("sky", {}).get("phase", "day")
-        if prev_phase != curr_phase:
+        _phase_key = f"{prev_phase}->{curr_phase}"
+        if prev_phase != curr_phase and _phase_key not in _reported_phases:
+            _reported_phases.add(_phase_key)
             _phase_lines = {
                 ("day", "civil"): "天色斜了,影子变长。黄昏来了。",
                 ("civil", "night"): "最后一点光收走了。夜合上了。",
@@ -4701,7 +4748,11 @@ async def wait_impl(hours: float = 1.0) -> dict:
 
         # Add a "sitting still" moment every other hour (skip on 留白)
         if h % 2 == 1 and not quiet:
-            sections.append(_rng.choice(_wait_scenes))
+            if not _wait_avail:
+                _wait_avail = list(_wait_scenes)
+            _picked = _rng.choice(_wait_avail)
+            _wait_avail.remove(_picked)
+            sections.append(_picked)
 
         # Card 42: letter in pack → 10% weight mention during wait
         if _state.errand and _state.errand.get("kind") == "letter" and _rng.random() < 0.10:
@@ -4719,7 +4770,7 @@ async def wait_impl(hours: float = 1.0) -> dict:
             if _end_sim_date > _start_sim_date:
                 cc = country.country_code_of(lat, lon)
                 _festival_cross_text = _check_festival_hit(
-                    _state.place_name or "", cc, lat, _end_now, _rng
+                    _state.place_name or "", cc, lat, _end_now, _rng, lon=lon
                 )
 
     # 留白: 缓存命中且世界没变 → 不再逐项描述
@@ -5062,6 +5113,10 @@ def where_am_i_impl() -> dict:
         parts.append(f"你在{_state.place_name}。")
     if not _blind:
         parts.append(f"坐标 {lat:.4f}, {lon:.4f}。")
+        from nowhere import terrain as _elev_mod
+        _elev = _elev_mod.elevation(lat, lon, place_name=_state.place_name or "")
+        if _elev and _elev > 2:
+            parts.append(f"海拔 {_elev:.0f} 米。")
     else:
         parts.append(f"走了 {len(_state.path)} 步,出门 {_state.elapsed_hours:.1f} 小时。")
     if utc_now:
@@ -5529,7 +5584,8 @@ def _postmark(lat: float, lon: float) -> dict:
     env = _state.last_env or {}
     elev = env.get("elevation")
     if elev is None:
-        elev = terrain.elevation(lat, lon)
+        # Card 81: pass place_name for pool disambiguation
+        elev = terrain.elevation(lat, lon, _state.place_name or "")
     # Card 57: clamp coastal elevation (coarse-grid coastline bug)
     surface = _last_env_surface() or "grass"
     elev = _clamp_coastal_elevation(elev, surface, lat, lon)
@@ -5870,6 +5926,8 @@ async def open_door(to: str | None = None, blind: bool = False, key: str | None 
     blind=True: hide place name (guess to reveal).
     key="...": deterministic landing by key (same key = same place).
     intent biases what you see (e.g. "吃" boosts food, "孤独" boosts quiet).
+    Append " 新" to place name (e.g. "拉萨 新") to force a fresh landing,
+    creating a new journey even if one already exists for that place.
     """
     return await open_door_impl(to, blind=blind, key=key, intent=intent)
 
@@ -6097,8 +6155,7 @@ def journeys_list() -> dict:
     for j in js:
         name = j.get("place_name", "?")
         steps = j.get("steps", 0)
-        last = j.get("last_text", "")[:50]
-        parts.append(f"{name}（走了{steps}步，上次：{last}）")
+        parts.append(f"{name}（走了{steps}步）")
     text = f"你有 {len(js)} 段旅程。\n" + "\n".join(parts)
     return {"text": text, "data": {"journeys": js}}
 
@@ -6137,7 +6194,11 @@ def switch_journey(name: str) -> dict:
     response_parts = [farewell_text]
     if return_text:
         response_parts.append(return_text)
-    response_parts.append(f"回到了{place}。你站在{_state.last_text[:50] if _state.last_text else '某个地方'}。")
+    _r_lat = _state.pos[0] if _state.pos else 0
+    _r_season = describe._season(_state.now().month, _r_lat) if _state.now() else ""
+    _r_zh = {"spring":"春","summer":"夏","autumn":"秋","winter":"冬","wet":"雨季","dry":"旱季"}.get(_r_season,"")
+    _r_steps = len(_state.path) if _state.path else 0
+    response_parts.append(f"回到了{place}。上次你在这走了{_r_steps}步,是{_r_zh}天。")
 
     return {
         "text": "\n".join(response_parts),
@@ -6252,7 +6313,7 @@ def look_impl(direction: str) -> dict:
     # Card 66: festival atmosphere in look
     _now_look = _state.now()
     _fest_ctx = _get_festival_context(
-        _state.place_name or "", country.country_code_of(lat, lon), lat, _now_look,
+        _state.place_name or "", country.country_code_of(lat, lon), lat, _now_look, lon=lon,
     )
     if _fest_ctx:
         _fk = _fest_ctx.get("keywords", [])

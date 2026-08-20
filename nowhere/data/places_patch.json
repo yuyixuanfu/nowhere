@@ -172,8 +172,8 @@
     "type": "湖泊"
   },
   "死海": {
-    "lat": 31.5,
-    "lon": 35.5,
+    "lat": 31.459,
+    "lon": 35.402,
     "type": "湖",
     "elev": -430,
     "surface": "water_fresh"
@@ -1032,8 +1032,8 @@
     "surface": "rock"
   },
   "Dead Sea": {
-    "lat": 31.5,
-    "lon": 35.5,
+    "lat": 31.459,
+    "lon": 35.402,
     "type": "湖",
     "elev": -430,
     "surface": "water_fresh"

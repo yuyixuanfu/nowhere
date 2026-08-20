@@ -315,18 +315,30 @@ def _haversine_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
 
 # ── Public API ──────────────────────────────────────────────────────
 
-def elevation(lat: float, lon: float) -> float:
+def elevation(lat: float, lon: float, place_name: str = "") -> float:
     """Return interpolated elevation in metres at (*lat*, *lon*).
 
     Priority: pool baked values > tile data > **DEM column** > grid_tiny.
     If the grid/tile value differs from DEM by >100m, trust DEM (cities15000
     column 16 has SRTM-corrected elevations for named cities).
+
+    *place_name* — when given, pool entries are only used if their
+    ``name_hint`` is a substring of *place_name*.  This prevents a nearby
+    landmark (e.g. Vesuvius at 1281 m) from clobbering the elevation of
+    a city that happens to be within the pool radius (e.g. Naples at ~30 m).
     """
     from nowhere.dem import lookup as dem_lookup, is_fill_value
 
     entry = _pool_entry(lat, lon)
     if entry is not None:
-        return float(entry["elev_m"])
+        # Card 81: only trust pool elevation when name matches place_name.
+        # Match is bidirectional: "维苏威" matches "维苏威火山" and vice versa.
+        if place_name and entry.get("name_hint"):
+            hint = entry["name_hint"]
+            if hint not in place_name and place_name not in hint:
+                entry = None  # name mismatch → fall through to tile/DEM
+        if entry is not None:
+            return float(entry["elev_m"])
     # Try high-res tile
     tile = _find_tile(lat, lon)
     if tile is not None:
