@@ -24,7 +24,7 @@
 
 ## 怎么玩
 
-### 方式一：Claude Code / Cursor / 任何支持 MCP 的 AI 客户端
+### 方式一：MCP 客户端
 
 这是体验最好的方式。AI 直接调用工具，你和 AI 一起"走"。
 
@@ -75,8 +75,6 @@ pip install -e ".[dev]"
 - "寄一张明信片" — 从当前位置寄一张明信片
 - "待两个小时" — 原地等待，看时间变化
 
-支持 MCP 的客户端：Claude Code、Cursor、Continue、Zed、Cline 等。
-
 ### 方式二：命令行试玩（不需要 AI）
 
 ```bash
@@ -96,34 +94,7 @@ python -m nowhere.playground
 
 适合自己体验、测试、或者写场景时验证。
 
-### 方式三：ChatGPT / DeepSeek / 不支持 MCP 的 AI
-
-启动 HTTP 服务器后，用 curl 或任何 HTTP 客户端调用：
-
-```bash
-python -m nowhere.server --web 8080
-```
-
-```bash
-# 开门
-curl -X POST http://localhost:8080/open_door -d '{"to": "北京"}'
-
-# 走路
-curl -X POST http://localhost:8080/walk -d '{"direction": "N", "distance_km": 2}'
-
-# 听电台
-curl -X POST http://localhost:8080/listen -d '{"seconds": 10}'
-
-# 看看周围
-curl -X POST http://localhost:8080/look_around
-
-# 发问
-curl -X POST http://localhost:8080/ask -d '{"topic": "故宫"}'
-```
-
-返回 JSON，包含 `text`（身体报告）和 `data`（结构化数据）。把端点文档发给 ChatGPT/DeepSeek 的 Function Calling 就能用。
-
-### 方式四：网页旁观者
+### 方式三：网页旁观者
 
 ```bash
 python -m nowhere.playground --web
@@ -137,7 +108,7 @@ python -m nowhere.playground --web
 
 旁观者可以留言，AI 走路时可能会看到。
 
-### 方式五：Python 代码直接调用
+### 方式四：Python 代码直接调用
 
 ```python
 import asyncio
@@ -169,20 +140,36 @@ asyncio.run(main())
 
 | 工具 | 干嘛的 | 怎么用 |
 |------|--------|--------|
-| `open_door` | 开门，降落到一个地方 | 不传参=随机；传地名="开门去巴黎" |
-| `walk` | 走路 | "往北走"、"往山上走"、"往海边走" |
-| `walk_to` | 走到一个地方 | "走到埃菲尔铁塔"，有沿途叙事 |
-| `listen` | 听电台 | 收听当地最近的电台 |
-| `look_around` | 看看周围 | 观察野生动物、艺术、人类痕迹 |
-| `ask` | 问这个地方的事 | "问问故宫"、"问问这里的美食" |
-| `mark` | 标记当前位置 | "标记这里叫'家'" |
-| `marks` | 列出所有标记 | 看看标了哪些地方 |
-| `postcard` | 寄明信片 | "寄一张明信片：这里的风有沙子的味道" |
-| `wait` | 等待 | "等两个小时"，看时间怎么流 |
+| `open_door` | 开门，降落到一个地方 | 不传参=随机；传地名；`key`=门牌号；`blind`=盲开 |
+| `walk` | 走路 | 往北走、往山上走、往海边走 |
+| `walk_to` | 走到一个地方 | 走到埃菲尔铁塔，有沿途叙事 |
+| `walk_alone` | 独行 | 本次旅程屏蔽同游者 |
+| `drift` | 漂流 | 抽一张方向建议 |
+| `where_am_i` | 我在哪 | 坐标、时间、海拔、旅程状态 |
 | `continue_journey` | 继续旅程 | 从上次离开的地方接着走 |
-| `souvenir` | 看看纪念品 | 看看一路上捡到了什么 |
-| `give_souvenir` | 放下纪念品 | 把东西留在原地或留给下一个人 |
-| `where_am_i` | 我在哪 | 显示坐标、时间、旅程状态 |
+| `look` | 朝一个方向看 | 左/右/前/后 或 八个方位 |
+| `look_around` | 环顾周围 | 观察动物、艺术、人类痕迹 |
+| `listen` | 听电台 | 收听当地电台 |
+| `ask` | 问这个地方的事 | 问问故宫、问问这里的美食 |
+| `journeys_list` | 列旅程 | 看看以前去过哪 |
+| `switch_journey` | 切旅程 | 切回一段旧旅程，接着走 |
+| `atlas` | 世界迷雾 | 看看你去过哪些地方 |
+| `say` | 说一句话 | 世界会记住 |
+| `quotes` | 看原话 | 本旅程说过的话 |
+| `talk` | 和人搭话 | 和最近遇见的人说话 |
+| `journal` | 时间线 | 回看本次旅程 |
+| `notebook` | 旅行手账 | 植物/动物/电台/水文/人物五册 |
+| `mark` | 标记位置 | 标记这里叫家 |
+| `marks` | 列标记 | 看看标了哪些地方 |
+| `send_postcard` | 寄明信片 | 你写字，世界盖邮戳 |
+| `postcards` | 看明信片 | 看看收到的问候 |
+| `souvenir` | 看纪念品 | 看看一路上捡到了什么 |
+| `give_souvenir` | 放下纪念品 | 留给下一个人或放回原处 |
+| `bury` | 埋东西 | 埋在当前坐标，留一句话 |
+| `deliver` | 送差事 | 把信或铁盒送到收信地 |
+| `wait` | 等待 | 等两个小时，看时间怎么流 |
+| `guess` | 猜地名 | 盲开模式下猜自己在哪 |
+| `reveal` | 揭晓 | 盲开模式下认输，揭晓地名 |
 
 ---
 
@@ -312,7 +299,7 @@ python -c "import json; d=json.load(open('nowhere/data/explorable_index.json'));
 
 ```
 nowhere/
-  server.py      -- MCP 服务器，接 14 个工具
+  server.py      -- MCP 服务器，接 30 个工具
   terrain.py     -- 离线地形（SRTM 瓦片 + 海拔/地表/坡度）
   sky.py         -- 离线天空（太阳、月亮、银河、行星）
   weather.py     -- 天气（Open-Meteo / 气候区兜底）
