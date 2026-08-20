@@ -1436,6 +1436,14 @@
       "lon": 120.6,
       "radius_km": 20,
       "note": "苏州"
+    },
+    {
+      "name": "浏河",
+      "type": "river",
+      "lat": 31.45,
+      "lon": 121.11,
+      "radius_km": 15,
+      "note": "太仓"
     }
   ]
 }

@@ -62,12 +62,27 @@ _JOURNEYS_DIR = pathlib.Path(
 _INDEX_FILE = _JOURNEYS_DIR / "index.json"
 
 
-def _slug(place_name: str) -> str:
-    """Normalize place name to a filesystem-safe slug."""
+def _slug(place_name: str, force_new: bool = False) -> str:
+    """Normalize place name to a filesystem-safe slug.
+
+    Card 82: if force_new=True and the slug already exists in the index,
+    append a numeric suffix (-2, -3, ...) to avoid collision.
+    """
     s = place_name.strip().lower()
     s = re.sub(r"\s+", "_", s)
     s = re.sub(r"[^\w一-鿿-]", "", s)
-    return s or "unknown"
+    base = s or "unknown"
+    if not force_new:
+        return base
+    # Check index for existing slug
+    index = _load_index()
+    existing_slugs = {j["slug"] for j in index.get("journeys", [])}
+    if base not in existing_slugs:
+        return base
+    n = 2
+    while f"{base}-{n}" in existing_slugs:
+        n += 1
+    return f"{base}-{n}"
 
 
 def _ensure_dir() -> None:
@@ -97,11 +112,19 @@ def _journey_path(slug: str) -> pathlib.Path:
     return _JOURNEYS_DIR / f"{slug}.json"
 
 
-def save_current(state: WorldState) -> None:
-    """Save the current state as a journey file and update the index."""
+def save_current(state: WorldState, force_new: bool = False) -> None:
+    """Save the current state as a journey file and update the index.
+
+    Card 82: force_new=True creates a new journey with suffixed slug
+    even if one with the same place name already exists.
+    """
     _ensure_dir()
     place = state.place_name or "unknown"
-    slug = _slug(place)
+    # Card 82: check transient flag on state as well
+    if getattr(state, "force_new_slug", False):
+        force_new = True
+        state.force_new_slug = False  # consume the flag
+    slug = _slug(place, force_new=force_new)
     path = _journey_path(slug)
 
     # Save state

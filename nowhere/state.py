@@ -90,6 +90,8 @@ class WorldState:
         self.wet: bool = False  # True after 2 steps in rain outdoors
         self.wet_rain_steps: int = 0  # counter for rain exposure
         self.fatigue: float = 0.0  # 0-10, +1/hour walk, -2/hour wait
+        # ── Card 82: force new slug on next save (transient, not persisted) ──
+        self.force_new_slug: bool = False
 
     def now(self) -> datetime | None:
         """Return the current simulated UTC time: landed_at + elapsed_hours."""
