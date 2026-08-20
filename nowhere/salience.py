@@ -94,12 +94,12 @@ def _infer_water_type(water_features: list[dict] | None) -> str | None:
     for f in water_features:
         ftype = f.get("type", "")
         fname = f.get("name", "")
-        if any(k in ftype for k in ("river", "溪", "江", "河")) or any(k in fname for k in ("江", "河", "溪")):
+        if any(k in ftype for k in ("river", "溪", "江", "河")) or any(fname.endswith(k) for k in ("江", "河", "溪")):
             return "river"
     for f in water_features:
         ftype = f.get("type", "")
         fname = f.get("name", "")
-        if "lake" in ftype or "湖" in fname:
+        if "lake" in ftype or fname.endswith("湖"):
             return "lake"
     return None
 

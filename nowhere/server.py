@@ -90,6 +90,14 @@ _rng: random.Random = (
 _web_port: int | None = None  # reserved for Task 11
 _web_url_announced: bool = False  # open_door 首次告知用户旁观者地址
 _tf: TimezoneFinder = TimezoneFinder()
+
+# ── Card 85: 灵感功能入口提示 ──────────────────────────────────────
+_HINT_LINES: list[str] = [
+    "你也可以闭着眼来。不看名字,落下来,猜自己在哪。",
+    "给门起个名字,它就记得你。同一个名字,永远是同一扇门。",
+    "想再看一座城,就再开一次门。地名后加个\"新\",城会重新长。",
+]
+_hint_counter: int = 0  # 轮换提示句
 _recent_salience_kinds: set[str] = set()  # Bug 4: track recent salience kinds
 _cotraveler_encounter_counts: dict[str, int] = {}  # how many times we've seen each traveler's footprints
 _cotraveler_meeting_log: dict[str, str] = {}  # pair_key -> last meeting ISO timestamp
@@ -458,6 +466,16 @@ def _check_phenology(dt: datetime, lat: float, rng: random.Random,
         # Card 75: coast_only — skip coastal cards for inland biomes
         if cons.get("coast_only") and biome not in ("coast", "island", "water"):
             continue
+        # Card 84: hemisphere constraint — skip north-only cards in southern latitudes
+        hemi = cons.get("hemisphere")
+        if hemi == "north" and lat < 0:
+            continue
+        if hemi == "south" and lat > 0:
+            continue
+        # Card 85: lat_min — skip polar day/night cards below minimum latitude
+        lat_min = cons.get("lat_min")
+        if lat_min and abs_lat < lat_min:
+            continue
         raw_candidates.append((e["text"], cons.get("humidity")))
     if not raw_candidates:
         # Fallback: accept any card entry (zone mismatch shouldn't happen)
@@ -484,13 +502,23 @@ def _check_phenology(dt: datetime, lat: float, rng: random.Random,
             # Card 75: coast_only — skip coastal cards for inland biomes (fallback)
             if cons.get("coast_only") and biome not in ("coast", "island", "water"):
                 continue
+            # Card 84: hemisphere constraint (fallback path)
+            hemi = cons.get("hemisphere")
+            if hemi == "north" and lat < 0:
+                continue
+            if hemi == "south" and lat > 0:
+                continue
+            # Card 85: lat_min — skip polar day/night cards below minimum latitude (fallback)
+            lat_min = cons.get("lat_min")
+            if lat_min and abs_lat < lat_min:
+                continue
             raw_candidates.append((e["text"], cons.get("humidity")))
 
     # Card 74/79: arid filtering — exclude humid cards for arid locations
     _ARID_COUNTRIES = (
         "PE", "CL", "NA", "AO", "EG", "SA", "YE", "OM",
         "IR", "AF", "UZ", "TM", "KG", "TJ", "PK",
-        "DZ", "MA", "LY", "JO", "SY", "IQ",
+        "DZ", "MA", "LY", "JO", "SY", "IQ", "EH",
     )
     if band in ("tropical", "sub") and biome in ("coast", "desert"):
         cc_now = country.country_code_of(lat, lon)
@@ -1329,8 +1357,8 @@ def _find_nearest_water_feature(name: str, lat: float, lon: float) -> dict | Non
 
     for entry in entries:
         entry_name = entry.get("name", "")
-        # 名称匹配（精确优先，包含关系兜底）
-        if name != entry_name and name not in entry_name and entry_name not in name:
+        # S8-04 fix: exact name match only (data uses distinct proper names)
+        if name != entry_name:
             continue
         elat, elon = entry.get("lat", 0), entry.get("lon", 0)
         radius = entry.get("radius_km", 50)
@@ -1420,8 +1448,8 @@ def _find_river_segment(
         ename = entry.get("name", "")
         note = (entry.get("note") or "").lower()
 
-        # Match the base river name (exact first, then substring fallback)
-        if name != ename and name not in ename and ename not in name:
+        # S8-03 fix: exact river name match only (data uses distinct proper names)
+        if name != ename:
             continue
 
         elat = entry.get("lat", 30.7)
@@ -1802,7 +1830,7 @@ def _resolve_water_body_label(dest_surface: str, lat: float, lon: float) -> str:
                 if fname.endswith("江"):
                     return "江边"
                 return "河边"
-            if ftype == "lake" or "湖" in fname:
+            if ftype == "lake" or fname.endswith("湖"):
                 return "湖边"
     except Exception:
         pass
@@ -2698,7 +2726,14 @@ async def open_door_impl(to: str | None = None, resume: bool = False, traveler_n
     try:
         async with _action_lock:
             async with _door_lock:
-                return await _open_door_locked(to, resume=resume, traveler_name=traveler_name, blind=blind, key=key, intent=intent)
+                result = await _open_door_locked(to, resume=resume, traveler_name=traveler_name, blind=blind, key=key, intent=intent)
+        # ── Card 85: 灵感功能入口提示 ──────────────────────────────────
+        if not resume and not blind:
+            if _rng.random() < 0.1:
+                global _hint_counter
+                result["text"] += "\n\n" + _HINT_LINES[_hint_counter % len(_HINT_LINES)]
+                _hint_counter += 1
+        return result
     except Exception:
         _state.pos = _snap["pos"]
         _state.biome = _snap["biome"]
