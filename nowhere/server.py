@@ -2753,7 +2753,7 @@ async def _open_door_locked(to: str | None = None, resume: bool = False, travele
             response_parts = [farewell_text]
             if return_text:
                 response_parts.append(return_text)
-            _r_season = describe._season(_state.now().month, lat) if _state.now() else ""
+            _r_season = describe._season(_state.now().month, _state.pos[0]) if _state.now() and _state.pos else ""
             _r_zh = {"spring":"春","summer":"夏","autumn":"秋","winter":"冬","wet":"雨季","dry":"旱季"}.get(_r_season,"")
             _r_steps = len(_state.path) if _state.path else 0
             response_parts.append(f"回到了{place}的旅程。上次你在这走了{_r_steps}步,是{_r_zh}天。")
