@@ -2966,9 +2966,9 @@ def _render_water_features(payload: dict, prev: dict | None, rng: random.Random)
                     if best_seg is not None and best_d <= 100.0:
                         seg_name = best_seg
                 if seg_name is None:
-                    # Fallback: rng.choice or too far → skip named scene
-                    if feat_coords is None:
-                        seg_name = rng.choice(list(segments.keys()))
+                    # Card 75: no coords → skip named scene, use generic biome pool
+                    # (rng.choice would randomly pick across cities, causing cross-city bleed)
+                    pass
                 if seg_name is not None:
                     seg = segments[seg_name]
                     scene_text = seg.get("scene", "")
