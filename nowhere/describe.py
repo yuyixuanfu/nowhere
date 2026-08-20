@@ -23,7 +23,7 @@ import random
 import re
 from typing import Sequence
 
-import places
+from nowhere import places
 
 # ── scene files (literary descriptions per biome/weather) ─────────────
 _SCENE_DIR = pathlib.Path(__file__).resolve().parent / "data"
