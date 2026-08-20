@@ -288,7 +288,7 @@ def matches_conditions(card: Card, ctx: dict) -> bool:
     biome = cond.get("biome")
     if biome and ctx.get("biome"):
         ctx_biome = ctx["biome"].lower()
-        if isinstance(biome, str) and biome.lower() not in ctx_biome:
+        if isinstance(biome, str) and biome.lower() != ctx_biome:
             return False
 
     # Hours filter: cond["hours"] = [start, end) range

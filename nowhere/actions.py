@@ -435,6 +435,7 @@ class LocalSceneAction:
                 local_hour=local_hour, country_code=cc,
                 intent=getattr(ctx.state, 'intent', None),
                 lat=lat, lon=lon,
+                month=now.month if now else None,
             )
             if local_card:
                 ctx.state.seen_cards.add(local_card["key"])

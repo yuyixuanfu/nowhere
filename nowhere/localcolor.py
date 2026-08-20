@@ -27,6 +27,29 @@ _THIN_COOLDOWN: int = 3    # minimum steps between thin-place draws
 _thin_last_draw: dict[str, int] = {}  # place_name -> walk_step of last draw
 
 
+def _conditions_pass(
+    c: _cards.Card,
+    local_hour: int | None = None,
+    month: int | None = None,
+    weekday: int | None = None,
+) -> bool:
+    """Check hours / months / weekday conditions on a card.
+
+    Returns False when the card's conditions explicitly exclude the current
+    time context; returns True when all conditions are met or absent.
+    """
+    hours = c.conditions.get("hours")
+    if hours and local_hour is not None and not (hours[0] <= local_hour < hours[1]):
+        return False
+    months = c.conditions.get("months")
+    if months and month is not None and month not in months:
+        return False
+    weekdays = c.conditions.get("weekday")
+    if weekdays is not None and weekday is not None and weekday not in weekdays:
+        return False
+    return True
+
+
 def _place_card_count() -> dict[str, int]:
     """Count effective (non-rhythm) cards per place."""
     counts: dict[str, int] = {}
@@ -87,6 +110,8 @@ def draw(
     lat: float = 0.0,
     lon: float = 0.0,
     walk_step: int = 0,
+    month: int | None = None,
+    weekday: int | None = None,
 ) -> dict | None:
     """抽一张没见过的卡 {"category", "text", "key"};抽完或无此地 → None。
 
@@ -119,6 +144,8 @@ def draw(
     for c in handwritten_cards:
         cat = c.meta.get("category", "")
         w = c.meta.get("weight", 1.0)
+        if not _conditions_pass(c, local_hour=local_hour, month=month, weekday=weekday):
+            continue
         pool.append((cat, c.id, c.text, w))
         if cat == "美食":
             has_local_food = True
@@ -127,7 +154,7 @@ def draw(
     if unseen_handwritten == 0:
         # 只有本地没有特色食物时，才用国家级食物兜底
         if not has_local_food:
-            for i, item in enumerate(baked.food_items(country_code, lat, lon)):
+            for i, item in enumerate(baked.food_items(country_code, lat, lon, place_name=place_name)):
                 key = f"{place_name}/烘焙美食/{i}"
                 if key not in seen:
                     rendered = baked.render_food(item, rng)
@@ -192,20 +219,7 @@ def rhythm_event(
         if c.meta.get("category") != "节律":
             continue
 
-        # Hours filter
-        hours = c.conditions.get("hours")
-        if hours:
-            if not (hours[0] <= local_hour < hours[1]):
-                continue
-
-        # Month filter
-        months = c.conditions.get("months")
-        if months and month is not None and month not in months:
-            continue
-
-        # Weekday filter
-        weekdays = c.conditions.get("weekday")
-        if weekdays is not None and weekday is not None and weekday not in weekdays:
+        if not _conditions_pass(c, local_hour=local_hour, month=month, weekday=weekday):
             continue
 
         hits.append(c.text)

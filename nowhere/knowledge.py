@@ -54,7 +54,7 @@ def _format_kb_entry(name: str, entry: dict | str) -> dict:
 
     Two shapes live in the merged KB:
 
-    * Structured (from ``knowledge.json``):  ``{一句话, 特色, card, ...}``
+    * Structured (from ``knowledge.json``):  ``{一句话, 特色, 语言, 首都, 海拔, 位置, 冷知识, 别名, 货币, card, ...}``
     * Flat (from ``ask_kb.json``):  plain ``str`` (the extract text)
 
     Both are normalised to ``{title, extract, url, source}``.
@@ -77,6 +77,19 @@ def _format_kb_entry(name: str, entry: dict | str) -> dict:
     if isinstance(alt, str) and alt:
         m = re.match(r"([\d.]+)\s*m", alt.strip())
         parts.append(f"海拔约 {m.group(1)} 米" if m else alt)
+    # 位置 / 冷知识 / 别名 / 货币 (S2 接线)
+    loc = entry.get("位置")
+    if isinstance(loc, str) and loc:
+        parts.append(loc)
+    trivia = entry.get("冷知识")
+    if isinstance(trivia, str) and trivia:
+        parts.append(trivia)
+    alias = entry.get("别名")
+    if isinstance(alias, str) and alias:
+        parts.append(f"又称{alias}")
+    currency = entry.get("货币")
+    if isinstance(currency, str) and currency:
+        parts.append(f"当地用{currency}")
     cards = entry.get("card")
     if isinstance(cards, list):
         for c in cards:

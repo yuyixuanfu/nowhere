@@ -186,10 +186,10 @@ def get_journey_meta(slug_or_place: str) -> dict | None:
         if j["slug"] == target:
             return j
 
-    # Try fuzzy match (place_name contains query)
+    # Try exact match (case-insensitive)
     slug_or_lower = slug_or_place.strip().lower()
     for j in index["journeys"]:
-        if slug_or_lower in j.get("place_name", "").lower():
+        if j.get("place_name", "").strip().lower() == slug_or_lower:
             return j
 
     return None

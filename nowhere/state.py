@@ -100,6 +100,7 @@ class WorldState:
     def to_dict(self) -> dict:
         """Serialize state to a dict (used by save() and journeys.py)."""
         return {
+            "save_version": 1,
             "pos": list(self.pos) if self.pos else None,
             "path": self.path[-50:],  # keep last 50 steps (not entire history)
             "landed_at": self.landed_at.isoformat() if self.landed_at else None,
@@ -160,8 +161,18 @@ class WorldState:
         }
 
     @classmethod
+    def migrate(cls, data: dict) -> dict:
+        """Migrate old save data to current version. Stub for future use."""
+        return data
+
+    @classmethod
     def from_dict(cls, data: dict) -> "WorldState":
         """Restore state from a dict (used by load() and journeys.py)."""
+        version = data.get("save_version", 0)
+        if version == 0:
+            pass  # 老档,全兼容
+        elif version > 1:
+            data = cls.migrate(data)
         s = cls()
         if data.get("pos"):
             s.pos = tuple(data["pos"])
@@ -265,7 +276,15 @@ class WorldState:
             return cls.from_dict(data)
         except Exception as exc:
             import logging
-            logging.getLogger(__name__).warning("Failed to load journey from %s: %s", _SAVE_FILE, exc)
+            ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+            backup = _SAVE_FILE.with_name(f"journey.json.broken_{ts}")
+            try:
+                os.replace(str(_SAVE_FILE), str(backup))
+            except OSError:
+                pass
+            msg = f"存档读不出来,已备份到 {backup.name},旅程重新开始"
+            logging.getLogger(__name__).warning("%s (%s)", msg, exc)
+            print(msg)
             return None
 
     def clear(self) -> None:

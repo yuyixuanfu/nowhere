@@ -2869,7 +2869,7 @@ def _render_water_features(payload: dict, prev: dict | None, rng: random.Random)
         entry = wf_scenes.get(named_water)
         if not entry:
             for key in wf_scenes:
-                if key in named_water or named_water in key:
+                if len(key) >= 2 and (key in named_water or named_water in key):
                     entry = wf_scenes[key]
                     break
         if entry and isinstance(entry, dict):

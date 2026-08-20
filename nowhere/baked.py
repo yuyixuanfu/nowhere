@@ -89,7 +89,18 @@ def _is_pure_ascii(s: str) -> bool:
     return all(32 <= ord(ch) <= 126 for ch in s)
 
 
-def food_items(country_code: str | None, lat: float = 0, lon: float = 0) -> list[dict]:
+_PLACE_REGION: dict[str, str] = {
+    "格尔尼卡": "巴斯克", "毕尔巴鄂": "巴斯克", "圣塞瓦斯蒂安": "巴斯克",
+    "波尔特沃": "加泰罗尼亚", "巴塞罗那": "加泰罗尼亚", "赫罗纳": "加泰罗尼亚",
+    "奥维耶多": "阿斯图里亚斯", "希洪": "阿斯图里亚斯",
+    "塞维利亚": "安达卢西亚", "格拉纳达": "安达卢西亚",
+    "瓦伦西亚": "瓦伦西亚", "布尼奥尔": "瓦伦西亚", "马德里": "马德里",
+    "斯特拉斯堡": "阿尔萨斯", "科尔马": "阿尔萨斯",
+}
+
+
+def food_items(country_code: str | None, lat: float = 0, lon: float = 0,
+               place_name: str = "") -> list[dict]:
     _load()
     if not country_code:
         return []
@@ -103,6 +114,13 @@ def food_items(country_code: str | None, lat: float = 0, lon: float = 0) -> list
             filtered = [i for i in items if i.get("region") == region]
             if filtered:
                 return filtered
+    # 区域过滤: 条目带 region 时,当前坐标的区域不匹配→跳过
+    # place_name 不在表里→region 卡不抽(宁可少,不许错)
+    if place_name:
+        place_region = _PLACE_REGION.get(place_name)
+        if place_region:
+            filtered = [i for i in items if not i.get("region") or place_region in i["region"]]
+            return filtered
     return items
 
 

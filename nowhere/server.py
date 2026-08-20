@@ -426,6 +426,7 @@ def _check_phenology(dt: datetime, lat: float, rng: random.Random,
         "西北太平洋": ("CN", "TW", "JP", "KR", "PH", "VN", "HK", "MO"),
         "北大西洋": ("US", "MX", "CU", "JM", "HT", "DO", "PR", "BS"),
     }
+    _ARID_COUNTRIES = ("PE", "CL", "NA", "AO", "EG", "SA", "YE", "OM")
     raw_candidates: list[tuple[str, str | None]] = []
     for e in month_events:
         cons = e.get("constraints") or {}
@@ -444,6 +445,12 @@ def _check_phenology(dt: datetime, lat: float, rng: random.Random,
                 cc_now = country.country_code_of(lat, lon)
                 if cc_now not in ccs:
                     continue
+        # Card 80: humidity bidirectional filter — arid cards only for desert or arid countries
+        _h = cons.get("humidity")
+        if _h == "arid" and biome != "desert":
+            cc_chk = country.country_code_of(lat, lon)
+            if cc_chk not in _ARID_COUNTRIES:
+                continue
         raw_candidates.append((e["text"], cons.get("humidity")))
     if not raw_candidates:
         # Fallback: accept any card entry (zone mismatch shouldn't happen)
@@ -465,11 +472,15 @@ def _check_phenology(dt: datetime, lat: float, rng: random.Random,
                         continue
             raw_candidates.append((e["text"], cons.get("humidity")))
 
-    # Card 74: tropical arid filtering — exclude humid cards for arid tropical locations
-    _ARID_TROPICAL_COUNTRIES = ("PE", "CL", "NA", "AO", "EG", "SA", "YE", "OM")
-    if band == "tropical" and biome in ("coast", "desert"):
+    # Card 74/79: arid filtering — exclude humid cards for arid locations
+    _ARID_COUNTRIES = (
+        "PE", "CL", "NA", "AO", "EG", "SA", "YE", "OM",
+        "IR", "AF", "UZ", "TM", "KG", "TJ", "PK",
+        "DZ", "MA", "LY", "JO", "SY", "IQ",
+    )
+    if band in ("tropical", "sub") and biome in ("coast", "desert"):
         cc_now = country.country_code_of(lat, lon)
-        if cc_now in _ARID_TROPICAL_COUNTRIES:
+        if cc_now in _ARID_COUNTRIES:
             arid_filtered = [(t, h) for t, h in raw_candidates if h != "humid"]
             if arid_filtered:
                 raw_candidates = arid_filtered
@@ -2076,6 +2087,42 @@ def _load_festivals() -> list[dict]:
     return _festivals_cache
 
 
+_fest_place_coords_cache: dict[str, tuple[float, float] | None] = {}
+
+
+def _get_fest_place_coords(place_name: str) -> tuple[float, float] | None:
+    """Look up coordinates for a festival place, with caching."""
+    if place_name in _fest_place_coords_cache:
+        return _fest_place_coords_cache[place_name]
+    try:
+        from nowhere import humanities as _h
+        coords = _h.get_place_coords(place_name)
+        if coords:
+            result = (coords["lat"], coords["lon"])
+        else:
+            result = None
+    except Exception:
+        result = None
+    _fest_place_coords_cache[place_name] = result
+    return result
+
+
+def _fest_within_distance(fest_place: str, lat: float, lon: float,
+                          max_km: float = 150.0) -> bool:
+    """Check if festival place is within max_km of current location."""
+    coords = _get_fest_place_coords(fest_place)
+    if not coords:
+        return False
+    fest_lat, fest_lon = coords
+    dlat = math.radians(fest_lat - lat)
+    dlon = math.radians(fest_lon - lon)
+    a = (math.sin(dlat / 2) ** 2
+         + math.cos(math.radians(lat)) * math.cos(math.radians(fest_lat))
+         * math.sin(dlon / 2) ** 2)
+    dist_km = 2 * 6371.0 * math.asin(math.sqrt(a))
+    return dist_km <= max_km
+
+
 def _festival_in_window(fest: dict, sim_date: _date, lat: float,
                         country_code: str | None = None) -> bool:
     """Check if sim_date falls within a festival's window.
@@ -2155,18 +2202,14 @@ def _festival_in_window(fest: dict, sim_date: _date, lat: float,
 def _is_local_festival(fest: dict) -> bool:
     """Check if a festival is truly local (place-specific) vs national with a center.
 
-    Heuristic: if the place name appears in the festival name, it's local.
-    Examples:
-      - 拉萨雪顿节 (place=拉萨): "拉萨" in name → local
-      - 成都大庙会 (place=成都): "成都" in name → local
-      - 七夕 (place=西安): "西安" not in name → national (celebrated everywhere)
-      - 春节 (place=北京): "北京" not in name → national
+    Uses scope field: if scope=national, it's national even with a place.
+    Otherwise, has place → local; no place → national.
     """
-    name = fest.get("name", "")
     place = fest.get("place", "")
     if not place:
         return False
-    return place in name
+    scope = fest.get("scope", "")
+    return scope != "national"
 
 
 def _check_festival_hit(
@@ -2175,6 +2218,7 @@ def _check_festival_hit(
     lat: float,
     sim_time: datetime | None,
     rng: random.Random,
+    lon: float = 0.0,
 ) -> str | None:
     """Check if a festival is happening today at this place.
 
@@ -2208,9 +2252,14 @@ def _check_festival_hit(
         if fest_place and place_name == fest_place:
             place_hits.append(fest)
         elif fest_place and _is_local_festival(fest):
-            # Card 66 fix: local festival (place in name), place mismatch → skip
-            # e.g. 成都 should not get 拉萨雪顿节
-            continue
+            # Local festival (scope≠national), different place → distance gate
+            if _fest_within_distance(fest_place, lat, lon):
+                place_hits.append(fest)
+            # else: too far, skip
+        elif fest_place and not _is_local_festival(fest):
+            # National festival with a center place → country bucket
+            if fest_country and country_code and fest_country == country_code:
+                country_hits.append(fest)
         elif fest_country and country_code and fest_country == country_code:
             country_hits.append(fest)
         elif window_type == "lat_rule":
@@ -2270,7 +2319,13 @@ def _check_festival_hit(
             if fest_place and place_name == fest_place:
                 eve_place.append(fest)
             elif fest_place and _is_local_festival(fest):
-                continue
+                # Local festival, different place → distance gate
+                if _fest_within_distance(fest_place, lat, lon):
+                    eve_place.append(fest)
+            elif fest_place and not _is_local_festival(fest):
+                # National festival with center → country bucket
+                if fest_country and country_code and fest_country == country_code:
+                    eve_country.append(fest)
             elif fest_country and country_code and fest_country == country_code:
                 eve_country.append(fest)
         eve_hits = eve_place or eve_country
@@ -2340,7 +2395,7 @@ def _check_near_festival(
     lat: float,
     sim_time: datetime | None,
     rng: random.Random,
-    days: int = 7,
+    days: int = 3,
 ) -> str | None:
     """Check if a festival starts within `days` days (not today).
 
@@ -2413,8 +2468,15 @@ def _check_near_festival(
             if fest_place and place_name == fest_place:
                 pass
             elif fest_place and _is_local_festival(fest):
-                # Card 66 fix: local festival, place mismatch → skip
-                continue
+                # Local festival, different place → distance gate
+                if not _fest_within_distance(fest_place, lat, lon):
+                    continue
+            elif fest_place and not _is_local_festival(fest):
+                # National festival with center → country check
+                if fest_country and country_code and fest_country == country_code:
+                    pass
+                else:
+                    continue
             elif fest_country and country_code and fest_country == country_code:
                 pass
             elif wtype == "lat_rule":
@@ -2485,9 +2547,10 @@ def _get_festival_context(
         if not fest_name:
             continue
 
-        # Local festival (place in name): strict place match only
+        # Local festival (scope≠national): distance gate
         if fest_place and _is_local_festival(fest) and place_name != fest_place:
-            continue
+            if not _fest_within_distance(fest_place, lat, lon):
+                continue
         # National festival with place center: match same country or geo countries
         if fest_place and not _is_local_festival(fest):
             fest_country = fest.get("country", "")
@@ -3011,7 +3074,7 @@ async def _open_door_locked(to: str | None = None, resume: bool = False, travele
 
     # ── Card 11: 节日历 — 在对的时间到对的地方 ─────────────────
     if not _blind:
-        fest_text = _check_festival_hit(place_name, cc, lat, _now, _rng)
+        fest_text = _check_festival_hit(place_name, cc, lat, _now, _rng, lon=lon)
         if fest_text and fest_text not in set(_state.recent_scenes):
             sections.append(fest_text)
             _state.recent_scenes.append(fest_text)
