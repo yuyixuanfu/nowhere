@@ -1058,7 +1058,8 @@
     "name_hint": "那不勒斯",
     "lat": 40.8518,
     "lon": 14.2681,
-    "biome": "city"
+    "biome": "city",
+    "elev_m": 30
   },
   {
     "name_hint": "台湾九份",
