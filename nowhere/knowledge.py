@@ -200,12 +200,16 @@ async def about(lat: float, lon: float, topic: str) -> dict | None:
         for topic_word, target_labels in _TOPIC_LABELS.items():
             if topic_word in title:
                 if _labels and place_name:
-                    # Strict: only return if entry contains place_name
+                    # 1. Key contains place_name + label matches
+                    for name, tags in _labels.items():
+                        if any(t in tags for t in target_labels) and place_name in name:
+                            return _format_kb_entry(name, kb[name])
+                    # 2. Description/value contains place_name + label matches
                     for name, tags in _labels.items():
                         if any(t in tags for t in target_labels):
-                            if place_name in name:
+                            val = kb.get(name, "")
+                            if isinstance(val, str) and place_name in val:
                                 return _format_kb_entry(name, kb[name])
-                    # No place-specific match → return None (don't return random)
                 break
 
     # ── 5. Label fallback (卡88) ──
