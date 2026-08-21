@@ -60,7 +60,9 @@ _REPLY_MAX_LEN = 300
 
 def _strip_control_chars(text: str) -> str:
     """Remove control characters (\\x00-\\x1f) but keep newlines."""
-    return re.sub(r"[\x00-\x09\x0b-\x1f]", "", text)
+    text = re.sub(r"[\x00-\x09\x0b-\x1f]", "", text)
+    text = re.sub(r'[​‌‍﻿⁠­]', '', text)
+    return text
 
 
 def _check_injection(text: str) -> bool:

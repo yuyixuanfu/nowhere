@@ -381,27 +381,6 @@ def select(
     return results
 
 
-def _card_to_dict(card: Card) -> dict:
-    """Serialize a Card to a plain dict."""
-    d: dict[str, Any] = {
-        "id": card.id,
-        "kind": card.kind,
-        "text": card.text,
-    }
-    if card.conditions:
-        d["conditions"] = card.conditions
-    if card.effect != "seen":
-        d["effect"] = card.effect
-    if card.meta:
-        d["meta"] = card.meta
-    return d
-
-
-def _write_cards_json(path: pathlib.Path, cards: list[dict]) -> None:
-    """Write a list of card dicts to a JSON file."""
-    path.write_text(json.dumps(cards, ensure_ascii=False, indent=2), encoding="utf-8")
-
-
 # ── Validation ──────────────────────────────────────────────────────
 
 

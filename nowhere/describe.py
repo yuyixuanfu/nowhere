@@ -18,12 +18,15 @@
 from __future__ import annotations
 
 import json
+import logging
 import pathlib
 import random
 import re
 from typing import Sequence
 
 from nowhere import places
+
+logger = logging.getLogger(__name__)
 
 # ── scene files (literary descriptions per biome/weather) ─────────────
 _SCENE_DIR = pathlib.Path(__file__).resolve().parent / "data"
@@ -557,8 +560,7 @@ def _pick_scene(pool: list[str], name: str, rng: random.Random, ctx: dict) -> st
     # Prevents "积雪覆盖的林间小路" in August at 60°N
     season = ctx.get("season", "")
     if season in ("summer", "spring") and biome not in ("tundra", "glacier", "polar"):
-        _winter_scene_words = ["雪", "冰雪", "冰封", "冰面", "冰川", "冻", "冻土",
-                               "寒", "严寒", "霜", "积雪", "雪原"]
+        _winter_scene_words = ["下雪", "冰雪", "冰封", "冰面", "冰川", "冰冻", "冻土", "严寒", "积雪", "霜冻"]
         winter_filtered = [s for s in filtered if not any(w in s for w in _winter_scene_words)]
         if winter_filtered:
             filtered = winter_filtered
@@ -1677,7 +1679,7 @@ def _load_notable_places() -> set[str]:
                 if isinstance(key, str) and len(key) < 20:
                     places.add(key)
     except Exception:
-        pass
+        logger.debug("failed to load %s", fp)
 
     # Localcolor files: top-level keys are place names
     for lc_file in _SCENE_DIR.glob("localcolor_*.json"):
@@ -1688,7 +1690,7 @@ def _load_notable_places() -> set[str]:
                 if isinstance(key, str) and len(key) < 20:
                     places.add(key)
         except Exception:
-            pass
+            logger.debug("failed to load %s", lc_file)
 
     _NOTABLE_PLACES_CACHE = places
     return places
@@ -1783,7 +1785,7 @@ def sanity_check(text: str, env: dict) -> str:
 
         # ── Season contradiction ──
         if season in ("summer", "spring") and biome not in ("tundra", "glacier", "polar"):
-            _winter_words = ["雪", "冰", "冻", "寒", "严寒", "霜"]
+            _winter_words = ["下雪", "冰雪", "冰封", "冰面", "冰川", "冰冻", "冻土", "严寒", "积雪", "霜冻"]
             if any(w in sent for w in _winter_words):
                 # Allow if temperature is genuinely cold (< 5°C)
                 if temp_c >= 5:
@@ -2301,7 +2303,7 @@ _SMELL_BY_BIOME: dict[str, list[str]] = {
     "volcano": ["硫磺的味道，刺鼻", "热石头的味道，像铁", "蒸汽带着矿物质的涩", "烧焦的泥土味，干的", "热泉冒出来的水汽，带铁腥"],
     "wetland": ["腐殖质的味道，浓的", "水草的腥味", "泥巴的味道，潮的", "芦苇秆折断的味道，青的", "水里带铁锈味，腥的"],
     "snow": ["冷空气，干净得发苦", "雪化成水的味道，带一点泥土", "风里什么都没有，但你知道那是雪", "雪落在衣服上的味道，冷的", "树皮被冻住的味道，干的"],
-    "water": ["海风里的咸味", "水汽带着泥腥", "空气湿得能拧出水", "水草泡烂的味道，腥的", "岸边泥土的味道，湿的"],
+    "water": ["水面飘来潮润的土腥", "水汽带着泥腥", "空气湿得能拧出水", "水草泡烂的味道，腥的", "岸边泥土的味道，湿的"],
 }
 
 _TOUCH_BY_SURFACE: dict[str, list[str]] = {
@@ -2715,8 +2717,7 @@ def render_establish(payload: dict, rng: random.Random) -> str:
             _loc_pool = [s for s in _loc_pool if s not in _loc_exclude]
         # Card 69: word-based winter filter as fallback for untagged entries
         if season in ("summer", "spring") and biome not in ("tundra", "glacier", "polar"):
-            _winter_loc_words = ["雪", "冰雪", "冰封", "冰面", "冰川", "冻", "冻土",
-                                 "寒", "严寒", "霜", "积雪", "雪原"]
+            _winter_loc_words = ["下雪", "冰雪", "冰封", "冰面", "冰川", "冰冻", "冻土", "严寒", "积雪", "霜冻"]
             _loc_filtered = [s for s in _loc_pool if not any(w in s for w in _winter_loc_words)]
             if _loc_filtered:
                 _loc_pool = _loc_filtered

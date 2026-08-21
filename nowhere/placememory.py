@@ -13,6 +13,7 @@ from __future__ import annotations
 import json
 import os
 import pathlib
+import tempfile
 from pathlib import Path
 
 
@@ -34,7 +35,16 @@ def _load(name: str) -> dict:
 def _dump(name: str, data: dict) -> None:
     p = _path(name)
     p.parent.mkdir(parents=True, exist_ok=True)
-    p.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+    tmp_fd, tmp_path = tempfile.mkstemp(dir=p.parent, suffix=".tmp")
+    try:
+        with os.fdopen(tmp_fd, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(tmp_path, p)
+    except BaseException:
+        os.unlink(tmp_path)
+        raise
 
 
 def seen_cards(place: str) -> set[str]:

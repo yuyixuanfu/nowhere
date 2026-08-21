@@ -15,6 +15,7 @@ from __future__ import annotations
 import argparse
 import asyncio
 import functools
+import logging
 import math
 import os
 import random
@@ -23,6 +24,8 @@ import threading
 from datetime import datetime, timezone
 from typing import Any
 from zoneinfo import ZoneInfo
+
+logger = logging.getLogger(__name__)
 
 from timezonefinder import TimezoneFinder
 
@@ -288,18 +291,6 @@ def _lunar_festival(lunar_month: int, lunar_day: int) -> str | None:
         (12, 29): "除夕",  # 小月年
     }
     return _FESTIVALS.get((lunar_month, lunar_day))
-
-
-def _is_lunar_festival_eve_or_next(lunar_month: int, lunar_day: int) -> str | None:
-    """Check if today is ±1 day from a major festival (for festival weight boost)."""
-    _MAJOR = {(1, 1), (1, 15), (5, 5), (7, 15), (8, 15), (9, 9)}
-    for m, d in _MAJOR:
-        if (m, d) == (lunar_month, lunar_day):
-            continue
-        # Check ±1 day
-        if lunar_month == m and abs(lunar_day - d) == 1:
-            return _lunar_festival(m, d)
-    return None
 
 
 def _spring_tide_check(lunar_day: int) -> bool:
@@ -1617,19 +1608,8 @@ def _river_alignment_text(
 
 _DISCOVERY_CACHE: list[str] | None = None
 
-_SURFACE_DESC_SERVER: dict[str, str] = {
-    "rock": "岩石",
-    "sand": "沙",
-    "snow": "积雪",
-    "ice": "冰面",
-    "forest": "林地",
-    "grass": "草地",
-    "urban": "硬化路面",
-    "bare": "碎石",
-    "wetland": "湿地",
-    "water_ocean": "海面",
-    "water_fresh": "水面",
-}
+_SURFACE_DESC_SERVER: dict[str, str] = describe._SURFACE_DESC
+_COUNTRY_ZH: dict[str, str] = describe._COUNTRY_ZH
 
 
 def _load_discovery_scenes() -> list[str]:
@@ -1642,23 +1622,6 @@ def _load_discovery_scenes() -> list[str]:
     if _DISCOVERY_CACHE is None:
         _DISCOVERY_CACHE = describe._load_scenes("walk_discovery")
     return _DISCOVERY_CACHE
-
-
-def _terrain_transition_text(
-    last_surface: str | None, current_surface: str, rng: random.Random
-) -> str:
-    """Describe the transition between two surface types."""
-    if not last_surface or last_surface == current_surface:
-        return ""
-    last_desc = _SURFACE_DESC_SERVER.get(last_surface, last_surface)
-    curr_desc = _SURFACE_DESC_SERVER.get(current_surface, current_surface)
-    transitions = [
-        f"地面从{last_desc}变成了{curr_desc}。",
-        f"脚下的{last_desc}不见了，现在是{curr_desc}。",
-        f"从{last_desc}走到了{curr_desc}上。",
-        f"路变了，{last_desc}换成了{curr_desc}。",
-    ]
-    return rng.choice(transitions)
 
 
 _SURFACE_TO_DISCOVERY_BIOME: dict[str, str] = {
@@ -5619,13 +5582,11 @@ def _localized_place_name(place_name: str, lat: float, lon: float) -> str:
 
 def _postmark(lat: float, lon: float) -> dict:
     """邮戳保留旅程内当地时间；现实寄出时间由明信片另行记录。"""
-    # Use current env elevation if available (fresher than raw terrain lookup),
-    # fall back to terrain module for first postcard before any walk.
-    env = _state.last_env or {}
-    elev = env.get("elevation")
-    if elev is None:
-        # Card 81: pass place_name for pool disambiguation
-        elev = terrain.elevation(lat, lon, _state.place_name or "")
+    # Always use terrain module for stamp elevation — last_env elevation
+    # comes from the coarse grid which can be wildly off for coastal cities
+    # (e.g. Weihai reports 300 m while sitting at sea level).  The terrain
+    # module checks DEM tiles first, which is more accurate.
+    elev = terrain.elevation(lat, lon, _state.place_name or "")
     # Card 57: clamp coastal elevation (coarse-grid coastline bug)
     surface = _last_env_surface() or "grass"
     elev = _clamp_coastal_elevation(elev, surface, lat, lon)
@@ -5636,7 +5597,7 @@ def _postmark(lat: float, lon: float) -> dict:
 
     stamp: dict = {
         "place": stamp_place,
-        "place_zh": raw_place if stamp_place != raw_place else None,
+        "place_zh": raw_place if (stamp_place != raw_place and raw_place not in stamp_place and stamp_place not in raw_place) else None,
         "lat": round(lat, 4),
         "lon": round(lon, 4),
         "elevation": round(elev),
@@ -6603,15 +6564,6 @@ def _get_blind_clue(lat: float, lon: float, clue_level: int) -> str:
     else:
         # Country
         cc = country.country_code_of(lat, lon)
-        _COUNTRY_ZH = {
-            "CN": "中国", "JP": "日本", "KR": "韩国", "TH": "泰国",
-            "FR": "法国", "DE": "德国", "GB": "英国", "IT": "意大利", "ES": "西班牙",
-            "US": "美国", "CA": "加拿大", "MX": "墨西哥",
-            "BR": "巴西", "AR": "阿根廷", "AU": "澳大利亚", "NZ": "新西兰",
-            "EG": "埃及", "ZA": "南非", "RU": "俄罗斯", "IN": "印度",
-            "TR": "土耳其", "GR": "希腊", "PT": "葡萄牙", "NL": "荷兰",
-            "SE": "瑞典", "NO": "挪威", "FI": "芬兰",
-        }
         return _COUNTRY_ZH.get(cc, cc or "未知国家")
 
 
@@ -6631,13 +6583,6 @@ def guess(place: str) -> dict:
 
     # Check if guess matches place name or country
     cc = country.country_code_of(lat, lon)
-    _COUNTRY_ZH = {
-        "CN": "中国", "JP": "日本", "KR": "韩国", "TH": "泰国",
-        "FR": "法国", "DE": "德国", "GB": "英国", "IT": "意大利", "ES": "西班牙",
-        "US": "美国", "CA": "加拿大", "MX": "墨西哥",
-        "BR": "巴西", "AR": "阿根廷", "AU": "澳大利亚", "NZ": "新西兰",
-        "EG": "埃及", "ZA": "南非", "RU": "俄罗斯", "IN": "印度",
-    }
     country_zh = _COUNTRY_ZH.get(cc, "")
 
     # Match: exact place name, or country name if guess is country
@@ -6761,6 +6706,7 @@ def main() -> None:
     observer. The URL is injected into the MCP server instructions so the
     agent learns it at handshake time and can share it with the user.
     """
+    logging.basicConfig(level=logging.INFO, format='%(asctime)s %(name)s %(levelname)s %(message)s')
     parser = argparse.ArgumentParser(description="Nowhere MCP server")
     parser.add_argument(
         "--web",

@@ -163,6 +163,7 @@ def _haversine_m(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
         - math.cos((lat2 - lat1) * p) / 2
         + math.cos(lat1 * p) * math.cos(lat2 * p) * (1 - math.cos((lon2 - lon1) * p)) / 2
     )
+    a = min(a, 1.0)
     return 2 * R * math.asin(math.sqrt(a))
 
 

@@ -9,6 +9,7 @@ from __future__ import annotations
 import json
 import pathlib
 import urllib.parse
+from typing import Final
 
 from nowhere.providers import _get_client
 
@@ -17,6 +18,7 @@ _SPECIAL_PATH = pathlib.Path(__file__).resolve().parent / "data" / "special_plac
 
 # Cache geocode results to avoid re-scanning places.db / cities15000 on every call
 _geocode_cache: dict[str, tuple[float, float] | None] = {}
+_GEOCODE_CACHE_MAX: Final = 500
 _special_places: dict[str, dict] | None = None
 
 

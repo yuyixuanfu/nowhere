@@ -19,8 +19,10 @@ _DATA_DIR: Final = pathlib.Path(__file__).resolve().parent / "data"
 _TINY_PATH: Final = _DATA_DIR / "grid_tiny.npz"
 _FULL_PATH: Final = _DATA_DIR / "grid.npz"
 
+# Placeholder: no download helper exists yet.  When one is written it should
+# pull from the real repo's release (mengrru/nowhere).  Currently unused.
 GRID_URL: Final[str] = (
-    "https://github.com/placeholder/nowhere/releases/download/v0.1/grid.npz"
+    "https://github.com/mengrru/nowhere/releases/download/v0.1/grid.npz"
 )
 
 # Cover codes (must match build_grid.py)
@@ -321,6 +323,7 @@ def _haversine_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
     dlat = lat2 - lat1
     dlon = lon2 - lon1
     a = math.sin(dlat / 2) ** 2 + math.cos(lat1) * math.cos(lat2) * math.sin(dlon / 2) ** 2
+    a = min(a, 1.0)
     return 2 * _EARTH_RADIUS_KM * math.asin(math.sqrt(a))
 
 
