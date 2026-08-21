@@ -88,6 +88,7 @@ _rng: random.Random = (
     else random.Random()  # 生产真随机;测试用 NOWHERE_SEED 锁
 )
 _web_port: int | None = None  # reserved for Task 11
+_web_url: str | None = None  # resolved public URL (env / LAN / localhost)
 _web_url_announced: bool = False  # open_door 首次告知用户旁观者地址
 _tf: TimezoneFinder = TimezoneFinder()
 
@@ -3211,8 +3212,8 @@ async def _open_door_locked(to: str | None = None, resume: bool = False, travele
 
     # ── 5e. web 旁观者: 首次开门告知用户地址 ───────────────────────
     global _web_url_announced
-    if _web_port is not None and not _web_url_announced:
-        prose += f"\n（旁观者可以在这里看你走路：http://localhost:{_web_port}）"
+    if _web_url and not _web_url_announced:
+        prose += f"\n（旁观者可以在这里看你走路：{_web_url}）"
         _web_url_announced = True
 
     # Card 16: blind auto-disabled note
@@ -6797,14 +6798,31 @@ def main() -> None:
         import uvicorn
         from nowhere.web import app as web_app
 
-        global _web_port
+        global _web_port, _web_url
         port = args.web
         if port == 0:
             with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                 s.bind(("", 0))
                 port = s.getsockname()[1]
         _web_port = port
-        web_url = f"http://localhost:{port}"
+
+        # Resolve the public-facing URL for remote MCP clients.
+        # Priority: NOWHERE_PUBLIC_URL env > auto-detect LAN IP > localhost fallback.
+        def _detect_host() -> str:
+            """Return the best-guess reachable host for this machine."""
+            env_url = os.environ.get("NOWHERE_PUBLIC_URL", "").strip()
+            if env_url:
+                return env_url.rstrip("/")
+            try:
+                # Connect to a public DNS to discover our LAN IP (never actually sends data).
+                with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
+                    s.connect(("8.8.8.8", 80))
+                    return f"http://{s.getsockname()[0]}"
+            except Exception:
+                return "http://localhost"
+
+        web_url = f"{_detect_host()}:{port}"
+        _web_url = web_url
 
         # Inject the URL into the MCP server instructions so the agent
         # receives it during the initialize handshake and can tell the user.
