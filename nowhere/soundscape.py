@@ -230,6 +230,9 @@ def soundscape_credit(
 # ── Card 22: Radio Station Selection (选台国家码阈值) ──────────────
 
 _radio_cache: list[dict] | None = None
+# Pre-grouped live stations: country_code → [station, ...]
+_radio_by_country: dict[str, list[dict]] | None = None
+_radio_live_all: list[dict] | None = None
 
 
 def _load_radio_fallback() -> list[dict]:
@@ -240,6 +243,31 @@ def _load_radio_fallback() -> list[dict]:
         else:
             _radio_cache = []
     return _radio_cache
+
+
+def _ensure_radio_index() -> tuple[dict[str, list[dict]], list[dict]]:
+    """Build (once) a country→stations index and a flat live-stations list.
+
+    Returns ``(by_country, live_all)``.  Both are cached at module level so
+    ``select_station()`` can skip the three list-comprehension scans.
+    """
+    global _radio_by_country, _radio_live_all
+    if _radio_by_country is not None:
+        return _radio_by_country, _radio_live_all  # type: ignore[return-value]
+
+    stations = _load_radio_fallback()
+    by_country: dict[str, list[dict]] = {}
+    live_all: list[dict] = []
+    for st in stations:
+        if st.get("dead"):
+            continue
+        live_all.append(st)
+        cc = st.get("country", "")
+        by_country.setdefault(cc, []).append(st)
+
+    _radio_by_country = by_country
+    _radio_live_all = live_all
+    return by_country, live_all
 
 
 def _haversine_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
@@ -285,11 +313,7 @@ def select_station(
     Returns a station dict ``{name, genre, stream_url, homepage, country}``
     or *None* if no station is available.
     """
-    stations = _load_radio_fallback()
-    if not stations:
-        return None
-
-    live = [st for st in stations if not st.get("dead")]
+    by_country, live = _ensure_radio_index()
     if not live:
         return None
 
@@ -309,9 +333,8 @@ def select_station(
                 best = st
         return best
 
-    # 1. Same-country nearest
-    same_country = [st for st in live if st.get("country", "") == country_code]
-    pick = _pick_nearest(same_country)
+    # 1. Same-country nearest (O(1) dict lookup instead of full scan)
+    pick = _pick_nearest(by_country.get(country_code, []))
     if pick is not None:
         return pick
 
@@ -322,7 +345,9 @@ def select_station(
             circle_ccs = ccs
             break
     if circle_ccs:
-        circle_pool = [st for st in live if st.get("country", "") in circle_ccs]
+        circle_pool: list[dict] = []
+        for cc in circle_ccs:
+            circle_pool.extend(by_country.get(cc, []))
         pick = _pick_nearest(circle_pool)
         if pick is not None:
             return pick

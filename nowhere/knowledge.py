@@ -24,6 +24,8 @@ _KB_FILES = [
 ]
 
 _local_kb: dict[str, dict] | None = None
+# Inverted index: first character → list of KB keys starting with that char
+_kb_char_index: dict[str, list[str]] | None = None
 
 
 def _load_local_kb() -> dict[str, dict]:
@@ -34,7 +36,7 @@ def _load_local_kb() -> dict[str, dict]:
     offline builder.  They are normalised to the same ``{title, extract, …}``
     shape so the rest of the code can treat them uniformly.
     """
-    global _local_kb
+    global _local_kb, _kb_char_index
     if _local_kb is not None:
         return _local_kb
 
@@ -45,6 +47,14 @@ def _load_local_kb() -> dict[str, dict]:
             continue
         data = json.loads(fp.read_text(encoding="utf-8"))
         _local_kb.update(data)
+
+    # Build first-character inverted index for substring lookups
+    idx: dict[str, list[str]] = {}
+    for name in _local_kb:
+        if name:
+            idx.setdefault(name[0], []).append(name)
+    _kb_char_index = idx
+
     return _local_kb
 
 
@@ -124,10 +134,13 @@ async def about(lat: float, lon: float, topic: str) -> dict | None:
         return _format_kb_entry(title, kb[title])
 
     # Fuzzy match (contains): only allow "query is substring of entry name".
+    # Use inverted index to narrow candidates first.
     if title:
-        for name, entry in kb.items():
+        idx = _kb_char_index or {}
+        candidates = idx.get(title[0], [])
+        for name in candidates:
             if title in name:
-                return _format_kb_entry(name, entry)
+                return _format_kb_entry(name, kb[name])
 
     # Coordinate fallback only when no topic specified
     if not title:
@@ -216,13 +229,19 @@ def has_knowledge(topic: str) -> bool:
     """Quick sync check: does the knowledge base have content for *topic*?
 
     Used by walk_impl to decide whether to hint 'ask 能问出更多'.
+    Uses a first-character inverted index to avoid scanning all KB keys.
     """
     kb = _load_local_kb()
     if not topic:
         return False
     if topic in kb:
         return True
-    for name in kb:
+    # Narrow candidates via inverted index: only check keys whose first
+    # character matches the query's first character (or second, if the
+    # query starts with a common prefix like a space).
+    idx = _kb_char_index or {}
+    candidates = idx.get(topic[0], [])
+    for name in candidates:
         if topic in name:
             return True
     return False

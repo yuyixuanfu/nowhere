@@ -25,6 +25,9 @@ from typing import Any
 
 _DATA_DIR = pathlib.Path(__file__).resolve().parent / "data"
 
+# ── Module-level cache for load_localcolor ──────────────────────────
+_localcolor_cache: tuple[pathlib.Path, list[Card]] | None = None
+
 
 # ── Card dataclass ──────────────────────────────────────────────────
 
@@ -58,8 +61,14 @@ def load_localcolor(data_dir: pathlib.Path | None = None) -> list[Card]:
     """Load localcolor cards from main + regional JSON files.
 
     Returns cards for ALL categories including 节律.
+    Results are cached at module level; repeated calls with the same
+    *data_dir* return the cached list without re-reading 800 KB+ of JSON.
     """
+    global _localcolor_cache
     d = data_dir or _DATA_DIR
+    if _localcolor_cache is not None and _localcolor_cache[0] == d:
+        return _localcolor_cache[1]
+
     main_file = d / "localcolor.json"
     base: dict = json.loads(main_file.read_text("utf-8")) if main_file.exists() else {}
 
@@ -122,6 +131,7 @@ def load_localcolor(data_dir: pathlib.Path | None = None) -> list[Card]:
                     meta={"category": "节律", "weight": 1.0},
                 ))
 
+    _localcolor_cache = (d, cards)
     return cards
 
 

@@ -30,6 +30,7 @@ def _resolve_db() -> pathlib.Path:
 
 _DB = _resolve_db()
 _PATCH = _DATA / "places_patch.json"
+_PATCH_CACHE: dict | None = None
 
 _TYPE_ZH: dict[str, str] = {
     "MT": "山", "MTS": "山脉", "PK": "峰", "HLL": "丘", "VAL": "谷",
@@ -64,16 +65,27 @@ def _bearing_deg(a_lat, a_lon, b_lat, b_lon) -> float:
     return (math.degrees(math.atan2(x, y)) + 360) % 360
 
 
+_conn_instance: sqlite3.Connection | None = None
+
+
 def _conn() -> sqlite3.Connection | None:
-    if not _DB.exists():
-        return None
-    return sqlite3.connect(_DB)
+    global _conn_instance
+    if _conn_instance is None:
+        if not _DB.exists():
+            return None
+        _conn_instance = sqlite3.connect(_DB)
+    return _conn_instance
 
 
 def _patch() -> dict:
+    global _PATCH_CACHE
+    if _PATCH_CACHE is not None:
+        return _PATCH_CACHE
     if _PATCH.exists():
-        return json.loads(_PATCH.read_text(encoding="utf-8"))
-    return {}
+        _PATCH_CACHE = json.loads(_PATCH.read_text(encoding="utf-8"))
+        return _PATCH_CACHE
+    _PATCH_CACHE = {}
+    return _PATCH_CACHE
 
 
 def _row_to_dict(row, from_lat, from_lon) -> dict:
@@ -112,8 +124,6 @@ def nearby(lat: float, lon: float, radius_km: float = 20.0, limit: int = 10) -> 
         ).fetchall()
     except sqlite3.OperationalError:
         rows = []  # places.db 为空/损坏,降级不炸
-    finally:
-        conn.close()
     out = []
     for row in rows:
         if row[4] == "S" and row[5] not in _LANDMARK_S:
@@ -228,8 +238,6 @@ def _fts_lookup(name: str, near: tuple[float, float] | None) -> dict | None:
         ).fetchall()
     except sqlite3.OperationalError:
         rows = []  # 库还在建(FTS 未就绪),降级不炸
-    finally:
-        conn.close()
     if not rows:
         return None
 

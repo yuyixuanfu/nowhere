@@ -95,6 +95,52 @@ _web_url: str | None = None  # resolved public URL (env / LAN / localhost)
 _web_url_announced: bool = False  # open_door 首次告知用户旁观者地址
 _tf: TimezoneFinder = TimezoneFinder()
 
+# ── File caches (avoid repeated disk reads) ────────────────────────
+_WATER_FEATURES_CACHE: dict | None = None
+_EXPLORABLE_INDEX_CACHE: dict | None = None
+_PLACES_PATCH_CACHE: dict | None = None
+
+
+async def _read_json_async(path) -> dict | list:
+    """Read a JSON file without blocking the event loop."""
+    return await asyncio.to_thread(lambda: _json.loads(path.read_text(encoding="utf-8")))
+
+
+async def _load_water_features() -> dict:
+    global _WATER_FEATURES_CACHE
+    if _WATER_FEATURES_CACHE is not None:
+        return _WATER_FEATURES_CACHE
+    fp = _pathlib.Path(__file__).resolve().parent / "data" / "water_features_offline.json"
+    if fp.exists():
+        _WATER_FEATURES_CACHE = await _read_json_async(fp)
+    else:
+        _WATER_FEATURES_CACHE = {}
+    return _WATER_FEATURES_CACHE
+
+
+async def _load_explorable_index() -> dict:
+    global _EXPLORABLE_INDEX_CACHE
+    if _EXPLORABLE_INDEX_CACHE is not None:
+        return _EXPLORABLE_INDEX_CACHE
+    fp = _pathlib.Path(__file__).resolve().parent / "data" / "explorable_index.json"
+    if fp.exists():
+        _EXPLORABLE_INDEX_CACHE = await _read_json_async(fp)
+    else:
+        _EXPLORABLE_INDEX_CACHE = {}
+    return _EXPLORABLE_INDEX_CACHE
+
+
+async def _load_places_patch() -> dict:
+    global _PLACES_PATCH_CACHE
+    if _PLACES_PATCH_CACHE is not None:
+        return _PLACES_PATCH_CACHE
+    fp = _pathlib.Path(__file__).resolve().parent / "data" / "places_patch.json"
+    if fp.exists():
+        _PLACES_PATCH_CACHE = await _read_json_async(fp)
+    else:
+        _PLACES_PATCH_CACHE = {}
+    return _PLACES_PATCH_CACHE
+
 
 def _get_tz(lat: float, lon: float) -> ZoneInfo:
     """Return the ZoneInfo for the given (lat, lon). Falls back to Asia/Shanghai."""
@@ -1158,8 +1204,6 @@ def _compute_wilderness_depth_km(lat: float, lon: float) -> float:
     Uses explorable_index.json places and hydrology offline water features.
     Returns 0.0 if within 5km of any known feature, otherwise the distance.
     """
-    import json as _json
-    import pathlib as _pathlib
     from math import radians, sin, cos, sqrt, atan2
 
     def _haversine_km(lat1, lon1, lat2, lon2):
@@ -1173,30 +1217,26 @@ def _compute_wilderness_depth_km(lat: float, lon: float) -> float:
 
     # Check explorable_index places
     try:
-        fp = _pathlib.Path(__file__).resolve().parent / "data" / "explorable_index.json"
-        if fp.exists():
-            data = _json.loads(fp.read_text(encoding="utf-8"))
-            for name, info in data.get("places", {}).items():
-                plat = info.get("lat")
-                plon = info.get("lon")
-                if plat is not None and plon is not None:
-                    d = _haversine_km(lat, lon, plat, plon)
-                    if d < min_dist:
-                        min_dist = d
+        data = _load_explorable_index()
+        for name, info in data.get("places", {}).items():
+            plat = info.get("lat")
+            plon = info.get("lon")
+            if plat is not None and plon is not None:
+                d = _haversine_km(lat, lon, plat, plon)
+                if d < min_dist:
+                    min_dist = d
     except Exception:
         pass
 
     # Check offline water features
     try:
-        fp = _pathlib.Path(__file__).resolve().parent / "data" / "water_features_offline.json"
-        if fp.exists():
-            data = _json.loads(fp.read_text(encoding="utf-8"))
-            for entry in data.get("entries", []):
-                elat = entry.get("lat", 0)
-                elon = entry.get("lon", 0)
-                d = _haversine_km(lat, lon, elat, elon)
-                if d < min_dist:
-                    min_dist = d
+        data = _load_water_features()
+        for entry in data.get("entries", []):
+            elat = entry.get("lat", 0)
+            elon = entry.get("lon", 0)
+            d = _haversine_km(lat, lon, elat, elon)
+            if d < min_dist:
+                min_dist = d
     except Exception:
         pass
 
@@ -1287,8 +1327,6 @@ def _force_content(
 
 def _find_nearby_destinations(lat: float, lon: float, rng) -> str:
     """Return a literary hint about a walkable place within ~20km."""
-    import json
-    import pathlib as _pathlib
     from math import radians, sin, cos, sqrt, atan2
 
     def _haversine_km(lat1, lon1, lat2, lon2):
@@ -1298,11 +1336,8 @@ def _find_nearby_destinations(lat: float, lon: float, rng) -> str:
         a = sin(dlat / 2) ** 2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon / 2) ** 2
         return R * 2 * atan2(sqrt(a), sqrt(1 - a))
 
-    patch_path = _pathlib.Path(__file__).resolve().parent / "data" / "places_patch.json"
-    if not patch_path.exists():
-        return ""
     try:
-        places = json.loads(patch_path.read_text(encoding="utf-8"))
+        places = _load_places_patch()
     except Exception:
         return ""
 
@@ -1342,14 +1377,8 @@ def _find_nearby_destinations(lat: float, lon: float, rng) -> str:
 
 def _find_nearest_water_feature(name: str, lat: float, lon: float) -> dict | None:
     """Find the nearest point on a named water feature from the offline database."""
-    import json
-    import pathlib as _pathlib
-
-    fp = _pathlib.Path(__file__).resolve().parent / "data" / "water_features_offline.json"
-    if not fp.exists():
-        return None
     try:
-        data = json.loads(fp.read_text(encoding="utf-8"))
+        data = _load_water_features()
     except Exception:
         return None
 
@@ -1407,14 +1436,8 @@ def _find_river_segment(
 
     Returns {"lat": float, "lon": float, "segment_name": str} or None.
     """
-    import json
-    import pathlib as _pathlib
-
-    fp = _pathlib.Path(__file__).resolve().parent / "data" / "water_features_offline.json"
-    if not fp.exists():
-        return None
     try:
-        data = json.loads(fp.read_text(encoding="utf-8"))
+        data = _load_water_features()
     except Exception:
         return None
 
@@ -1502,13 +1525,8 @@ def _compute_river_direction(water_features: list[dict], lat: float, lon: float)
     if not river_names:
         return None
 
-    import json
-    import pathlib as _pathlib
-    fp = _pathlib.Path(__file__).resolve().parent / "data" / "water_features_offline.json"
-    if not fp.exists():
-        return None
     try:
-        data = json.loads(fp.read_text(encoding="utf-8"))
+        data = _load_water_features()
     except Exception:
         return None
 
@@ -6154,13 +6172,8 @@ def deliver_impl() -> dict:
 
 def _build_place_coords() -> dict[str, tuple[float, float]]:
     """Build a place→coords map from explorable_index for errand delivery."""
-    import json as _json
-    import pathlib as _pathlib
-    fp = _pathlib.Path(__file__).resolve().parent / "data" / "explorable_index.json"
-    if not fp.exists():
-        return {}
     try:
-        data = _json.loads(fp.read_text(encoding="utf-8"))
+        data = _load_explorable_index()
         coords = {}
         for name, info in data.get("places", {}).items():
             plat = info.get("lat")

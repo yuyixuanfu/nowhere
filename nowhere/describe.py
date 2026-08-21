@@ -1785,7 +1785,7 @@ def sanity_check(text: str, env: dict) -> str:
 
         # ── Season contradiction ──
         if season in ("summer", "spring") and biome not in ("tundra", "glacier", "polar"):
-            _winter_words = ["下雪", "冰雪", "冰封", "冰面", "冰川", "冰冻", "冻土", "严寒", "积雪", "霜冻"]
+            _winter_words = ["下雪", "冰雪", "冰封", "冰面", "冰川", "冰冻", "冻土", "严寒", "积雪", "霜冻", "寒风", "刺骨", "裹紧"]
             if any(w in sent for w in _winter_words):
                 # Allow if temperature is genuinely cold (< 5°C)
                 if temp_c >= 5:
