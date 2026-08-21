@@ -195,7 +195,9 @@ async def about(lat: float, lon: float, topic: str) -> dict | None:
 
     # ── 3. Entity extraction: find KB keys mentioned in topic (卡88) ──
     # Only match keys >= 3 chars to avoid false positives
-    if title:
+    # Skip if topic contains a topic word (美食/历史/地标 etc.) — let step 4 handle it
+    _has_topic_word = any(tw in title for tw in _TOPIC_LABELS)
+    if title and not _has_topic_word:
         for name in sorted(kb.keys(), key=len, reverse=True):
             if len(name) >= 3 and name in title:
                 return _format_kb_entry(name, kb[name])
