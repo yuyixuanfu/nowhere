@@ -2790,7 +2790,7 @@ async def _open_door_locked(to: str | None = None, resume: bool = False, travele
             if return_text:
                 response_parts.append(return_text)
             _r_season = describe._season(_state.now().month, _state.pos[0]) if _state.now() and _state.pos else ""
-            _r_zh = {"spring":"春","summer":"夏","autumn":"秋","winter":"冬","wet":"雨季","dry":"旱季"}.get(_r_season,"")
+            _r_zh = describe._SEASON_EN_TO_ZH.get(_r_season, "")
             _r_steps = len(_state.path) if _state.path else 0
             response_parts.append(f"回到了{place}的旅程。上次你在这走了{_r_steps}步,是{_r_zh}天。")
 
@@ -4657,11 +4657,12 @@ async def wait_impl(hours: float = 1.0) -> dict:
 
         # Season snapshot
         end_now = _state.now()
-        if end_now:
+        if end_now and _state.pos:
             end_local = end_now.astimezone(ZoneInfo("Asia/Shanghai"))
-            _season_zh = {12: "冬", 1: "冬", 2: "冬", 3: "春", 4: "春", 5: "春",
-                          6: "夏", 7: "夏", 8: "夏", 9: "秋", 10: "秋", 11: "秋"}
-            sections.append(f"现在是{_season_zh.get(end_local.month, '')}天。")
+            season_en = describe._season(end_local.month, _state.pos[0])
+            season_zh = describe._SEASON_EN_TO_ZH.get(season_en, "")
+            if season_zh:
+                sections.append(f"现在是{season_zh}天。")
 
         # Clamp disclosure
         if clamped:
