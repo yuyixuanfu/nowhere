@@ -326,10 +326,21 @@ def select_station(
         if pick is not None:
             return pick
 
-    # 3. Nearby by haversine ≤ 3000 km
+    # 3. Nearby by haversine ≤ 3000 km, excluding politically sensitive pairs
+    _EXCLUDE: dict[str, set[str]] = {
+        "RU": {"UA"}, "UA": {"RU"},
+        "CN": {"TW"}, "TW": {"CN"},
+        "KR": {"KP"}, "KP": {"KR"},
+        "IL": {"PS"}, "PS": {"IL"},
+        "MV": {"IN"},
+    }
+    excluded = _EXCLUDE.get(country_code, set())
     best: dict | None = None
     best_dist = math.inf
     for st in live:
+        st_cc = st.get("country", "")
+        if st_cc in excluded:
+            continue
         st_lat = st.get("lat")
         st_lon = st.get("lon")
         if st_lat is None or st_lon is None:
