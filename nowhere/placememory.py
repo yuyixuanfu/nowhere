@@ -278,18 +278,6 @@ def footprints() -> list[dict]:
     return list(reversed(_load("footprints.json").get("items", [])))
 
 
-# ── Travelers (cotraveler system, card 44) ────────────────────────────
-
-def load_travelers() -> dict:
-    """Load travelers.json (cotraveler registry)."""
-    return _load("travelers.json")
-
-
-def save_travelers(data: dict) -> None:
-    """Save travelers.json."""
-    _dump("travelers.json", data)
-
-
 # ── 埋藏物品(Card 13: bury/find) ─────────────────────────────────
 
 _BURIED_CAP = 100

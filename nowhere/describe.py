@@ -476,6 +476,8 @@ def _matches(requires: dict, ctx: dict) -> bool:
     if "polar_day" in requires:
         if requires["polar_day"] is False and ctx.get("polar_day"):
             return False
+        if requires["polar_day"] is True and not ctx.get("polar_day"):
+            return False
 
     # Feature constraint (scene needs a feature the data doesn't have)
     if "feature" in requires:
@@ -567,10 +569,19 @@ def _pick_scene(pool: list[str], name: str, rng: random.Random, ctx: dict) -> st
         filtered = pool  # Fallback to unfiltered if all filtered out
 
     meta = _load_meta().get(name, [])
-    if meta and len(meta) == len(filtered):
-        valid = [t for t, m in zip(filtered, meta) if _matches(m.get("requires", {}), ctx)]
-        if valid:
-            return rng.choice(valid)
+    if meta and len(meta) == len(pool):
+        # Apply meta constraints against the ORIGINAL pool, then intersect
+        # with keyword-filtered results. This avoids the bug where keyword
+        # filtering changes len(filtered) so the old len check always fails.
+        meta_valid_idx = {i for i, m in enumerate(meta) if _matches(m.get("requires", {}), ctx)}
+        if not meta_valid_idx:
+            return ""
+        pool_to_idx = {s: i for i, s in enumerate(pool)}
+        meta_valid_filtered = [s for s in filtered if pool_to_idx.get(s) in meta_valid_idx]
+        if meta_valid_filtered:
+            return rng.choice(meta_valid_filtered)
+        # Meta constraints killed everything after keyword filter — return
+        # empty so caller can retry with a different name.
         return ""
     return rng.choice(filtered)
 
@@ -663,9 +674,9 @@ _WEATHER_STORM_VARIANTS: list[str] = [
 ]
 
 _WEATHER_DELTA_VARIANTS: list[str] = [
-    "{text}。{delta_desc}。现在 {temp_c} 度,{wind_clause}。",
-    "{delta_desc}。{text},{temp_c} 度,{wind_clause}。",
-    "天变了。{delta_desc}。此刻{text},{temp_c} 度,{wind_clause}。",
+    "{delta_desc}。衣服突然不对了,{text}。{temp_c} 度,{wind_clause}。",
+    "{delta_desc}。汗还没干,风已经凉了。{text},{temp_c} 度,{wind_clause}。",
+    "出门时的天不长这样。{delta_desc},{text}。{temp_c} 度,{wind_clause}。",
     "{delta_desc},{text}。{temp_c} 度,{wind_clause}。皮肤还没来得及适应。",
     "刚才不是这样。{delta_desc},{text}。{temp_c} 度,{wind_clause}。",
     "{delta_desc}。{text},{temp_c} 度。{wind_clause},跟刚才不一样了。",
@@ -858,9 +869,9 @@ _NIGHT_NAV_NO_MOON: list[str] = [       # moon_phase < 0.2
 _NIGHT_NAV_POLAR_NIGHT: list[str] = [   # |lat|>66 winter months
     "太阳不上来,但雪把光存住了。",
     "极夜,天是深蓝的,不是黑的。",
-    "月亮和星换着班,你永远不知道'现在几点'——只好一直走。",
+    "月亮和星换着班,你分不清现在几点——只好一直走。",
     "极夜。天没有全黑过,也没有亮过。",
-    "太阳不露面,但天边有一条亮的线,永远在那里。",
+    "太阳不露面,但天边有一条亮的线,一直在那里。",
     "极夜里,雪地反着天光。你分不清是黄昏还是黎明。",
     "已经好多天没见过太阳了。你靠钟表过日子。",
     "极夜的天是深蓝色的,不是黑的。你已经习惯了。",
@@ -967,20 +978,20 @@ _WATER_COOL_VARIANTS: list[str] = [
 ]
 
 _WATER_WARM_VARIANTS: list[str] = [
-    "海水 {sst} 度。温的,像忘了凉下来。",
-    "水 {sst} 度,温吞吞的,泡着不想动。",
-    "海水 {sst} 度,暖的。海把人接住了。",
-    "{sst} 度的水。暖的,像泡在浴缸里。",
-    "水 {sst} 度。暖的,身体在里面放松了。",
-    "海水 {sst} 度。温的,脚踩进去不想出来。",
-    "{sst} 度。水暖得像被太阳晒过一样。",
-    "水 {sst} 度,暖的。你在水里站着,不想走。",
+    "水 {sst} 度。皮肤浸下去,像钻进一床棉被。",
+    "海水 {sst} 度。远处的浪花发白,脚边的水纹却懒懒的。",
+    "{sst} 度的水。什么也不想,就站在里面。",
+    "海水 {sst} 度,比体温低一点。整个人像被含住。",
+    "水 {sst} 度。童年夏天的河,大概就是这个温度。",
+    "{sst} 度。泡到胸口,肩膀露在外面,风吹过来也不觉得冷。",
+    "水 {sst} 度。手指在水里张开,能看见,但不重要了。",
+    "海水 {sst} 度,和外面的空气几乎没有边界。",
 ]
 
 _LIFE_VARIANTS: list[str] = [
     "{time_desc},有人在离你 {distance_m} 的地方,遇见过{unit}{common_name}。此刻你不知道它在哪。",
-    "{unit}{common_name}。{time_desc},{distance_m}外,有人见过它。它也许还在。",
-    "{time_desc},{distance_m}之内,有人遇见过{common_name}。也许它正看着你——这不重要,知道它在,就够了。",
+    "{unit}{common_name}。{time_desc},{distance_m}外,有人见过。不知道什么时候的事。",
+    "{time_desc},{distance_m}之内,有人遇见过{common_name}。你张望了一下,什么也没看到。",
     "{unit}{common_name}。{distance_m}外。{time_desc}有人见过它,你不知道它现在在哪。",
     "{time_desc},{distance_m}外有人遇见过{common_name}。它也许在,也许不在。你继续走。",
     "{unit}{common_name},{distance_m}。{time_desc}留下的痕迹。你知道它在附近。",
@@ -1266,16 +1277,6 @@ def _wind_delta_line(old_wind: float, new_wind: float, rng: random.Random) -> st
     if diff > 0:
         return rng.choice(_WIND_DELTA_UP)
     return rng.choice(_WIND_DELTA_DOWN)
-
-
-def _feels_clause(feels_c: float, temp_c: float) -> str:
-    """DEPRECATED: kept for backward compat. Use _humidity_sensory instead."""
-    diff = round(feels_c - temp_c)
-    if diff > 3:
-        return f"湿气把体感往上抬了 {diff} 度,"
-    if diff < -3:
-        return f"风把体感往下压了 {abs(diff)} 度,"
-    return ""
 
 
 def _wind_sensory(wind_ms: float, rng: random.Random) -> str:
@@ -2253,6 +2254,8 @@ _ESTABLISH_VISUAL: dict[str, list[str]] = {
     ],
 }
 
+# 视觉/地名用——比 _SURFACE_DESC 更简洁（"雪原" vs "冻硬的雪壳"）。
+# soundscape.py 和 server.py 均从此处导入，不再各自维护副本。
 _SURFACE_ZH: dict[str, str] = {
     "rock": "岩石", "sand": "沙", "snow": "雪原", "ice": "冰面",
     "forest": "林子", "grass": "草原", "urban": "城", "bare": "碎石滩",
@@ -2287,17 +2290,17 @@ _SMELL_BY_SURFACE: dict[str, str] = {
 }
 
 _SMELL_BY_BIOME: dict[str, list[str]] = {
-    "rainforest": ["腐叶的甜味混着泥土的腥", "空气黏在皮肤上，带着花香和霉味", "潮湿的木头味道"],
-    "desert": ["干燥的热气，没有味道但你闻到了'干'", "沙子被太阳烤过的味道", "远处有植物烧焦的味道"],
-    "tundra": ["冷空气，干净的，带一点金属", "苔藓的味道，湿的，像刚下过雪", "冻土化开的泥腥味"],
-    "mountain": ["稀薄的空气，闻起来什么都没有", "岩石被太阳晒热的味道", "远处有雪的味道，冷的"],
-    "coast": ["海盐混着海藻的腥", "鱼的味道，淡的，被风吹散了", "潮湿的木头，码头的味道"],
-    "city": ["油烟和香料的味道", "汽车尾气混着烤面包的味道", "街角飘来咖啡和烤面包的香气"],
-    "grassland": ["青草碾碎的味道", "干草的味道，暖的", "远处有篝火的烟味"],
-    "volcano": ["硫磺的味道，刺鼻", "热石头的味道，像铁", "蒸汽带着矿物质的涩"],
-    "wetland": ["腐殖质的味道，浓的", "水草的腥味", "泥巴的味道，潮的"],
-    "snow": ["冷空气，干净得发苦", "雪化成水的味道，带一点泥土", "风里什么都没有，但你知道那是雪"],
-    "water": ["海风里的咸味", "水汽带着泥腥", "空气湿得能拧出水"],
+    "rainforest": ["腐叶的甜味混着泥土的腥", "空气黏在皮肤上，带着花香和霉味", "潮湿的木头味道", "芭蕉叶被太阳晒出的青气", "树干渗出的树脂味，黏的"],
+    "desert": ["干燥的热气，没有味道但你闻到了'干'", "沙子被太阳烤过的味道", "远处有植物烧焦的味道", "皮革和灰尘的味道，干的", "风卷起来的沙尘，呛鼻子"],
+    "tundra": ["冷空气，干净的，带一点金属", "苔藓的味道，湿的，像刚下过雪", "冻土化开的泥腥味", "地衣被风吹散的味道，干的", "冰面裂开时散出的冷气"],
+    "mountain": ["稀薄的空气，闻起来什么都没有", "岩石被太阳晒热的味道", "远处有雪的味道，冷的", "松针的味道，干的，从山腰飘来", "风里带一点草药的苦"],
+    "coast": ["海盐混着海藻的腥", "鱼的味道，淡的，被风吹散了", "潮湿的木头，码头的味道", "海藻腐烂的味道，浓的", "铁锈味，锚链上的"],
+    "city": ["油烟和香料的味道", "汽车尾气混着烤面包的味道", "街角飘来咖啡和烤面包的香气", "下水道的潮气，淡淡的", "旧墙皮被雨打湿的味道"],
+    "grassland": ["青草碾碎的味道", "干草的味道，暖的", "远处有篝火的烟味", "土被太阳晒过的味道，暖的", "马粪的味道，远的，被风稀释了"],
+    "volcano": ["硫磺的味道，刺鼻", "热石头的味道，像铁", "蒸汽带着矿物质的涩", "烧焦的泥土味，干的", "热泉冒出来的水汽，带铁腥"],
+    "wetland": ["腐殖质的味道，浓的", "水草的腥味", "泥巴的味道，潮的", "芦苇秆折断的味道，青的", "水里带铁锈味，腥的"],
+    "snow": ["冷空气，干净得发苦", "雪化成水的味道，带一点泥土", "风里什么都没有，但你知道那是雪", "雪落在衣服上的味道，冷的", "树皮被冻住的味道，干的"],
+    "water": ["海风里的咸味", "水汽带着泥腥", "空气湿得能拧出水", "水草泡烂的味道，腥的", "岸边泥土的味道，湿的"],
 }
 
 _TOUCH_BY_SURFACE: dict[str, list[str]] = {
@@ -2646,7 +2649,10 @@ def render_establish(payload: dict, rng: random.Random) -> str:
 
     # Build context for metadata filtering
     season = _season(month, lat) if month else "summer"
-    is_polar_day = (phase == "day" and abs(lat) > 60 and month and 4 <= month <= 8)
+    if lat > 0:
+        is_polar_day = (phase == "day" and abs(lat) > 60 and month and 4 <= month <= 8)
+    else:
+        is_polar_day = (phase == "day" and abs(lat) > 60 and month and (month >= 10 or month <= 2))
     ctx = {
         "season": season,
         "phase": phase,

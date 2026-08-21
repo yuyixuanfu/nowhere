@@ -125,35 +125,6 @@ def describe_sst(sst: float, rng: random.Random) -> str:
     return tmpl.format(sst=round(sst))
 
 
-# ── Ocean current description ────────────────────────────────────────
-
-def describe_current(lat: float, lon: float, sst: float, rng: random.Random) -> str:
-    """Generate a brief ocean current description based on SST and latitude."""
-    zone = _climate_zone(lat)
-    # Warm currents flow poleward (higher SST than expected for latitude)
-    # Cold currents flow equatorward (lower SST than expected)
-    expected = _SST_CLIMATE[zone][datetime.date.today().month - 1]
-    if lat < 0:
-        expected = _SST_CLIMATE[zone][(datetime.date.today().month + 5) % 12]
-    diff = sst - expected
-
-    if diff > 3:
-        templates = [
-            "这带水暖,有暖流经过。鱼群喜欢跟着暖流走。",
-            "暖流把热带的水推到这里。海面比同纬度的暖。",
-        ]
-    elif diff < -3:
-        templates = [
-            "这带水冷,有寒流从高纬度涌过来。雾经常从冷水面升起来。",
-            "寒流经过,水比同纬度的凉。海面上有一层薄雾。",
-        ]
-    else:
-        templates = [
-            "洋流平稳,水温正常。海面没有异常。",
-        ]
-    return rng.choice(templates)
-
-
 # ── Marine life encounters ───────────────────────────────────────────
 
 _MARINE_SCENES: dict[str, list[str]] = {

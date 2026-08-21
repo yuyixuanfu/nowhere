@@ -109,6 +109,8 @@ def nearby(lat: float, lon: float, radius_km: float = 20.0, limit: int = 10) -> 
                AND fclass IN ('S','T','H','V','P') LIMIT 3000""",
             (lat - deg, lat + deg, lon - deg, lon + deg),
         ).fetchall()
+    except sqlite3.OperationalError:
+        rows = []  # places.db 为空/损坏,降级不炸
     finally:
         conn.close()
     out = []

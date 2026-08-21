@@ -180,19 +180,3 @@ def blank(out_path: pathlib.Path, place: str, lat: float, lon: float, surface: s
         return True
     except Exception:
         return False
-
-
-def cleanup_orphans(keep_ids: set[int]) -> None:
-    """明信片只留最近 20 张,图也跟着收。"""
-    if not OUT_DIR.exists():
-        return
-    for p in OUT_DIR.glob("card_*.png"):
-        try:
-            cid = int(p.stem.split("_")[1])
-        except (IndexError, ValueError):
-            continue
-        if cid not in keep_ids:
-            try:
-                p.unlink()
-            except OSError:
-                pass

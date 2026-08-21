@@ -165,12 +165,6 @@ def find_nearby_person(
     return None
 
 
-def get_person_by_place(place: str) -> dict | None:
-    """直接取一个地点的人。用于 talk() 时知道地点但还没遇见。"""
-    data = _load()
-    return data.get(place)
-
-
 def talk(
     entry: dict,
     line_index: int,

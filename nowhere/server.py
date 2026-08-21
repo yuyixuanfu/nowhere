@@ -6322,11 +6322,8 @@ def look_impl(direction: str) -> dict:
 
     # Compose description
     parts = []
-    _SURFACE_ZH = {
-        "water_ocean": "海", "water_fresh": "水", "sand": "沙地", "bare": "裸地",
-        "rock": "岩石", "snow": "雪", "ice": "冰", "forest": "树林",
-        "grass": "草地", "urban": "城市", "wetland": "湿地",
-    }
+    # 统一引用 describe 的权威定义，消除重复映射
+    _SURFACE_ZH = describe._SURFACE_ZH
 
     # Near (0.5km)
     near = samples[0]

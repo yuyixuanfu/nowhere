@@ -17,11 +17,8 @@ _DATA_DIR = pathlib.Path(__file__).resolve().parent / "data"
 _FALLBACK_PATH: Final = _DATA_DIR / "radio_fallback.json"
 _EARTH_RADIUS_KM: Final = 6371.0
 
-_SURFACE_ZH: dict[str, str] = {
-    "forest": "林地", "grass": "草地", "rock": "岩地", "sand": "沙地",
-    "snow": "雪地", "ice": "冰面", "water_ocean": "海面", "water_fresh": "水边",
-    "urban": "城市", "bare": "裸地", "wetland": "湿地",
-}
+# 统一引用 describe 的权威定义，消除重复映射
+from nowhere.describe import _SURFACE_ZH
 
 _SURFACE_SOUND: dict[str, str] = {
     "forest": "树叶子哗哗地响",
