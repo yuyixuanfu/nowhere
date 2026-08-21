@@ -101,37 +101,19 @@ _EXPLORABLE_INDEX_CACHE: dict | None = None
 _PLACES_PATCH_CACHE: dict | None = None
 
 
-async def _read_json_async(path) -> dict | list:
-    """Read a JSON file without blocking the event loop."""
-    return await asyncio.to_thread(lambda: _json.loads(path.read_text(encoding="utf-8")))
-
-
-async def _load_water_features() -> dict:
+def _load_water_features() -> dict:
     global _WATER_FEATURES_CACHE
     if _WATER_FEATURES_CACHE is not None:
         return _WATER_FEATURES_CACHE
     fp = _pathlib.Path(__file__).resolve().parent / "data" / "water_features_offline.json"
     if fp.exists():
-        _WATER_FEATURES_CACHE = await _read_json_async(fp)
+        _WATER_FEATURES_CACHE = _json.loads(fp.read_text(encoding="utf-8"))
     else:
         _WATER_FEATURES_CACHE = {}
     return _WATER_FEATURES_CACHE
 
 
-async def _load_explorable_index() -> dict:
-    global _EXPLORABLE_INDEX_CACHE
-    if _EXPLORABLE_INDEX_CACHE is not None:
-        return _EXPLORABLE_INDEX_CACHE
-    fp = _pathlib.Path(__file__).resolve().parent / "data" / "explorable_index.json"
-    if fp.exists():
-        _EXPLORABLE_INDEX_CACHE = await _read_json_async(fp)
-    else:
-        _EXPLORABLE_INDEX_CACHE = {}
-    return _EXPLORABLE_INDEX_CACHE
-
-
-def _load_explorable_index_sync() -> dict:
-    """Sync version for use in non-async contexts."""
+def _load_explorable_index() -> dict:
     global _EXPLORABLE_INDEX_CACHE
     if _EXPLORABLE_INDEX_CACHE is not None:
         return _EXPLORABLE_INDEX_CACHE
@@ -143,13 +125,13 @@ def _load_explorable_index_sync() -> dict:
     return _EXPLORABLE_INDEX_CACHE
 
 
-async def _load_places_patch() -> dict:
+def _load_places_patch() -> dict:
     global _PLACES_PATCH_CACHE
     if _PLACES_PATCH_CACHE is not None:
         return _PLACES_PATCH_CACHE
     fp = _pathlib.Path(__file__).resolve().parent / "data" / "places_patch.json"
     if fp.exists():
-        _PLACES_PATCH_CACHE = await _read_json_async(fp)
+        _PLACES_PATCH_CACHE = _json.loads(fp.read_text(encoding="utf-8"))
     else:
         _PLACES_PATCH_CACHE = {}
     return _PLACES_PATCH_CACHE
