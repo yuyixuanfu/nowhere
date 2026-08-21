@@ -116,6 +116,7 @@ _SEASONAL_BIOME_CACHES: dict[str, dict[tuple[str, str], list[str]]] = {}
 
 _SEASON_EN_TO_ZH: dict[str, str] = {
     "spring": "春", "summer": "夏", "autumn": "秋", "winter": "冬",
+    "wet": "雨季", "dry": "旱季",
 }
 
 _SEASONAL_PATTERN = re.compile(r"\[([^|]+)\|([^\]]+)\]\s*(.+)")
@@ -2453,7 +2454,34 @@ _RIVER_ALIGNMENT_TEXT: dict[str, list[str]] = {
 
 
 def _season(month: int, lat: float) -> str:
-    """Get season name from month and latitude. Northern hemisphere default, southern flipped."""
+    """Get season name from month and latitude.
+
+    Three-band tropical logic (card 74):
+    - ITCZ <5°: both hemispheres wet Apr-Oct (ITCZ overhead)
+    - Tropical 5-15°: May-Nov wet in north, Nov-May wet in south
+    - Subtropical 15-23.5°: Jun-Oct wet in north, Dec-Mar wet in south
+    - Temperate 23.5°+: standard spring/summer/autumn/winter
+    """
+    abs_lat = abs(lat)
+
+    # Tropical bands: return wet/dry
+    if abs_lat < 5:
+        # ITCZ: both hemispheres wet when ITCZ overhead (Apr-Oct)
+        return "wet" if 4 <= month <= 10 else "dry"
+    elif abs_lat < 15:
+        # Tropical: May-Nov wet in north, Nov-May wet in south
+        if lat >= 0:
+            return "wet" if 5 <= month <= 11 else "dry"
+        else:
+            return "wet" if month >= 11 or month <= 5 else "dry"
+    elif abs_lat < 23.5:
+        # Subtropical: Jun-Oct wet in north, Dec-Mar wet in south
+        if lat >= 0:
+            return "wet" if 6 <= month <= 10 else "dry"
+        else:
+            return "wet" if month >= 12 or month <= 3 else "dry"
+
+    # Temperate: standard seasons with hemisphere flip
     if lat < 0:
         month = ((month - 1 + 6) % 12) + 1
     return ["winter", "winter", "spring", "spring", "spring", "summer",
@@ -2465,6 +2493,8 @@ _SEASON_CONTEXT: dict[str, str] = {
     "summer": "夏天。",
     "autumn": "秋天。",
     "winter": "冬天。",
+    "wet": "雨季。",
+    "dry": "旱季。",
 }
 
 
