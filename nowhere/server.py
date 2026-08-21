@@ -1220,7 +1220,7 @@ def _compute_wilderness_depth_km(lat: float, lon: float) -> float:
 
     # Check explorable_index places
     try:
-        data = _load_explorable_index_sync()
+        data = _load_explorable_index()
         for name, info in data.get("places", {}).items():
             plat = info.get("lat")
             plon = info.get("lon")
@@ -1233,7 +1233,7 @@ def _compute_wilderness_depth_km(lat: float, lon: float) -> float:
 
     # Check offline water features
     try:
-        data = _load_water_features_sync()
+        data = _load_water_features()
         for entry in data.get("entries", []):
             elat = entry.get("lat", 0)
             elon = entry.get("lon", 0)
