@@ -28,6 +28,8 @@ _local_kb: dict[str, dict] | None = None
 _kb_char_index: dict[str, list[str]] | None = None
 # Label index: loaded from ask_labels.json
 _labels: dict[str, list[str]] | None = None
+# City-level aggregated data (卡88)
+_city_data: dict[str, dict[str, list[str]]] | None = None
 # Topic word → label mapping (卡88)
 _TOPIC_LABELS: dict[str, list[str]] = {
     "历史": ["历史政体", "事件"],
@@ -93,6 +95,11 @@ def _load_local_kb() -> dict[str, dict]:
     labels_fp = _DATA / "ask_labels.json"
     if labels_fp.exists():
         _labels = json.loads(labels_fp.read_text(encoding="utf-8"))
+
+    # Load city-level aggregated data (卡88)
+    city_fp = _DATA / "ask_city.json"
+    if city_fp.exists():
+        _city_data = json.loads(city_fp.read_text(encoding="utf-8"))
 
     return _local_kb
 
@@ -199,17 +206,22 @@ async def about(lat: float, lon: float, topic: str) -> dict | None:
         place_name = await _resolve_place_name(lat, lon)
         for topic_word, target_labels in _TOPIC_LABELS.items():
             if topic_word in title:
-                if _labels and place_name:
-                    # 1. Key contains place_name + label matches
-                    for name, tags in _labels.items():
-                        if any(t in tags for t in target_labels) and place_name in name:
-                            return _format_kb_entry(name, kb[name])
-                    # 2. Description/value contains place_name + label matches
-                    for name, tags in _labels.items():
-                        if any(t in tags for t in target_labels):
-                            val = kb.get(name, "")
-                            if isinstance(val, str) and place_name in val:
-                                return _format_kb_entry(name, kb[name])
+                if place_name and _city_data:
+                    # 1. Direct city match in ask_city.json
+                    city_entry = _city_data.get(place_name)
+                    if city_entry:
+                        for label in target_labels:
+                            if label in city_entry and city_entry[label]:
+                                # Return random entry from this category
+                                pick = _random.choice(city_entry[label])
+                                return {"title": f"{place_name}·{label}", "extract": pick, "url": "", "source": "ask_city"}
+                    # 2. Try partial match (e.g., "北京市" → "北京")
+                    for city_name, city_entry in _city_data.items():
+                        if city_name in place_name or place_name in city_name:
+                            for label in target_labels:
+                                if label in city_entry and city_entry[label]:
+                                    pick = _random.choice(city_entry[label])
+                                    return {"title": f"{city_name}·{label}", "extract": pick, "url": "", "source": "ask_city"}
                 break
 
     # ── 5. Label fallback (卡88) ──
