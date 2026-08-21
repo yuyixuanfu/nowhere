@@ -1,4 +1,4 @@
-"""Generate terrain grids for the portal.
+"""Generate terrain grids for nowhere.
 
 Usage
 -----
@@ -18,7 +18,7 @@ ESA WorldCover (land cover, 10m resolution):
   Place the merged GeoTIFF in tools/data/ as worldcover.tif
 
 The --full script resamples both to 0.1-degree (1801 x 3600) and saves
-portal/data/grid.npz. This artifact is uploaded to GitHub Release manually.
+nowhere/data/grid.npz. This artifact is uploaded to GitHub Release manually.
 """
 
 from __future__ import annotations
@@ -30,12 +30,12 @@ import pathlib
 import numpy as np
 
 _ROOT = pathlib.Path(__file__).resolve().parent.parent
-_DATA_DIR = _ROOT / "portal" / "data"
+_DATA_DIR = _ROOT / "nowhere" / "data"
 _OUT_TINY = _DATA_DIR / "grid_tiny.npz"
-_OUT_FULL = _ROOT / "portal" / "data" / "grid.npz"
+_OUT_FULL = _DATA_DIR / "grid.npz"
 
 # ── Shared constants ─────────────────────────────────────────────────
-# Cover codes -- must match portal/terrain.py _SURFACE_MAP
+# Cover codes -- must match nowhere/terrain.py _SURFACE_MAP
 WATER_OCEAN = 0
 WATER_FRESH = 1
 ROCK = 2
@@ -446,7 +446,7 @@ def build_full(etopo_path: pathlib.Path) -> None:
 # =====================================================================
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Build portal terrain grids")
+    parser = argparse.ArgumentParser(description="Build nowhere terrain grids")
     parser.add_argument(
         "--full", action="store_true",
         help="Build 0.1-degree grid from ETOPO1 (requires tools/data/etopo1.grd)",

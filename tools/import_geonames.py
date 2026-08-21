@@ -2,7 +2,7 @@
 
 跑一次: python tools/import_geonames.py [样本行数]
 全量约 1200 万行,过滤后留 P/S/H/T/V 五类,几分钟。
-产物: portal/data/places.db(gitignore,买断数据)。
+产物: nowhere/data/places.db(gitignore,买断数据)。
 """
 
 from __future__ import annotations
@@ -12,8 +12,8 @@ import sqlite3
 import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-SRC = ROOT / "portal" / "data" / "packs" / "allc" / "allCountries.txt"
-DB = ROOT / "portal" / "data" / "places.db"
+SRC = ROOT / "nowhere" / "data" / "packs" / "allc" / "allCountries.txt"
+DB = ROOT / "nowhere" / "data" / "places.db"
 
 KEEP_CLASSES = {"P", "S", "H", "T", "V"}
 

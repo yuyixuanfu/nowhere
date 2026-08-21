@@ -1,7 +1,7 @@
 """Generate high-resolution elevation tiles for the Portal project.
 
 Each tile covers a ~50km radius around a landing spot at ~100m resolution.
-Tiles are saved as compressed .npz files in portal/data/tiles/.
+Tiles are saved as compressed .npz files in nowhere/data/tiles/.
 
 Usage
 -----
@@ -33,7 +33,7 @@ import numpy as np
 # ── Paths ──────────────────────────────────────────────────────────────
 
 _ROOT: Final = pathlib.Path(__file__).resolve().parent.parent
-_DATA_DIR: Final = _ROOT / "portal" / "data"
+_DATA_DIR: Final = _ROOT / "nowhere" / "data"
 _POOL_PATH: Final = _DATA_DIR / "pool.json"
 _TINY_PATH: Final = _DATA_DIR / "grid_tiny.npz"
 _TILES_DIR: Final = _DATA_DIR / "tiles"
@@ -47,7 +47,7 @@ DELAY_BETWEEN_BATCHES: Final = 0.3  # seconds
 
 # ── Surface classification ─────────────────────────────────────────────
 
-# Must match portal/terrain.py _SURFACE_MAP indices
+# Must match nowhere/terrain.py _SURFACE_MAP indices
 _SURFACE_RULES: Final[list[tuple[str, float, float | None]]] = [
     # (name, threshold_low, threshold_high)  -- first match wins
     ("water_ocean", -99999, -10.0),
@@ -286,7 +286,7 @@ def tile_filename(lat: float, lon: float) -> str:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Build portal elevation tiles")
+    parser = argparse.ArgumentParser(description="Build nowhere elevation tiles")
     parser.add_argument(
         "--mode",
         choices=["synthetic", "real"],

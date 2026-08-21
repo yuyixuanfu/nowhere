@@ -9,7 +9,7 @@ from __future__ import annotations
 import json
 import pathlib
 
-_DATA = pathlib.Path(__file__).resolve().parent.parent / "portal" / "data" / "humanities.json"
+_DATA = pathlib.Path(__file__).resolve().parent.parent / "nowhere" / "data" / "humanities.json"
 
 # ── 内嵌坐标表 ──────────────────────────────────────────────────────
 # 格式: "地名": (lat, lon)

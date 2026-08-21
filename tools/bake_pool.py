@@ -8,7 +8,7 @@ tiny 网格(1°)在落点上误差太大——喀什说成 300m 林地(实际 12
 import json
 import pathlib
 
-POOL = pathlib.Path(__file__).resolve().parent.parent / "portal" / "data" / "pool.json"
+POOL = pathlib.Path(__file__).resolve().parent.parent / "nowhere" / "data" / "pool.json"
 
 # name_hint -> (elev_m, surface)
 REAL: dict[str, tuple[float, str]] = {

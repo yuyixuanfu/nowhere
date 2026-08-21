@@ -1,4 +1,4 @@
-"""Compress large SRTM elevation tiles for lightweight portal deployment.
+"""Compress large SRTM elevation tiles for lightweight nowhere deployment.
 
 Reads each srtm_*.npz tile (6000x6000 float32, ~100MB),
 downsamples to ~1000x1000 int16, and overwrites in-place (~2MB).

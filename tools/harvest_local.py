@@ -3,8 +3,8 @@
 跑一次,永久离线:
   python tools/harvest_local.py
 产物(进 git,都很小):
-  portal/data/food_by_country.json   {国家码: [{"zh","en"}]}
-  portal/data/flora_by_place.json    {落点名: [{"zh","la"}]}
+  nowhere/data/food_by_country.json   {国家码: [{"zh","en"}]}
+  nowhere/data/flora_by_place.json    {落点名: [{"zh","la"}]}
 """
 
 from __future__ import annotations
@@ -16,7 +16,7 @@ import time
 import httpx
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-DATA = ROOT / "portal" / "data"
+DATA = ROOT / "nowhere" / "data"
 
 def _sparql(query: str) -> list[dict]:
     """带重试的 SPARQL 查询,服务端截断/超时降级 LIMIT。"""
@@ -27,7 +27,7 @@ def _sparql(query: str) -> list[dict]:
                 "https://query.wikidata.org/sparql",
                 params={"query": q, "format": "json"},
                 headers={
-                    "User-Agent": "PortalMCP/0.1 (https://github.com/portal; contact@example.com) httpx",
+                    "User-Agent": "NowhereMCP/0.1 (https://github.com/nowhere; contact@example.com) httpx",
                     "Accept": "application/sparql-results+json",
                 },
                 timeout=90.0,
@@ -80,7 +80,7 @@ def harvest_food() -> None:
 def harvest_flora() -> None:
     pool = json.loads((DATA / "pool.json").read_text(encoding="utf-8"))
     out: dict[str, list[dict]] = {}
-    with httpx.Client(timeout=15.0, headers={"User-Agent": "portal-mcp/0.1"}) as client:
+    with httpx.Client(timeout=15.0, headers={"User-Agent": "nowhere-mcp/0.1"}) as client:
         for spot in pool:
             name = spot["name_hint"]
             try:
