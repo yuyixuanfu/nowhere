@@ -3993,6 +3993,10 @@ async def walk_impl(direction: str = "forward", distance_km: float = 2.0) -> dic
     if whim_text:
         body_texts.append(whim_text)
 
+    # ── 5. Salience + describe ───────────────────────────────────────
+    # 留白: 缓存命中且世界没变时,跳过 env 候选举的渲染;encounter 照常 roll
+    sections: list[str] = []
+
     # Inject body texts into sections
     for bt in body_texts:
         if bt not in set(_state.recent_scenes):
@@ -4004,12 +4008,6 @@ async def walk_impl(direction: str = "forward", distance_km: float = 2.0) -> dic
         sections.append(souvenir_loss_text)
 
     # ── 4. message/encounter/wilderness → ACTIONS ────────────────────
-
-
-
-    # ── 5. Salience + describe ───────────────────────────────────────
-    # 留白: 缓存命中且世界没变时,跳过 env 候选举的渲染;encounter 照常 roll
-    sections: list[str] = []
     _walk_cc = country.country_code_of(lat, lon)  # always available for sanity_check
     if not env_cached:
         # Card 53: gravity — check if walking near heavy place
@@ -4066,7 +4064,7 @@ async def walk_impl(direction: str = "forward", distance_km: float = 2.0) -> dic
                 sections.append(f"空气里有{_fk[0]}的味道。节日在身边。")
 
     # ── 5a. Narrative text from walk discovery (non-Action, stays inline)
-    if not env_cached and narrative_text:
+    if narrative_text:
         sections.append(narrative_text)
 
     # ── 5. Action loop (Card 48) ──────────────────────────────────────

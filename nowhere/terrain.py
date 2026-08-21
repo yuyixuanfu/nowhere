@@ -350,14 +350,10 @@ def elevation(lat: float, lon: float, place_name: str = "") -> float:
                 entry = None  # name mismatch → fall through to tile/DEM
         if entry is not None:
             return float(entry["elev_m"])
-    # Try high-res tile
+    # Try high-res tile (trust tile over DEM — tile has better resolution)
     tile = _find_tile(lat, lon)
     if tile is not None:
         elev_val, _ = _tile_bilinear(tile, lat, lon)
-        # DEM override: trust cities15000 DEM when difference >100m
-        dem_val = dem_lookup(lat, lon)
-        if dem_val is not None and abs(dem_val - elev_val) > 100:
-            return dem_val
         return elev_val
     # Fall back to global grid
     _ensure_loaded()
