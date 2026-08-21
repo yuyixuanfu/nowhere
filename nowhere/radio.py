@@ -188,7 +188,7 @@ def _pick_nearest_from_fallback(lat: float, lon: float, country_code: str | None
 
 # ── Public API ──────────────────────────────────────────────────────
 
-async def nearest(lat: float, lon: float, country_code: str | None) -> dict | None:
+async def nearest(lat: float, lon: float, country_code: str | None, rng: random.Random | None = None) -> dict | None:
     """Return a station dict ``{name, genre, stream_url, homepage}`` or ``None``.
 
     离线优先：先查本地兜底清单，再试外网 API。
@@ -201,7 +201,7 @@ async def nearest(lat: float, lon: float, country_code: str | None) -> dict | No
         return fallback
 
     mirrors = list(_MIRRORS)
-    random.shuffle(mirrors)
+    (rng or random).shuffle(mirrors)
 
     _EXCLUDED_TAGS = {"game", "gaming", "gamemusic", "video game", "esports"}
 

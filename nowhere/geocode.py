@@ -89,6 +89,8 @@ async def lookup(place: str) -> tuple[float, float] | None:
     链: special_places → places.db → cities15000 → Nominatim（慢，最后试）。
     """
     key = place.strip().lower()
+    if len(_geocode_cache) > _GEOCODE_CACHE_MAX:
+        _geocode_cache.clear()  # simple eviction: clear all when full
     if key in _geocode_cache:
         return _geocode_cache[key]
 

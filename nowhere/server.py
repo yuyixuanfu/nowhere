@@ -1139,7 +1139,7 @@ async def _get_radio(lat: float, lon: float) -> dict | None:
             return _state.radio_station
     cc = country.country_code_of(lat, lon)
     try:
-        station = await asyncio.wait_for(radio.nearest(lat, lon, cc), timeout=8.0)
+        station = await asyncio.wait_for(radio.nearest(lat, lon, cc, _rng), timeout=8.0)
     except (asyncio.TimeoutError, Exception):
         return None
     # Card 68: reject fallback stations >3000 km away (kills same-continent bleed)

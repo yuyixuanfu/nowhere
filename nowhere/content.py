@@ -48,13 +48,6 @@ def cards(pool: str, key: str | None = None,
     return result
 
 
-def pools() -> list[dict]:
-    """Return pool registry: [{name, entry_points, reader, description}, ...]."""
-    conn = _db()
-    rows = conn.execute("SELECT name, entry_points, reader, description FROM pools").fetchall()
-    return [dict(row) for row in rows]
-
-
 def fresh() -> bool:
     """Check manifest sha1 vs actual content_src files. True if all match."""
     conn = _db()
