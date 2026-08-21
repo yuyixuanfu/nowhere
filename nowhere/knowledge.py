@@ -187,35 +187,31 @@ async def about(lat: float, lon: float, topic: str) -> dict | None:
                     return _format_kb_entry(name, kb[name])
 
     # ── 3. Entity extraction: find KB keys mentioned in topic (卡88) ──
+    # Only match keys >= 3 chars to avoid false positives
     if title:
-        # Sort by length descending to match longest key first
         for name in sorted(kb.keys(), key=len, reverse=True):
-            if len(name) >= 2 and name in title:
+            if len(name) >= 3 and name in title:
                 return _format_kb_entry(name, kb[name])
 
     # ── 4. Topic word mapping (卡88) ──
+    # "这里的美食" / "这里的历史" / "这里的寺庙"
     if title:
         place_name = await _resolve_place_name(lat, lon)
         for topic_word, target_labels in _TOPIC_LABELS.items():
             if topic_word in title:
-                # Search for entries with matching labels near current place
                 if _labels and place_name:
+                    # Strict: only return if entry contains place_name
                     for name, tags in _labels.items():
                         if any(t in tags for t in target_labels):
-                            # Check if this entry is related to current place
-                            if place_name in name or name in place_name:
+                            if place_name in name:
                                 return _format_kb_entry(name, kb[name])
-                    # If no place-specific match, return any matching label
-                    for name, tags in _labels.items():
-                        if any(t in tags for t in target_labels):
-                            return _format_kb_entry(name, kb[name])
+                    # No place-specific match → return None (don't return random)
                 break
 
     # ── 5. Label fallback (卡88) ──
     if title and _labels:
         place_name = place_name or await _resolve_place_name(lat, lon)
         if place_name:
-            # Find entries related to current place with any label
             for name, tags in _labels.items():
                 if place_name in name and tags:
                     return _format_kb_entry(name, kb[name])
