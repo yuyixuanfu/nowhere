@@ -26,6 +26,40 @@ _KB_FILES = [
 _local_kb: dict[str, dict] | None = None
 # Inverted index: first character → list of KB keys starting with that char
 _kb_char_index: dict[str, list[str]] | None = None
+# Label index: loaded from ask_labels.json
+_labels: dict[str, list[str]] | None = None
+# Topic word → label mapping (卡88)
+_TOPIC_LABELS: dict[str, list[str]] = {
+    "历史": ["历史政体", "事件"],
+    "好吃的": ["饮食"],
+    "美食": ["饮食"],
+    "风俗": ["风俗", "事件"],
+    "习俗": ["风俗"],
+    "节日": ["节日"],
+    "建筑": ["建筑", "地标"],
+    "动物": ["动物"],
+    "植物": ["自然"],
+    "风景": ["自然", "地标"],
+    "音乐": ["音乐"],
+    "运动": ["体育"],
+    "体育": ["体育"],
+    "科技": ["科技"],
+    "名人": ["人物"],
+    "皇帝": ["人物", "历史政体"],
+    "王朝": ["历史政体"],
+    "服装": ["服装"],
+    "食物": ["饮食"],
+    "菜系": ["饮食"],
+    "小吃": ["饮食"],
+    "水果": ["饮食"],
+    "艺术": ["艺术"],
+    "文化": ["风俗", "艺术"],
+    "宗教": ["风俗"],
+    "语言": ["语言"],
+    "职业": ["职业"],
+    "学校": ["学科"],
+    "大学": ["学科"],
+}
 
 
 def _load_local_kb() -> dict[str, dict]:
@@ -36,7 +70,7 @@ def _load_local_kb() -> dict[str, dict]:
     offline builder.  They are normalised to the same ``{title, extract, …}``
     shape so the rest of the code can treat them uniformly.
     """
-    global _local_kb, _kb_char_index
+    global _local_kb, _kb_char_index, _labels
     if _local_kb is not None:
         return _local_kb
 
@@ -54,6 +88,11 @@ def _load_local_kb() -> dict[str, dict]:
         if name:
             idx.setdefault(name[0], []).append(name)
     _kb_char_index = idx
+
+    # Load labels (卡88)
+    labels_fp = _DATA / "ask_labels.json"
+    if labels_fp.exists():
+        _labels = json.loads(labels_fp.read_text(encoding="utf-8"))
 
     return _local_kb
 
@@ -129,22 +168,61 @@ async def about(lat: float, lon: float, topic: str) -> dict | None:
 
     kb = _load_local_kb()
 
-    # Exact match on topic
+    # ── 1. Exact match ──
     if title and title in kb:
         return _format_kb_entry(title, kb[title])
 
-    # Fuzzy match (contains): only allow "query is substring of entry name".
-    # Use inverted index to narrow candidates first.
+    # ── 2. Bidirectional substring (卡88) ──
     if title:
         idx = _kb_char_index or {}
-        candidates = idx.get(title[0], [])
-        for name in candidates:
-            if title in name:
+        # Forward: "故宫有什么" contains "故宫" → match
+        for ch in set(title):
+            for name in idx.get(ch, []):
+                if name in title:
+                    return _format_kb_entry(name, kb[name])
+        # Backward: "故宫" is substring of "故宫博物院"
+        for ch in set(title):
+            for name in idx.get(ch, []):
+                if title in name:
+                    return _format_kb_entry(name, kb[name])
+
+    # ── 3. Entity extraction: find KB keys mentioned in topic (卡88) ──
+    if title:
+        # Sort by length descending to match longest key first
+        for name in sorted(kb.keys(), key=len, reverse=True):
+            if len(name) >= 2 and name in title:
                 return _format_kb_entry(name, kb[name])
 
-    # Coordinate fallback only when no topic specified
-    if not title:
+    # ── 4. Topic word mapping (卡88) ──
+    if title:
         place_name = await _resolve_place_name(lat, lon)
+        for topic_word, target_labels in _TOPIC_LABELS.items():
+            if topic_word in title:
+                # Search for entries with matching labels near current place
+                if _labels and place_name:
+                    for name, tags in _labels.items():
+                        if any(t in tags for t in target_labels):
+                            # Check if this entry is related to current place
+                            if place_name in name or name in place_name:
+                                return _format_kb_entry(name, kb[name])
+                    # If no place-specific match, return any matching label
+                    for name, tags in _labels.items():
+                        if any(t in tags for t in target_labels):
+                            return _format_kb_entry(name, kb[name])
+                break
+
+    # ── 5. Label fallback (卡88) ──
+    if title and _labels:
+        place_name = place_name or await _resolve_place_name(lat, lon)
+        if place_name:
+            # Find entries related to current place with any label
+            for name, tags in _labels.items():
+                if place_name in name and tags:
+                    return _format_kb_entry(name, kb[name])
+
+    # ── 6. Coordinate fallback (no topic) ──
+    if not title:
+        place_name = place_name or await _resolve_place_name(lat, lon)
         if place_name and place_name in kb:
             return _format_kb_entry(place_name, kb[place_name])
 
