@@ -236,14 +236,3 @@ async def current(lat: float, lon: float, elevation: float | None = None,
 
     # 2) Climate zone offline fallback (needs lapse rate correction)
     return _climate_fallback(lat, lon, elevation=elevation, local_hour=local_hour)
-
-    # Diurnal variation: peak at 14:00, trough at 05:00
-    if local_hour is not None:
-        zone = _climate_zone(lat)
-        amplitude = 12.0 if zone in ("equator", "subtropical") else 8.0
-        hour_angle = (local_hour - 5) * (2 * math.pi / 24)
-        diurnal = amplitude * math.sin(hour_angle)
-        result["temp_c"] = round(result["temp_c"] + diurnal, 1)
-        result["feels_c"] = round(result["feels_c"] + diurnal, 1)
-
-    return result

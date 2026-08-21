@@ -11,7 +11,6 @@ import os
 import pathlib
 import re
 from datetime import datetime, timezone
-from typing import Any
 
 from nowhere.state import WorldState
 

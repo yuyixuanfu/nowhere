@@ -7,8 +7,6 @@
 """
 import asyncio
 import sys
-import random
-from datetime import datetime, timezone
 
 # Windows GBK 终端兼容
 import io

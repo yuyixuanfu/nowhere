@@ -33,7 +33,7 @@ from nowhere import (
     content,
     country,
     describe,
-    encounters,
+
     errands,
     geocode,
     hydrology,
@@ -1698,7 +1698,7 @@ def _pick_discovery(rng: random.Random) -> str:
         target_biome = _SURFACE_TO_DISCOVERY_BIOME.get(surface, "")
 
     # Tag-based filtering: prefer scenes matching current biome
-    tags_list = describe._BIOME_TAGS_CACHE.get("walk_discovery", [])
+    tags_list = getattr(describe, "_BIOME_TAGS_CACHE", {}).get("walk_discovery", [])
     if tags_list and len(tags_list) == len(pool) and target_biome:
         target_tags = _BIOME_TO_DISCOVERY_TAGS.get(target_biome, set())
         if target_tags:
@@ -6777,15 +6777,6 @@ def main() -> None:
     )
     parser.add_argument("--web-only", type=int, default=None, help="Web observer port (standalone, no MCP)")
     args = parser.parse_args()
-
-    # Preload ZIM in background (non-blocking)
-    def _preload_zim():
-        try:
-            from nowhere.knowledge import _get_zim
-            _get_zim()
-        except Exception:
-            pass
-    threading.Thread(target=_preload_zim, daemon=True).start()
 
     if args.web_only is not None:
         import uvicorn

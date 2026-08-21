@@ -13,15 +13,13 @@ Total runtime target: <= 3 minutes (heavy probes run in parallel).
 from __future__ import annotations
 
 import asyncio
-import json
 import pathlib
 import subprocess
 import sys
 import time
-from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass, field
 from datetime import datetime
-from typing import Any
 
 # GBK console fix
 sys.stdout.reconfigure(encoding="utf-8")

@@ -88,12 +88,12 @@ def _load_tile_index() -> dict[str, dict]:
                     entry["lon_min"] = float(data["lon_min"])
                     entry["lon_max"] = float(data["lon_max"])
             except Exception:
-                pass
+                continue
         _TILE_INDEX[key] = entry
     return _TILE_INDEX
 
 
-def _load_tile(fname: str) -> dict:
+def _load_tile(fname: str) -> dict | None:
     """Load a tile .npz into cache. Returns the tile dict."""
     if fname in _TILE_CACHE:
         # Move to end (most recently used)
@@ -156,6 +156,8 @@ def _tile_bilinear(tile: dict, lat: float, lon: float) -> tuple[float, str]:
     lon_min = tile["lon_min"]
     lon_max = tile["lon_max"]
     nrows, ncols = tile["shape"]
+    if nrows <= 1 or ncols <= 1:
+        return (float(elev_arr[0, 0]), _SURFACE_MAP[int(surf_arr[0, 0])])
 
     # Map lat/lon to fractional indices
     # Note: lat increases downward in the array (lat_min = row 0)

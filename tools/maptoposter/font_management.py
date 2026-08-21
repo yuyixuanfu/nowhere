@@ -4,14 +4,16 @@ Handles font loading, Google Fonts integration, and caching.
 """
 
 import os
+import pathlib
 import re
 from pathlib import Path
 from typing import Optional
 
 import requests
 
-FONTS_DIR = "fonts"
-FONTS_CACHE_DIR = Path(FONTS_DIR) / "cache"
+_HERE = pathlib.Path(__file__).resolve().parent
+FONTS_DIR = str(_HERE / "fonts")
+FONTS_CACHE_DIR = _HERE / "fonts" / "cache"
 
 
 def download_google_font(font_family: str, weights: list = None) -> Optional[dict]:

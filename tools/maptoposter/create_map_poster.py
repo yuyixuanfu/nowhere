@@ -11,6 +11,7 @@ import argparse
 import asyncio
 import json
 import os
+import pathlib
 import pickle
 import sys
 import time
@@ -37,13 +38,14 @@ class CacheError(Exception):
     """Raised when a cache operation fails."""
 
 
-CACHE_DIR_PATH = os.environ.get("CACHE_DIR", "cache")
+_HERE = pathlib.Path(__file__).resolve().parent
+CACHE_DIR_PATH = os.environ.get("CACHE_DIR", str(_HERE / "cache"))
 CACHE_DIR = Path(CACHE_DIR_PATH)
 CACHE_DIR.mkdir(exist_ok=True)
 
-THEMES_DIR = "themes"
-FONTS_DIR = "fonts"
-POSTERS_DIR = "posters"
+THEMES_DIR = str(_HERE / "themes")
+FONTS_DIR = str(_HERE / "fonts")
+POSTERS_DIR = str(_HERE / "posters")
 
 FILE_ENCODING = "utf-8"
 

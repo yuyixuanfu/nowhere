@@ -19,7 +19,6 @@ import json
 import math
 import pathlib
 import re
-from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
 from starlette.applications import Starlette
@@ -203,8 +202,6 @@ async def get_postcards(_request: Request) -> JSONResponse:
 
 async def reply_postcard(request: Request) -> JSONResponse:
     """人在某张明信片下回话。回话进留言池,AI 在路上捡到。"""
-    from nowhere.server import reply_postcard_impl
-
     card_id = int(request.path_params["card_id"])
     body = await _body(request)
     if isinstance(body, JSONResponse):

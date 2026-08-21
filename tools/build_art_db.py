@@ -97,7 +97,7 @@ def fetch_object(obj_id: int) -> dict | None:
     }
 
 
-async def build_database(limit: int = 10000) -> dict:
+def build_database(limit: int = 10000) -> dict:
     """Build the art database from Met API."""
     import time
 
@@ -186,4 +186,4 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--limit", type=int, default=10000)
     args = parser.parse_args()
-    asyncio.run(build_database(limit=args.limit))
+    build_database(limit=args.limit)

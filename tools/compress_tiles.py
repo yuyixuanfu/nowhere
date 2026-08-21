@@ -4,8 +4,7 @@ Reads each srtm_*.npz tile (6000x6000 float32, ~100MB),
 downsamples to ~1000x1000 int16, and overwrites in-place (~2MB).
 
 Usage:
-    cd "C:/Users/84989/Desktop/新建文件夹 (7)"
-    PYTHONIOENCODING=utf-8 python tools/compress_tiles.py
+    python tools/compress_tiles.py
 """
 
 from __future__ import annotations

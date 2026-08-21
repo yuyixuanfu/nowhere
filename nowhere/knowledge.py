@@ -7,7 +7,6 @@ JSON — no large file parsing, no third-party parser dependencies.
 
 from __future__ import annotations
 
-import asyncio
 import json
 import logging
 import pathlib

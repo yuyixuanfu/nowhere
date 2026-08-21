@@ -15,7 +15,6 @@ Threshold calibrated: score < 9 = identity absent.
 Output: nowhere/data/identity_gaps_report.md
 
 Usage:
-    cd C:\\Users\\84989\\Desktop\\nowhere_repo
     python tools/find_identity_gaps.py
 """
 from __future__ import annotations

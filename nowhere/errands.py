@@ -14,8 +14,7 @@ import json
 import math
 import pathlib
 import random
-from datetime import datetime, timedelta, timezone
-from typing import Any
+from datetime import datetime, timezone
 
 _DATA_DIR = pathlib.Path(__file__).resolve().parent / "data"
 _LETTERS_FILE = _DATA_DIR / "errands_letters.json"
