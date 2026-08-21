@@ -67,19 +67,28 @@ def _load_tile_index() -> dict[str, dict]:
     if not _TILE_INDEX_PATH.exists():
         return _TILE_INDEX
     raw = _json.loads(_TILE_INDEX_PATH.read_text(encoding="utf-8"))
-    for key, fname in raw.items():
-        entry: dict = {"fname": fname}
-        # Read just the metadata arrays (tiny) without loading the full elev grid
-        try:
-            with np.load(_TILES_DIR / fname) as data:
-                entry["lat_min"] = float(data["lat_min"])
-                entry["lat_max"] = float(data["lat_max"])
-                entry["lon_min"] = float(data["lon_min"])
-                entry["lon_max"] = float(data["lon_max"])
-        except Exception:
-            # If metadata can't be read, store without bounds — will be
-            # loaded the old way (expensive) in _find_tile
-            pass
+    for key, val in raw.items():
+        if isinstance(val, dict):
+            # New format: {"file": "tile_...", "lat_min": ..., "lat_max": ..., ...}
+            entry: dict = {
+                "fname": val["file"],
+                "lat_min": float(val["lat_min"]),
+                "lat_max": float(val["lat_max"]),
+                "lon_min": float(val["lon_min"]),
+                "lon_max": float(val["lon_max"]),
+            }
+        else:
+            # Legacy format: plain filename string
+            fname: str = val
+            entry = {"fname": fname}
+            try:
+                with np.load(_TILES_DIR / fname) as data:
+                    entry["lat_min"] = float(data["lat_min"])
+                    entry["lat_max"] = float(data["lat_max"])
+                    entry["lon_min"] = float(data["lon_min"])
+                    entry["lon_max"] = float(data["lon_max"])
+            except Exception:
+                pass
         _TILE_INDEX[key] = entry
     return _TILE_INDEX
 
