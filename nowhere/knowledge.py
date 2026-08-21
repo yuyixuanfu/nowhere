@@ -30,37 +30,46 @@ _kb_char_index: dict[str, list[str]] | None = None
 _labels: dict[str, list[str]] | None = None
 # City-level aggregated data (卡88)
 _city_data: dict[str, dict[str, list[str]]] | None = None
-# Topic word → label mapping (卡88)
+# Topic word → ask_city.json category mapping (卡88)
 _TOPIC_LABELS: dict[str, list[str]] = {
-    "历史": ["历史政体", "事件"],
-    "好吃的": ["饮食"],
-    "美食": ["饮食"],
-    "风俗": ["风俗", "事件"],
-    "习俗": ["风俗"],
+    "历史": ["历史"],
+    "好吃的": ["美食"],
+    "美食": ["美食"],
+    "风俗": ["历史"],
+    "习俗": ["历史"],
     "节日": ["节日"],
-    "建筑": ["建筑", "地标"],
-    "动物": ["动物"],
-    "植物": ["自然"],
-    "风景": ["自然", "地标"],
-    "音乐": ["音乐"],
-    "运动": ["体育"],
-    "体育": ["体育"],
-    "科技": ["科技"],
-    "名人": ["人物"],
-    "皇帝": ["人物", "历史政体"],
-    "王朝": ["历史政体"],
-    "服装": ["服装"],
-    "食物": ["饮食"],
-    "菜系": ["饮食"],
-    "小吃": ["饮食"],
-    "水果": ["饮食"],
-    "艺术": ["艺术"],
-    "文化": ["风俗", "艺术"],
-    "宗教": ["风俗"],
-    "语言": ["语言"],
-    "职业": ["职业"],
-    "学校": ["学科"],
-    "大学": ["学科"],
+    "建筑": ["地标"],
+    "动物": [],
+    "植物": [],
+    "风景": ["季节"],
+    "音乐": [],
+    "运动": [],
+    "体育": [],
+    "科技": [],
+    "名人": ["历史"],
+    "皇帝": ["历史"],
+    "王朝": ["历史"],
+    "服装": [],
+    "食物": ["美食"],
+    "菜系": ["美食"],
+    "小吃": ["美食"],
+    "水果": ["美食"],
+    "艺术": [],
+    "文化": ["历史"],
+    "宗教": ["地标"],
+    "语言": [],
+    "职业": [],
+    "学校": [],
+    "大学": [],
+    "故事": ["历史", "见闻"],
+    "寺庙": ["地标"],
+    "教堂": ["地标"],
+    "自然": ["季节"],
+    "气候": ["季节"],
+    "天气": ["季节"],
+    "地标": ["地标"],
+    "景点": ["地标"],
+    "见闻": ["见闻"],
 }
 
 
@@ -72,7 +81,7 @@ def _load_local_kb() -> dict[str, dict]:
     offline builder.  They are normalised to the same ``{title, extract, …}``
     shape so the rest of the code can treat them uniformly.
     """
-    global _local_kb, _kb_char_index, _labels
+    global _local_kb, _kb_char_index, _labels, _city_data
     if _local_kb is not None:
         return _local_kb
 
@@ -244,14 +253,38 @@ async def about(lat: float, lon: float, topic: str) -> dict | None:
 
 
 async def _resolve_place_name(lat: float, lon: float) -> str:
-    """Get the nearest named place for given coordinates."""
+    """Get the nearest named place for given coordinates (Chinese name优先)."""
     try:
         from nowhere import places
         nearby = places.nearby(lat, lon, radius_km=20, limit=1)
         if nearby:
-            return nearby[0]["name"]
+            name = nearby[0]["name"]
+            # Try to find Chinese name from places.db alts
+            zh = _get_chinese_name(name)
+            return zh or name
     except Exception as exc:
         logger.debug("places.nearby failed: %s", exc)
+    return ""
+
+
+def _get_chinese_name(eng_name: str) -> str:
+    """Look up Chinese name from places.db alts column."""
+    try:
+        import sqlite3
+        db = sqlite3.connect(_DATA / "places.db", timeout=5)
+        row = db.execute(
+            "SELECT alts FROM places WHERE name = ? AND fclass = 'P' LIMIT 1",
+            (eng_name,)
+        ).fetchone()
+        db.close()
+        if row and row[0]:
+            for alt in row[0].split(","):
+                alt = alt.strip()
+                # Chinese characters (CJK Unified Ideographs)
+                if alt and all('一' <= c <= '鿿' for c in alt):
+                    return alt
+    except Exception:
+        pass
     return ""
 
 
