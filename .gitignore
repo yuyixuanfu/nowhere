@@ -29,14 +29,15 @@ nowhere/static/postcards/
 
 # 构建缓存(大,源数据)
 tools/.cache/
+tools/__pycache__/
+tools/maptoposter/cache/
+tools/maptoposter/__pycache__/
 nowhere/tmp_home/
 tmp_home/
-tools/maptoposter/cache/
 nowhere/quality_*.md
 nowhere/final_report.md
 CLAUDE.md
 portal/
-tools/.cache/
 
 # Design docs and reports (local only)
 WORK_CARDS.md
@@ -61,7 +62,6 @@ docs/taste_samples/
 drafts/
 nowhere/audit_*.md
 nowhere/tests/
-tools/
 nowhere/data/scenes_src/
 
 # 中间产物报告(散在 data/ 里的临时文件,不进 git)
