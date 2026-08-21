@@ -15,13 +15,16 @@ from __future__ import annotations
 import argparse
 import asyncio
 import functools
+import hashlib as _hashlib
 import logging
 import math
+from math import radians, sin, cos, sqrt, atan2
 import os
 import random
 import re
+import shutil
 import threading
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from typing import Any, Final
 from zoneinfo import ZoneInfo
 
@@ -66,6 +69,8 @@ from nowhere import (
     weather,
 )
 from nowhere.actions import ACTIONS, POST_NORMALIZE_ACTIONS, PRE_NORMALIZE_ACTIONS, WalkContext
+from nowhere.places import _bearing_word
+from nowhere.walk import _LAT_LIMIT_CLOSINGS
 
 # ── Card 46: 六根时间轴 ────────────────────────────────────────────
 import json as _json
@@ -113,6 +118,19 @@ async def _load_water_features() -> dict:
     fp = _pathlib.Path(__file__).resolve().parent / "data" / "water_features_offline.json"
     if fp.exists():
         _WATER_FEATURES_CACHE = await _read_json_async(fp)
+    else:
+        _WATER_FEATURES_CACHE = {}
+    return _WATER_FEATURES_CACHE
+
+
+def _load_water_features_sync() -> dict:
+    """Sync version for use in non-async contexts (e.g. actions.render)."""
+    global _WATER_FEATURES_CACHE
+    if _WATER_FEATURES_CACHE is not None:
+        return _WATER_FEATURES_CACHE
+    fp = _pathlib.Path(__file__).resolve().parent / "data" / "water_features_offline.json"
+    if fp.exists():
+        _WATER_FEATURES_CACHE = _json.loads(fp.read_text(encoding="utf-8"))
     else:
         _WATER_FEATURES_CACHE = {}
     return _WATER_FEATURES_CACHE
@@ -607,7 +625,6 @@ def _check_anniversary(lat: float, lon: float, dt: datetime,
         return None
 
     # Parse year — format varies: "1950", "1467-1477", "1950-01", "1950-01-15"
-    import re
     year_str = str(year_str).strip()
     m = re.match(r"(\d{4})(?:-(\d{1,2}))?(?:-(\d{1,2}))?", year_str)
     if not m:
@@ -1198,14 +1215,12 @@ _DEST_TEMPLATES: list[str] = [
 
 # ── Density decay: wilderness depth calculation (Card 40) ──────────
 
-def _compute_wilderness_depth_km(lat: float, lon: float) -> float:
+async def _compute_wilderness_depth_km(lat: float, lon: float) -> float:
     """Compute distance (km) from (lat, lon) to nearest known place or water feature.
 
     Uses explorable_index.json places and hydrology offline water features.
     Returns 0.0 if within 5km of any known feature, otherwise the distance.
     """
-    from math import radians, sin, cos, sqrt, atan2
-
     def _haversine_km(lat1, lon1, lat2, lon2):
         R = 6371.0
         dlat = radians(lat2 - lat1)
@@ -1217,7 +1232,7 @@ def _compute_wilderness_depth_km(lat: float, lon: float) -> float:
 
     # Check explorable_index places
     try:
-        data = _load_explorable_index()
+        data = await _load_explorable_index()
         for name, info in data.get("places", {}).items():
             plat = info.get("lat")
             plon = info.get("lon")
@@ -1230,7 +1245,7 @@ def _compute_wilderness_depth_km(lat: float, lon: float) -> float:
 
     # Check offline water features
     try:
-        data = _load_water_features()
+        data = await _load_water_features()
         for entry in data.get("entries", []):
             elat = entry.get("lat", 0)
             elon = entry.get("lon", 0)
@@ -1325,10 +1340,8 @@ def _force_content(
     return rng.choice(_WILDERNESS_VARIANTS)
 
 
-def _find_nearby_destinations(lat: float, lon: float, rng) -> str:
+async def _find_nearby_destinations(lat: float, lon: float, rng) -> str:
     """Return a literary hint about a walkable place within ~20km."""
-    from math import radians, sin, cos, sqrt, atan2
-
     def _haversine_km(lat1, lon1, lat2, lon2):
         R = 6371.0
         dlat = radians(lat2 - lat1)
@@ -1337,7 +1350,7 @@ def _find_nearby_destinations(lat: float, lon: float, rng) -> str:
         return R * 2 * atan2(sqrt(a), sqrt(1 - a))
 
     try:
-        places = _load_places_patch()
+        places = await _load_places_patch()
     except Exception:
         return ""
 
@@ -1362,7 +1375,6 @@ def _find_nearby_destinations(lat: float, lon: float, rng) -> str:
     name, d, plat, plon = rng.choice(nearby[:3])
 
     # 算方位
-    import math
     bearing = math.degrees(math.atan2(
         math.radians(plon - lon), math.radians(plat - lat)
     )) % 360
@@ -1375,10 +1387,10 @@ def _find_nearby_destinations(lat: float, lon: float, rng) -> str:
 
 # ── Water feature nearest-point lookup ──────────────────────────────
 
-def _find_nearest_water_feature(name: str, lat: float, lon: float) -> dict | None:
+async def _find_nearest_water_feature(name: str, lat: float, lon: float) -> dict | None:
     """Find the nearest point on a named water feature from the offline database."""
     try:
-        data = _load_water_features()
+        data = await _load_water_features()
     except Exception:
         return None
 
@@ -1419,7 +1431,7 @@ def _offline_water_nearby(lat: float, lon: float, radius_km: float = 50) -> list
     return hydrology.offline_water_nearby(lat, lon, radius_km=radius_km)
 
 
-def _find_river_segment(
+async def _find_river_segment(
     name: str,
     segment_hint: str = "",
     lat: float | None = None,
@@ -1437,7 +1449,7 @@ def _find_river_segment(
     Returns {"lat": float, "lon": float, "segment_name": str} or None.
     """
     try:
-        data = _load_water_features()
+        data = await _load_water_features()
     except Exception:
         return None
 
@@ -1526,7 +1538,7 @@ def _compute_river_direction(water_features: list[dict], lat: float, lon: float)
         return None
 
     try:
-        data = _load_water_features()
+        data = _load_water_features_sync()
     except Exception:
         return None
 
@@ -1748,8 +1760,7 @@ def _wide_coast_scan(lat: float, lon: float) -> tuple[float | None, float | None
     Returns (min_km, bearing_deg) or (None, None).
     Used only for rejection text — precision not critical.
     """
-    from nowhere import terrain as _t
-    origin_elev = _t.elevation(lat, lon)
+    origin_elev = terrain.elevation(lat, lon)
     # Card 64: origin-elevation plausibility gate.
     # Standing above 3000 m (Himalayas/Tibet/Andes): real ocean cannot
     # be within 500 km — coarse-grid "water_ocean" cells closer than
@@ -1949,6 +1960,8 @@ async def _gather_env(lat: float, lon: float, dt: datetime) -> dict[str, Any]:
         asyncio.wait_for(weather.current(lat, lon, elevation=elev, local_hour=local_hour), timeout=10.0),
         _get_radio(lat, lon),
         asyncio.wait_for(hydrology.nearby_water(lat, lon), timeout=5.0),
+        asyncio.wait_for(water.sea_surface_temp(lat, lon), timeout=8.0),
+        asyncio.wait_for(water.marine_life(lat, lon, random.Random(), biome=_state.biome), timeout=8.0),
     ]
     results = await asyncio.gather(*tasks, return_exceptions=True)
 
@@ -1962,6 +1975,8 @@ async def _gather_env(lat: float, lon: float, dt: datetime) -> dict[str, Any]:
     weather_info: dict = _ok(3, {})
     radio_info: dict | None = _ok(4, None)
     water_features: list[dict] = _ok(5, [])
+    sst_raw: float | None = _ok(6, None)
+    marine_raw: dict | None = _ok(7, None)
 
     sky_info: dict = {**sun_moon_info, **visible_sky_info}
 
@@ -1972,6 +1987,8 @@ async def _gather_env(lat: float, lon: float, dt: datetime) -> dict[str, Any]:
         "weather": weather_info,
         "radio": radio_info,
         "water_features": water_features,
+        "sst_raw": sst_raw,
+        "marine_raw": marine_raw,
     }
 
 
@@ -2039,8 +2056,6 @@ def _check_festival_chase(lat: float, lon: float,
     if sim_time is None:
         return None
     try:
-        import json as _json
-        import pathlib as _pathlib
         fp = _pathlib.Path(__file__).resolve().parent / "data" / "festivals.json"
         if not fp.exists():
             return None
@@ -2077,8 +2092,7 @@ def _check_festival_chase(lat: float, lon: float,
 
         # Use localcolor to look up place coords (simple lookup)
         try:
-            from nowhere import humanities as _h
-            coords = _h.get_place_coords(fest_place)
+            coords = humanities.get_place_coords(fest_place)
             if not coords:
                 continue
             fest_lat, fest_lon = coords["lat"], coords["lon"]
@@ -2133,8 +2147,7 @@ def _get_fest_place_coords(place_name: str) -> tuple[float, float] | None:
     if place_name in _fest_place_coords_cache:
         return _fest_place_coords_cache[place_name]
     try:
-        from nowhere import humanities as _h
-        coords = _h.get_place_coords(place_name)
+        coords = humanities.get_place_coords(place_name)
         if coords:
             result = (coords["lat"], coords["lon"])
         else:
@@ -2207,7 +2220,6 @@ def _festival_in_window(fest: dict, sim_date: _date, lat: float,
             fest_start = _date(sim_date.year, md[0], md[1])
         except (ValueError, IndexError):
             return False
-        from datetime import timedelta
         fest_end = fest_start + timedelta(days=span - 1)
         return fest_start <= sim_date <= fest_end
 
@@ -2231,7 +2243,6 @@ def _festival_in_window(fest: dict, sim_date: _date, lat: float,
             base = _date(sim_date.year, base_date[0], base_date[1])
         except (ValueError, IndexError):
             return False
-        from datetime import timedelta
         lat_offset = (lat - base_lat) * days_per_deg
         adjusted_start = base + timedelta(days=int(lat_offset))
         adjusted_end = adjusted_start + timedelta(days=span_days - 1)
@@ -2327,7 +2338,6 @@ def _check_festival_hit(
     # Eve detection: if today is the day before a festival start, use eve_cards
     # Same place/country priority as above
     if not hits:
-        from datetime import timedelta
         tomorrow = sim_date + timedelta(days=1)
         eve_place: list[dict] = []
         eve_country: list[dict] = []
@@ -2503,7 +2513,6 @@ def _check_near_festival(
             except (ValueError, IndexError):
                 base = None
             if base is not None:
-                from datetime import timedelta
                 lat_offset = (lat - base_lat) * days_per_deg
                 start_date = base + timedelta(days=int(lat_offset))
 
@@ -2819,7 +2828,6 @@ async def _open_door_locked(to: str | None = None, resume: bool = False, travele
     if not restored and to is None:
         # Card 17: deterministic key-based landing
         if norm_key:
-            import hashlib as _hashlib
             pool = landing._load_pool()
             h = int(_hashlib.md5(norm_key.encode()).hexdigest()[:8], 16)
             idx = h % len(pool)
@@ -2860,7 +2868,7 @@ async def _open_door_locked(to: str | None = None, resume: bool = False, travele
                             parts = (to or "").split()
                             if len(parts) > 1:
                                 segment_hint = parts[-1]
-                            seg = _find_river_segment(rname, segment_hint)
+                            seg = await _find_river_segment(rname, segment_hint)
                             if seg:
                                 lat, lon = seg["lat"], seg["lon"]
                                 place_name = seg["segment_name"]
@@ -2878,7 +2886,7 @@ async def _open_door_locked(to: str | None = None, resume: bool = False, travele
             parts = to.split()
             if len(parts) > 1:
                 segment_hint = parts[-1]
-            seg = _find_river_segment("长江", segment_hint, lat, lon)
+            seg = await _find_river_segment("长江", segment_hint, lat, lon)
             if seg:
                 lat, lon = seg["lat"], seg["lon"]
                 place_name = seg["segment_name"]
@@ -2973,15 +2981,16 @@ async def _open_door_locked(to: str | None = None, resume: bool = False, travele
 
     # ── 3.5. Water features + SST + marine life ──────────────────────
     water_text = ""
-    # Offline waterway lookup (always available, no network needed)
-    water_features = _offline_water_nearby(lat, lon, radius_km=50)
-    # Try online Overpass as enhancement (silently falls back on failure)
+    # A5 fix: try online first, fallback to offline (avoids wasted I/O)
+    water_features: list[dict] = []
     try:
         online_wf = await asyncio.wait_for(hydrology.nearby_water(lat, lon), timeout=5.0)
         if online_wf:
             water_features = online_wf
     except Exception:
-        pass  # offline result already populated
+        pass
+    if not water_features:
+        water_features = _offline_water_nearby(lat, lon, radius_km=50)
 
     # Card 71 B1: filter water features by biome — inland city ≠ ocean
     if water_features and (_state.biome or "") == "city":
@@ -3008,20 +3017,19 @@ async def _open_door_locked(to: str | None = None, resume: bool = False, travele
         except Exception:
             pass
 
-    # Sea surface temperature
+    # Sea surface temperature (fetched in _gather_env)
     sst_text = ""
     try:
-        sst = await asyncio.wait_for(water.sea_surface_temp(lat, lon), timeout=8.0)
-        if sst is not None:
-            sst_text = water.describe_sst(sst, _rng)
+        if env.get("sst_raw") is not None:
+            sst_text = water.describe_sst(env["sst_raw"], _rng)
     except Exception:
         pass
 
-    # Marine life encounter (30% chance near water)
+    # Marine life encounter (30% chance near water; data fetched in _gather_env)
     marine_text = ""
     if _rng.random() < 0.3:
         try:
-            m = await asyncio.wait_for(water.marine_life(lat, lon, _rng, biome=_state.biome), timeout=8.0)
+            m = env.get("marine_raw")
             if m:
                 marine_text = f"{m['common_name']}。{m['distance_m']}米外。{m['scene']}"
         except Exception:
@@ -3069,7 +3077,7 @@ async def _open_door_locked(to: str | None = None, resume: bool = False, travele
         pass
 
     # 附近可去的地方——单独传，不跟其他钩子竞争
-    nearby_places = _find_nearby_destinations(lat, lon, _rng)
+    nearby_places = await _find_nearby_destinations(lat, lon, _rng)
     local_hour = None
     cc = None
     tz_name = _tf.timezone_at(lat=lat, lng=lon)
@@ -3604,7 +3612,6 @@ def _check_late_night_shop(env: dict) -> bool:
     now = _state.now()
     if now is None:
         return False
-    from zoneinfo import ZoneInfo
     tz_name = _tf.timezone_at(lat=_state.pos[0], lng=_state.pos[1]) if _state.pos else None
     if not tz_name:
         return False
@@ -3665,8 +3672,6 @@ def _load_souvenirs_by_place() -> dict:
     """Load souvenirs_by_place.json once and cache."""
     global _SOUVENIRS_BY_PLACE
     if _SOUVENIRS_BY_PLACE is None:
-        import json as _json
-        import pathlib as _pathlib
         fp = _pathlib.Path(__file__).resolve().parent / "data" / "souvenirs_by_place.json"
         try:
             _SOUVENIRS_BY_PLACE = _json.loads(fp.read_text(encoding="utf-8")) if fp.exists() else {}
@@ -3761,8 +3766,7 @@ async def walk_impl(direction: str = "forward", distance_km: float = 2.0) -> dic
         if sea_km is None:
             sea_km, sea_bearing = _wide_coast_scan(lat0, lon0)
         if sea_km is None or sea_km > 50:
-            from nowhere.places import _bearing_word as _bw
-            dir_str = _bw(sea_bearing) if sea_bearing is not None else "很远"
+            dir_str = _bearing_word(sea_bearing) if sea_bearing is not None else "很远"
             if sea_km is not None and sea_km >= 500:
                 # Vague text for large distances (Card 51 polish)
                 reject_text = _rng.choice(_FAR_COAST_VARIANTS).format(dir=dir_str)
@@ -3840,7 +3844,6 @@ async def walk_impl(direction: str = "forward", distance_km: float = 2.0) -> dic
 
     # ── 2b2. lat_limit: honest latitude boundary ────────────────────
     if step_result.get("lat_limit"):
-        from nowhere.walk import _LAT_LIMIT_CLOSINGS
         lat_limit_text = _rng.choice(_LAT_LIMIT_CLOSINGS)
         return {
             "text": lat_limit_text,
@@ -3857,8 +3860,6 @@ async def walk_impl(direction: str = "forward", distance_km: float = 2.0) -> dic
     far_note = ""
     if step_result.get("far_slope"):
         bearing_deg, gain = step_result["far_slope"]
-        from nowhere.places import _bearing_word
-
         far_note = f"高处在{_bearing_word(bearing_deg)}边,先往那边走。"
 
     # ── 2d. sea_ahead: 海在前方,鼻子先知道 ───────────────────────────
@@ -3906,15 +3907,16 @@ async def walk_impl(direction: str = "forward", distance_km: float = 2.0) -> dic
 
     # ── 3.5. Water features + SST + marine life ──────────────────────
     water_text = ""
-    # Offline waterway lookup (always available, no network needed)
-    water_features = _offline_water_nearby(lat, lon, radius_km=50)
-    # Try online Overpass as enhancement (silently falls back on failure)
+    # A5 fix: try online first, fallback to offline (avoids wasted I/O)
+    water_features: list[dict] = []
     try:
         online_wf = await asyncio.wait_for(hydrology.nearby_water(lat, lon), timeout=5.0)
         if online_wf:
             water_features = online_wf
     except Exception:
-        pass  # offline result already populated
+        pass
+    if not water_features:
+        water_features = _offline_water_nearby(lat, lon, radius_km=50)
 
     # Build water feature description from offline data
     if water_features:
@@ -3936,18 +3938,18 @@ async def walk_impl(direction: str = "forward", distance_km: float = 2.0) -> dic
         except Exception:
             pass
 
+    # SST and marine life (fetched in _gather_env)
     sst_text = ""
     try:
-        sst = await asyncio.wait_for(water.sea_surface_temp(lat, lon), timeout=8.0)
-        if sst is not None:
-            sst_text = water.describe_sst(sst, _rng)
+        if env.get("sst_raw") is not None:
+            sst_text = water.describe_sst(env["sst_raw"], _rng)
     except Exception:
         pass
 
     marine_text = ""
     if _rng.random() < 0.3:
         try:
-            m = await asyncio.wait_for(water.marine_life(lat, lon, _rng, biome=_state.biome), timeout=8.0)
+            m = env.get("marine_raw")
             if m:
                 marine_text = f"{m['common_name']}。{m['distance_m']}米外。{m['scene']}"
         except Exception:
@@ -3962,7 +3964,7 @@ async def walk_impl(direction: str = "forward", distance_km: float = 2.0) -> dic
             river_text = _river_alignment_text(bearing, river_dir, _rng)
 
     # ── 3.6. Density decay: update wilderness depth (Card 40) ────────
-    _state.wilderness_depth_km = _compute_wilderness_depth_km(lat, lon)
+    _state.wilderness_depth_km = await _compute_wilderness_depth_km(lat, lon)
 
     # ── 3.7. Density decay: encounter probability tiers (Card 40) ───
     # Within 30km: normal density
@@ -4243,7 +4245,6 @@ async def _try_play_stream(stream_url: str, seconds: int) -> bool:
 
     Returns True if playback was started successfully.
     """
-    import shutil
 
     # Try ffplay first (comes with ffmpeg)
     if shutil.which("ffplay"):
@@ -4944,7 +4945,7 @@ async def walk_to_impl(place: str) -> dict:
     # 水域名称 geocoding 经常返回很远的点（河流源头/入海口），
     # 尝试从离线水文库找更近的同名水域
     if dist > 50:
-        closer = _find_nearest_water_feature(place, _state.pos[0], _state.pos[1])
+        closer = await _find_nearest_water_feature(place, _state.pos[0], _state.pos[1])
         if closer:
             lat, lon = _state.pos
             new_dist = places._haversine_km(lat, lon, closer["lat"], closer["lon"])
@@ -5149,8 +5150,7 @@ def where_am_i_impl() -> dict:
         parts.append(f"你在{_state.place_name}。")
     if not _blind:
         parts.append(f"坐标 {lat:.4f}, {lon:.4f}。")
-        from nowhere import terrain as _elev_mod
-        _elev = _elev_mod.elevation(lat, lon, place_name=_state.place_name or "")
+        _elev = terrain.elevation(lat, lon, place_name=_state.place_name or "")
         if _elev and _elev > 2:
             parts.append(f"海拔 {_elev:.0f} 米。")
     else:
@@ -5820,7 +5820,6 @@ def send_postcard_impl(text: str) -> dict:
     temp = s.get("temp_c", "")
 
     # Card 57: 正面优先用旅程已见卡的环境句——明信片长在这次旅程上
-    import hashlib as _hashlib
     journey_front: str | None = None
 
     # 1) 从 localcolor 已见卡的 text 里挑一句环境描写
@@ -6109,12 +6108,12 @@ def bury_impl(note: str | None = None) -> dict:
 
 
 @mcp.tool()
-def deliver() -> dict:
+async def deliver() -> dict:
     """送达身上的差事(信/铁盒)。需要在收信地附近(5km)。"""
-    return deliver_impl()
+    return await deliver_impl()
 
 
-def deliver_impl() -> dict:
+async def deliver_impl() -> dict:
     """送达差事。"""
     global _state
 
@@ -6127,7 +6126,7 @@ def deliver_impl() -> dict:
 
     if kind == "letter":
         # Build place coords from explorable_index
-        place_coords = _build_place_coords()
+        place_coords = await _build_place_coords()
         matched = errands.check_delivery(
             _state.pos, _state.errand, place_coords, radius_km=5.0,
         )
@@ -6170,10 +6169,10 @@ def deliver_impl() -> dict:
     return {"text": "不知道怎么处理这个差事。", "data": {"error": "unknown_kind"}}
 
 
-def _build_place_coords() -> dict[str, tuple[float, float]]:
+async def _build_place_coords() -> dict[str, tuple[float, float]]:
     """Build a place→coords map from explorable_index for errand delivery."""
     try:
-        data = _load_explorable_index()
+        data = await _load_explorable_index()
         coords = {}
         for name, info in data.get("places", {}).items():
             plat = info.get("lat")
@@ -6510,7 +6509,7 @@ def talk_impl(question: str | None = None) -> dict:
 
 
 @mcp.tool()
-def journal() -> dict:
+async def journal() -> dict:
     """回看本次旅程的时间线。"""
     slug = journeys.get_active_slug()
     if not slug:
@@ -6519,8 +6518,10 @@ def journal() -> dict:
     if not log_path.exists():
         return {"text": "旅程日志是空的。", "data": {"entries": []}}
     try:
-        lines = log_path.read_text(encoding="utf-8").strip().split("\n")
-        entries = [json.loads(line) for line in lines if line.strip()]
+        def _read_journal():
+            lines = log_path.read_text(encoding="utf-8").strip().split("\n")
+            return [json.loads(line) for line in lines if line.strip()]
+        entries = await asyncio.to_thread(_read_journal)
     except Exception:
         return {"text": "日志读不出来。", "data": {"entries": []}}
     if not entries:

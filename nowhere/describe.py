@@ -40,6 +40,14 @@ _VALID_BIOME_TAGS: set[str] = {
 }
 _BIOME_TAG_RE = re.compile(r"(#[^\s]+)\s*")
 
+# Precompiled regexes for _normalize_prose (avoids re-compilation on every call)
+_RE_COMMA_AFTER_CJK = re.compile(r'(?<=[一-鿿]),')
+_RE_PERIOD_AFTER_CJK = re.compile(r'(?<=[一-鿿])\.')
+_RE_QUESTION_AFTER_CJK = re.compile(r'(?<=[一-鿿])\?')
+_RE_EXCL_AFTER_CJK = re.compile(r'(?<=[一-鿿])!')
+_RE_MULTI_PERIOD = re.compile(r'。{2,}')
+_RE_MULTI_SPACE = re.compile(r'[ \t]+')
+
 
 # ── location-specific scene files ([地名] 描述 or 地名 描述) ──────────
 _LOCATION_SCENES: dict[str, list[str]] | None = None
@@ -1455,31 +1463,25 @@ def _normalize_prose(text: str) -> str:
     if not text:
         return text
     # Half-width → full-width after Chinese character
-    text = re.sub(r'(?<=[一-鿿]),', '，', text)
-    text = re.sub(r'(?<=[一-鿿])\.', '。', text)
-    text = re.sub(r'(?<=[一-鿿])\?', '？', text)
-    text = re.sub(r'(?<=[一-鿿])!', '！', text)
+    text = _RE_COMMA_AFTER_CJK.sub('，', text)
+    text = _RE_PERIOD_AFTER_CJK.sub('。', text)
+    text = _RE_QUESTION_AFTER_CJK.sub('？', text)
+    text = _RE_EXCL_AFTER_CJK.sub('！', text)
     # Consecutive periods → one
-    text = re.sub(r'。{2,}', '。', text)
+    text = _RE_MULTI_PERIOD.sub('。', text)
     # Extra spaces
-    text = re.sub(r'[ \t]+', ' ', text).strip()
+    text = _RE_MULTI_SPACE.sub(' ', text).strip()
     return text
 
 
 def _ends_with_cjk(s: str) -> bool:
     """Check if string ends with a CJK character (not punctuation)."""
-    if not s:
-        return False
-    ch = s[-1]
-    return bool(re.match(r'[一-鿿]', ch))
+    return bool(s) and 0x4E00 <= ord(s[-1]) <= 0x9FFF
 
 
 def _starts_with_cjk(s: str) -> bool:
     """Check if string starts with a CJK character."""
-    if not s:
-        return False
-    ch = s[0]
-    return bool(re.match(r'[一-鿿]', ch))
+    return bool(s) and 0x4E00 <= ord(s[0]) <= 0x9FFF
 
 
 # Walk-specific transition phrases — only for walk sections
@@ -1653,6 +1655,7 @@ def compose(sections: list[str], rng: random.Random, section_type: str = "walk")
 
 
 # ── Card 69: notable place names from all data sources ──────────────
+_SCENE_PLACES_CACHE: set[str] | None = None
 _NOTABLE_PLACES_CACHE: set[str] | None = None
 
 
@@ -1763,16 +1766,15 @@ def sanity_check(text: str, env: dict) -> str:
         "空气里有什么变了,你说不上来。",
     ]
 
-    # Build location scene keys for place contradiction detection
-    _location_scenes = _load_location_scenes()
-    _scene_places = set(_location_scenes.keys())
-    # Expand with place names from water features scenes and localcolor
-    _scene_places.update(_load_notable_places())
+    # Build location scene keys for place contradiction detection (cached)
+    global _SCENE_PLACES_CACHE
+    if _SCENE_PLACES_CACHE is None:
+        _location_scenes = _load_location_scenes()
+        _SCENE_PLACES_CACHE = set(_location_scenes.keys())
+        _SCENE_PLACES_CACHE.update(_load_notable_places())
+    _scene_places = _SCENE_PLACES_CACHE
 
-    # Country name lookup (reverse of _COUNTRY_ZH)
-    _cc_to_name: dict[str, str] = {}
-    for _code, _name in _COUNTRY_ZH.items():
-        _cc_to_name[_code] = _name
+    # Country name lookup — use _COUNTRY_ZH directly (same mapping)
 
     sentences = _split_sentences(text)
 
@@ -1804,9 +1806,10 @@ def sanity_check(text: str, env: dict) -> str:
                 continue
 
         # ── Country name contradiction ──
-        if cc:
-            current_country_name = _cc_to_name.get(cc, "")
-            for other_cc, other_name in _cc_to_name.items():
+        # Short sentences (<4 chars) cannot contain a country name — skip
+        if cc and len(sent) >= 4:
+            current_country_name = _COUNTRY_ZH.get(cc, "")
+            for other_cc, other_name in _COUNTRY_ZH.items():
                 if other_cc == cc:
                     continue
                 if other_name in sent and current_country_name not in sent:

@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import json
 import os
+import random
 import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
@@ -258,7 +259,6 @@ def _generate_first_impression(
     if not pool:
         return None
 
-    import random
     rng = random.Random(hash((volume, name, datetime.now(timezone.utc).isoformat()[:13])))
 
     weather = (env or {}).get("weather") if env else None
@@ -413,7 +413,6 @@ def _render_overview() -> str:
 
         if total == 0:
             empty_variants = _EMPTY_VARIANTS.get(v, ["空的。"])
-            import random
             rng = random.Random(hash(v))
             parts.append(rng.choice(empty_variants))
             continue
@@ -459,7 +458,6 @@ def _render_volume(volume: str) -> str:
 
     if not main_list and not unique_list:
         empty_variants = _EMPTY_VARIANTS.get(volume, ["空的。"])
-        import random
         rng = random.Random(hash(volume))
         return rng.choice(empty_variants)
 
