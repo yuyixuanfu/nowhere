@@ -18,9 +18,6 @@ _OVERPASS_URL = "https://overpass-api.de/api/interpreter"
 _SCENE_DIR = pathlib.Path(__file__).resolve().parent / "data"
 _SCENE_FILE = "water_features"
 
-# Module-level cache for offline water features JSON (S1 fix)
-_OFFLINE_CACHE: list[dict] | None = None
-
 # Bearing labels (8 directions)
 _BEARINGS: list[str] = ["北", "东北", "东", "东南", "南", "西南", "西", "西北"]
 
@@ -95,20 +92,18 @@ def offline_water_nearby(lat: float, lon: float, radius_km: float = 50) -> list[
     Each entry's radius_km is checked: only entries whose center is within
     (entry_radius + radius_km) of the query point are returned.
     """
-    global _OFFLINE_CACHE
-    if _OFFLINE_CACHE is None:
-        import json as _json
-        fp = _SCENE_DIR / "water_features_offline.json"
-        if not fp.exists():
-            _OFFLINE_CACHE = []
-        else:
-            try:
-                _OFFLINE_CACHE = _json.loads(fp.read_text(encoding="utf-8")).get("entries", [])
-            except Exception:
-                _OFFLINE_CACHE = []
+    import json as _json
+
+    fp = _SCENE_DIR / "water_features_offline.json"
+    if not fp.exists():
+        return []
+    try:
+        data = _json.loads(fp.read_text(encoding="utf-8"))
+    except Exception:
+        return []
 
     results: list[dict] = []
-    for entry in _OFFLINE_CACHE:
+    for entry in data.get("entries", []):
         elat = entry.get("lat", 0)
         elon = entry.get("lon", 0)
         entry_radius = entry.get("radius_km", 50)

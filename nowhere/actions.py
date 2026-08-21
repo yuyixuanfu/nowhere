@@ -391,6 +391,8 @@ class RadioQuietAction:
         pass  # no side effects
 
     def render(self, ctx: WalkContext) -> str | None:
+        from nowhere.describe import _RADIO_QUIET_VARIANTS
+
         return ctx.rng.choice(_RADIO_QUIET_VARIANTS)
 
 
@@ -403,7 +405,15 @@ class LocalSceneAction:
         return not ctx.is_deep_wilderness and not ctx.env_cached
 
     def render(self, ctx: WalkContext) -> str | None:
+        from nowhere import (
+            country as country_mod,
+            describe,
+            localcolor,
+            notebook as notebook_mod,
+            placememory,
+        )
         from nowhere.server import _load_scene_file, _pick_fresh, _tf
+        from zoneinfo import ZoneInfo
 
         place = ctx.state.place_name or ""
         now = ctx.now
@@ -556,6 +566,8 @@ class CotravelerAction:
     name = "cotraveler"
 
     def should(self, ctx: WalkContext) -> bool:
+        from nowhere import travelers as travelers_mod
+
         return (
             travelers_mod.is_enabled()
             and not travelers_mod.walk_alone_active(ctx.state)
