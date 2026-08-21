@@ -22,7 +22,7 @@ import logging
 import pathlib
 import random
 import re
-from typing import Final, Sequence
+from typing import Sequence
 
 from nowhere import places
 
@@ -40,6 +40,14 @@ _VALID_BIOME_TAGS: set[str] = {
 }
 _BIOME_TAG_RE = re.compile(r"(#[^\s]+)\s*")
 
+# Precompiled regexes for _normalize_prose (CJK ranges: U+4E00-U+9FFF + U+3400-U+4DBF)
+_CJK_R = r'[一-鿿㐀-䶿]'
+_RE_COMMA_AFTER_CJK = re.compile(f'(?<={_CJK_R}),')
+_RE_PERIOD_AFTER_CJK = re.compile(f'(?<={_CJK_R})\\.')
+_RE_QUESTION_AFTER_CJK = re.compile(f'(?<={_CJK_R})\\?')
+_RE_EXCL_AFTER_CJK = re.compile(f'(?<={_CJK_R})!')
+_RE_MULTI_PERIOD = re.compile(r'。{2,}')
+_RE_MULTI_SPACE = re.compile(r'[ \t]+')
 
 # ── location-specific scene files ([地名] 描述 or 地名 描述) ──────────
 _LOCATION_SCENES: dict[str, list[str]] | None = None
@@ -189,7 +197,10 @@ _BIOME_TO_SEASONAL_PLACE: dict[str, str] = {
     "grassland": "草原",
 }
 
-# Tropical rainforest uses different season names
+# Tropical rainforest uses different season names.
+# NOTE: this mapping relies on _season()'s southern-hemisphere flip (month+6
+# offset baked into the wet/dry bands).  If _season() logic changes, these
+# dry-season/wet-season labels must be re-verified.
 _TROPICAL_SEASON: dict[str, str] = {
     "spring": "干季高峰", "summer": "湿季", "autumn": "过渡", "winter": "干季",
 }
@@ -251,7 +262,7 @@ _REGION_MAP = [
     (43, 50, 5, 18, "alpine"),
     (35, 70, -15, 40, "europe"),        # Europe (including Faroe Islands at 62N)
     (45, 70, 20, 180, "russia"),
-    (20, 55, 73, 145, "east_asia"),     # Extended to 145°E for Japan
+    (20, 55, 90, 145, "east_asia"),     # 90°E start excludes Nepal/Pakistan (→south_asia); includes Japan to 145°E
     (-10, 25, 90, 155, "southeast_asia"),
     (5, 35, 60, 100, "south_asia"),
     (10, 45, 25, 65, "middle_east"),
@@ -572,11 +583,17 @@ def _pick_scene(pool: list[str], name: str, rng: random.Random, ctx: dict) -> st
         filtered = pool  # Fallback to unfiltered if all filtered out
 
     meta = _load_meta().get(name, [])
-    if meta and len(meta) == len(pool):
+    if meta:
         # Apply meta constraints against the ORIGINAL pool, then intersect
-        # with keyword-filtered results. This avoids the bug where keyword
-        # filtering changes len(filtered) so the old len check always fails.
-        meta_valid_idx = {i for i, m in enumerate(meta) if _matches(m.get("requires", {}), ctx)}
+        # with keyword-filtered results.  Entries beyond the meta list
+        # (len(meta) < len(pool)) have no constraint = always pass.
+        meta_valid_idx: set[int] = set()
+        for i in range(len(pool)):
+            if i < len(meta):
+                if _matches(meta[i].get("requires", {}), ctx):
+                    meta_valid_idx.add(i)
+            else:
+                meta_valid_idx.add(i)  # no meta = no constraint = pass
         if not meta_valid_idx:
             return ""
         pool_to_idx = {s: i for i, s in enumerate(pool)}
@@ -610,6 +627,7 @@ _BIOME_TO_SCENE: dict[str, str] = {
     "volcano": "volcano", "desert": "deserts", "tundra": "tundra",
     "mountain": "mountains", "island": "ocean", "coast": "ocean",
     "rainforest": "forests", "city": "urban",
+    "forest": "forests", "grassland": "grasslands",
 }
 
 _MOMENT_TO_VISUAL: dict[str, str] = {
@@ -1455,14 +1473,14 @@ def _normalize_prose(text: str) -> str:
     if not text:
         return text
     # Half-width → full-width after Chinese character
-    text = re.sub(r'(?<=[一-鿿]),', '，', text)
-    text = re.sub(r'(?<=[一-鿿])\.', '。', text)
-    text = re.sub(r'(?<=[一-鿿])\?', '？', text)
-    text = re.sub(r'(?<=[一-鿿])!', '！', text)
+    text = _RE_COMMA_AFTER_CJK.sub('，', text)
+    text = _RE_PERIOD_AFTER_CJK.sub('。', text)
+    text = _RE_QUESTION_AFTER_CJK.sub('？', text)
+    text = _RE_EXCL_AFTER_CJK.sub('！', text)
     # Consecutive periods → one
-    text = re.sub(r'。{2,}', '。', text)
+    text = _RE_MULTI_PERIOD.sub('。', text)
     # Extra spaces
-    text = re.sub(r'[ \t]+', ' ', text).strip()
+    text = _RE_MULTI_SPACE.sub(' ', text).strip()
     return text
 
 
@@ -1470,16 +1488,16 @@ def _ends_with_cjk(s: str) -> bool:
     """Check if string ends with a CJK character (not punctuation)."""
     if not s:
         return False
-    ch = s[-1]
-    return bool(re.match(r'[一-鿿]', ch))
+    c = ord(s[-1])
+    return (0x4E00 <= c <= 0x9FFF) or (0x3400 <= c <= 0x4DBF)
 
 
 def _starts_with_cjk(s: str) -> bool:
     """Check if string starts with a CJK character."""
     if not s:
         return False
-    ch = s[0]
-    return bool(re.match(r'[一-鿿]', ch))
+    c = ord(s[0])
+    return (0x4E00 <= c <= 0x9FFF) or (0x3400 <= c <= 0x4DBF)
 
 
 # Walk-specific transition phrases — only for walk sections
@@ -2883,7 +2901,6 @@ _CURRENT_LAT: float = 0.0
 _RECENT_TOUCH: set[str] = set()
 _RECENT_SCENES: list[str] = []
 _SEG_GEOCODE_CACHE: dict[str, tuple[float, float] | None] = {}
-_SEG_GEOCODE_CACHE_MAX: Final = 200
 
 
 # ── segment geocode / distance helpers ──────────────────────────────
@@ -2899,8 +2916,6 @@ def _geocode_segment(seg_name: str) -> tuple[float, float] | None:
     else:
         result = None
     _SEG_GEOCODE_CACHE[seg_name] = result
-    if len(_SEG_GEOCODE_CACHE) > _SEG_GEOCODE_CACHE_MAX:
-        _SEG_GEOCODE_CACHE.pop(next(iter(_SEG_GEOCODE_CACHE)))
     return result
 
 
@@ -3012,6 +3027,9 @@ def _render_water_features(payload: dict, prev: dict | None, rng: random.Random)
                 if seg_name is not None:
                     seg = segments[seg_name]
                     scene_text = seg.get("scene", "")
+                    if not scene_text:
+                        # Fallback to culture or along fields when scene is empty
+                        scene_text = seg.get("culture", "") or seg.get("along", "") or ""
                     if scene_text:
                         return scene_text
 

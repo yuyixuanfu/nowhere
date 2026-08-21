@@ -22,7 +22,7 @@ import random
 import re
 import threading
 from datetime import datetime, timezone
-from typing import Any, Final
+from typing import Any
 from zoneinfo import ZoneInfo
 
 logger = logging.getLogger(__name__)
@@ -130,6 +130,19 @@ async def _load_explorable_index() -> dict:
     return _EXPLORABLE_INDEX_CACHE
 
 
+def _load_explorable_index_sync() -> dict:
+    """Sync version for use in non-async contexts."""
+    global _EXPLORABLE_INDEX_CACHE
+    if _EXPLORABLE_INDEX_CACHE is not None:
+        return _EXPLORABLE_INDEX_CACHE
+    fp = _pathlib.Path(__file__).resolve().parent / "data" / "explorable_index.json"
+    if fp.exists():
+        _EXPLORABLE_INDEX_CACHE = _json.loads(fp.read_text(encoding="utf-8"))
+    else:
+        _EXPLORABLE_INDEX_CACHE = {}
+    return _EXPLORABLE_INDEX_CACHE
+
+
 async def _load_places_patch() -> dict:
     global _PLACES_PATCH_CACHE
     if _PLACES_PATCH_CACHE is not None:
@@ -142,12 +155,23 @@ async def _load_places_patch() -> dict:
     return _PLACES_PATCH_CACHE
 
 
+def _load_places_patch_sync() -> dict:
+    """Sync version for use in non-async contexts."""
+    global _PLACES_PATCH_CACHE
+    if _PLACES_PATCH_CACHE is not None:
+        return _PLACES_PATCH_CACHE
+    fp = _pathlib.Path(__file__).resolve().parent / "data" / "places_patch.json"
+    if fp.exists():
+        _PLACES_PATCH_CACHE = _json.loads(fp.read_text(encoding="utf-8"))
+    else:
+        _PLACES_PATCH_CACHE = {}
+    return _PLACES_PATCH_CACHE
+
+
 def _get_tz(lat: float, lon: float) -> ZoneInfo:
     """Return the ZoneInfo for the given (lat, lon). Falls back to Asia/Shanghai."""
     tz_name = _tf.timezone_at(lat=lat, lng=lon)
     return ZoneInfo(tz_name) if tz_name else ZoneInfo("Asia/Shanghai")
-
-
 # ── Card 85: 灵感功能入口提示 ──────────────────────────────────────
 _HINT_LINES: list[str] = [
     "你也可以闭着眼来。不看名字,落下来,猜自己在哪。",
@@ -309,11 +333,11 @@ def _try_mishap_echo(rng: random.Random) -> str | None:
     return None
 
 
-def _lunar_info(dt: datetime, lat: float = 31.0, lon: float = 121.0) -> dict | None:
+def _lunar_info(dt: datetime) -> dict | None:
     """Get lunar date info from a UTC datetime. Returns dict or None."""
     if _ZhDate is None:
         return None
-    local_d = dt.astimezone(_get_tz(lat, lon)).replace(tzinfo=None)
+    local_d = dt.astimezone(ZoneInfo("Asia/Shanghai")).replace(tzinfo=None)
     try:
         zh = _ZhDate.from_datetime(local_d)
     except (TypeError, Exception):
@@ -352,8 +376,7 @@ def _spring_tide_check(lunar_day: int) -> bool:
 
 
 def _check_meteor_shower(dt: datetime, weather_precip: str, phase: str,
-                         rng: random.Random,
-                         lat: float = 31.0, lon: float = 121.0) -> dict | None:
+                         rng: random.Random) -> dict | None:
     """Check if a meteor shower is active tonight. Returns dict or None."""
     if phase not in ("night", "nautical"):
         return None
@@ -362,7 +385,7 @@ def _check_meteor_shower(dt: datetime, weather_precip: str, phase: str,
 
     data = _load_meteor_showers()
     showers = data.get("showers", [])
-    local_d = dt.astimezone(_get_tz(lat, lon)).date()
+    local_d = dt.astimezone(ZoneInfo("Asia/Shanghai")).date()
     month_day = local_d.strftime("%m-%d")
 
     for s in showers:
@@ -462,7 +485,7 @@ def _check_phenology(dt: datetime, lat: float, rng: random.Random,
     band = _ZONE_TO_BAND.get(zone, _get_lat_band(lat))
 
     # Determine effective month: south hemisphere flips +6
-    month = dt.astimezone(_get_tz(lat, lon)).month
+    month = dt.astimezone(ZoneInfo("Asia/Shanghai")).month
     if lat < 0:
         month = ((month - 1 + 6) % 12) + 1
 
@@ -592,7 +615,7 @@ def _check_phenology(dt: datetime, lat: float, rng: random.Random,
 def _check_anniversary(lat: float, lon: float, dt: datetime,
                        seen_humanities: set[str]) -> dict | None:
     """Check if today is the anniversary of a nearby humanities event. Returns dict or None."""
-    local_dt = dt.astimezone(_get_tz(lat, lon))
+    local_dt = dt.astimezone(ZoneInfo("Asia/Shanghai"))
     today_month = local_dt.month
     today_day = local_dt.day
 
@@ -712,7 +735,7 @@ def _get_weekday_rhythm(dt: datetime, lat: float, lon: float,
     # 赶集日: Chinese market days based on lunar calendar
     if _ZhDate is not None:
         try:
-            lunar = _lunar_info(dt, lat, lon)
+            lunar = _lunar_info(dt)
             if lunar:
                 ld = lunar["lunar_day"]
                 # 一四七/二五八/三六九 pattern (last digit of lunar day)
@@ -725,7 +748,7 @@ def _get_weekday_rhythm(dt: datetime, lat: float, lon: float,
                     if biome in ("grassland", "desert", None, "") or rng.random() < 0.2:
                         return rng.choice(_WEEKDAY_MARKET_VARIANTS)
         except Exception:
-            pass
+            logger.debug("_get_weekday_rhythm failed", exc_info=True)
 
     return None
 
@@ -769,10 +792,9 @@ _FESTIVAL_VARIANTS: dict[str, list[str]] = {
 }
 
 
-def _get_lunar_festival_text(dt: datetime, rng: random.Random,
-                             lat: float = 31.0, lon: float = 121.0) -> str | None:
+def _get_lunar_festival_text(dt: datetime, rng: random.Random) -> str | None:
     """Check if today is a lunar festival. Returns text or None."""
-    lunar = _lunar_info(dt, lat, lon)
+    lunar = _lunar_info(dt)
     if not lunar:
         return None
     festival = _lunar_festival(lunar["lunar_month"], lunar["lunar_day"])
@@ -812,10 +834,9 @@ _TIDE_SPRING_VARIANTS: list[str] = [
 
 
 def _check_spring_tide(dt: datetime, water_features: list[dict],
-                       rng: random.Random,
-                       lat: float = 31.0, lon: float = 121.0) -> str | None:
+                       rng: random.Random) -> str | None:
     """Check spring tide near coast. Returns text or None."""
-    lunar = _lunar_info(dt, lat, lon)
+    lunar = _lunar_info(dt)
     if not lunar:
         return None
     if not _spring_tide_check(lunar["lunar_day"]):
@@ -841,7 +862,7 @@ def _compute_timeaxes(dt: datetime, lat: float, lon: float,
     layers: list[dict] = []
 
     # 1. Festival (农历节日) — highest priority
-    fest_text = _get_lunar_festival_text(dt, rng, lat, lon)
+    fest_text = _get_lunar_festival_text(dt, rng)
     if fest_text:
         layers.append({
             "priority": _TP_FESTIVAL, "kind": "festival",
@@ -859,7 +880,7 @@ def _compute_timeaxes(dt: datetime, lat: float, lon: float,
         })
 
     # 3. Meteor shower (天象)
-    meteor = _check_meteor_shower(dt, weather_precip, phase, rng, lat, lon)
+    meteor = _check_meteor_shower(dt, weather_precip, phase, rng)
     if meteor:
         m_text = _get_meteor_text(meteor, rng)
         if m_text:
@@ -877,7 +898,7 @@ def _compute_timeaxes(dt: datetime, lat: float, lon: float,
         })
 
     # 4b. Spring tide (潮汐, linked to lunar axis)
-    tide_text = _check_spring_tide(dt, water_features, rng, lat, lon)
+    tide_text = _check_spring_tide(dt, water_features, rng)
     if tide_text:
         layers.append({
             "priority": _TP_PHENOLOGY, "kind": "tide",
@@ -901,14 +922,14 @@ def _timeaxis_to_env(dt: datetime, lat: float, lon: float) -> dict:
     """Compute timeaxis data for env dict (not text — time is for feeling, not reporting)."""
     env: dict[str, Any] = {}
     # Lunar info
-    lunar = _lunar_info(dt, lat, lon)
+    lunar = _lunar_info(dt)
     if lunar:
         env["lunar"] = lunar
     # Meteor shower status
     tz_name = _tf.timezone_at(lat=lat, lng=lon)
     local_dt = dt.astimezone(ZoneInfo(tz_name)) if tz_name else dt
     phase = "night" if local_dt.hour >= 19 or local_dt.hour < 5 else "day"
-    meteor = _check_meteor_shower(dt, "none", phase, _rng, lat, lon)
+    meteor = _check_meteor_shower(dt, "none", phase, _rng)
     if meteor:
         env["meteor_shower"] = meteor
     # Lat band for phenology
@@ -1164,7 +1185,7 @@ async def _get_radio(lat: float, lon: float) -> dict | None:
                 _nb_env["_dt"] = _state.now()
                 notebook_mod.record_with_env("radio", _rn, _place, _nb_env, lat)
         except Exception:
-            pass
+            logger.debug("_get_radio notebook failed", exc_info=True)
     return station
 
 
@@ -1217,7 +1238,7 @@ def _compute_wilderness_depth_km(lat: float, lon: float) -> float:
 
     # Check explorable_index places
     try:
-        data = _load_explorable_index()
+        data = _load_explorable_index_sync()
         for name, info in data.get("places", {}).items():
             plat = info.get("lat")
             plon = info.get("lon")
@@ -1230,7 +1251,7 @@ def _compute_wilderness_depth_km(lat: float, lon: float) -> float:
 
     # Check offline water features
     try:
-        data = _load_water_features()
+        data = _load_water_features_sync()
         for entry in data.get("entries", []):
             elat = entry.get("lat", 0)
             elon = entry.get("lon", 0)
@@ -2091,7 +2112,6 @@ def _check_festival_chase(lat: float, lon: float,
         a = (math.sin(dlat / 2) ** 2
              + math.cos(math.radians(lat)) * math.cos(math.radians(fest_lat))
              * math.sin(dlon / 2) ** 2)
-        a = min(a, 1.0)
         dist_km = 2 * 6371.0 * math.asin(math.sqrt(a))
 
         if dist_km > 800:
@@ -2125,7 +2145,6 @@ def _load_festivals() -> list[dict]:
 
 
 _fest_place_coords_cache: dict[str, tuple[float, float] | None] = {}
-_FEST_PLACE_COORDS_CACHE_MAX: Final = 200
 
 
 def _get_fest_place_coords(place_name: str) -> tuple[float, float] | None:
@@ -2142,8 +2161,6 @@ def _get_fest_place_coords(place_name: str) -> tuple[float, float] | None:
     except Exception:
         result = None
     _fest_place_coords_cache[place_name] = result
-    if len(_fest_place_coords_cache) > _FEST_PLACE_COORDS_CACHE_MAX:
-        _fest_place_coords_cache.pop(next(iter(_fest_place_coords_cache)))
     return result
 
 
@@ -2159,7 +2176,6 @@ def _fest_within_distance(fest_place: str, lat: float, lon: float,
     a = (math.sin(dlat / 2) ** 2
          + math.cos(math.radians(lat)) * math.cos(math.radians(fest_lat))
          * math.sin(dlon / 2) ** 2)
-    a = min(a, 1.0)
     dist_km = 2 * 6371.0 * math.asin(math.sqrt(a))
     return dist_km <= max_km
 
@@ -2284,7 +2300,7 @@ def _check_festival_hit(
     if not festivals:
         return None
 
-    sim_date = sim_time.astimezone(_get_tz(lat, lon)).date()
+    sim_date = sim_time.astimezone(ZoneInfo("Asia/Shanghai")).date()
 
     # Three priority buckets
     place_hits: list[dict] = []
@@ -2458,7 +2474,7 @@ def _check_near_festival(
     if not festivals:
         return None
 
-    sim_date = sim_time.astimezone(_get_tz(lat, lon)).date()
+    sim_date = sim_time.astimezone(ZoneInfo("Asia/Shanghai")).date()
 
     for fest in festivals:
         window = fest.get("window", {})
@@ -2588,7 +2604,7 @@ def _get_festival_context(
     if not festivals:
         return None
 
-    sim_date = sim_time.astimezone(_get_tz(lat, lon)).date()
+    sim_date = sim_time.astimezone(ZoneInfo("Asia/Shanghai")).date()
 
     for fest in festivals:
         if not _festival_in_window(fest, sim_date, lat, country_code=country_code):
@@ -2901,6 +2917,8 @@ async def _open_door_locked(to: str | None = None, resume: bool = False, travele
 
     # ── 2. State init ────────────────────────────────────────────────
     if not restored and resume:
+        lat = max(-90, min(90, lat))
+        lon = ((lon + 180) % 360) - 180
         _state = state_mod.WorldState()
         _state.pos = (lat, lon)
         _state.landed_at = datetime.now(timezone.utc)
@@ -2914,6 +2932,8 @@ async def _open_door_locked(to: str | None = None, resume: bool = False, travele
         old_seen_humanities = _state.seen_humanities.copy() if _state else set()
         old_messages = list(_state.messages) if _state else []
         old_souvenir = _state.souvenir.copy() if _state and _state.souvenir else None
+        lat = max(-90, min(90, lat))
+        lon = ((lon + 180) % 360) - 180
         _state = state_mod.WorldState()
         _state.pos = (lat, lon)
         _state.landed_at = datetime.now(timezone.utc)
@@ -3006,7 +3026,7 @@ async def _open_door_locked(to: str | None = None, resume: bool = False, travele
                 _nb_env["_dt"] = _state.now()
                 notebook_mod.record_with_env("water", _wn, place_name, _nb_env, lat)
         except Exception:
-            pass
+            logger.debug("open_door water notebook failed", exc_info=True)
 
     # Sea surface temperature
     sst_text = ""
@@ -3133,7 +3153,7 @@ async def _open_door_locked(to: str | None = None, resume: bool = False, travele
                     _nb_env["_dt"] = _state.now()
                     notebook_mod.record_with_env("flora", _flora_name, place_name, _nb_env, lat)
         except Exception:
-            pass
+            logger.debug("open_door flora notebook failed", exc_info=True)
 
     # ── Card 10: 痕迹链 — 世界在你离开后继续过日子 ───────────────
     if placememory.has_trace(place_name) and not _blind:
@@ -4627,7 +4647,7 @@ async def wait_impl(hours: float = 1.0) -> dict:
     # Card 66: track start date for festival crossing detection
     _start_sim_date = None
     if _state.now() is not None:
-        _start_sim_date = _state.now().astimezone(_get_tz(lat, lon)).date()
+        _start_sim_date = _state.now().astimezone(ZoneInfo("Asia/Shanghai")).date()
 
     # ── 长待模式（>12小时）───────────────────────────────────────────
     if hours > 12.0:
@@ -4656,7 +4676,7 @@ async def wait_impl(hours: float = 1.0) -> dict:
         # Season snapshot
         end_now = _state.now()
         if end_now:
-            end_local = end_now.astimezone(_get_tz(lat, lon))
+            end_local = end_now.astimezone(ZoneInfo("Asia/Shanghai"))
             _season_zh = {12: "冬", 1: "冬", 2: "冬", 3: "春", 4: "春", 5: "春",
                           6: "夏", 7: "夏", 8: "夏", 9: "秋", 10: "秋", 11: "秋"}
             sections.append(f"现在是{_season_zh.get(end_local.month, '')}天。")
@@ -4674,7 +4694,7 @@ async def wait_impl(hours: float = 1.0) -> dict:
         # Festival crossing detection
         _festival_cross_text = None
         if _start_sim_date is not None and end_now is not None:
-            _end_sim_date = end_now.astimezone(_get_tz(lat, lon)).date()
+            _end_sim_date = end_now.astimezone(ZoneInfo("Asia/Shanghai")).date()
             if _end_sim_date > _start_sim_date:
                 cc = country.country_code_of(lat, lon)
                 _festival_cross_text = _check_festival_hit(
@@ -4685,7 +4705,7 @@ async def wait_impl(hours: float = 1.0) -> dict:
             fest_name = ""
             festivals = _load_festivals()
             if festivals and end_now is not None:
-                sim_date = end_now.astimezone(_get_tz(lat, lon)).date()
+                sim_date = end_now.astimezone(ZoneInfo("Asia/Shanghai")).date()
                 for fest in festivals:
                     if _festival_in_window(fest, sim_date, lat):
                         fest_name = fest.get("name", "")
@@ -4802,7 +4822,7 @@ async def wait_impl(hours: float = 1.0) -> dict:
     if _start_sim_date is not None:
         _end_now = _state.now()
         if _end_now is not None:
-            _end_sim_date = _end_now.astimezone(_get_tz(lat, lon)).date()
+            _end_sim_date = _end_now.astimezone(ZoneInfo("Asia/Shanghai")).date()
             if _end_sim_date > _start_sim_date:
                 cc = country.country_code_of(lat, lon)
                 _festival_cross_text = _check_festival_hit(
@@ -4846,7 +4866,7 @@ async def wait_impl(hours: float = 1.0) -> dict:
         if festivals:
             _end_now2 = _state.now()
             if _end_now2 is not None:
-                sim_date = _end_now2.astimezone(_get_tz(lat, lon)).date()
+                sim_date = _end_now2.astimezone(ZoneInfo("Asia/Shanghai")).date()
                 for fest in festivals:
                     if _festival_in_window(fest, sim_date, lat):
                         fest_name = fest.get("name", "")
@@ -5283,7 +5303,7 @@ def _clamp_coastal_elevation(elev: float, surface: str, lat: float, lon: float) 
                     # Significant city on flat-grid cell → clamp
                     return max(0.0, min(elev, 50.0))
     except Exception:
-        pass
+        logger.debug("_clamp_coastal_elevation lookup failed", exc_info=True)
 
     return elev
 
@@ -5303,7 +5323,6 @@ _COUNTRY_TO_SCRIPT: dict[str, tuple[str, list[str]]] = {
 _PACK_PATH = _pathlib.Path(__file__).resolve().parent / "data" / "packs" / "cities15000.txt"
 
 _local_name_cache: dict[str, str] = {}
-_LOCAL_NAME_CACHE_MAX: Final = 200
 
 
 def _char_script(ch: str) -> str:
@@ -5340,10 +5359,6 @@ def _char_script(ch: str) -> str:
 
 def _has_cjk(text: str) -> bool:
     return any(0x4E00 <= ord(c) <= 0x9FFF or 0x3400 <= ord(c) <= 0x4DBF for c in text)
-
-
-def _has_kana(text: str) -> bool:
-    return any(0x3040 <= ord(c) <= 0x30FF or 0xFF65 <= ord(c) <= 0xFF9F for c in text)
 
 
 def _pick_best_localized(
@@ -5495,8 +5510,6 @@ def _localized_place_name(place_name: str, lat: float, lon: float) -> str:
     cc = country.country_code_of(lat, lon)
     if cc in ("CN", "TW", "HK", "MO") and _has_cjk(place_name):
         _local_name_cache[key] = place_name
-        if len(_local_name_cache) > _LOCAL_NAME_CACHE_MAX:
-            _local_name_cache.pop(next(iter(_local_name_cache)))
         return place_name
 
     # Scan cities15000 for the matching city
@@ -5556,8 +5569,6 @@ def _localized_place_name(place_name: str, lat: float, lon: float) -> str:
         # No city found: if input is CJK, keep it; else return as-is
         result = place_name
         _local_name_cache[key] = result
-        if len(_local_name_cache) > _LOCAL_NAME_CACHE_MAX:
-            _local_name_cache.pop(next(iter(_local_name_cache)))
         return result
 
     e_cc = best_entry["cc"]
@@ -5615,8 +5626,6 @@ def _localized_place_name(place_name: str, lat: float, lon: float) -> str:
         result = best_entry["asciiname"] or best_entry["name"]
 
     _local_name_cache[key] = result
-    if len(_local_name_cache) > _LOCAL_NAME_CACHE_MAX:
-        _local_name_cache.pop(next(iter(_local_name_cache)))
     return result
 
 
@@ -5970,82 +5979,55 @@ async def open_door(to: str | None = None, blind: bool = False, key: str | None 
     Append " 新" to place name (e.g. "拉萨 新") to force a fresh landing,
     creating a new journey even if one already exists for that place.
     """
-    logger.debug("tool called: open_door")
-    result = await open_door_impl(to, blind=blind, key=key, intent=intent)
-    logger.debug("tool done: open_door")
-    return result
+    return await open_door_impl(to, blind=blind, key=key, intent=intent)
 
 
 @mcp.tool()
 async def continue_journey() -> dict:
     """Continue from where you left off. Resumes saved journey state."""
-    logger.debug("tool called: continue_journey")
-    result = await open_door_impl(resume=True)
-    logger.debug("tool done: continue_journey")
-    return result
+    return await open_door_impl(resume=True)
 
 
 @mcp.tool()
 async def walk(direction: str = "forward", distance_km: float = 2.0) -> dict:
     """Walk in a direction.  Compass: N/NE/E/SE/S/SW/W/NW.  Semantic: uphill/toward_sea/forward."""
-    logger.debug("tool called: walk")
-    result = await walk_impl(direction, distance_km)
-    logger.debug("tool done: walk")
-    return result
+    return await walk_impl(direction, distance_km)
 
 
 @mcp.tool()
 async def listen(seconds: int = 10) -> dict:
     """Tune into the nearest radio station and listen for a few seconds."""
-    logger.debug("tool called: listen")
-    result = await listen_impl(seconds)
-    logger.debug("tool done: listen")
-    return result
+    return await listen_impl(seconds)
 
 
 @mcp.tool()
 async def look_around() -> dict:
     """Look around for nearby wildlife, art, or human messages."""
-    logger.debug("tool called: look_around")
-    result = await look_around_impl()
-    logger.debug("tool done: look_around")
-    return result
+    return await look_around_impl()
 
 
 @mcp.tool()
 async def ask(topic: str) -> dict:
     """对眼前的地方发问。离线知识库，不联网。问火山就有火山，问北京就有北京。"""
-    logger.debug("tool called: ask")
-    result = await ask_impl(topic)
-    logger.debug("tool done: ask")
-    return result
+    return await ask_impl(topic)
 
 
 @mcp.tool()
 def mark(name: str, note: str = "", overwrite: bool = False) -> dict:
     """Save your current position as a named bookmark."""
-    logger.debug("tool called: mark")
-    result = mark_impl(name, note, overwrite)
-    logger.debug("tool done: mark")
-    return result
+    return mark_impl(name, note, overwrite)
 
 
 @mcp.tool()
 def marks() -> dict:
     """List all saved bookmarks."""
-    logger.debug("tool called: marks")
-    result = marks_impl()
-    logger.debug("tool done: marks")
-    return result
+    return marks_impl()
 
 
 @mcp.tool()
 def where_am_i() -> dict:
     """Show your current location, simulated time, and journey status."""
-    logger.debug("tool called: where_am_i")
-    result = where_am_i_impl()
-    logger.debug("tool done: where_am_i")
-    return result
+    return where_am_i_impl()
 
 
 @mcp.tool()
@@ -6224,52 +6206,6 @@ def journeys_list() -> dict:
 
 
 @mcp.tool()
-def switch_journey(name: str) -> dict:
-    """切回一段旧旅程。给地名就行。"""
-    global _state, _rng, _recent_salience_kinds
-    if not name.strip():
-        return {"text": "给个地名。", "data": {"error": "empty_name"}}
-
-    farewell_text = ""
-    if _state.pos is not None:
-        # Generate farewell before leaving
-        farewell_text = _generate_farewell(_state, _rng)
-        _state.journey_log.append({
-            "kind": "farewell",
-            "text": farewell_text,
-            "timestamp": datetime.now(timezone.utc).isoformat(),
-        })
-        journeys.save_current(_state)
-
-    new_state = journeys.switch(name)
-    if new_state is None:
-        return {"text": f"找不到「{name}」的旅程。", "data": {"error": "not_found"}}
-
-    # Generate return text
-    meta = journeys.get_journey_meta(name)
-    return_text = _generate_return(new_state, meta, _rng)
-
-    _state = new_state
-    _rng = random.Random(int(os.environ["NOWHERE_SEED"])) if os.environ.get("NOWHERE_SEED") else random.Random()
-    _recent_salience_kinds = set()
-    place = _state.place_name or name
-
-    response_parts = [farewell_text]
-    if return_text:
-        response_parts.append(return_text)
-    _r_lat = _state.pos[0] if _state.pos else 0
-    _r_season = describe._season(_state.now().month, _r_lat) if _state.now() else ""
-    _r_zh = {"spring":"春","summer":"夏","autumn":"秋","winter":"冬","wet":"雨季","dry":"旱季"}.get(_r_season,"")
-    _r_steps = len(_state.path) if _state.path else 0
-    response_parts.append(f"回到了{place}。上次你在这走了{_r_steps}步,是{_r_zh}天。")
-
-    return {
-        "text": "\n".join(response_parts),
-        "data": {"position": {"lat": _state.pos[0], "lon": _state.pos[1]}},
-    }
-
-
-@mcp.tool()
 def atlas() -> dict:
     """看看你去过哪些地方。世界迷雾,一点一点亮起来。"""
     result = journeys.atlas()
@@ -6297,12 +6233,6 @@ def atlas() -> dict:
 async def wait(hours: float = 1.0) -> dict:
     """原地待着,让时间流过去(0.25-12 小时)。天黑温降,城会换班。"""
     return await wait_impl(hours)
-
-
-@mcp.tool()
-def send_postcard(text: str) -> dict:
-    """寄一张明信片回家。你写字,世界盖邮戳(真实地点/时间/天气/海拔)。"""
-    return send_postcard_impl(text)
 
 
 @mcp.tool()

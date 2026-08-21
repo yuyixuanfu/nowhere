@@ -265,6 +265,8 @@ def step(
     state.elapsed_hours += travel_hours
 
     # ── Update position and path ─────────────────────────────────────
+    new_lat = max(-90, min(90, new_lat))
+    new_lon = ((new_lon + 180) % 360) - 180
     state.pos = (new_lat, new_lon)
     state.heading = bearing
     state.path.append({

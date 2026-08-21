@@ -219,11 +219,6 @@ def _patch_lookup(name: str, near: tuple[float, float] | None) -> dict | None:
     return result
 
 
-def _find_once(name: str, near: tuple[float, float] | None) -> dict | None:
-    """单次查找(保留兼容): 补丁 → FTS。"""
-    return _patch_lookup(name, near) or _fts_lookup(name, near)
-
-
 def _fts_lookup(name: str, near: tuple[float, float] | None) -> dict | None:
 
     conn = _conn()

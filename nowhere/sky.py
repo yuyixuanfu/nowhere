@@ -47,11 +47,6 @@ def _to_iso(dt_ephem) -> str | None:
     return py_dt.isoformat()
 
 
-def _body_alt_deg(obs: ephem.Observer, body_factory) -> float:
-    body = body_factory()
-    body.compute(obs)
-    return float(body.alt) * 180.0 / math.pi
-
 
 def _phase_label(sun_alt: float) -> str:
     if sun_alt > 0:

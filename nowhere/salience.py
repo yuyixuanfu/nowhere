@@ -51,17 +51,6 @@ _REGION_MAP = [
 ]
 
 
-def _get_lat_band_for_situation(lat: float) -> str:
-    """Map latitude to card lat_band category."""
-    abs_lat = abs(lat)
-    if abs_lat > 66:
-        return "polar"
-    if abs_lat < 23.5:
-        return "tropics"
-    if lat > 0:
-        return "north_temperate"
-    return "south_temperate"
-
 
 def _get_climate_zone_for_situation(lat: float, elev: float = 0) -> str:
     """Map latitude + elevation to climate zone."""
