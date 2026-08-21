@@ -98,6 +98,8 @@ async def lookup(place: str) -> tuple[float, float] | None:
     if sp is not None:
         result = (sp["lat"], sp["lon"])
         _geocode_cache[key] = result
+        if len(_geocode_cache) > _GEOCODE_CACHE_MAX:
+            _geocode_cache.pop(next(iter(_geocode_cache)))
         return result
 
     # Offline sources first (fast)
@@ -107,11 +109,15 @@ async def lookup(place: str) -> tuple[float, float] | None:
     if hit is not None:
         result = (hit["lat"], hit["lon"])
         _geocode_cache[key] = result
+        if len(_geocode_cache) > _GEOCODE_CACHE_MAX:
+            _geocode_cache.pop(next(iter(_geocode_cache)))
         return result
 
     result = _offline_lookup(place)
     if result is not None:
         _geocode_cache[key] = result
+        if len(_geocode_cache) > _GEOCODE_CACHE_MAX:
+            _geocode_cache.pop(next(iter(_geocode_cache)))
         return result
 
     # Nominatim last (slow, 5s timeout)
@@ -127,9 +133,13 @@ async def lookup(place: str) -> tuple[float, float] | None:
         if data:
             result = (float(data[0]["lat"]), float(data[0]["lon"]))
             _geocode_cache[key] = result
+            if len(_geocode_cache) > _GEOCODE_CACHE_MAX:
+                _geocode_cache.pop(next(iter(_geocode_cache)))
             return result
     except Exception:
         pass
 
     _geocode_cache[key] = None
+    if len(_geocode_cache) > _GEOCODE_CACHE_MAX:
+        _geocode_cache.pop(next(iter(_geocode_cache)))
     return None

@@ -214,36 +214,12 @@ def _load_pool() -> list[dict]:
 
 # ── 城市掩码(cities15000,人口>5万的城市附近算 urban)────────────
 
-_cities: list[tuple[float, float]] | None = None
-
-
-def _load_cities() -> list[tuple[float, float]]:
-    global _cities
-    if _cities is not None:
-        return _cities
-    _cities = []
-    path = _DATA_DIR / "packs" / "cities15000.txt"
-    if path.exists():
-        with open(path, encoding="utf-8") as f:
-            for line in f:
-                parts = line.rstrip("\n").split("\t")
-                if len(parts) < 15:
-                    continue
-                try:
-                    if int(parts[14] or 0) >= 50000:
-                        _cities.append((float(parts[4]), float(parts[5])))
-                except ValueError:
-                    continue
-    return _cities
-
-
 def urban_nearby(lat: float, lon: float, km: float = 15.0) -> bool:
     """人口 5 万+ 城市 km 公里内 → True。"""
-    deg = km / 111.0
-    for clat, clon in _load_cities():
-        if abs(clat - lat) < deg and abs((clon - lon) * math.cos(math.radians(lat))) < deg:
-            return True
-    return False
+    from nowhere import city_index
+    return city_index.find_nearest(
+        lat, lon, n=1, max_km=km, min_population=50000,
+    ) is not None
 
 
 def _pool_entry(lat: float, lon: float) -> dict | None:

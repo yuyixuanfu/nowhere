@@ -6,54 +6,9 @@
 
 from __future__ import annotations
 
-import math
-import pathlib
-
-_PACK_PATH = pathlib.Path(__file__).resolve().parent / "data" / "packs" / "cities15000.txt"
-
-_cities: list[tuple[float, float, str]] | None = None
-_loaded = False
-
-
-def _load() -> None:
-    global _cities, _loaded
-    if _loaded:
-        return
-    _loaded = True
-    _cities = []
-    if not _PACK_PATH.exists():
-        return
-    with open(_PACK_PATH, encoding="utf-8") as f:
-        for line in f:
-            parts = line.rstrip("\n").split("\t")
-            if len(parts) < 9:
-                continue
-            try:
-                _cities.append((float(parts[4]), float(parts[5]), parts[8]))
-            except ValueError:
-                continue
+from nowhere import city_index
 
 
 def country_code_of(lat: float, lon: float) -> str | None:
-    """返回最近城市的 ISO 国家码(如 "VN");数据包缺失返回 None。
-
-    4 万城市线性扫,几毫秒,够用了。
-    """
-    _load()
-    if not _cities:
-        return None
-    best_cc: str | None = None
-    best_d = math.inf
-    for clat, clon, cc in _cities:
-        dlat = clat - lat
-        dlon = clon - lon
-        # Wrap longitude at date line (e.g. 179 to -179 is 2 degrees, not 358)
-        if dlon > 180:
-            dlon -= 360
-        elif dlon < -180:
-            dlon += 360
-        d = dlat ** 2 + (dlon * math.cos(math.radians(lat))) ** 2
-        if d < best_d:
-            best_d = d
-            best_cc = cc
-    return best_cc
+    """返回最近城市的 ISO 国家码(如 "VN");数据包缺失返回 None。"""
+    return city_index.country_of(lat, lon)

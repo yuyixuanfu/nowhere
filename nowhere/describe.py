@@ -22,7 +22,7 @@ import logging
 import pathlib
 import random
 import re
-from typing import Sequence
+from typing import Final, Sequence
 
 from nowhere import places
 
@@ -2883,6 +2883,7 @@ _CURRENT_LAT: float = 0.0
 _RECENT_TOUCH: set[str] = set()
 _RECENT_SCENES: list[str] = []
 _SEG_GEOCODE_CACHE: dict[str, tuple[float, float] | None] = {}
+_SEG_GEOCODE_CACHE_MAX: Final = 200
 
 
 # ── segment geocode / distance helpers ──────────────────────────────
@@ -2898,6 +2899,8 @@ def _geocode_segment(seg_name: str) -> tuple[float, float] | None:
     else:
         result = None
     _SEG_GEOCODE_CACHE[seg_name] = result
+    if len(_SEG_GEOCODE_CACHE) > _SEG_GEOCODE_CACHE_MAX:
+        _SEG_GEOCODE_CACHE.pop(next(iter(_SEG_GEOCODE_CACHE)))
     return result
 
 
