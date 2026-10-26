@@ -1660,6 +1660,25 @@ def compose(sections: list[str], rng: random.Random, section_type: str = "walk")
 _NOTABLE_PLACES_CACHE: set[str] | None = None
 
 
+# Keys that live in the scene/localcolor JSON but are phenomena, not places.
+# Keeping them out of the place-contradiction set prevents sanity_check from
+# eating valid prose that mentions them.
+_NON_PLACE_KEYS: set[str] = {
+    "极光",
+    "银河",
+    "流星",
+    "日食",
+    "月食",
+    "潮汐",
+    "候鸟",
+    "雾凇",
+    "霜",
+    "露",
+    "虹",
+    "海市蜃楼",
+}
+
+
 def _load_notable_places() -> set[str]:
     """Load place names from water features scenes and localcolor data.
 
@@ -1698,6 +1717,12 @@ def _load_notable_places() -> set[str]:
         except Exception:
             logger.debug("failed to load %s", lc_file)
 
+    # Some localcolor/water keys are not places at all: they are phenomena or
+    # concepts that happen to live in the same JSON ("极光", "候鸟", ...).
+    # Treating them as place names makes sanity_check delete perfectly valid
+    # sentences -- e.g. an aurora sentence in Tromso got replaced because
+    # "极光" != "朗伊尔城".  Drop them here.
+    names -= _NON_PLACE_KEYS
     _NOTABLE_PLACES_CACHE = names
     return names
 

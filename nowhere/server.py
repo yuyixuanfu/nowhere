@@ -2022,6 +2022,12 @@ def _sky_delta(old: dict | None, new: dict) -> float:
     # phase switch (day <-> night) counts as full delta
     if (old_phase == "day") != (new_phase == "day"):
         return 1.0
+    # An aurora appearing or fading out is a real change.  Without this a
+    # strong forecast would score delta=0 and get buried by terrain/weather.
+    old_aurora = (old.get("aurora") or {}).get("power", 0)
+    new_aurora = (new.get("aurora") or {}).get("power", 0)
+    if (old_aurora >= 3) != (new_aurora >= 3):
+        return 0.8
     return 0.0
 
 
@@ -2653,11 +2659,24 @@ def _build_salience_candidates(
     # sky
     s = env.get("sky", {})
     if s:
+        # Aurora is a rare, hard-to-see thing.  When NOAA's OVATION model
+        # says there is real power overhead, pull the sky section up so it
+        # is not crowded out by terrain and weather noise.
+        _aurora_power = (s.get("aurora") or {}).get("power", 0)
+        _sky_novelty = 0.2
+        _sky_distance = 0.7
+        _sky_delta_val = _sky_delta((prev_env or {}).get("sky"), s)
+        if _aurora_power >= 6:
+            _sky_novelty = 0.9
+            _sky_distance = 0.1
+        elif _aurora_power >= 3:
+            _sky_novelty = 0.6
+            _sky_distance = 0.35
         candidates.append({
             "kind": "sky",
-            "delta": _sky_delta((prev_env or {}).get("sky"), s),
-            "novelty": 0.2,
-            "body_distance": 0.7,
+            "delta": _sky_delta_val,
+            "novelty": _sky_novelty,
+            "body_distance": _sky_distance,
             "payload": s,
         })
 
@@ -3178,7 +3197,14 @@ async def _open_door_locked(to: str | None = None, resume: bool = False, travele
                 _state.recent_scenes.append(_ta["text"])
 
     for c in top3:
-        if c["kind"] in ("weather", "sky", "arrive"):
+        # Weather / arrive are already covered by the opening scene.  Sky is
+        # normally covered too -- EXCEPT when an aurora is actually up, which
+        # the opening never mentions.  Dropping sky unconditionally here meant
+        # a strong OVATION forecast could never reach the prose.
+        _c_aurora_power = ((c.get("payload") or {}).get("aurora") or {}).get("power", 0)
+        if c["kind"] in ("weather", "arrive"):
+            continue
+        if c["kind"] == "sky" and _c_aurora_power < 3:
             continue
         text = describe.render(c["kind"], c["payload"], None, _rng,
                                biome=_state.biome or "", elevation=env.get("elevation", 0))
@@ -3214,7 +3240,7 @@ async def _open_door_locked(to: str | None = None, resume: bool = False, travele
     # ── 5e. web 旁观老 首次开门告知用户地址 ───────────────────────
     global _web_url_announced
     if _web_url and not _web_url_announced:
-        prose += f"\n（旁观者可以在这里看你走路：{_web_url}）",
+        prose += f"\n（旁观者可以在这里看你走路：{_web_url}）"
         _web_url_announced = True
 
     # Card 16: blind auto-disabled note

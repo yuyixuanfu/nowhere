@@ -138,9 +138,31 @@ def visible_sky(lat: float, lon: float, dt: datetime, rng: _random.Random | None
     sgra.compute(obs)
     milky_way_core_up = float(sgra.alt) * 180.0 / math.pi > _MILKY_WAY_ALT_THRESHOLD
 
-    # ── aurora (polar night sky phenomenon) ──────────────────────────
+    # ── aurora ───────────────────────────────────────────────────────
+    # Real NOAA OVATION forecast first.  It gives per-coordinate aurora
+    # power, so Tromso and Fairbanks on the same night can differ.  Only
+    # when the forecast is unreachable do we fall back to the latitude
+    # heuristic below (offline / airplane mode must still work).
     aurora_info: dict | None = None
     abs_lat = abs(lat)
+    if 50 <= abs_lat <= 90:
+        try:
+            from nowhere import aurora as _aurora_mod
+
+            real = _aurora_mod.forecast(lat, lon)
+        except Exception:  # noqa: BLE001 - forecast must never break the sky
+            real = None
+        if real is not None:
+            aurora_info = real
+            return _finish_sky(
+                planets, moon_phase, moon_alt, milky_way_core_up, aurora_info
+            )
+        if _aurora_mod_has_data():
+            # Forecast is live and says nothing is happening here.  Do not
+            # invent an aurora just because we are far north.
+            return _finish_sky(
+                planets, moon_phase, moon_alt, milky_way_core_up, None
+            )
     if 60 <= abs_lat <= 90:
         # Magnetic latitude approximation: auroral oval ~60-80° geographic
         # Probability increases toward the sweet spot ~65-75°
@@ -183,6 +205,19 @@ def visible_sky(lat: float, lon: float, dt: datetime, rng: _random.Random | None
                 "intensity": intensity,
             }
 
+    return _finish_sky(
+        planets, moon_phase, moon_alt, milky_way_core_up, aurora_info
+    )
+
+
+def _finish_sky(
+    planets: list[dict],
+    moon_phase: float,
+    moon_alt: float,
+    milky_way_core_up: bool,
+    aurora_info: dict | None,
+) -> dict:
+    """Assemble the visible_sky payload (single exit point)."""
     return {
         "planets": planets,
         "moon_phase": moon_phase,
@@ -190,3 +225,13 @@ def visible_sky(lat: float, lon: float, dt: datetime, rng: _random.Random | None
         "milky_way_core_up": milky_way_core_up,
         "aurora": aurora_info,
     }
+
+
+def _aurora_mod_has_data() -> bool:
+    """True when a real OVATION grid is loaded (so silence means silence)."""
+    try:
+        from nowhere import aurora as _aurora_mod
+
+        return _aurora_mod.available()
+    except Exception:  # noqa: BLE001
+        return False
